@@ -1,0 +1,13 @@
+{
+  "agent": "actions-du-jour",
+  "genere_le": "2026-06-26T08:08:00+00:00",
+  "modele": "agrégation (démo)",
+  "provenance": {"client": "demo-client", "demo": true},
+  "items": [
+    {"priorite": 1, "type": "inbox", "titre": "5 commentaires à répondre", "detail": "Des prospects demandent les prix — réponds vite pour convertir.", "source": "a_repondre", "action": {"label": "Répondre", "kind": "view", "target": "reseaux"}},
+    {"priorite": 1, "type": "alerte", "titre": "Cadence en retard — 9 j sans publier", "detail": "La régularité nourrit l'algorithme. Publie aujourd'hui.", "source": "cadence", "action": {"label": "Voir la présence", "kind": "view", "target": "reseaux"}},
+    {"priorite": 2, "type": "reco", "titre": "Double tes Reels avant/après", "detail": "Programme 2 Reels avant/après cette semaine.", "source": "analyste", "action": {"label": "Voir l'analyse", "kind": "view", "target": "reseaux"}},
+    {"priorite": 2, "type": "plan", "titre": "Publie : Routine peau grasse en 3 étapes", "detail": "TikTok · Reel · Mardi 18h", "source": "stratege", "action": {"label": "Voir le plan", "kind": "view", "target": "overview"}},
+    {"priorite": 3, "type": "creatif", "titre": "Idée prête : Ta peau mérite 15 minutes par jour.", "detail": "TikTok · Reel", "source": "creatif", "action": {"label": "Voir les idées", "kind": "view", "target": "overview"}}
+  ]
+}

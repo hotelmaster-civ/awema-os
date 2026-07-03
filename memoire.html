@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AWEMA — Mémoire Marketing du client</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--nuit:#222222;--ciel:#FFC94D;--gold:#D4AF37;--violet:#EDA914;--mint:#34E5C4;--pink:#FF7D9C;
+    --tx:#F1EDE2;--muted:#B3AA92;--card:rgba(255,255,255,.05);--bord:rgba(255,255,255,.13)}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:Poppins,system-ui,Segoe UI,Roboto,sans-serif;color:var(--tx);line-height:1.6;
+    background:radial-gradient(1100px 650px at 50% -12%,#2A2A2A,#222222 62%,#1E1E1E);min-height:100vh;padding-bottom:60px}
+  .wrap{max-width:880px;margin:0 auto;padding:0 22px}
+  header{padding:46px 0 8px}
+  .back{color:var(--muted);text-decoration:none;font-size:13px}
+  h1{font-family:Montserrat,sans-serif;font-weight:800;font-size:clamp(24px,4.4vw,34px);margin-top:14px;letter-spacing:-.02em}
+  h1 .g{background:linear-gradient(120deg,var(--gold),#f2d479);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .lead{color:var(--muted);margin-top:10px;font-size:14.5px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .card{background:var(--card);border:1px solid var(--bord);border-radius:18px;padding:22px;margin-top:16px;backdrop-filter:blur(8px)}
+  .card h2{font-family:Montserrat,sans-serif;font-size:16px;margin-bottom:4px}
+  label{display:block;font-size:12px;color:var(--muted);margin:12px 0 5px;text-transform:uppercase;letter-spacing:.05em}
+  input,select,textarea{width:100%;padding:10px 12px;border-radius:11px;border:1px solid var(--bord);background:rgba(0,0,0,.25);color:#fff;font:inherit;font-size:14px}
+  textarea{min-height:60px;resize:vertical}
+  .row{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px;align-items:center}
+  .btn{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,var(--ciel),var(--violet));color:#fff;text-decoration:none;font-weight:700;font-size:13.5px;border:0;border-radius:11px;padding:10px 15px;cursor:pointer}
+  .btn.ghost{background:transparent;border:1px solid var(--bord);color:var(--tx)}
+  .btn.ok{background:var(--mint);color:#06231d}
+  .btn.sm{padding:7px 11px;font-size:12px}
+  .item{display:grid;grid-template-columns:1fr 1fr auto;gap:8px;margin-top:8px}
+  .item.faq{grid-template-columns:1fr 1.4fr auto}
+  .del{background:rgba(255,125,156,.15);border:1px solid var(--bord);color:var(--pink);border-radius:9px;cursor:pointer;padding:0 12px}
+  .out{position:relative;margin-top:12px;background:rgba(0,0,0,.34);border:1px solid var(--bord);border-radius:12px;padding:14px;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;white-space:pre-wrap;word-break:break-word;color:#EFE7CF;max-height:300px;overflow:auto}
+  .note{font-size:12.5px;color:var(--muted);margin-top:12px;border-left:3px solid var(--gold);padding-left:12px}
+  code{background:rgba(0,0,0,.3);padding:2px 6px;border-radius:6px}
+  @media(max-width:680px){.grid2{grid-template-columns:1fr}.item,.item.faq{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="back" href="outils/dashboard/index.html" target="_top">← Dashboard</a>
+    <h1>Mémoire <span class="g">Marketing</span></h1>
+    <p class="lead">L'ADN de la marque que les <b>agents IA</b> utilisent (Analyste, Stratège, Créatif).
+      Plus elle est riche, plus les propositions sont justes. Choisis un client, remplis, enregistre.</p>
+    <label style="margin-top:10px">Client</label>
+    <select id="clientSel" onchange="onClient()"></select>
+  </header>
+
+  <div class="card">
+    <h2>Identité &amp; ton</h2>
+    <div class="grid2">
+      <div><label>Mission</label><input id="mission" placeholder="Ce que la marque fait / pour qui" oninput="build()"></div>
+      <div><label>Cible</label><input id="cible" placeholder="Ex. jeunes pros 25-35, Abidjan" oninput="build()"></div>
+      <div><label>Proposition de valeur</label><input id="proposition" placeholder="Pourquoi elle, pas un concurrent" oninput="build()"></div>
+      <div><label>Secteur</label><input id="secteur" placeholder="Optique, Tech, Restauration…" oninput="build()"></div>
+    </div>
+    <label>Ton de voix</label><input id="ton" placeholder="Ex. chaleureux, expert, accessible" oninput="build()">
+    <label>Mots-clés de marque (séparés par des virgules)</label><input id="motscles" placeholder="proximité, confiance, innovation" oninput="build()">
+  </div>
+
+  <div class="card">
+    <h2>Personas <button class="btn ghost sm" onclick="addItem('persona')" style="margin-left:8px">+ Ajouter</button></h2>
+    <div id="personas"></div>
+  </div>
+
+  <div class="card">
+    <h2>Produits / services <button class="btn ghost sm" onclick="addItem('produit')" style="margin-left:8px">+ Ajouter</button></h2>
+    <div id="produits"></div>
+  </div>
+
+  <div class="card">
+    <h2>FAQ (questions fréquentes) <button class="btn ghost sm" onclick="addItem('faq')" style="margin-left:8px">+ Ajouter</button></h2>
+    <div id="faqs"></div>
+  </div>
+
+  <div class="card">
+    <h2>Enregistrer</h2>
+    <p class="lead" style="font-size:13px">Clique <b>Enregistrer</b> : AWEMA écrit dans ton dépôt et met à
+      jour l'IA <b>en arrière-plan</b>. La 1ʳᵉ fois, tu connectes ton GitHub (une seule fois).</p>
+    <div class="row">
+      <button class="btn" id="saveBtn" onclick="enregistrerAuto()">💾 Enregistrer</button>
+      <span id="saveMsg" style="font-size:12.5px;color:var(--muted)"></span>
+    </div>
+    <details style="margin-top:16px">
+      <summary style="cursor:pointer;color:var(--muted);font-size:12.5px">⚙️ Mode manuel (avancé) — sans connexion GitHub</summary>
+      <label style="margin-top:12px">A · Fichier <code>modules/marketing/clients/&lt;slug&gt;/_donnees/memoire.json</code></label>
+      <div class="out" id="json">—<button class="btn sm" id="bj" style="position:absolute;top:10px;right:10px" onclick="cp('json','bj')">Copier</button></div>
+      <div class="row"><button class="btn ghost" onclick="dl()">⬇️ Télécharger memoire.json</button></div>
+      <label style="margin-top:14px">B · Commande opérateur</label>
+      <div class="out" id="cmd">—<button class="btn sm" id="bc" style="position:absolute;top:10px;right:10px" onclick="cp('cmd','bc')">Copier</button></div>
+      <div class="note">Dans Claude Code : « <b>/awema client memoire …</b> ». Puis régénère : <code>python3 outils/_data/build.py</code>.</div>
+    </details>
+  </div>
+</div>
+
+<script src="outils/_data/agence.js" onerror=""></script>
+<script src="outils/_data/config.js" onerror=""></script>
+<script src="outils/_data/apply.js"></script>
+<script src="outils/_design/awema-github.js"></script>
+<script>
+  const REG=(window.AWEMA_REGISTRY&&window.AWEMA_REGISTRY.clients)||[];
+  const F=id=>(document.getElementById(id).value||'').trim();
+  const lists={persona:[],produit:[],faq:[]};
+  function param(){const m=location.search.match(/client=([^&]+)/);return m?decodeURIComponent(m[1]):'';}
+
+  function fillSelector(){
+    const sel=document.getElementById('clientSel');
+    sel.innerHTML=REG.length?REG.map(c=>`<option value="${c.id}">${c.nom}</option>`).join(''):'<option>— aucun client —</option>';
+    const want=param(); if(want&&REG.find(c=>c.id===want))sel.value=want;
+  }
+  function curClient(){return REG.find(c=>c.id===document.getElementById('clientSel').value)||null;}
+
+  function rowHtml(kind,i,v){
+    if(kind==='faq')return `<div class="item faq"><input data-k="faq" data-i="${i}" data-f="q" value="${(v.q||'').replace(/"/g,'&quot;')}" placeholder="Question" oninput="sync(this)"><input data-k="faq" data-i="${i}" data-f="r" value="${(v.r||'').replace(/"/g,'&quot;')}" placeholder="Réponse" oninput="sync(this)"><button class="del" onclick="rm('faq',${i})">✕</button></div>`;
+    if(kind==='persona')return `<div class="item"><input data-k="persona" data-i="${i}" data-f="nom" value="${(v.nom||'').replace(/"/g,'&quot;')}" placeholder="Nom du persona" oninput="sync(this)"><input data-k="persona" data-i="${i}" data-f="besoin" value="${(v.besoin||'').replace(/"/g,'&quot;')}" placeholder="Besoin / objection" oninput="sync(this)"><button class="del" onclick="rm('persona',${i})">✕</button></div>`;
+    return `<div class="item"><input data-k="produit" data-i="${i}" data-f="nom" value="${(v.nom||'').replace(/"/g,'&quot;')}" placeholder="Produit / service" oninput="sync(this)"><input data-k="produit" data-i="${i}" data-f="description" value="${(v.description||'').replace(/"/g,'&quot;')}" placeholder="Description courte" oninput="sync(this)"><button class="del" onclick="rm('produit',${i})">✕</button></div>`;
+  }
+  const cont={persona:'personas',produit:'produits',faq:'faqs'};
+  function render(kind){document.getElementById(cont[kind]).innerHTML=lists[kind].map((v,i)=>rowHtml(kind,i,v)).join('');}
+  function addItem(kind){lists[kind].push(kind==='faq'?{q:'',r:''}:(kind==='persona'?{nom:'',besoin:'',objection:''}:{nom:'',description:'',prix:''}));render(kind);build();}
+  function rm(kind,i){lists[kind].splice(i,1);render(kind);build();}
+  function sync(el){const k=el.dataset.k,i=+el.dataset.i,f=el.dataset.f;lists[k][i][f]=el.value;build();}
+
+  function onClient(){
+    const c=curClient(),m=(c&&c.memoire)||{};
+    const id=m.identite||{};
+    document.getElementById('mission').value=id.mission||'';
+    document.getElementById('cible').value=id.cible||'';
+    document.getElementById('proposition').value=id.proposition_valeur||'';
+    document.getElementById('secteur').value=id.secteur||c&&c.secteur||'';
+    document.getElementById('ton').value=m.ton||'';
+    document.getElementById('motscles').value=((m.charte||{}).mots_cles||[]).join(', ');
+    lists.persona=(m.personas||[]).map(x=>({nom:x.nom||'',besoin:x.besoin||'',objection:x.objection||''}));
+    lists.produit=(m.produits||[]).map(x=>({nom:x.nom||'',description:x.description||'',prix:x.prix||''}));
+    lists.faq=(m.faq||[]).map(x=>({q:x.q||'',r:x.r||''}));
+    render('persona');render('produit');render('faq');build();
+  }
+
+  function memoire(){
+    return {
+      identite:{mission:F('mission'),proposition_valeur:F('proposition'),cible:F('cible'),secteur:F('secteur')},
+      ton:F('ton'),
+      charte:{couleurs:[],polices:[],mots_cles:F('motscles')?F('motscles').split(',').map(s=>s.trim()).filter(Boolean):[]},
+      personas:lists.persona.filter(p=>p.nom),
+      produits:lists.produit.filter(p=>p.nom),
+      faq:lists.faq.filter(p=>p.q),
+      campagnes:[],performances_synthese:"",references_visuelles:[]
+    };
+  }
+  function build(){
+    const slug=document.getElementById('clientSel').value||'<slug>';
+    const m=memoire();
+    const setTxt=(id,t)=>{const el=document.getElementById(id);el.childNodes[0].textContent=t;};
+    setTxt('json',JSON.stringify(m,null,2));
+    const esc=s=>'"'+String(s).replace(/"/g,'\\"')+'"';
+    let p=['python3 scripts/awema.py client memoire '+slug];
+    const id=m.identite;
+    if(id.mission)p.push('mission='+esc(id.mission));
+    if(id.cible)p.push('cible='+esc(id.cible));
+    if(id.proposition_valeur)p.push('proposition='+esc(id.proposition_valeur));
+    if(id.secteur)p.push('secteur='+esc(id.secteur));
+    if(m.ton)p.push('ton='+esc(m.ton));
+    m.charte.mots_cles.forEach(k=>p.push('mot_cle+='+esc(k)));
+    m.personas.forEach(x=>p.push('persona+='+esc(x.nom+'::'+(x.besoin||''))));
+    m.produits.forEach(x=>p.push('produit+='+esc(x.nom+'::'+(x.description||''))));
+    m.faq.forEach(x=>p.push('faq+='+esc(x.q+'::'+(x.r||''))));
+    setTxt('cmd',p.join(' '));
+    window.__mem=m;
+  }
+  async function cp(id,btn){const el=document.getElementById(id);const t=el.childNodes[0].textContent;
+    try{await navigator.clipboard.writeText(t);const b=document.getElementById(btn);b.textContent='Copié ✓';b.classList.add('ok');setTimeout(()=>{b.textContent='Copier';b.classList.remove('ok');},1400);}catch(e){}}
+  function dl(){const blob=new Blob([JSON.stringify(window.__mem,null,2)],{type:'application/json'});
+    const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='memoire.json';a.click();}
+
+  async function enregistrerAuto(){
+    const slug=document.getElementById('clientSel').value;
+    const msg=document.getElementById('saveMsg'), btn=document.getElementById('saveBtn');
+    if(!slug){msg.style.color='#FF7D9C';msg.textContent='Choisis d\'abord un client.';return;}
+    build();                                   // s'assure que window.__mem est à jour
+    AwemaGH.ensure(async function(ok){
+      if(!ok)return;
+      const path='modules/marketing/clients/'+slug+'/_donnees/memoire.json';
+      btn.disabled=true; msg.style.color='var(--muted)'; msg.textContent='💾 Enregistrement dans ton dépôt…';
+      try{
+        await AwemaGH.saveFile(path, window.__mem, 'AWEMA : mémoire '+slug);
+        msg.style.color='#34E5C4';
+        msg.textContent='✅ Enregistré ('+AwemaGH.who()+') — l\'IA met à jour tes propositions en arrière-plan (1-2 min).';
+        AwemaGH.runWorkflow('agents.yml');     // enrichissement IA (best-effort, sans bloquer)
+      }catch(e){ msg.style.color='#FF7D9C'; msg.textContent='❌ '+e.message; }
+      finally{ btn.disabled=false; }
+    });
+  }
+  fillSelector(); onClient();
+</script>
+<script src="outils/_design/awema-fork.js"></script>
+<script src="outils/_design/abeille.js" data-aide="memoire"></script>
+</body>
+</html>

@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AWEMA — Le guide complet pour installer ton agence (sans rien y connaître)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<meta name="description" content="Tutoriel pas à pas, pensé pour les débutants : du fork à AWEMA qui tourne avec tes vrais clients. Aucune commande, juste cliquer et coller.">
+<style>
+  :root{--nuit:#222222;--ciel:#FFC94D;--gold:#D4AF37;--violet:#EDA914;--mint:#34E5C4;--pink:#FF7D9C;
+    --tx:#F1EDE2;--muted:#B3AA92;--card:rgba(255,255,255,.05);--bord:rgba(255,255,255,.13)}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:Poppins,system-ui,Segoe UI,Roboto,sans-serif;color:var(--tx);line-height:1.65;
+    background:radial-gradient(1100px 650px at 50% -12%,#2A2A2A,#222222 62%,#1E1E1E);min-height:100vh;padding-bottom:80px}
+  .wrap{max-width:880px;margin:0 auto;padding:0 22px}
+  header{padding:46px 0 6px}
+  .back{color:var(--muted);text-decoration:none;font-size:13px}
+  h1{font-family:Montserrat,sans-serif;font-weight:800;font-size:clamp(27px,4.8vw,40px);margin-top:12px;letter-spacing:-.02em}
+  h1 .g{background:linear-gradient(120deg,var(--gold),#f2d479);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .lead{color:var(--muted);margin-top:10px;font-size:15px}
+  .pill{display:inline-block;font-size:12px;color:var(--muted);border:1px solid var(--bord);border-radius:20px;padding:5px 12px;background:var(--card);margin-top:14px}
+  /* image mentale */
+  .idea{margin-top:20px;border:1px solid rgba(52,229,196,.35);background:linear-gradient(120deg,rgba(52,229,196,.1),rgba(255,201,77,.06));border-radius:16px;padding:18px 20px}
+  .idea b{color:var(--mint)}
+  /* sommaire */
+  .toc{margin-top:18px;background:var(--card);border:1px solid var(--bord);border-radius:16px;padding:16px 20px}
+  .toc h3{font-family:Montserrat,sans-serif;font-size:14px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:10px}
+  .toc ol{margin-left:18px;columns:2;column-gap:26px;font-size:13.5px}
+  .toc a{color:var(--ciel);text-decoration:none}
+  @media(max-width:620px){.toc ol{columns:1}}
+  /* étapes */
+  .step{background:var(--card);border:1px solid var(--bord);border-radius:18px;padding:22px;margin-top:18px;backdrop-filter:blur(8px);scroll-margin-top:16px}
+  .step h2{font-family:Montserrat,sans-serif;font-size:19px;display:flex;align-items:center;gap:12px;line-height:1.3}
+  .num{flex:0 0 34px;width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font-size:15px;font-weight:800;
+    color:#1B1B1B;background:linear-gradient(135deg,var(--ciel),var(--violet))}
+  .step p{color:#E6E0CF;font-size:14px;margin-top:10px}
+  .step ul,.step ol{margin:8px 0 0 20px;color:#DED8C6;font-size:13.7px}
+  .step li{margin:5px 0}
+  .why{font-size:13px;color:var(--muted);margin-top:8px;font-style:italic}
+  .btn{display:inline-flex;align-items:center;gap:8px;margin-top:14px;background:linear-gradient(135deg,var(--ciel),var(--violet));
+    color:#fff;text-decoration:none;font-weight:700;font-size:13.5px;border:0;border-radius:11px;padding:11px 16px;cursor:pointer}
+  .btn.gh{background:transparent;border:1px solid var(--bord);color:var(--tx);font-weight:600}
+  .acts{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+  .see{margin-top:12px;border-left:3px solid var(--mint);background:rgba(52,229,196,.06);padding:9px 12px;border-radius:0 8px 8px 0;font-size:13px}
+  .see b{color:var(--mint)}
+  .warn{margin-top:12px;border-left:3px solid var(--gold);background:rgba(212,175,55,.07);padding:9px 12px;border-radius:0 8px 8px 0;font-size:12.7px;color:#ffe6ad}
+  .tag{font-size:11px;color:#06231d;background:var(--mint);border-radius:6px;padding:2px 7px;font-weight:700}
+  code{background:rgba(0,0,0,.32);padding:2px 6px;border-radius:6px;font-size:12.5px}
+  .net{display:flex;align-items:flex-start;gap:11px;padding:11px 13px;border:1px solid var(--bord);border-radius:12px;background:rgba(255,255,255,.03);margin-top:9px}
+  .net .pi{width:30px;height:30px;border-radius:8px;display:grid;place-items:center;color:#fff;font-weight:800;font-family:Montserrat;font-size:13px;flex:0 0 auto}
+  .net .nm{font-weight:600;font-size:13.5px} .net .ds{font-size:12.5px;color:var(--muted)}
+  .net a{font-size:12.5px;color:var(--ciel);text-decoration:none;white-space:nowrap}
+  .end{margin-top:26px;text-align:center;border:1px solid var(--bord);border-radius:18px;padding:26px 20px;background:linear-gradient(120deg,rgba(237,169,20,.12),rgba(255,201,77,.08))}
+  .end h2{font-family:Montserrat,sans-serif;font-size:22px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="back" href="index.html">← Accueil</a>
+    <h1>Installer AWEMA pour <span class="g">ton agence</span></h1>
+    <p class="lead">Le guide complet, pensé pour <b>débuter de zéro</b>. Tu ne tapes aucune commande :
+      tu <b>cliques, colles, attends</b>. Compte ~30 min la première fois.</p>
+    <span class="pill">🐝 Awa t'accompagne à chaque page · 100 % navigateur</span>
+
+    <div class="idea">
+      <b>L'idée en une image.</b> AWEMA est un <b>robot-assistant gratuit</b> pour ton agence. Il a besoin d'un
+      <b>bureau</b> pour vivre et ranger ses dossiers : ce bureau, c'est <b>GitHub</b> (gratuit). Ce guide, c'est :
+      installer ton robot dans son bureau, lui donner une cervelle (une IA gratuite), et le brancher aux réseaux
+      de tes clients pour qu'il aille chercher leurs vrais chiffres tout seul.
+    </div>
+
+    <div class="toc">
+      <h3>Le chemin (14 étapes)</h3>
+      <ol>
+        <li><a href="#s0">Créer un compte GitHub</a></li>
+        <li><a href="#s1">Copier le projet (fork)</a></li>
+        <li><a href="#s2">Allumer ton site</a></li>
+        <li><a href="#s3">La clé d'accès (token)</a></li>
+        <li><a href="#s4">Connecter GitHub à l'app</a></li>
+        <li><a href="#s5">Donner une cervelle (IA)</a></li>
+        <li><a href="#s6">Mettre ton agence à ta marque</a></li>
+        <li><a href="#s7">Ajouter tes clients</a></li>
+        <li><a href="#s8">Remplir leur ADN marketing</a></li>
+        <li><a href="#s9">Brancher les réseaux</a></li>
+        <li><a href="#s10">Lancer la récupération</a></li>
+        <li><a href="#s11">Lire ton cockpit</a></li>
+        <li><a href="#s12">Ça tourne tout seul</a></li>
+        <li><a href="#s13">Si ça coince</a></li>
+      </ol>
+    </div>
+  </header>
+
+  <!-- 0 -->
+  <div class="step" id="s0">
+    <h2><span class="num">0</span> Créer un compte GitHub <span class="tag">gratuit</span></h2>
+    <p>GitHub, c'est le « bureau en ligne » gratuit où ton AWEMA va vivre. Si tu n'as pas encore de compte,
+      crées-en un (un email + un mot de passe suffisent).</p>
+    <div class="acts"><a class="btn" href="https://github.com/signup" target="_blank" rel="noopener">Créer mon compte GitHub ↗</a></div>
+    <div class="see"><b>👀 Tu sauras que c'est bon</b> quand tu peux te connecter sur github.com et voir ton tableau de bord.</div>
+  </div>
+
+  <!-- 1 -->
+  <div class="step" id="s1">
+    <h2><span class="num">1</span> Copier le projet pour toi (le « fork »)</h2>
+    <p>Un <b>fork</b>, c'est faire <b>ta propre copie</b> du projet AWEMA — comme photocopier un classeur modèle
+      pour le remplir avec <b>tes</b> dossiers. Cette copie t'appartient, personne d'autre ne la voit.</p>
+    <p class="why">Pourquoi : ainsi tes clients et tes chiffres restent chez <b>toi</b>, jamais mélangés avec ceux d'une autre agence.</p>
+    <div class="acts"><a class="btn" data-upstream href="https://github.com/awema-test/awema-os/fork" target="_blank" rel="noopener">🍴 Copier le projet (Fork)</a></div>
+    <div class="see"><b>👀 Tu sauras que c'est bon</b> quand le projet apparaît sous <b>ton</b> nom : <code>ton-pseudo / AwemA-…</code>.</div>
+    <div class="warn"><b>⚠️ À ne pas sauter — le piège le plus courant.</b> Sur une copie (fork), GitHub
+      <b>désactive l'automatisation</b> par sécurité : sans ce clic, rien ne tournera tout seul (synchro, agents IA,
+      publication), <b>sans message d'erreur</b>. Ouvre l'onglet <b>Actions</b> de ta copie ; si un bandeau jaune
+      s'affiche, clique le bouton vert <b>« I understand my workflows, go ahead and enable them »</b>.
+      <br><span class="ds">À refaire si tu laisses ta copie inactive plus de 60 jours (GitHub rendort les tâches planifiées).</span></div>
+  </div>
+
+  <!-- 2 -->
+  <div class="step" id="s2">
+    <h2><span class="num">2</span> Allumer ton site (« GitHub Pages »)</h2>
+    <p>« Pages » transforme ta copie en un <b>vrai site web</b> — c'est l'écran d'AWEMA que tu vas utiliser tous les jours.</p>
+    <ol>
+      <li>Dans <b>ta</b> copie : clique l'onglet <b>Settings</b> (Réglages).</li>
+      <li>Menu de gauche → <b>Pages</b>.</li>
+      <li>Sous <i>Source</i> : choisis la branche <code>main</code> et le dossier <code>/ (root)</code>, puis <b>Save</b>.</li>
+      <li>Patiente 1-2 min : GitHub affiche <b>« Your site is live at … »</b> avec ton adresse.</li>
+    </ol>
+    <div class="acts"><a class="btn gh" id="btnPages" href="https://github.com/awema-test/awema-os/settings/pages" target="_blank" rel="noopener">Ouvrir les réglages Pages ↗</a></div>
+    <script>
+      // Sur TON site (fork), le bouton pointe vers TES réglages Pages. Sinon (lecture depuis le
+      // site AWEMA d'origine), il mène à la page « fork » de GitHub qui liste TA copie existante.
+      (function(){ var a=document.getElementById('btnPages');
+        document.addEventListener('DOMContentLoaded',function(){
+          var i=window.AwemaFork&&AwemaFork.info(), up=window.AwemaFork&&AwemaFork.upstream;
+          if(i&&up&&(i.owner!==up.owner||i.repo!==up.repo)){
+            a.href='https://github.com/'+i.owner+'/'+i.repo+'/settings/pages';
+          }else{
+            a.href='https://github.com/awema-test/awema-os/fork';
+            a.textContent='Retrouver ma copie (fork) → Settings → Pages ↗';
+            a.setAttribute('data-upstream','');
+          }
+        });})();
+    </script>
+    <div class="see"><b>👀 Note bien ton adresse</b> <code>https://ton-pseudo.github.io/AwemA-…/</code> — c'est <b>l'adresse de ton AWEMA</b>. Mets-la en favori et ouvre-la.</div>
+    <div class="warn">À partir d'ici, fais le reste <b>depuis cette adresse</b> (ton site), plus depuis github.com.</div>
+  </div>
+
+  <!-- 3 -->
+  <div class="step" id="s3">
+    <h2><span class="num">3</span> Fabriquer la « clé d'accès » (le token)</h2>
+    <p>Pour qu'AWEMA puisse <b>ranger des choses dans ton bureau GitHub tout seul</b>, il lui faut une clé. On
+      l'appelle un <b>token</b> (ou « PAT »). C'est une longue suite de caractères, à créer <b>une seule fois</b>.</p>
+    <ol>
+      <li>Ouvre la page de création (bouton ci-dessous).</li>
+      <li><b>Token name</b> : écris <code>awema</code>. <b>Expiration</b> : 90 jours (ou plus).</li>
+      <li><b>Repository access</b> → <i>Only select repositories</i> → choisis <b>ta copie</b> du projet.</li>
+      <li><b>Permissions</b> → <i>Repository permissions</i> → mets sur <b>Read and write</b> (lire+écrire) :
+        <b>Contents</b>, <b>Actions</b>, <b>Variables</b>, <b>Secrets</b>.</li>
+      <li>Tout en bas : <b>Generate token</b> → <b>copie</b> la suite de caractères (tu ne la reverras plus).</li>
+    </ol>
+    <div class="acts"><a class="btn" href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">Créer ma clé (token) ↗</a></div>
+    <div class="warn">🔒 Cette clé est <b>personnelle</b>. Ne la partage avec personne et ne la colle nulle part en
+      public. AWEMA la garde <b>sur ton appareil</b>, jamais dans le projet.</div>
+  </div>
+
+  <!-- 4 -->
+  <div class="step" id="s4">
+    <h2><span class="num">4</span> Présenter la clé à AWEMA</h2>
+    <p>Ouvre <b>la page Mise en route</b> de ton AWEMA → bouton <b>« 🔗 Connecter mon GitHub »</b>. Une petite
+      fenêtre s'ouvre : colle ta clé, ton pseudo (owner) et le nom de ta copie (repo). Valide.</p>
+    <div class="acts"><a class="btn" href="configuration.html">⚙️ Ouvrir la Mise en route</a></div>
+    <div class="see"><b>👀 Tu sauras que c'est bon</b> quand tu vois <b>« ✅ Connecté »</b> et que la pastille
+      GitHub passe au vert. C'est <b>l'étape clé</b> : à partir de là, AWEMA fait tout le reste tout seul.</div>
+  </div>
+
+  <!-- 5 -->
+  <div class="step" id="s5">
+    <h2><span class="num">5</span> Donner une « cervelle » à ton robot (une IA gratuite)</h2>
+    <p>Pour que les analyses et recommandations marchent, AWEMA a besoin d'une IA. <b>Groq</b> est gratuit et
+      parfait pour démarrer. Crée un compte, génère une clé, copie-la.</p>
+    <p>Reviens sur la Mise en route → étape <b>« Cerveau — une IA »</b> → choisis <b>Groq</b> → colle ta clé →
+      <b>« ⚡ Enregistrer la clé IA »</b>.</p>
+    <div class="acts">
+      <a class="btn gh" href="https://console.groq.com/keys" target="_blank" rel="noopener">Obtenir une clé Groq ↗</a>
+      <a class="btn gh" href="connect-ia.html">Comparer les IA gratuites</a>
+    </div>
+    <div class="see"><b>👀 Tu sauras que c'est bon</b> quand tu vois « ✅ branché », ou qu'une fenêtre t'ouvre le bon
+      écran GitHub avec ta clé <b>déjà copiée</b> — il ne reste qu'à coller et valider.</div>
+    <div class="warn">Sans IA, AWEMA marche quand même : le feed « 3 choses à faire aujourd'hui » fonctionne. L'IA
+      sert aux analyses et idées plus poussées.</div>
+  </div>
+
+  <!-- 6 -->
+  <div class="step" id="s6">
+    <h2><span class="num">6</span> Mettre AWEMA à <b>ta</b> marque</h2>
+    <p>Donne à l'outil le nom, le logo et les couleurs de <b>ton</b> agence. Tout l'écran s'adapte ensuite.</p>
+    <div class="acts"><a class="btn" href="setup.html">🎨 Personnaliser mon agence</a></div>
+    <div class="see"><b>👀 Tu sauras que c'est bon</b> quand le nom et les couleurs de ton agence apparaissent partout dans l'outil.</div>
+  </div>
+
+  <!-- 7 -->
+  <div class="step" id="s7">
+    <h2><span class="num">7</span> Ajouter tes clients</h2>
+    <p>Crée une fiche par client. Le nom suffit pour commencer — aucun code, juste un formulaire.</p>
+    <div class="acts"><a class="btn" href="nouveau-client.html">➕ Ajouter un client</a></div>
+    <div class="see"><b>👀 Tu sauras que c'est bon</b> quand ton client apparaît dans la liste et dans le cockpit.</div>
+  </div>
+
+  <!-- 8 -->
+  <div class="step" id="s8">
+    <h2><span class="num">8</span> Remplir l'« ADN marketing » de chaque client</h2>
+    <p>C'est la <b>mémoire</b> du client : son ton, ses produits, sa cible, ses interdits. Plus elle est remplie,
+      plus les idées et textes que l'IA propose sont <b>justes</b>.</p>
+    <div class="acts"><a class="btn" href="memoire.html">🧠 Remplir la mémoire</a></div>
+    <div class="see"><b>👀 Bon réflexe</b> : remplis-la au fil de l'eau. Même quelques lignes au début changent beaucoup la qualité.</div>
+  </div>
+
+  <!-- 9 -->
+  <div class="step" id="s9">
+    <h2><span class="num">9</span> Brancher les réseaux de tes clients</h2>
+    <p>Pour chaque réseau utilisé par un client, tu le connectes <b>une fois</b>. Tu ne branches que ceux dont tu
+      as besoin. Chaque page te guide pas à pas.</p>
+
+    <div class="net"><span class="pi" style="background:#1877F2">f</span>
+      <div style="flex:1"><div class="nm">Facebook &amp; Instagram</div>
+        <div class="ds">Un seul « token Meta » découvre toutes les Pages. Tu le colles → AWEMA l'enregistre → « Découvrir mes Pages ».</div></div>
+      <a href="connect-facebook.html">Brancher →</a></div>
+
+    <div class="net"><span class="pi" style="background:#000">♪</span>
+      <div style="flex:1"><div class="nm">TikTok</div>
+        <div class="ds">Tu colles 3 clés, puis <b>clic → Authorize → retour → Finaliser</b>. AWEMA fait l'échange en coulisses.</div></div>
+      <a href="connect-tiktok.html">Brancher →</a></div>
+
+    <div class="net"><span class="pi" style="background:#FF0000">▶</span>
+      <div style="flex:1"><div class="nm">YouTube</div>
+        <div class="ds">Le plus simple : tu colles une clé API → « Synchroniser ».</div></div>
+      <a href="connect-youtube.html">Brancher →</a></div>
+
+    <div class="net"><span class="pi" style="background:#0A66C2">in</span>
+      <div style="flex:1"><div class="nm">LinkedIn</div>
+        <div class="ds">Comme TikTok : tu colles tes clés, puis clic → Authorize → Finaliser.</div></div>
+      <a href="connect-linkedin.html">Brancher →</a></div>
+
+    <div class="net"><span class="pi" style="background:#25D366">✆</span>
+      <div style="flex:1"><div class="nm">WhatsApp</div>
+        <div class="ds">Tu colles le token et les identifiants WhatsApp Business.</div></div>
+      <a href="connect-whatsapp.html">Brancher →</a></div>
+
+    <div class="warn">⚠️ Pour gérer de <b>vrais comptes de clients</b> (pas tes comptes perso), Meta/TikTok/LinkedIn
+      demandent souvent une <b>app vérifiée + validation</b> de leur côté. C'est une exigence des plateformes,
+      pas d'AWEMA — c'est incompressible. Chaque page te l'explique.</div>
+  </div>
+
+  <!-- 10 -->
+  <div class="step" id="s10">
+    <h2><span class="num">10</span> Lancer la récupération des chiffres</h2>
+    <p>Une fois un réseau branché, clique son bouton <b>« Synchroniser »</b> (ou « Découvrir mes Pages »). AWEMA
+      va chercher les vraies données en coulisses.</p>
+    <div class="see"><b>👀 Patiente 1 à 2 minutes</b> (le robot travaille), puis ouvre le cockpit : les chiffres
+      réels apparaissent. C'est normal que ce ne soit pas instantané.</div>
+  </div>
+
+  <!-- 11 -->
+  <div class="step" id="s11">
+    <h2><span class="num">11</span> Piloter depuis ton cockpit</h2>
+    <p>Le tableau de bord réunit tout : audience réelle, commentaires à répondre, meilleurs posts, cadence, et le
+      feed <b>« 3 choses à faire aujourd'hui »</b>.</p>
+    <div class="acts"><a class="btn" href="outils/dashboard/index.html">📊 Ouvrir le cockpit</a></div>
+  </div>
+
+  <!-- 12 -->
+  <div class="step" id="s12">
+    <h2><span class="num">12</span> Ensuite, ça tourne <b>tout seul</b></h2>
+    <p>Tu n'as plus rien à faire : AWEMA <b>resynchronise périodiquement</b> et fait travailler ses agents
+      (analyste, stratège, créatif) <b>chaque jour et après chaque synchro</b>. Ton cockpit reste à jour
+      sans intervention.</p>
+    <div class="see"><b>👀 Concrètement</b> : tu ouvres ton AWEMA quand tu veux, les analyses et recommandations sont déjà fraîches.</div>
+  </div>
+
+  <!-- 13 -->
+  <div class="step" id="s13">
+    <h2><span class="num">13</span> Si quelque chose ne marche pas (c'est normal)</h2>
+    <ul>
+      <li><b>Message rouge ?</b> C'est souvent une clé mal collée. Recommence l'étape — ça ne casse rien.</li>
+      <li><b>Pas sûr d'avoir réussi ?</b> Cherche le ✅ vert ou le message « enregistré / lancé ».</li>
+      <li><b>Une synchro a échoué ?</b> Sur GitHub → onglet <b>Actions</b> → clique le run rouge → regarde la
+        ligne en erreur (souvent « secret manquant » = un token à reposer).</li>
+      <li><b>Perdu sur une page ?</b> Clique <b>Awa</b> 🐝 en bas à droite : elle explique la page.</li>
+    </ul>
+    <div class="warn">Bloqué ? Note <b>à quelle étape</b> et <b>le message exact</b>, et demande de l'aide — avec ça, on débloque vite.</div>
+  </div>
+
+  <div class="end">
+    <h2>🎉 Bravo, ton agence tourne sur AWEMA</h2>
+    <p style="color:var(--muted);margin-top:8px">Tu peux maintenant ajouter d'autres clients, brancher d'autres
+      réseaux, et laisser les agents travailler pour toi.</p>
+    <div class="acts" style="justify-content:center">
+      <a class="btn" href="configuration.html">⚙️ Suivre ma progression</a>
+      <a class="btn gh" href="outils/dashboard/index.html">📊 Ouvrir le cockpit</a>
+    </div>
+  </div>
+</div>
+
+<script src="outils/_data/config.js" onerror=""></script>
+<script src="outils/_data/apply.js" onerror=""></script>
+<script src="outils/_design/awema-fork.js"></script>
+<script src="outils/_design/abeille.js" data-aide="tutoriel"></script>
+</body>
+</html>

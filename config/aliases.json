@@ -1,0 +1,4 @@
+{
+  "_doc": "Alias de slugs : redirige les données d'un compte (clé de connecteur) vers la fiche d'un client canonique. Utile quand un compte TikTok/LinkedIn est rattaché à un client existant sans renommer la Variable/clé côté plateforme. Forme : { \"<reseau>\": { \"<slug-source>\": \"<slug-client-canonique>\" } }.",
+  "tiktok": {}
+}

@@ -1,0 +1,46 @@
+name: "Commit & push (sûr)"
+description: >
+  Committe les changements du run puis pousse sur la branche courante SANS jamais
+  perdre de commit en silence : rebase sur l'état distant, retry en cas de course,
+  et échec BRUYANT (exit 1) si un conflit ne peut être résolu — contrairement à
+  l'ancien « git pull --rebase || true » qui masquait les pertes de données.
+
+inputs:
+  message:
+    description: "Message de commit"
+    required: true
+
+runs:
+  using: "composite"
+  steps:
+    - shell: bash
+      # Le message passe par l'ENV (jamais interpolé dans le texte du script) : robuste et sans injection.
+      env:
+        AWEMA_COMMIT_MSG: ${{ inputs.message }}
+      run: |
+        set -uo pipefail
+        git config user.name "awema-bot"
+        git config user.email "bot@awema.local"
+        if git diff --quiet && git diff --cached --quiet; then
+          echo "ℹ️ Aucun changement à committer."
+          exit 0
+        fi
+        git add -A
+        git commit -m "$AWEMA_COMMIT_MSG"
+        branche="${GITHUB_REF_NAME}"
+        for tentative in 1 2 3 4 5; do
+          git fetch origin "$branche"
+          if ! git rebase "origin/$branche"; then
+            git rebase --abort || true
+            echo "::error::Conflit de rebase sur $branche — commit NON poussé. Aucune donnée n'a été écrasée ; relancez le workflow ou résolvez à la main."
+            exit 1
+          fi
+          if git push origin "HEAD:$branche"; then
+            echo "✅ Poussé sur $branche (tentative $tentative)."
+            exit 0
+          fi
+          echo "⚠️ Push rejeté (commit concurrent arrivé entre-temps), nouvelle tentative $tentative…"
+          sleep $((tentative * 3))
+        done
+        echo "::error::Échec du push après 5 tentatives sur $branche."
+        exit 1

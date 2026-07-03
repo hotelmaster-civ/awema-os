@@ -1,0 +1,7 @@
+{
+  "_doc": "Licence d'activation AWEMA. Outil OPÉRATIONNEL de contrôle (suivi + base légale), PAS une serrure incontournable : le code étant open-source, la vérification est éditable. Le vrai verrou reste l'accès API (cf. docs/ACCES-AGENCE.md, modèle B — AWEMA Tech Provider). L'éditeur délivre une clé par agence (awema licence delivrer \"Nom\"), l'agence la pose (awema licence set <cle>), et l'éditeur peut révoquer.",
+  "agence": "",
+  "cle": "",
+  "statut": "non-active",
+  "delivre_par": "AWEMA"
+}

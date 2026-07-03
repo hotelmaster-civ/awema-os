@@ -1,0 +1,48 @@
+name: TikTok — échanger le code (Pages-native)
+
+# Déclenché depuis le navigateur (oauth.html) après l'autorisation TikTok.
+# Le client_secret reste un Secret GitHub : l'échange code→refresh_token se fait ICI,
+# jamais dans le navigateur (page Pages = publique). Le refresh_token rotatif est
+# enregistré dans la Variable TIKTOK_TOKENS via le PAT.
+#
+# PRÉ-REQUIS (mêmes Secrets que Sync TikTok — à poser via configuration.html) :
+#   Secret  TIKTOK_CLIENT_KEY · TIKTOK_CLIENT_SECRET · TIKTOK_PAT (Variables: R/W)
+#
+# Le `code` (entrée) est à usage unique et expire vite : son apparition dans le journal
+# du run est sans danger (inutilisable sans le client_secret).
+
+on:
+  workflow_dispatch:
+    inputs:
+      code:
+        description: "Code OAuth renvoyé par TikTok"
+        required: true
+      redirect_uri:
+        description: "Redirect URI EXACTE utilisée à l'autorisation (oauth.html)"
+        required: true
+      slug:
+        description: "Slug client (dossier). Vide = dérivé du nom du compte."
+        required: false
+        default: ""
+
+permissions:
+  contents: read
+
+jobs:
+  exchange:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Échanger le code et enregistrer le refresh token
+        env:
+          TIKTOK_CLIENT_KEY: ${{ secrets.TIKTOK_CLIENT_KEY }}
+          TIKTOK_CLIENT_SECRET: ${{ secrets.TIKTOK_CLIENT_SECRET }}
+          GH_PAT: ${{ secrets.TIKTOK_PAT }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          TT_CODE: ${{ inputs.code }}
+          TT_REDIRECT: ${{ inputs.redirect_uri }}
+          TT_SLUG: ${{ inputs.slug }}
+        run: python3 scripts/tiktok-exchange.py

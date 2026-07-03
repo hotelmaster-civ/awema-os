@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Rapport client — AWEMA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<!-- Rapport de présence digitale PARTAGEABLE et IMPRIMABLE (Ctrl+P → PDF).
+     Données 100 % réelles depuis le registre (outils/_data/agence.js).
+     Thème clair (lecture/impression) ; la courbe vit dans une carte « ruche »
+     sombre où les couleurs du module partagé awema-charts.js sont calibrées. -->
+<style>
+  :root{--noir:#222222;--or:#D4AF37;--miel:#FFC94D;--ambre:#EDA914;--creme:#F7F4EA;
+        --ivoire:#F1EDE2;--encre:#26241C;--muted:#877F69;--ligne:rgba(34,34,34,.12)}
+  *{box-sizing:border-box;margin:0}
+  body{font-family:Poppins,sans-serif;background:var(--creme);color:var(--encre);
+       font-size:14px;line-height:1.6;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .page{max-width:860px;margin:0 auto;padding:34px 26px 60px}
+  h1,h2,h3{font-family:Montserrat,sans-serif;color:var(--noir)}
+  h2{font-size:15px;margin:34px 0 12px;display:flex;align-items:center;gap:10px}
+  h2::after{content:"";flex:1;height:1px;background:var(--ligne)}
+  .head{display:flex;align-items:center;gap:18px;flex-wrap:wrap;
+        border-bottom:3px solid var(--or);padding-bottom:20px}
+  .badge{width:64px;height:64px;border-radius:16px;background:var(--noir);color:var(--miel);
+         display:flex;align-items:center;justify-content:center;
+         font-family:Montserrat,sans-serif;font-weight:800;font-size:24px}
+  .head h1{font-size:26px;font-weight:800}
+  .head .sous{color:var(--muted);font-size:13px}
+  .head .droite{margin-left:auto;text-align:right;font-size:12px;color:var(--muted)}
+  .marque{font-family:Montserrat,sans-serif;font-weight:800;color:var(--noir)}
+  .marque b{color:var(--or)}
+  .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(126px,1fr));gap:12px;margin-top:20px}
+  .kpi{background:#fff;border:1px solid var(--ligne);border-radius:14px;padding:14px 16px}
+  .kpi .v{font-family:Montserrat,sans-serif;font-weight:800;font-size:22px;color:var(--noir)}
+  .kpi .l{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+  /* carte sombre : les couleurs d'awema-charts (encre claire, or/miel) y sont chez elles */
+  .ruche{background:var(--noir);border-radius:16px;padding:18px 20px 12px;color:var(--ivoire);
+         --tx:#F1EDE2;--muted:#B3AA92;--muted2:#877F69;--bg:#222222}
+  .ruche .titre{font-family:Montserrat,sans-serif;font-weight:700;font-size:13.5px;color:#F1EDE2}
+  table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--ligne);
+        border-radius:14px;overflow:hidden;font-size:13px}
+  th{font-family:Montserrat,sans-serif;font-size:11px;text-transform:uppercase;letter-spacing:.06em;
+     color:var(--muted);text-align:left;padding:10px 14px;border-bottom:1px solid var(--ligne)}
+  td{padding:10px 14px;border-bottom:1px solid rgba(34,34,34,.06)}
+  tr:last-child td{border-bottom:none}
+  td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
+  .dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:8px;vertical-align:baseline}
+  .post{background:#fff;border:1px solid var(--ligne);border-radius:14px;padding:14px 16px;margin-bottom:10px}
+  .post .t{font-weight:600;color:var(--noir)}
+  .post .m{font-size:12px;color:var(--muted);margin-top:4px}
+  .post .s{font-size:12.5px;margin-top:6px;display:flex;gap:16px;font-variant-numeric:tabular-nums}
+  a{color:var(--ambre)}
+  .creneau{background:#fff;border:1px solid var(--ligne);border-radius:14px;padding:16px;display:flex;
+           gap:26px;flex-wrap:wrap;align-items:center}
+  .creneau .gros{font-family:Montserrat,sans-serif;font-weight:800;font-size:19px;color:var(--noir)}
+  .pied{margin-top:44px;padding-top:16px;border-top:1px solid var(--ligne);font-size:11.5px;
+        color:var(--muted);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+  .outils{position:fixed;top:14px;right:14px;display:flex;gap:8px}
+  .outils button{font-family:Montserrat,sans-serif;font-weight:700;font-size:12.5px;border:none;
+        border-radius:10px;padding:10px 16px;cursor:pointer;background:var(--or);color:var(--noir)}
+  #vide{max-width:560px;margin:80px auto;text-align:center;display:none}
+  @media print{
+    .outils{display:none}
+    .page{padding:0;max-width:none}
+    body{font-size:12.5px}
+    .post,.kpi,table,.creneau{break-inside:avoid}
+    @page{margin:14mm}
+  }
+</style>
+</head>
+<body>
+<div class="outils"><button onclick="window.print()">🖨 Imprimer / PDF</button></div>
+
+<div id="vide">
+  <h1 style="font-size:20px">Rapport indisponible</h1>
+  <p style="color:var(--muted);margin-top:10px">Client introuvable dans le registre.
+  Ouvre ce rapport depuis la fiche client du dashboard (<code>?client=slug</code>).</p>
+</div>
+
+<div class="page" id="rap" style="display:none"></div>
+
+<script src="outils/_data/platforms.js" onerror=""></script>
+<script src="outils/_data/agence.js" onerror=""></script>
+<script src="outils/_data/config.js" onerror=""></script>
+<script src="outils/_design/awema-format.js"></script>
+<script src="outils/_design/awema-charts.js"></script>
+<script>
+'use strict';
+const REG=window.AWEMA_REGISTRY||{clients:[]};
+const PLAT=window.AWEMA_PLATFORMS||{};
+const id=new URLSearchParams(location.search).get('client')||'';
+const C=(REG.clients||[]).find(c=>c.id===id);
+const nf=AwemaCharts.nf, dfr=AwemaCharts.dfr;
+const djr=iso=>{if(!iso)return '—';const d=new Date(iso);return d.getDate()+' '+AwemaCharts.MOIS_FR[d.getMonth()]+' '+d.getFullYear();};
+
+if(!C){document.getElementById('vide').style.display='block';}
+else{
+  const r=C.reseaux||{}, g=r.global||{}, cad=r.cadence||{}, cr=r.meilleur_creneau;
+  const inter=(g.likes||0)+(g.commentaires||0)+(g.partages||0);
+  document.title='Rapport — '+C.nom+' · AWEMA';
+
+  /* réseaux connectés (audience > 0 ou posts > 0) */
+  const nets=Object.entries(r.par_reseau||{}).filter(([,v])=>v&&((v.abonnes||0)>0||(v.posts||0)>0));
+
+  /* top posts (5 max) */
+  const tops=(r.top_posts||[]).slice(0,5);
+
+  /* planning : publications passées par la file ADR-010 */
+  const plan=(C.planning||[]).filter(p=>p&&p.statut&&p.statut!=='brouillon');
+
+  const ev=(r.evolution_audience||[]);
+  const cc=AwemaCharts.courbeAudience(ev);
+
+  const vz=r.visuels||{};   // avatar + couverture réels du compte (synchro)
+  document.getElementById('rap').innerHTML=`
+  ${vz.couverture?`<div style="height:120px;border-radius:16px;overflow:hidden;margin-bottom:18px;background:#222222">
+    <img src="${vz.couverture}" alt="" style="width:100%;height:100%;object-fit:cover;display:block" onerror="this.parentNode.style.display='none'"></div>`:''}
+  <div class="head">
+    ${vz.photo?`<img src="${vz.photo}" alt="" style="width:64px;height:64px;border-radius:16px;object-fit:cover;border:2px solid var(--or)" onerror="this.outerHTML='<div class=badge>${(C.initiales||'?')}</div>'">`
+      :`<div class="badge">${C.initiales||(C.nom||'?').slice(0,2).toUpperCase()}</div>`}
+    <div>
+      <h1>${esc(C.nom)}</h1>
+      <div class="sous">${esc(C.secteur||'')}${C.lieu?' · '+esc(C.lieu):''}${C.slogan?' — « '+esc(C.slogan)+' »':''}</div>
+    </div>
+    <div class="droite">
+      <div class="marque">AWE<b>MA</b> · Rapport de présence digitale</div>
+      <div>Données au ${djr(r.maj)} · généré le ${djr(new Date().toISOString())}</div>
+    </div>
+  </div>
+
+  <div class="kpis">
+    <div class="kpi"><div class="v">${nf(g.audience)}</div><div class="l">Audience totale</div></div>
+    <div class="kpi"><div class="v">${nf(g.posts)}</div><div class="l">Posts analysés</div></div>
+    <div class="kpi"><div class="v">${nf(inter)}</div><div class="l">Interactions</div></div>
+    <div class="kpi"><div class="v">${g.engagement_taux!=null?g.engagement_taux+'%':'—'}</div><div class="l">Engagement</div></div>
+    <div class="kpi"><div class="v">${nf(g.vues)}</div><div class="l">Vues</div></div>
+    <div class="kpi"><div class="v">${cad.posts_par_semaine!=null?cad.posts_par_semaine+'/sem':'—'}</div><div class="l">Cadence</div></div>
+  </div>
+
+  <h2>Évolution des abonnés</h2>
+  <div class="ruche">
+    <div class="titre">Abonnés cumulés (tous réseaux) — relevés réels de la synchro</div>
+    ${cc.html}
+  </div>
+
+  ${nets.length?`<h2>Réseau par réseau</h2>
+  <table><thead><tr><th>Réseau</th><th class="n">Abonnés</th><th class="n">Posts</th>
+    <th class="n">Likes</th><th class="n">Commentaires</th><th class="n">Partages</th></tr></thead>
+  <tbody>${nets.map(([n,v])=>{const p=PLAT[n]||{nom:n,c:'#877F69'};
+    return `<tr><td><span class="dot" style="background:${p.c}"></span><b>${p.nom}</b></td>
+      <td class="n">${nf(v.abonnes)}</td><td class="n">${nf(v.posts)}</td><td class="n">${nf(v.likes)}</td>
+      <td class="n">${nf(v.commentaires)}</td><td class="n">${nf(v.partages)}</td></tr>`;}).join('')}
+  </tbody></table>`:''}
+
+  ${cr?`<h2>Meilleur créneau de publication</h2>
+  <div class="creneau">
+    <div><div class="gros">${cr.recommandation||cr.jour+' vers '+cr.heure}</div>
+    <div style="font-size:12px;color:var(--muted)">calculé sur l'engagement réel des posts</div></div>
+    ${cad.dernier_post?`<div style="font-size:12.5px">Dernier post : <b>${djr(cad.dernier_post)}</b>
+      ${cad.dernier_reseau?' ('+esc(cad.dernier_reseau)+')':''} · ${nf(cad.posts_30j)} posts sur 30 j</div>`:''}
+  </div>`:''}
+
+  ${tops.length?`<h2>Contenus les plus performants</h2>
+  ${tops.map(t=>{const p=Object.values(PLAT).find(x=>x.nom===t.plateforme)||{c:'#877F69'};
+    return `<div class="post">
+      <div class="t">${esc((t.titre||'(sans titre)').split('\n')[0])}</div>
+      <div class="m"><span class="dot" style="background:${p.c}"></span>${esc(t.plateforme||'')} · ${djr(t.date)}
+        ${t.type?' · '+esc(t.type):''}${t.lien?` · <a href="${esc(AwemaFmt.safeUrl(t.lien))}" target="_blank" rel="noopener">voir ↗</a>`:''}</div>
+      <div class="s"><span>👍 ${nf(t.likes)}</span><span>💬 ${nf(t.commentaires)}</span><span>↗ ${nf(t.partages)}</span></div>
+    </div>`;}).join('')}`:''}
+
+  ${plan.length?`<h2>Publications planifiées (file AWEMA)</h2>
+  <table><thead><tr><th>Date</th><th>Réseaux</th><th>Contenu</th><th>Statut</th></tr></thead>
+  <tbody>${plan.map(p=>`<tr><td>${djr(p.publier_le)}</td>
+    <td>${(p.reseaux||[]).map(n=>(PLAT[n]||{nom:n}).nom).join(', ')}</td>
+    <td>${esc(((p.contenu||{}).texte||'').slice(0,80))}</td>
+    <td>${p.statut==='publie'?'✅ publié':p.statut==='echec'?'❌ échec':p.statut}</td></tr>`).join('')}
+  </tbody></table>`:''}
+
+  <div class="pied">
+    <span>Rapport généré par <span class="marque">AWE<b>MA</b></span> — données réelles, zéro fiction.</span>
+    <span>${djr(new Date().toISOString())}</span>
+  </div>`;
+  document.getElementById('rap').style.display='block';
+  AwemaCharts.wireCourbe(cc);
+}
+</script>
+</body>
+</html>

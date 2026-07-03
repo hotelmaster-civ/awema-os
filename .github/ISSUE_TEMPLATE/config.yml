@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 📖 Guide d'installation (pas à pas)
+    url: https://github.com/
+    about: Ouvre docs/TUTORIEL-AGENCE.md dans ton dépôt pour configurer ton instance.

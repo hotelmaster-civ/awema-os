@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AWEMA — Politique de confidentialité</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--nuit:#222222;--ciel:#FFC94D;--gold:#D4AF37;--tx:#1a2238;--muted:#77705C}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:Poppins,system-ui,Segoe UI,Roboto,sans-serif;color:var(--tx);background:#F8F5EC;line-height:1.7}
+  header{background:linear-gradient(135deg,var(--nuit),#2A2A2A);color:#fff;padding:48px 24px}
+  .wrap{max-width:820px;margin:0 auto;padding:0 24px}
+  h1{font-family:Montserrat,sans-serif;font-weight:800;margin:0;font-size:30px}
+  header p{margin:8px 0 0;opacity:.8}
+  .gold{color:var(--gold)}
+  main{padding:36px 0 64px}
+  h2{font-family:Montserrat,sans-serif;color:var(--nuit);margin-top:34px;font-size:19px}
+  a{color:var(--ciel)}
+  ul{padding-left:20px}
+  footer{border-top:1px solid #EBE6D9;color:var(--muted);font-size:13px;padding:24px 0}
+</style>
+</head>
+<body>
+<header><div class="wrap"><h1>AWEMA <span class="gold">·</span> Politique de confidentialité</h1>
+<p>Agence Web Marketing Africaine — outil interne « AwemA Watcher »</p></div></header>
+<main class="wrap">
+<p><em>Dernière mise à jour : 23 juin 2026.</em></p>
+
+<h2>1. Données traitées</h2>
+<p>Après autorisation du titulaire, l'outil lit via les API officielles des plateformes
+(dont la Display API de TikTok) des <strong>statistiques publiques de compte et de publications</strong> :</p>
+<ul>
+  <li>Profil : nom d'affichage, nombre d'abonnés, nombre de publications, total des mentions « j'aime ».</li>
+  <li>Publications récentes : vues, mentions « j'aime », commentaires, partages, titre et lien.</li>
+</ul>
+<p>Aucune donnée privée de messagerie, aucune donnée d'autres utilisateurs que le titulaire
+autorisé ne sont collectées.</p>
+
+<h2>2. Finalité</h2>
+<p>Ces données servent <strong>exclusivement</strong> à établir des rapports de présence digitale
+et à conseiller le client sur sa stratégie de contenu, dans le cadre du mandat confié à AWEMA.</p>
+
+<h2>3. Conservation et sécurité</h2>
+<p>Les statistiques agrégées sont stockées dans un espace de travail privé de l'agence. Les
+jetons d'accès (tokens) sont conservés de façon chiffrée dans un coffre de secrets et ne sont
+jamais publiés. Les données sont conservées le temps du mandat puis supprimées sur demande.</p>
+
+<h2>4. Partage</h2>
+<p>Aucune donnée n'est vendue ni transmise à des tiers à des fins publicitaires. Seul le client
+concerné reçoit les rapports le concernant.</p>
+
+<h2>5. Vos droits</h2>
+<p>Le titulaire peut <strong>révoquer l'accès à tout moment</strong> depuis les réglages de
+sécurité de son compte TikTok, et demander la suppression de ses données en écrivant à l'adresse
+ci-dessous.</p>
+
+<h2>6. Contact</h2>
+<p><a id="contact" href="mailto:contact@exemple.com">contact@exemple.com</a></p>
+
+<footer>© 2026 AWEMA. Outil de l'agence.</footer>
+</main>
+<script src="../outils/_data/config.js" onerror=""></script>
+<script>
+  // Contact = celui de TON agence (config/agence.json) — un fork affiche sa propre adresse.
+  (function(){var c=(window.AWEMA_CONFIG&&window.AWEMA_CONFIG.contact)||'';
+    if(c&&c.indexOf('@')>0){var a=document.getElementById('contact');if(a){a.textContent=c;a.href='mailto:'+c;}}})();
+</script>
+<script src="../outils/_design/abeille.js" data-aide="privacy"></script>
+</body>
+</html>

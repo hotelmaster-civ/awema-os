@@ -1,0 +1,54 @@
+name: Rétrospective IA (hebdomadaire)
+
+# Ferme la boucle d'apprentissage (une fois par semaine, le dimanche) : l'agent Rétrospective
+# compare les propositions passées des agents et la file de publication (statuts réels) aux
+# performances mesurées, puis committe ses leçons + suggestions de Mémoire Marketing dans
+# _agents/retrospective.json — SUGGESTIONS uniquement : c'est l'humain qui met à jour la mémoire.
+# Hebdomadaire (pas quotidien) : l'apprentissage a besoin de recul, et ça limite le coût IA.
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 18 * * 0"   # dimanche 18:00 UTC — après la semaine de publication, avant la planification du lundi
+
+permissions:
+  contents: write
+
+# Groupe PARTAGÉ avec tous les workflows committeurs : écriture du dépôt en série (anti-course sur agence.js).
+concurrency:
+  group: awema-git-write
+  cancel-in-progress: false
+
+jobs:
+  retrospective:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Rétrospective sur tous les clients (skip gracieux si aucune clé IA)
+        env:
+          AWEMA_AI_PROVIDER: ${{ vars.AWEMA_AI_PROVIDER }}
+          AWEMA_AI_MODEL: ${{ vars.AWEMA_AI_MODEL }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+          GITHUB_MODELS_TOKEN: ${{ secrets.GITHUB_MODELS_TOKEN }}
+          TOGETHER_API_KEY: ${{ secrets.TOGETHER_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          python3 scripts/awema_ai.py --check
+          python3 scripts/run-agent.py retrospective --all
+
+      - name: Régénérer le registre agence
+        run: python3 outils/_data/build.py
+
+      - name: Commit si changements
+        uses: ./.github/actions/commit-push
+        with:
+          message: "chore(retrospective): leçons de la semaine (run ${{ github.run_number }})"

@@ -1,0 +1,57 @@
+name: Réinitialiser le projet (⚠️ destructif)
+
+# Vide le dépôt de TOUTE donnée client (idéal après un fork ou pour repartir à neuf).
+# DESTRUCTIF : supprime des fichiers du dépôt puis régénère le registre.
+# Double garde : lancement MANUEL uniquement + saisie obligatoire de « REINITIALISER ».
+# Ne touche pas aux Secrets/tokens ni à l'historique git.
+
+on:
+  workflow_dispatch:
+    inputs:
+      confirmation:
+        description: 'Tape REINITIALISER pour confirmer (sinon rien ne se passe)'
+        required: true
+        default: ''
+      portee:
+        description: 'Portée de la remise à zéro'
+        required: true
+        default: 'client'
+        type: choice
+        options:
+          - client      # supprime les clients réels, garde l'identité de l'agence
+          - complet     # + remet l'identité de l'agence à neutre (repart totalement à zéro)
+
+permissions:
+  contents: write
+
+# Groupe PARTAGÉ avec tous les workflows committeurs : écriture du dépôt en série.
+concurrency:
+  group: awema-git-write
+  cancel-in-progress: false
+
+jobs:
+  reinitialiser:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Vérifier la confirmation
+        run: |
+          if [ "${{ github.event.inputs.confirmation }}" != "REINITIALISER" ]; then
+            echo "::error::Confirmation absente ou incorrecte — tape exactement REINITIALISER. Rien n'a été supprimé."
+            exit 1
+          fi
+
+      - name: Réinitialiser
+        env:
+          AWEMA_RESET_CONFIRM: ${{ github.event.inputs.confirmation }}
+          AWEMA_RESET_PORTEE: ${{ github.event.inputs.portee }}
+        run: python3 scripts/reinitialiser.py
+
+      - name: Commit du nouveau départ
+        uses: ./.github/actions/commit-push
+        with:
+          message: "chore(reset): réinitialisation du projet (${{ github.event.inputs.portee }}, run ${{ github.run_number }})"

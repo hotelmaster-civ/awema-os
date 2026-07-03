@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AWEMA — Connecter une IA (n'importe laquelle)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--nuit:#222222;--ciel:#FFC94D;--gold:#D4AF37;--violet:#EDA914;--mint:#34E5C4;--pink:#FF7D9C;
+    --tx:#F1EDE2;--muted:#B3AA92;--card:rgba(255,255,255,.05);--bord:rgba(255,255,255,.12)}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:Poppins,system-ui,Segoe UI,Roboto,sans-serif;color:var(--tx);line-height:1.6;
+    background:radial-gradient(1100px 650px at 50% -12%,#2A2A2A,#222222 62%,#1E1E1E);min-height:100vh;padding-bottom:60px}
+  .wrap{max-width:920px;margin:0 auto;padding:0 22px}
+  header{padding:50px 0 8px}
+  .back{color:var(--muted);text-decoration:none;font-size:13px}
+  h1{font-family:Montserrat,sans-serif;font-weight:800;font-size:clamp(26px,4.6vw,38px);margin-top:14px;letter-spacing:-.02em}
+  h1 .g{background:linear-gradient(120deg,var(--violet),var(--ciel));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .lead{color:var(--muted);margin-top:10px;font-size:15px}
+  .pill{display:inline-block;font-size:12px;color:var(--muted);border:1px solid var(--bord);border-radius:20px;padding:5px 12px;background:var(--card);margin-top:12px}
+  h2{font-family:Montserrat,sans-serif;font-size:18px;margin:26px 0 4px}
+  .sub{color:var(--muted);font-size:13.5px;margin-bottom:8px}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:12px}
+  .prov{background:var(--card);border:1px solid var(--bord);border-radius:16px;padding:16px;position:relative;transition:.18s}
+  .prov:hover{transform:translateY(-3px);border-color:rgba(255,255,255,.28)}
+  .prov.free{border-color:rgba(52,229,196,.4)}
+  .prov .free-tag{position:absolute;top:12px;right:12px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#06231d;background:var(--mint);padding:3px 8px;border-radius:7px}
+  .prov h3{font-family:Montserrat,sans-serif;font-size:16px}
+  .prov .offre{color:var(--muted);font-size:12.5px;margin-top:6px;min-height:34px}
+  .prov code{display:block;background:rgba(0,0,0,.32);border:1px solid var(--bord);border-radius:8px;padding:6px 9px;font-size:11.5px;margin-top:10px;color:#EFE7CF;word-break:break-all}
+  .prov a.go{display:inline-block;margin-top:10px;font-size:12.5px;color:var(--ciel);text-decoration:none;font-weight:600}
+  .copy{margin-top:8px;font-size:11px;border:1px solid var(--bord);background:rgba(255,255,255,.08);color:var(--tx);border-radius:8px;padding:5px 9px;cursor:pointer}
+  .copy.ok{background:var(--mint);color:#06231d;border-color:var(--mint)}
+  .step{background:var(--card);border:1px solid var(--bord);border-radius:16px;padding:18px 20px;margin-top:14px}
+  .step b{color:var(--tx)} code.inline{background:rgba(0,0,0,.3);padding:2px 6px;border-radius:6px;font-size:12.5px}
+  .note{font-size:12.5px;color:var(--muted);margin-top:12px;border-left:3px solid var(--gold);padding-left:12px}
+  @media(max-width:760px){.grid{grid-template-columns:1fr 1fr}}
+  @media(max-width:520px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="back" href="index.html" target="_top">← AWEMA · Centre de pilotage</a>
+    <h1>Connecter <span class="g">une IA</span> — celle de ton choix</h1>
+    <p class="lead">AWEMA est <b>agnostique</b> : branche n'importe quelle IA (compatible OpenAI ou
+      Anthropic) pour faire travailler les agents. <b>Plusieurs sont gratuites.</b> Sans clé, les agents
+      sont simplement désactivés — le reste de l'outil fonctionne.</p>
+    <span class="pill">⏱️ ~3 min · démarre gratuitement</span>
+  </header>
+
+  <h2>⭐ Options gratuites (recommandées pour démarrer)</h2>
+  <div class="sub">Un palier gratuit ou des crédits d'essai — idéal pour la bêta.</div>
+  <div class="grid" id="gratuits"></div>
+
+  <h2>Autres fournisseurs</h2>
+  <div class="grid" id="autres"></div>
+
+  <h2>Comment l'activer</h2>
+  <div class="step"><b>1.</b> Crée une clé chez le fournisseur (clique « Obtenir une clé »).</div>
+  <div class="step"><b>2.</b> Branche-la <b>sans terminal</b> : ouvre la page
+    <a href="configuration.html" style="color:var(--ciel);font-weight:700">Mise en route</a> → colle ta clé.
+    AWEMA enregistre le fournisseur tout seul (<code class="inline">AWEMA_AI_PROVIDER</code>) et te guide
+    pour le secret (un collage). C'est tout — les agents peuvent travailler.</div>
+  <details style="margin-top:12px">
+    <summary style="cursor:pointer;color:var(--muted);font-size:13px;font-weight:600">Tu préfères la ligne de commande (Python en local) ?</summary>
+    <div class="step" style="margin-top:10px"><b>a.</b> <code class="inline">python3 scripts/awema.py set ia &lt;CLE&gt;=…</code> (rangée dans <code class="inline">.awema/</code>, jamais committée).</div>
+    <div class="step"><b>b.</b> <i>(optionnel)</i> fournisseur : <code class="inline">AWEMA_AI_PROVIDER=groq</code> — sinon auto-détection.</div>
+    <div class="step"><b>c.</b> Vérifie : <code class="inline">python3 scripts/awema_ai.py --check</code> → « ✅ IA active ».</div>
+  </details>
+  <div class="note" style="margin-top:14px">Les agents <b>Analyste / Stratège / Créatif</b> ont alors de quoi travailler. Le feed
+    <b>« 3 choses à faire aujourd'hui »</b> marche même <b>sans IA</b> (alertes déterministes).
+    Détails : <a href="https://github.com/awema-test/awema-os/blob/main/docs/12-connecter-ia.md" target="_blank" rel="noopener" style="color:var(--ciel)">docs/12 ↗</a></div>
+</div>
+
+<script src="outils/_data/ia-providers.js" onerror=""></script>
+<script src="outils/_data/config.js" onerror=""></script>
+<script src="outils/_data/apply.js"></script>
+<script>
+  var REG=(window.AWEMA_IA_PROVIDERS&&window.AWEMA_IA_PROVIDERS.providers)||{};
+  function card(id,c){
+    var free=!!c.gratuit;
+    var el=document.createElement('div'); el.className='prov'+(free?' free':'');
+    el.innerHTML=(free?'<span class="free-tag">gratuit</span>':'')+
+      '<h3>'+(c.label||id)+'</h3>'+
+      '<div class="offre">'+(c.offre||'')+'</div>'+
+      '<code>set ia '+(c.cle||'')+'=…</code>'+
+      '<button class="copy" data-t="python3 scripts/awema.py set ia '+(c.cle||'')+'=VOTRE_CLE">Copier la commande</button><br>'+
+      (c.signup?'<a class="go" href="'+c.signup+'" target="_blank" rel="noopener">Obtenir une clé ↗</a>':'');
+    return el;
+  }
+  var g=document.getElementById('gratuits'), a=document.getElementById('autres');
+  Object.keys(REG).forEach(function(id){ (REG[id].gratuit?g:a).appendChild(card(id,REG[id])); });
+  if(!Object.keys(REG).length){ g.innerHTML='<div class="sub">Registre indisponible — voir config/ia-providers.json.</div>'; }
+  document.addEventListener('click',function(e){ var b=e.target.closest('.copy'); if(!b)return;
+    navigator.clipboard.writeText(b.dataset.t||'').then(function(){b.textContent='Copié ✓';b.classList.add('ok');
+      setTimeout(function(){b.textContent='Copier la commande';b.classList.remove('ok');},1400);}).catch(function(){});
+  });
+</script>
+<script src="outils/_design/awema-fork.js"></script>
+<script src="outils/_design/abeille.js" data-aide="connect-ia"></script>
+</body>
+</html>

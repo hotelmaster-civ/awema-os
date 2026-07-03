@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AWEMA — Demander un accès API managé</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--nuit:#222222;--ciel:#FFC94D;--gold:#D4AF37;--violet:#EDA914;--mint:#34E5C4;
+    --tx:#F1EDE2;--muted:#B3AA92;--card:rgba(255,255,255,.05);--bord:rgba(255,255,255,.13)}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:Poppins,system-ui,Segoe UI,Roboto,sans-serif;color:var(--tx);line-height:1.6;
+    background:radial-gradient(1100px 650px at 50% -12%,#2A2A2A,#222222 62%,#1E1E1E);min-height:100vh;padding-bottom:60px}
+  .wrap{max-width:780px;margin:0 auto;padding:0 22px}
+  header{padding:46px 0 8px}
+  .back{color:var(--muted);text-decoration:none;font-size:13px}
+  h1{font-family:Montserrat,sans-serif;font-weight:800;font-size:clamp(24px,4.4vw,34px);margin-top:14px;letter-spacing:-.02em}
+  h1 .g{background:linear-gradient(120deg,var(--gold),#f2d479);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .lead{color:var(--muted);margin-top:10px;font-size:14.5px}
+  .card{background:var(--card);border:1px solid var(--bord);border-radius:18px;padding:22px;margin-top:16px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  label{display:block;font-size:12px;color:var(--muted);margin:12px 0 5px;text-transform:uppercase;letter-spacing:.05em}
+  .req{color:var(--gold)}
+  input,select,textarea{width:100%;padding:11px 13px;border-radius:11px;border:1px solid var(--bord);background:rgba(0,0,0,.25);color:#fff;font:inherit;font-size:14px}
+  textarea{min-height:70px;resize:vertical}
+  .nets{display:flex;gap:8px;flex-wrap:wrap;margin-top:6px}
+  .net{display:inline-flex;align-items:center;gap:7px;font-size:13px;border:1px solid var(--bord);border-radius:30px;padding:7px 13px;cursor:pointer;user-select:none}
+  .net input{width:auto}.net.on{border-color:var(--ciel);background:rgba(255,201,77,.12)}
+  .row{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px;align-items:center}
+  .btn{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,var(--ciel),var(--violet));color:#fff;text-decoration:none;font-weight:700;font-size:14px;border:0;border-radius:12px;padding:12px 18px;cursor:pointer}
+  .btn.ghost{background:transparent;border:1px solid var(--bord);color:var(--tx)}
+  .btn.ok{background:var(--mint);color:#06231d}.btn[disabled]{opacity:.5;cursor:not-allowed}
+  .out{position:relative;margin-top:12px;background:rgba(0,0,0,.34);border:1px solid var(--bord);border-radius:12px;padding:14px;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12.5px;white-space:pre-wrap;word-break:break-word;color:#EFE7CF;max-height:280px;overflow:auto}
+  .note{font-size:12.5px;color:var(--muted);margin-top:12px;border-left:3px solid var(--gold);padding-left:12px}
+  code{background:rgba(0,0,0,.3);padding:2px 6px;border-radius:6px}
+  a{color:var(--ciel)}
+  @media(max-width:680px){.grid2{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="back" href="index.html">← Accueil</a>
+    <h1>Demander un <span class="g">accès API managé</span></h1>
+    <p class="lead"><b>Par défaut, chaque agence fournit ses propres accès API</b> (Meta, TikTok…) et
+      reste 100% autonome. Tu peux <b>demander</b> à passer par les accès d'AWEMA <b>uniquement pour des
+      clients communs / hébergés par AWEMA</b>. Chaque demande est <b>validée au cas par cas</b> avant
+      tout passage par nos API.</p>
+  </header>
+
+  <div class="card">
+    <div class="grid2">
+      <div><label>Ton agence <span class="req">*</span></label><input id="agence" oninput="build()" placeholder="Baoulé Digital"></div>
+      <div><label>Email de contact <span class="req">*</span></label><input id="email" type="email" oninput="build()" placeholder="toi@exemple.com"></div>
+    </div>
+    <label>Client(s) concerné(s) — nom / URL de Page <span class="req">*</span></label>
+    <input id="client" oninput="build()" placeholder="Ex. Restaurant Le Baoulé — facebook.com/...">
+    <label>Réseaux concernés</label>
+    <div class="nets" id="nets"></div>
+    <label>Est-ce un client commun / hébergé par AWEMA ?</label>
+    <select id="commun" onchange="build()"><option value="">—</option><option>Oui, client commun AWEMA</option><option>Non, mon client propre</option><option>À discuter</option></select>
+    <label>Motif de la demande</label>
+    <textarea id="motif" oninput="build()" placeholder="Pourquoi passer par les API d'AWEMA plutôt que tes propres apps ?"></textarea>
+  </div>
+
+  <div class="card">
+    <h2 style="font-family:Montserrat;font-size:16px">Envoyer la demande</h2>
+    <p class="lead" style="font-size:13.5px">Un clic ouvre ton mail pré-rempli vers <b id="dest">contact@exemple.com</b>.
+      AWEMA examine et <b>accepte ou refuse</b> la demande avant tout accès.</p>
+    <div class="row">
+      <button class="btn" id="send" onclick="send()" disabled>✉️ Envoyer la demande</button>
+      <button class="btn ghost" id="cp" onclick="copier()">Copier le texte</button>
+    </div>
+    <div class="out" id="apercu">Renseigne l'agence, l'email et le(s) client(s)…</div>
+    <div class="note">💡 Le plus simple reste de créer <b>tes propres accès API</b> (tu es autonome) :
+      voir le <a href="https://github.com/awema-test/awema-os/blob/main/docs/14-acces-api-agence.md" target="_blank" rel="noopener">guide d'accès API</a>.</div>
+  </div>
+</div>
+
+<script src="outils/_data/config.js" onerror=""></script>
+<script src="outils/_data/apply.js"></script>
+<script>
+  var DEST=(window.AWEMA_CONFIG&&window.AWEMA_CONFIG.contact)||'contact@exemple.com';
+  document.getElementById('dest').textContent=DEST;
+  var NETS=['Facebook','Instagram','TikTok','YouTube','LinkedIn'];
+  var ne=document.getElementById('nets');
+  NETS.forEach(function(n){var l=document.createElement('label');l.className='net';
+    l.innerHTML='<input type="checkbox" value="'+n+'" onchange="this.closest(\'.net\').classList.toggle(\'on\',this.checked);build()"> '+n;ne.appendChild(l);});
+  var F=function(id){return (document.getElementById(id).value||'').trim();};
+  function reseaux(){return [].slice.call(document.querySelectorAll('#nets input:checked')).map(function(c){return c.value;});}
+  function corps(){return 'Demande d\'accès API managé (AWEMA)\n'+
+    '\nAgence : '+F('agence')+'\nEmail : '+F('email')+
+    '\nClient(s) : '+F('client')+
+    '\nRéseaux : '+(reseaux().join(', ')||'—')+
+    '\nClient commun AWEMA ? : '+(F('commun')||'—')+
+    '\n\nMotif :\n'+(F('motif')||'—')+
+    '\n\n(Rappel : par défaut je fournis mes propres API ; cette demande concerne un passage par les API d\'AWEMA, à valider.)\n';}
+  function valide(){return F('agence')&&F('email')&&F('client');}
+  function build(){var ok=valide();document.getElementById('send').disabled=!ok;
+    document.getElementById('apercu').textContent=ok?corps():'Renseigne l\'agence, l\'email et le(s) client(s)…';}
+  function send(){if(!valide())return;
+    window.location.href='mailto:'+DEST+'?subject='+encodeURIComponent('Demande accès API managé — '+F('agence'))+'&body='+encodeURIComponent(corps());}
+  async function copier(){if(!valide())return;try{await navigator.clipboard.writeText('À : '+DEST+'\n\n'+corps());
+    var b=document.getElementById('cp');b.textContent='Copié ✓';b.classList.add('ok');setTimeout(function(){b.textContent='Copier le texte';b.classList.remove('ok');},1500);}catch(e){}}
+  build();
+</script>
+<script src="outils/_design/abeille.js" data-aide="demande-acces"></script>
+</body>
+</html>

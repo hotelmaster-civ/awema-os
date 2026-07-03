@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AWEMA — Connecter Facebook & Instagram (guide pas à pas)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--nuit:#222222;--ciel:#FFC94D;--gold:#D4AF37;--violet:#EDA914;--mint:#34E5C4;--fb:#1877F2;--ig:#E1306C;
+    --tx:#F1EDE2;--muted:#B3AA92;--card:rgba(255,255,255,.05);--bord:rgba(255,255,255,.12)}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:Poppins,system-ui,Segoe UI,Roboto,sans-serif;color:var(--tx);line-height:1.65;
+    background:radial-gradient(1100px 650px at 50% -12%,#3A3320,#222222 62%,#1E1E1E);min-height:100vh;padding-bottom:60px}
+  .wrap{max-width:860px;margin:0 auto;padding:0 22px}
+  header{padding:54px 0 14px}
+  .back{color:var(--muted);text-decoration:none;font-size:13px}
+  .lgmark{display:inline-grid;place-items:center;width:46px;height:46px;border-radius:12px;background:linear-gradient(135deg,var(--fb),#A87F0F);color:#fff;font-family:Montserrat;font-weight:800;font-size:22px;margin-bottom:8px}
+  h1{font-family:Montserrat,sans-serif;font-weight:800;font-size:clamp(26px,4.6vw,38px);margin-top:8px;letter-spacing:-.02em}
+  h1 .g{color:var(--fb);filter:brightness(1.4)}
+  .lead{color:var(--muted);margin-top:10px;font-size:15px}
+  .pill{display:inline-block;font-size:12px;color:var(--muted);border:1px solid var(--bord);border-radius:20px;padding:5px 12px;background:var(--card);margin-top:14px}
+  .step{background:var(--card);border:1px solid var(--bord);border-radius:18px;padding:22px;margin-top:18px;backdrop-filter:blur(8px)}
+  .step h2{font-family:Montserrat,sans-serif;font-size:18px;display:flex;align-items:center;gap:12px}
+  .num{flex:0 0 30px;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-size:14px;font-weight:800;color:#fff;background:linear-gradient(135deg,var(--fb),#A87F0F)}
+  .step p{color:#D8D2C2;font-size:13.6px;margin-top:10px}
+  .step ul{margin:8px 0 0 20px;color:#D8D2C2;font-size:13.4px}.step li{margin:5px 0}
+  .btn{display:inline-flex;align-items:center;gap:8px;margin-top:14px;background:linear-gradient(135deg,var(--fb),#A87F0F);color:#fff;text-decoration:none;font-weight:700;font-size:13.5px;border:0;border-radius:11px;padding:11px 16px;cursor:pointer}
+  .cmd{position:relative;margin-top:12px;background:rgba(0,0,0,.32);border:1px solid var(--bord);border-radius:12px;padding:13px 88px 13px 14px;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:13px;white-space:pre-wrap;word-break:break-all;color:#EFE7CF}
+  .copy{position:absolute;top:9px;right:9px;font-size:11.5px;border:1px solid var(--bord);background:rgba(255,255,255,.08);color:var(--tx);border-radius:8px;padding:6px 10px;cursor:pointer}
+  .copy.ok{background:var(--mint);color:#06231d;border-color:var(--mint)}
+  .note{font-size:12.5px;color:var(--muted);margin-top:12px;border-left:3px solid var(--gold);padding-left:12px}
+  .perm{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+  .perm code{background:rgba(24,119,242,.14);border:1px solid rgba(24,119,242,.4);color:#FFD98A;padding:3px 8px;border-radius:7px;font-size:12px}
+  code{background:rgba(0,0,0,.3);padding:2px 6px;border-radius:6px;font-size:12.5px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="back" href="index.html" target="_top">← AWEMA · Centre de pilotage</a>
+    <div class="lgmark">f</div>
+    <h1>Connecter <span class="g">Facebook</span> &amp; Instagram — guide pas à pas</h1>
+    <p class="lead">Le plus puissant : <b>un seul token Meta</b> découvre <b>toutes</b> tes Pages et crée
+      un client par Page, avec audience, réactions, commentaires à répondre, meilleurs posts… Instagram
+      suit si un compte <b>IG Pro</b> est relié à la Page.</p>
+    <span class="pill">⏱️ ~10 min · 1 token → toutes les Pages</span>
+  </header>
+
+  <div class="step">
+    <h2><span class="num">1</span> Être admin des Pages</h2>
+    <p>Tu dois être <b>administrateur</b> des Pages Facebook de tes clients (ou recevoir un accès
+      partenaire via leur <b>Business Manager</b>).</p>
+    <a class="btn" href="https://business.facebook.com/" target="_blank" rel="noopener">Ouvrir Business Manager ↗</a>
+  </div>
+
+  <!-- Méthode recommandée : Se connecter avec Facebook (OAuth) -->
+  <div class="step" style="border-color:rgba(52,229,196,.4)">
+    <h2><span class="num" style="background:linear-gradient(135deg,var(--mint,#34E5C4),var(--fb))">★</span> Méthode simple — Se connecter avec Facebook <span class="tag" style="font-size:11px;color:#06231d;background:var(--mint);border-radius:6px;padding:2px 7px;font-weight:700">sans terminal</span></h2>
+    <p>Si tu as une <b>app Facebook</b> (developers.facebook.com → Créer une app, type <i>Business</i>), enregistre ses 2 clés
+      ci-dessous, puis clique <b>Se connecter</b> : AWEMA récupère et allonge ton token tout seul (60 j).</p>
+    <p style="font-size:12.5px;color:var(--muted)">Dans l'app → <b>Facebook Login → Settings → Valid OAuth Redirect URIs</b>, ajoute cette adresse :</p>
+    <div class="cmd" id="c-fbredir" style="position:relative">(adresse en cours de chargement…)<button class="copy" data-c="c-fbredir">Copier</button></div>
+    <label style="display:block;font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;margin:12px 0 4px">App ID (non secret)</label>
+    <div class="pair" style="display:flex;gap:9px;flex-wrap:wrap"><input id="fbAppId" placeholder="Colle l'App ID" style="flex:1;min-width:200px;background:rgba(0,0,0,.28);border:1px solid var(--bord);border-radius:11px;color:#fff;font:inherit;font-size:13.5px;padding:10px 12px"><button class="btn" id="fbIdSave" style="margin:0">Enregistrer</button></div>
+    <div id="awc-fb-secret"></div>
+    <div id="awc-fb-pat"></div>
+    <div class="msg" id="fbMsg" style="font-size:13px;margin-top:8px;min-height:16px"></div>
+    <button class="btn" id="fbConnect" style="background:linear-gradient(135deg,var(--mint,#34E5C4),var(--fb))">▶️ Se connecter avec Facebook</button>
+    <div class="note">Le <b>PAT</b> (Variables R/W) sert à enregistrer le token. Déjà posé pour TikTok (<code>TIKTOK_PAT</code>) ? Inutile d'en remettre.</div>
+  </div>
+
+  <div style="text-align:center;color:var(--muted);font-size:12.5px;margin:18px 0 0">— ou méthode manuelle (coller un token) —</div>
+
+  <div class="step">
+    <h2><span class="num">2</span> Ouvrir l'explorateur d'API Graph</h2>
+    <p>Connecte-toi avec le compte qui administre les Pages. C'est gratuit.</p>
+    <a class="btn" href="https://developers.facebook.com/tools/explorer/" target="_blank" rel="noopener">Graph API Explorer ↗</a>
+    <div class="note">Si tu n'as pas d'app : il t'en propose une (« Meta App »). Crée-en une de type
+      <b>Business</b> si besoin (developers.facebook.com → Créer une app).</div>
+  </div>
+
+  <div class="step">
+    <h2><span class="num">3</span> Demander les bonnes permissions</h2>
+    <p>Dans l'explorateur → <b>Permissions</b>, coche puis <b>Generate Access Token</b> :</p>
+    <div class="perm">
+      <code>pages_show_list</code><code>pages_read_engagement</code><code>pages_read_user_content</code><code>read_insights</code>
+      <code>instagram_basic</code><code>instagram_manage_insights</code>
+    </div>
+    <div class="note">Les 4 premières = Facebook ; les 2 dernières = Instagram (si comptes IG Pro reliés).
+      Accepte la fenêtre d'autorisation Meta.</div>
+  </div>
+
+  <div class="step">
+    <h2><span class="num">4</span> Allonger le token (60 jours)</h2>
+    <p>Le token de l'explorateur est court (~1-2 h). Allonge-le en token <b>longue durée</b> (~60 j) via
+      l'outil ci-dessous (Access Token Tool → <b>Extend Access Token</b>), puis copie le token long.</p>
+    <a class="btn" href="https://developers.facebook.com/tools/debug/accesstoken/" target="_blank" rel="noopener">Access Token Tool ↗</a>
+    <div class="note">Astuce pro : pour un token <b>permanent</b>, génère un <b>System User token</b> depuis
+      le Business Manager (scopé aux Pages). Détails : guide Meta.</div>
+  </div>
+
+  <div class="step">
+    <h2><span class="num">5</span> Donner le token à AWEMA &amp; synchroniser <span style="font-size:11px;color:#06231d;background:var(--mint);border-radius:6px;padding:2px 7px;font-weight:700">sans terminal</span></h2>
+    <p>Colle ton token long ci-dessous : AWEMA le range dans un <b>coffre-fort privé de ton site</b> (invisible
+      au public), puis lance la découverte de <b>toutes</b> tes Pages (un client par Page).</p>
+    <div id="awc-meta"></div>
+    <div class="note">⚠️ En <b>mode dev</b> (sans App Review), seuls les comptes testeurs sont lisibles. Pour gérer
+      de <b>vrais</b> clients en production : Vérification d'entreprise + App Review. Voir le guide
+      <b>« Accès API (dev entreprise) »</b> (docs/14).</div>
+    <details style="margin-top:14px">
+      <summary style="cursor:pointer;color:var(--muted);font-size:12.5px">Tu préfères la ligne de commande (Python en local) ?</summary>
+      <div class="cmd" id="c1" style="margin-top:10px">python3 scripts/awema.py set meta META_TOKEN=TON_TOKEN<button class="copy" data-c="c1">Copier</button></div>
+      <div class="cmd" id="c2">python3 scripts/connect-reseaux.py --meta-all &amp;&amp; python3 outils/_data/build.py<button class="copy" data-c="c2">Copier</button></div>
+    </details>
+  </div>
+
+  <div class="step">
+    <h2><span class="num">7</span> Instagram (optionnel)</h2>
+    <p>Pour les métriques IG : relie un compte <b>Instagram Professionnel</b> à la Page Facebook (dans
+      les paramètres de la Page → comptes liés). Le même token le récupère ensuite automatiquement.</p>
+  </div>
+</div>
+<script>
+  document.querySelectorAll('.copy').forEach(b=>b.addEventListener('click',async()=>{
+    const el=document.getElementById(b.dataset.c);const t=(el.childNodes[0].textContent||'').trim();
+    try{await navigator.clipboard.writeText(t);b.textContent='Copié ✓';b.classList.add('ok');
+      setTimeout(()=>{b.textContent='Copier';b.classList.remove('ok');},1400);}catch(e){b.textContent='Sélectionne';}}));
+</script>
+<script src="outils/_data/config.js" onerror=""></script>
+<script src="outils/_data/apply.js"></script>
+<script src="outils/_design/awema-github.js"></script>
+<script src="outils/_design/awema-connect.js"></script>
+<script>
+  // Méthode manuelle (token collé)
+  AwemaConnect.secretBox('#awc-meta', {
+    name: 'META_TOKEN', label: 'token Meta longue durée',
+    placeholder: 'Colle ton token Meta (60 j ou System User)',
+    sync: 'sync-reseaux.yml', syncLabel: 'Découvrir mes Pages'
+  });
+
+  // —— Méthode OAuth « Se connecter avec Facebook » ——
+  AwemaConnect.secretBox('#awc-fb-secret', {name:'FACEBOOK_APP_SECRET', label:'App Secret', placeholder:'Colle l’App Secret'});
+  AwemaConnect.secretBox('#awc-fb-pat', {name:'AWEMA_PAT', label:'PAT (Variables R/W)', placeholder:'PAT GitHub — ou réutilise TIKTOK_PAT'});
+
+  var FB_AUTH='https://www.facebook.com/v21.0/dialog/oauth';
+  var FB_SCOPES='pages_show_list,pages_read_engagement,pages_read_user_content,read_insights,instagram_basic,instagram_manage_insights,business_management';
+  var oauthUrl=location.origin+location.pathname.replace(/[^/]*$/,'oauth.html');
+  document.getElementById('c-fbredir').childNodes[0].textContent=oauthUrl;
+
+  var fbAppId=document.getElementById('fbAppId');
+  try{ fbAppId.value=localStorage.getItem('awema-fb-appid')||''; }catch(e){}
+  function fbMsg(t,c){var m=document.getElementById('fbMsg');m.textContent=t;m.style.color=c||'var(--muted)';}
+
+  document.getElementById('fbIdSave').onclick=function(){
+    var v=fbAppId.value.trim();
+    if(!v){fbMsg('Renseigne d’abord l’App ID.','#FF7D9C');return;}
+    try{localStorage.setItem('awema-fb-appid',v);}catch(e){}
+    if(!window.AwemaGH){fbMsg('Module GitHub indisponible.','#FF7D9C');return;}
+    fbMsg('Enregistrement de l’App ID…');
+    AwemaGH.ensure(function(){
+      AwemaGH.saveSecret('FACEBOOK_APP_ID',v).then(function(res){
+        if(res&&res.ok) fbMsg('✅ App ID enregistré.','#34E5C4');
+        else { fbMsg('Presque ! Un collage sur GitHub (fenêtre ouverte).','#D4AF37'); AwemaGH.guideSecret('FACEBOOK_APP_ID',v); }
+      }).catch(function(e){fbMsg('❌ '+(e.message||e),'#FF7D9C');});
+    });
+  };
+
+  document.getElementById('fbConnect').onclick=function(){
+    var id=fbAppId.value.trim();
+    if(!id){fbMsg('Renseigne l’App ID (et clique « Enregistrer ») avant de te connecter.','#FF7D9C');return;}
+    try{localStorage.setItem('awema-fb-appid',id);}catch(e){}
+    var state='fb:'+Math.random().toString(36).slice(2)+Date.now().toString(36);
+    var url=FB_AUTH+'?'+new URLSearchParams({client_id:id,redirect_uri:oauthUrl,scope:FB_SCOPES,response_type:'code',state:state}).toString();
+    // Sort de l'iframe du dashboard si nécessaire (les pages de login OAuth interdisent le framing).
+    (window.top||window).location.href=url;
+  };
+
+  // copie de la Redirect URI
+  document.querySelectorAll('.copy').forEach(function(b){ if(b.dataset.c!=='c-fbredir')return;
+    b.addEventListener('click',function(){ navigator.clipboard.writeText(oauthUrl).then(function(){b.textContent='Copié ✓';b.classList.add('ok');setTimeout(function(){b.textContent='Copier';b.classList.remove('ok');},1400);}).catch(function(){}); });
+  });
+</script>
+<script src="outils/_design/awema-fork.js"></script>
+<script src="outils/_design/abeille.js" data-aide="connect-facebook"></script>
+</body>
+</html>

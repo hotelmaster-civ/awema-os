@@ -1,0 +1,39 @@
+name: Registre (build)
+
+# Régénère le registre des outils (outils/_data/*.js) dès qu'une donnée change.
+# Déclenché automatiquement quand le navigateur écrit dans le dépôt (ADR-007),
+# ou à la main. Aucune clé requise. N'enrichit PAS avec l'IA (c'est le rôle de agents.yml).
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "modules/**"
+      - "!modules/**/_agents/**"   # les sorties d'agents ne re-déclenchent pas le build (anti-boucle)
+      - "config/**"
+      - "outils/_data/build.py"
+
+permissions:
+  contents: write
+
+# Groupe PARTAGÉ avec tous les workflows committeurs : écriture du dépôt en série (anti-course sur agence.js).
+concurrency:
+  group: awema-git-write
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Régénérer le registre
+        run: python3 outils/_data/build.py
+
+      - name: Commit si changements
+        uses: ./.github/actions/commit-push
+        with:
+          message: "chore(build): régénère le registre (run ${{ github.run_number }})"

@@ -1,0 +1,41 @@
+name: LinkedIn — échanger le code (Pages-native)
+
+# Déclenché depuis le navigateur (oauth.html) après l'autorisation LinkedIn.
+# Le client_secret reste un Secret GitHub : l'échange code→access_token se fait ICI,
+# jamais dans le navigateur. Le token est enregistré dans la Variable LINKEDIN_TOKEN
+# (lue par sync-reseaux.yml).
+#
+# PRÉ-REQUIS (à poser via connect-linkedin.html) :
+#   Secret  LINKEDIN_CLIENT_ID · LINKEDIN_CLIENT_SECRET
+#   Secret  AWEMA_PAT (ou TIKTOK_PAT déjà posé pour TikTok) — PAT « Variables: R/W »
+
+on:
+  workflow_dispatch:
+    inputs:
+      code:
+        description: "Code OAuth renvoyé par LinkedIn"
+        required: true
+      redirect_uri:
+        description: "Redirect URI EXACTE utilisée à l'autorisation (oauth.html)"
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  exchange:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Échanger le code et enregistrer le token
+        env:
+          LINKEDIN_CLIENT_ID: ${{ secrets.LINKEDIN_CLIENT_ID }}
+          LINKEDIN_CLIENT_SECRET: ${{ secrets.LINKEDIN_CLIENT_SECRET }}
+          GH_PAT: ${{ secrets.AWEMA_PAT || secrets.TIKTOK_PAT }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          LI_CODE: ${{ inputs.code }}
+          LI_REDIRECT: ${{ inputs.redirect_uri }}
+        run: python3 scripts/linkedin-exchange.py

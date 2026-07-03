@@ -1,0 +1,43 @@
+name: "🧪 Retour beta (ressenti d'usage)"
+description: "Partage ton expérience : ce qui aide, ce qui bloque, ce que tu aimerais."
+title: "[Beta] "
+labels: ["beta-feedback"]
+body:
+  - type: markdown
+    attributes:
+      value: "Merci ! Tes retours façonnent l'outil. Pas besoin d'être technique — dis les choses simplement."
+  - type: input
+    id: handle
+    attributes:
+      label: Ton pseudo / handle (CM fondateur)
+      placeholder: "@moncompte"
+    validations:
+      required: false
+  - type: dropdown
+    id: zone
+    attributes:
+      label: Ça concerne quoi ?
+      options:
+        - Onboarding / mise en place
+        - Dashboard / présence digitale
+        - Connexion d'un réseau (FB / IG / TikTok / YouTube / LinkedIn)
+        - Plan de contenu / visualiseur
+        - Personnalisation (setup)
+        - Autre
+    validations:
+      required: true
+  - type: textarea
+    id: aide
+    attributes:
+      label: Ce qui t'aide / ce que tu aimes
+      placeholder: "Ex. voir tous mes réseaux au même endroit me fait gagner du temps…"
+  - type: textarea
+    id: bloque
+    attributes:
+      label: Ce qui te bloque / te frustre
+      placeholder: "Ex. je n'ai pas compris comment connecter…"
+  - type: textarea
+    id: souhait
+    attributes:
+      label: Ce que tu aimerais (idée, manque)
+      placeholder: "Ex. j'aimerais planifier mes posts depuis le dashboard…"

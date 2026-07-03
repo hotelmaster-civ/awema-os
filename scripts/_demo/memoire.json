@@ -1,0 +1,25 @@
+{
+  "identite": {
+    "mission": "Révéler la beauté naturelle de chaque cliente",
+    "proposition_valeur": "Soins premium abordables, produits adaptés à la peau africaine",
+    "cible": "Femmes 22-45 ans, Abidjan, actives",
+    "secteur": "Institut de beauté"
+  },
+  "ton": "chaleureux, premium, bienveillant",
+  "charte": {"couleurs": ["#D4AF37", "#0A1F44"], "polices": [], "mots_cles": ["éclat", "confiance", "soin de soi", "naturel"]},
+  "personas": [
+    {"nom": "Aïcha, jeune active", "besoin": "se sentir belle malgré un emploi du temps chargé", "objection": "manque de temps"},
+    {"nom": "Fatou, future mariée", "besoin": "un teint parfait pour le grand jour", "objection": "budget"}
+  ],
+  "produits": [
+    {"nom": "Soin visage éclat", "description": "Nettoyage + hydratation profonde", "prix": "15 000 FCFA"},
+    {"nom": "Forfait mariée", "description": "3 séances avant le jour J", "prix": "75 000 FCFA"}
+  ],
+  "faq": [
+    {"q": "Faut-il réserver ?", "r": "Oui, via WhatsApp, 48h à l'avance idéalement."},
+    {"q": "Vos produits conviennent-ils aux peaux sensibles ?", "r": "Oui, une gamme hypoallergénique est disponible."}
+  ],
+  "campagnes": [],
+  "performances_synthese": "",
+  "references_visuelles": []
+}

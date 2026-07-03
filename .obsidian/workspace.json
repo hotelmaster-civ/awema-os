@@ -1,0 +1,25 @@
+{
+  "main": {
+    "id": "awema-root",
+    "type": "split",
+    "children": [
+      {
+        "id": "awema-leaf",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": { "file": "docs/00-INDEX.md", "mode": "preview", "source": false }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "active": "awema-leaf",
+  "lastOpenFiles": [
+    "docs/00-INDEX.md",
+    "docs/ACCES-AGENCE.md",
+    "docs/AWEMA-OS.md",
+    "docs/ROADMAP.md",
+    "docs/PRD-AWEMA.md"
+  ]
+}

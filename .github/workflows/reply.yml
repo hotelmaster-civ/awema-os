@@ -1,0 +1,39 @@
+name: Répondre aux commentaires
+
+# Envoie les réponses en file d'attente (_donnees/_reponses/*.json, statut « a_envoyer »)
+# via la Graph API Meta. Déclenché par le dashboard juste après l'enregistrement d'une
+# réponse (workflow_dispatch) + filet de sécurité quotidien pour les reprises d'échec.
+#
+# PRÉ-REQUIS : Secret META_TOKEN (le même que publish.yml / sync-reseaux.yml).
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 7 * * *"   # 07:00 UTC — rejoue les tentatives échouées (MAX 3)
+
+permissions:
+  contents: write
+
+# Groupe PARTAGÉ avec tous les workflows committeurs : écriture du dépôt en série (anti-course).
+concurrency:
+  group: awema-git-write
+  cancel-in-progress: false
+
+jobs:
+  repondre:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Envoyer les réponses en attente
+        env:
+          META_TOKEN: ${{ secrets.META_TOKEN }}
+        run: python3 scripts/repondre.py
+
+      - name: Commit si changements
+        uses: ./.github/actions/commit-push
+        with:
+          message: "chore(reponses): envoi des réponses aux commentaires (run ${{ github.run_number }})"

@@ -1,0 +1,42 @@
+name: "🐞 Bug (quelque chose ne marche pas)"
+description: "Signale un problème pour qu'on le corrige."
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: quoi
+    attributes:
+      label: Que s'est-il passé ?
+      placeholder: "Décris le problème en une ou deux phrases."
+    validations:
+      required: true
+  - type: textarea
+    id: etapes
+    attributes:
+      label: Comment le reproduire ?
+      placeholder: |
+        1. Je vais sur…
+        2. Je clique…
+        3. J'obtiens…
+  - type: input
+    id: attendu
+    attributes:
+      label: Ce que tu attendais à la place
+  - type: dropdown
+    id: ou
+    attributes:
+      label: Où ?
+      options:
+        - Page d'accueil / onboarding
+        - Dashboard
+        - Connexion d'un réseau
+        - Visualiseur / contenu
+        - Script / synchronisation
+        - Autre
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: Navigateur / appareil (si pertinent)
+      placeholder: "Chrome sur Windows, Safari iPhone…"

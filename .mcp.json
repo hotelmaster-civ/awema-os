@@ -1,0 +1,9 @@
+{
+  "_doc": "Serveur MCP AWEMA : permet à Claude (Code/Desktop) de piloter AWEMA en langage naturel. Voir docs/16-piloter-avec-claude-mcp.md. Stdlib uniquement, opère en local sur ton dépôt.",
+  "mcpServers": {
+    "awema": {
+      "command": "python3",
+      "args": ["scripts/awema_mcp.py"]
+    }
+  }
+}

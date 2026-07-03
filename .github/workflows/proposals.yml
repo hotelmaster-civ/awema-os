@@ -1,0 +1,71 @@
+name: Propositions IA (à la demande)
+
+# Déclenché depuis le dashboard / la page Planifier : génère des propositions de posts pour UN client,
+# à partir d'une idée (optionnelle) ou de ce qui performe le mieux. Écrit _agents/creatif.json + committe.
+# Utilise la clé IA en Secret (skip gracieux si absente — le run signale alors « IA inactive »).
+
+on:
+  workflow_dispatch:
+    inputs:
+      client:
+        description: "Slug du client (ex. mon-client)"
+        required: true
+      idee:
+        description: "Idée/thème (vide = s'appuyer sur ce qui marche)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  # Groupe PARTAGÉ avec tous les workflows committeurs : écriture du dépôt en série (anti-course sur agence.js).
+  group: awema-git-write
+  cancel-in-progress: false
+
+jobs:
+  proposer:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Générer les propositions (agent Créatif)
+        env:
+          AWEMA_AI_PROVIDER: ${{ vars.AWEMA_AI_PROVIDER }}
+          AWEMA_AI_MODEL: ${{ vars.AWEMA_AI_MODEL }}
+          AWEMA_IDEE: ${{ inputs.idee }}
+          AWEMA_CLIENT: ${{ inputs.client }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
+          TOGETHER_API_KEY: ${{ secrets.TOGETHER_API_KEY }}
+          GITHUB_MODELS_TOKEN: ${{ secrets.GITHUB_MODELS_TOKEN }}
+        run: |
+          if ! python3 scripts/awema_ai.py --check | grep -q "IA active"; then
+            echo "::error::Clé IA introuvable côté GitHub Actions. Ta clé doit être un SECRET (onglet « Secrets », PAS « Variables ») : Settings → Secrets and variables → Actions → New repository secret → nom exact GROQ_API_KEY (ou la clé de ton fournisseur)."
+            exit 1
+          fi
+          python3 scripts/run-agent.py creatif "$AWEMA_CLIENT"
+
+      - name: Régénérer le registre
+        run: python3 outils/_data/build.py
+
+      # L'utilisateur attend un résultat : si rien n'a été généré, on échoue BRUYAMMENT (avant le push).
+      - name: Vérifier qu'une proposition a été produite
+        run: |
+          if git diff --quiet; then
+            echo "::error::Aucune proposition générée. Voir le log de l'étape « Générer » ci-dessus pour la cause exacte (ex. erreur du fournisseur IA, réponse vide, ou client sans données)."
+            exit 1
+          fi
+
+      - name: Commit si changements
+        uses: ./.github/actions/commit-push
+        with:
+          message: "chore(ia): propositions Créatif pour ${{ inputs.client }} (run ${{ github.run_number }})"

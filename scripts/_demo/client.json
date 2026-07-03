@@ -1,0 +1,23 @@
+{
+  "id": "demo-client",
+  "nom": "Éclat Beauté — DÉMO",
+  "secteur": "Institut de beauté (exemple)",
+  "lieu": "Abidjan, CI",
+  "module": "marketing",
+  "statut": "demo",
+  "initiales": "EB",
+  "_demo": true,
+  "reseaux": {
+    "facebook": "https://facebook.com/eclatbeaute",
+    "instagram": "https://instagram.com/eclatbeaute",
+    "tiktok": "https://www.tiktok.com/@eclatbeaute",
+    "linkedin": "",
+    "whatsapp": "+225 00 00 00 00",
+    "youtube": ""
+  },
+  "chemins": {
+    "campagne": "_donnees/campagne.json",
+    "reseaux": "_donnees/reseaux.json",
+    "revue": "../../../../outils/revue-visuels/index.html?client=demo-client"
+  }
+}

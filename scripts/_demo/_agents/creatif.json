@@ -1,0 +1,22 @@
+{
+  "agent": "creatif",
+  "genere_le": "2026-06-26T08:07:00+00:00",
+  "modele": "claude-sonnet-4-6 (démo)",
+  "provenance": {"client": "demo-client", "demo": true},
+  "items": [
+    {
+      "hook": "Ta peau mérite 15 minutes par jour. Pas plus.",
+      "script": "Hook → 3 gestes simples (nettoyer, hydrater, protéger) → « le 4e geste que personne ne fait » → CTA : réserve ton soin éclat sur WhatsApp.",
+      "format": "Reel", "reseau": "TikTok",
+      "prompt_image": "Jeune femme africaine souriante, peau lumineuse, lumière douce dorée, institut moderne épuré, charte or & bleu nuit, cadrage vertical",
+      "variantes": ["Le secret d'une peau qui brille (sans filtre)", "Routine peau en 15 min chrono"]
+    },
+    {
+      "hook": "Future mariée ? Ta peau se prépare maintenant, pas la veille.",
+      "script": "Carrousel : J-90 diagnostic, J-60 soins ciblés, J-30 éclat, jour J teint parfait. CTA : forfait mariée -10% ce mois.",
+      "format": "Carrousel", "reseau": "Instagram",
+      "prompt_image": "Mariée africaine radieuse, teint parfait, voile délicat, fond doré élégant, ambiance premium",
+      "variantes": ["3 mois pour un teint de mariée parfait"]
+    }
+  ]
+}

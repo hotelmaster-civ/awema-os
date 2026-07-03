@@ -1,0 +1,45 @@
+name: Publication programmée (file d'attente)
+
+# Planificateur sans serveur (ADR-010) : toutes les ~15 min, publie les posts DUS de la file d'attente
+# (modules/*/clients/*/_donnees/_planning/*.json) sur les réseaux connectés, puis committe les statuts.
+# Tokens d'ÉCRITURE en Secret ou Variable (posés via les pages « connecter » / « se connecter avec »).
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/15 * * * *"   # toutes les 15 minutes (granularité GitHub : ~5 min, parfois retardé)
+
+permissions:
+  contents: write
+
+concurrency:
+  # Groupe PARTAGÉ par tous les workflows qui committent le dépôt (publish, build, sync-*, agents,
+  # proposals) : ils s'exécutent en série, ce qui supprime à la racine les conflits sur agence.js
+  # (registre mono-ligne régénéré par chacun) et les pertes de commit par course.
+  group: awema-git-write
+  cancel-in-progress: false   # ne jamais interrompre une écriture en cours
+
+jobs:
+  publier:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Publier les posts dus
+        env:
+          META_TOKEN: ${{ secrets.META_TOKEN || vars.META_TOKEN }}
+          LINKEDIN_TOKEN: ${{ secrets.LINKEDIN_TOKEN || vars.LINKEDIN_TOKEN }}
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          TIKTOK_TOKENS: ${{ vars.TIKTOK_TOKENS }}
+        run: python3 scripts/publisher.py
+
+      - name: Régénérer le registre (statuts au calendrier)
+        run: python3 outils/_data/build.py
+
+      - name: Commit si changements
+        uses: ./.github/actions/commit-push
+        with:
+          message: "chore(publication): statuts de la file d'attente (run ${{ github.run_number }})"

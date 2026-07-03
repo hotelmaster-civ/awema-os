@@ -1,0 +1,41 @@
+name: Meta — échanger le code (Pages-native)
+
+# Déclenché depuis le navigateur (oauth.html) après « Se connecter avec Facebook ».
+# Le client_secret de l'app Meta reste un Secret GitHub : l'échange code→token longue durée
+# se fait ICI, jamais dans le navigateur. Le token est enregistré dans la Variable META_TOKEN
+# (lue par sync-reseaux.yml).
+#
+# PRÉ-REQUIS (à poser via connect-facebook.html) :
+#   Secret  FACEBOOK_APP_ID · FACEBOOK_APP_SECRET
+#   Secret  AWEMA_PAT (ou TIKTOK_PAT déjà posé) — PAT « Variables: R/W »
+
+on:
+  workflow_dispatch:
+    inputs:
+      code:
+        description: "Code OAuth renvoyé par Facebook"
+        required: true
+      redirect_uri:
+        description: "Redirect URI EXACTE utilisée à l'autorisation (oauth.html)"
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  exchange:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Échanger le code et enregistrer META_TOKEN
+        env:
+          FACEBOOK_APP_ID: ${{ secrets.FACEBOOK_APP_ID }}
+          FACEBOOK_APP_SECRET: ${{ secrets.FACEBOOK_APP_SECRET }}
+          GH_PAT: ${{ secrets.AWEMA_PAT || secrets.TIKTOK_PAT }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          FB_CODE: ${{ inputs.code }}
+          FB_REDIRECT: ${{ inputs.redirect_uri }}
+        run: python3 scripts/meta-exchange.py

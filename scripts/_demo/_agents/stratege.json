@@ -1,0 +1,15 @@
+{
+  "agent": "stratege",
+  "genere_le": "2026-06-26T08:06:00+00:00",
+  "modele": "claude-opus-4-8 (démo)",
+  "provenance": {"client": "demo-client", "demo": true},
+  "cadence_recommandee": "4 publications/semaine (vs 2 actuellement)",
+  "meilleures_heures": ["Jeudi 19h", "Samedi 11h", "Mardi 18h"],
+  "objectifs": ["Passer de 2 à 4 posts/semaine en 30 jours", "Convertir 10 prospects « forfait mariée » via Instagram", "Atteindre 15 000 abonnés TikTok"],
+  "items": [
+    {"jour": "Mardi", "heure": "18h", "format": "Reel", "angle": "Routine peau grasse en 3 étapes (persona Aïcha)", "reseau": "TikTok"},
+    {"jour": "Jeudi", "heure": "19h", "format": "Carrousel", "angle": "Avant/Après soin éclat + offre du mois", "reseau": "Instagram"},
+    {"jour": "Samedi", "heure": "11h", "format": "Reel", "angle": "Préparation peau future mariée (forfait)", "reseau": "TikTok"},
+    {"jour": "Dimanche", "heure": "17h", "format": "Post", "angle": "Témoignage cliente + réservation WhatsApp", "reseau": "Facebook"}
+  ]
+}

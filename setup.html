@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AWEMA — Personnaliser mon agence (auto-hébergement)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--nuit:#222222;--ciel:#FFC94D;--gold:#D4AF37;--violet:#EDA914;--mint:#34E5C4;--pink:#FF7D9C;
+    --tx:#F1EDE2;--muted:#B3AA92;--card:rgba(255,255,255,.05);--bord:rgba(255,255,255,.13)}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:Poppins,system-ui,Segoe UI,Roboto,sans-serif;color:var(--tx);line-height:1.6;
+    background:radial-gradient(1100px 650px at 50% -12%,#2A2A2A,#222222 62%,#1E1E1E);min-height:100vh;padding-bottom:60px}
+  .wrap{max-width:900px;margin:0 auto;padding:0 22px}
+  header{padding:48px 0 8px}
+  .back{color:var(--muted);text-decoration:none;font-size:13px}
+  h1{font-family:Montserrat,sans-serif;font-weight:800;font-size:clamp(26px,4.6vw,38px);margin-top:14px;letter-spacing:-.02em}
+  h1 .g{background:linear-gradient(120deg,var(--gold),#f2d479);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .lead{color:var(--muted);margin-top:10px;font-size:15px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .card{background:var(--card);border:1px solid var(--bord);border-radius:18px;padding:22px;margin-top:18px;backdrop-filter:blur(8px)}
+  .card h2{font-family:Montserrat,sans-serif;font-size:17px;margin-bottom:6px}
+  label{display:block;font-size:12px;color:var(--muted);margin:12px 0 5px;text-transform:uppercase;letter-spacing:.05em}
+  input{width:100%;padding:11px 13px;border-radius:11px;border:1px solid var(--bord);background:rgba(0,0,0,.25);color:#fff;font:inherit;font-size:14px}
+  input::placeholder{color:#8C846C}
+  input[type=color]{padding:4px;height:42px;cursor:pointer}
+  .colorrow{display:flex;align-items:center;gap:10px}
+  .colorrow input[type=color]{width:54px;flex:0 0 auto}
+  .colorrow input[type=text]{flex:1}
+  .req{color:var(--gold)}
+  .out{position:relative;margin-top:12px;background:rgba(0,0,0,.34);border:1px solid var(--bord);border-radius:12px;padding:14px;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12.5px;white-space:pre-wrap;word-break:break-word;color:#EFE7CF;max-height:340px;overflow:auto}
+  .row{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+  .btn{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,var(--ciel),var(--violet));color:#fff;text-decoration:none;font-weight:700;font-size:13.5px;border:0;border-radius:11px;padding:11px 16px;cursor:pointer}
+  .btn.ghost{background:transparent;border:1px solid var(--bord);color:var(--tx)}
+  .btn.ok{background:var(--mint);color:#06231d}
+  .note{font-size:12.5px;color:var(--muted);margin-top:12px;border-left:3px solid var(--gold);padding-left:12px}
+  code{background:rgba(0,0,0,.3);padding:2px 6px;border-radius:6px}
+  ol.steps{margin:8px 0 0 0;padding-left:0;list-style:none;counter-reset:s}
+  ol.steps li{position:relative;padding:11px 0 11px 40px;border-bottom:1px solid var(--bord);font-size:13.5px}
+  ol.steps li:last-child{border-bottom:0}
+  ol.steps li::before{counter-increment:s;content:counter(s);position:absolute;left:0;top:10px;width:26px;height:26px;border-radius:8px;background:linear-gradient(135deg,var(--ciel),var(--violet));color:#fff;display:grid;place-items:center;font-weight:700;font-size:12px}
+  ol.steps li a{color:var(--ciel)}
+  .preview{display:flex;align-items:center;gap:12px;margin-top:14px;padding:14px;border-radius:14px;border:1px solid var(--bord);background:rgba(0,0,0,.2)}
+  .pvlogo{width:44px;height:44px;border-radius:13px;display:grid;place-items:center;font-family:Montserrat;font-weight:800;color:#fff;background:linear-gradient(135deg,var(--ciel),var(--violet))}
+  .pvtxt b{font-family:Montserrat;display:block;font-size:15px}.pvtxt span{font-size:12px;color:var(--muted)}
+  @media(max-width:680px){.grid2{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="back" href="index.html">← Centre de pilotage</a>
+    <h1>Personnaliser <span class="g">mon agence</span></h1>
+    <p class="lead">AWEMA s'auto-héberge : tu <b>forkes</b> ce projet et tu le personnalises. Remplis ce formulaire,
+      il génère ton <code>config/agence.json</code> — toute l'app (accueil, dashboard, guides, couleurs, liens) s'adapte.</p>
+  </header>
+
+  <div class="preview" id="pv">
+    <div class="pvlogo" id="pvlogo">A</div>
+    <div class="pvtxt"><b id="pvnom">AWEMA</b><span id="pvtag">Centre de pilotage</span></div>
+  </div>
+
+  <div class="card">
+    <h2>1 · Identité</h2>
+    <div class="grid2">
+      <div><label>Nom de l'agence <span class="req">*</span></label><input id="nom" placeholder="Ex. Baoulé Digital" value="AWEMA" oninput="build()"></div>
+      <div><label>Nom complet</label><input id="nom_complet" placeholder="Ex. Baoulé Digital Agency" oninput="build()"></div>
+      <div><label>Initiales (logo)</label><input id="initiales" maxlength="3" placeholder="auto" oninput="build(true)"></div>
+      <div><label>Tagline</label><input id="tagline" placeholder="Centre de pilotage" oninput="build()"></div>
+      <div><label>Slogan</label><input id="slogan" placeholder="La présence en ligne de vos clients, pilotée." oninput="build()"></div>
+      <div><label>Contact (email)</label><input id="contact" placeholder="hello@monagence.com" oninput="build()"></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>2 · Ton dépôt GitHub (le fork)</h2>
+    <p class="lead" style="font-size:13px">Pour que GitHub Pages et les liens « Code source » pointent vers <b>ton</b> fork.</p>
+    <div class="grid2">
+      <div><label>Propriétaire (owner)</label><input id="owner" placeholder="ton-pseudo-github" oninput="build()"></div>
+      <div><label>Nom du dépôt (repo)</label><input id="repo" placeholder="mon-agence" oninput="build()"></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>3 · Charte graphique</h2>
+    <div class="grid2" id="charte"></div>
+  </div>
+
+  <div class="card">
+    <h2>4 · Enregistrer</h2>
+    <p class="lead" style="font-size:13px">Clique <b>Enregistrer</b> : AWEMA écrit <code>config/agence.json</code>
+      dans ton dépôt et régénère l'app <b>en arrière-plan</b>. (1ʳᵉ fois : connecte ton GitHub.)</p>
+    <div class="row">
+      <button class="btn" id="saveBtn" onclick="enregistrerAuto()">💾 Enregistrer</button>
+      <span id="saveMsg" style="font-size:12.5px;color:var(--muted)"></span>
+    </div>
+    <details style="margin-top:16px">
+      <summary style="cursor:pointer;color:var(--muted);font-size:12.5px">⚙️ Mode manuel (avancé) — sans connexion GitHub</summary>
+      <div class="out" id="json" style="margin-top:12px">—<button class="btn" id="bj" style="position:absolute;top:10px;right:10px;padding:7px 11px;font-size:11.5px" onclick="cp('json','bj')">Copier</button></div>
+      <div class="row"><button class="btn ghost" onclick="dl()">⬇️ Télécharger agence.json</button></div>
+      <label style="margin-top:16px">Ou, en une commande (l'opérateur l'écrit + régénère tout)</label>
+      <div class="out" id="cmd">—<button class="btn" id="bc" style="position:absolute;top:10px;right:10px;padding:7px 11px;font-size:11.5px" onclick="cp('cmd','bc')">Copier</button></div>
+      <div class="note">Dans Claude Code : « <b>/awema setup nom="…" github.owner="…"</b> » — l'opérateur écrit le fichier et régénère l'app.</div>
+    </details>
+  </div>
+
+  <div class="card">
+    <h2>5 · Mettre en ligne (auto-hébergement)</h2>
+    <ol class="steps">
+      <li><b>Forke</b> le projet sur ton compte GitHub (bouton « Fork » du dépôt).</li>
+      <li>Place ton <code>config/agence.json</code> (téléchargé ci-dessus) à la racine du fork, dans <code>config/</code>, puis commit.</li>
+      <li>Lance <code>python3 outils/_data/build.py</code> (ou le workflow le fait) pour régénérer <code>config.js</code> + le registre.</li>
+      <li>Dans <b>Settings → Pages</b> du fork : source = branche <code>main</code>, dossier <code>/ (root)</code>. Le fichier <code>.nojekyll</code> est déjà présent.</li>
+      <li>Ajoute tes accès dans <b>Settings → Secrets and variables → Actions</b> : <code>META_TOKEN</code>, <code>YOUTUBE_API_KEY</code>, <code>TIKTOK_TOKENS</code> (Variable), <code>TIKTOK_PAT</code> — selon les réseaux que tu connectes.</li>
+      <li>Onboarde tes clients via <a href="nouveau-client.html">Nouveau client</a> et connecte leurs réseaux (guides <a href="connect-tiktok.html">TikTok</a> · <a href="connect-youtube.html">YouTube</a>).</li>
+    </ol>
+    <div class="note">Le guide complet : <a id="doclink" href="https://github.com/awema-test/awema-os/blob/main/docs/09-auto-hebergement.md" target="_blank" rel="noopener">docs/09 — Auto-hébergement &amp; personnalisation ↗</a></div>
+  </div>
+</div>
+
+<script src="outils/_data/config.js" onerror=""></script>
+<script src="outils/_design/awema-github.js"></script>
+<script>
+  const DEF_CHARTE={nuit:'#222222',ciel:'#FFC94D',gold:'#D4AF37',violet:'#EDA914',mint:'#34E5C4',pink:'#FF7D9C'};
+  const CL={nuit:'Bleu Nuit',ciel:'Bleu Ciel',gold:'Or',violet:'Violet',mint:'Menthe',pink:'Rose'};
+  const F=id=>(document.getElementById(id).value||'').trim();
+  function slugify(s){return (s||'').normalize('NFKD').replace(/[̀-ͯ]/g,'').replace(/[^a-zA-Z0-9]+/g,'-').replace(/^-+|-+$/g,'').toLowerCase();}
+  function initiales(n){const p=(n||'').split(/\s+/).filter(Boolean);return ((p.length>=2?p[0][0]+p[1][0]:(p[0]||'').slice(0,2))||'AW').toUpperCase();}
+  // construit les sélecteurs de couleur
+  const ch=document.getElementById('charte');
+  Object.keys(DEF_CHARTE).forEach(k=>{
+    const d=document.createElement('div');
+    d.innerHTML='<label>'+CL[k]+'</label><div class="colorrow"><input type="color" id="c_'+k+'" value="'+DEF_CHARTE[k]+'"><input type="text" id="t_'+k+'" value="'+DEF_CHARTE[k]+'"></div>';
+    ch.appendChild(d);
+  });
+  Object.keys(DEF_CHARTE).forEach(k=>{
+    const c=document.getElementById('c_'+k),t=document.getElementById('t_'+k);
+    c.addEventListener('input',()=>{t.value=c.value;build();});
+    t.addEventListener('input',()=>{if(/^#[0-9a-fA-F]{6}$/.test(t.value)){c.value=t.value;}build();});
+  });
+  let iniTouched=false;
+  function build(fromIni){
+    if(fromIni)iniTouched=true;
+    const nom=F('nom')||'AWEMA';
+    const iniEl=document.getElementById('initiales');
+    let ini=F('initiales'); if(!iniTouched){ini=initiales(nom);iniEl.value=ini;}
+    const charte={}; Object.keys(DEF_CHARTE).forEach(k=>charte[k]=F('t_'+k)||DEF_CHARTE[k]);
+    const cfg={nom:nom,nom_complet:F('nom_complet')||nom,tagline:F('tagline')||'Centre de pilotage',
+      slogan:F('slogan')||'',initiales:ini,langue:'fr',contact:F('contact')||'',
+      github:{owner:F('owner')||'ton-pseudo',repo:F('repo')||slugify(nom)||'mon-agence'},charte:charte};
+    if(!cfg.slogan)delete cfg.slogan; if(!cfg.contact)delete cfg.contact;
+    // aperçu live
+    document.getElementById('pvnom').textContent=nom;
+    document.getElementById('pvtag').textContent=cfg.tagline;
+    document.getElementById('pvlogo').textContent=ini;
+    const r=document.documentElement; Object.keys(charte).forEach(k=>r.style.setProperty('--'+k,charte[k]));
+    const setTxt=(id,t)=>{const el=document.getElementById(id);el.childNodes[0].textContent=t;};
+    setTxt('json',JSON.stringify(cfg,null,2));
+    // commande opérateur
+    const esc=s=>'"'+String(s).replace(/"/g,'\\"')+'"';
+    let p=['python3 scripts/awema.py setup'];
+    p.push('nom='+esc(nom));
+    if(F('nom_complet'))p.push('nom_complet='+esc(F('nom_complet')));
+    if(F('tagline'))p.push('tagline='+esc(F('tagline')));
+    if(F('slogan'))p.push('slogan='+esc(F('slogan')));
+    p.push('initiales='+esc(ini));
+    if(F('contact'))p.push('contact='+esc(F('contact')));
+    if(F('owner'))p.push('github.owner='+esc(F('owner')));
+    if(F('repo'))p.push('github.repo='+esc(F('repo')));
+    Object.keys(charte).forEach(k=>{if(charte[k].toLowerCase()!==DEF_CHARTE[k].toLowerCase())p.push('charte.'+k+'='+charte[k]);});
+    setTxt('cmd',p.join(' '));
+    if(F('owner')&&F('repo')){
+      document.getElementById('doclink').href='https://github.com/'+F('owner')+'/'+F('repo')+'/blob/main/docs/09-auto-hebergement.md';
+    }
+    window.__cfg=cfg;
+  }
+  async function cp(id,btn){const el=document.getElementById(id);const t=el.childNodes[0].textContent;
+    try{await navigator.clipboard.writeText(t);const b=document.getElementById(btn);b.textContent='Copié ✓';b.classList.add('ok');setTimeout(()=>{b.textContent='Copier';b.classList.remove('ok');},1400);}catch(e){}}
+  function dl(){const blob=new Blob([JSON.stringify(window.__cfg,null,2)],{type:'application/json'});
+    const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='agence.json';a.click();}
+  async function enregistrerAuto(){
+    const msg=document.getElementById('saveMsg'), btn=document.getElementById('saveBtn');
+    build();
+    AwemaGH.ensure(async function(ok){ if(!ok)return;
+      btn.disabled=true; msg.style.color='var(--muted)'; msg.textContent='💾 Enregistrement…';
+      try{
+        await AwemaGH.saveFile('config/agence.json', window.__cfg, 'AWEMA : config agence');
+        msg.style.color='#34E5C4'; msg.textContent='✅ Enregistré ('+AwemaGH.who()+') — l\'app se régénère (1-2 min).';
+        AwemaGH.runWorkflow('build.yml');
+      }catch(e){ msg.style.color='#FF7D9C'; msg.textContent='❌ '+e.message; }
+      finally{ btn.disabled=false; }
+    });
+  }
+  // Pré-remplit avec la config existante du fork (si présente), pour éditer plutôt que repartir de zéro
+  (function(){var c=window.AWEMA_CONFIG;if(!c)return;
+    var set=(id,v)=>{if(v!=null&&document.getElementById(id))document.getElementById(id).value=v;};
+    set('nom',c.nom);set('nom_complet',c.nom_complet);set('tagline',c.tagline);set('slogan',c.slogan);
+    set('contact',c.contact);
+    if(c.initiales){set('initiales',c.initiales);iniTouched=true;}
+    if(c.github){set('owner',c.github.owner);set('repo',c.github.repo);}
+    if(c.charte){Object.keys(DEF_CHARTE).forEach(k=>{if(c.charte[k]){var t=document.getElementById('t_'+k),cc=document.getElementById('c_'+k);if(t)t.value=c.charte[k];if(cc&&/^#[0-9a-fA-F]{6}$/.test(c.charte[k]))cc.value=c.charte[k];}});}
+  })();
+  build();
+</script>
+<script src="outils/_design/awema-fork.js"></script>
+<script src="outils/_design/abeille.js" data-aide="setup"></script>
+</body>
+</html>

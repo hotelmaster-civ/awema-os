@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AWEMA — Connecter WhatsApp Business (guide pas à pas)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--nuit:#222222;--ciel:#FFC94D;--gold:#D4AF37;--violet:#EDA914;--mint:#34E5C4;--wa:#25D366;--wa2:#128C7E;
+    --tx:#F1EDE2;--muted:#B3AA92;--card:rgba(255,255,255,.05);--bord:rgba(255,255,255,.12)}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:Poppins,system-ui,Segoe UI,Roboto,sans-serif;color:var(--tx);line-height:1.65;
+    background:radial-gradient(1100px 650px at 50% -12%,#13402f,#222222 62%,#1E1E1E);min-height:100vh;padding-bottom:60px}
+  .wrap{max-width:860px;margin:0 auto;padding:0 22px}
+  header{padding:54px 0 14px}
+  .back{color:var(--muted);text-decoration:none;font-size:13px}
+  .lgmark{display:inline-grid;place-items:center;width:46px;height:46px;border-radius:12px;background:linear-gradient(135deg,var(--wa),var(--wa2));color:#fff;font-size:24px;margin-bottom:8px}
+  h1{font-family:Montserrat,sans-serif;font-weight:800;font-size:clamp(26px,4.6vw,38px);margin-top:8px;letter-spacing:-.02em}
+  h1 .g{color:var(--wa)}
+  .lead{color:var(--muted);margin-top:10px;font-size:15px}
+  .pill{display:inline-block;font-size:12px;color:var(--muted);border:1px solid var(--bord);border-radius:20px;padding:5px 12px;background:var(--card);margin-top:14px}
+  .step{background:var(--card);border:1px solid var(--bord);border-radius:18px;padding:22px;margin-top:18px;backdrop-filter:blur(8px)}
+  .step h2{font-family:Montserrat,sans-serif;font-size:18px;display:flex;align-items:center;gap:12px}
+  .num{flex:0 0 30px;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-size:14px;font-weight:800;color:#06231d;background:linear-gradient(135deg,var(--wa),var(--wa2))}
+  .step p{color:#D8D2C2;font-size:13.6px;margin-top:10px}
+  .step ul{margin:8px 0 0 20px;color:#D8D2C2;font-size:13.4px}.step li{margin:5px 0}
+  .btn{display:inline-flex;align-items:center;gap:8px;margin-top:14px;background:linear-gradient(135deg,var(--wa),var(--wa2));color:#06231d;text-decoration:none;font-weight:700;font-size:13.5px;border:0;border-radius:11px;padding:11px 16px;cursor:pointer}
+  .note{font-size:12.5px;color:var(--muted);margin-top:12px;border-left:3px solid var(--gold);padding-left:12px}
+  .warn{font-size:12.5px;color:#a9f0c8;margin-top:12px;border-left:3px solid var(--wa);padding-left:12px;background:rgba(37,211,102,.07);padding:10px 12px;border-radius:0 8px 8px 0}
+  .perm code,code{background:rgba(37,211,102,.14);border:1px solid rgba(37,211,102,.4);color:#a9f0c8;padding:3px 8px;border-radius:7px;font-size:12px}
+  .perm{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="back" href="index.html" target="_top">← AWEMA · Centre de pilotage</a>
+    <div class="lgmark">✆</div>
+    <h1>Connecter <span class="g">WhatsApp Business</span> — guide pas à pas</h1>
+    <p class="lead">WhatsApp est un canal de <b>conversion/messagerie</b> (pas d'abonnés comme les réseaux
+      sociaux). Via la <b>WhatsApp Business Platform (Cloud API)</b> — un produit Meta — on récupère les
+      <b>statistiques de messagerie</b> (envoyés / livrés / lus, conversations) et on alimente le
+      <b>Tunnel WhatsApp</b> du dashboard.</p>
+    <span class="pill">⏱️ ~15 min · produit Meta · messagerie & conversion</span>
+  </header>
+
+  <div class="step">
+    <h2><span class="num">1</span> Business + Compte WhatsApp (WABA)</h2>
+    <ul>
+      <li>Tu as déjà un <b>Meta Business</b> (cf. guide Facebook). Sinon, crée-le.</li>
+      <li>Crée un <b>WhatsApp Business Account (WABA)</b> et ajoute un <b>numéro de téléphone</b>
+        (un numéro non déjà utilisé par l'app WhatsApp classique ; un numéro de test est fourni pour démarrer).</li>
+    </ul>
+    <a class="btn" href="https://business.facebook.com/wa/manage/" target="_blank" rel="noopener">Gérer WhatsApp (Business) ↗</a>
+  </div>
+
+  <div class="step">
+    <h2><span class="num">2</span> App Meta → produit WhatsApp</h2>
+    <ul>
+      <li>Dans ton <b>App Meta</b> (developers.facebook.com), ajoute le produit <b>WhatsApp</b>.</li>
+      <li>Récupère le <b>Phone Number ID</b> et le <b>WhatsApp Business Account ID (WABA ID)</b>.</li>
+    </ul>
+    <a class="btn" href="https://developers.facebook.com/apps/" target="_blank" rel="noopener">Mes apps Meta ↗</a>
+  </div>
+
+  <div class="step">
+    <h2><span class="num">3</span> Token &amp; permissions</h2>
+    <p>Génère un <b>token</b> (idéalement un <b>System User token</b> permanent, depuis le Business Manager)
+      avec les permissions :</p>
+    <div class="perm"><code>whatsapp_business_management</code><code>whatsapp_business_messaging</code></div>
+    <div class="warn">⚠️ Pour envoyer des messages en production (pas juste tester), Meta demande la
+      <b>vérification d'entreprise</b> + l'approbation des <b>modèles de message</b> (templates).
+      Pour la <b>lecture des analytics</b>, c'est plus simple.</div>
+  </div>
+
+  <div class="step">
+    <h2><span class="num">4</span> Donner les accès à AWEMA <span style="font-size:11px;color:#06231d;background:var(--mint,#34E5C4);border-radius:6px;padding:2px 7px;font-weight:700">sans terminal</span></h2>
+    <div class="note" style="border-color:var(--mint,#34E5C4)">ℹ️ <b>WhatsApp</b> : tu peux enregistrer tes accès dès maintenant (rangés en sécurité), mais la
+      <b>remontée automatique des stats arrive bientôt</b> (post-bêta). Une fois collés, tu n'as rien d'autre à faire ici.</div>
+    <p style="margin-top:10px">Colle chaque valeur : AWEMA la range dans un <b>coffre-fort privé de ton site</b> (invisible au public).</p>
+    <div id="awc-wa-token"></div>
+    <div id="awc-wa-phone"></div>
+    <div id="awc-wa-waba"></div>
+  </div>
+
+  <div class="step">
+    <h2><span class="num">5</span> Ce qu'AWEMA en fera</h2>
+    <ul>
+      <li><b>Analytics de messagerie</b> : messages envoyés / livrés / lus, conversations (via l'API Graph
+        <code>/{waba-id}/analytics</code>).</li>
+      <li><b>Tunnel WhatsApp</b> : suivi <i>click-to-WhatsApp</i> (pub → conversation → client) au dashboard.</li>
+      <li><b>(À venir)</b> agent <b>Modérateur</b> : tri des messages (prospect / client / plainte) + réponses préparées.</li>
+    </ul>
+    <div class="note">Le connecteur <code>--whatsapp-all</code> est <b>planifié</b> (post-bêta). En attendant, tu
+      peux déjà renseigner le numéro WhatsApp de chaque client dans sa fiche (champ <code>whatsapp</code>)
+      pour le bouton « contacter » et le tunnel.</div>
+  </div>
+</div>
+<script src="outils/_data/config.js" onerror=""></script>
+<script src="outils/_data/apply.js"></script>
+<script src="outils/_design/awema-github.js"></script>
+<script src="outils/_design/awema-connect.js"></script>
+<script>
+  AwemaConnect.secretBox('#awc-wa-token', {name:'WHATSAPP_TOKEN', label:'token WhatsApp', placeholder:'Colle le token (System User idéalement)'});
+  AwemaConnect.secretBox('#awc-wa-phone', {name:'WHATSAPP_PHONE_ID', label:'Phone Number ID', placeholder:'Colle le Phone Number ID'});
+  AwemaConnect.secretBox('#awc-wa-waba', {name:'WHATSAPP_WABA_ID', label:'WhatsApp Business Account ID', placeholder:'Colle le WABA ID'});
+</script>
+<script src="outils/_design/awema-fork.js"></script>
+<script src="outils/_design/abeille.js" data-aide="connect-whatsapp"></script>
+</body>
+</html>

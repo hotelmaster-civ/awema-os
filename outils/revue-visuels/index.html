@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AWEMA · Revue des Visuels</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../_design/awema-ui.css">
+<style>
+  /* Tokens, base, boutons, .badge, .mini, .toast, .cmd, .sk → fournis par ../_design/awema-ui.css */
+  body{height:100vh;overflow:hidden}
+  .app{display:grid;grid-template-rows:auto 1fr;height:100vh}
+
+  /* Header */
+  header{display:flex;align-items:center;gap:12px;padding:11px 18px;background:var(--surface);
+    backdrop-filter:var(--glass-blur);-webkit-backdrop-filter:var(--glass-blur);border-bottom:1px solid var(--border)}
+  header .logo{width:34px;height:34px;border-radius:10px;background:var(--grad);display:grid;place-items:center;
+    font-family:var(--font-disp);font-weight:800;color:#fff;box-shadow:0 8px 20px -6px rgba(237,169,20,.7)}
+  header .brand{font-family:var(--font-disp);font-weight:800;font-size:15.5px}
+  header .brand b{color:var(--blue)}
+  header .sub{font-size:11.5px;color:var(--muted)}
+  header .spacer{flex:1}
+  header .stat{font-size:11.5px;color:var(--muted);background:var(--elev);border:1px solid var(--border);padding:5px 11px;border-radius:20px;white-space:nowrap}
+  .cmdk{display:flex;align-items:center;gap:9px;padding:8px 12px;border-radius:11px;background:var(--elev);
+    border:1px solid var(--border);color:var(--muted);font-size:12.5px;cursor:pointer;transition:.16s}
+  .cmdk:hover{border-color:var(--border2)} .cmdk svg{width:16px;height:16px}
+  .cmdk kbd{font-family:inherit;font-size:10.5px;background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:2px 6px;color:var(--tx)}
+
+  /* Body layout */
+  .body{display:grid;grid-template-columns:300px 1fr 372px;height:100%;min-height:0}
+  .col{min-height:0;overflow:auto}
+  .left{border-right:1px solid var(--border)}
+  .right{border-left:1px solid var(--border);padding:16px}
+  .center{display:flex;flex-direction:column;min-height:0}
+
+  /* Filters + list */
+  .filters{padding:12px;position:sticky;top:0;background:var(--bg2);border-bottom:1px solid var(--border);z-index:2}
+  .filters input,.filters select{width:100%;margin:4px 0;background:var(--elev);color:var(--tx);
+    border:1px solid var(--border);border-radius:10px;padding:9px 11px;font-size:13px;outline:none;transition:.16s}
+  .filters input:focus,.filters select:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(255,201,77,.15)}
+  .item{padding:11px 14px;border-bottom:1px solid var(--border);cursor:pointer;display:flex;gap:9px;align-items:flex-start;transition:.14s}
+  .item:hover{background:var(--elev)}
+  .item.sel{background:linear-gradient(120deg,rgba(255,201,77,.14),rgba(237,169,20,.10));border-left:3px solid var(--blue)}
+  .item .id{font-size:11px;color:var(--muted);min-width:30px;font-variant-numeric:tabular-nums}
+  .item .t{font-size:12.5px;line-height:1.3;font-weight:500}
+  .item .meta{font-size:10.5px;color:var(--muted);margin-top:3px}
+  .dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:5px;vertical-align:middle}
+  .skitem{padding:12px 14px;border-bottom:1px solid var(--border)}
+
+  /* Center preview */
+  .navbar{display:flex;align-items:center;gap:10px;padding:12px 16px;border-bottom:1px solid var(--border)}
+  .navbar button{width:38px;height:38px;background:var(--elev);color:var(--tx);border:1px solid var(--border);border-radius:11px;font-size:15px;cursor:pointer;transition:.16s}
+  .navbar button:hover{border-color:var(--blue);transform:translateY(-1px)}
+  .navbar .pos{font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums}
+  .stage{flex:1;display:flex;align-items:center;justify-content:center;padding:20px;overflow:auto}
+  .visual{width:330px;max-width:90%;aspect-ratio:4/5;border-radius:var(--r);
+    background:linear-gradient(160deg,#282828,#1E1E1E);border:1px solid var(--border2);box-shadow:var(--shadow);
+    position:relative;display:flex;flex-direction:column;justify-content:space-between;padding:24px;overflow:hidden}
+  .visual.story{aspect-ratio:9/16;width:300px}
+  .visual::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 8%,rgba(237,169,20,.22),transparent 55%)}
+  .visual>div{position:relative}
+  .visual .pil{font-size:10.5px;color:var(--gold);font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+  .visual .ttl{font-family:var(--font-disp);font-weight:800;font-size:23px;line-height:1.16;letter-spacing:-.02em}
+  .visual .vreco{font-size:12px;color:#DDD7C5;opacity:.9}
+  .visual .cta{align-self:flex-start;background:var(--grad);color:#fff;font-weight:700;font-size:12.5px;padding:9px 15px;border-radius:10px;box-shadow:0 10px 22px -8px rgba(255,201,77,.6)}
+  .visual .sign{font-size:11px;color:var(--muted)}
+  .visual img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:var(--r)}
+  .previews{display:flex;gap:8px;flex-wrap:wrap;padding:0 16px 14px;justify-content:center}
+  .previews a{font-size:11.5px;color:var(--tx);background:var(--elev);border-radius:9px;padding:7px 11px;border:1px solid var(--border)}
+  .previews a:hover{border-color:var(--blue)}
+
+  /* Right panel */
+  .right h3{margin:0 0 8px;font-size:12px;color:var(--blue);text-transform:uppercase;letter-spacing:.06em;font-weight:700;display:flex;align-items:center;gap:6px}
+  .kv{font-size:12.5px;margin:5px 0;color:var(--tx)}
+  .kv b{color:var(--muted);font-weight:500}
+  .sec{border-top:1px solid var(--border);margin-top:16px;padding-top:14px}
+  textarea,.right select,.right input{width:100%;background:var(--elev);color:var(--tx);border:1px solid var(--border);border-radius:10px;padding:9px;font-family:inherit;font-size:12.5px;outline:none;transition:.16s}
+  textarea:focus,.right select:focus,.right input:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(255,201,77,.15)}
+  textarea{resize:vertical;min-height:60px}
+  label.lbl{font-size:11px;color:var(--muted);display:block;margin:9px 0 4px}
+  .row{display:flex;gap:8px}.row>*{flex:1}
+  .promptbox{background:var(--surface-solid);border:1px solid var(--border);border-radius:10px;padding:10px;font-size:11px;line-height:1.45;color:#DDD7C5;white-space:pre-wrap;max-height:120px;overflow:auto;font-family:ui-monospace,monospace}
+  .statusrow button{flex:1;font-size:11px;padding:8px 4px;border-radius:9px;border:1px solid var(--border);background:var(--elev);color:var(--muted);cursor:pointer;transition:.14s}
+  .statusrow button.on{font-weight:700;color:#fff;border-color:var(--border2);background:linear-gradient(120deg,rgba(255,201,77,.2),rgba(237,169,20,.16))}
+
+  /* Dropzone */
+  .drop{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:14px;background:var(--bg);z-index:50;text-align:center;padding:30px}
+  .drop h2{font-family:var(--font-disp);color:var(--tx);font-size:22px}
+  .drop .zone{border:2px dashed var(--border2);border-radius:var(--r);padding:42px;max-width:520px;background:var(--surface)}
+  .drop input{display:none}
+  .drop .pick{background:var(--grad);color:#fff;border:none;padding:11px 18px;border-radius:11px;font-weight:600;cursor:pointer}
+  .hidden{display:none!important}
+  @media(max-width:900px){.body{grid-template-columns:1fr}.left,.right{display:none}}
+</style>
+</head>
+<body>
+<div class="app">
+  <header>
+    <div class="logo">A</div>
+    <div>
+      <div class="brand">AWEMA · <b>Revue des Visuels</b></div>
+      <div class="sub" id="clientSub">—</div>
+    </div>
+    <select id="clientSel" title="Client" style="background:rgba(127,127,127,.12);color:inherit;border:1px solid rgba(127,127,127,.28);border-radius:10px;padding:8px 11px;font:inherit;max-width:230px;cursor:pointer;margin-left:14px"></select>
+    <div class="spacer"></div>
+    <button class="cmdk" id="cmdkBtn" data-ic="search"><span>Rechercher</span><kbd>⌘K</kbd></button>
+    <span class="stat" id="progress">0 / 0 traités</span>
+    <button class="iconbtn" id="themeBtn" data-ic="moon" data-theme-btn title="Thème"></button>
+    <button class="ghost" id="loadBtn">Charger</button>
+    <button class="btn-cta" id="ghSaveBtn" data-ic="save" title="Enregistrer les retours dans ton dépôt (retours-visuels.json) — survit au navigateur"><span>💾 GitHub</span></button>
+    <button class="btn-cta" id="exportBtn" data-ic="download"><span>Exporter</span></button>
+  </header>
+
+  <div class="body">
+    <!-- Liste -->
+    <div class="col left">
+      <div class="filters">
+        <input id="search" placeholder="🔎 Rechercher un titre…">
+        <div class="row">
+          <select id="fPilier"><option value="">Tous piliers</option></select>
+          <select id="fPlateforme"><option value="">Toutes plateformes</option></select>
+        </div>
+        <select id="fStatut">
+          <option value="">Tous statuts</option>
+          <option>À produire</option><option>En revue</option>
+          <option>Validé</option><option>À retoucher</option>
+        </select>
+      </div>
+      <div id="list"></div>
+    </div>
+
+    <!-- Aperçu -->
+    <div class="col center">
+      <div class="navbar">
+        <button id="prev" title="Précédent (←)">←</button>
+        <button id="next" title="Suivant (→)">→</button>
+        <span class="pos" id="pos">—</span>
+        <div style="flex:1"></div>
+        <span class="badge" id="bDate">—</span>
+        <span class="badge" id="bPlateforme">—</span>
+      </div>
+      <div class="stage">
+        <div class="visual" id="visual">
+          <div class="pil" id="vPil">—</div>
+          <div class="ttl" id="vTtl">—</div>
+          <div class="vreco" id="vReco">—</div>
+          <div class="cta" id="vCta">—</div>
+          <div class="sign">La Grande Vision · « Voir la vie en grand. »</div>
+        </div>
+      </div>
+      <div class="previews" id="previews"></div>
+    </div>
+
+    <!-- Étude / annotation -->
+    <div class="col right">
+      <h3>Fiche du visuel</h3>
+      <div class="kv"><b>Objectif :</b> <span id="mObjectif">—</span></div>
+      <div class="kv"><b>Persona :</b> <span id="mPersona">—</span></div>
+      <div class="kv"><b>Pilier :</b> <span id="mPilier">—</span></div>
+      <div class="kv"><b>Format cible :</b> <span id="mFormat">—</span></div>
+      <div class="kv"><b>Hook :</b> <span id="mHook">—</span></div>
+      <div class="kv"><b>CTA :</b> <span id="mCta">—</span></div>
+      <div class="kv"><b>KPI :</b> <span id="mKpi">—</span></div>
+
+      <div class="sec">
+        <h3>📝 Description du post (prête à copier)</h3>
+        <div class="promptbox" id="descBox">—</div>
+        <div class="row" style="margin-top:6px">
+          <button class="mini gold" id="copyDesc">Copier la description</button>
+          <button class="mini" id="copyTags">Copier les #</button>
+        </div>
+      </div>
+
+      <div class="sec">
+        <h3>📸 Prompt visuel — <span id="visPlat" style="text-transform:none;color:#EFE7CF">—</span></h3>
+        <div class="row">
+          <select id="visCible">
+            <option value="prompt_canva">Canva</option>
+            <option value="prompt_mj">Midjourney</option>
+            <option value="prompt_gpt">GPT Image</option>
+          </select>
+          <button class="mini gold" id="copyVis">Copier le prompt</button>
+        </div>
+        <div class="promptbox" id="visBox" style="margin-top:6px">—</div>
+        <div class="row" style="margin-top:6px">
+          <button class="mini gold" id="toChatGPT">🤖 Générer sur ChatGPT</button>
+          <button class="mini" id="toClaude">📋 Claude Desktop</button>
+        </div>
+        <div style="font-size:10.5px;color:#C9B577;margin-top:6px;line-height:1.45">
+          Astuce : clique <b>🤖</b> (le prompt est copié + ChatGPT s'ouvre) → génère l'image →
+          reviens ici et <b>colle l'image (Ctrl/Cmd+V)</b> ou glisse-la sur l'aperçu.
+        </div>
+      </div>
+
+      <div class="sec">
+        <h3>Statut</h3>
+        <div class="row statusrow" id="statusRow">
+          <button data-s="À produire">À produire</button>
+          <button data-s="En revue">En revue</button>
+          <button data-s="Validé">Validé</button>
+          <button data-s="À retoucher">À retoucher</button>
+        </div>
+      </div>
+
+      <div class="sec">
+        <h3>Annotations</h3>
+        <label class="lbl">Image du visuel (URL ou chemin) — facultatif</label>
+        <input id="imgUrl" placeholder="https://… ou ./visuels/001.png">
+        <label class="lbl">Notes d'étude</label>
+        <textarea id="notes" placeholder="Ce qui fonctionne, ce qui accroche, remarques…"></textarea>
+      </div>
+
+      <div class="sec">
+        <h3>Demande de modification → prompts</h3>
+        <label class="lbl">Quelles modifications demander ?</label>
+        <textarea id="modifs" placeholder="Ex : plus de gold sur le CTA, ajouter un visage souriant, agrandir le titre, fond plus clair…"></textarea>
+        <label class="lbl">Appliquer au prompt</label>
+        <div class="row">
+          <select id="promptCible">
+            <option value="prompt_canva">Canva</option>
+            <option value="prompt_mj">Midjourney</option>
+            <option value="prompt_gpt">GPT Image</option>
+          </select>
+          <button class="mini gold" id="buildPrompt">Générer prompt mis à jour</button>
+        </div>
+        <label class="lbl">Prompt mis à jour (prêt à copier)</label>
+        <div class="promptbox" id="promptOut">—</div>
+        <div class="row" style="margin-top:6px">
+          <button class="mini" id="copyPrompt">Copier le prompt</button>
+          <button class="mini" id="copyOrig">Copier l'original</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Dropzone si aucune donnée -->
+<div class="drop hidden" id="drop">
+  <h2>Revue des Visuels de Campagne</h2>
+  <div class="zone">
+    <p>Glissez-déposez un fichier <code>campagne.json</code> ici,<br>ou chargez-le manuellement.</p>
+    <button class="pick" id="pickBtn">Choisir campagne.json</button>
+    <input type="file" id="fileInput" accept=".json,application/json">
+    <p style="font-size:12px;color:#C9B577;margin-top:18px">
+      Astuce : générez les données avec <code>_generateur/generer.py</code> puis
+      <code>build-data.py</code> pour une ouverture en un double-clic.
+    </p>
+  </div>
+</div>
+
+<!-- Palette de commande (Command+K) -->
+<div class="cmd-ov" id="cmdOv">
+  <div class="cmd" role="dialog" aria-label="Recherche">
+    <div class="in"><span data-ic="search" style="display:flex;color:var(--muted)"></span>
+      <input id="cmdIn" placeholder="Rechercher un visuel, une plateforme…" autocomplete="off">
+      <kbd style="font-size:11px;color:var(--muted)">esc</kbd></div>
+    <div class="res" id="cmdRes"></div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="../_design/awema-ui.js"></script>
+<script src="../_design/awema-format.js"></script>
+<script src="../_design/awema-github.js"></script>
+<script src="../_data/agence.js" onerror="window.__noReg=true"></script>
+<script src="data.js" onerror="window.__noData=true"></script>
+<script>
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+let DATA=null, ITEMS=[], idx=0, STORE={}, KEY="awema-revue";
+
+function toast(m){const t=$("#toast");t.textContent=m;t.classList.add("show");clearTimeout(t._t);t._t=setTimeout(()=>t.classList.remove("show"),1600);}
+let DIFF={};   // plan_id → statut de la file de publication (programme/publie/echec…)
+function load(data){
+  DATA=data; ITEMS=data.contenus||[];
+  DIFF={};(data.planning||[]).forEach(p=>{ if(!p||p.plan_id==null)return;
+    let url=null;Object.values(p.resultats||{}).forEach(r=>{if(r&&r.ok&&r.url&&!url)url=r.url;});
+    DIFF[String(p.plan_id)]={st:p.statut,url:url};});
+  KEY="awema-revue:"+(data.client||"campagne");
+  STORE=JSON.parse(localStorage.getItem(KEY)||"{}");
+  chargerRetoursGitHub(data);
+  $("#drop").classList.add("hidden");
+  $("#clientSub").textContent=(data.client||"")+" · "+(data.lieu||"")+" · "+(data.total||ITEMS.length)+" contenus";
+  // charte dynamique
+  const c=data.charte||{};
+  if(c.bleu_nuit) document.documentElement.style.setProperty('--nuit',c.bleu_nuit);
+  if(c.bleu_ciel) document.documentElement.style.setProperty('--ciel',c.bleu_ciel);
+  if(c.gold) document.documentElement.style.setProperty('--gold',c.gold);
+  fillFilters(); renderList(); show(0);
+}
+function st(id){return STORE[id]||(STORE[id]={});}
+function save(){localStorage.setItem(KEY,JSON.stringify(STORE));updateProgress();}
+function updateProgress(){
+  const done=ITEMS.filter(it=>{const s=st(it.id);return s.statut&&s.statut!=="À produire";}).length;
+  $("#progress").textContent=done+" / "+ITEMS.length+" traités";
+}
+function statutColor(s){return AwemaFmt.prodColor(s);}
+
+function fillFilters(){
+  const pil=[...new Set(ITEMS.map(i=>i.pilier+" "+i.pilier_nom))].sort();
+  const plt=[...new Set(ITEMS.map(i=>i.plateforme))].sort();
+  pil.forEach(p=>$("#fPilier").insertAdjacentHTML('beforeend',`<option value="${p.split(' ')[0]}">${p}</option>`));
+  plt.forEach(p=>$("#fPlateforme").insertAdjacentHTML('beforeend',`<option>${p}</option>`));
+}
+function filtered(){
+  const q=$("#search").value.toLowerCase(), fp=$("#fPilier").value, fpl=$("#fPlateforme").value, fs=$("#fStatut").value;
+  return ITEMS.filter(i=>{
+    if(q&&!i.titre.toLowerCase().includes(q))return false;
+    if(fp&&i.pilier!==fp)return false;
+    if(fpl&&i.plateforme!==fpl)return false;
+    if(fs&&(st(i.id).statut||"À produire")!==fs)return false;
+    return true;
+  });
+}
+function renderList(){
+  const list=$("#list");list.innerHTML="";
+  filtered().forEach(it=>{
+    const real=ITEMS.indexOf(it);
+    const s=st(it.id).statut||"À produire";
+    const el=document.createElement('div');
+    el.className="item"+(real===idx?" sel":"");
+    el.innerHTML=`<div class="id">#${String(it.id).padStart(3,'0')}</div>
+      <div><div class="t">${esc(it.titre)}</div>
+      <div class="meta"><span class="dot" style="background:${statutColor(s)}"></span>${it.plateforme} · ${it.pilier} · ${it.format}${(e=>e?' · '+AwemaFmt.diffBadge(e.st,e.url):'')(DIFF[String(it.id)])}</div></div>`;
+    el.onclick=()=>show(real);
+    list.appendChild(el);
+  });
+}
+function show(i){
+  if(i<0||i>=ITEMS.length)return; idx=i;
+  const it=ITEMS[idx], s=st(it.id);
+  $("#pos").textContent=`#${String(it.id).padStart(3,'0')} — ${idx+1}/${ITEMS.length}`;
+  $("#bDate").textContent=it.date+" "+it.heure;
+  $("#bPlateforme").textContent=it.plateforme;
+  // visual mockup
+  const v=$("#visual"); const story=/Story|Reel|9:16|1920/i.test(it.format);
+  v.className="visual"+(story?" story":"");
+  v.querySelector(".sign")?.remove();
+  $("#vPil").textContent=it.pilier+" · "+it.pilier_nom;
+  $("#vTtl").textContent=it.titre;
+  $("#vReco").textContent=it.visuel||"";
+  $("#vCta").textContent=it.cta;
+  // image : annotation prioritaire, sinon visuel Canva du contenu (repli gracieux)
+  v.querySelectorAll('img').forEach(n=>n.remove());
+  const img=(s.image||it.image||"").trim();
+  if(img){const im=new Image();im.src=img;im.onerror=()=>im.remove();v.appendChild(im);}
+  if(!v.querySelector(".sign")){const sg=document.createElement('div');sg.className="sign";sg.textContent="La Grande Vision · « Voir la vie en grand. »";v.appendChild(sg);}
+  // previews
+  const pv=$("#previews");pv.innerHTML="";
+  (it.apercus||[]).forEach((u,k)=>pv.insertAdjacentHTML('beforeend',`<a href="${u}" target="_blank" rel="noopener">🎨 Aperçu Canva ${k+1}</a>`));
+  if(!(it.apercus||[]).length) pv.innerHTML=`<span style="font-size:11px;color:#C9B577">Aucun aperçu généré — utilisez les prompts ci-contre pour produire le visuel.</span>`;
+  // fiche
+  $("#mObjectif").textContent=it.objectif; $("#mPersona").textContent=it.persona;
+  $("#mPilier").textContent=it.pilier+" — "+it.pilier_nom;
+  $("#mFormat").textContent=it.format+(it.px?` · ${it.px} (${it.ratio})`:"");
+  $("#mHook").textContent=it.hook; $("#mCta").textContent=it.cta; $("#mKpi").textContent=it.kpi;
+  // description prête à copier + prompt visuel plateforme
+  $("#descBox").textContent=it.description||it.legende||"—";
+  $("#visPlat").textContent=(it.plateforme||"")+(it.px?` · ${it.px} (${it.ratio})`:"");
+  $("#visCible").value=s.visCible||"prompt_canva";
+  $("#visBox").textContent=it[$("#visCible").value]||"—";
+  // état annotation
+  const sImg=s.image||it.image||""; $("#imgUrl").value=sImg.startsWith("data:")?"[image collée / déposée]":sImg;
+  $("#notes").value=s.notes||""; $("#modifs").value=s.modifs||"";
+  $("#promptCible").value=s.promptCible||"prompt_canva";
+  $("#promptOut").textContent=s.promptOut||"—";
+  $$("#statusRow button").forEach(b=>b.classList.toggle("on",(s.statut||"À produire")===b.dataset.s)|| (b.style.borderColor=(s.statut||"À produire")===b.dataset.s?statutColor(b.dataset.s):"var(--bord)"));
+  renderList();
+}
+function cur(){return ITEMS[idx];}
+
+// Annotation events
+$("#imgUrl").oninput=e=>{if(e.target.value==="[image collée / déposée]")return;st(cur().id).image=e.target.value;save();};
+$("#notes").oninput=e=>{st(cur().id).notes=e.target.value;save();};
+$("#modifs").oninput=e=>{st(cur().id).modifs=e.target.value;save();};
+$("#promptCible").onchange=e=>{st(cur().id).promptCible=e.target.value;save();};
+$$("#statusRow button").forEach(b=>b.onclick=()=>{st(cur().id).statut=b.dataset.s;save();show(idx);toast("Statut : "+b.dataset.s);});
+
+$("#buildPrompt").onclick=()=>{
+  const it=cur(), s=st(it.id), champ=$("#promptCible").value;
+  const base=it[champ]||"";
+  const m=($("#modifs").value||"").trim();
+  const out=m? base+"\n\n>>> MODIFICATIONS DEMANDÉES (revue agence) : "+m : base;
+  s.promptOut=out; $("#promptOut").textContent=out;
+  if(m&&!s.statut) {s.statut="À retoucher";show(idx);}
+  save(); toast("Prompt mis à jour généré");
+};
+function copy(t){navigator.clipboard?.writeText(t).then(()=>toast("Copié ✓"),()=>fallbackCopy(t))||fallbackCopy(t);}
+function fallbackCopy(t){const a=document.createElement('textarea');a.value=t;document.body.appendChild(a);a.select();document.execCommand('copy');a.remove();toast("Copié ✓");}
+$("#copyPrompt").onclick=()=>copy($("#promptOut").textContent);
+$("#copyOrig").onclick=()=>copy(cur()[$("#promptCible").value]||"");
+// Description + prompt visuel plateforme
+$("#copyDesc").onclick=()=>copy(cur().description||cur().legende||"");
+$("#copyTags").onclick=()=>copy(cur().hashtags||"");
+$("#visCible").onchange=e=>{st(cur().id).visCible=e.target.value;$("#visBox").textContent=cur()[e.target.value]||"—";save();};
+$("#copyVis").onclick=()=>copy(cur()[$("#visCible").value]||"");
+
+// === Génération externe (ChatGPT) + retour de l'image dans l'interface ===
+const CHATGPT_URL="https://chatgpt.com/";
+function curPrompt(){return cur()[$("#visCible").value]||"";}
+$("#toChatGPT").onclick=()=>{copy(curPrompt());window.open(CHATGPT_URL,"_blank","noopener");
+  toast("Prompt copié → colle-le dans ChatGPT (Ctrl/Cmd+V)");};
+$("#toClaude").onclick=()=>{
+  const it=cur(), p=curPrompt();
+  const nom=String(it.id).padStart(3,'0')+"-"+String(it.plateforme||"").replace(/\s+/g,'')+".png";
+  const instr=
+`Ouvre chatgpt.com dans mon navigateur (je suis déjà connecté). Démarre une NOUVELLE conversation, `+
+`envoie le message ci-dessous pour générer une image, attends la fin du rendu, puis télécharge `+
+`l'image générée sous le nom « ${nom} » dans le dossier des visuels reçus de la campagne. `+
+`Ne modifie pas le prompt.\n\n--- PROMPT IMAGE ---\n${p}`;
+  copy(instr); toast("Instruction Claude Desktop copiée");
+};
+
+// Charger une image dans l'aperçu (presse-papier ou glisser-déposer) → annotation
+function setImageData(dataUrl){
+  const it=cur(); st(it.id).image=dataUrl;
+  try{save();}catch(e){toast("Image lourde : affichée mais non sauvegardée (quota local)");}
+  show(idx); toast("Visuel chargé ✓");
+}
+function fileToImage(file){
+  if(!file||!file.type.startsWith("image/"))return false;
+  const r=new FileReader(); r.onload=()=>setImageData(r.result); r.readAsDataURL(file); return true;
+}
+document.addEventListener('paste',e=>{
+  if(!ITEMS.length||/INPUT|TEXTAREA/.test(document.activeElement.tagName))return;
+  const img=[...(e.clipboardData?.items||[])].find(x=>x.type.startsWith("image/"));
+  if(img){e.preventDefault();fileToImage(img.getAsFile());}
+});
+(()=>{const stage=$(".stage");if(!stage)return;
+  ["dragover","dragenter"].forEach(ev=>stage.addEventListener(ev,e=>{e.preventDefault();stage.style.outline="2px dashed var(--gold)";stage.style.outlineOffset="-6px";}));
+  ["dragleave","drop"].forEach(ev=>stage.addEventListener(ev,e=>{e.preventDefault();stage.style.outline="";}));
+  stage.addEventListener('drop',e=>{const f=e.dataTransfer.files[0];if(f)fileToImage(f);});
+})();
+
+// Navigation
+$("#prev").onclick=()=>show(idx-1);
+$("#next").onclick=()=>show(idx+1);
+document.addEventListener('keydown',e=>{
+  if(/INPUT|TEXTAREA|SELECT/.test(document.activeElement.tagName))return;
+  if(e.key==="ArrowLeft")show(idx-1);
+  if(e.key==="ArrowRight")show(idx+1);
+});
+["search","fPilier","fPlateforme","fStatut"].forEach(id=>$("#"+id).oninput=$("#"+id).onchange=renderList);
+
+// ----- Retours ↔ GitHub : la revue survit au navigateur (retours-visuels.json) -----
+function retoursRows(){
+  return ITEMS.map(it=>{const s=st(it.id);return {id:it.id,titre:it.titre,plateforme:it.plateforme,pilier:it.pilier,
+    statut:s.statut||"À produire",image:s.image||"",notes:s.notes||"",modifications:s.modifs||"",
+    prompt_cible:s.promptCible||"",prompt_mis_a_jour:s.promptOut||""};});
+}
+function chargerRetoursGitHub(data){
+  if(!data.dir)return;
+  fetch('../../'+data.dir+'/_donnees/retours-visuels.json',{cache:'no-store'}).then(r=>r.ok?r.json():null).then(j=>{
+    if(!j||!Array.isArray(j.retours))return;
+    let seedes=0;
+    j.retours.forEach(r=>{ if(STORE[r.id])return;              // l'édition locale prime
+      const e={};
+      if(r.statut&&r.statut!=="À produire")e.statut=r.statut;
+      if(r.image)e.image=r.image; if(r.notes)e.notes=r.notes;
+      if(r.modifications)e.modifs=r.modifications;
+      if(r.prompt_cible)e.promptCible=r.prompt_cible; if(r.prompt_mis_a_jour)e.promptOut=r.prompt_mis_a_jour;
+      if(Object.keys(e).length){STORE[r.id]=e;seedes++;}
+    });
+    if(seedes){localStorage.setItem(KEY,JSON.stringify(STORE));renderList();show(idx);updateProgress();
+      toast(seedes+' retour(s) rechargé(s) depuis GitHub');}
+  }).catch(()=>{});
+}
+$("#ghSaveBtn").onclick=()=>{
+  if(!window.AwemaGH){toast('Module GitHub indisponible');return;}
+  if(!DATA||!DATA.dir){toast('Client du registre requis');return;}
+  const payload={client:DATA.client,id:DATA.id,date:new Date().toISOString(),retours:retoursRows()};
+  const b=$("#ghSaveBtn");b.disabled=true;
+  AwemaGH.ensure(function(ok){
+    if(ok===false){b.disabled=false;return;}
+    AwemaGH.saveFile(DATA.dir+'/_donnees/retours-visuels.json',payload,'AWEMA : retours de revue visuels ('+(DATA.id||DATA.client)+')')
+      .then(()=>toast('✅ Retours enregistrés dans GitHub'))
+      .catch(e=>toast('❌ '+(e.message||e)))
+      .then(()=>{b.disabled=false;});
+  });
+};
+
+// Export des retours (JSON + Markdown)
+$("#exportBtn").onclick=()=>{
+  const rows=retoursRows();
+  dl("retours-campagne.json", JSON.stringify({client:DATA.client,date:new Date().toISOString(),retours:rows},null,2),"application/json");
+  // Markdown : uniquement les éléments annotés / à retoucher
+  let md=`# Retours de revue — ${DATA.client||""}\n\n_${new Date().toLocaleString('fr-FR')}_\n\n`;
+  const act=rows.filter(r=>r.modifications||r.notes||r.statut==="À retoucher"||r.statut==="Validé");
+  md+=`Éléments traités : ${act.length} / ${rows.length}\n\n`;
+  act.forEach(r=>{md+=`## #${String(r.id).padStart(3,'0')} — ${r.titre}\n`+
+    `- Plateforme : ${r.plateforme} · Pilier : ${r.pilier}\n- **Statut : ${r.statut}**\n`+
+    (r.notes?`- Notes : ${r.notes}\n`:"")+
+    (r.modifications?`- 🔧 Modifications : ${r.modifications}\n`:"")+
+    (r.prompt_mis_a_jour?`\n\`\`\`\n${r.prompt_mis_a_jour}\n\`\`\`\n`:"")+`\n`;});
+  dl("retours-campagne.md", md, "text/markdown");
+  toast("Retours exportés (JSON + Markdown)");
+};
+function dl(name,content,type){const b=new Blob([content],{type});const a=document.createElement('a');
+  a.href=URL.createObjectURL(b);a.download=name;a.click();URL.revokeObjectURL(a.href);}
+
+// Chargement manuel
+$("#loadBtn").onclick=()=>$("#fileInput").click();
+$("#pickBtn").onclick=()=>$("#fileInput").click();
+$("#fileInput").onchange=e=>{const f=e.target.files[0];if(!f)return;const r=new FileReader();
+  r.onload=()=>{try{load(JSON.parse(r.result));toast("Campagne chargée");}catch(err){alert("JSON invalide : "+err.message);}};r.readAsText(f);};
+["dragover","drop"].forEach(ev=>$("#drop").addEventListener(ev,e=>e.preventDefault()));
+$("#drop").addEventListener('drop',e=>{const f=e.dataTransfer.files[0];if(f){const r=new FileReader();
+  r.onload=()=>{try{load(JSON.parse(r.result));}catch(err){alert("JSON invalide");}};r.readAsText(f);}});
+
+// Design system : icônes, thème, palette de commande
+AWEMA.injectIcons();
+AWEMA.initTheme($("#themeBtn"));
+const PAL=AWEMA.commandPalette({overlay:$("#cmdOv"),input:$("#cmdIn"),results:$("#cmdRes"),
+  sources:()=>ITEMS.map((it,i)=>({t:it.titre,s:it.plateforme+" · "+it.pilier,icon:"layers",run:()=>show(i)}))});
+$("#cmdkBtn").onclick=()=>PAL.open();
+function skeletonList(){$("#list").innerHTML=Array.from({length:9}).map(()=>
+  '<div class="skitem"><div class="sk" style="height:12px;width:72%"></div>'+
+  '<div class="sk" style="height:9px;width:46%;margin-top:8px"></div></div>').join('');}
+
+// ----- Multi-clients : sélecteur + résolution depuis le registre (?client=<id>) -----
+const REG=(window.AWEMA_REGISTRY&&window.AWEMA_REGISTRY.clients)||[];
+function clientData(c){
+  return {client:c.nom,lieu:c.lieu,id:c.id,dir:c._dir||('modules/marketing/clients/'+c.id),
+    planning:c.planning||[],total:(c.campagne&&c.campagne.total)||0,
+    contenus:(c.campagne&&c.campagne.contenus)||[],charte:(window.CAMPAGNE&&window.CAMPAGNE.charte)};
+}
+function buildClientSelector(curId){
+  const sel=$("#clientSel"); if(!sel)return;
+  if(!REG.length){sel.style.display='none';return;}
+  sel.innerHTML=REG.map(c=>`<option value="${c.id}">${esc(c.nom)}${(c.campagne&&c.campagne.total)?' · '+c.campagne.total+' contenus':' · à générer'}</option>`).join('');
+  if(curId)sel.value=curId;
+  sel.onchange=()=>{const u=new URL(location);u.searchParams.set('client',sel.value);location.href=u.toString();};
+}
+function creatifBloc(c){
+  const cr=(c.agents&&c.agents.creatif)||null;
+  if(!cr||!(cr.items||[]).length){
+    return '<div style="margin:14px 14px 0;padding:14px;border:1px dashed rgba(237,169,20,.45);border-radius:12px;color:#B3AA92;font-size:12.5px;line-height:1.7">✨ <b style="color:#EFD9A0">Idées IA</b> — génère 3 publications prêtes pour <b>'+(c.nom||'ce client')+'</b> :<br><code style="background:rgba(0,0,0,.3);padding:2px 6px;border-radius:6px">python3 scripts/run-agent.py creatif '+c.id+'</code> (clé IA + mémoire), puis régénère le registre.</div>';
+  }
+  return '<div style="margin:14px 14px 0"><div style="font-size:11px;color:#B3AA92;text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px">✨ Idées du Créatif IA · proposition à relire</div>'+
+    cr.items.map(function(i){return '<div style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:12px 14px;margin-bottom:8px">'+
+      '<div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap"><b style="flex:1;min-width:150px">'+esc(i.hook)+'</b><span style="font-size:11px;color:#B3AA92">'+esc(i.reseau)+' · '+esc(i.format)+'</span></div>'+
+      (i.script?'<div style="color:#B3AA92;font-size:12.5px;margin-top:6px;white-space:pre-wrap">'+esc(i.script)+'</div>':'')+
+      (i.prompt_image?'<div style="color:#8aa;font-size:11.5px;margin-top:6px">🎨 '+esc(i.prompt_image)+'</div>':'')+
+    '</div>';}).join('')+'</div>';
+}
+function showEmpty(c){
+  $("#drop").classList.add("hidden");
+  $("#clientSub").textContent=(c.nom||"")+(c.lieu?" · "+c.lieu:"")+" · 0 contenu";
+  const pg=$("#progress"); if(pg)pg.textContent="0 / 0 traités";
+  $("#list").innerHTML='<div style="padding:18px 14px 4px;color:#8aa;font-size:13px;line-height:1.65">Aucun contenu planifié pour <b>'+(c.nom||'ce client')+'</b>.</div>'+creatifBloc(c);
+  const set=(id,t)=>{const e=$(id);if(e)e.textContent=t;};
+  set("#vPil","—"); set("#vTtl","Pas encore de visuels");
+  set("#vReco","Ce client n'a pas encore de plan de contenu. Sélectionne un autre client dans le menu en haut, ou génère son calendrier éditorial.");
+  set("#vCta",""); set("#pos","—");
+}
+// Contenus « différés » (build.py SEUIL_CAMPAGNE) : les grosses campagnes ne sont plus dans le
+// registre — on charge le campagne.json source à la demande (servi par Pages).
+function chargerContenus(c){
+  const emb=c&&c.campagne&&c.campagne.contenus;
+  if(emb&&emb.length) return Promise.resolve(emb);
+  if(!(c&&c.campagne&&c.campagne.differe)) return Promise.resolve([]);
+  const dir=c._dir||('modules/marketing/clients/'+(c.slug||c.id));
+  return fetch('../../'+dir+'/_donnees/campagne.json').then(r=>r.ok?r.json():null)
+    .then(d=>(d&&d.contenus)||[]).catch(()=>[]);
+}
+// Init (skeleton élégant puis chargement)
+const _want=new URLSearchParams(location.search).get('client');
+const _cur=REG.find(c=>c.id===_want)||REG[0]||null;
+buildClientSelector(_cur?_cur.id:null);
+if(_cur && _cur.campagne && _cur.campagne.total){
+  skeletonList();
+  chargerContenus(_cur).then(list=>{
+    if(list.length){ const d=clientData(_cur); d.contenus=list; d.total=d.total||list.length; load(d); }
+    else showEmpty(_cur);
+  });
+} else if(_cur){ showEmpty(_cur); }
+else if(window.CAMPAGNE){ skeletonList(); setTimeout(()=>load(window.CAMPAGNE),360); }
+else { $("#drop").classList.remove("hidden"); }
+</script>
+<script src="../_data/config.js" onerror=""></script>
+<script src="../_data/apply.js"></script>
+<script src="../_design/abeille.js" data-aide="revue-visuels"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AWEMA — Connecter YouTube (guide pas à pas)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--nuit:#222222;--ciel:#FFC94D;--gold:#D4AF37;--violet:#EDA914;--mint:#34E5C4;--rouge:#FF4B4B;
+    --tx:#F1EDE2;--muted:#B3AA92;--card:rgba(255,255,255,.05);--bord:rgba(255,255,255,.12)}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:Poppins,system-ui,Segoe UI,Roboto,sans-serif;color:var(--tx);line-height:1.65;
+    background:radial-gradient(1100px 650px at 50% -12%,#2A2A2A,#222222 62%,#1E1E1E);min-height:100vh;padding-bottom:60px}
+  .wrap{max-width:860px;margin:0 auto;padding:0 22px}
+  header{padding:54px 0 14px}
+  .back{color:var(--muted);text-decoration:none;font-size:13px}
+  h1{font-family:Montserrat,sans-serif;font-weight:800;font-size:clamp(26px,4.6vw,38px);margin-top:14px;letter-spacing:-.02em}
+  h1 .g{color:var(--rouge)}
+  .lead{color:var(--muted);margin-top:10px;font-size:15px}
+  .pill{display:inline-block;font-size:12px;color:var(--muted);border:1px solid var(--bord);border-radius:20px;padding:5px 12px;background:var(--card);margin-top:14px}
+  .step{background:var(--card);border:1px solid var(--bord);border-radius:18px;padding:22px;margin-top:18px;backdrop-filter:blur(8px)}
+  .step h2{font-family:Montserrat,sans-serif;font-size:18px;display:flex;align-items:center;gap:12px}
+  .num{flex:0 0 30px;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-size:14px;font-weight:800;color:#1B1B1B;background:linear-gradient(135deg,var(--ciel),var(--violet))}
+  .step p{color:#D8D2C2;font-size:13.6px;margin-top:10px}
+  .step ul{margin:8px 0 0 20px;color:#D8D2C2;font-size:13.4px}.step li{margin:5px 0}
+  .btn{display:inline-flex;align-items:center;gap:8px;margin-top:14px;background:linear-gradient(135deg,var(--ciel),var(--violet));color:#fff;text-decoration:none;font-weight:700;font-size:13.5px;border:0;border-radius:11px;padding:11px 16px;cursor:pointer}
+  .cmd{position:relative;margin-top:12px;background:rgba(0,0,0,.32);border:1px solid var(--bord);border-radius:12px;padding:13px 88px 13px 14px;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:13px;white-space:pre-wrap;word-break:break-all;color:#EFE7CF}
+  .copy{position:absolute;top:9px;right:9px;font-size:11.5px;border:1px solid var(--bord);background:rgba(255,255,255,.08);color:var(--tx);border-radius:8px;padding:6px 10px;cursor:pointer}
+  .copy.ok{background:var(--mint);color:#06231d;border-color:var(--mint)}
+  .note{font-size:12.5px;color:var(--muted);margin-top:12px;border-left:3px solid var(--gold);padding-left:12px}
+  code{background:rgba(0,0,0,.3);padding:2px 6px;border-radius:6px;font-size:12.5px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="back" href="index.html" target="_top">← AWEMA · Centre de pilotage</a>
+    <h1>Connecter <span class="g">YouTube</span> — guide pas à pas</h1>
+    <p class="lead">Le plus simple des réseaux : on lit les <b>statistiques publiques</b> d'une chaîne
+      (abonnés, vues, vidéos) avec une <b>clé API</b>. <b>Pas d'OAuth, pas de connexion par compte.</b>
+      Une seule clé sert pour <b>toutes</b> les chaînes.</p>
+    <span class="pill">⏱️ ~5 min · gratuit (quota large)</span>
+  </header>
+
+  <div class="step">
+    <h2><span class="num">1</span> Ouvrir Google Cloud Console</h2>
+    <p>Connecte-toi avec un compte Google. C'est gratuit.</p>
+    <a class="btn" href="https://console.cloud.google.com/" target="_blank" rel="noopener">Ouvrir la console ↗</a>
+  </div>
+
+  <div class="step">
+    <h2><span class="num">2</span> Créer (ou choisir) un projet</h2>
+    <ul>
+      <li>En haut, clique le sélecteur de projet → <b>Nouveau projet</b>.</li>
+      <li>Nom : <code>AWEMA</code> → <b>Créer</b>. Sélectionne-le ensuite.</li>
+    </ul>
+  </div>
+
+  <div class="step">
+    <h2><span class="num">3</span> Activer « YouTube Data API v3 »</h2>
+    <p>Bouton ci-dessous → page de l'API → <b>Activer</b>.</p>
+    <a class="btn" href="https://console.cloud.google.com/apis/library/youtube.googleapis.com" target="_blank" rel="noopener">Activer YouTube Data API v3 ↗</a>
+  </div>
+
+  <div class="step">
+    <h2><span class="num">4</span> Créer la clé API</h2>
+    <ul>
+      <li>Va dans <b>Identifiants</b> (bouton ci-dessous).</li>
+      <li><b>+ Créer des identifiants</b> → <b>Clé API</b>.</li>
+      <li><b>Copie la clé</b> (elle commence souvent par <code>AIza…</code>).</li>
+      <li><i>(Recommandé)</i> clique la clé → <b>Restrictions d'API</b> → limite à <b>YouTube Data API v3</b> → Enregistrer.</li>
+    </ul>
+    <a class="btn" href="https://console.cloud.google.com/apis/credentials" target="_blank" rel="noopener">Ouvrir « Identifiants » ↗</a>
+    <div class="note">🔒 AWEMA range ta clé dans un <b>coffre-fort privé de ton site</b> : elle reste invisible
+      et n'apparaît jamais sur tes pages publiques.</div>
+  </div>
+
+  <div class="step">
+    <h2><span class="num">5</span> Repérer chaque chaîne à suivre</h2>
+    <p>Pas besoin de chercher l'ID technique : donne-moi simplement le <b>@handle</b> ou l'<b>URL</b> de
+      la chaîne — je résous l'ID automatiquement dans le connecteur.</p>
+    <ul>
+      <li>Sur la chaîne → son adresse ressemble à <code>youtube.com/@CodeScooper</code> → le <b>@CodeScooper</b> suffit.</li>
+      <li>Ou colle l'URL complète de la chaîne.</li>
+    </ul>
+    <div class="note">L'ID/handle de chaque entité sera rangé dans son <code>client.json</code>
+      (<code>yt_handle</code>), comme le <code>fb_page_id</code>.</div>
+  </div>
+
+  <div class="step">
+    <h2><span class="num">6</span> Me transmettre 2 choses</h2>
+    <ul>
+      <li>La <b>clé API</b> (colle-la dans le champ ci-dessus — AWEMA la range en sécurité).</li>
+      <li>Le <b>@handle / l'URL</b> de chaque chaîne (Code Scooper, etc.) — ça, tu peux me le donner.</li>
+    </ul>
+    <p>Le connecteur <code>--youtube-all</code> récupère abonnés, vues totales, nombre de vidéos
+      + top vidéos, <b>fusionnés</b> dans la fiche de l'entité (à côté de Facebook &amp; TikTok).</p>
+    <div id="awc-yt"></div>
+  </div>
+</div>
+<script>
+  document.querySelectorAll('.copy').forEach(b=>{b.addEventListener('click',async()=>{
+    const el=document.getElementById(b.dataset.c);const txt=el.childNodes[0].textContent.trim();
+    try{await navigator.clipboard.writeText(txt);b.textContent='Copié ✓';b.classList.add('ok');
+      setTimeout(()=>{b.textContent='Copier';b.classList.remove('ok');},1400);}catch(e){b.textContent='Sélectionne';}});});
+</script>
+<script src="outils/_data/config.js" onerror=""></script>
+<script src="outils/_data/apply.js"></script>
+<script src="outils/_design/awema-github.js"></script>
+<script src="outils/_design/awema-connect.js"></script>
+<script>
+  AwemaConnect.secretBox('#awc-yt', {
+    name: 'YOUTUBE_API_KEY', label: 'clé API YouTube Data',
+    placeholder: 'Colle ta clé API YouTube (AIza…)',
+    sync: 'sync-reseaux.yml', syncLabel: 'Synchroniser YouTube'
+  });
+</script>
+<script src="outils/_design/awema-fork.js"></script>
+<script src="outils/_design/abeille.js" data-aide="connect-youtube"></script>
+</body>
+</html>

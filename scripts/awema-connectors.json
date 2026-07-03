@@ -1,0 +1,102 @@
+{
+  "_doc": "Connecteurs AWEMA. Chaque plateforme déclare ses identifiants requis (keys) et ses commandes. Le store .awema/credentials.json (gitignoré) garde la dernière valeur courante + un historique. Pour ajouter une plateforme : ajoute une entrée ici (mots de passe / clés API / OAuth...).",
+  "platforms": {
+    "meta": {
+      "label": "Meta (Facebook / Instagram)",
+      "keys": [
+        {"name": "META_TOKEN", "secret": true, "github": "secret",
+         "prompt": "Token utilisateur Meta longue durée (~60 j) avec pages_show_list, pages_read_engagement, pages_read_user_content, read_insights"}
+      ],
+      "commands": {
+        "connect": "python3 scripts/connect-reseaux.py --meta-all && python3 outils/_data/build.py",
+        "sync_workflow": "sync-reseaux.yml"
+      },
+      "rotate": "Régénère un token longue durée (Graph API Explorer → Access Token Tool → Extend), puis : awema rotate meta META_TOKEN=<nouveau>. Mets aussi à jour le Secret GitHub META_TOKEN.",
+      "doc": "docs/05-connecter-reseaux.md"
+    },
+    "tiktok": {
+      "label": "TikTok",
+      "keys": [
+        {"name": "TIKTOK_CLIENT_KEY", "secret": false, "github": "secret",
+         "prompt": "Client key de l'app TikTok (developers.tiktok.com)"},
+        {"name": "TIKTOK_CLIENT_SECRET", "secret": true, "github": "secret",
+         "prompt": "Client secret de l'app TikTok"},
+        {"name": "GH_PAT", "secret": true, "github": "secret", "optional": true,
+         "prompt": "PAT GitHub fin (permission Variables: Read and write) — pour la MAJ auto des refresh tokens"},
+        {"name": "TIKTOK_TOKENS", "secret": true, "github": "variable", "managed": true,
+         "prompt": "Refresh tokens par client {slug: rft...} — généré par l'assistant, ne pas saisir à la main"}
+      ],
+      "commands": {
+        "onboard": "python3 scripts/tiktok-onboard.py",
+        "sync_workflow": "sync-tiktok.yml"
+      },
+      "rotate": "Les refresh tokens TikTok tournent à chaque run ; l'assistant + le workflow (avec GH_PAT) les resauvegardent. Pour (ré)autoriser un compte : awema connect tiktok.",
+      "doc": "docs/07-connecter-tiktok.md"
+    },
+    "youtube": {
+      "label": "YouTube",
+      "keys": [
+        {"name": "YOUTUBE_API_KEY", "secret": true, "github": "secret",
+         "prompt": "Clé API Google (console.cloud.google.com → YouTube Data API v3 activée → Créer une clé API)"}
+      ],
+      "commands": {"connect": "python3 scripts/connect-reseaux.py --youtube-all && python3 outils/_data/build.py",
+                   "sync_workflow": "sync-reseaux.yml"},
+      "rotate": "Régénère la clé dans Google Cloud Console (APIs & Services → Identifiants), puis : awema rotate youtube YOUTUBE_API_KEY=<nouvelle>.",
+      "note": "Stats publiques de chaîne (abonnés, vues, nb vidéos) via clé API — SANS OAuth. L'ID de chaîne (yt_channel_id) se met dans le client.json de chaque entité.",
+      "doc": "docs/AWEMA-OS.md"
+    },
+    "linkedin": {
+      "label": "LinkedIn",
+      "statut": "operationnel",
+      "keys": [
+        {"name": "LINKEDIN_TOKEN", "secret": true, "github": "secret",
+         "prompt": "Access token OAuth LinkedIn (scopes r_organization_social / rw_organization_admin) — sert à lire les stats de Page"},
+        {"name": "LINKEDIN_CLIENT_ID", "secret": false, "github": "secret", "optional": true,
+         "prompt": "Client ID de l'app LinkedIn (developer.linkedin.com → ton app → Auth) — pour (ré)autoriser"},
+        {"name": "LINKEDIN_CLIENT_SECRET", "secret": true, "github": "secret", "optional": true,
+         "prompt": "Client secret de l'app LinkedIn (onglet Auth) — pour (ré)autoriser"}
+      ],
+      "commands": {
+        "connect": "python3 scripts/connect-reseaux.py --linkedin-all && python3 outils/_data/build.py",
+        "sync_workflow": "sync-reseaux.yml"
+      },
+      "rotate": "Les access tokens LinkedIn expirent (~60 j). Régénère-en un (OAuth) puis : awema rotate linkedin LINKEDIN_TOKEN=<nouveau>. Mets aussi à jour le Secret GitHub LINKEDIN_TOKEN.",
+      "note": "Guide pas à pas : connect-linkedin.html. Connecteur --linkedin-all : résout l'org par vanity name (/company/<slug>), lit abonnés + impressions/engagement (Community Management API). Pré-requis : Page entreprise (admin), app vérifiée, produit Community Management API (Development Tier = immédiat pour ses propres Pages).",
+      "doc": "docs/10-connecter-linkedin.md"
+    },
+    "whatsapp": {
+      "label": "WhatsApp Business (Cloud API)",
+      "statut": "guide",
+      "keys": [
+        {"name": "WHATSAPP_TOKEN", "secret": true, "github": "secret",
+         "prompt": "Token Meta avec whatsapp_business_management / whatsapp_business_messaging (System User recommandé)"},
+        {"name": "WHATSAPP_PHONE_ID", "secret": false, "github": "secret",
+         "prompt": "Phone Number ID du numéro WhatsApp (App Meta → WhatsApp)"},
+        {"name": "WHATSAPP_WABA_ID", "secret": false, "github": "secret",
+         "prompt": "WhatsApp Business Account ID (WABA)"}
+      ],
+      "commands": {"sync_workflow": "sync-reseaux.yml"},
+      "rotate": "Régénère le token (Business Manager → System User), puis : awema rotate whatsapp WHATSAPP_TOKEN=<nouveau>. Mets à jour le Secret GitHub.",
+      "note": "Canal de MESSAGERIE/conversion (pas d'abonnés). Guide : connect-whatsapp.html. Connecteur --whatsapp-all PLANIFIÉ (analytics messages + tunnel + futur agent Modérateur). En attendant : renseigne le numéro whatsapp dans la fiche client.",
+      "doc": "connect-whatsapp.html"
+    },
+    "ia": {
+      "label": "IA (agents AWEMA — fournisseur au choix)",
+      "statut": "operationnel",
+      "keys": [
+        {"name": "AWEMA_AI_PROVIDER", "secret": false, "github": "variable", "optional": true,
+         "prompt": "Fournisseur d'IA à utiliser : groq, gemini, openrouter, cerebras, mistral, github, ollama, anthropic, openai (sinon auto-détection)"},
+        {"name": "GROQ_API_KEY", "secret": true, "github": "secret", "optional": true, "prompt": "Clé Groq (GRATUIT — console.groq.com/keys)"},
+        {"name": "GEMINI_API_KEY", "secret": true, "github": "secret", "optional": true, "prompt": "Clé Google Gemini (GRATUIT — aistudio.google.com/apikey)"},
+        {"name": "OPENROUTER_API_KEY", "secret": true, "github": "secret", "optional": true, "prompt": "Clé OpenRouter (modèles :free — openrouter.ai/keys)"},
+        {"name": "MISTRAL_API_KEY", "secret": true, "github": "secret", "optional": true, "prompt": "Clé Mistral (palier gratuit — console.mistral.ai)"},
+        {"name": "ANTHROPIC_API_KEY", "secret": true, "github": "secret", "optional": true, "prompt": "Clé Anthropic/Claude (crédits d'essai — console.anthropic.com)"},
+        {"name": "OPENAI_API_KEY", "secret": true, "github": "secret", "optional": true, "prompt": "Clé OpenAI (payant)"}
+      ],
+      "commands": {"sync_workflow": "agents.yml"},
+      "rotate": "Régénère la clé chez le fournisseur, puis : awema rotate ia <CLE>=<nouvelle>. Mets à jour le Secret GitHub correspondant.",
+      "note": "Système AGNOSTIQUE : tout fournisseur compatible OpenAI ou Anthropic. Registre + options GRATUITES : config/ia-providers.json (python3 scripts/awema_ai.py --providers). Brique : scripts/awema_ai.py + run-agent.py + agents.json. Sans clé → agents désactivés (skip gracieux).",
+      "doc": "docs/12-connecter-ia.md"
+    }
+  }
+}

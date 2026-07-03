@@ -1,0 +1,32 @@
+{
+  "connecte": true,
+  "source": "démo (exemple — données fictives illustratives)",
+  "maj": "2026-06-26T08:00:00+00:00",
+  "client": "demo-client",
+  "global": {"audience": 23500, "posts": 88, "likes": 95050, "commentaires": 1230, "partages": 420, "portee": null, "vues": 126000, "engagement_taux": 3.8},
+  "par_reseau": {
+    "facebook": {"abonnes": 4200, "posts": 24, "likes": 1850, "commentaires": 320, "partages": 95, "portee": null, "vues": 38000},
+    "instagram": {"abonnes": 6800, "posts": 24, "likes": 5200, "commentaires": 410, "partages": 120, "portee": null, "vues": 52000},
+    "tiktok": {"abonnes": 12500, "posts": 40, "likes": 88000, "commentaires": 500, "partages": 205, "portee": null, "vues": 36000},
+    "linkedin": {"abonnes": null, "posts": null, "likes": null, "commentaires": null, "partages": null, "portee": null, "vues": null},
+    "youtube": {"abonnes": null, "posts": null, "likes": null, "commentaires": null, "partages": null, "portee": null, "vues": null}
+  },
+  "reactions": {"like": 1200, "love": 480, "care": 60, "haha": 90, "wow": 60, "sad": 0, "angry": 0},
+  "cadence": {"dernier_post": "2026-06-17", "jours_depuis": 9, "posts_30j": 8, "posts_par_semaine": 2},
+  "meilleur_creneau": {"recommandation": "Jeudi 19h", "par_jour": {"Lundi": 120, "Mardi": 180, "Mercredi": 150, "Jeudi": 260, "Vendredi": 200, "Samedi": 230, "Dimanche": 140}},
+  "types_contenu": {"Reel": {"n": 8, "engagement_moyen": 520}, "Carrousel": {"n": 6, "engagement_moyen": 310}, "Photo": {"n": 10, "engagement_moyen": 140}},
+  "a_repondre": {"total": 5, "exemples": [
+    {"auteur": "Mariam K.", "message": "Vous faites les ongles aussi ?", "date": "2026-06-25", "lien": ""},
+    {"auteur": "Awa D.", "message": "C'est combien le forfait mariée ?", "date": "2026-06-24", "lien": ""},
+    {"auteur": "Grace T.", "message": "Vous êtes ouverts le dimanche ?", "date": "2026-06-24", "lien": ""}
+  ]},
+  "top_commentateurs": [{"nom": "Mariam K.", "commentaires": 12}, {"nom": "Awa D.", "commentaires": 9}, {"nom": "Grace T.", "commentaires": 7}],
+  "top_posts": [
+    {"titre": "Avant / Après soin éclat ✨", "plateforme": "Instagram", "likes": 820, "commentaires": 64, "partages": 30, "type": "Carrousel"},
+    {"titre": "Routine peau grasse en 3 étapes", "plateforme": "TikTok", "likes": 5400, "commentaires": 120, "partages": 90, "type": "Reel", "vues": 42000}
+  ],
+  "evolution_audience": [
+    {"date": "2026-05-01", "valeur": 21000}, {"date": "2026-05-15", "valeur": 21900},
+    {"date": "2026-06-01", "valeur": 22600}, {"date": "2026-06-15", "valeur": 23500}
+  ]
+}

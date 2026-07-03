@@ -1,0 +1,25 @@
+name: "💡 Idée / amélioration"
+description: "Propose une fonctionnalité ou une amélioration."
+title: "[Idée] "
+labels: ["idea"]
+body:
+  - type: textarea
+    id: idee
+    attributes:
+      label: Ton idée
+      placeholder: "Ex. recevoir une alerte quand un commentaire attend une réponse."
+    validations:
+      required: true
+  - type: textarea
+    id: pourquoi
+    attributes:
+      label: Pourquoi ce serait utile ? (le besoin derrière)
+      placeholder: "Ex. je perds des prospects quand je réponds trop tard."
+  - type: dropdown
+    id: priorite
+    attributes:
+      label: Pour toi, c'est…
+      options:
+        - Indispensable
+        - Très utile
+        - Confort / bonus

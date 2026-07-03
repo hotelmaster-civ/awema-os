@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AWEMA — Bienvenue, beta testeur 🚀</title>
+<meta name="description" content="Parcours d'onboarding guidé pour les beta testeurs AWEMA : personnaliser, ajouter un client, connecter ses réseaux, piloter.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--nuit:#222222;--ciel:#FFC94D;--gold:#D4AF37;--violet:#EDA914;--mint:#34E5C4;--pink:#FF7D9C;
+    --tx:#F1EDE2;--muted:#B3AA92;--muted2:#877F69;--card:rgba(255,255,255,.05);--bord:rgba(255,255,255,.12);--grad:linear-gradient(120deg,var(--ciel),var(--violet))}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:Poppins,system-ui,sans-serif;color:var(--tx);line-height:1.6;min-height:100vh;
+    background:radial-gradient(1100px 700px at 50% -12%,#2A2A2A,#222222 60%,#1E1E1E)}
+  h1,h2,h3{font-family:Montserrat,sans-serif;letter-spacing:-.02em}
+  a{color:inherit}
+  .wrap{max-width:840px;margin:0 auto;padding:0 22px}
+  .g{background:linear-gradient(120deg,var(--gold),#f4d889);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .gc{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  header{padding:46px 0 10px}
+  .back{color:var(--muted);text-decoration:none;font-size:13px}
+  .badge{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;color:var(--mint);border:1px solid color-mix(in srgb,var(--mint) 40%,transparent);background:color-mix(in srgb,var(--mint) 10%,transparent);padding:5px 13px;border-radius:30px;font-weight:600;margin-top:14px}
+  h1{font-size:clamp(28px,5vw,44px);font-weight:900;margin-top:14px;line-height:1.05}
+  .lead{color:var(--muted);margin-top:12px;font-size:16px}
+
+  /* progress */
+  .prog{position:sticky;top:0;z-index:20;background:rgba(7,22,47,.82);backdrop-filter:blur(10px);
+    border:1px solid var(--bord);border-radius:16px;padding:14px 18px;margin:24px 0 8px;display:flex;align-items:center;gap:14px}
+  .prog .ring{--p:0;width:46px;height:46px;border-radius:50%;flex:0 0 auto;display:grid;place-items:center;
+    background:conic-gradient(var(--mint) calc(var(--p)*1%),rgba(255,255,255,.1) 0)}
+  .prog .ring i{width:36px;height:36px;border-radius:50%;background:#0c1d3e;display:grid;place-items:center;font-weight:800;font-size:12px;font-family:Montserrat}
+  .prog .t b{font-family:Montserrat;font-size:15px}.prog .t span{display:block;color:var(--muted);font-size:12.5px}
+  .prog .reset{margin-left:auto;font-size:12px;color:var(--muted2);background:none;border:0;cursor:pointer;text-decoration:underline}
+
+  /* steps */
+  .step{background:var(--card);border:1px solid var(--bord);border-radius:20px;padding:24px;margin-top:16px;
+    display:flex;gap:18px;transition:.25s;position:relative;overflow:hidden}
+  .step.done{border-color:color-mix(in srgb,var(--mint) 45%,transparent);background:color-mix(in srgb,var(--mint) 7%,transparent)}
+  .step .num{width:42px;height:42px;flex:0 0 auto;border-radius:13px;background:var(--grad);display:grid;place-items:center;
+    font-family:Montserrat;font-weight:800;font-size:18px;color:#fff;transition:.25s}
+  .step.done .num{background:var(--mint);color:#06231d}
+  .step .body{flex:1;min-width:0}
+  .step h3{font-size:18px}
+  .step .desc{color:var(--muted);font-size:14px;margin-top:6px}
+  .step .meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+  .tagp{font-size:11px;font-weight:600;padding:3px 9px;border-radius:7px;background:rgba(255,255,255,.06);color:var(--muted)}
+  .step .acts{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+  .btn{display:inline-flex;align-items:center;gap:8px;border:0;border-radius:11px;font:inherit;font-weight:600;font-size:13.5px;padding:10px 16px;cursor:pointer;transition:.18s;text-decoration:none}
+  .btn.p{background:var(--grad);color:#fff;box-shadow:0 12px 24px -10px rgba(237,169,20,.55)}
+  .btn.p:hover{transform:translateY(-2px)}
+  .btn.gh{background:transparent;border:1px solid var(--bord);color:var(--tx)}
+  .btn.gh:hover{border-color:#fff}
+  .btn.ck{background:rgba(255,255,255,.05);border:1px solid var(--bord);color:var(--muted)}
+  .step.done .btn.ck{background:var(--mint);color:#06231d;border-color:transparent}
+  .plats{display:flex;gap:8px;flex-wrap:wrap;margin-top:6px}
+  .pchip{display:inline-flex;align-items:center;gap:7px;font-size:12.5px;font-weight:600;padding:6px 12px 6px 6px;border-radius:30px;border:1px solid var(--bord);background:var(--card);text-decoration:none}
+  .pchip .pi{width:24px;height:24px;border-radius:7px;display:grid;place-items:center;color:#fff;font-weight:800;font-size:11px;font-family:Montserrat}
+
+  .done-banner{display:none;text-align:center;margin:26px 0;padding:30px;border-radius:22px;
+    background:linear-gradient(120deg,rgba(52,229,196,.16),rgba(255,201,77,.12));border:1px solid rgba(52,229,196,.35)}
+  .done-banner.on{display:block;animation:pop .4s ease both}
+  @keyframes pop{from{opacity:0;transform:scale(.96)}}
+  .done-banner h2{font-size:26px}.done-banner p{color:var(--muted);margin-top:8px}
+  .help{margin:34px 0 60px;text-align:center;color:var(--muted);font-size:13.5px}
+  .help a{color:var(--ciel)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="back" href="index.html">← Accueil</a>
+    <div><span class="badge">🚀 Programme beta</span></div>
+    <h1>Bienvenue,<br><span class="gc">beta testeur</span> 👋</h1>
+    <p class="lead">Quelques étapes pour avoir ton instance vivante avec de vraies données.
+      <b>Objectif : ta 1ʳᵉ recommandation IA en moins de 30 minutes.</b>
+      Coche au fur et à mesure — ta progression est sauvegardée sur cet appareil.</p>
+  </header>
+
+  <div class="step" style="border-color:rgba(237,169,20,.45);background:linear-gradient(120deg,rgba(237,169,20,.12),rgba(255,201,77,.08))">
+    <div class="num" style="background:linear-gradient(135deg,var(--violet),var(--ciel))">✨</div>
+    <div class="body">
+      <h3>D'abord : vois AWEMA en action (démo)</h3>
+      <div class="desc">Un client de démonstration <b>« Éclat Beauté »</b> est déjà chargé : cockpit, analyse IA,
+        plan recommandé, idées prêtes et « 3 choses à faire aujourd'hui ». Ouvre-le pour ressentir le « wow »
+        <i>avant même</i> de connecter tes réseaux. Ensuite, configure tes vraies données ci-dessous.</div>
+      <div class="acts">
+        <a class="btn p" href="outils/dashboard/index.html?client=demo-client">Ouvrir le cockpit démo →</a>
+        <a class="btn gh" href="memoire.html?client=demo-client" target="_blank" rel="noopener">Voir sa mémoire</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="step" style="border-color:rgba(52,229,196,.4);background:linear-gradient(120deg,rgba(52,229,196,.1),rgba(255,201,77,.06))">
+    <div class="num" style="background:linear-gradient(135deg,var(--mint),var(--ciel));color:#06231d">🔧</div>
+    <div class="body">
+      <h3>Préparation — une seule fois <span style="font-size:11px;color:#06231d;background:var(--mint);border-radius:6px;padding:2px 7px;font-weight:700">2 clics</span></h3>
+      <div class="desc">Deux gestes pour avoir ton propre espace AWEMA : <b>crée ta copie privée</b> de l'outil,
+        puis <b>mets ton espace en ligne</b> (hébergement gratuit). On te guide pas à pas — rien à installer
+        sur ton ordinateur. <b>Déjà fait ?</b> Passe directement à la Mise en route.</div>
+      <div class="acts">
+        <a class="btn gh" data-upstream href="https://github.com/awema-test/awema-os/fork" target="_blank" rel="noopener">✨ Créer ma copie</a>
+        <a class="btn gh" href="https://github.com/awema-test/awema-os/settings/pages" target="_blank" rel="noopener">🌐 Mettre en ligne</a>
+        <a class="btn gh" href="tutoriel.html">📖 Guide complet (débutant)</a>
+        <a class="btn p" href="configuration.html">⚡ Mise en route →</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="prog">
+    <div class="ring" id="ring" style="--p:0"><i id="ringTxt">0/5</i></div>
+    <div class="t"><b id="progT">C'est parti</b><span id="progS">Aucune étape terminée</span></div>
+    <button class="reset" id="resetBtn">réinitialiser</button>
+  </div>
+
+  <div id="steps"></div>
+
+  <div class="done-banner" id="doneBanner">
+    <h2>🎉 Tout est en place !</h2>
+    <p>Ton instance tourne avec de vraies données. Ouvre le cockpit et pilote ta com.</p>
+    <div style="margin-top:18px"><a class="btn p" href="outils/dashboard/index.html">Ouvrir le dashboard →</a></div>
+  </div>
+
+  <p class="help">
+    <a href="connect-ia.html">🤖 Connecter une IA (gratuite)</a> ·
+    <a href="https://github.com/awema-test/awema-os/blob/main/docs/11-programme-beta.md" target="_blank" rel="noopener">📜 Conditions &amp; prérequis</a> ·
+    <a href="https://github.com/awema-test/awema-os/issues/new/choose" target="_blank" rel="noopener">💬 Donner un retour</a> ·
+    <a href="https://github.com/awema-test/awema-os/tree/main/docs" target="_blank" rel="noopener">Guides</a>
+    <br>Une question ? Écris-nous : <a id="mail" href="mailto:contact@exemple.com?subject=Beta%20AWEMA">contact@exemple.com</a></p>
+</div>
+
+<script src="outils/_data/platforms.js" onerror=""></script>
+<script src="outils/_data/config.js" onerror=""></script>
+<script src="outils/_data/apply.js"></script>
+<script>
+(function(){
+  var P=window.AWEMA_PLATFORMS||{};
+  var KEY='awema-onboarding';
+  var STEPS=[
+    {id:'perso',t:'Personnalise ton agence',d:"Mets l'outil à ta marque : nom, logo, charte, ton dépôt GitHub. Tout l'outil s'adapte.",
+     tags:['~3 min','setup.html'],acts:[['Ouvrir le configurateur','setup.html','p']]},
+    {id:'client',t:'Ajoute ton premier client',d:"Un formulaire crée la fiche de l'entité (le nom suffit). Aucun code à écrire.",
+     tags:['~2 min','sans code'],acts:[['Ajouter un client','nouveau-client.html','p']]},
+    {id:'connect',t:'Connecte ses réseaux',d:"Branche les plateformes — chacune garde sa charte. Guides pas à pas, boutons « copier ».",
+     tags:['guides pas à pas'],plats:['facebook','tiktok','youtube','linkedin'],
+     acts:[['⚙️ Mise en route — tout configurer','configuration.html','p'],['Facebook / Instagram','connect-facebook.html','']]},
+    {id:'pilote',t:'Pilote depuis le dashboard',d:"Ouvre le cockpit : audience réelle, commentaires à répondre, meilleurs posts, cadence.",
+     tags:['données réelles'],acts:[['Ouvrir le dashboard','outils/dashboard/index.html','p']]},
+    {id:'publier',t:'Planifie & publie',d:"Compose ou laisse l'IA proposer, choisis la date : AWEMA publie tout seul sur les réseaux connectés.",
+     tags:['automatique'],acts:[['🗓️ Planifier des posts','outils/dashboard/index.html?section=publier','p']]}
+  ];
+  var PLAT_LINK={facebook:'connect-facebook.html',
+    tiktok:'connect-tiktok.html',youtube:'connect-youtube.html',linkedin:'connect-linkedin.html'};
+
+  var state={}; try{ state=JSON.parse(localStorage.getItem(KEY))||{}; }catch(e){}
+  function save(){ try{ localStorage.setItem(KEY,JSON.stringify(state)); }catch(e){} }
+
+  var wrap=document.getElementById('steps');
+  function render(){
+    wrap.innerHTML='';
+    STEPS.forEach(function(s,i){
+      var done=!!state[s.id];
+      var el=document.createElement('div'); el.className='step'+(done?' done':'');
+      var platsHtml='';
+      if(s.plats){ platsHtml='<div class="plats">'+s.plats.map(function(k){var p=P[k]||{};
+        return '<a class="pchip" target="_blank" rel="noopener" href="'+(PLAT_LINK[k]||'#')+'" style="border-color:'+(p.c||'#666')+'66">'+
+          '<span class="pi" style="background:'+(p.grad||'#333')+'">'+(p.glyph||'?')+'</span>'+(p.nom||k)+'</a>';}).join('')+'</div>'; }
+      el.innerHTML=
+        '<div class="num">'+(done?'✓':(i+1))+'</div>'+
+        '<div class="body"><h3>'+s.t+'</h3><div class="desc">'+s.d+'</div>'+
+          '<div class="meta">'+s.tags.map(function(t){return '<span class="tagp">'+t+'</span>';}).join('')+'</div>'+
+          platsHtml+
+          '<div class="acts">'+
+            s.acts.map(function(a){return '<a class="btn '+a[2]+'" href="'+a[1]+'"'+(/^https?:|\.html$/.test(a[1])&&a[2]==='gh'?' target="_blank" rel="noopener"':'')+'>'+a[0]+(a[2]==='p'?' →':'')+'</a>';}).join('')+
+            '<button class="btn ck" data-id="'+s.id+'">'+(done?'Terminé ✓':'Marquer comme fait')+'</button>'+
+          '</div></div>';
+      wrap.appendChild(el);
+    });
+    wrap.querySelectorAll('.btn.ck').forEach(function(b){ b.onclick=function(){
+      var id=b.dataset.id; state[id]=!state[id]; save(); render(); progress();
+    };});
+    progress();
+  }
+  function progress(){
+    var n=STEPS.filter(function(s){return state[s.id];}).length, pct=Math.round(n/STEPS.length*100);
+    document.getElementById('ring').style.setProperty('--p',pct);
+    document.getElementById('ringTxt').textContent=n+'/'+STEPS.length;
+    var T=document.getElementById('progT'),S=document.getElementById('progS');
+    if(n===0){T.textContent="C'est parti";S.textContent='Aucune étape terminée';}
+    else if(n<STEPS.length){T.textContent='En cours…';S.textContent=n+' étape'+(n>1?'s':'')+' sur '+STEPS.length+' · plus que '+(STEPS.length-n)+' !';}
+    else{T.textContent='Onboarding terminé 🎉';S.textContent='Tu es prêt à piloter';}
+    document.getElementById('doneBanner').classList.toggle('on',n===STEPS.length);
+  }
+  document.getElementById('resetBtn').onclick=function(){ state={}; save(); render(); };
+  render();
+})();
+</script>
+<script src="outils/_design/awema-fork.js"></script>
+<script src="outils/_design/abeille.js" data-aide="onboarding"></script>
+
+<script>(function(){var c=(window.AWEMA_CONFIG&&window.AWEMA_CONFIG.contact)||'';if(c&&c.indexOf('@')>0){var a=document.getElementById('mail');if(a){a.textContent=c;a.href='mailto:'+c+'?subject=Beta%20AWEMA';}}})();</script>
+</body>
+</html>

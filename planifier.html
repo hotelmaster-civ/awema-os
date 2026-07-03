@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AWEMA — Planifier (redirection vers le dashboard)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<meta name="robots" content="noindex">
+<script>
+  // Cette page a été absorbée par le dashboard (section « Planifier & publier ») pour éviter
+  // deux implémentations divergentes (audit : bug d'index client dans l'ancienne page autonome).
+  // On conserve l'URL pour les anciens liens/favoris → redirection en préservant le client.
+  (function(){
+    var q=new URLSearchParams(location.search);
+    var cible='outils/dashboard/index.html?section=publier';
+    if(q.get('client')) cible+='&client='+encodeURIComponent(q.get('client'));
+    location.replace(cible);
+  })();
+</script>
+</head>
+<body style="font-family:Poppins,system-ui,sans-serif;background:#222222;color:#F1EDE2;display:grid;place-items:center;min-height:100vh;margin:0">
+  <p>Le planificateur vit désormais dans le dashboard —
+    <a href="outils/dashboard/index.html?section=publier" style="color:#FFC94D">ouvrir « Planifier &amp; publier » →</a></p>
+</body>
+</html>

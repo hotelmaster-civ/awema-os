@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AWEMA — Nouveau client (onboarding)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--nuit:#222222;--ciel:#FFC94D;--gold:#D4AF37;--violet:#EDA914;--mint:#34E5C4;
+    --tx:#F1EDE2;--muted:#B3AA92;--card:rgba(255,255,255,.05);--bord:rgba(255,255,255,.13)}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:Poppins,system-ui,Segoe UI,Roboto,sans-serif;color:var(--tx);line-height:1.6;
+    background:radial-gradient(1100px 650px at 50% -12%,#2A2A2A,#222222 62%,#1E1E1E);min-height:100vh;padding-bottom:60px}
+  .wrap{max-width:880px;margin:0 auto;padding:0 22px}
+  header{padding:48px 0 8px}
+  .back{color:var(--muted);text-decoration:none;font-size:13px}
+  h1{font-family:Montserrat,sans-serif;font-weight:800;font-size:clamp(26px,4.6vw,38px);margin-top:14px;letter-spacing:-.02em}
+  h1 .g{background:linear-gradient(120deg,var(--gold),#f2d479);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .lead{color:var(--muted);margin-top:10px;font-size:15px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:8px}
+  .card{background:var(--card);border:1px solid var(--bord);border-radius:18px;padding:22px;margin-top:18px;backdrop-filter:blur(8px)}
+  .card h2{font-family:Montserrat,sans-serif;font-size:17px;margin-bottom:6px}
+  label{display:block;font-size:12px;color:var(--muted);margin:12px 0 5px;text-transform:uppercase;letter-spacing:.05em}
+  input,select{width:100%;padding:11px 13px;border-radius:11px;border:1px solid var(--bord);background:rgba(0,0,0,.25);color:#fff;font:inherit;font-size:14px}
+  input::placeholder{color:#8C846C}
+  .req{color:var(--gold)}
+  .out{position:relative;margin-top:12px;background:rgba(0,0,0,.34);border:1px solid var(--bord);border-radius:12px;padding:14px 14px 14px;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12.5px;white-space:pre-wrap;word-break:break-word;color:#EFE7CF;max-height:340px;overflow:auto}
+  .row{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+  .btn{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,var(--ciel),var(--violet));color:#fff;text-decoration:none;font-weight:700;font-size:13.5px;border:0;border-radius:11px;padding:11px 16px;cursor:pointer}
+  .btn.ghost{background:transparent;border:1px solid var(--bord);color:var(--tx)}
+  .btn.ok{background:var(--mint);color:#06231d}
+  .note{font-size:12.5px;color:var(--muted);margin-top:12px;border-left:3px solid var(--gold);padding-left:12px}
+  .chk{display:flex;flex-direction:column;gap:10px;margin-top:10px}
+  .chk a{display:flex;align-items:center;gap:12px;background:rgba(255,255,255,.04);border:1px solid var(--bord);border-radius:12px;padding:13px 15px;text-decoration:none;color:inherit;font-size:13.5px}
+  .chk a:hover{border-color:rgba(255,255,255,.3)}
+  .chk .e{font-size:20px}
+  code{background:rgba(0,0,0,.3);padding:2px 6px;border-radius:6px}
+  @media(max-width:680px){.grid2{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="back" href="index.html">← AWEMA · Centre de pilotage</a>
+    <h1>Nouveau client <span class="g">·</span> onboarding</h1>
+    <p class="lead">Renseigne ce que tu connais (seul le <span class="req">nom</span> est requis). On génère la
+      fiche du client, puis tu connectes ses réseaux en cliquant. Tu n'écris aucun code.</p>
+  </header>
+
+  <div class="card">
+    <h2>1 · Informations</h2>
+    <div class="grid2">
+      <div><label>Nom de l'entité <span class="req">*</span></label><input id="nom" placeholder="Ex. Restaurant Le Baoulé" oninput="build()"></div>
+      <div><label>Secteur</label><input id="secteur" placeholder="Restauration, Optique, Tech…" oninput="build()"></div>
+      <div><label>Lieu</label><input id="lieu" placeholder="Abidjan, Côte d'Ivoire" oninput="build()"></div>
+      <div><label>Slug (auto)</label><input id="slug" placeholder="auto depuis le nom" oninput="build(true)"></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>2 · Réseaux (optionnel — tu pourras les connecter ensuite)</h2>
+    <div class="grid2">
+      <div><label>Facebook — ID de Page</label><input id="fb_page_id" placeholder="ex. 106652335814884" oninput="build()"></div>
+      <div><label>YouTube — @handle</label><input id="yt_handle" placeholder="@ma-chaine" oninput="build()"></div>
+      <div><label>Lien TikTok</label><input id="tiktok" placeholder="https://www.tiktok.com/@..." oninput="build()"></div>
+      <div><label>Lien Instagram</label><input id="instagram" placeholder="https://instagram.com/..." oninput="build()"></div>
+      <div><label>Lien LinkedIn</label><input id="linkedin" placeholder="https://linkedin.com/company/..." oninput="build()"></div>
+      <div><label>WhatsApp</label><input id="whatsapp" placeholder="+225 ..." oninput="build()"></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>3 · Enregistrer la fiche</h2>
+    <p class="lead" style="font-size:13.5px">Clique <b>Enregistrer</b> : AWEMA crée la fiche dans ton dépôt et
+      l'affiche au cockpit <b>en arrière-plan</b>. (1ʳᵉ fois : connecte ton GitHub.)</p>
+    <div class="row">
+      <button class="btn" id="saveBtn" onclick="enregistrerAuto()">💾 Enregistrer</button>
+      <span id="saveMsg" style="font-size:12.5px;color:var(--muted)"></span>
+    </div>
+    <div class="note" style="border-color:var(--mint);margin-top:12px">Étape suivante recommandée : remplis sa
+      <a href="memoire.html" style="color:var(--mint)"><b>Mémoire Marketing</b></a> (ton, personas, produits, FAQ) —
+      l'ADN que les <b>agents IA</b> utilisent.</div>
+    <details style="margin-top:16px">
+      <summary style="cursor:pointer;color:var(--muted);font-size:12.5px">⚙️ Mode manuel (avancé)</summary>
+      <label style="margin-top:12px">A · Commande opérateur</label>
+      <div class="out" id="cmd">—<button class="btn" id="bc" style="position:absolute;top:10px;right:10px;padding:7px 11px;font-size:11.5px" onclick="cp('cmd','bc')">Copier</button></div>
+      <label style="margin-top:16px">B · Fichier <code>modules/marketing/clients/&lt;slug&gt;/_donnees/client.json</code></label>
+      <div class="out" id="json">—<button class="btn" id="bj" style="position:absolute;top:10px;right:10px;padding:7px 11px;font-size:11.5px" onclick="cp('json','bj')">Copier</button></div>
+      <div class="row"><button class="btn ghost" onclick="dl()">⬇️ Télécharger client.json</button></div>
+    </details>
+  </div>
+
+  <div class="card">
+    <h2>4 · Connecter ses réseaux (en un clic, guides pas à pas)</h2>
+    <div class="chk">
+      <a href="connect-facebook.html"><span class="e">📘</span><div><b>Facebook / Instagram</b><br><small style="color:var(--muted)">Un token Meta → toutes les Pages</small></div></a>
+      <a href="connect-tiktok.html"><span class="e">🎵</span><div><b>TikTok</b><br><small style="color:var(--muted)">Assistant + guide (le client clique « Autoriser »)</small></div></a>
+      <a href="connect-youtube.html"><span class="e">▶️</span><div><b>YouTube</b><br><small style="color:var(--muted)">Clé API + @handle (stats publiques)</small></div></a>
+      <a href="connect-linkedin.html"><span class="e">💼</span><div><b>LinkedIn</b><br><small style="color:var(--muted)">App + Page entreprise (OAuth) — nouveau</small></div></a>
+      <a href="connect-whatsapp.html"><span class="e">💬</span><div><b>WhatsApp Business</b><br><small style="color:var(--muted)">Cloud API (messagerie & tunnel) — guide</small></div></a>
+    </div>
+  </div>
+</div>
+
+<script>
+  const F=id=>document.getElementById(id).value.trim();
+  function slugify(s){return (s||'').normalize('NFKD').replace(/[̀-ͯ]/g,'').replace(/[^a-zA-Z0-9]+/g,'-').replace(/^-+|-+$/g,'').toLowerCase()||'client';}
+  function initiales(n){const p=(n||'').split(/\s+/).filter(Boolean);return ((p.length>=2?p[0][0]+p[1][0]:(p[0]||'').slice(0,2))||'AW').toUpperCase();}
+  let slugTouched=false;
+  function build(fromSlug){
+    if(fromSlug)slugTouched=true;
+    const nom=F('nom');
+    const slugEl=document.getElementById('slug');
+    let slug=F('slug'); if(!slugTouched){slug=slugify(nom);slugEl.value=nom?slug:'';}
+    slug=slug||slugify(nom);
+    const liens={facebook:'',instagram:F('instagram'),tiktok:F('tiktok'),linkedin:F('linkedin'),whatsapp:F('whatsapp'),youtube:F('yt_handle')?('https://www.youtube.com/'+F('yt_handle')):''};
+    const d={id:slug,nom:nom||'(sans nom)',secteur:F('secteur'),lieu:F('lieu'),module:'marketing',
+      statut:'actif',initiales:initiales(nom),reseaux:liens,
+      chemins:{campagne:'_donnees/campagne.json',reseaux:'_donnees/reseaux.json',revue:'../../../../outils/revue-visuels/index.html?client='+slug}};
+    if(F('fb_page_id'))d.fb_page_id=F('fb_page_id');
+    if(F('yt_handle'))d.yt_handle=F('yt_handle');
+    const setTxt=(id,t)=>{const el=document.getElementById(id);el.childNodes[0].textContent=t;};
+    setTxt('json', nom?JSON.stringify(d,null,2):'Renseigne au moins le nom…');
+    // commande opérateur
+    const esc=s=>'"'+String(s).replace(/"/g,'\\"')+'"';
+    let parts=['python3 scripts/awema.py client new '+(slug||'auto')];
+    const add=(k,v)=>{if(v)parts.push(k+'='+esc(v));};
+    add('nom',nom);add('secteur',F('secteur'));add('lieu',F('lieu'));add('fb_page_id',F('fb_page_id'));
+    add('yt_handle',F('yt_handle'));add('tiktok',F('tiktok'));add('instagram',F('instagram'));
+    add('linkedin',F('linkedin'));add('whatsapp',F('whatsapp'));
+    setTxt('cmd', nom?parts.join(' '):'Renseigne au moins le nom…');
+    window.__client=d;
+  }
+  async function cp(id,btn){const el=document.getElementById(id);const t=el.childNodes[0].textContent;
+    try{await navigator.clipboard.writeText(t);const b=document.getElementById(btn);b.textContent='Copié ✓';b.classList.add('ok');setTimeout(()=>{b.textContent='Copier';b.classList.remove('ok');},1400);}catch(e){}}
+  function dl(){const d=window.__client;if(!d||!F('nom'))return;
+    const blob=new Blob([JSON.stringify(d,null,2)],{type:'application/json'});
+    const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='client.json';a.click();}
+  async function enregistrerAuto(){
+    const msg=document.getElementById('saveMsg'), btn=document.getElementById('saveBtn');
+    if(!F('nom')){msg.style.color='#FF7D9C';msg.textContent='Donne au moins le nom de l\'entité.';return;}
+    build();
+    const slug=(window.__client&&window.__client.id)||'';
+    AwemaGH.ensure(async function(ok){ if(!ok)return;
+      btn.disabled=true; msg.style.color='var(--muted)'; msg.textContent='💾 Création de la fiche…';
+      try{
+        await AwemaGH.saveFile('modules/marketing/clients/'+slug+'/_donnees/client.json', window.__client, 'AWEMA : client '+slug);
+        msg.style.color='#34E5C4'; msg.textContent='✅ Client créé ('+AwemaGH.who()+') — visible au cockpit (1-2 min).';
+        AwemaGH.runWorkflow('build.yml');
+      }catch(e){ msg.style.color='#FF7D9C'; msg.textContent='❌ '+e.message; }
+      finally{ btn.disabled=false; }
+    });
+  }
+  build();
+</script>
+<script src="outils/_data/config.js" onerror=""></script>
+<script src="outils/_data/apply.js"></script>
+<script src="outils/_design/awema-github.js"></script>
+<script src="outils/_design/awema-fork.js"></script>
+<script src="outils/_design/abeille.js" data-aide="nouveau-client"></script>
+</body>
+</html>

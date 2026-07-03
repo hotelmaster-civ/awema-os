@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>AWEMA — Tests JS (awema-charts)</title>
+<!-- Harnais de tests JS vanilla, zéro npm. Ouvre ce fichier dans un navigateur
+     (ou en CI : chrome headless + dump-dom + grep du marqueur AWEMA-TESTS-RESULTAT).
+     Chaque assertion échouée liste son message ; le résumé final fait foi. -->
+<style>
+  body{font-family:monospace;background:#222222;color:#F1EDE2;padding:24px;font-size:14px}
+  .ok{color:#34E5C4}.ko{color:#FF7D9C}
+  h1{font-size:16px;color:#FFC94D}
+</style>
+</head>
+<body>
+<h1>Tests awema-charts.js</h1>
+<div id="sortie"></div>
+<div id="resume" style="margin-top:16px;font-weight:bold"></div>
+<div id="bac" style="position:absolute;left:-9999px;width:760px"></div>
+
+<script src="../outils/_design/awema-format.js"></script>
+<script src="../outils/_design/awema-charts.js"></script>
+<script>
+'use strict';
+var PASSES = 0, ECHECS = [];
+function ok(cond, msg) {
+  var li = document.createElement('div');
+  if (cond) { PASSES++; li.className = 'ok'; li.textContent = '✓ ' + msg; }
+  else { ECHECS.push(msg); li.className = 'ko'; li.textContent = '✗ ' + msg; }
+  document.getElementById('sortie').appendChild(li);
+}
+function eq(a, b, msg) { ok(a === b, msg + ' (attendu ' + JSON.stringify(b) + ', obtenu ' + JSON.stringify(a) + ')'); }
+
+var C = window.AwemaCharts;
+var F = window.AwemaFmt;
+
+/* — module de formatage partagé — */
+ok(!!F, 'AwemaFmt est exposé');
+eq(F.nf(null), '—', 'nf(null) → tiret');
+eq(F.nf(''), '—', 'nf(vide) → tiret');
+eq(F.nf('abc'), 'abc', 'nf(non-nombre) → tel quel (pas de NaN)');
+ok(F.nf(12345).indexOf('12') === 0, 'nf formate les milliers');
+eq(F.esc('<b>&"x'), '&lt;b&gt;&amp;"x', 'esc échappe & < > (pas les guillemets)');
+eq(F.escAttr('<b>&"x'), '&lt;b&gt;&amp;&quot;x', 'escAttr échappe aussi les guillemets');
+ok(window.escP === F.esc, 'escP global = esc (compat dashboard)');
+ok(window.nf === F.nf, 'nf global exposé');
+
+/* — vocabulaire de statut : source unique, vert « publié » cohérent — */
+eq(F.DIFFUSION.publie.color, '#34E5C4', 'publié = vert de la charte (#34E5C4, plus de divergence)');
+eq(F.PRODUCTION['Validé'], '#34E5C4', 'Validé = même vert de succès');
+eq(F.prodColor('inconnu'), '#B3AA92', 'statut de production inconnu → muted');
+var badge = F.diffBadge('publie', 'https://ex.com/p');
+ok(badge.indexOf('href="https://ex.com/p"') > -1 && badge.indexOf('publié') > -1, 'diffBadge avec URL → lien cliquable');
+ok(F.diffBadge('publie', null).indexOf('<span') === 0, 'diffBadge sans URL → span');
+eq(F.diffBadge('inconnu'), '', 'diffBadge statut inconnu → vide');
+ok(F.diffBadge('echec','javascript:alert(1)"><img src=x>').indexOf('<img') < 0, 'diffBadge échappe l\'URL (pas d\'injection)');
+eq(F.safeUrl('https://x.com/p'), 'https://x.com/p', 'safeUrl garde http(s)');
+eq(F.safeUrl('mailto:a@b.c'), 'mailto:a@b.c', 'safeUrl garde mailto');
+eq(F.safeUrl('javascript:alert(1)'), '#', 'safeUrl neutralise javascript:');
+eq(F.safeUrl(' JavaScript:alert(1)'), '#', 'safeUrl neutralise malgré espaces/casse');
+eq(F.safeUrl('data:text/html,x'), '#', 'safeUrl neutralise data:');
+eq(F.safeUrl(''), '#', 'safeUrl vide → #');
+
+/* — module & globaux de compatibilité — */
+ok(!!C, 'AwemaCharts est exposé');
+ok(typeof window.courbeAudience === 'function', 'global courbeAudience (compat pages hôtes)');
+ok(typeof window.spark === 'function', 'global spark');
+
+/* — nf / dfr — */
+eq(C.nf(null), '—', 'nf(null) rend un tiret');
+ok(C.nf(12345).indexOf('12') === 0 && C.nf(12345).indexOf('345') > 0, 'nf formate en fr-FR (séparateur de milliers)');
+eq(C.dfr('2026-07-02'), '2 juil.', 'dfr formate en français court');
+eq(C.MOIS_FR.length, 12, 'MOIS_FR contient 12 mois');
+
+/* — courbeAudience : cas limites — */
+var vide = C.courbeAudience([]);
+eq(vide.pts.length, 0, 'courbe vide → aucun point');
+ok(vide.html.indexOf('historique') > -1, 'courbe vide → message pédagogique');
+var seul = C.courbeAudience([{ date: '2026-06-01', valeur: 100 }]);
+eq(seul.pts.length, 0, 'un seul point → pas de courbe (il en faut 2)');
+var sale = C.courbeAudience([{ date: '2026-06-01' }, { date: null, valeur: 5 }, { valeur: 'x' }]);
+eq(sale.pts.length, 0, 'points invalides filtrés (date/valeur manquantes ou non numériques)');
+
+/* — courbeAudience : échelle TEMPORELLE réelle (règle dataviz : jamais l'index) — */
+var irr = C.courbeAudience([
+  { date: '2026-06-01', valeur: 100 },
+  { date: '2026-06-11', valeur: 150 },   // à mi-chemin temporel du 01→21
+  { date: '2026-06-21', valeur: 300 }
+]);
+eq(irr.pts.length, 3, 'trois points valides');
+var attendu = (irr.pts[0].x + irr.pts[2].x) / 2;
+ok(Math.abs(irr.pts[1].x - attendu) < 0.6, 'x du point médian ∝ temps réel (' + irr.pts[1].x.toFixed(1) + ' ≈ ' + attendu.toFixed(1) + ')');
+ok(irr.pts[2].y < irr.pts[0].y, 'valeur la plus haute dessinée le plus haut (y SVG inversé)');
+
+/* — tri par date même si l'entrée est désordonnée — */
+var des = C.courbeAudience([
+  { date: '2026-06-21', valeur: 300 },
+  { date: '2026-06-01', valeur: 100 }
+]);
+eq(des.pts[0].date, '2026-06-01', 'points triés chronologiquement quel que soit l’ordre d’entrée');
+
+/* — accessibilité + libellés — */
+ok(irr.html.indexOf('aria-label') > -1 && irr.html.indexOf('300') > -1, 'aria-label descriptif avec la dernière valeur');
+ok(irr.html.indexOf('evHit') > -1 && irr.html.indexOf('evTip') > -1, 'zones d’interaction (crosshair/infobulle) présentes');
+
+/* — spark — */
+var s = C.spark([1, 5, 3], '#1877F2');
+ok(s.indexOf('<svg') === 0 && s.indexOf('#1877F2') > -1, 'spark rend un SVG avec la couleur de la plateforme');
+ok(s.indexOf('NaN') < 0, 'spark sans NaN');
+var plat = C.spark([7, 7, 7], '#000');
+ok(plat.indexOf('NaN') < 0, 'spark valeurs constantes (division par zéro évitée)');
+
+/* — wireCourbe : intégration DOM réelle (survol → infobulle) — */
+var bac = document.getElementById('bac');
+bac.innerHTML = irr.html;
+C.wireCourbe(irr);
+var hit = document.getElementById('evHit'), tip = document.getElementById('evTip');
+ok(!!hit && !!tip, 'SVG monté dans le DOM');
+var r = document.getElementById('evChart').getBoundingClientRect();
+hit.dispatchEvent(new MouseEvent('mousemove', { clientX: r.left + r.width / 2, clientY: r.top + 10, bubbles: true }));
+eq(tip.style.display, 'block', 'mousemove → infobulle visible');
+ok(tip.innerHTML.indexOf('abonnés') > -1, 'infobulle : valeur + libellé');
+hit.dispatchEvent(new MouseEvent('mouseleave', { bubbles: true }));
+eq(tip.style.display, 'none', 'mouseleave → infobulle masquée');
+
+/* — résumé (marqueur CI) — */
+var total = PASSES + ECHECS.length;
+var resume = ECHECS.length
+  ? 'AWEMA-TESTS-RESULTAT: ECHEC ' + PASSES + '/' + total + ' — ' + ECHECS.join(' | ')
+  : 'AWEMA-TESTS-RESULTAT: OK ' + PASSES + '/' + total;
+var el = document.getElementById('resume');
+el.textContent = resume;
+el.className = ECHECS.length ? 'ko' : 'ok';
+document.title = resume;
+</script>
+</body>
+</html>

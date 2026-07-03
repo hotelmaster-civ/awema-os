@@ -1,0 +1,62 @@
+name: Agents IA (proactivité)
+
+# Fait travailler l'équipe d'agents IA puis agrège « les actions du jour ».
+# - Les agents (Analyste, Stratège, Créatif) tournent si ANTHROPIC_API_KEY est présent (sinon skip).
+# - actions-du-jour s'exécute TOUJOURS (alertes déterministes, sans clé IA requise).
+# Indépendant de sync-reseaux / sync-tiktok. Commite les _agents/*.json + régénère le registre.
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "30 6 * * *"   # chaque jour 06:30 UTC (analyses toujours fraîches)
+  workflow_run:            # ré-analyse automatiquement APRÈS chaque rafraîchissement de données
+    workflows: ["Sync présence digitale (réseaux)", "Sync TikTok (présence digitale)"]
+    types: [completed]
+
+permissions:
+  contents: write
+
+# Groupe PARTAGÉ avec tous les workflows committeurs : écriture du dépôt en série (anti-course sur agence.js).
+concurrency:
+  group: awema-git-write
+  cancel-in-progress: false
+
+jobs:
+  agents:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Faire travailler les agents IA (fournisseur au choix ; skip si aucune clé)
+        env:
+          # Système agnostique : passe les clés disponibles, awema_ai choisit (ou s'auto-désactive).
+          AWEMA_AI_PROVIDER: ${{ vars.AWEMA_AI_PROVIDER }}
+          AWEMA_AI_MODEL: ${{ vars.AWEMA_AI_MODEL }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+          GITHUB_MODELS_TOKEN: ${{ secrets.GITHUB_MODELS_TOKEN }}
+          TOGETHER_API_KEY: ${{ secrets.TOGETHER_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          python3 scripts/awema_ai.py --check
+          for a in analyste stratege creatif; do
+            echo "▶ $a"; python3 scripts/run-agent.py "$a" --all || true
+          done
+
+      - name: Agréger « les actions du jour » (sans clé requise)
+        run: python3 scripts/run-agent.py actions-du-jour --all || true
+
+      - name: Régénérer le registre agence
+        run: python3 outils/_data/build.py
+
+      - name: Commit si changements
+        uses: ./.github/actions/commit-push
+        with:
+          message: "chore(agents): propositions IA + actions du jour (run ${{ github.run_number }})"

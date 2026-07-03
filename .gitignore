@@ -1,0 +1,30 @@
+# Les PDF de _exports-pdf/ SONT des livrables : ils sont versionnés.
+# (Régénérables à tout moment via scripts/export-pdf.sh.)
+
+# Python
+__pycache__/
+*.pyc
+
+# OS / éditeurs
+.DS_Store
+*.swp
+.idea/
+.vscode/
+
+# Visuels reçus de TOUS les clients (artefacts — jamais versionnés, quel que soit le slug)
+modules/*/clients/*/_visuels-recus/*.png
+modules/*/clients/*/_visuels-recus/*.jpg
+modules/*/clients/*/_visuels-recus/*.jpeg
+modules/*/clients/*/_visuels-recus/*.webp
+
+# Refresh tokens TikTok + sorties de tokens (jamais dans le dépôt)
+tiktok_tokens.out
+*_tokens.out
+*.token
+
+# Identifiants locaux de l'opérateur awema (JAMAIS dans le dépôt)
+.awema/
+
+# Données mono-client générées (registre régénérable) — jamais versionnées
+outils/dashboard/data.js
+outils/revue-visuels/data.js

@@ -1,0 +1,4 @@
+{
+  "_doc": "IDs de Pages Facebook à ne JAMAIS synchroniser (anciennes pages, doublons, pages vides). Ajoute un page_id dans la liste pour l'exclure du dashboard.",
+  "pages_ignorees": []
+}

@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AWEMA — Connecter LinkedIn (guide pas à pas)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--nuit:#222222;--ciel:#FFC94D;--gold:#D4AF37;--violet:#EDA914;--mint:#34E5C4;--li:#0A66C2;--li2:#004182;
+    --tx:#F1EDE2;--muted:#B3AA92;--card:rgba(255,255,255,.05);--bord:rgba(255,255,255,.12)}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:Poppins,system-ui,Segoe UI,Roboto,sans-serif;color:var(--tx);line-height:1.65;
+    background:radial-gradient(1100px 650px at 50% -12%,#3A3320,#222222 62%,#1E1E1E);min-height:100vh;padding-bottom:60px}
+  .wrap{max-width:860px;margin:0 auto;padding:0 22px}
+  header{padding:54px 0 14px}
+  .back{color:var(--muted);text-decoration:none;font-size:13px}
+  .lgmark{display:inline-grid;place-items:center;width:46px;height:46px;border-radius:12px;background:linear-gradient(135deg,var(--li),var(--li2));color:#fff;font-family:Montserrat;font-weight:800;font-size:20px;margin-bottom:8px}
+  h1{font-family:Montserrat,sans-serif;font-weight:800;font-size:clamp(26px,4.6vw,38px);margin-top:8px;letter-spacing:-.02em}
+  h1 .g{color:var(--li);filter:brightness(1.4)}
+  .lead{color:var(--muted);margin-top:10px;font-size:15px}
+  .pill{display:inline-block;font-size:12px;color:var(--muted);border:1px solid var(--bord);border-radius:20px;padding:5px 12px;background:var(--card);margin-top:14px}
+  .step{background:var(--card);border:1px solid var(--bord);border-radius:18px;padding:22px;margin-top:18px;backdrop-filter:blur(8px)}
+  .step h2{font-family:Montserrat,sans-serif;font-size:18px;display:flex;align-items:center;gap:12px}
+  .num{flex:0 0 30px;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-size:14px;font-weight:800;color:#fff;background:linear-gradient(135deg,var(--li),var(--li2))}
+  .step p{color:#D8D2C2;font-size:13.6px;margin-top:10px}
+  .step ul{margin:8px 0 0 20px;color:#D8D2C2;font-size:13.4px}.step li{margin:5px 0}
+  .btn{display:inline-flex;align-items:center;gap:8px;margin-top:14px;background:linear-gradient(135deg,var(--li),var(--li2));color:#fff;text-decoration:none;font-weight:700;font-size:13.5px;border:0;border-radius:11px;padding:11px 16px;cursor:pointer}
+  .note{font-size:12.5px;color:var(--muted);margin-top:12px;border-left:3px solid var(--gold);padding-left:12px}
+  .warn{font-size:12.5px;color:#ffd9a0;margin-top:12px;border-left:3px solid #FFC861;padding-left:12px;background:rgba(255,200,97,.06);padding:10px 12px;border-radius:0 8px 8px 0}
+  code{background:rgba(0,0,0,.3);padding:2px 6px;border-radius:6px;font-size:12.5px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="back" href="index.html" target="_top">← AWEMA · Centre de pilotage</a>
+    <div class="lgmark">in</div>
+    <h1>Connecter <span class="g">LinkedIn</span> — guide pas à pas</h1>
+    <p class="lead">LinkedIn donne accès aux statistiques d'une <b>Page entreprise</b> (abonnés, impressions,
+      engagement) via son API — après création d'une <b>app</b> et autorisation <b>OAuth</b>. C'est la
+      plateforme la plus encadrée : ce guide te mène jusqu'au jeton.</p>
+    <span class="pill">⏱️ ~15 min · nécessite une Page entreprise dont tu es admin</span>
+  </header>
+
+  <div class="step">
+    <h2><span class="num">1</span> Avoir une Page entreprise (admin)</h2>
+    <p>L'API d'analytics LinkedIn fonctionne sur les <b>Pages entreprise</b> (pas les profils perso).
+      Tu dois en être <b>administrateur</b>.</p>
+    <ul>
+      <li>Page existante : note son URL, ex. <code>linkedin.com/company/mon-entreprise</code>.</li>
+      <li>Pas encore de page ? Crée-la (gratuit) via le bouton ci-dessous.</li>
+    </ul>
+    <a class="btn" href="https://www.linkedin.com/company/setup/new/" target="_blank" rel="noopener">Créer une Page entreprise ↗</a>
+  </div>
+
+  <div class="step">
+    <h2><span class="num">2</span> Créer une app LinkedIn Developer</h2>
+    <ul>
+      <li>Ouvre le portail développeur (bouton ci-dessous) → <b>Create app</b>.</li>
+      <li>Renseigne le nom (<code>AWEMA</code>), associe la <b>Page entreprise</b> de l'étape 1, accepte les conditions.</li>
+    </ul>
+    <a class="btn" href="https://www.linkedin.com/developers/apps/new" target="_blank" rel="noopener">Créer l'app LinkedIn ↗</a>
+  </div>
+
+  <div class="step">
+    <h2><span class="num">3</span> Vérifier la Page &amp; demander les produits</h2>
+    <ul>
+      <li>Onglet <b>Settings</b> → <b>Verify</b> : génère le lien, ouvre-le en tant qu'admin de la Page pour vérifier l'app.</li>
+      <li>Onglet <b>Products</b> → clique <b>« Request access »</b> sur :
+        <ul>
+          <li><b>Sign In with LinkedIn using OpenID Connect</b> <i>(Standard Tier)</i> — accordé <b>immédiatement</b> (le login OAuth).</li>
+          <li><b>Community Management API</b> <i>(Development Tier)</i> — les stats de Page (abonnés, impressions, engagement).</li>
+        </ul>
+      </li>
+    </ul>
+    <div class="note">✅ Le <b>Development Tier</b> de la Community Management API te donne accès <b>tout de suite</b>
+      à <b>tes propres Pages</b> (celles dont tu es admin + app vérifiée) — <b>pas besoin d'attendre</b> une
+      revue pour un usage AWEMA auto-hébergé. La validation complète ne sert que pour gérer des Pages tierces à grande échelle.</div>
+    <div class="note">Ignore les autres produits (Advertising, Lead Sync, Conversions, Ad Library…) — inutiles ici.</div>
+  </div>
+
+  <div class="step">
+    <h2><span class="num">4</span> Enregistrer Client ID &amp; Client Secret <span style="font-size:11px;color:#06231d;background:var(--mint);border-radius:6px;padding:2px 7px;font-weight:700">sans terminal</span></h2>
+    <ul>
+      <li>Onglet <b>Auth</b> → copie le <b>Client ID</b> et le <b>Client Secret</b>.</li>
+      <li>Ajoute cette <b>URL de redirection OAuth</b> dans l'app : <code id="redir">…</code></li>
+    </ul>
+    <p style="margin-top:12px">Colle-les ici : AWEMA les range en <b>Secrets GitHub</b> (jamais dans le dépôt).</p>
+    <div id="awc-li-id"></div>
+    <div id="awc-li-secret"></div>
+    <div id="awc-li-pat"></div>
+    <div class="note">Le <b>PAT</b> (Variables R/W) sert à enregistrer le token obtenu. Si tu l'as déjà posé pour
+      TikTok (<code>TIKTOK_PAT</code>), inutile d'en remettre un — sinon enregistre-le ci-dessus en <code>AWEMA_PAT</code>.</div>
+  </div>
+
+  <div class="step">
+    <h2><span class="num">5</span> Connecter la Page LinkedIn</h2>
+    <div class="note" style="border-color:var(--mint,#34E5C4)">✅ Tu cliques, <b>AWEMA fait le reste en arrière-plan</b>, sans rien te demander de plus.
+      <span style="opacity:.8">(En coulisses : il transforme tes clés en un jeton de lecture — tu n'as pas à t'en occuper.)</span></div>
+    <input id="liId" class="fld" placeholder="Client ID de ton app LinkedIn (rappel — non secret)"
+      style="width:100%;margin-top:12px;background:rgba(0,0,0,.28);border:1px solid var(--bord);border-radius:11px;color:#fff;font:inherit;font-size:13.5px;padding:11px 13px">
+    <button class="btn" id="goAuth">▶️ Connecter ma Page LinkedIn</button>
+    <div class="note" id="authMsg" style="min-height:14px"></div>
+    <ul>
+      <li>Scopes : <code>r_organization_social</code>, <code>rw_organization_admin</code> (analytics de Page).</li>
+      <li>Tu autorises sur LinkedIn → retour automatique sur AWEMA, qui finalise et enregistre <code>LINKEDIN_TOKEN</code>.</li>
+    </ul>
+  </div>
+
+  <div class="step">
+    <h2><span class="num">6</span> Synchroniser</h2>
+    <p>Une fois la Page connectée, lance la synchro : abonnés, impressions et engagement arrivent dans la
+      fiche, à côté de Facebook, TikTok et YouTube.</p>
+    <a class="btn" id="syncLink" href="#" target="_blank" rel="noopener">Ouvrir « Sync présence digitale » ↗</a>
+    <details style="margin-top:14px">
+      <summary style="cursor:pointer;color:var(--muted);font-size:12.5px">Tu préfères la ligne de commande (Python en local) ?</summary>
+      <div class="note" style="border-color:var(--li);margin-top:10px">
+        <code>python3 scripts/linkedin-onboard.py</code> (capture auto) ou
+        <code>python3 scripts/linkedin-onboard.py --paste</code> (via oauth.html). L'access token affiché va
+        dans le Secret <code>LINKEDIN_TOKEN</code>.</div>
+    </details>
+  </div>
+</div>
+<script src="outils/_data/config.js" onerror=""></script>
+<script src="outils/_data/apply.js"></script>
+<script src="outils/_design/awema-github.js"></script>
+<script src="outils/_design/awema-connect.js"></script>
+<script>
+  var AUTH='https://www.linkedin.com/oauth/v2/authorization';
+  var SCOPES='r_organization_social rw_organization_admin';
+  var oauthUrl=location.origin+location.pathname.replace(/[^/]*$/,'oauth.html');
+  document.getElementById('redir').textContent=oauthUrl;
+
+  // Secrets in-app
+  AwemaConnect.secretBox('#awc-li-id', {name:'LINKEDIN_CLIENT_ID', label:'Client ID', placeholder:'Colle le Client ID'});
+  AwemaConnect.secretBox('#awc-li-secret', {name:'LINKEDIN_CLIENT_SECRET', label:'Client Secret', placeholder:'Colle le Client Secret'});
+  AwemaConnect.secretBox('#awc-li-pat', {name:'AWEMA_PAT', label:'PAT (Variables R/W)', placeholder:'PAT GitHub — ou réutilise TIKTOK_PAT'});
+
+  // Lien Sync
+  (function(){
+    var g=(window.AWEMA_CONFIG&&AWEMA_CONFIG.github)||{}, ghc={}; try{ghc=JSON.parse(localStorage.getItem('awema-gh'))||{};}catch(e){}
+    var owner=ghc.owner||g.owner||'awema-test', repo=ghc.repo||g.repo||'awema-os';
+    document.getElementById('syncLink').href='https://github.com/'+owner+'/'+repo+'/actions/workflows/sync-reseaux.yml';
+  })();
+
+  // Connexion OAuth LinkedIn
+  var liId=document.getElementById('liId');
+  try{ liId.value=localStorage.getItem('awema-li-id')||''; }catch(e){}
+  document.getElementById('goAuth').onclick=function(){
+    var cid=liId.value.trim(), m=document.getElementById('authMsg');
+    if(!cid){m.textContent='Renseigne le Client ID de ton app LinkedIn.';m.style.color='#FF7D9C';return;}
+    try{ localStorage.setItem('awema-li-id',cid); }catch(e){}
+    var state='li:'+Math.random().toString(36).slice(2)+Date.now().toString(36);
+    var url=AUTH+'?'+new URLSearchParams({response_type:'code',client_id:cid,redirect_uri:oauthUrl,scope:SCOPES,state:state}).toString();
+    // Sort de l'iframe du dashboard si nécessaire (les pages de login OAuth interdisent le framing).
+    (window.top||window).location.href=url;
+  };
+</script>
+<script src="outils/_design/awema-fork.js"></script>
+<script src="outils/_design/abeille.js" data-aide="connect-linkedin"></script>
+</body>
+</html>

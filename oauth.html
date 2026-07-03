@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AWEMA — Connexion réseau (finalisation)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--nuit:#222222;--ciel:#FFC94D;--gold:#D4AF37;--mint:#34E5C4;--bord:rgba(255,255,255,.16);--muted:#B3AA92}
+  *{box-sizing:border-box}
+  body{margin:0;min-height:100vh;display:grid;place-items:center;font-family:Poppins,system-ui,Segoe UI,Roboto,sans-serif;
+    background:radial-gradient(1200px 600px at 50% -10%,#2A2A2A,#222222);color:#F1EDE2}
+  .card{width:min(680px,92vw);background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);
+    border-radius:20px;padding:30px;backdrop-filter:blur(10px);box-shadow:0 20px 60px rgba(0,0,0,.4)}
+  h1{font-family:Montserrat,sans-serif;font-weight:800;margin:0 0 4px;font-size:22px}
+  h1 .g{color:var(--gold)}
+  p.sub{margin:0 0 16px;color:var(--muted);font-size:13.5px}
+  .lbl{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:16px 0 6px}
+  .box{display:flex;gap:10px}
+  input{flex:1;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:14px;padding:13px 14px;border-radius:12px;
+    border:1px solid var(--bord);background:rgba(0,0,0,.25);color:#fff;overflow:auto}
+  input.txt{font-family:inherit}
+  button{border:0;border-radius:12px;padding:0 18px;font-weight:700;cursor:pointer;background:linear-gradient(135deg,var(--ciel),#EDA914);color:#fff}
+  button.ghost{background:transparent;border:1px solid var(--bord);color:#F1EDE2}
+  button:active{transform:translateY(1px)}
+  .ok{color:var(--mint)} .err{color:#FF7D9C}
+  .hint{margin-top:18px;font-size:12.5px;color:var(--muted);line-height:1.7}
+  code{background:rgba(0,0,0,.3);padding:2px 6px;border-radius:6px}
+  .go2{margin-top:14px;display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+  .go2 button{padding:12px 18px}
+  .msg{margin-top:12px;font-size:13px;min-height:18px}
+  details{margin-top:18px}
+  summary{cursor:pointer;color:var(--muted);font-size:12.5px}
+</style>
+</head>
+<body>
+<div class="card">
+  <h1>Connexion <span id="provNom">réseau</span> <span class="g">·</span> finalisation</h1>
+  <p class="sub"><span id="provNom2">Le réseau</span> t'a renvoyé ici après l'autorisation. AWEMA termine <strong>tout seul</strong> :
+    il déclenche l'échange sécurisé du code en arrière-plan (GitHub Actions). Aucun terminal.</p>
+
+  <div id="zone"></div>
+
+  <details>
+    <summary>Plutôt en ligne de commande (si tu as Python en local)</summary>
+    <div class="hint">
+      <code>export TIKTOK_CLIENT_KEY="…" TIKTOK_CLIENT_SECRET="…"</code><br>
+      <code>python3 scripts/connect-reseaux.py --tiktok-auth "&lt;CODE&gt;" "&lt;REDIRECT_URI&gt;"</code><br>
+      → tu obtiens le <strong>refresh_token</strong> à mettre dans la Variable <code>TIKTOK_TOKENS</code>.
+      Le <em>redirect_uri</em> à utiliser est l'adresse de cette page.
+    </div>
+  </details>
+</div>
+
+<script src="outils/_data/config.js" onerror=""></script>
+<script src="outils/_data/apply.js" onerror=""></script>
+<script src="outils/_design/awema-format.js"></script>
+<script src="outils/_design/awema-github.js"></script>
+<script>
+  var p = new URLSearchParams(location.search);
+  var code = p.get('code'), err = p.get('error'), errd = p.get('error_description');
+  var state = p.get('state') || '';
+  var redirect = location.origin + location.pathname;   // doit être identique à l'autorisation
+  var zone = document.getElementById('zone');
+  // Fournisseur déduit du préfixe de state : 'li:'=LinkedIn, 'fb:'=Facebook, sinon TikTok (défaut/rétro-compat).
+  var PROV = (state.indexOf('li:') === 0) ? { id:'linkedin', nom:'LinkedIn', wf:'linkedin-exchange.yml', slug:false }
+           : (state.indexOf('fb:') === 0) ? { id:'facebook', nom:'Facebook', wf:'meta-exchange.yml',     slug:false }
+           : { id:'tiktok', nom:'TikTok', wf:'tiktok-exchange.yml', slug:true };
+  document.title = 'AWEMA — Connexion '+PROV.nom+' (finalisation)';
+  var _pn=document.getElementById('provNom'); if(_pn)_pn.textContent=PROV.nom;
+  var _pn2=document.getElementById('provNom2'); if(_pn2)_pn2.textContent=PROV.nom;
+
+  function codeRow(){
+    return '<div class="lbl">Code reçu</div><div class="box">'+
+      '<input id="v" readonly value="'+(code||'').replace(/"/g,'&quot;')+'">'+
+      '<button class="ghost" id="cp">Copier</button></div>';
+  }
+
+  if (err) {
+    // err / errd viennent des query-params (?error=…&error_description=…) → TOUJOURS échappés :
+    // sinon une URL piégée exécuterait du JS sur cette origine et volerait le PAT (localStorage).
+    var E = (window.AwemaFmt && AwemaFmt.esc) || function(s){return String(s==null?'':s).replace(/[&<>]/g,function(m){return{'&':'&amp;','<':'&lt;','>':'&gt;'}[m];});};
+    zone.innerHTML = '<p class="err">❌ Erreur '+PROV.nom+' : '+E(err)+'</p><p class="sub">'+E(errd||'')+'</p>'+
+      '<p class="sub">Relance la connexion depuis <a href="connect-'+PROV.id+'.html" style="color:var(--ciel)">la page '+PROV.nom+'</a>.</p>';
+  } else if (!code) {
+    zone.innerHTML = '<p class="sub">Aucun code détecté. Ouvre cette page via la redirection du réseau '+
+      '(elle contient <code>?code=…</code>), ou démarre depuis <a href="connect-'+PROV.id+'.html" style="color:var(--ciel)">Connecter '+PROV.nom+'</a>.</p>';
+  } else {
+    var slugDefault = (sessionStorage.getItem('awema-tt-slug') || '');
+    var slugField = PROV.slug
+      ? '<div class="lbl">Nom court du client <span style="text-transform:none;color:var(--mint)">(facultatif — laisse vide, AWEMA utilisera le nom du compte)</span></div>'+
+        '<div class="box"><input class="txt" id="slug" placeholder="ex. ma-boutique" value="'+slugDefault.replace(/"/g,'&quot;')+'"></div>'
+      : '';
+    zone.innerHTML =
+      '<p class="ok">✅ Autorisation '+PROV.nom+' réussie.</p>' + codeRow() + slugField +
+      '<div class="go2"><button id="fin">⚡ Finaliser la connexion '+PROV.nom+'</button>'+
+      '<span class="sub" id="who" style="margin:0"></span></div>'+
+      '<div class="msg" id="msg"></div>';
+
+    document.getElementById('cp').onclick = function(){
+      try{ navigator.clipboard.writeText(code); this.textContent='Copié ✓'; }catch(e){ this.textContent='Sélectionne'; }
+    };
+    function who(){
+      var w=document.getElementById('who'); var on=window.AwemaGH&&AwemaGH.connected();
+      if(on){ w.textContent='GitHub : '+AwemaGH.who(); w.style.cursor='default'; w.onclick=null; }
+      else { w.innerHTML='<a href="#" style="color:var(--ciel)">🔗 Connecter mon GitHub d’abord</a>'; w.onclick=function(e){ e.preventDefault(); AwemaGH.openConnect(function(){who();}); }; }
+    }
+    who();
+    function msg(t,c){ var m=document.getElementById('msg'); m.textContent=t; m.style.color=c||'var(--muted)'; }
+    var fin=document.getElementById('fin');
+
+    // Suit le run d'échange et ne confirme le succès QUE s'il s'est vraiment terminé OK.
+    function pollRun(baselineId, tries){
+      if(tries>22){ msg('⏳ Toujours en cours. Reviens dans une minute : si la connexion a réussi, tu verras le compte dans le cockpit.','var(--muted)'); fin.disabled=false; return; }
+      setTimeout(function(){
+        AwemaGH.latestRun(PROV.wf).then(function(run){
+          if(!run || run.id===baselineId){ msg('⏳ Échange en cours…'); pollRun(baselineId, tries+1); return; }
+          if(run.status!=='completed'){ msg('⏳ Échange en cours… (vérification automatique)'); pollRun(baselineId, tries+1); return; }
+          if(run.conclusion==='success'){
+            msg('✅ Connexion '+PROV.nom+' réussie et enregistrée ! Tu peux maintenant lancer la synchro.','var(--mint)');
+          } else {
+            msg('❌ L’échange n’a pas abouti. Causes fréquentes : le code d’autorisation a expiré (relance la connexion), ou une clé manque. Détail du run ↗','#FF7D9C');
+            var m=document.getElementById('msg'); if(run.url){ m.innerHTML+=' <a href="'+run.url+'" target="_blank" rel="noopener" style="color:var(--ciel)">ouvrir</a>'; }
+            fin.disabled=false;
+          }
+        }).catch(function(){ pollRun(baselineId, tries+1); });
+      }, 3000);
+    }
+
+    fin.onclick = function(){
+      var slugEl = document.getElementById('slug');
+      var inputs = { code: code, redirect_uri: redirect };
+      if (PROV.slug) inputs.slug = slugEl ? slugEl.value.trim() : '';
+      if(!(window.AwemaGH)){ msg('Module GitHub indisponible.','#FF7D9C'); return; }
+      msg('Connexion à GitHub…');
+      AwemaGH.ensure(function(){
+        who();
+        msg('Déclenchement de l’échange sécurisé…');
+        fin.disabled = true;
+        AwemaGH.latestRun(PROV.wf).then(function(prev){
+          var baselineId = prev && prev.id;
+          return AwemaGH.runWorkflow(PROV.wf, inputs, true).then(function(){
+            msg('⏳ Échange en cours… (vérification automatique, ~30 s)');
+            pollRun(baselineId, 0);
+          });
+        }).catch(function(e){
+          fin.disabled = false;
+          msg('❌ '+(e.message||e)+' — vérifie que les clés '+PROV.nom+' (Secrets) sont bien en place.','#FF7D9C');
+        });
+      });
+    };
+  }
+</script>
+<script src="outils/_design/awema-fork.js"></script>
+<script src="outils/_design/abeille.js" data-aide="oauth"></script>
+</body>
+</html>

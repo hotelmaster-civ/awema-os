@@ -1,0 +1,35 @@
+name: Tests (anti-régression)
+
+# Garde-fou : exécute le harnais stdlib (fusion réseaux, consolidation, schémas d'agents)
+# ET le harnais JS (tests/tests.html via le Chrome préinstallé du runner — zéro npm).
+# Aucune dépendance, aucun secret requis — les briques IA s'auto-désactivent sans clé.
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  unittest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Lancer les tests
+        run: python3 -m unittest discover -s tests -v
+
+  js:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Tests JS (tests/tests.html, Chrome headless du runner)
+        run: |
+          DOM=$(google-chrome --headless=new --disable-gpu --no-sandbox \
+            --virtual-time-budget=5000 --dump-dom "file://$PWD/tests/tests.html")
+          echo "$DOM" | grep -o "AWEMA-TESTS-RESULTAT: [^<]*" | head -1
+          if ! echo "$DOM" | grep -q "AWEMA-TESTS-RESULTAT: OK"; then
+            echo "::error::Tests JS en échec (voir le détail ci-dessus)."
+            exit 1
+          fi

@@ -1,0 +1,74 @@
+name: Sync présence digitale (réseaux)
+
+# Récupère les métriques sociales réelles de TOUTES les Pages gérées (Meta Graph API)
+# et met à jour leur reseaux.json + le registre agence.js. Le runner GitHub a accès à
+# Internet (contrairement au sandbox de génération) → graph.facebook.com fonctionne ici.
+#
+# PRÉ-REQUIS (une fois) — dans le dépôt :
+#   Settings → Secrets and variables → Actions
+#     Secret  : META_TOKEN   (token utilisateur avec pages_show_list, pages_read_engagement,
+#                             read_insights, instagram_basic, instagram_manage_insights)
+#
+# UN SEUL token suffit : le script découvre toutes les Pages (me/accounts), crée/maj un
+# client par Page et remplit ses données. Aucun ID par page à saisir.
+#
+# Lancement : onglet Actions → ce workflow → "Run workflow" (ou planifié chaque lundi 06:00).
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 6 * * 1"   # tous les lundis à 06:00 UTC
+
+permissions:
+  contents: write
+
+# Groupe PARTAGÉ avec tous les workflows committeurs : écriture du dépôt en série (anti-course sur agence.js).
+concurrency:
+  group: awema-git-write
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Synchroniser TOUTES les Pages (Meta Graph API)
+        env:
+          META_TOKEN: ${{ secrets.META_TOKEN || vars.META_TOKEN }}
+        run: |
+          if [ -z "$META_TOKEN" ]; then
+            echo "::error::META_TOKEN requis (Secret, ou Variable posée par « Se connecter avec Facebook »)."; exit 1
+          fi
+          python3 scripts/connect-reseaux.py --meta-all
+
+      - name: Synchroniser les chaînes YouTube (Data API v3)
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+        run: |
+          if [ -z "$YOUTUBE_API_KEY" ]; then
+            echo "ℹ️ Pas de YOUTUBE_API_KEY → étape YouTube ignorée."; exit 0
+          fi
+          python3 scripts/connect-reseaux.py --youtube-all
+
+      - name: Synchroniser les Pages LinkedIn (Community Management API)
+        env:
+          # Tolérant : Secret OU Variable, et nom alternatif LINKEDIN_ACCESS_TOKEN
+          LINKEDIN_TOKEN: ${{ secrets.LINKEDIN_TOKEN || vars.LINKEDIN_TOKEN || secrets.LINKEDIN_ACCESS_TOKEN || vars.LINKEDIN_ACCESS_TOKEN }}
+        run: |
+          if [ -z "$LINKEDIN_TOKEN" ]; then
+            echo "ℹ️ Pas de LINKEDIN_TOKEN → étape LinkedIn ignorée."; exit 0
+          fi
+          python3 scripts/connect-reseaux.py --linkedin-all
+
+      - name: Régénérer le registre agence
+        run: python3 outils/_data/build.py
+
+      - name: Commit si changements
+        uses: ./.github/actions/commit-push
+        with:
+          message: "chore(réseaux): sync présence digitale (run ${{ github.run_number }})"

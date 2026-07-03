@@ -1,0 +1,1577 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AWEMA · Command Center</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../_design/awema-ui.css">
+<style>
+:root{
+  /* Dark (défaut) — deep navy + accents électriques */
+  --bg:#191919; --bg2:#1F1F1F; --surface:rgba(255,255,255,.045); --surface-solid:#262626;
+  --elev:rgba(255,255,255,.06); --border:rgba(255,255,255,.08); --border2:rgba(255,255,255,.13);
+  --tx:#F0ECE1; --muted:#A59D89; --muted2:#7D7663;
+  --blue:#FFC94D; --violet:#EDA914; --mint:#34E5C4; --gold:#D4AF37; --pink:#FF7D9C; --amber:#FFC861;
+  --grad:linear-gradient(135deg,#FFC94D 0%,#EDA914 100%);
+  --grad-mint:linear-gradient(135deg,#34E5C4,#FFC94D);
+  --glass-blur:saturate(160%) blur(16px);
+  --shadow:0 18px 50px -16px rgba(0,0,0,.65);
+  --glow:0 0 0 1px var(--border), 0 8px 30px -10px rgba(255,201,77,.35);
+  --r:20px; --r-sm:13px;
+}
+html[data-theme="light"]{
+  --bg:#FAF6EC; --bg2:#F3EEDF; --surface:rgba(255,255,255,.72); --surface-solid:#FFFFFF;
+  --elev:rgba(255,255,255,.9); --border:rgba(45,40,26,.09); --border2:rgba(45,40,26,.16);
+  --tx:#262626; --muted:#7D7663; --muted2:#8D8672;
+  --shadow:0 18px 44px -18px rgba(0,0,0,.28); --glow:0 0 0 1px var(--border),0 10px 30px -12px rgba(255,201,77,.30);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{font-family:'Inter',system-ui,-apple-system,sans-serif;background:
+   radial-gradient(1100px 600px at 82% -8%,rgba(237,169,20,.16),transparent 60%),
+   radial-gradient(900px 600px at 0% 0%,rgba(255,201,77,.14),transparent 55%),
+   var(--bg);
+  color:var(--tx);-webkit-font-smoothing:antialiased;overflow:hidden}
+h1,h2,h3,.disp{font-family:'Plus Jakarta Sans','Inter',sans-serif;letter-spacing:-.02em}
+button,input{font-family:inherit;color:inherit}
+::-webkit-scrollbar{width:10px;height:10px}::-webkit-scrollbar-thumb{background:var(--border2);border-radius:20px}
+a{color:inherit;text-decoration:none}
+
+.app{display:grid;grid-template-columns:264px 1fr;height:100vh}
+
+/* ---------- Sidebar ---------- */
+.side{position:relative;display:flex;flex-direction:column;gap:6px;padding:18px 14px;
+  background:var(--surface);backdrop-filter:var(--glass-blur);-webkit-backdrop-filter:var(--glass-blur);
+  border-right:1px solid var(--border);min-height:0}
+.brand{display:flex;align-items:center;gap:11px;padding:6px 8px 16px}
+.logo{width:38px;height:38px;border-radius:12px;background:var(--grad);display:grid;place-items:center;
+  font-family:'Plus Jakarta Sans';font-weight:800;color:#fff;box-shadow:0 8px 22px -6px rgba(237,169,20,.7)}
+.brand b{font-family:'Plus Jakarta Sans';font-weight:800;font-size:16px;display:block;line-height:1.1}
+.brand span{font-size:11px;color:var(--muted)}
+.nav{display:flex;flex-direction:column;gap:3px;overflow:auto}
+.nav .lbl{font-size:10.5px;text-transform:uppercase;letter-spacing:.13em;color:var(--muted2);margin:12px 10px 4px}
+.nav a{display:flex;align-items:center;gap:11px;padding:10px 12px;border-radius:12px;color:var(--muted);
+  font-size:13.5px;font-weight:500;transition:.18s;border:1px solid transparent}
+.nav a svg{width:18px;height:18px;opacity:.9}
+.nav a:hover{background:var(--elev);color:var(--tx)}
+.nav a.active{color:var(--tx);background:linear-gradient(120deg,rgba(255,201,77,.16),rgba(237,169,20,.13));
+  border-color:var(--border2);box-shadow:inset 0 0 0 1px rgba(255,255,255,.03)}
+.nav a.active svg{color:var(--blue)}
+.side .foot{margin-top:auto;display:flex;align-items:center;gap:10px;padding:10px;border-radius:14px;
+  background:var(--elev);border:1px solid var(--border)}
+.avatar{width:34px;height:34px;border-radius:50%;background:var(--grad-mint);display:grid;place-items:center;
+  font-weight:700;color:#04121a;font-size:13px}
+.foot .who{font-size:12.5px;font-weight:600}.foot .who small{display:block;color:var(--muted);font-weight:400;font-size:11px}
+
+/* ---------- Main ---------- */
+.main{min-height:0;overflow:auto;padding:18px 24px 60px}
+.topbar{position:sticky;top:0;z-index:30;display:flex;align-items:center;gap:14px;
+  padding:10px 0 16px;background:linear-gradient(var(--bg),rgba(7,11,20,0));backdrop-filter:blur(2px)}
+.hamb{display:none;width:40px;height:40px;border-radius:12px;border:1px solid var(--border);background:var(--surface);align-items:center;justify-content:center}
+.title h1{font-size:21px;font-weight:800}
+.title p{font-size:12.5px;color:var(--muted);margin-top:2px}
+.spacer{flex:1}
+.cmdk{display:flex;align-items:center;gap:10px;min-width:230px;padding:9px 13px;border-radius:13px;
+  background:var(--surface);border:1px solid var(--border);color:var(--muted);font-size:13px;cursor:pointer;transition:.18s}
+.cmdk:hover{border-color:var(--border2)}
+.cmdk kbd{margin-left:auto;font-family:inherit;font-size:11px;background:var(--elev);border:1px solid var(--border);
+  border-radius:6px;padding:2px 7px;color:var(--tx)}
+.iconbtn{width:40px;height:40px;border-radius:12px;border:1px solid var(--border);background:var(--surface);
+  display:grid;place-items:center;cursor:pointer;transition:.18s}
+.iconbtn:hover{border-color:var(--border2);transform:translateY(-1px)}
+.iconbtn svg{width:18px;height:18px}
+.cta{display:flex;align-items:center;gap:8px;padding:10px 15px;border-radius:12px;border:none;cursor:pointer;
+  background:var(--grad);color:#fff;font-weight:600;font-size:13.5px;box-shadow:0 10px 24px -8px rgba(237,169,20,.6);transition:.18s}
+.cta:hover{transform:translateY(-2px);box-shadow:0 16px 30px -10px rgba(237,169,20,.75)}
+
+/* ---------- Bento grid ---------- */
+.bento{display:grid;grid-template-columns:repeat(12,1fr);gap:16px;grid-auto-rows:minmax(10px,auto)}
+.card{position:relative;background:var(--surface);backdrop-filter:var(--glass-blur);-webkit-backdrop-filter:var(--glass-blur);
+  border:1px solid var(--border);border-radius:var(--r);padding:18px;box-shadow:var(--shadow);
+  transition:transform .2s ease, border-color .2s}
+.card:hover{transform:translateY(-3px);border-color:var(--border2)}
+.card h3{font-size:13px;font-weight:700;display:flex;align-items:center;gap:8px}
+.card h3 svg{width:17px;height:17px;flex:0 0 auto;color:var(--muted)}
+.card h3 .tag,.card h3 .badge{flex:0 0 auto}
+.card .sub{font-size:11.5px;color:var(--muted);margin-top:2px}
+.col3{grid-column:span 3}.col4{grid-column:span 4}.col5{grid-column:span 5}
+.col6{grid-column:span 6}.col7{grid-column:span 7}.col8{grid-column:span 8}.col12{grid-column:span 12}
+
+/* KPI */
+.kpi .top{display:flex;justify-content:space-between;align-items:flex-start}
+.kpi .ic{width:38px;height:38px;border-radius:11px;display:grid;place-items:center;border:1px solid var(--border)}
+.kpi .ic svg{width:19px;height:19px}
+.kpi .val{font-family:'Plus Jakarta Sans';font-weight:800;font-size:30px;margin-top:14px;letter-spacing:-.03em}
+.kpi .lab{font-size:12.5px;color:var(--muted);margin-top:1px}
+.chip{display:inline-flex;align-items:center;gap:4px;font-size:11px;font-weight:600;padding:3px 8px;border-radius:20px}
+.chip.up{color:#0a1a14;background:var(--mint)}.chip.down{color:#1a0a10;background:var(--pink)}
+.kpi .spark{margin-top:12px}
+.tag{font-size:9.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--amber);
+  border:1px solid color-mix(in srgb,var(--amber) 45%,transparent);padding:2px 7px;border-radius:7px}
+
+/* legend + bars */
+.legend{display:flex;flex-wrap:wrap;gap:10px 16px;margin-top:12px}
+.legend i{width:9px;height:9px;border-radius:3px;display:inline-block;margin-right:7px}
+.legend span{font-size:12px;color:var(--muted)}.legend b{color:var(--tx);font-weight:600}
+.bars{display:flex;flex-direction:column;gap:11px;margin-top:14px}
+.bar{display:grid;grid-template-columns:120px 1fr 38px;align-items:center;gap:10px;font-size:12.5px}
+.bar .tr{height:9px;border-radius:20px;background:var(--elev);overflow:hidden}
+.bar .fl{height:100%;border-radius:20px;transform-origin:left;animation:grow .9s cubic-bezier(.2,.8,.2,1) both}
+.bar .n{text-align:right;color:var(--muted);font-variant-numeric:tabular-nums}
+@keyframes grow{from{transform:scaleX(0)}}
+
+/* funnel */
+.funnel{display:flex;flex-direction:column;gap:8px;margin-top:14px}
+.fstep{display:flex;align-items:center;gap:12px}
+.fstep .frow{flex:1;height:30px;border-radius:9px;background:var(--grad);display:flex;align-items:center;padding:0 12px;
+  color:#fff;font-size:12px;font-weight:600;box-shadow:0 8px 20px -10px rgba(255,201,77,.5);animation:grow .9s both}
+.fstep .v{width:54px;text-align:right;font-size:12.5px;color:var(--muted);font-variant-numeric:tabular-nums}
+
+/* upcoming list */
+.kpibox{background:var(--elev);border:1px solid var(--border);border-radius:14px;padding:12px 14px}
+.kpibox .val2{font-family:'Plus Jakarta Sans';font-weight:800;font-size:22px;letter-spacing:-.02em}
+.kpibox .lab{font-size:11px;color:var(--muted);margin-top:3px}
+.list{margin-top:8px;display:flex;flex-direction:column}
+.li{display:flex;gap:12px;align-items:center;padding:11px 6px;border-bottom:1px solid var(--border)}
+.li:last-child{border-bottom:none}
+.li .dt{font-size:11px;color:var(--muted);width:78px;font-variant-numeric:tabular-nums}
+.li .t{flex:1;font-size:13px;font-weight:500;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.pill{font-size:10.5px;padding:3px 9px;border-radius:20px;border:1px solid var(--border2);color:var(--muted);white-space:nowrap}
+
+/* scoring */
+.score{display:flex;flex-direction:column;gap:10px;margin-top:14px}
+.sc{display:grid;grid-template-columns:26px 1fr 40px;align-items:center;gap:10px}
+.sc .g{font-family:'Plus Jakarta Sans';font-weight:800;font-size:14px;text-align:center}
+.donutWrap{display:flex;align-items:center;gap:18px;margin-top:8px}
+
+/* automation status */
+.auto{display:flex;flex-direction:column;gap:10px;margin-top:6px}
+.arow{display:flex;align-items:center;gap:10px;font-size:12.5px;padding:9px 11px;border-radius:11px;background:var(--elev);border:1px solid var(--border)}
+.dot{width:8px;height:8px;border-radius:50%}
+.ok{background:var(--mint);box-shadow:0 0 10px var(--mint)} .pend{background:var(--amber);box-shadow:0 0 10px var(--amber)}
+.arow .s{margin-left:auto;font-size:11px;color:var(--muted)}
+
+/* progress ring */
+.ring{display:grid;place-items:center}
+.ring .pc{font-family:'Plus Jakarta Sans';font-weight:800;font-size:22px}
+
+/* skeleton */
+.sk{position:relative;overflow:hidden;background:var(--elev);border-radius:10px}
+.sk::after{content:"";position:absolute;inset:0;transform:translateX(-100%);
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.08),transparent);animation:shimmer 1.25s infinite}
+@keyframes shimmer{100%{transform:translateX(100%)}}
+.fade{animation:fade .5s ease both}@keyframes fade{from{opacity:0;transform:translateY(6px)}}
+
+/* command palette */
+.cmd-ov{position:fixed;inset:0;background:rgba(4,7,14,.55);backdrop-filter:blur(6px);z-index:80;display:none;align-items:flex-start;justify-content:center;padding-top:12vh}
+.cmd-ov.on{display:flex}
+.cmd{width:min(640px,92vw);background:var(--surface-solid);border:1px solid var(--border2);border-radius:18px;
+  box-shadow:0 30px 80px -20px rgba(0,0,0,.8);overflow:hidden;animation:pop .18s ease both}
+@keyframes pop{from{opacity:0;transform:scale(.97) translateY(-8px)}}
+.cmd .in{display:flex;align-items:center;gap:11px;padding:16px 18px;border-bottom:1px solid var(--border)}
+.cmd input{flex:1;background:none;border:none;outline:none;font-size:16px}
+.cmd .res{max-height:50vh;overflow:auto;padding:8px}
+.cmd .r{display:flex;align-items:center;gap:12px;padding:11px 13px;border-radius:11px;cursor:pointer;font-size:13.5px}
+.cmd .r.sel,.cmd .r:hover{background:var(--elev)}
+.cmd .r .k{margin-left:auto;font-size:11px;color:var(--muted)}
+.cmd .r small{color:var(--muted)}
+
+.toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--surface-solid);
+  border:1px solid var(--border2);color:var(--tx);padding:11px 18px;border-radius:12px;font-size:13px;font-weight:500;
+  box-shadow:var(--shadow);opacity:0;transition:.3s;z-index:90;pointer-events:none}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+@media(max-width:980px){
+  .app{grid-template-columns:1fr}
+  .side{position:fixed;inset:0 auto 0 0;width:268px;z-index:60;transform:translateX(-100%);transition:.25s}
+  .side.open{transform:none;box-shadow:0 0 80px rgba(0,0,0,.6)}
+  .hamb{display:flex}
+  .col3,.col4,.col5{grid-column:span 6}.col6,.col7,.col8{grid-column:span 12}
+  .cmdk span{display:none}.cmdk{min-width:auto}
+}
+@media(max-width:560px){.col3,.col4,.col5,.col6{grid-column:span 12}.bar{grid-template-columns:92px 1fr 32px}}
+
+/* Vue Contenus : champs + table */
+.fld{background:var(--elev);border:1px solid var(--border);border-radius:10px;color:var(--tx);padding:9px 11px;font-size:13px;outline:none;transition:.16s}
+.fld:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(255,201,77,.16)}
+.ctable{margin-top:6px;font-size:12.5px}
+.trow{display:grid;grid-template-columns:46px 104px 132px 56px 1fr 168px 40px;gap:10px;align-items:center;padding:9px 8px;border-bottom:1px solid var(--border)}
+.trow.thead{color:var(--muted);font-size:10.5px;text-transform:uppercase;letter-spacing:.05em;position:sticky;top:0;background:var(--surface-solid);z-index:1}
+.trow .tt{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.pill{font-size:10.5px;padding:3px 9px;border-radius:20px;border:1px solid var(--border2);color:var(--muted);white-space:nowrap}
+.kvr{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid var(--border);padding:7px 0}
+.kvr b{color:var(--muted);font-weight:500}
+@media(max-width:760px){.trow{grid-template-columns:40px 1fr 96px 34px}.trow span:nth-child(2),.trow span:nth-child(4){display:none}.trow span:nth-child(3){display:none}}
+</style>
+</head>
+<body>
+<div class="app">
+  <!-- Sidebar -->
+  <aside class="side" id="side">
+    <div class="brand">
+      <div class="logo" data-ag="initiales">A</div>
+      <div><b data-ag="nom">AWEMA</b><span>Command Center</span></div>
+    </div>
+    <style>.nav a.soon{opacity:.62}.nav a em{margin-left:auto;font-style:normal;font-size:9px;text-transform:uppercase;letter-spacing:.06em;color:var(--gold,#D4AF37);border:1px solid currentColor;border-radius:20px;padding:1px 6px;line-height:1.5}</style>
+    <nav class="nav" id="nav">
+      <div class="lbl">Pilotage</div>
+      <a class="active" data-go="overview" data-ic="grid"><span>Vue d'ensemble</span></a>
+      <a data-go="publier" data-ic="cal"><span>Planifier &amp; publier</span></a>
+      <a data-go="calendrier" data-ic="cal"><span>Calendrier</span></a>
+      <a data-go="contenus" data-ic="layers"><span>Contenus</span></a>
+      <a data-go="memoire" data-ic="layers"><span>Mémoire</span></a>
+      <a data-go="scoring" data-ic="chart"><span>Scoring</span></a>
+      <a data-go="reseaux" data-ic="bubble"><span>Présence digitale</span></a>
+      <a data-go="connecter" data-ic="bubble"><span>Connecter les réseaux</span></a>
+      <div class="lbl">Conversion</div>
+      <a class="soon" data-go="tunnel" data-ic="chat"><span>Tunnel WhatsApp</span><em>bientôt</em></a>
+      <a class="soon" data-go="auto" data-ic="bolt"><span>Automatisation</span><em>bientôt</em></a>
+      <div class="lbl">Agence</div>
+      <a data-go="clients" data-ic="users"><span>Clients</span></a>
+      <a data-go="reglages" data-ic="cog"><span>Réglages</span></a>
+    </nav>
+    <div class="foot">
+      <div class="avatar" id="ava">CS</div>
+      <div class="who" id="who">—<small>Directeur Marketing</small></div>
+    </div>
+  </aside>
+
+  <!-- Main -->
+  <main class="main" id="main">
+    <header class="topbar">
+      <button class="hamb" id="hamb" aria-label="Menu" data-ic="menu"></button>
+      <div class="title">
+        <h1 id="ptitle">Vue d'ensemble</h1>
+        <p id="psub">Campagne — chargement…</p>
+      </div>
+      <select id="clientSel" class="fld" title="Client" style="max-width:210px"></select>
+      <div id="fraich" style="display:flex;align-items:center;gap:6px"></div>
+      <div class="spacer"></div>
+      <button class="cmdk" id="cmdkBtn" data-ic="search"><span>Rechercher</span><kbd>⌘K</kbd></button>
+      <button class="iconbtn" id="themeBtn" title="Thème" data-ic="moon"></button>
+      <button class="cta" id="newBtn" data-ic="plus"><span>Nouveau contenu</span></button>
+    </header>
+
+    <section class="bento" id="grid" aria-live="polite"></section>
+  </main>
+</div>
+
+<!-- Command palette -->
+<div class="cmd-ov" id="cmdOv">
+  <div class="cmd" role="dialog" aria-label="Recherche">
+    <div class="in"><span data-ic="search" style="display:flex;color:var(--muted)"></span><input id="cmdIn" placeholder="Rechercher un contenu, une section…" autocomplete="off"><kbd style="font-size:11px;color:var(--muted)">esc</kbd></div>
+    <div class="res" id="cmdRes"></div>
+  </div>
+</div>
+<div class="toast" id="toast"></div>
+
+<script src="../_data/platforms.js" onerror=""></script>
+<script src="../_data/agence.js" onerror="window.__noReg=1"></script>
+<script src="../_data/config.js" onerror=""></script>
+<script src="../_data/apply.js"></script>
+<script src="../_design/awema-format.js"></script>
+<script src="../_design/awema-github.js"></script>
+<script src="../_design/awema-fork.js"></script>
+<script src="../_design/awema-charts.js"></script>
+<script src="data.js" onerror="window.__noData=1"></script>
+<script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const PLAT=window.AWEMA_PLATFORMS||{};
+function pbadge(net,extra){const p=PLAT[net]||{c:'#FFC94D',grad:'var(--grad)',glyph:'•',nom:net};
+  return `<span class="pi" style="width:24px;height:24px;border-radius:8px;display:inline-grid;place-items:center;
+    color:#fff;font-weight:800;font-size:11px;font-family:'Plus Jakarta Sans';background:${p.grad}${extra||''}">${p.glyph}</span>`;}
+function ic(n){const p={
+  grid:'<rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/>',
+  cal:'<rect x="3" y="4" width="18" height="17" rx="3"/><path d="M3 9h18M8 2v4M16 2v4"/>',
+  layers:'<path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13l9 5 9-5"/>',
+  chart:'<path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/>',
+  chat:'<path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"/>',
+  bolt:'<path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"/>',
+  users:'<circle cx="9" cy="8" r="3.5"/><path d="M2.5 21a6.5 6.5 0 0 1 13 0M17 11a3 3 0 1 0-1-5.8M21.5 21a5.5 5.5 0 0 0-4-5.3"/>',
+  cog:'<circle cx="12" cy="12" r="3.2"/><path d="M19 12a7 7 0 0 0-.1-1.3l2-1.5-2-3.4-2.3 1a7 7 0 0 0-2.3-1.3L13.8 2h-3.6l-.4 2.5a7 7 0 0 0-2.3 1.3l-2.3-1-2 3.4 2 1.5A7 7 0 0 0 5 12a7 7 0 0 0 .1 1.3l-2 1.5 2 3.4 2.3-1a7 7 0 0 0 2.3 1.3l.4 2.5h3.6l.4-2.5a7 7 0 0 0 2.3-1.3l2.3 1 2-3.4-2-1.5A7 7 0 0 0 19 12z"/>',
+  menu:'<path d="M3 6h18M3 12h18M3 18h18"/>',search:'<circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/>',
+  moon:'<path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>',sun:'<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5L19 19M19 5l-1.5 1.5M6.5 17.5L5 19"/>',
+  plus:'<path d="M12 5v14M5 12h14"/>',rdv:'<path d="M20 6L9 17l-5-5"/>',eye:'<path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/><circle cx="12" cy="12" r="3"/>',
+  bubble:'<path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"/>',target:'<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.4"/>'
+}[n]||'';return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">${p}</svg>`;}
+
+/* Injecte les icônes SVG dans tous les éléments marqués data-ic */
+$$('[data-ic]').forEach(el=>el.insertAdjacentHTML('afterbegin', ic(el.dataset.ic)));
+
+const PILCOLOR={PIL1:'#FFC94D',PIL2:'#EDA914',PIL3:'#34E5C4',PIL4:'#FF7D9C',PIL5:'#FFC861',PIL6:'#A29A85'};
+const PILNAME={PIL1:'Pédagogie',PIL2:'Produits',PIL3:'Preuve sociale',PIL4:'Offres',PIL5:'Vie locale',PIL6:'B2B/Coulisses'};
+let CLIENTS=[], ACTIVE=null, ITEMS=[], RES=null, A={};
+function revueURL(id){return '../revue-visuels/index.html?client='+encodeURIComponent(id||(ACTIVE&&ACTIVE.id)||'');}
+function toast(m){const t=$("#toast");t.textContent=m;t.classList.add("show");clearTimeout(t._t);t._t=setTimeout(()=>t.classList.remove("show"),1700);}
+function countBy(k){const m={};ITEMS.forEach(x=>m[x[k]]=(m[x[k]]||0)+1);return m;}
+function aggregate(){
+  A={total:ITEMS.length,plateformes:countBy('plateforme'),piliers:countBy('pilier'),objectifs:countBy('objectif'),statuts:countBy('statut')};
+  A.valide=ITEMS.filter(x=>x.statut==='Validé').length;
+  const dts=ITEMS.map(x=>x.date).filter(Boolean).sort();
+  A.start=dts[0]||'—'; A.end=dts[dts.length-1]||'—';
+  const wk={}; ITEMS.forEach(x=>{if(!x.date)return;const w=Math.floor((new Date(x.date)-new Date(A.start))/(7*864e5))+1;wk[w]=(wk[w]||0)+1;});
+  A.semaines=wk;
+}
+/* Contenus « différés » : les grosses campagnes ne sont plus embarquées dans le registre
+   (build.py, SEUIL_CAMPAGNE) — on charge alors le campagne.json source à la demande (servi par
+   Pages), avec cache mémoire. Dégradation gracieuse : fetch impossible → liste vide, rien ne casse. */
+const CAMP_CACHE={};
+function chargerContenus(c){
+  if(!c||!c.campagne) return Promise.resolve([]);
+  const emb=c.campagne.contenus;
+  if(emb&&emb.length) return Promise.resolve(emb);          // embarqué dans le registre (cas courant)
+  if(!c.campagne.differe) return Promise.resolve([]);        // pas de campagne
+  if(CAMP_CACHE[c.id]) return Promise.resolve(CAMP_CACHE[c.id]);
+  const dir=c._dir||('modules/marketing/clients/'+(c.slug||c.id));
+  return fetch('../../'+dir+'/_donnees/campagne.json').then(r=>r.ok?r.json():null)
+    .then(d=>{const l=(d&&d.contenus)||[];CAMP_CACHE[c.id]=l;return l;}).catch(()=>[]);
+}
+function setClient(id){
+  ACTIVE=CLIENTS.find(c=>c.id===id)||CLIENTS[0]||null;
+  ITEMS=(ACTIVE&&ACTIVE.campagne&&ACTIVE.campagne.contenus)||[];
+  RES=(ACTIVE&&ACTIVE.reseaux)||null;
+  try{localStorage.setItem('awema-client',ACTIVE?ACTIVE.id:'');}catch(e){}
+  const sel=$("#clientSel"); if(sel&&ACTIVE)sel.value=ACTIVE.id;
+  aggregate(); refreshPsub(); go(CURRENT||'overview');
+  if(ACTIVE&&ACTIVE.campagne&&ACTIVE.campagne.differe){
+    const cible=ACTIVE.id;
+    chargerContenus(ACTIVE).then(list=>{
+      if(list.length&&ACTIVE&&ACTIVE.id===cible&&ITEMS.length!==list.length){
+        ITEMS=list; aggregate(); refreshPsub(); go(CURRENT||'overview');
+      }
+    });
+  }
+}
+
+/* ---------- charts ---------- */
+function donut(data,size=132){
+  const tot=data.reduce((s,d)=>s+d.v,0)||1,R=size/2,r=R-13,C=2*Math.PI*r;let off=0;
+  const segs=data.map(d=>{const len=d.v/tot*C;const s=`<circle cx="${R}" cy="${R}" r="${r}" fill="none" stroke="${d.c}" stroke-width="14" stroke-dasharray="${len} ${C-len}" stroke-dashoffset="${-off}" transform="rotate(-90 ${R} ${R})" stroke-linecap="round" style="filter:drop-shadow(0 0 6px ${d.c}55)"/>`;off+=len;return s;}).join('');
+  return `<svg width="${size}" height="${size}" viewBox="0 0 ${size} ${size}">${segs}
+    <text x="${R}" y="${R-2}" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="800" font-size="26" fill="var(--tx)">${tot}</text>
+    <text x="${R}" y="${R+16}" text-anchor="middle" font-size="10.5" fill="var(--muted)">contenus</text></svg>`;
+}
+/* courbe/spark/dfr : fournis par ../_design/awema-charts.js (module partagé, testé en CI) */
+function area(map){
+  const ks=Object.keys(map).map(Number).sort((a,b)=>a-b),vals=ks.map(k=>map[k]);
+  const w=560,h=150,mx=Math.max(...vals,1);
+  const pts=ks.map((k,i)=>[i/(ks.length-1||1)*w, h-12-(vals[i]/mx)*(h-30)]);
+  const line=pts.map((p,i)=>(i?'L':'M')+p[0].toFixed(1)+' '+p[1].toFixed(1)).join(' ');
+  const fill=line+` L${w} ${h} L0 ${h} Z`;
+  const dots=pts.map(p=>`<circle cx="${p[0].toFixed(1)}" cy="${p[1].toFixed(1)}" r="2.6" fill="var(--blue)"/>`).join('');
+  return `<svg width="100%" viewBox="0 0 ${w} ${h}" preserveAspectRatio="none" style="margin-top:14px;overflow:visible">
+    <defs><linearGradient id="ar" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#FFC94D" stop-opacity=".4"/><stop offset="1" stop-color="#FFC94D" stop-opacity="0"/></linearGradient></defs>
+    <path d="${fill}" fill="url(#ar)"/><path d="${line}" fill="none" stroke="url(#arl)" stroke-width="2.5"/>
+    <linearGradient id="arl" x1="0" x2="1"><stop offset="0" stop-color="#FFC94D"/><stop offset="1" stop-color="#EDA914"/></linearGradient>${dots}</svg>`;
+}
+function ring(pct,size=104){const R=size/2,r=R-9,C=2*Math.PI*r,o=C*(1-pct/100);
+  return `<div class="ring"><svg width="${size}" height="${size}"><circle cx="${R}" cy="${R}" r="${r}" fill="none" stroke="var(--elev)" stroke-width="9"/>
+    <circle cx="${R}" cy="${R}" r="${r}" fill="none" stroke="url(#rg)" stroke-width="9" stroke-linecap="round" stroke-dasharray="${C}" stroke-dashoffset="${o}" transform="rotate(-90 ${R} ${R})"/>
+    <defs><linearGradient id="rg" x1="0" x2="1"><stop offset="0" stop-color="#34E5C4"/><stop offset="1" stop-color="#FFC94D"/></linearGradient></defs></svg>
+    <div class="pc" style="position:absolute">${pct}%</div></div>`;}
+
+function countup(el,to,suf=''){let s=null,dur=900;const step=t=>{if(!s)s=t;const p=Math.min((t-s)/dur,1);
+  el.textContent=Math.round(to*(1-Math.pow(1-p,3))).toLocaleString('fr-FR')+suf;if(p<1)requestAnimationFrame(step);};requestAnimationFrame(step);}
+
+function card(cls){const d=document.createElement('article');d.className='card '+cls;return d;}
+function add(html,cls){const c=card((cls||'')+' fade');c.innerHTML=html;$("#grid").appendChild(c);return c;}
+const PC=['#FFC94D','#EDA914','#34E5C4','#FFC861','#FF7D9C'];
+
+/* ---------- KPIs RÉELS (aucune donnée fictive) ---------- */
+function cKpisReal(){
+  const plt=Object.keys(A.plateformes).length;
+  const pct=A.total?Math.round(A.valide/A.total*100):0;
+  const wk=Object.keys(A.semaines).map(Number).sort((a,b)=>a-b).map(k=>A.semaines[k]);
+  const aud=RES&&RES.global?RES.global.audience:null;
+  const audS=(RES&&RES.evolution_audience&&RES.evolution_audience.length>1)?RES.evolution_audience.map(p=>p.valeur):null;
+  const cards=[
+    {ic:'layers',c:'#FFC94D',lab:'Contenus planifiés',val:A.total,spark:wk.length>1?wk:null},
+    {ic:'check',c:'#34E5C4',lab:'Production validée',val:pct,suf:'%',sub:A.valide+' / '+A.total},
+    {ic:'grid',c:'#EDA914',lab:'Plateformes actives',val:plt},
+    {ic:'eye',c:'#FFC861',lab:'Audience réseaux',val:aud,spark:audS}
+  ];
+  cards.forEach((k,i)=>{const isNull=(k.val==null);
+    const el=add(`<div class="top"><div class="ic" style="color:${k.c};background:${k.c}1a;border-color:${k.c}40">${ic(k.ic)}</div>
+      ${isNull?'<span class="tag">à connecter</span>':(k.sub?`<span class="badge">${k.sub}</span>`:'')}</div>
+      <div class="val" ${isNull?'':`data-to="${k.val}" data-suf="${k.suf||''}"`}>${isNull?'—':'0'}</div>
+      <div class="lab">${k.lab}</div>
+      ${k.spark?`<div class="spark">${spark(k.spark,k.c)}</div>`:(isNull?`<div style="margin-top:10px;font-size:11px;color:var(--muted)">Brancher les réseaux →</div>`:'')}`,'col3 kpi');
+    el.style.animationDelay=(i*60)+'ms';
+    if(isNull){el.style.cursor='pointer';el.onclick=()=>go('reseaux');}
+  });
+  $$('.kpi .val[data-to]').forEach(el=>countup(el,+el.dataset.to,el.dataset.suf||''));
+}
+function cPilDonut(){
+  const pil=Object.entries(A.piliers).sort((a,b)=>b[1]-a[1]).map(([k,v])=>({k,v,c:PILCOLOR[k]||'#888'}));
+  return `<h3>${ic('layers')} Répartition par pilier</h3><div class="sub">Équilibre éditorial</div>
+    <div class="donutWrap">${donut(pil)}<div class="legend" style="flex-direction:column;gap:8px">
+    ${pil.map(p=>`<span><i style="background:${p.c}"></i><b>${p.v}</b> · ${PILNAME[p.k]||p.k}</span>`).join('')}</div></div>`;
+}
+function cPlatBars(){
+  const plt=Object.entries(A.plateformes).sort((a,b)=>b[1]-a[1]);const mxp=Math.max(...plt.map(x=>x[1]));
+  return `<h3>${ic('grid')} Contenus par plateforme</h3><div class="sub">Diffusion multi-canal</div>
+    <div class="bars">${plt.map(([k,v],i)=>`<div class="bar"><span>${k}</span><div class="tr"><div class="fl" style="width:${v/mxp*100}%;background:${PC[i%5]};animation-delay:${i*70}ms"></div></div><span class="n">${v}</span></div>`).join('')}</div>`;
+}
+function cProduction(){
+  const pct=Math.round(A.valide/A.total*100);
+  return `<h3>${ic('chart')} Production</h3><div class="sub">Avancement du plan</div>
+    <div style="display:flex;align-items:center;gap:20px;margin-top:16px;position:relative">${ring(pct)}
+    <div style="display:flex;flex-direction:column;gap:10px">
+      <div style="font-size:12.5px"><b style="font-family:var(--font-disp);font-size:18px">${A.valide}</b> <span style="color:var(--muted)">validés</span></div>
+      <div style="font-size:12.5px"><b style="font-family:var(--font-disp);font-size:18px">${A.total-A.valide}</b> <span style="color:var(--muted)">à produire</span></div>
+      <div style="font-size:11.5px;color:var(--muted)">Objectif : 100% sur 90 jours</div></div></div>`;
+}
+function cPlanning(){
+  return `<h3>${ic('cal')} Planning éditorial — ${A.total} contenus / 90 jours</h3>
+    <div class="sub">${A.start} → ${A.end} · 2 publications/jour</div>${area(A.semaines)}`;
+}
+function cBareme(){
+  const b=[['A','#34E5C4','À reproduire'],['B','#FFC94D','À optimiser'],['C','#FFC861','À optimiser'],['D','#FF9F45','Surveiller'],['E','#FF7D9C','À abandonner']];
+  return `<h3>${ic('target')} Scoring A→E</h3><div class="sub">Barème de décision — scores réels après mesure</div>
+    <div class="auto" style="margin-top:12px">${b.map(([g,c,a])=>`<div class="arow"><span class="dot" style="background:${c}"></span>Note ${g}<span class="s">${a}</span></div>`).join('')}</div>`;
+}
+function cFunnelProcess(){
+  const st=['Vues pub','Messages','Qualifiés','RDV','Visites','Ventes'];
+  return `<h3>${ic('chat')} Tunnel WhatsApp</h3><div class="sub">Étapes — taux réels après connexion analytics</div>
+    <div class="funnel">${st.map((l,i)=>`<div class="fstep"><div class="frow" style="width:${100-i*14}%;opacity:${1-i*0.1}">${l}</div><span class="v">—</span></div>`).join('')}</div>`;
+}
+function cUpcoming(n){
+  const list=[...ITEMS].sort((a,b)=>(a.date+a.heure).localeCompare(b.date+b.heure)).slice(0,n||6);
+  return `<h3>${ic('cal')} Prochaines publications</h3><div class="sub">Programmées</div>
+    <div class="list">${list.map(u=>`<div class="li"><span class="dt">${u.date.slice(5)} ${u.heure}</span>
+      <span class="t" title="${escAttr(u.titre)}">${escP(u.titre)}</span><span class="pill">${escP(u.plateforme)}</span></div>`).join('')}</div>`;
+}
+const STEPS=[['Analyse des résultats','ok'],['Détection meilleurs contenus','ok'],['Génération des sujets','ok'],
+  ['Génération du calendrier','ok'],['Génération des scripts','ok'],['Génération des visuels','pend'],['Publication programmée','pend']];
+function cMachine(){
+  return `<h3>${ic('bolt')} Machine éditoriale</h3><div class="sub">Cycle mensuel autonome</div>
+    <div class="auto">${STEPS.map(([l,s])=>`<div class="arow"><span class="dot ${s}"></span>${l}<span class="s">${s==='ok'?'actif':'à brancher'}</span></div>`).join('')}</div>`;
+}
+
+/* ---------- Actions community management (à répondre + cadence) ---------- */
+function cActionsCom(){
+  const r=RES||{}, ar=r.a_repondre||{total:0,exemples:[]}, cad=r.cadence;
+  const alerte=cad&&cad.jours_depuis>7;
+  return `<h3>${ic('chat')} Actions du jour
+      <span class="pill" style="background:${ar.total?'#FF7D9C22':'#34E5C422'};color:${ar.total?'#FF7D9C':'#34E5C4'};margin-left:auto">${ar.total} à répondre</span></h3>
+    <div class="sub">Community management — ${ACTIVE?ACTIVE.nom:''}</div>
+    ${alerte?`<div style="margin-top:10px;color:#FF7D9C;font-size:12.5px">⚠️ Aucune publication depuis ${cad.jours_depuis} j — pense à publier.</div>`:''}
+    ${ar.total?`<div class="list" style="margin-top:10px">${ar.exemples.slice(0,4).map(c=>`<div class="li"><b style="flex:0 0 auto">${escP(c.auteur)||'—'}</b><span class="t" style="opacity:.85;flex:1" title="${escAttr(c.message||'')}">${escP(c.message)}</span>${c.lien?`<a class="pill" href="${escAttr(c.lien)}" target="_blank" rel="noopener">répondre ↗</a>`:''}</div>`).join('')}</div>`
+      :`<div style="margin-top:12px;color:var(--muted);font-size:12.5px">🎉 Rien en attente côté commentaires.</div>`}
+    <div style="margin-top:12px"><button class="mini gold" onclick="go('reseaux')">Présence digitale →</button></div>`;
+}
+
+/* ---------- Assistants IA (sorties des agents, additives) ---------- */
+function loadAgent(client,nom){return ((client&&client.agents)||{})[nom]||null;}
+function cAgents(){
+  const ag=(ACTIVE&&ACTIVE.agents)||null, names=ag?Object.keys(ag):[];
+  return `<h3>${ic('bolt')} Assistants IA <span class="pill" style="background:#EDA91422;color:#EDA914;border-color:#EDA91455">${names.length}</span></h3>
+    <div class="sub">Les agents travaillent en tâche de fond et proposent des actions</div>
+    ${names.length?`<div class="list" style="margin-top:10px">${names.map(n=>{const a=ag[n]||{};
+      return `<div class="li"><b style="text-transform:capitalize;flex:0 0 auto">${escP(n)}</b>
+        <span class="t" style="opacity:.8">${escP((a.items&&a.items[0]&&(a.items[0].titre||a.items[0].explication)))||'—'}</span>
+        <span class="pill">${(a.items||[]).length} item(s)</span>
+        <span class="pill">${(a.genere_le||'').slice(0,10)||'—'}</span></div>`;}).join('')}</div>`
+      :`<div style="margin-top:14px;color:var(--muted);font-size:12.5px;line-height:1.6">Aucun assistant généré pour l'instant.
+        Les agents tournent <b>automatiquement</b> (chaque jour + après chaque synchro) dès que ta clé IA est en place.
+        <a href="#" onclick="go('reglages',{focus:'#rIaKey'});return false" style="color:var(--gold)">Vérifier l'IA</a>.</div>`}`;
+}
+
+/* ---------- Mémoire Marketing (M1) — carburant des agents ---------- */
+function cMemoire(){
+  const m=(ACTIVE&&ACTIVE.memoire)||null, id=(m&&m.identite)||{};
+  const champs=[id.mission,id.cible,id.proposition_valeur,m&&m.ton];
+  const remplis=champs.filter(Boolean).length+((m&&(m.personas||[]).length)?1:0)+((m&&(m.produits||[]).length)?1:0)+((m&&(m.faq||[]).length)?1:0);
+  const pct=Math.round(remplis/7*100);
+  const url='../../memoire.html?client='+(ACTIVE?ACTIVE.id:'');
+  return `<h3>${ic('layers')} Mémoire Marketing <span class="pill" style="background:#34E5C422;color:#34E5C4;border-color:#34E5C455">${pct}%</span></h3>
+    <div class="sub">L'ADN de marque qui nourrit les agents IA</div>
+    ${m&&remplis?`<div style="margin-top:10px;font-size:12.5px;color:var(--muted);line-height:1.7">
+      ${id.mission?`<div><b style="color:var(--tx)">Mission</b> · ${escP(id.mission)}</div>`:''}
+      ${m.ton?`<div><b style="color:var(--tx)">Ton</b> · ${escP(m.ton)}</div>`:''}
+      <div style="display:flex;gap:6px;margin-top:8px;flex-wrap:wrap">
+        <span class="pill">${(m.personas||[]).length} personas</span>
+        <span class="pill">${(m.produits||[]).length} produits</span>
+        <span class="pill">${(m.faq||[]).length} FAQ</span></div></div>`
+      :`<div style="margin-top:14px;color:var(--muted);font-size:12.5px">Pas encore de mémoire. Renseigne identité, ton, personas, produits, FAQ — les agents en ont besoin.</div>`}
+    <div style="margin-top:14px"><a class="mini gold" href="#" onclick="go('memoire');return false" style="text-decoration:none">🧠 Éditer la mémoire →</a></div>`;
+}
+
+/* ---------- Agent Analyste (M2) : Pourquoi & Que faire ---------- */
+function cPreuve(p){ if(!p||p.metrique==null) return '';
+  const v=(p.valeur!=null?(typeof p.valeur==='number'?(+p.valeur).toLocaleString('fr-FR'):p.valeur):'');
+  return `<span class="pill" style="background:rgba(255,201,77,.12);color:var(--blue);border-color:rgba(255,201,77,.4)">📊 ${escP(p.metrique)}: ${escP(v)}${p.variation?` (${escP(p.variation)})`:''}</span>`;}
+function cAnalyste(connected){
+  const a=loadAgent(ACTIVE,'analyste');
+  const head=`<h3>${ic('bolt')} Pourquoi & Que faire <span class="pill" style="background:#EDA91422;color:#EDA914;border-color:#EDA91466">proposition IA</span></h3>`;
+  if(!a||!(a.items||[]).length){
+    return head+`<div class="sub">L'Analyste explique tes résultats et te dit quoi faire</div>
+      <div style="margin-top:14px;color:var(--muted);font-size:12.5px;line-height:1.6">${connected?'Pas encore d\'analyse.':'Connecte d\'abord les réseaux.'}
+      Généré <b>automatiquement</b> par les agents (quotidien + après synchro) si l'IA est en place.
+      <a href="#" onclick="go('reglages',{focus:'#rIaKey'});return false" style="color:var(--gold)">Vérifier l'IA</a>.</div>`;
+  }
+  const ins=(a.items||[]).filter(i=>i.type==='insight'), rec=(a.items||[]).filter(i=>i.type==='reco');
+  const card=(i,reco)=>`<div class="li" style="flex-direction:column;align-items:flex-start;gap:5px;padding:12px 6px">
+    <div style="display:flex;gap:8px;width:100%;align-items:center">
+      <span style="font-size:15px">${reco?'✅':'💡'}</span><b style="flex:1">${escP(i.titre)}</b></div>
+    <div style="color:var(--muted);font-size:12.8px">${escP(i.explication)}</div>
+    <div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:2px">${cPreuve(i.preuve)}${reco&&i.action?`<span class="pill" style="background:var(--mint);color:#06231d">→ ${escP(i.action)}</span>`:''}</div></div>`;
+  return head+`<div class="sub">Analyse IA sourcée${a.genere_le?' · '+a.genere_le.slice(0,10):''}${a.modele?' · '+a.modele:''} — vérifie avant d'agir</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:12px">
+      <div><div class="lab" style="margin-bottom:4px">💡 Pourquoi (constats)</div><div class="list">${ins.map(i=>card(i,false)).join('')||'<div class="sub">—</div>'}</div></div>
+      <div><div class="lab" style="margin-bottom:4px">✅ Que faire (actions)</div><div class="list">${rec.map(i=>card(i,true)).join('')||'<div class="sub">—</div>'}</div></div>
+    </div>`;
+}
+
+/* ---------- Agent Stratège (M3) : Plan recommandé ---------- */
+function cStratege(){
+  const s=loadAgent(ACTIVE,'stratege');
+  const head=`<h3>${ic('cal')} Plan recommandé <span class="pill" style="background:#EDA91422;color:#EDA914;border-color:#EDA91466">proposition IA</span></h3>`;
+  if(!s){return head+`<div class="sub">Le Stratège transforme tes perfs en plan d'action</div>
+    <div style="margin-top:14px;color:var(--muted);font-size:12.5px;line-height:1.6">Pas encore de plan.
+    Généré <b>automatiquement</b> par les agents (quotidien + après synchro) si l'IA est en place.
+    <a href="#" onclick="go('reglages',{focus:'#rIaKey'});return false" style="color:var(--gold)">Vérifier l'IA</a>.</div>`;}
+  const plan=(s.items||[]), heures=(s.meilleures_heures||[]), obj=(s.objectifs||[]);
+  return head+`<div class="sub">Stratège IA${s.genere_le?' · '+s.genere_le.slice(0,10):''} — à valider avant d'agir</div>
+    <div class="row" style="display:flex;gap:8px;flex-wrap:wrap;margin-top:12px">
+      ${s.cadence_recommandee?`<span class="pill" style="background:#34E5C422;color:#34E5C4">🎯 ${escP(s.cadence_recommandee)}</span>`:''}
+      ${heures.map(h=>`<span class="pill">🕐 ${escP(h)}</span>`).join('')}</div>
+    ${obj.length?`<div style="margin-top:12px"><div class="lab">Objectifs</div><div class="list">${obj.map(o=>`<div class="li"><span style="color:var(--mint)">◎</span><span class="t">${escP(typeof o==='string'?o:(o.titre||o.objectif||''))}</span></div>`).join('')}</div></div>`:''}
+    ${plan.length?`<div style="margin-top:12px"><div class="lab">Semaine proposée (${plan.length})</div>
+      <div class="list">${plan.map(p=>{const col=(PLAT[(p.reseau||'').toLowerCase()]||{}).c||'#EDA914';
+        return `<div class="li"><span class="pill" style="width:74px;justify-content:center">${escP(p.jour)}${p.heure?' '+escP(p.heure):''}</span>
+          <span class="pill" style="border-color:${col}66;color:${col}">${escP(p.reseau)}</span>
+          <span class="pill">${escP(p.format)}</span>
+          <span class="t" title="${escAttr(p.angle||'')}">${escP(p.angle)}</span></div>`;}).join('')}</div></div>`:''}
+    <div style="margin-top:14px"><button class="mini gold" onclick="go('publier',{focus:'#pubTexte'})">🗓️ Planifier ce plan →</button></div>`;
+}
+
+/* ---------- Agent Créatif (M4) : idées prêtes à publier ---------- */
+function cpd(el){const t=el.dataset.t||'';navigator.clipboard.writeText(t).then(()=>toast('Copié ✓')).catch(()=>toast('Sélectionne puis copie'));}
+function cCreatif(){
+  const c=loadAgent(ACTIVE,'creatif');
+  const head=`<h3>${ic('layers')} Idées prêtes à publier <span class="pill" style="background:#EDA91422;color:#EDA914;border-color:#EDA91466">proposition IA</span></h3>`;
+  if(!c||!(c.items||[]).length){return head+`<div class="sub">Le Créatif propose des publications calées sur ta marque et tes perfs</div>
+    <div style="margin-top:14px;color:var(--muted);font-size:12.5px;line-height:1.6">Pas encore d'idées pour ce client.</div>
+    <div style="margin-top:12px"><button class="mini gold" onclick="go('publier',{focus:'#pubIdee'})">✨ Générer des propositions →</button></div>`;}
+  const idea=i=>{const col=(PLAT[(i.reseau||'').toLowerCase()]||{}).c||'#EDA914';
+    const plein=`${i.hook||''}\n\n${i.script||''}`;
+    return `<div class="li" style="flex-direction:column;align-items:flex-start;gap:7px;padding:13px 8px">
+      <div style="display:flex;gap:8px;width:100%;align-items:center;flex-wrap:wrap">
+        <b style="flex:1;min-width:160px">${escP(i.hook)}</b>
+        <span class="pill" style="border-color:${col}66;color:${col}">${escP(i.reseau)}</span>
+        <span class="pill">${escP(i.format)}</span></div>
+      ${i.script?`<div style="color:var(--muted);font-size:12.6px;white-space:pre-wrap">${escP(i.script)}</div>`:''}
+      ${i.prompt_image?`<div style="width:100%;background:var(--elev);border:1px solid var(--border);border-radius:9px;padding:9px 11px;font-size:11.6px;color:var(--muted)"><b style="color:var(--tx)">🎨 Prompt image</b> · ${escP(i.prompt_image)}
+        <button class="mini" data-t="${escAttr(i.prompt_image)}" onclick="cpd(this)" style="margin-left:6px">Copier le prompt</button></div>`:''}
+      <div style="display:flex;gap:6px;flex-wrap:wrap;align-items:center">
+        ${(i.variantes||[]).length?`<span class="pill">${i.variantes.length} variante(s)</span>`:''}
+        <button class="mini gold" data-t="${escAttr(plein)}" onclick="cpd(this)">Copier l'idée</button></div></div>`;};
+  return head+`<div class="sub">Créatif IA${c.genere_le?' · '+c.genere_le.slice(0,10):''} — relis et adapte avant de publier</div>
+    <div class="list" style="margin-top:10px">${(c.items||[]).map(idea).join('')}</div>
+    <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap">
+      <button class="mini gold" onclick="go('publier',{focus:'#pubProps'})">🗓️ Planifier ces idées →</button>
+      <button class="mini" onclick="go('publier',{focus:'#pubIdee'})">✨ En générer d'autres</button></div>`;
+}
+
+/* ---------- Proactivité (M5) : « 3 choses à faire aujourd'hui » ---------- */
+const ADJ_ICON={alerte:'⚠️',inbox:'💬',opportunite:'📈',reco:'✅',plan:'🗓️',creatif:'✨'};
+const ADJ_COL={1:'#FF7D9C',2:'#FFC861',3:'#34E5C4'};
+function adjAction(ac){ if(!ac||!ac.target) return '';
+  // Cible d'action générée par l'IA → jamais injectée telle quelle dans un onclick :
+  // soit une section connue du dashboard, soit une URL http(s) nettoyée. Sinon rien.
+  const t=String(ac.target);
+  let js='';
+  if(ac.kind==='view'&&/^[a-z]+$/.test(t))js=`go('${t}')`;
+  else if(/^https?:\/\//i.test(t))js=`window.open('${t.replace(/['"\\<>]/g,'')}','_blank','noopener')`;
+  else return '';
+  return `<button class="cta" style="padding:8px 13px;font-size:12.5px;white-space:nowrap" onclick="${js}">${escP(ac.label||'Ouvrir')} →</button>`;}
+function cActionsDuJour(){
+  const a=loadAgent(ACTIVE,'actions-du-jour'), items=(a&&a.items)||[];
+  if(!items.length){
+    return `<h3>${ic('bolt')} Actions du jour <span class="pill" style="background:#EDA91422;color:#EDA914;border-color:#EDA91466">IA proactif</span></h3>
+      <div class="sub">AWEMA te proposera quoi faire en priorité, chaque jour</div>
+      <div style="margin-top:12px;color:var(--muted);font-size:12.5px;line-height:1.6">Elles apparaissent <b>automatiquement</b> après la première synchronisation/analyse.</div>
+      <div style="margin-top:10px"><a class="mini gold" href="#" onclick="go('reglages',{focus:'#rSync'});return false" style="text-decoration:none">▶️ Lancer la 1ʳᵉ récupération →</a></div>`;
+  }
+  const n=Math.min(items.length,3);
+  return `<h3>${ic('bolt')} ${n} chose${n>1?'s':''} à faire aujourd'hui <span class="pill" style="background:#EDA91422;color:#EDA914;border-color:#EDA91466">IA proactif</span></h3>
+    <div class="sub">AWEMA te propose — priorisé &amp; sourcé${a.genere_le?' · '+a.genere_le.slice(0,10):''}</div>
+    <div style="display:grid;gap:8px;margin-top:12px">
+      ${items.map(it=>`<div style="display:flex;gap:12px;align-items:center;padding:11px 13px;border-radius:12px;background:var(--elev);border:1px solid var(--border);border-left:3px solid ${ADJ_COL[it.priorite]||'#EDA914'}">
+        <span style="font-size:18px;flex:0 0 auto">${ADJ_ICON[it.type]||'•'}</span>
+        <div style="flex:1;min-width:0"><b style="font-size:13.5px">${escP(it.titre)}</b><div style="font-size:12px;color:var(--muted)">${escP(it.detail)}</div></div>
+        ${adjAction(it.action)}</div>`).join('')}
+    </div>`;
+}
+
+/* ---------- Vues ---------- */
+function viewOverview(){
+  add(cActionsDuJour(), 'col12');
+  cKpisReal();
+  add(cMemoire(), 'col6'); add(cAgents(), 'col6');
+  if(RES&&RES.connecte)add(cActionsCom(), A.total?'col6':'col12');
+  add(cStratege(), 'col6'); add(cCreatif(), 'col6');
+  if(!A.total){add(`<h3>${ic('layers')} Pas encore de plan de contenu</h3>
+    <div class="sub">${ACTIVE?ACTIVE.nom:''}</div>
+    <div style="margin-top:12px;font-size:13px;color:var(--muted);line-height:1.6">Générez le plan éditorial du client (générateur) ou consultez sa présence digitale.</div>
+    <div style="margin-top:14px"><button class="btn" onclick="go('reseaux')">Présence digitale →</button></div>`,'col12');return;}
+  if(RES&&RES.connecte)add(cUpcoming(6),'col6');
+  add(cPilDonut(),'col4'); add(cPlatBars(),'col4'); add(cProduction(),'col4');
+  add(cPlanning(),'col8'); add(cBareme(),'col4');
+  add(cFunnelProcess(),'col5'); if(!(RES&&RES.connecte))add(cUpcoming(6),'col4'); add(cMachine(),'col3');
+}
+let CAL_REF=new Date();
+function viewCalendrier(){
+  if(!ACTIVE){add(`<h3>${ic('cal')} Calendrier éditorial</h3><div class="sub">Sélectionne un client pour voir son calendrier.</div>`,'col12');return;}
+  add(`<h3>${ic('cal')} Calendrier éditorial <span class="pill" style="margin-left:6px">${escP(ACTIVE.nom)}</span>
+      <a class="mini gold" href="#" onclick="go('publier',{focus:'#pubTexte'});return false" style="margin-left:auto;text-decoration:none">+ Programmer un post</a></h3>
+    <div class="sub">Plan éditorial (couleur = plateforme) + file de publication réelle (couleur = statut)</div>
+    <div id="calWrap" style="margin-top:14px"></div>`,'col12');
+  const wk=A.semaines,ks=Object.keys(wk).map(Number).sort((a,b)=>a-b),mx=Math.max(...ks.map(k=>wk[k]),1);
+  add(cUpcoming(10),'col8');
+  add(`<h3>${ic('cal')} Volume par semaine</h3><div class="sub">${ks.length} semaines</div>
+    <div class="bars">${ks.map((k,i)=>`<div class="bar"><span>Sem. ${k}</span><div class="tr"><div class="fl" style="width:${wk[k]/mx*100}%;background:${PC[i%5]};animation-delay:${i*35}ms"></div></div><span class="n">${wk[k]}</span></div>`).join('')}</div>`,'col4');
+  calRender();
+}
+function calRender(){
+  const w=$("#calWrap"); if(!w)return;
+  const MOIS=['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre'];
+  const y=CAL_REF.getFullYear(),m=CAL_REF.getMonth();
+  const debut=(new Date(y,m,1).getDay()+6)%7, nb=new Date(y,m+1,0).getDate();   // Lun = colonne 0
+  const p2=x=>(x<10?'0':'')+x, T=new Date(), tk=T.getFullYear()+'-'+p2(T.getMonth()+1)+'-'+p2(T.getDate());
+  const ev={}, pousse=(k,e)=>{(ev[k]=ev[k]||[]).push(e);};
+  ITEMS.forEach(it=>{ if(!it.date)return;
+    pousse(it.date,{h:it.heure||'',t:it.titre||'',c:(PLAT[(it.plateforme||'').toLowerCase()]||{}).c||'#B3AA92'}); });
+  currentPlanning().forEach(p=>{ if(!p.publier_le)return; const d=new Date(p.publier_le);
+    const k=d.getFullYear()+'-'+p2(d.getMonth()+1)+'-'+p2(d.getDate());
+    const col=(AwemaFmt.DIFFUSION[p.statut]||{}).color||'#B3AA92';
+    pousse(k,{h:p2(d.getHours())+':'+p2(d.getMinutes()),t:((p.contenu&&p.contenu.texte)||'(file)'),c:col}); });
+  let cases='';
+  ['Lun','Mar','Mer','Jeu','Ven','Sam','Dim'].forEach(j=>cases+=`<div style="font-size:10.5px;color:var(--muted2);text-transform:uppercase;letter-spacing:.05em;padding:2px 6px">${j}</div>`);
+  for(let i=0;i<debut;i++)cases+='<div></div>';
+  for(let d=1;d<=nb;d++){
+    const k=y+'-'+p2(m+1)+'-'+p2(d), l=ev[k]||[]; l.sort((a,b)=>(a.h||'').localeCompare(b.h||''));
+    const puces=l.slice(0,3).map(e=>`<div title="${escP((e.h?e.h+' — ':'')+e.t)}" style="font-size:10.4px;color:var(--tx);background:${e.c}1c;border-left:2px solid ${e.c};border-radius:4px;padding:1px 5px;margin-top:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${escP((e.h?e.h+' ':'')+e.t)}</div>`).join('')
+      +(l.length>3?`<div style="font-size:10px;color:var(--muted);margin-top:2px">+${l.length-3} autre(s)</div>`:'');
+    cases+=`<div style="min-height:84px;border:1px solid ${k===tk?'#FFC94D88':'rgba(135,127,105,.22)'};border-radius:9px;padding:5px 6px;overflow:hidden;${k===tk?'background:rgba(255,201,77,.06)':''}">
+      <div style="font-size:11px;font-weight:700;color:${k===tk?'#FFC94D':'var(--muted)'}">${d}</div>${puces}</div>`;
+  }
+  w.innerHTML=`<div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;flex-wrap:wrap">
+      <button class="mini" onclick="calNav(-1)" aria-label="Mois précédent">←</button>
+      <b style="font-size:14.5px;min-width:148px;text-align:center;text-transform:capitalize">${MOIS[m]} ${y}</b>
+      <button class="mini" onclick="calNav(1)" aria-label="Mois suivant">→</button>
+      <button class="mini gold" onclick="calNav(0)">Aujourd'hui</button>
+      <span style="margin-left:auto;font-size:11px;color:var(--muted)">file :
+        <span style="color:#D4AF37">■ programmé</span> · <span style="color:#34E5C4">■ publié</span> · <span style="color:#FF7D9C">■ échec</span></span>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:6px">${cases}</div>`;
+}
+window.calNav=function(d){ if(d===0)CAL_REF=new Date(); else CAL_REF.setMonth(CAL_REF.getMonth()+d); calRender(); };
+function viewContenus(){
+  add(cCreatif(),'col12');   // propositions IA générées (à exploiter / planifier)
+  add(`<h3>${ic('layers')} Contenus du plan — ${A.total}
+      <a class="mini gold" href="${revueURL()}" target="_blank" style="margin-left:auto;text-decoration:none">Ouvrir le visualiseur ↗</a></h3>
+    <div class="sub">Les ${A.total} contenus réels — pastille = <b>production</b> (revue des visuels) · badge = <b>diffusion</b> (file de publication)</div>
+    <div style="display:flex;gap:10px;margin:14px 0;flex-wrap:wrap">
+      <input id="cSearch" class="fld" style="flex:1;min-width:180px" placeholder="🔎 Rechercher un titre…">
+      <select id="cPlat" class="fld"><option value="">Toutes plateformes</option>${[...new Set(ITEMS.map(i=>i.plateforme))].map(p=>`<option>${p}</option>`).join('')}</select>
+      <select id="cPil" class="fld"><option value="">Tous piliers</option>${[...new Set(ITEMS.map(i=>i.pilier))].sort().map(p=>`<option>${p}</option>`).join('')}</select>
+    </div>
+    <div id="cTable" class="ctable"></div>`,'col12');
+  // Diffusion réelle : items du plan déjà poussés dans la file (via plan_id), avec le
+  // lien du post publié quand il existe (resultats du connecteur) — perfs → plan.
+  const DIFF={};currentPlanning().forEach(p=>{ if(p.plan_id==null)return;
+    let url=null;Object.values(p.resultats||{}).forEach(r=>{if(r&&r.ok&&r.url&&!url)url=r.url;});
+    DIFF[String(p.plan_id)]={st:p.statut,url:url};});
+  // Axe PRODUCTION unifié : le statut de la revue des visuels (retours-visuels.json,
+  // sauvegardé depuis le visualiseur) prime sur le statut initial du plan.
+  const REV=(ACTIVE&&ACTIVE.revue)||{};
+  const draw=()=>{
+    const q=($("#cSearch").value||'').toLowerCase(),fp=$("#cPlat").value,fl=$("#cPil").value;
+    const rows=ITEMS.filter(it=>(!q||it.titre.toLowerCase().includes(q))&&(!fp||it.plateforme===fp)&&(!fl||it.pilier===fl));
+    $("#cTable").innerHTML=`<div class="trow thead"><span>#</span><span>Date</span><span>Plateforme</span><span>Pilier</span><span class="tt">Titre</span><span>Statut</span><span></span></div>`+
+      rows.slice(0,120).map(it=>{const d=DIFF[String(it.id)];
+        const prod=REV[String(it.id)]||it.statut;   // axe production : revue > plan
+        const badge=d?('<span style="margin-left:6px"></span>'+AwemaFmt.diffBadge(d.st,d.url)):'';
+        return `<div class="trow"><span style="color:var(--muted)">${String(it.id).padStart(3,'0')}</span>
+        <span style="color:var(--muted)">${it.date.slice(5)} ${it.heure}</span>
+        <span><span class="pill">${it.plateforme}</span></span>
+        <span style="color:${PILCOLOR[it.pilier]||'#888'};font-weight:600">${it.pilier}</span>
+        <span class="tt" title="${escAttr(it.titre)}">${escP(it.titre)}</span>
+        <span style="font-size:11.5px" title="Production : statut de la revue des visuels · Diffusion : file de publication"><span class="dot" style="display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:6px;background:${AwemaFmt.prodColor(prod)}"></span>${prod}${badge}</span>
+        <span>${d?'':`<button class="mini" title="Pré-remplir le composeur avec ce contenu" onclick="planUse('${String(it.id).replace(/'/g,'')}')">🗓️</button>`}</span></div>`;}).join('')+
+      (rows.length>120?`<div style="padding:12px;color:var(--muted);font-size:12px">… ${rows.length-120} de plus — affinez les filtres.</div>`:(rows.length?'':`<div style="padding:20px;color:var(--muted);font-size:12.5px">Aucun contenu.</div>`));
+  };
+  ['cSearch','cPlat','cPil'].forEach(id=>{const el=$("#"+id);el.oninput=el.onchange=draw;});
+  draw();
+}
+/* ---------- Scoring A→E : RÉEL et pédagogique ----------
+   Principe : chaque post gagne des points d'engagement (like=1, commentaire=2, partage=3 —
+   un commentaire ou un partage demande plus d'effort qu'un like). On compare ensuite chaque
+   post à la MOYENNE DU CLIENT (jamais à un standard externe) : le ratio donne la note. */
+const SCORE_NOTES=[
+  {n:'A',min:2,   c:'#34E5C4',dec:'À reproduire',   exp:'≥ 2× ta moyenne — refais ce format/sujet'},
+  {n:'B',min:1.25,c:'#FFC94D',dec:'À amplifier',    exp:'1,25–2× — bon filon, pousse-le (fréquence, pub)'},
+  {n:'C',min:.75, c:'#FFC861',dec:'Dans la moyenne',exp:'0,75–1,25× — correct, teste des variantes'},
+  {n:'D',min:.35, c:'#FF9F45',dec:'Surveiller',     exp:'0,35–0,75× — sous la moyenne, comprends pourquoi'},
+  {n:'E',min:0,   c:'#FF7D9C',dec:'À abandonner',   exp:'< 0,35× — arrête ce format, réalloue l\'effort'}];
+function scorePts(t){return (t.likes||0)+2*(t.commentaires||0)+3*(t.partages||0);}
+function scoreNote(ratio){return SCORE_NOTES.find(x=>ratio>=x.min)||SCORE_NOTES[SCORE_NOTES.length-1];}
+function viewScoring(){
+  const tops=(RES&&RES.top_posts)||[];
+  add(`<h3>${ic('target')} Comment marche le scoring</h3>
+    <div class="sub">Trois étapes, aucune boîte noire — calculé sur les posts réels de la dernière synchro</div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:14px">
+      <div class="kpibox" style="text-align:left;padding:14px">
+        <b style="color:var(--gold,#D4AF37)">① Des points d'engagement</b>
+        <div style="font-size:12.4px;color:var(--muted);margin-top:6px;line-height:1.65">
+          Chaque post gagne : <b style="color:var(--tx)">1 pt</b> par like ·
+          <b style="color:var(--tx)">2 pts</b> par commentaire ·
+          <b style="color:var(--tx)">3 pts</b> par partage.<br>
+          Commenter ou partager demande plus d'effort qu'un like → ça pèse plus.</div></div>
+      <div class="kpibox" style="text-align:left;padding:14px">
+        <b style="color:var(--gold,#D4AF37)">② Comparé à TA moyenne</b>
+        <div style="font-size:12.4px;color:var(--muted);margin-top:6px;line-height:1.65">
+          On divise les points du post par la moyenne des posts <b style="color:var(--tx)">de ce client</b>
+          (jamais un standard externe). Ratio 2 = deux fois mieux que d'habitude.</div></div>
+      <div class="kpibox" style="text-align:left;padding:14px">
+        <b style="color:var(--gold,#D4AF37)">③ Une note = une décision</b>
+        <div style="font-size:12.4px;color:var(--muted);margin-top:6px;line-height:1.65">
+          A à E selon le ratio. La note ne juge pas le post : elle te dit
+          <b style="color:var(--tx)">quoi faire ensuite</b> — reproduire, amplifier, tester, abandonner.</div></div>
+    </div>`,'col12');
+  if(!tops.length){
+    add(`<h3>${ic('chart')} Scores de ${escP(ACTIVE?ACTIVE.nom:'—')}</h3>
+      <div class="sub">Aucun post analysé pour l'instant</div>
+      <div style="margin-top:12px;font-size:12.6px;color:var(--muted);line-height:1.7">Les scores apparaissent dès que
+        les réseaux sont connectés et synchronisés : chaque synchro récupère les posts récents et leurs réactions réelles.</div>
+      <div style="margin-top:12px"><button class="mini gold" onclick="go('connecter')">Connecter les réseaux →</button></div>`,'col12');
+    return;
+  }
+  const rows=tops.map(t=>({t,pts:scorePts(t)}));
+  const moy=rows.reduce((s,r)=>s+r.pts,0)/rows.length||1;
+  rows.forEach(r=>{r.ratio=r.pts/(moy||1);r.note=scoreNote(r.ratio);});
+  rows.sort((a,b)=>b.pts-a.pts);
+  add(`<h3>${ic('chart')} Scores réels — ${escP(ACTIVE.nom)}
+      <span class="pill" style="margin-left:auto">moyenne : ${moy.toFixed(1).replace('.',',')} pts/post</span></h3>
+    <div class="sub">Les ${rows.length} posts récents analysés par la synchro (points = likes + 2×comm. + 3×partages)</div>
+    <div class="list" style="margin-top:10px">${rows.map(r=>{const p=Object.values(PLAT).find(x=>x.nom===r.t.plateforme)||{c:'#B3AA92'};
+      return `<div class="li" style="align-items:center;gap:10px;padding:11px 8px">
+        <span style="flex:0 0 34px;height:34px;display:flex;align-items:center;justify-content:center;border-radius:9px;font-weight:800;font-size:15px;background:${r.note.c}1f;color:${r.note.c};border:1px solid ${r.note.c}55">${r.note.n}</span>
+        <span style="flex:1;min-width:0"><span class="t" title="${escAttr(r.t.titre||'')}" style="display:block;font-size:12.8px">${escP((r.t.titre||'(sans titre)').split('\n')[0].slice(0,90))}</span>
+          <span style="font-size:11px;color:var(--muted)"><span class="dot" style="display:inline-block;width:7px;height:7px;border-radius:50%;background:${p.c};margin-right:5px"></span>${escP(r.t.plateforme||'')} · 👍 ${nf(r.t.likes)} · 💬 ${nf(r.t.commentaires)} · ↗ ${nf(r.t.partages)}</span></span>
+        <span style="flex:0 0 auto;text-align:right"><b style="font-variant-numeric:tabular-nums">${r.pts} pts</b>
+          <div style="font-size:10.6px;color:var(--muted)">${r.ratio.toFixed(2).replace('.',',')}× la moyenne</div></span>
+        <span class="pill" style="flex:0 0 auto;border-color:${r.note.c}55;color:${r.note.c}">${r.note.dec}</span>
+      </div>`;}).join('')}</div>`,'col8');
+  add(`<h3>${ic('target')} Barème A→E</h3><div class="sub">Du ratio à la décision</div>
+    <div class="auto" style="margin-top:12px">${SCORE_NOTES.map(x=>`<div class="arow" style="align-items:flex-start">
+      <span class="dot" style="background:${x.c};margin-top:4px"></span>
+      <span><b>${x.n} — ${x.dec}</b><div style="font-size:11.4px;color:var(--muted);margin-top:2px">${x.exp}</div></span></div>`).join('')}</div>
+    <div style="margin-top:14px;font-size:11.6px;color:var(--muted);line-height:1.6">💡 La comparaison est <b>interne au client</b> :
+      un petit compte peut avoir des A, un gros compte des E. C'est voulu — on cherche ce qui marche <i>pour lui</i>.</div>`,'col4');
+}
+function viewTunnel(){
+  add(cFunnelProcess(),'col5');
+  const steps=[['1 · Publicité','Accroche → message WhatsApp « VUE »'],['2 · Message auto','Accueil + orientation du besoin'],
+    ['3 · Qualification','Besoin, persona, disponibilité'],['4 · Prise de RDV','Créneaux proposés, choix'],
+    ['5 · Confirmation','Date, adresse, rappel J-1'],['6 · Relance','J-1, no-show, prospect tiède'],
+    ['7 · Suivi après visite','Satisfaction, avis, 2ᵉ paire']];
+  add(`<h3>${ic('chat')} Les 7 étapes du tunnel</h3><div class="sub">Messages rédigés — voir 06-tunnel-whatsapp</div>
+    <div class="list">${steps.map(([t,d])=>`<div class="li"><span class="t" style="font-weight:600;flex:0 0 150px">${t}</span><span style="flex:1;color:var(--muted);font-size:12px">${d}</span></div>`).join('')}</div>`,'col7');
+  add(`<h3>${ic('rdv')} CRM — relances J0→J90</h3><div class="sub">SMS · WhatsApp · Email</div>
+    <div class="list">${[['J0','Bienvenue / qualification'],['J1','Rappel & valeur'],['J3','Relance prospect'],['J7','Suivi + avis'],['J14','2ᵉ paire'],['J30','Contenu expert'],['J60','Réactivation'],['J90','Fidélité / parrainage']].map(([d,t])=>`<div class="li"><span class="dt">${d}</span><span class="t">${t}</span></div>`).join('')}</div>`,'col12');
+}
+function viewAuto(){
+  add(cMachine(),'col4');
+  add(`<h3>${ic('bolt')} Cycle mensuel automatisé</h3><div class="sub">Make · n8n · Zapier</div>
+    <div class="list">${['Analyse des résultats (KPI → scoring)','Détection des meilleurs contenus (notes A)','Génération des nouveaux sujets','Génération du calendrier','Génération des scripts','Génération des visuels','Publication programmée (validation humaine)'].map((t,i)=>`<div class="li"><span class="dt">Étape ${i+1}</span><span class="t">${t}</span></div>`).join('')}</div>`,'col8');
+  add(`<h3>${ic('layers')} Orchestrateurs supportés</h3><div class="sub">Voir 09-automatisation</div>
+    <div class="auto" style="margin-top:10px">
+      <div class="arow"><span class="dot ok"></span>Make (Integromat)<span class="s">scénarios</span></div>
+      <div class="arow"><span class="dot ok"></span>n8n (self-hosted)<span class="s">execute python</span></div>
+      <div class="arow"><span class="dot ok"></span>Zapier<span class="s">zaps + webhook</span></div>
+    </div>`,'col12');
+}
+/* nf / esc(P) / escAttr : fournis par ../_design/awema-format.js (source unique) */
+function netAudience(c){const pr=(c.reseaux&&c.reseaux.par_reseau)||{};const o={};
+  ['facebook','instagram','tiktok','youtube','linkedin'].forEach(n=>{if(pr[n]&&pr[n].abonnes!=null)o[n]=pr[n].abonnes;});return o;}
+function profilLinks(c){const p=(c&&c.profils)||{};const it=Object.entries(p).filter(([k,v])=>v&&/^https?:/.test(v));
+  return it.length?`<div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:10px">${it.map(([k,v])=>`<a class="pill" href="${v}" target="_blank" rel="noopener" style="text-decoration:none;text-transform:capitalize">${k} ↗</a>`).join('')}</div>`:'';}
+function gotoClient(id){setClient(id);go('reseaux');}
+
+function viewClients(){
+  /* --- Bandeau résumé agence (tous clients) --- */
+  const tot=CLIENTS.length, conn=CLIENTS.filter(c=>c.reseaux&&c.reseaux.connecte).length;
+  const sum=(f)=>CLIENTS.reduce((s,c)=>s+(f(c)||0),0);
+  const audTot=sum(c=>c.reseaux&&c.reseaux.global&&c.reseaux.global.audience);
+  const repTot=sum(c=>c.reseaux&&c.reseaux.a_repondre&&c.reseaux.a_repondre.total);
+  const contTot=sum(c=>c.campagne&&c.campagne.total);
+  [['users','#FFC94D','Clients',tot,''],['bubble','#34E5C4','Connectés',conn,' / '+tot],
+   ['eye','#FFC861','Audience agence',audTot,''],['chat','#FF7D9C','À répondre',repTot,''],
+   ['layers','#EDA914','Contenus',contTot,'']].forEach(([icn,c,lab,val,sub])=>{
+    add(`<div class="top"><div class="ic" style="color:${c};background:${c}1a;border-color:${c}40">${ic(icn)}</div></div>
+      <div class="val" data-to="${val}">0</div><div class="lab">${lab}${sub?' <span style="color:var(--muted)">'+sub+'</span>':''}</div>`,'col3 kpi');
+  });
+  /* --- Une carte par client : présence digitale réelle + liens directs --- */
+  const sorted=[...CLIENTS].sort((a,b)=>
+    ((b.reseaux&&b.reseaux.global&&b.reseaux.global.audience)||0)-((a.reseaux&&a.reseaux.global&&a.reseaux.global.audience)||0));
+  sorted.forEach(c=>{
+    const r=c.reseaux||{}, g=r.global||{}, act=ACTIVE&&c.id===ACTIVE.id;
+    const rep=(r.a_repondre&&r.a_repondre.total)||0, cad=r.cadence;
+    const nets=netAudience(c);
+    const netChips=Object.entries(nets).map(([n,v])=>{const p=PLAT[n]||{c:'#A29A85',nom:n};
+      return `<span class="pill" style="display:inline-flex;align-items:center;gap:6px;border-color:${p.c}55;color:var(--tx)">${pbadge(n)} ${p.nom} · ${nf(v)}</span>`;}).join('')
+      ||'<span class="tag">réseaux à connecter</span>';
+    const vz=r.visuels||{};   // avatar + couverture réels (synchro) — jamais d'image fictive
+    add(`${vz.couverture?`<div style="margin:-18px -18px 12px;height:84px;border-radius:var(--r) var(--r) 0 0;overflow:hidden;background:#161616">
+        <img src="${vz.couverture}" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block" onerror="this.parentNode.style.display='none'"></div>`:''}
+      <h3>${vz.photo?`<img src="${vz.photo}" alt="" loading="lazy" style="width:32px;height:32px;border-radius:10px;object-fit:cover;border:1.5px solid ${act?'#FFC94D':'var(--border)'};flex:0 0 auto;${vz.couverture?'margin-top:-26px;box-shadow:0 4px 12px rgba(0,0,0,.4);':''}" onerror="this.remove()">`:''}${escP(c.nom)}${act?'<span class="chip up" style="margin-left:auto">actif</span>':''}</h3>
+      <div class="sub">${c.secteur||'—'}${c.lieu?' · '+c.lieu:''}</div>
+      <div style="margin-top:12px;display:grid;grid-template-columns:1fr 1fr;gap:10px">
+        <div class="kpibox"><div class="val2">${nf(g.audience)}</div><div class="lab">audience</div></div>
+        <div class="kpibox"><div class="val2">${g.engagement_taux!=null?g.engagement_taux+'%':'—'}</div><div class="lab">engagement</div></div>
+        <div class="kpibox"><div class="val2" style="color:${rep?'#FF7D9C':'inherit'}">${rep}</div><div class="lab">à répondre</div></div>
+        <div class="kpibox"><div class="val2">${(c.campagne&&c.campagne.total)||0}</div><div class="lab">contenus</div></div>
+      </div>
+      <div style="margin-top:10px;display:flex;gap:6px;flex-wrap:wrap">${netChips}</div>
+      ${(()=>{const ev=(r.evolution_audience||[]).filter(p=>p&&typeof p.valeur==='number');
+        if(ev.length<2)return '';
+        const d0=ev[0].valeur,d1=ev[ev.length-1].valeur,dl=d1-d0;
+        return `<div style="margin-top:10px;display:flex;align-items:center;gap:10px">
+          ${spark(ev.map(p=>p.valeur),'#FFC94D')}
+          <span class="pill" style="border-color:${dl>=0?'#34E5C4':'#FF7D9C'}55;color:${dl>=0?'#34E5C4':'#FF7D9C'}">${dl>=0?'▲ +':'▼ '}${nf(dl)}</span>
+          <span style="font-size:11px;color:var(--muted)">abonnés · ${ev.length} relevés</span></div>`;})()}
+      ${cad?`<div style="margin-top:8px;font-size:11.5px;color:var(--muted)">Dernier post : <b style="color:${cad.jours_depuis>7?'#FF7D9C':'var(--tx)'}">${cad.jours_depuis==null?'—':'il y a '+cad.jours_depuis+' j'}</b> · ${cad.posts_par_semaine||0}/sem</div>`:''}
+      ${profilLinks(c)}
+      <div style="display:flex;gap:8px;margin-top:14px;flex-wrap:wrap">
+        <button class="mini gold" data-go-client="${c.id}">Présence digitale →</button>
+        <a class="mini" href="${revueURL(c.id)}" target="_blank" rel="noopener" style="text-decoration:none">Visualiseur ↗</a>
+        <a class="mini" href="../../rapport.html?client=${c.id}" target="_blank" rel="noopener" style="text-decoration:none">Rapport ↗</a>
+      </div>`,'col4');
+  });
+  add(`<h3>${ic('plus')} Ajouter un client</h3><div class="sub">Automatique via les réseaux</div>
+    <div style="margin-top:12px;font-size:12px;color:var(--muted);line-height:1.65">
+      Un token Meta → un client par Page (<code>connect-reseaux.py --meta-all</code>), ou un compte
+      TikTok via <code>--tiktok-all</code>. Voir <code>docs/05</code> &amp; <code>docs/07</code>.
+    </div>`,'col4');
+  $$('#grid [data-go-client]').forEach(b=>b.onclick=()=>gotoClient(b.dataset.goClient));
+  $$('.kpi .val[data-to]').forEach(el=>countup(el,+el.dataset.to,''));
+}
+function bars(rows,fmt){const mx=Math.max(...rows.map(r=>r[1]),1);
+  return `<div class="bars" style="margin-top:12px">${rows.map(([l,v],i)=>`<div class="bar"><span style="text-transform:capitalize">${l}</span><div class="tr"><div class="fl" style="width:${Math.max(v/mx*100,2)}%;background:${PC[i%5]}"></div></div><span class="n">${fmt?fmt(v):v}</span></div>`).join('')}</div>`;}
+function tempsRel(iso){if(!iso)return '—';const d=Math.floor((Date.now()-new Date(iso))/864e5);return d<=0?"aujourd'hui":d===1?'hier':'il y a '+d+' j';}
+
+function viewReseaux(){
+  const m=RES, prof=(ACTIVE&&ACTIVE.profils)||{}, connected=m&&m.connecte, g=(m&&m.global)||{};
+  const kpis=[['Audience',g.audience,'users','#FFC94D'],['Posts (récents)',g.posts,'layers','#EDA914'],
+    ['Réactions',g.likes,'bolt','#34E5C4'],['Commentaires',g.commentaires,'chat','#FFC861'],
+    ['Partages',g.partages,'target','#A29A85'],['Vues',g.vues,'eye','#FF7D9C']];
+  if(g.engagement_taux!=null)kpis.push(['Engag./abonné',g.engagement_taux,'bolt','#FFC94D','%']);
+  // Détail par réseau sous chaque métrique globale (couleur = marque de la plateforme).
+  const PRN=(m&&m.par_reseau)||{};
+  const KPI_CHAMP={'Audience':'abonnes','Posts (récents)':'posts','Réactions':'likes','Commentaires':'commentaires','Partages':'partages','Vues':'vues'};
+  const kpiDetail=lab=>{
+    const f=KPI_CHAMP[lab]; if(!f)return '';
+    const parts=Object.entries(PRN).filter(([,v])=>v&&v[f]!=null&&v[f]>0).map(([n,v])=>{
+      const p=PLAT[n]||{c:'#B3AA92',nom:n};
+      return `<span title="${p.nom} : ${nf(v[f])}${n==='youtube'&&f==='vues'?' (totales chaîne)':n==='facebook'&&f==='vues'?' (28 j)':''}" style="white-space:nowrap"><span style="display:inline-block;width:7px;height:7px;border-radius:50%;background:${p.c};margin-right:4px"></span>${nf(v[f])}</span>`;});
+    return parts.length>1?`<div style="margin-top:7px;font-size:10.6px;color:var(--muted);display:flex;gap:10px;flex-wrap:wrap">${parts.join('')}</div>`:'';
+  };
+  kpis.forEach(([lab,v,icn,c,suf])=>{const isNull=(v==null);
+    add(`<div class="top"><div class="ic" style="color:${c};background:${c}1a;border-color:${c}40">${ic(icn)}</div>${isNull?'<span class="tag">à connecter</span>':''}</div>
+      <div class="val" ${isNull?'':`data-to="${v}" data-suf="${suf||''}"`}>${isNull?'—':'0'}</div><div class="lab">${lab}</div>${kpiDetail(lab)}`,'col4 kpi');});
+
+  const ev=(m&&m.evolution_audience)||[];
+  const cc=courbeAudience(ev);
+  const evPts=(ev||[]).filter(p=>p&&typeof p.valeur==='number');
+  const evDelta=evPts.length>1?evPts[evPts.length-1].valeur-evPts[0].valeur:null;
+  add(`<h3>${ic('chart')} Évolution des abonnés</h3>
+    <div class="sub">Audience totale relevée à chaque synchronisation — données réelles</div>
+    ${cc.html}
+    ${evPts.length>1?`<div style="margin-top:8px;font-size:12px;color:var(--muted)">Du <b style="color:var(--tx)">${dfr(evPts[0].date)}</b> (${nf(evPts[0].valeur)}) au <b style="color:var(--tx)">${dfr(evPts[evPts.length-1].date)}</b> (${nf(evPts[evPts.length-1].valeur)}) ·
+      <b style="color:${evDelta>=0?'#34E5C4':'#FF7D9C'}">${evDelta>=0?'+':''}${nf(evDelta)} abonné${Math.abs(evDelta)>1?'s':''}</b> · ${evPts.length} relevés</div>`:''}`,'col12');
+  wireCourbe(cc);
+
+  /* ---- ANALYSTE IA : « Pourquoi & Que faire » (M2) ---- */
+  add(cAnalyste(connected), 'col12');
+
+  /* ---- INBOX : commentaires à répondre (cœur du community management) ---- */
+  const ar=(m&&m.a_repondre)||null;
+  add(`<h3>${ic('chat')} À répondre <span class="pill" style="background:${ar&&ar.total?'#FF7D9C22':'#34E5C422'};color:${ar&&ar.total?'#FF7D9C':'#34E5C4'}">${ar?ar.total:'—'}</span></h3>
+    <div class="sub">Commentaires sans réponse de la Page</div>
+    ${ar&&ar.total?`<div class="list" style="margin-top:10px">${ar.exemples.map((c,ix)=>`<div class="li" style="flex-direction:column;align-items:flex-start;gap:3px">
+        <div style="display:flex;gap:8px;width:100%;align-items:center"><b>${escP(c.auteur||'—')}</b><span class="pill">${tempsRel(c.date)}</span>${c.lien?`<a href="${escAttr(AwemaFmt.safeUrl(c.lien))}" target="_blank" style="margin-left:auto" class="pill">ouvrir ↗</a>`:''}</div>
+        <span class="t" title="${(c.message||'').replace(/"/g,'&quot;')}" style="opacity:.85">${escP(c.message||'—')}</span>
+        ${c.id?`<div style="display:flex;gap:6px;width:100%;margin-top:5px">
+          <input class="fld" style="flex:1;font-size:12px" id="repIn-${ix}" placeholder="Répondre en tant que la Page…">
+          <button class="mini gold" data-cid="${c.id}" data-ix="${ix}" onclick="repEnvoyer(this)">Envoyer</button></div>
+          <div id="repMsg-${ix}" style="font-size:11.4px;min-height:13px;color:var(--muted)"></div>`
+        :`<div style="font-size:11px;color:var(--muted)">Réponse in-app disponible après la prochaine synchro des réseaux.</div>`}</div>`).join('')}</div>`
+      :`<div style="margin-top:14px;color:var(--muted);font-size:12.5px">${connected?'🎉 Tout est répondu — aucun commentaire en attente.':'Disponible une fois les réseaux connectés.'}</div>`}`,'col6');
+
+  /* ---- Cadence de publication : GLOBALE (tous réseaux) + détail par réseau ---- */
+  const cad=(m&&m.cadence)||null, cadR=(m&&m.cadence_reseaux)||{};
+  const cadRows=Object.entries(cadR).filter(([,c])=>c&&c.dernier_post).sort((a,b)=>(b[1].posts_30j||0)-(a[1].posts_30j||0));
+  add(`<h3>${ic('cal')} Cadence de publication</h3><div class="sub">Tous réseaux confondus — régularité = clé de l'algorithme</div>
+    ${cad?`<div style="margin-top:12px;display:grid;grid-template-columns:1fr 1fr;gap:12px">
+        <div class="kpibox"><div class="val2" style="color:${cad.jours_depuis>7?'#FF7D9C':'#34E5C4'}">${cad.jours_depuis==null?'—':cad.jours_depuis+' j'}</div><div class="lab">depuis le dernier post${cad.dernier_reseau?' · '+cad.dernier_reseau:''}</div></div>
+        <div class="kpibox"><div class="val2">${cad.posts_par_semaine==null?'—':cad.posts_par_semaine}</div><div class="lab">posts / semaine (tous réseaux)</div></div>
+      </div>
+      ${cadRows.length?`<div class="list" style="margin-top:12px">${cadRows.map(([net,c])=>{const p=PLAT[net]||{c:'#B3AA92',nom:net};
+        return `<div class="li" style="align-items:center;gap:10px;padding:9px 8px">${pbadge(net)}
+          <span style="flex:1;min-width:0"><b style="font-size:12.6px">${p.nom}</b>
+            <div style="font-size:11px;color:var(--muted)">dernier post ${tempsRel(c.dernier_post)}</div></span>
+          <span style="flex:0 0 auto;text-align:right;font-variant-numeric:tabular-nums"><b>${c.posts_30j==null?'—':(c.approx?'≥ ':'')+c.posts_30j}</b> <span style="font-size:10.6px;color:var(--muted)">/30 j</span>
+            <div style="font-size:10.6px;color:var(--muted)">${c.posts_par_semaine==null?'—':(c.approx?'≥ ':'')+c.posts_par_semaine+'/sem'}</div></span></div>`;}).join('')}</div>
+        ${cadRows.some(([,c])=>c.approx)?`<div style="margin-top:8px;font-size:10.8px;color:var(--muted)">≥ = au moins (estimé sur les meilleurs posts conservés — la prochaine synchro affinera).</div>`:''}`:''}`
+      :`<div style="margin-top:14px;color:var(--muted);font-size:12.5px">${connected?'Pas assez de posts récents.':'À connecter.'}</div>`}`,'col6');
+
+  /* ---- Réactions détaillées ---- */
+  const EMO={like:'👍 J\'aime',love:'❤️ J\'adore',care:'🤗 Solidaire',haha:'😂 Haha',wow:'😮 Wouah',sad:'😢 Triste',angry:'😡 Grrr'};
+  const rea=(m&&m.reactions)||null;
+  add(`<h3>${ic('bolt')} Réactions</h3><div class="sub">Répartition sur les posts récents</div>
+    ${rea&&Object.values(rea).some(v=>v>0)?bars(Object.keys(EMO).filter(k=>rea[k]>0).map(k=>[EMO[k],rea[k]]).sort((a,b)=>b[1]-a[1]))
+      :`<div style="margin-top:14px;color:var(--muted);font-size:12.5px">${connected?'Aucune réaction sur les posts récents.':'À connecter.'}</div>`}`,'col6');
+
+  /* ---- Meilleur créneau : par réseau (l'engagement n'est pas comparable entre plateformes) ---- */
+  const cr=(m&&m.meilleur_creneau)||null, crR=(m&&m.creneau_reseaux)||{};
+  const crRows=Object.entries(crR).filter(([,c])=>c&&c.recommandation);
+  add(`<h3>${ic('cal')} Meilleur créneau</h3><div class="sub">Quand l'engagement est le plus fort, réseau par réseau</div>
+    ${crRows.length?`<div class="list" style="margin-top:10px">${crRows.map(([net,c])=>{const p=PLAT[net]||{c:'#B3AA92',nom:net};
+        return `<div class="li" style="align-items:center;gap:10px;padding:9px 8px">${pbadge(net)}
+          <span style="flex:1"><b style="font-size:12.6px">${p.nom}</b></span>
+          <span class="pill" style="border-color:#FFC94D55;color:#FFC94D">📅 ${c.recommandation}</span></div>`;}).join('')}</div>`
+      :(cr?`<div style="margin:12px 0"><span class="pill" style="background:#FFC94D22;color:#FFC94D;font-size:13px">📅 ${cr.recommandation}</span> <span style="font-size:11px;color:var(--muted)">(posts Facebook)</span></div>`:'')}
+    ${cr?`${bars(Object.entries(cr.par_jour).map(([j,v])=>[j,v]),v=>Math.round(v))}
+      <div style="margin-top:6px;font-size:10.8px;color:var(--muted)">Répartition par jour : engagement moyen des posts Facebook.</div>`
+      :(crRows.length?'':`<div style="margin-top:14px;color:var(--muted);font-size:12.5px">${connected?'Pas assez de données.':'À connecter.'}</div>`)}`,'col6');
+
+  /* ---- Types de contenu ---- */
+  const tc=(m&&m.types_contenu)||null;
+  add(`<h3>${ic('layers')} Types de contenu</h3><div class="sub">Engagement moyen par format — posts Facebook</div>
+    ${tc&&Object.keys(tc).length?bars(Object.entries(tc).sort((a,b)=>b[1].engagement_moyen-a[1].engagement_moyen).map(([t,v])=>[`${t} (${v.n})`,v.engagement_moyen]),v=>v)
+      :`<div style="margin-top:14px;color:var(--muted);font-size:12.5px">${connected?'—':'À connecter.'}</div>`}`,'col6');
+
+  /* ---- Facebook (réseau principal — carte de marque dédiée) ---- */
+  const fbP=PLAT.facebook||{}; const fb=(m&&m.par_reseau&&m.par_reseau.facebook)||null;
+  if(fb&&fb.abonnes!=null){add(`<h3 style="border-left:3px solid ${fbP.c};padding-left:9px;margin-left:-3px">${pbadge('facebook')} Facebook${prof.facebook&&/^https?:/.test(prof.facebook)?` · <a href="${prof.facebook}" target="_blank" style="color:${fbP.c}">Page ↗</a>`:''}</h3><div class="sub">Page Facebook connectée${m&&m.maj?' · maj '+m.maj.slice(0,10):''}</div>
+    <div style="margin-top:12px;display:grid;grid-template-columns:1fr 1fr;gap:12px">
+      <div class="kpibox"><div class="val2">${nf(fb.abonnes)}</div><div class="lab">abonnés</div></div>
+      <div class="kpibox"><div class="val2">${nf(fb.posts)}</div><div class="lab">posts (récents)</div></div>
+      <div class="kpibox"><div class="val2">${nf(fb.likes)}</div><div class="lab">réactions</div></div>
+      <div class="kpibox"><div class="val2">${nf(fb.commentaires)}</div><div class="lab">commentaires</div></div>
+    </div>`,'col6');}
+
+  /* ---- TikTok (si compte connecté) ---- */
+  const tk=(m&&m.tiktok)||null;
+  if(tk){const P=PLAT.tiktok||{};add(`<h3 style="border-left:3px solid ${P.c};padding-left:9px;margin-left:-3px">${pbadge('tiktok')} TikTok${tk.display_name?` · ${escP(tk.display_name)}`:''}</h3><div class="sub">Compte TikTok connecté${tk.maj?' · maj '+tk.maj.slice(0,10):''}</div>
+    <div style="margin-top:12px;display:grid;grid-template-columns:1fr 1fr;gap:12px">
+      <div class="kpibox"><div class="val2">${nf(tk.abonnes)}</div><div class="lab">abonnés</div></div>
+      <div class="kpibox"><div class="val2">${nf(tk.video_count)}</div><div class="lab">vidéos</div></div>
+      <div class="kpibox"><div class="val2">${nf(tk.likes_total)}</div><div class="lab">likes cumulés</div></div>
+      <div class="kpibox"><div class="val2">${nf(tk.vues_recentes)}</div><div class="lab">vues (récentes)</div></div>
+    </div>
+    ${tk.top_videos&&tk.top_videos.length?`<div class="list" style="margin-top:10px">${tk.top_videos.slice(0,5).map(v=>`<div class="li"><span class="t" title="${escAttr(v.titre||'')}">${escP(v.titre)||'—'}</span><span class="pill">👁 ${nf(v.vues)}</span><span class="pill">👍 ${v.likes}</span>${v.lien?`<a href="${escAttr(AwemaFmt.safeUrl(v.lien))}" target="_blank" class="pill">voir ↗</a>`:''}</div>`).join('')}</div>`:''}`,'col6');}
+
+  /* ---- YouTube (si chaîne connectée) ---- */
+  const yt=(m&&m.youtube)||null;
+  if(yt){const P=PLAT.youtube||{};add(`<h3 style="border-left:3px solid ${P.c};padding-left:9px;margin-left:-3px">${pbadge('youtube')} YouTube${yt.titre?` · ${escP(yt.titre)}`:''}</h3><div class="sub">Chaîne connectée${yt.maj?' · maj '+yt.maj.slice(0,10):''}</div>
+    <div style="margin-top:12px;display:grid;grid-template-columns:1fr 1fr;gap:12px">
+      <div class="kpibox"><div class="val2">${nf(yt.abonnes)}</div><div class="lab">abonnés</div></div>
+      <div class="kpibox"><div class="val2">${nf(yt.video_count)}</div><div class="lab">vidéos</div></div>
+      <div class="kpibox" style="grid-column:span 2"><div class="val2">${nf(yt.vues_totales)}</div><div class="lab">vues totales de la chaîne</div></div>
+    </div>
+    ${yt.top_videos&&yt.top_videos.length?`<div class="list" style="margin-top:10px">${yt.top_videos.slice(0,5).map(v=>`<div class="li"><span class="t" title="${escAttr(v.titre||'')}">${escP(v.titre)||'—'}</span><span class="pill">👁 ${nf(v.vues)}</span><span class="pill">👍 ${v.likes}</span>${v.lien?`<a href="${escAttr(AwemaFmt.safeUrl(v.lien))}" target="_blank" class="pill">voir ↗</a>`:''}</div>`).join('')}</div>`:''}`,'col6');}
+
+  /* ---- LinkedIn (si Page connectée — sinon invite à connecter) ---- */
+  const lkP=PLAT.linkedin||{}; const lk=(m&&m.linkedin)||null;
+  if(lk){add(`<h3 style="border-left:3px solid ${lkP.c};padding-left:9px;margin-left:-3px">${pbadge('linkedin')} LinkedIn${lk.titre?` · ${escP(lk.titre)}`:''}</h3><div class="sub">Page connectée${lk.maj?' · maj '+lk.maj.slice(0,10):''}</div>
+    <div style="margin-top:12px;display:grid;grid-template-columns:1fr 1fr;gap:12px">
+      <div class="kpibox"><div class="val2">${nf(lk.abonnes)}</div><div class="lab">abonnés</div></div>
+      <div class="kpibox"><div class="val2">${nf(lk.impressions)}</div><div class="lab">impressions</div></div>
+      <div class="kpibox"><div class="val2">${nf(lk.posts)}</div><div class="lab">posts</div></div>
+      <div class="kpibox"><div class="val2">${lk.engagement_taux!=null?lk.engagement_taux+'%':'—'}</div><div class="lab">engagement</div></div>
+    </div>`,'col6');}
+  else if((prof.linkedin)||true){add(`<h3 style="border-left:3px solid ${lkP.c};padding-left:9px;margin-left:-3px">${pbadge('linkedin')} LinkedIn <span class="tag" style="color:${lkP.c};border-color:${lkP.c}55">nouveau</span></h3>
+    <div class="sub">Statistiques de Page entreprise (abonnés, impressions, engagement)</div>
+    <div style="margin-top:14px;color:var(--muted);font-size:12.5px;line-height:1.6">${prof.linkedin?`Page renseignée — ${/^https?:/.test(prof.linkedin)?`<a href="${prof.linkedin}" target="_blank">voir la Page ↗</a>`:prof.linkedin}.`:'Aucune Page LinkedIn renseignée.'}
+      Branche les données live en suivant le guide.</div>
+    <a class="mini gold" href="#" onclick="go('connecter');return false" style="display:inline-block;margin-top:12px;text-decoration:none">Connecter LinkedIn →</a>`,'col6');}
+
+  /* ---- Abonnés les plus actifs (vrais « top fans ») ---- */
+  const fans=(m&&m.top_commentateurs)||(m&&m.top_fans)||[];
+  add(`<h3>${ic('users')} Abonnés les plus actifs</h3><div class="sub">${fans.length?'Top commentateurs':'À connecter'}</div>
+    ${fans.length?`<div class="list">${fans.slice(0,8).map((f,i)=>`<div class="li"><span class="pill" style="background:${PC[i%5]}22;color:${PC[i%5]}">#${i+1}</span><span class="t">${escP(f.nom)}</span><span class="pill">${f.commentaires||f.interactions} comm.</span></div>`).join('')}</div>`
+      :`<div style="margin-top:14px;color:var(--muted);font-size:12.5px">Disponible une fois les réseaux connectés.</div>`}`,'col6');
+
+  /* ---- Meilleurs posts ---- */
+  const tp=(m&&m.top_posts)||[];
+  add(`<h3>${ic('target')} Meilleurs posts</h3><div class="sub">${tp.length?'Classés par engagement':'À connecter'}</div>
+    ${tp.length?`<div class="list">${tp.slice(0,8).map(p=>`<div class="li"><span class="t" title="${escAttr(p.titre||'')}">${escP(p.titre)||'—'}</span>
+      ${p.type?`<span class="pill">${p.type}</span>`:''}<span class="pill">👍 ${p.likes}</span><span class="pill">💬 ${p.commentaires}</span>${p.partages?`<span class="pill">↗ ${p.partages}</span>`:''}${p.portee!=null?`<span class="pill">👁 ${p.portee}</span>`:''}${p.lien?`<a href="${escAttr(AwemaFmt.safeUrl(p.lien))}" target="_blank" class="pill">voir ↗</a>`:''}</div>`).join('')}</div>`
+      :`<div style="margin-top:14px;color:var(--muted);font-size:12.5px">Disponible une fois les réseaux connectés.</div>`}`,'col12');
+
+  /* (l'évolution de l'audience est affichée en tête de vue — courbe temporelle interactive) */
+
+  /* ---- Présence par réseau (reflète l'état réel de connexion, pas seulement les liens saisis) ---- */
+  const PRES=(m&&m.par_reseau)||{}, OBJ={tiktok:m&&m.tiktok,youtube:m&&m.youtube,linkedin:m&&m.linkedin};
+  add(`<h3>${ic('bubble')} Présence par réseau</h3>
+    <div class="sub">${connected?('Connecté · '+(m.source||'')+(m.maj?' · maj '+m.maj.slice(0,10):'')):'Non connecté — aucune donnée inventée'}</div>
+    <div style="margin-top:12px;font-size:12.5px">${['facebook','instagram','tiktok','youtube','linkedin','whatsapp'].map(r=>{
+      const p=PLAT[r]||{nom:r,c:'#A29A85'};
+      const ab=(PRES[r]&&PRES[r].abonnes!=null)?PRES[r].abonnes:((OBJ[r]&&OBJ[r].abonnes!=null)?OBJ[r].abonnes:null);
+      const url=prof[r]; let right;
+      if(ab!=null) right=`<span class="pill" style="background:${p.c}1f;color:${p.c};border-color:${p.c}66">● connecté · ${nf(ab)} abonnés</span>`+((url&&/^https?:/.test(url))?` <a href="${url}" target="_blank" style="color:${p.c}">↗</a>`:'');
+      else if(url) right=/^https?:/.test(url)?`<a href="${url}" target="_blank" style="color:${p.c}">lien ↗</a>`:url;
+      else if(r==='linkedin') right=`<a href="#" onclick="go('connecter');return false" class="pill" style="border-color:${p.c}66;color:${p.c}">connecter →</a>`;
+      else right='<span class="tag">à renseigner</span>';
+      return `<div class="kvr"><b style="display:flex;align-items:center;gap:8px;font-weight:600">${pbadge(r)} ${p.nom}</b><span>${right}</span></div>`;}).join('')}</div>`,'col12');
+
+  $$('.kpi .val[data-to]').forEach(el=>countup(el,+el.dataset.to,el.dataset.suf||''));
+}
+const IA_KEYNAME={groq:'GROQ_API_KEY',gemini:'GEMINI_API_KEY',openai:'OPENAI_API_KEY',anthropic:'ANTHROPIC_API_KEY',mistral:'MISTRAL_API_KEY',openrouter:'OPENROUTER_API_KEY'};
+const IA_SIGNUP={groq:'https://console.groq.com/keys',gemini:'https://aistudio.google.com/apikey',openai:'https://platform.openai.com/api-keys',anthropic:'https://console.anthropic.com/settings/keys',mistral:'https://console.mistral.ai/api-keys',openrouter:'https://openrouter.ai/keys'};
+function ghRepoSlug(){ try{const c=JSON.parse(localStorage.getItem('awema-gh'))||{}; if(c.owner&&c.repo)return c.owner+'/'+c.repo;}catch(e){} const g=(window.AWEMA_CONFIG&&AWEMA_CONFIG.github)||{}; return (g.owner&&g.repo)?g.owner+'/'+g.repo:''; }
+function viewReglages(){
+  const gh=window.AwemaGH&&AwemaGH.connected();
+  add(`<h3>${ic('cog')} Mise en route <span class="pill" style="background:#34E5C422;color:#34E5C4;border-color:#34E5C466">tout dans le dashboard</span></h3>
+    <div class="sub">Configure GitHub, l'IA et la 1ʳᵉ récupération — sans quitter le dashboard</div>
+    <div style="margin-top:14px;font-size:13px">
+      <div class="kvr"><b>① GitHub</b><span>${gh?('✅ '+AwemaGH.who()+' · <button class="mini" id="rGh">Reconfigurer</button> <button class="mini" id="rGhOut" title="Efface la clé d’accès de CE navigateur — indispensable sur un ordinateur partagé">🔒 Se déconnecter</button>'):'<button class="mini gold" id="rGh">🔗 Connecter mon GitHub</button>'}</span></div>
+      <div class="kvr"><b>② Hébergement</b><span><a class="mini" id="rPages" target="_blank" rel="noopener">⚙️ Activer Pages ↗</a></span></div>
+    </div>
+    <div style="margin-top:14px"><div class="sub" style="margin-bottom:6px"><b>③ Cerveau — une IA</b> (gratuite : Groq)</div>
+      <div style="display:flex;gap:7px;flex-wrap:wrap">
+        <select id="rIaProv" class="fld" style="flex:0 0 auto"><option value="groq">Groq</option><option value="gemini">Gemini</option><option value="openai">OpenAI</option><option value="anthropic">Anthropic</option><option value="mistral">Mistral</option><option value="openrouter">OpenRouter</option></select>
+        <input id="rIaKey" type="password" class="fld" style="flex:1;min-width:150px" placeholder="Colle ta clé IA">
+        <button class="btn" id="rIaSave">⚡ Enregistrer</button></div>
+      <div style="margin-top:6px"><a id="rIaGet" target="_blank" rel="noopener" style="color:var(--gold,#D4AF37);font-size:12px;text-decoration:none">🔑 Obtenir une clé</a></div>
+      <div id="rIaMsg" style="font-size:12.5px;min-height:15px;margin-top:6px;color:var(--muted)"></div></div>
+    <div style="margin-top:14px"><div class="sub" style="margin-bottom:6px"><b>④ Lancer la 1ʳᵉ récupération</b></div>
+      <button class="btn" id="rSync">▶️ Lancer maintenant</button>
+      <div id="rSyncMsg" style="font-size:12.5px;min-height:15px;margin-top:6px;color:var(--muted)"></div></div>`,'col8');
+  add(`<h3>${ic('cog')} Apparence &amp; données</h3><div class="sub">Thème + registre</div>
+    <div style="margin-top:12px"><button class="btn" id="rTheme" data-ic="moon" style="border:1px solid var(--border);background:var(--elev);padding:9px 14px;border-radius:11px;color:var(--tx)"> Basculer le thème</button></div>
+    <div style="margin-top:14px;font-size:13px">
+      <div class="kvr"><b>Clients</b><span>${CLIENTS.length}</span></div>
+      <div class="kvr"><b>Client actif</b><span>${ACTIVE?ACTIVE.nom:'—'}</span></div>
+      <div class="kvr"><b>Contenus</b><span>${A.total}</span></div>
+    </div>`,'col4');
+  // wiring Mise en route
+  const r=$("#rTheme");if(r)r.onclick=()=>$("#themeBtn").click();
+  const slug=ghRepoSlug(), pa=$("#rPages"); if(pa)pa.href= slug?('https://github.com/'+slug+'/settings/pages'):'https://github.com/settings';
+  const bGh=$("#rGh"); if(bGh)bGh.onclick=()=>{ if(window.AwemaGH)AwemaGH.openConnect(()=>go('reglages')); };
+  const bOut=$("#rGhOut"); if(bOut)bOut.onclick=()=>{ AwemaGH.disconnect(); go('reglages'); };
+  const prov=$("#rIaProv"), iaGet=$("#rIaGet");
+  function rIaGet(){ if(!prov||!iaGet)return; iaGet.href=IA_SIGNUP[prov.value]||'#'; iaGet.textContent='🔑 Obtenir une clé '+prov.value; }
+  if(prov){prov.onchange=rIaGet; rIaGet();}
+  const bIa=$("#rIaSave"); if(bIa)bIa.onclick=function(){
+    const p=prov.value, key=$("#rIaKey").value.trim(), nom=IA_KEYNAME[p]||'GROQ_API_KEY', m=$("#rIaMsg");
+    if(!key){m.style.color='#FF7D9C';m.textContent='Colle ta clé.';return;}
+    if(!window.AwemaGH){m.style.color='#FF7D9C';m.textContent='Module GitHub indisponible.';return;}
+    m.style.color='var(--muted)';m.textContent='Connexion à GitHub…';
+    AwemaGH.ensure(function(){ m.textContent='Enregistrement…';
+      AwemaGH.setVariable('AWEMA_AI_PROVIDER',p).catch(()=>({})).then(()=>AwemaGH.saveSecret(nom,key)).then(function(res){
+        $("#rIaKey").value='';
+        if(res&&res.ok){m.style.color='#34E5C4';m.textContent='✅ '+p+' branché. Les agents peuvent travailler.';}
+        else{m.style.color='#D4AF37';m.textContent='Presque ! Colle la clé comme SECRET (fenêtre ouverte), nom : '+nom;AwemaGH.guideSecret(nom,key);}
+      }).catch(e=>{m.style.color='#FF7D9C';m.textContent='❌ '+(e.message||e);});
+    });
+  };
+  const bSync=$("#rSync"); if(bSync)bSync.onclick=function(){ lancerSync($("#rSyncMsg")); };
+
+  /* ---- Zone dangereuse : réinitialiser le projet ---- */
+  add(`<h3 style="color:#FF7D9C">${ic('bolt')} Zone dangereuse</h3>
+    <div class="sub">Repartir sur une base neuve — idéal après un fork</div>
+    <div style="margin-top:12px;font-size:12.6px;color:var(--muted);line-height:1.7">
+      Vide le dépôt de <b style="color:var(--tx)">toutes les données client</b> (campagnes, réseaux,
+      planning, mémoire, propositions, retours) et réinstalle le client de démo.
+      <b>Irréversible</b> côté fichiers ; l'historique Git et tes Secrets/tokens ne sont pas touchés.</div>
+    <div style="margin-top:12px">
+      <label style="display:flex;gap:8px;align-items:flex-start;font-size:12.5px;cursor:pointer">
+        <input type="checkbox" id="rzComplet" style="margin-top:3px">
+        <span>Réinitialiser <b>aussi l'identité de l'agence</b> (nom, charte, licence) — repartir totalement à neutre.</span></label>
+    </div>
+    <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap;align-items:center">
+      <input id="rzConfirm" class="fld" style="flex:1;min-width:180px" placeholder="Tape REINITIALISER pour confirmer" autocomplete="off">
+      <button class="btn" id="rzGo" disabled style="background:#FF7D9C;color:#26000c;opacity:.55">🗑️ Réinitialiser le projet</button>
+    </div>
+    <div id="rzMsg" style="font-size:12.5px;min-height:15px;margin-top:8px;color:var(--muted)"></div>`,'col12');
+  const rzIn=$("#rzConfirm"),rzGo=$("#rzGo");
+  if(rzIn&&rzGo){
+    rzIn.oninput=function(){const ok=rzIn.value.trim()==='REINITIALISER';rzGo.disabled=!ok;rzGo.style.opacity=ok?'1':'.55';};
+    rzGo.onclick=function(){
+      const m=$("#rzMsg");
+      if(rzIn.value.trim()!=='REINITIALISER'){m.style.color='#FF7D9C';m.textContent='Tape exactement REINITIALISER.';return;}
+      if(!window.AwemaGH){m.style.color='#FF7D9C';m.textContent='Module GitHub indisponible.';return;}
+      const portee=$("#rzComplet").checked?'complet':'client';
+      if(!confirm('Dernière confirmation.\\n\\nRéinitialisation « '+portee+' » : toutes les données client vont être supprimées du dépôt. Continuer ?'))return;
+      rzGo.disabled=true;m.style.color='var(--muted)';m.textContent='Connexion à GitHub…';
+      AwemaGH.ensure(function(ok){
+        if(ok===false){rzGo.disabled=false;return;}
+        m.textContent='⏳ Réinitialisation en cours (~1 min)…';
+        AwemaGH.runWorkflow('reset-projet.yml',{confirmation:'REINITIALISER',portee:portee},true)
+          .then(function(){m.style.color='#34E5C4';m.textContent='✅ Lancé. Le dépôt se vide et se régénère — recharge la page dans ~1 min.';})
+          .catch(function(e){m.style.color='#FF7D9C';m.textContent='❌ '+(e.message||e);rzGo.disabled=false;});
+      });
+    };
+  }
+}
+
+/* ---------- Fraîcheur des données (dernière récupération réseaux) ---------- */
+function lancerSync(m,apres){
+  if(!m)m={style:{},set textContent(v){}};
+  if(!window.AwemaGH){m.style.color='#FF7D9C';m.textContent='Module GitHub indisponible.';return;}
+  m.style.color='var(--muted)';m.textContent='Connexion à GitHub…';
+  AwemaGH.ensure(function(){ m.textContent='⏳ Lancement…';
+    AwemaGH.runWorkflow('sync-reseaux.yml',{},true).then(()=>AwemaGH.runWorkflow('sync-tiktok.yml',{}))
+      .then(()=>{m.style.color='#34E5C4';m.textContent='✅ Lancé ! Données fraîches dans ~1-2 min.';if(apres)apres(true);})
+      .catch(e=>{m.style.color='#FF7D9C';m.textContent='❌ '+(e.message||e);if(apres)apres(false);});
+  });
+}
+function derniereSync(){ let mx=null;
+  // Le client DÉMO est exclu : une nouvelle agence ne doit pas voir « données il y a 6 j »
+  // (ni un bouton Synchroniser inutile) avant d'avoir connecté son premier vrai réseau.
+  CLIENTS.forEach(c=>{ if((c.statut||'')==='demo')return;
+    const m=c.reseaux&&c.reseaux.maj; if(m&&(!mx||m>mx))mx=m;});
+  return mx; }
+function majFraicheur(){
+  const el=$("#fraich"); if(!el)return;
+  const iso=derniereSync();
+  if(!iso){el.innerHTML='';return;}
+  const h=(Date.now()-new Date(iso))/36e5;
+  const rel=h<1?'il y a '+Math.max(1,Math.round(h*60))+' min':h<48?'il y a '+Math.round(h)+' h':'il y a '+Math.round(h/24)+' j';
+  const vieux=h>24;
+  el.innerHTML=`<span class="pill" title="Dernière récupération des données réseaux : ${new Date(iso).toLocaleString()}"
+      style="white-space:nowrap;border-color:${vieux?'#FFC94D66':'var(--border)'};color:${vieux?'#FFC94D':'var(--muted)'}">📡 Données : ${rel}</span>`+
+    (vieux?`<button class="mini gold" id="fraichBtn" style="white-space:nowrap">🔄 Synchroniser</button><span id="fraichMsg" style="font-size:11.5px;color:var(--muted)"></span>`:'');
+  const b=$("#fraichBtn");
+  if(b)b.onclick=function(){ b.disabled=true;
+    lancerSync($("#fraichMsg"),function(ok){ if(!ok)b.disabled=false; }); };
+}
+
+/* ---------- Planifier & publier (section native, branchée sur ACTIVE) ---------- */
+let PLANNED_LOCAL=[];
+const NETS_PUB=[['facebook','Facebook'],['instagram','Instagram'],['linkedin','LinkedIn'],['youtube','YouTube'],['tiktok','TikTok']];
+function comptesPub(c){return {facebook:c.fb_page_id||c.facebook_page_id||'',instagram:c.ig_user_id||c.instagram_id||'',linkedin:c.linkedin_org||c.linkedin_urn||'',youtube:c.yt_channel_id||'',tiktok:c.tiktok_open_id||''};}
+// Planning du client = commité (registre) + optimiste (PLANNED_LOCAL), dédoublonné par id.
+function currentPlanning(){ if(!ACTIVE)return []; const slug=ACTIVE.slug||ACTIVE.id, by={};
+  (ACTIVE.planning||[]).forEach(p=>by[p.id]=p);
+  PLANNED_LOCAL.filter(p=>p.client===slug).forEach(p=>{if(!by[p.id])by[p.id]=p;});
+  return Object.keys(by).map(k=>by[k]); }
+function propCount(){ const cr=ACTIVE&&loadAgent(ACTIVE,'creatif'); return (cr&&cr.items||[]).length; }
+// Compteur global (sous-titre) : reflète contenus de campagne + propositions IA + posts planifiés, et se rafraîchit.
+function refreshPsub(){ const el=$("#psub"); if(!el)return;
+  if(!ACTIVE){el.textContent='Aucun client';return;}
+  el.textContent=ACTIVE.nom+' · '+ITEMS.length+' contenus · '+propCount()+' proposition'+(propCount()>1?'s':'')+' · '+currentPlanning().length+' planifié'+(currentPlanning().length>1?'s':''); }
+function dashRefetch(){return fetch('../_data/agence.js?ts='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{const m=t.match(/=\s*(\{[\s\S]*\})\s*;?\s*$/);if(!m)throw 0;const d=JSON.parse(m[1]);CLIENTS=d.clients||[];window.AWEMA_REGISTRY=d;const cur=ACTIVE&&ACTIVE.id;ACTIVE=CLIENTS.find(c=>c.id===cur)||ACTIVE;ITEMS=(ACTIVE&&ACTIVE.campagne&&ACTIVE.campagne.contenus)||[];aggregate();refreshPsub();majFraicheur();return chargerContenus(ACTIVE).then(list=>{if(list.length){ITEMS=list;aggregate();refreshPsub();}return ACTIVE;});});}
+function viewPublier(){
+  if(!ACTIVE){add('<h3>Aucun client sélectionné</h3>','col12');return;}
+  const cr=loadAgent(ACTIVE,'creatif'), items=(cr&&cr.items)||[];
+  add(`<h3>${ic('layers')} Propositions IA <span class="pill" style="background:#EDA91422;color:#EDA914;border-color:#EDA91466">${escP(ACTIVE.nom)}</span></h3>
+    <div class="sub">Donne une idée, ou laisse vide → AWEMA s'appuie sur ce qui marche</div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap;margin:12px 0"><input id="pubIdee" class="fld" style="flex:1;min-width:180px" placeholder="Idée / thème (optionnel)"><button class="btn" id="pubGen">✨ Générer</button></div>
+    <div id="pubGenMsg" style="font-size:12.5px;min-height:16px;color:var(--muted)"></div>
+    <div class="list" id="pubProps" style="margin-top:10px">${items.length?items.map((it,ix)=>`
+      <div class="li" style="flex-direction:column;align-items:flex-start;gap:6px;padding:12px 8px">
+        <div style="display:flex;gap:8px;width:100%;align-items:center;flex-wrap:wrap"><b style="flex:1;min-width:140px">${escP(it.hook||'')}</b><span class="pill">${escP(it.reseau||'')}</span><span class="pill">${escP(it.format||'')}</span></div>
+        ${it.script?`<div style="color:var(--muted);font-size:12.4px;white-space:pre-wrap">${escP(it.script).slice(0,420)}</div>`:''}
+        <button class="mini gold" data-ix="${ix}" onclick="pubUse(this)">✍️ Utiliser ce contenu</button></div>`).join(''):'<div class="sub">Aucune proposition encore — clique « Générer ».</div>'}</div>`,'col6');
+
+  add(`<h3>${ic('cal')} Composer &amp; programmer</h3><div class="sub">Publié automatiquement à la date choisie</div>
+    <div id="pubNets" style="display:flex;gap:7px;flex-wrap:wrap;margin-top:10px">${NETS_PUB.map(n=>{const col=(PLAT[n[0]]||{}).c||'#FFC94D';return `<label class="pill" style="cursor:pointer;display:inline-flex;gap:6px;align-items:center;border-color:${col}66"><input type="checkbox" value="${n[0]}" style="margin:0">${n[1]}</label>`;}).join('')}</div>
+    <textarea id="pubTexte" class="fld" style="width:100%;min-height:100px;margin-top:10px" placeholder="Texte du post…"></textarea>
+    <input id="pubImg" class="fld" style="width:100%;margin-top:8px" placeholder="Image (URL, optionnel)">
+    <div style="display:flex;gap:8px;margin-top:8px"><input id="pubDate" type="date" class="fld" style="flex:1"><input id="pubTime" type="time" value="09:00" class="fld" style="flex:1"></div>
+    <button class="btn" id="pubGo" style="margin-top:12px">🗓️ Programmer</button>
+    <div id="pubMsg" style="font-size:12.5px;min-height:16px;margin-top:8px;color:var(--muted)"></div>`,'col6');
+
+  const planning=currentPlanning();
+  planning.sort((a,b)=>(b.publier_le||'').localeCompare(a.publier_le||''));
+  add(`<h3>${ic('cal')} Calendrier — ${planning.length} post(s)<a class="mini gold" href="${revueURL()}" target="_blank" style="margin-left:auto;text-decoration:none">Visualiseur ↗</a></h3>
+    <div class="sub">Programmés &amp; publiés pour ${escP(ACTIVE.nom)}</div>
+    <div class="list" style="margin-top:10px">${planning.length?planning.map(p=>{const st=p.statut||'brouillon',col=(AwemaFmt.DIFFUSION[st]||{}).color||'#B3AA92';
+      return `<div class="li" style="align-items:flex-start;gap:10px;padding:11px 8px"><span style="font-size:11.4px;color:var(--muted);white-space:nowrap">${p.publier_le?new Date(p.publier_le).toLocaleString():'—'}</span><span style="flex:1;font-size:12.7px">${escP((p.contenu&&p.contenu.texte)||'').slice(0,140)}<div style="font-size:11px;color:var(--muted);margin-top:3px">${(p.reseaux||[]).join(' · ')}</div></span><span class="pill" style="border-color:${col}66;color:${col}">${st}</span></div>`;}).join(''):'<div class="sub">Aucun post planifié. Compose ci-dessus.</div>'}</div>`,'col12');
+
+  const n=new Date(),p2=x=>(x<10?'0':'')+x,dd=$("#pubDate"); if(dd)dd.value=n.getFullYear()+'-'+p2(n.getMonth()+1)+'-'+p2(n.getDate());
+  $("#pubGen").onclick=pubGenerer; $("#pubGo").onclick=pubProgrammer;
+}
+// Origine du contenu en cours de composition (traçabilité : la Rétrospective pourra
+// comparer les performances des posts IA / plan éditorial / manuels).
+let PUB_SRC=null;
+window.pubUse=function(btn){const cr=loadAgent(ACTIVE,'creatif'),it=((cr&&cr.items)||[])[+btn.dataset.ix];if(!it)return;
+  $("#pubTexte").value=(it.hook?it.hook+'\n\n':'')+(it.script||'');
+  $$("#pubNets input").forEach(i=>i.checked=(i.value===(it.reseau||'').toLowerCase()));
+  PUB_SRC={type:'ia-creatif',hook:(it.hook||'').slice(0,80),genere_le:(cr&&cr.genere_le)||null};
+  $("#pubTexte").scrollIntoView({behavior:'smooth',block:'center'});};
+// « Programmer » un contenu VALIDÉ du plan éditorial : pré-remplit le composeur
+// (texte = légende + hashtags, date/heure du plan, réseau coché) et trace plan_id.
+window.planUse=function(pid){
+  const it=ITEMS.find(x=>String(x.id)===String(pid)); if(!it)return;
+  const texte=[(it.legende||it.hook||it.titre||'').trim(),(it.hashtags||'').trim()].filter(Boolean).join('\n\n');
+  go('publier',{focus:'#pubTexte'});
+  setTimeout(()=>{
+    const t=$("#pubTexte"); if(!t)return;
+    t.value=texte;
+    $$("#pubNets input").forEach(i=>i.checked=(i.value===(it.plateforme||'').toLowerCase()));
+    const auj=new Date().toISOString().slice(0,10);
+    const dd=$("#pubDate"),tt=$("#pubTime");
+    if(dd)dd.value=(it.date&&it.date>=auj)?it.date:auj;   // jamais une date passée
+    if(tt&&/^\d{2}:\d{2}$/.test(it.heure||''))tt.value=it.heure;
+    PUB_SRC={type:'plan',plan_id:it.id,titre:(it.titre||'').slice(0,80)};
+    pubMsg('📋 Contenu n°'+String(it.id).padStart(3,'0')+' du plan chargé — vérifie et programme.','var(--gold,#D4AF37)');
+  },320);
+};
+function pubMsg(t,c){const m=$("#pubMsg");if(m){m.innerHTML=t;m.style.color=c||'var(--muted)';}}
+window.repEnvoyer=function(btn){
+  // Réponse in-app : fichier de file _reponses/<id>.json + reply.yml (même modèle que la publication).
+  const ix=btn.dataset.ix,inp=$("#repIn-"+ix),msgEl=$("#repMsg-"+ix);
+  const message=(inp&&inp.value||'').trim();
+  if(!message){msgEl.style.color='#FF7D9C';msgEl.textContent='Écris ta réponse d\'abord.';return;}
+  if(!window.AwemaGH){msgEl.style.color='#FF7D9C';msgEl.textContent='Module GitHub indisponible.';return;}
+  const slug=ACTIVE.slug||ACTIVE.id,dir=ACTIVE._dir||('modules/marketing/clients/'+slug);
+  const rid='r-'+Date.now().toString(36)+'-'+Math.random().toString(36).slice(2,7);
+  const item={id:rid,client:slug,reseau:'facebook',commentaire_id:btn.dataset.cid,message:message,
+    comptes:{facebook:ACTIVE.fb_page_id||null},statut:'a_envoyer',tentatives:0,cree_le:new Date().toISOString()};
+  btn.disabled=true;msgEl.style.color='var(--muted)';msgEl.textContent='Enregistrement…';
+  AwemaGH.ensure(function(){
+    AwemaGH.saveFile(dir+'/_donnees/_reponses/'+rid+'.json',item,'AWEMA : réponse à un commentaire ('+slug+')').then(function(){
+      AwemaGH.runWorkflow('reply.yml');
+      msgEl.style.color='#34E5C4';msgEl.textContent='✅ En file — le robot répond d\'ici ~1 min en tant que la Page.';
+      if(inp)inp.value='';btn.disabled=false;
+    }).catch(function(e){msgEl.style.color='#FF7D9C';msgEl.textContent='❌ '+(e.message||e);btn.disabled=false;});
+  });
+};
+function pubProgrammer(){
+  if(!window.AwemaGH){pubMsg('Module GitHub indisponible.','#FF7D9C');return;}
+  const reseaux=$$("#pubNets input:checked").map(i=>i.value);
+  if(!reseaux.length){pubMsg('Choisis au moins un réseau.','#FF7D9C');return;}
+  const texte=$("#pubTexte").value.trim(); if(!texte){pubMsg('Écris le texte du post.','#FF7D9C');return;}
+  const date=$("#pubDate").value,time=$("#pubTime").value||'09:00';
+  if(!date){pubMsg('Choisis une date.','#FF7D9C');return;}
+  const dt=new Date(date+'T'+time); if(isNaN(dt)){pubMsg('Date/heure invalide.','#FF7D9C');return;}
+  const slug=ACTIVE.slug||ACTIVE.id,dir=ACTIVE._dir||('modules/marketing/clients/'+slug);
+  const id='p-'+date.replace(/-/g,'')+'-'+time.replace(':','')+'-'+Math.random().toString(36).slice(2,8);
+  const media=[],img=$("#pubImg").value.trim(); if(img)media.push({type:'image',url:img});
+  // Source réelle : ia-creatif seulement si le texte porte encore l'accroche de la proposition
+  // (si l'humain a tout réécrit, c'est redevenu du manuel — on ne triche pas les stats).
+  let source='manuel',lien_plan=null,lien_prop=null;
+  if(PUB_SRC&&PUB_SRC.type==='plan'){source='plan';lien_plan=PUB_SRC.plan_id;}
+  else if(PUB_SRC&&PUB_SRC.type==='ia-creatif'&&PUB_SRC.hook&&texte.includes(PUB_SRC.hook.slice(0,30))){
+    source='ia-creatif';lien_prop={hook:PUB_SRC.hook,genere_le:PUB_SRC.genere_le};}
+  const item={id:id,client:slug,reseaux:reseaux,publier_le:dt.toISOString(),contenu:{texte:texte,lien:''},media:media,comptes:comptesPub(ACTIVE),statut:'programme',source:source,resultats:{},tentatives:0,cree_le:new Date().toISOString()};
+  if(lien_plan!=null)item.plan_id=lien_plan;
+  if(lien_prop)item.proposition=lien_prop;
+  pubMsg('Connexion à GitHub…');
+  AwemaGH.ensure(function(){ pubMsg('Enregistrement dans la file d\'attente…');
+    AwemaGH.saveFile(dir+'/_donnees/_planning/'+id+'.json',item,'AWEMA : planifie '+id).then(function(){
+      AwemaGH.runWorkflow('build.yml'); PLANNED_LOCAL.unshift(item); PUB_SRC=null;
+      pubMsg('✅ Programmé pour '+dt.toLocaleString()+' — visible dans le calendrier ci-dessous.','#34E5C4');
+      refreshPsub(); go('publier');
+    }).catch(function(e){pubMsg('❌ '+(e.message||e),'#FF7D9C');});
+  });
+}
+function pubGenerer(){
+  if(!window.AwemaGH){$("#pubGenMsg").textContent='Module GitHub indisponible.';return;}
+  const slug=ACTIVE.slug||ACTIVE.id,idee=($("#pubIdee").value||'').trim(),gm=$("#pubGenMsg");
+  gm.style.color='var(--muted)'; gm.textContent='Connexion à GitHub…';
+  AwemaGH.ensure(function(){ $("#pubGen").disabled=true; gm.textContent='Lancement de l\'IA…';
+    AwemaGH.latestRun('proposals.yml').then(function(prev){const base=prev&&prev.id;
+      return AwemaGH.runWorkflow('proposals.yml',{client:slug,idee:idee},true).then(function(){gm.textContent='⏳ Génération (~1 min)…';pubPoll(base,0);});
+    }).catch(function(e){$("#pubGen").disabled=false;gm.style.color='#FF7D9C';gm.textContent='❌ '+(e.message||e);});
+  });
+}
+function pubPoll(base,tries){const gm=$("#pubGenMsg");
+  if(tries>24){gm.textContent='⏳ Toujours en cours. Reviens dans une minute.';$("#pubGen").disabled=false;return;}
+  setTimeout(function(){ AwemaGH.latestRun('proposals.yml').then(function(run){
+    if(!run||run.id===base){pubPoll(base,tries+1);return;}
+    if(run.status!=='completed'){pubPoll(base,tries+1);return;}
+    if(run.conclusion==='success'){gm.style.color='var(--mint)';gm.textContent='✅ Généré ! Récupération…';pubAfterGen(0);}
+    else{gm.style.color='#FF7D9C';gm.innerHTML='❌ Échec — <a href="'+(run.url||'#')+'" target="_blank" style="color:var(--gold)">voir le détail</a>.';$("#pubGen").disabled=false;}
+  }).catch(function(){pubPoll(base,tries+1);}); },3000);
+}
+function pubAfterGen(tries){ dashRefetch().then(function(){const cr=loadAgent(ACTIVE,'creatif'),n=((cr&&cr.items)||[]).length;
+    if(n>0||tries>=8){$("#pubGen").disabled=false;refreshPsub();go('publier');} else setTimeout(function(){pubAfterGen(tries+1);},4000);
+  }).catch(function(){if(tries<8)setTimeout(function(){pubAfterGen(tries+1);},4000);else{$("#pubGen").disabled=false;refreshPsub();go('publier');}}); }
+
+/* ---------- Mémoire (formulaire natif ci-dessous) & Connecter (cartes natives plus bas) ---------- */
+function viewMemoire(){
+  if(!ACTIVE){add('<h3>Aucun client sélectionné</h3>','col12');return;}
+  // Rétrospective hebdomadaire (si générée) : leçons + suggestions de mémoire — l'humain décide.
+  const retro=(ACTIVE.agents&&ACTIVE.agents.retrospective)||null;
+  if(retro&&((retro.items||[]).length||(retro.suggestions_memoire||[]).length)){
+    const TCOL={succes:'#34E5C4',echec:'#FF7D9C',abandon:'#D4AF37'};
+    add(`<h3>${ic('spark')} Rétrospective de la semaine</h3>
+      <div class="sub">Ce que les données disent des propositions passées — à toi de mettre à jour la mémoire (rien n'est écrit automatiquement)</div>
+      ${(retro.items||[]).map(i=>{const col=TCOL[i.type]||'#FFC94D';return `<div class="li" style="align-items:flex-start;gap:10px;padding:10px 8px">
+        <span class="pill" style="border-color:${col}66;color:${col};flex:0 0 auto">${escP(i.type||'')}</span>
+        <span style="flex:1"><b style="font-size:13px">${escP(i.titre||'')}</b>
+          <div style="font-size:12.3px;color:var(--muted);margin-top:3px">${escP(i.lecon||'')}</div>
+          ${i.preuve&&i.preuve.metrique?`<div style="font-size:11px;color:var(--muted);margin-top:3px">📊 ${escP(i.preuve.metrique)} : ${escP(String(i.preuve.valeur??''))}</div>`:''}</span></div>`;}).join('')}
+      ${(retro.suggestions_memoire||[]).length?`<div style="margin-top:10px;padding:10px 12px;border:1px dashed var(--border);border-radius:11px">
+        <div style="font-size:11px;color:var(--gold,#D4AF37);text-transform:uppercase;letter-spacing:.05em;margin-bottom:7px">Suggestions pour la mémoire (à coller ci-dessous si tu valides)</div>
+        ${retro.suggestions_memoire.map(s=>`<div style="font-size:12.4px;margin-bottom:7px"><b>${escP(s.champ||'')}</b> — ${escP(s.suggestion||'')}
+          <span style="color:var(--muted)">(${escP(s.raison||'')})</span></div>`).join('')}</div>`:''}`,'col12');
+  }
+  // ---- Formulaire natif (plus d'iframe) : identité + listes, enregistré dans GitHub ----
+  const m=ACTIVE.memoire||{}, id=m.identite||{};
+  MEM_L.persona=(m.personas||[]).map(x=>({nom:x.nom||'',besoin:x.besoin||''}));
+  MEM_L.produit=(m.produits||[]).map(x=>({nom:x.nom||'',description:x.description||''}));
+  MEM_L.faq=(m.faq||[]).map(x=>({q:x.q||'',r:x.r||''}));
+  const fld=(idc,lab,val,ph)=>`<div><label style="font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em">${lab}</label>
+    <input id="${idc}" class="fld" style="width:100%;margin-top:4px" value="${escAttr(val)}" placeholder="${ph}"></div>`;
+  add(`<h3>${ic('layers')} Identité de marque <span class="pill" style="background:#EDA91422;color:#EDA914;border-color:#EDA91466">${escP(ACTIVE.nom)}</span></h3>
+    <div class="sub">L'ADN qui nourrit les agents IA — enregistré dans ton dépôt GitHub</div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px;margin-top:14px">
+      ${fld('memMission','Mission',id.mission,'Ce que la marque fait / pour qui')}
+      ${fld('memCible','Cible',id.cible,'Ex. jeunes pros 25-35, Abidjan')}
+      ${fld('memProp','Proposition de valeur',id.proposition_valeur,'Pourquoi elle, pas un concurrent')}
+      ${fld('memSecteur','Secteur',id.secteur||ACTIVE.secteur,'Optique, Tech, Restauration…')}
+      ${fld('memTon','Ton de voix',m.ton,'Ex. chaleureux, expert, accessible')}
+      ${fld('memMots','Mots-clés (virgules)',((m.charte||{}).mots_cles||[]).join(', '),'proximité, confiance, innovation')}
+    </div>
+    <div style="display:flex;gap:10px;align-items:center;margin-top:16px;flex-wrap:wrap">
+      <button class="btn" id="memSave">💾 Enregistrer la mémoire</button>
+      <span id="memMsg" style="font-size:12.5px;color:var(--muted)"></span>
+    </div>`,'col7');
+  add(`<h3>${ic('users')} Personas, produits &amp; FAQ</h3>
+    <div class="sub">Qui on vise, ce qu'on vend, ce qu'on répond</div>
+    ${['persona','produit','faq'].map(k=>`<div style="margin-top:12px">
+      <div style="display:flex;align-items:center;gap:8px"><b style="font-size:12.5px">${{persona:'👥 Personas',produit:'🛍️ Produits / services',faq:'❓ FAQ'}[k]}</b>
+        <button class="mini" onclick="memAdd('${k}')">+ Ajouter</button></div>
+      <div id="memL-${k}" style="margin-top:6px"></div></div>`).join('')}`,'col5');
+  ['persona','produit','faq'].forEach(memRender);
+  const b=$("#memSave"); if(b)b.onclick=memSave;
+}
+/* — état + helpers du formulaire mémoire — */
+const MEM_L={persona:[],produit:[],faq:[]};
+function memRender(k){
+  const cont=$("#memL-"+k); if(!cont)return;
+  const ph={persona:['Nom du persona','Besoin / objection'],produit:['Produit / service','Description courte'],faq:['Question','Réponse']}[k];
+  const fk={persona:['nom','besoin'],produit:['nom','description'],faq:['q','r']}[k];
+  cont.innerHTML=MEM_L[k].map((v,i)=>`<div style="display:flex;gap:6px;margin-bottom:6px">
+    <input class="fld" style="flex:1;font-size:12.5px" value="${escAttr(v[fk[0]])}" placeholder="${ph[0]}" oninput="MEM_L['${k}'][${i}]['${fk[0]}']=this.value">
+    <input class="fld" style="flex:1.4;font-size:12.5px" value="${escAttr(v[fk[1]])}" placeholder="${ph[1]}" oninput="MEM_L['${k}'][${i}]['${fk[1]}']=this.value">
+    <button class="mini" onclick="memRm('${k}',${i})" title="Supprimer">✕</button></div>`).join('')
+    ||'<div style="font-size:11.5px;color:var(--muted)">Aucun élément — « + Ajouter ».</div>';
+}
+window.memAdd=function(k){MEM_L[k].push(k==='faq'?{q:'',r:''}:(k==='persona'?{nom:'',besoin:''}:{nom:'',description:''}));memRender(k);};
+window.memRm=function(k,i){MEM_L[k].splice(i,1);memRender(k);};
+function memObj(){
+  const F=i=>(($("#"+i)||{}).value||'').trim();
+  const prev=ACTIVE.memoire||{};
+  return {
+    identite:{mission:F('memMission'),proposition_valeur:F('memProp'),cible:F('memCible'),secteur:F('memSecteur')},
+    ton:F('memTon'),
+    charte:{couleurs:(prev.charte||{}).couleurs||[],polices:(prev.charte||{}).polices||[],
+      mots_cles:F('memMots')?F('memMots').split(',').map(s=>s.trim()).filter(Boolean):[]},
+    personas:MEM_L.persona.filter(p=>p.nom),
+    produits:MEM_L.produit.filter(p=>p.nom),
+    faq:MEM_L.faq.filter(p=>p.q),
+    campagnes:prev.campagnes||[],performances_synthese:prev.performances_synthese||"",
+    references_visuelles:prev.references_visuelles||[]
+  };
+}
+function memSave(){
+  const msg=$("#memMsg"),btn=$("#memSave");
+  if(!window.AwemaGH){msg.style.color='#FF7D9C';msg.textContent='Module GitHub indisponible.';return;}
+  const slug=ACTIVE.slug||ACTIVE.id, mem=memObj();
+  btn.disabled=true;msg.style.color='var(--muted)';msg.textContent='💾 Enregistrement dans ton dépôt…';
+  AwemaGH.ensure(function(ok){
+    if(ok===false){btn.disabled=false;return;}
+    AwemaGH.saveFile('modules/marketing/clients/'+slug+'/_donnees/memoire.json',mem,'AWEMA : mémoire '+slug)
+      .then(function(){
+        ACTIVE.memoire=mem;                       // reflet immédiat sans attendre le build
+        msg.style.color='#34E5C4';
+        msg.textContent='✅ Enregistré ('+AwemaGH.who()+') — l\'IA met à jour tes propositions (1-2 min).';
+        AwemaGH.runWorkflow('agents.yml');
+      })
+      .catch(function(e){msg.style.color='#FF7D9C';msg.textContent='❌ '+(e.message||e);})
+      .then(function(){btn.disabled=false;});
+  });
+}
+/* ---------- Connecter les réseaux : section NATIVE (statuts réels, guides en pleine page) ---------- */
+const RX_CX=[
+  {id:'facebook', nom:'Facebook & Instagram', page:'connect-facebook.html', nets:['facebook','instagram'],
+   quoi:'Abonnés, posts, engagement, commentaires — toutes tes Pages deviennent des clients automatiquement.',
+   comment:'Un token Meta collé une fois (Secret META_TOKEN) → synchro chaque lundi 06:00.'},
+  {id:'tiktok', nom:'TikTok', page:'connect-tiktok.html', nets:['tiktok'],
+   quoi:'Abonnés, vidéos, vues, likes par compte TikTok autorisé.',
+   comment:'Connexion « Se connecter avec TikTok » (OAuth) — les tokens tournent, AWEMA les sauvegarde seul.'},
+  {id:'youtube', nom:'YouTube', page:'connect-youtube.html', nets:['youtube'],
+   quoi:'Abonnés et vues de chaîne (stats publiques).',
+   comment:'Une simple clé API Google (Secret YOUTUBE_API_KEY) — pas d\'OAuth.'},
+  {id:'linkedin', nom:'LinkedIn', page:'connect-linkedin.html', nets:['linkedin'],
+   quoi:'Abonnés de ta Page entreprise + publication programmée (texte & image).',
+   comment:'« Se connecter avec LinkedIn » (OAuth) — l\'échange se fait dans une Action GitHub.'},
+  {id:'whatsapp', nom:'WhatsApp Business', page:'connect-whatsapp.html', nets:[],
+   quoi:'Messagerie client (tunnel de conversion — post-bêta).',
+   comment:'Tokens WhatsApp Cloud API (Secrets) — guide pas-à-pas.'},
+  {id:'ia', nom:'IA — le cerveau', page:'connect-ia.html', nets:[],
+   quoi:'Analyste, Stratège, Créatif, Rétrospective : les agents qui travaillent pour toi.',
+   comment:'Une clé gratuite (Groq) suffit — à coller dans Réglages, sans quitter le dashboard.'}
+];
+function cxStats(nets){
+  let n=0,aud=0;
+  CLIENTS.forEach(c=>{
+    const pr=c.reseaux&&c.reseaux.par_reseau; if(!pr)return;
+    const on=nets.some(k=>{const v=pr[k];return v&&((v.abonnes||0)>0||(v.posts||0)>0);});
+    if(on){n++;nets.forEach(k=>{aud+=(pr[k]&&pr[k].abonnes)||0;});}
+  });
+  return {n,aud};
+}
+function viewConnecter(){
+  const iso=derniereSync();
+  add(`<h3>${ic('bubble')} Connecter les réseaux</h3>
+    <div class="sub">Chaque réseau connecté = données réelles fraîches chaque semaine. Les guides s'ouvrent en pleine page.</div>
+    ${iso?`<div style="margin-top:10px;font-size:12.5px;color:var(--muted)">📡 Dernière récupération : <b style="color:var(--tx)">${new Date(iso).toLocaleString()}</b> (${tempsRel(iso)})
+      <button class="mini gold" style="margin-left:8px" onclick="lancerSync($('#cxSyncMsg'))">🔄 Synchroniser maintenant</button>
+      <span id="cxSyncMsg" style="margin-left:6px"></span></div>`:''}`,'col12');
+  RX_CX.forEach(r=>{
+    const p=PLAT[r.id]||{c:'#FFC94D',grad:'var(--grad)'};
+    const st=r.nets.length?cxStats(r.nets):null;
+    const ok=st&&st.n>0;
+    add(`<div style="display:flex;align-items:center;gap:10px">
+        <div style="flex:0 0 auto">${PLAT[r.id]?pbadge(r.id):`<div class="ic" style="color:${p.c};background:${p.c}1a;border-color:${p.c}40">${ic(r.id==='ia'?'spark':'chat')}</div>`}</div>
+        <h3 style="margin:0">${r.nom}</h3>
+        ${st?`<span class="pill" style="margin-left:auto;border-color:${ok?'#34E5C4':'#B3AA92'}55;color:${ok?'#34E5C4':'var(--muted)'}">${ok?st.n+' client'+(st.n>1?'s':'')+' ✓':'à connecter'}</span>`
+            :`<span class="pill" style="margin-left:auto">${r.id==='ia'?'cerveau':'messagerie'}</span>`}
+      </div>
+      ${ok?`<div style="margin-top:8px;font-size:12.5px;color:var(--muted)">Audience suivie : <b style="color:var(--tx)">${nf(st.aud)}</b> abonnés</div>`:''}
+      <div style="margin-top:10px;font-size:12.6px;line-height:1.6"><b style="color:${p.c}">Ce que ça apporte.</b> ${r.quoi}</div>
+      <div style="margin-top:6px;font-size:12.2px;color:var(--muted);line-height:1.6"><b>Comment.</b> ${r.comment}</div>
+      <div style="display:flex;gap:8px;margin-top:14px;flex-wrap:wrap">
+        ${r.id==='ia'?`<button class="mini gold" onclick="go('reglages',{focus:'#rIaKey'})">⚡ Brancher l'IA ici →</button>`:''}
+        <a class="mini${r.id==='ia'?'':' gold'}" href="../../${r.page}" target="_blank" rel="noopener" style="text-decoration:none">${ok?'Guide / ajouter':'Connecter'} ↗</a>
+      </div>`,'col4');
+  });
+}
+/* ---------- Routeur de vues ---------- */
+const SECTIONS={overview:["Vue d'ensemble",viewOverview],publier:["Planifier & publier",viewPublier],memoire:["Mémoire Marketing",viewMemoire],connecter:["Connecter les réseaux",viewConnecter],calendrier:["Calendrier éditorial",viewCalendrier],
+  contenus:["Contenus",viewContenus],reseaux:["Présence digitale",viewReseaux],scoring:["Scoring A→E",viewScoring],
+  tunnel:["Tunnel WhatsApp",viewTunnel],auto:["Automatisation",viewAuto],clients:["Clients & présence digitale",viewClients],
+  reglages:["Réglages",viewReglages]};
+// Vues volontairement masquées en « bientôt » jusqu'à finition post-bêta (qualité > quantité).
+const BIENTOT=new Set(['tunnel','auto']);
+function viewBientot(titre){
+  add(`<div style="text-align:center;padding:30px 16px">
+    <div style="font-size:40px;line-height:1">🚧</div>
+    <h3 style="margin-top:12px">${titre} — <span style="color:var(--gold,#D4AF37)">bientôt</span></h3>
+    <div class="sub" style="margin-top:8px">Cette vue arrive après la bêta. On préfère livrer peu de
+      fonctionnalités, extrêmement bien finies, sur des données réelles.</div>
+    <div style="margin-top:14px;font-size:12.5px;color:var(--muted)">En attendant : la
+      <b>Vue d'ensemble</b>, la <b>Présence digitale</b> et les <b>Assistants IA</b> sont prêts.</div>
+  </div>`,'col12');
+}
+let CURRENT='overview';
+function skeleton(){
+  const g=$("#grid");g.innerHTML='';
+  ['col3','col3','col3','col3','col4','col4','col4','col8','col4'].forEach(s=>{const c=card(s);
+    c.innerHTML=`<div class="sk" style="height:14px;width:50%"></div><div class="sk" style="height:${s==='col8'?120:90}px;margin-top:16px"></div>`;g.appendChild(c);});
+}
+function go(section,opts){
+  if(!SECTIONS[section])section='overview';
+  CURRENT=section;
+  $$('#nav a').forEach(x=>x.classList.toggle('active',x.dataset.go===section));
+  $("#ptitle").textContent=SECTIONS[section][0];
+  $("#side").classList.remove('open');
+  skeleton();
+  setTimeout(()=>{$("#grid").innerHTML='';
+    if(BIENTOT.has(section)){viewBientot(SECTIONS[section][0]);}else{SECTIONS[section][1]();}
+    if(opts&&opts.focus)focusCard(opts.focus);},240);
+}
+// Guide l'œil après un go() : scrolle jusqu'à l'élément visé, surligne sa carte, focus le champ.
+// (Sans ça, les boutons « Générer / Planifier » donnaient l'impression d'un simple rechargement.)
+function focusCard(sel){
+  const el=$(sel); if(!el)return;
+  const carte=el.closest('.card')||el;
+  carte.scrollIntoView({behavior:'smooth',block:'center'});
+  carte.style.transition='box-shadow .35s';
+  carte.style.boxShadow='0 0 0 2px #FFC94D, 0 0 24px -6px rgba(255,201,77,.45)';
+  setTimeout(()=>{carte.style.boxShadow='';},1800);
+  if(typeof el.focus==='function')try{el.focus({preventScroll:true});}catch(e){}
+}
+
+/* ---------- Command palette ---------- */
+const NAVITEMS=[['overview','Vue d\'ensemble'],['publier','Planifier & publier'],['calendrier','Calendrier'],['contenus','Contenus'],['memoire','Mémoire Marketing'],['connecter','Connecter les réseaux'],['reseaux','Présence digitale'],['scoring','Scoring A→E'],['tunnel','Tunnel WhatsApp (bientôt)'],['auto','Automatisation (bientôt)'],['clients','Clients'],['reglages','Réglages']];
+function openCmd(){$("#cmdOv").classList.add('on');$("#cmdIn").value='';$("#cmdIn").focus();cmdRender('');}
+function closeCmd(){$("#cmdOv").classList.remove('on');}
+let cmdSel=0,cmdList=[];
+function cmdRender(q){
+  q=q.toLowerCase();
+  const navHits=NAVITEMS.filter(n=>n[1].toLowerCase().includes(q)).map(n=>({t:n[1],s:'Section',go:n[0]}));
+  const itemHits=ITEMS.filter(it=>it.titre.toLowerCase().includes(q)).slice(0,7).map(it=>({t:it.titre,s:it.plateforme+' · '+it.pilier,titre:it.titre}));
+  cmdList=[...navHits,...itemHits].slice(0,10);cmdSel=0;
+  $("#cmdRes").innerHTML=cmdList.length?cmdList.map((r,i)=>`<div class="r ${i===0?'sel':''}" data-i="${i}">
+    ${ic(r.go?'grid':'layers')}<div><div>${r.t}</div><small>${r.s}</small></div><span class="k">↵</span></div>`).join('')
+    :`<div style="padding:22px;text-align:center;color:var(--muted);font-size:13px">Aucun résultat</div>`;
+  $$('#cmdRes .r').forEach(el=>{el.onclick=()=>cmdGo(+el.dataset.i);el.onmouseenter=()=>{cmdSel=+el.dataset.i;cmdHi();};});
+}
+function cmdHi(){$$('#cmdRes .r').forEach((e,i)=>e.classList.toggle('sel',i===cmdSel));}
+function cmdGo(i){const r=cmdList[i];if(!r)return;closeCmd();
+  if(r.go){go(r.go);}
+  else{go('contenus');setTimeout(()=>{const s=$("#cSearch");if(s){s.value=r.titre;s.dispatchEvent(new Event('input'));}},300);}}
+
+/* ---------- init ---------- */
+function licenceBanner(){
+  const L=(window.AWEMA_REGISTRY&&window.AWEMA_REGISTRY.licence)||{};
+  if(L.statut==='active') return;
+  const m=$("#main"); if(!m||document.getElementById('licBan')) return;
+  const b=document.createElement('div'); b.id='licBan';
+  b.style.cssText='margin:0 0 12px;padding:11px 15px;border-radius:12px;border:1px solid var(--border2);background:linear-gradient(120deg,rgba(255,200,97,.14),rgba(255,125,156,.10));font-size:13px;display:flex;gap:10px;align-items:center;flex-wrap:wrap';
+  b.innerHTML='<span style="font-size:16px">🗝️</span><b>Instance non activée'+(L.statut==='revoquee'?' · licence révoquée':'')+'</b>'+
+    '<span style="color:var(--muted)">— pour brancher officiellement les API de tes clients, active ton accès auprès d\'AWEMA.</span>';
+  m.insertBefore(b, m.firstChild);
+}
+function boot(){
+  licenceBanner();
+  CLIENTS=(window.AWEMA_REGISTRY&&window.AWEMA_REGISTRY.clients)||[];
+  if(!CLIENTS.length&&window.CAMPAGNE){CLIENTS=[{id:'client-standalone',nom:window.CAMPAGNE.client||'Client',
+    lieu:window.CAMPAGNE.lieu||'',secteur:'',statut:'actif',profils:{},reseaux:null,
+    campagne:{total:window.CAMPAGNE.total,contenus:window.CAMPAGNE.contenus}}];}
+  $("#who").innerHTML=((window.AWEMA_CONFIG&&window.AWEMA_CONFIG.nom)||'AWEMA')+'<small>Directeur Marketing</small>';
+  const sel=$("#clientSel");
+  sel.innerHTML=CLIENTS.length?CLIENTS.map(c=>`<option value="${c.id}">${c.nom}</option>`).join(''):'<option>— aucun client —</option>';
+  let saved=null;try{saved=localStorage.getItem('awema-client');}catch(e){}
+  const qp=new URLSearchParams(location.search).get('client');
+  const init=CLIENTS.find(c=>c.id===qp)||CLIENTS.find(c=>c.id===saved)||CLIENTS[0];
+  skeleton();
+  if(!init){$("#psub").textContent='Aucun client';
+    setTimeout(()=>{$("#grid").innerHTML='';add(`<h3>${ic('users')} Aucun client</h3><div class="sub">Registre vide</div>
+      <div style="margin-top:12px;color:var(--muted);font-size:12.5px">Ajoutez un client (voir <code>outils/_data/README.md</code>) puis régénérez le registre.</div>`,'col12');},300);return;}
+  sel.value=init.id;
+  majFraicheur();
+  // Deep-link ?section=publier|memoire|reseaux… (utilisé par la redirection planifier.html)
+  const sec=new URLSearchParams(location.search).get('section');
+  if(sec&&SECTIONS[sec])CURRENT=sec;
+  setTimeout(()=>setClient(init.id),400);
+}
+// events
+$("#themeBtn").onclick=()=>{const h=document.documentElement;const d=h.getAttribute('data-theme')==='dark';
+  h.setAttribute('data-theme',d?'light':'dark');$("#themeBtn").innerHTML=ic(d?'sun':'moon');toast(d?'Thème clair':'Thème sombre');};
+$("#hamb").onclick=e=>{e.stopPropagation();$("#side").classList.toggle('open');};
+$("#main").addEventListener('click',e=>{if(e.target.closest('#hamb'))return;$("#side").classList.remove('open');});
+$("#cmdkBtn").onclick=openCmd;
+$("#newBtn").onclick=()=>go('publier',{focus:'#pubTexte'});
+$("#cmdIn").oninput=e=>cmdRender(e.target.value);
+$("#cmdOv").onclick=e=>{if(e.target===$("#cmdOv"))closeCmd();};
+$$('#nav a').forEach(a=>a.onclick=()=>go(a.dataset.go));
+$("#clientSel").onchange=e=>setClient(e.target.value);
+document.addEventListener('keydown',e=>{
+  if((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==='k'){e.preventDefault();openCmd();}
+  if(e.key==='Escape')closeCmd();
+  if($("#cmdOv").classList.contains('on')){
+    if(e.key==='ArrowDown'){e.preventDefault();cmdSel=Math.min(cmdSel+1,cmdList.length-1);cmdHi();}
+    if(e.key==='ArrowUp'){e.preventDefault();cmdSel=Math.max(cmdSel-1,0);cmdHi();}
+    if(e.key==='Enter')cmdGo(cmdSel);
+  }
+});
+boot();
+</script>
+<script src="../_design/abeille.js" data-aide="dashboard"></script>
+</body>
+</html>
