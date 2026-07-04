@@ -1,13 +1,83 @@
 {
   "agent": "actions-du-jour",
-  "genere_le": "2026-06-26T08:08:00+00:00",
-  "modele": "agrégation (démo)",
-  "provenance": {"client": "demo-client", "demo": true},
+  "genere_le": "2026-07-04T09:04:55+00:00",
+  "modele": "agrégation (sans IA)",
+  "provenance": {
+    "client": "demo-client",
+    "genere_par": "run-agent.py"
+  },
   "items": [
-    {"priorite": 1, "type": "inbox", "titre": "5 commentaires à répondre", "detail": "Des prospects demandent les prix — réponds vite pour convertir.", "source": "a_repondre", "action": {"label": "Répondre", "kind": "view", "target": "reseaux"}},
-    {"priorite": 1, "type": "alerte", "titre": "Cadence en retard — 9 j sans publier", "detail": "La régularité nourrit l'algorithme. Publie aujourd'hui.", "source": "cadence", "action": {"label": "Voir la présence", "kind": "view", "target": "reseaux"}},
-    {"priorite": 2, "type": "reco", "titre": "Double tes Reels avant/après", "detail": "Programme 2 Reels avant/après cette semaine.", "source": "analyste", "action": {"label": "Voir l'analyse", "kind": "view", "target": "reseaux"}},
-    {"priorite": 2, "type": "plan", "titre": "Publie : Routine peau grasse en 3 étapes", "detail": "TikTok · Reel · Mardi 18h", "source": "stratege", "action": {"label": "Voir le plan", "kind": "view", "target": "overview"}},
-    {"priorite": 3, "type": "creatif", "titre": "Idée prête : Ta peau mérite 15 minutes par jour.", "detail": "TikTok · Reel", "source": "creatif", "action": {"label": "Voir les idées", "kind": "view", "target": "overview"}}
+    {
+      "priorite": 1,
+      "type": "alerte",
+      "titre": "Cadence en retard — 9 j sans publier",
+      "detail": "La régularité nourrit l'algorithme. Publie aujourd'hui.",
+      "source": "cadence",
+      "action": {
+        "label": "Voir la présence",
+        "kind": "view",
+        "target": "reseaux"
+      }
+    },
+    {
+      "priorite": 1,
+      "type": "inbox",
+      "titre": "5 commentaire(s) à répondre",
+      "detail": "Réponds vite pour entretenir la communauté.",
+      "source": "a_repondre",
+      "action": {
+        "label": "Répondre",
+        "kind": "view",
+        "target": "reseaux"
+      }
+    },
+    {
+      "priorite": 2,
+      "type": "reco",
+      "titre": "Réponds aux 5 commentaires en attente",
+      "detail": "Réponds aujourd'hui via l'inbox",
+      "source": "analyste",
+      "action": {
+        "label": "Voir l'analyse",
+        "kind": "view",
+        "target": "reseaux"
+      }
+    },
+    {
+      "priorite": 2,
+      "type": "plan",
+      "titre": "Publie : Routine peau grasse en 3 étapes (persona Aïcha)",
+      "detail": "TikTok · Reel · Mardi",
+      "source": "stratege",
+      "action": {
+        "label": "Voir le plan",
+        "kind": "view",
+        "target": "overview"
+      }
+    },
+    {
+      "priorite": 3,
+      "type": "opportunite",
+      "titre": "Ton format gagnant : Reel",
+      "detail": "Engagement moyen 520 — reproduis-le.",
+      "source": "types_contenu",
+      "action": {
+        "label": "Idées créatives",
+        "kind": "view",
+        "target": "overview"
+      }
+    },
+    {
+      "priorite": 3,
+      "type": "creatif",
+      "titre": "Idée prête : Ta peau mérite 15 minutes par jour. Pas plus.",
+      "detail": "TikTok · Reel",
+      "source": "creatif",
+      "action": {
+        "label": "Voir les idées",
+        "kind": "view",
+        "target": "overview"
+      }
+    }
   ]
 }
