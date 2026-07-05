@@ -1,0 +1,21 @@
+{
+  "id": "abidjan-residences",
+  "nom": "Abidjan résidences",
+  "secteur": "",
+  "lieu": "",
+  "module": "marketing",
+  "statut": "actif",
+  "initiales": "AR",
+  "reseaux": {
+    "facebook": "",
+    "instagram": "",
+    "tiktok": "https://www.tiktok.com/",
+    "linkedin": "",
+    "whatsapp": ""
+  },
+  "chemins": {
+    "campagne": "_donnees/campagne.json",
+    "reseaux": "_donnees/reseaux.json",
+    "revue": "../../../../outils/revue-visuels/index.html?client=abidjan-residences"
+  }
+}
