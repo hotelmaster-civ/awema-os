@@ -25,7 +25,7 @@
       "commentaires": 167,
       "partages": 90,
       "portee": null,
-      "vues": 41357
+      "vues": 41376
     },
     "linkedin": {
       "abonnes": null,
@@ -55,7 +55,7 @@
       "likes": 8918,
       "commentaires": 110,
       "partages": 73,
-      "vues": 32575,
+      "vues": 32584,
       "type": "vidéo"
     },
     {
@@ -66,7 +66,7 @@
       "likes": 66,
       "commentaires": 8,
       "partages": 3,
-      "vues": 1822,
+      "vues": 1829,
       "type": "vidéo"
     },
     {
@@ -88,7 +88,7 @@
       "likes": 62,
       "commentaires": 3,
       "partages": 0,
-      "vues": 551,
+      "vues": 552,
       "type": "vidéo"
     },
     {
@@ -99,7 +99,7 @@
       "likes": 57,
       "commentaires": 5,
       "partages": 1,
-      "vues": 546,
+      "vues": 547,
       "type": "vidéo"
     },
     {
@@ -139,8 +139,8 @@
   "tiktok": {
     "abonnes": 4198,
     "video_count": 51,
-    "likes_total": 21825,
-    "vues_recentes": 41357,
+    "likes_total": 21826,
+    "vues_recentes": 41376,
     "display_name": "Abidjan résidences",
     "dernier_post": "2026-06-12T22:03:37+00:00",
     "top_videos": [
@@ -152,7 +152,7 @@
         "likes": 8918,
         "commentaires": 110,
         "partages": 73,
-        "vues": 32575,
+        "vues": 32584,
         "type": "vidéo"
       },
       {
@@ -163,7 +163,7 @@
         "likes": 66,
         "commentaires": 8,
         "partages": 3,
-        "vues": 1822,
+        "vues": 1829,
         "type": "vidéo"
       },
       {
@@ -196,7 +196,7 @@
         "likes": 62,
         "commentaires": 3,
         "partages": 0,
-        "vues": 551,
+        "vues": 552,
         "type": "vidéo"
       },
       {
@@ -207,7 +207,7 @@
         "likes": 57,
         "commentaires": 5,
         "partages": 1,
-        "vues": 546,
+        "vues": 547,
         "type": "vidéo"
       },
       {
@@ -233,15 +233,15 @@
         "type": "vidéo"
       }
     ],
-    "maj": "2026-07-05T08:23:12+00:00"
+    "maj": "2026-07-06T17:22:42+00:00"
   },
   "visuels": {
-    "photo": "https://p16-common-sign.tiktokcdn.com/tos-maliva-avt-0068/3c3862e41453e767e1c3d0af81c24faf~tplv-tiktokx-cropcenter:168:168.jpeg?dr=14577&refresh_token=7a719394&x-expires=1783411200&x-signature=cg22g0Eh07TpWZqhXU9iGH4bWvY%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=8aecc5ac&idc=my2"
+    "photo": "https://p16-common-sign.tiktokcdn.com/tos-maliva-avt-0068/3c3862e41453e767e1c3d0af81c24faf~tplv-tiktokx-cropcenter:168:168.jpeg?dr=14577&refresh_token=1e2771f4&x-expires=1783530000&x-signature=a29sq4MzyzTE6U7Z8qpdWLODZ%2F8%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=8aecc5ac&idc=my"
   },
   "cadence_reseaux": {
     "tiktok": {
       "dernier_post": "2026-06-12T22:03:37+00:00",
-      "jours_depuis": 22,
+      "jours_depuis": 23,
       "posts_30j": 1,
       "posts_par_semaine": 0.2
     }
@@ -269,14 +269,14 @@
     "commentaires": 167,
     "partages": 90,
     "portee": null,
-    "vues": 41357,
+    "vues": 41376,
     "engagement_taux": null
   },
   "connecte": true,
-  "maj": "2026-07-05T08:23:12+00:00",
+  "maj": "2026-07-06T17:22:42+00:00",
   "cadence": {
     "dernier_post": "2026-06-12T22:03:37+00:00",
-    "jours_depuis": 22,
+    "jours_depuis": 23,
     "posts_30j": 1,
     "posts_par_semaine": 0.2,
     "dernier_reseau": "TikTok",
@@ -285,6 +285,10 @@
   "evolution_audience": [
     {
       "date": "2026-07-05",
+      "valeur": 4198
+    },
+    {
+      "date": "2026-07-06",
       "valeur": 4198
     }
   ]
