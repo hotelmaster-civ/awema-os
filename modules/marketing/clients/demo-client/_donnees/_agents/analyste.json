@@ -1,13 +1,72 @@
 {
   "agent": "analyste",
-  "genere_le": "2026-06-26T08:05:00+00:00",
-  "modele": "claude-opus-4-8 (démo)",
-  "provenance": {"client": "demo-client", "fichiers": ["reseaux.json", "memoire.json"], "demo": true},
+  "genere_le": "2026-07-06T17:26:17+00:00",
+  "modele": "llama-3.3-70b-versatile",
+  "provenance": {
+    "client": "demo-client",
+    "fichiers": [
+      "reseaux.json",
+      "memoire.json"
+    ],
+    "genere_par": "run-agent.py"
+  },
   "items": [
-    {"type": "insight", "titre": "TikTok est ton moteur de notoriété", "explication": "12 500 abonnés et 88 000 likes : c'est ton canal le plus viral, porté par les Reels.", "preuve": {"metrique": "abonnes_tiktok", "valeur": 12500}},
-    {"type": "insight", "titre": "Les Reels surperforment largement", "explication": "Engagement moyen 520 sur les Reels contre 140 sur les photos : le format vidéo court gagne nettement.", "preuve": {"metrique": "engagement_moyen_reel", "valeur": 520}},
-    {"type": "insight", "titre": "Instagram est ton audience la plus réactive", "explication": "6 800 abonnés pour 5 200 likes récents : idéal pour pousser les offres et le forfait mariée.", "preuve": {"metrique": "likes_instagram", "valeur": 5200}},
-    {"type": "reco", "titre": "Réponds aux 5 commentaires en attente", "explication": "Des prospects demandent les prix du forfait mariée — réponds vite pour convertir.", "preuve": {"metrique": "commentaires_a_repondre", "valeur": 5}, "action": "Réponds aujourd'hui via l'inbox"},
-    {"type": "reco", "titre": "Double tes Reels avant/après", "explication": "Ton meilleur post est un avant/après : reproduis ce format chaque semaine.", "preuve": {"metrique": "likes_top_post", "valeur": 5400}, "action": "Programme 2 Reels avant/après cette semaine"}
+    {
+      "type": "insight",
+      "titre": "Performance de TikTok",
+      "explication": "TikTok montre une audience importante et un taux d'engagement élevé, notamment avec le format Reel.",
+      "preuve": {
+        "metrique": "likes sur TikTok",
+        "valeur": 88000
+      }
+    },
+    {
+      "type": "reco",
+      "titre": "Publier des contenus Reel sur TikTok",
+      "explication": "Poursuivre la publication de contenus Reel sur TikTok pour maintenir l'engagement élevé.",
+      "preuve": {
+        "metrique": "engagement moyen des Reel",
+        "valeur": 520
+      },
+      "action": "Publier au moins un Reel par semaine sur TikTok"
+    },
+    {
+      "type": "insight",
+      "titre": "Évolution de l'audience",
+      "explication": "L'audience a augmenté régulièrement sur les 3 derniers mois, ce qui indique une stratégie de contenu efficace.",
+      "preuve": {
+        "metrique": "audience globale",
+        "valeur": 23500
+      }
+    },
+    {
+      "type": "reco",
+      "titre": "Interagir avec les commentateurs",
+      "explication": "Répondre aux commentaires et messages pour améliorer l'engagement et la fidélité des followers.",
+      "preuve": {
+        "metrique": "nombre de commentaires",
+        "valeur": 1230
+      },
+      "action": "Répondre à tous les commentaires et messages dans les 24 heures"
+    },
+    {
+      "type": "insight",
+      "titre": "Meilleur créneau horaire",
+      "explication": "Le jeudi à 19h est le meilleur moment pour publier du contenu pour maximiser l'engagement.",
+      "preuve": {
+        "metrique": "engagement du jeudi à 19h",
+        "valeur": 260
+      }
+    },
+    {
+      "type": "reco",
+      "titre": "Planifier les publications",
+      "explication": "Utiliser les données sur les meilleurs créneaux horaires pour planifier les publications et maximiser l'engagement.",
+      "preuve": {
+        "metrique": "meilleur créneau",
+        "valeur": "Jeudi 19h"
+      },
+      "action": "Planifier les publications à venir pour le jeudi à 19h"
+    }
   ]
 }

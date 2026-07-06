@@ -1,0 +1,72 @@
+{
+  "agent": "stratege",
+  "genere_le": "2026-07-06T17:26:57+00:00",
+  "modele": "llama-3.3-70b-versatile",
+  "provenance": {
+    "client": "abidjan-residences",
+    "fichiers": [
+      "reseaux.json"
+    ],
+    "genere_par": "run-agent.py"
+  },
+  "items": [
+    {
+      "jour": "Lundi",
+      "heure": "19h",
+      "format": "Vidéo",
+      "angle": "Découverte d'un nouveau lieu à Abidjan",
+      "reseau": "TikTok"
+    },
+    {
+      "jour": "Mercredi",
+      "heure": "12h",
+      "format": "Story",
+      "angle": "Conseils pour un séjour à Abidjan",
+      "reseau": "TikTok"
+    },
+    {
+      "jour": "Vendredi",
+      "heure": "14h",
+      "format": "Vidéo",
+      "angle": "Présentation d'une résidence à Abidjan",
+      "reseau": "TikTok"
+    },
+    {
+      "jour": "Samedi",
+      "heure": "10h",
+      "format": "Photo",
+      "angle": "Les meilleures plages d'Abidjan",
+      "reseau": "TikTok"
+    },
+    {
+      "jour": "Dimanche",
+      "heure": "18h",
+      "format": "Vidéo",
+      "angle": "Expérience client à Abidjan Résidences",
+      "reseau": "TikTok"
+    },
+    {
+      "jour": "Mardi",
+      "heure": "15h",
+      "format": "Livre ouvert",
+      "angle": "Les secrets d'Abidjan révélés",
+      "reseau": "TikTok"
+    },
+    {
+      "jour": "Jeudi",
+      "heure": "20h",
+      "format": "Question-Réponse",
+      "angle": "Réponses à vos questions sur Abidjan",
+      "reseau": "TikTok"
+    }
+  ],
+  "cadence_recommandee": "4 publications/semaine",
+  "meilleures_heures": [
+    "Vendredi 14h"
+  ],
+  "objectifs": [
+    "Augmenter de 20% les abonnés sur TikTok en 3 mois",
+    "Maintenir un taux d'engagement moyen de 2% sur les publications",
+    "Publier au moins 80% de contenu vidéo"
+  ]
+}

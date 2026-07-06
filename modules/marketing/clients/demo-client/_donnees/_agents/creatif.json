@@ -1,22 +1,45 @@
 {
   "agent": "creatif",
-  "genere_le": "2026-06-26T08:07:00+00:00",
-  "modele": "claude-sonnet-4-6 (démo)",
-  "provenance": {"client": "demo-client", "demo": true},
+  "genere_le": "2026-07-06T17:28:01+00:00",
+  "modele": "llama-3.3-70b-versatile",
+  "provenance": {
+    "client": "demo-client",
+    "fichiers": [
+      "memoire.json",
+      "reseaux.json"
+    ],
+    "genere_par": "run-agent.py"
+  },
   "items": [
     {
-      "hook": "Ta peau mérite 15 minutes par jour. Pas plus.",
-      "script": "Hook → 3 gestes simples (nettoyer, hydrater, protéger) → « le 4e geste que personne ne fait » → CTA : réserve ton soin éclat sur WhatsApp.",
-      "format": "Reel", "reseau": "TikTok",
-      "prompt_image": "Jeune femme africaine souriante, peau lumineuse, lumière douce dorée, institut moderne épuré, charte or & bleu nuit, cadrage vertical",
-      "variantes": ["Le secret d'une peau qui brille (sans filtre)", "Routine peau en 15 min chrono"]
+      "hook": "Découvrez notre secret pour une peau éclatante !",
+      "script": "Vous rêvez d'une peau parfaite ? Notre soin visage éclat est là pour vous ! En quelques étapes, nous vous offrons un nettoyage profond et une hydratation intense. Résultat : une peau lumineuse et rayonnante ! Réservez maintenant et découvrez notre secret pour une peau éclatante !",
+      "format": "Reel",
+      "reseau": "TikTok",
+      "prompt_image": "Une femme avec une peau éclatante, souriante, avec des flocons d'or et des pétales de fleurs autour d'elle, fond beige #D4AF37, texte 'Soin visage éclat' en #0A1F44",
+      "variantes": [
+        "Comment obtenir une peau éclatante en quelques étapes ?"
+      ]
     },
     {
-      "hook": "Future mariée ? Ta peau se prépare maintenant, pas la veille.",
-      "script": "Carrousel : J-90 diagnostic, J-60 soins ciblés, J-30 éclat, jour J teint parfait. CTA : forfait mariée -10% ce mois.",
-      "format": "Carrousel", "reseau": "Instagram",
-      "prompt_image": "Mariée africaine radieuse, teint parfait, voile délicat, fond doré élégant, ambiance premium",
-      "variantes": ["3 mois pour un teint de mariée parfait"]
+      "hook": "Préparez-vous pour le grand jour avec notre forfait mariée !",
+      "script": "Vous vous mariez bientôt ? Nous avons créé un forfait spécial pour vous aider à resplendir le jour J ! 3 séances de soins personnalisés pour vous donner une peau parfaite. Devenez la mariée la plus éclatante de l'année ! Réservez votre forfait dès maintenant !",
+      "format": "Carrousel",
+      "reseau": "Instagram",
+      "prompt_image": "Une mariée avec une peau parfaite, souriante, avec une robe de mariée et des fleurs, fond #0A1F44, texte 'Forfait mariée' en #D4AF37",
+      "variantes": [
+        "Rêvez d'une peau parfaite pour votre mariage ? Nous avons la solution !"
+      ]
+    },
+    {
+      "hook": "Comment prendre soin de votre peau en cette période chaude ?",
+      "script": "La chaleur est arrivée ! Mais comment prendre soin de votre peau pour qu'elle reste éclatante ? Nous vous partageons nos meilleures astuces pour une peau parfaite en toutes saisons ! Découvrez nos conseils et réservez un soin pour vous ressourcer !",
+      "format": "Short",
+      "reseau": "Facebook",
+      "prompt_image": "Une femme avec une peau éclatante, au bord de la piscine, avec des palmiers et des fleurs, fond #D4AF37, texte 'Soin de soi' en #0A1F44",
+      "variantes": [
+        "La chaleur vous dessèche la peau ? Nous avons les solutions pour vous !"
+      ]
     }
   ]
 }

@@ -1,0 +1,71 @@
+{
+  "agent": "analyste",
+  "genere_le": "2026-07-06T17:25:45+00:00",
+  "modele": "llama-3.3-70b-versatile",
+  "provenance": {
+    "client": "abidjan-residences",
+    "fichiers": [
+      "reseaux.json"
+    ],
+    "genere_par": "run-agent.py"
+  },
+  "items": [
+    {
+      "type": "insight",
+      "titre": "TikTok est le réseau le plus performant",
+      "explication": "Le compte Abidjan résidences a le plus d'interactions sur TikTok avec 9472 likes, 167 commentaires et 90 partages.",
+      "preuve": {
+        "metrique": "likes",
+        "valeur": 9472
+      }
+    },
+    {
+      "type": "insight",
+      "titre": "Les vidéos sont les contenus les plus populaires",
+      "explication": "Les top posts sont tous des vidéos, notamment la vidéo '#collage avec @Tdfmanga' qui a obtenu 8918 likes.",
+      "preuve": {
+        "metrique": "likes",
+        "valeur": 8918
+      }
+    },
+    {
+      "type": "reco",
+      "titre": "Publier plus de vidéos sur TikTok",
+      "explication": "Pour augmenter l'engagement, il est recommandé de publier plus de vidéos sur TikTok, notamment celles qui mettent en valeur la résidence et ses environs.",
+      "preuve": {
+        "metrique": "likes",
+        "valeur": 8918
+      },
+      "action": "Publier au moins une vidéo par semaine sur TikTok"
+    },
+    {
+      "type": "reco",
+      "titre": "Augmenter la fréquence de publication",
+      "explication": "La cadence actuelle est de 0,2 post par semaine, il est recommandé d'augmenter cette fréquence pour maintenir l'intérêt des abonnés.",
+      "preuve": {
+        "metrique": "posts_par_semaine",
+        "valeur": 0.2
+      },
+      "action": "Publier au moins 2 fois par semaine sur TikTok"
+    },
+    {
+      "type": "insight",
+      "titre": "La journée la plus performante est le vendredi",
+      "explication": "Selon les données, le vendredi est la journée la plus performante pour les publications sur TikTok.",
+      "preuve": {
+        "metrique": "jour",
+        "valeur": "Vendredi"
+      }
+    },
+    {
+      "type": "reco",
+      "titre": "Publier à l'heure la plus performante",
+      "explication": "Il est recommandé de publier à l'heure la plus performante, qui est 14h le vendredi.",
+      "preuve": {
+        "metrique": "heure",
+        "valeur": "14h"
+      },
+      "action": "Publier systématiquement à 14h le vendredi sur TikTok"
+    }
+  ]
+}

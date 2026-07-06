@@ -1,15 +1,74 @@
 {
   "agent": "stratege",
-  "genere_le": "2026-06-26T08:06:00+00:00",
-  "modele": "claude-opus-4-8 (démo)",
-  "provenance": {"client": "demo-client", "demo": true},
-  "cadence_recommandee": "4 publications/semaine (vs 2 actuellement)",
-  "meilleures_heures": ["Jeudi 19h", "Samedi 11h", "Mardi 18h"],
-  "objectifs": ["Passer de 2 à 4 posts/semaine en 30 jours", "Convertir 10 prospects « forfait mariée » via Instagram", "Atteindre 15 000 abonnés TikTok"],
+  "genere_le": "2026-07-06T17:27:29+00:00",
+  "modele": "llama-3.3-70b-versatile",
+  "provenance": {
+    "client": "demo-client",
+    "fichiers": [
+      "reseaux.json",
+      "memoire.json"
+    ],
+    "genere_par": "run-agent.py"
+  },
   "items": [
-    {"jour": "Mardi", "heure": "18h", "format": "Reel", "angle": "Routine peau grasse en 3 étapes (persona Aïcha)", "reseau": "TikTok"},
-    {"jour": "Jeudi", "heure": "19h", "format": "Carrousel", "angle": "Avant/Après soin éclat + offre du mois", "reseau": "Instagram"},
-    {"jour": "Samedi", "heure": "11h", "format": "Reel", "angle": "Préparation peau future mariée (forfait)", "reseau": "TikTok"},
-    {"jour": "Dimanche", "heure": "17h", "format": "Post", "angle": "Témoignage cliente + réservation WhatsApp", "reseau": "Facebook"}
+    {
+      "jour": "Lundi",
+      "heure": "19h",
+      "format": "Reel",
+      "angle": "Routine de soin de peau pour les jours de la semaine",
+      "reseau": "TikTok"
+    },
+    {
+      "jour": "Mercredi",
+      "heure": "12h",
+      "format": "Carrousel",
+      "angle": "Avantages des soins de visage pour une peau saine",
+      "reseau": "Instagram"
+    },
+    {
+      "jour": "Jeudi",
+      "heure": "19h",
+      "format": "Photo",
+      "angle": "Présentation d'un produit nouveau pour les soins de peau",
+      "reseau": "Instagram"
+    },
+    {
+      "jour": "Samedi",
+      "heure": "15h",
+      "format": "Reel",
+      "angle": "Conseils de beauté pour les weekends",
+      "reseau": "TikTok"
+    },
+    {
+      "jour": "Dimanche",
+      "heure": "18h",
+      "format": "Carrousel",
+      "angle": "Routine de soin de peau pour le dimanche",
+      "reseau": "Instagram"
+    },
+    {
+      "jour": "Mardi",
+      "heure": "12h",
+      "format": "Photo",
+      "angle": "Publicité pour un forfait spécial",
+      "reseau": "Facebook"
+    },
+    {
+      "jour": "Vendredi",
+      "heure": "19h",
+      "format": "Reel",
+      "angle": "Soin de peau pour les futures mariées",
+      "reseau": "TikTok"
+    }
+  ],
+  "cadence_recommandee": "3 publications/semaine",
+  "meilleures_heures": [
+    "Jeudi 19h",
+    "Samedi 15h"
+  ],
+  "objectifs": [
+    "Augmenter le nombre de followers sur TikTok de 20% en 3 mois",
+    "Maintenir un taux d'engagement moyen de 4% sur les publications Instagram",
+    "Accroître les interactions sur les publications Facebook de 30% en 2 mois"
   ]
 }

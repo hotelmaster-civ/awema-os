@@ -1,0 +1,44 @@
+{
+  "agent": "creatif",
+  "genere_le": "2026-07-06T17:27:50+00:00",
+  "modele": "llama-3.3-70b-versatile",
+  "provenance": {
+    "client": "abidjan-residences",
+    "fichiers": [
+      "reseaux.json"
+    ],
+    "genere_par": "run-agent.py"
+  },
+  "items": [
+    {
+      "hook": "Découvrez les résidences qui ferment le débat !",
+      "script": "Vous cherchez un endroit où vivre à Abidjan ? Venez découvrir nos résidences modernes et confortables ! De la sécurité à la commodité, tout y est pour un confort absolu. Inscrivez-vous dès maintenant pour une visite guidée !",
+      "format": "Reel",
+      "reseau": "TikTok",
+      "prompt_image": "Une résidence moderne avec piscine et jardin à Abidjan",
+      "variantes": [
+        "Abidjan résidences, le meilleur choix pour votre nouvelle vie !"
+      ]
+    },
+    {
+      "hook": "Un séjour d'exception à Abidjan ?",
+      "script": "Que vous soyez en déplacement pour affaires ou pour le plaisir, nos résidences à Abidjan offrent tout le confort nécessaire pour un séjour exceptionnel. Piscine, salle de sport, et encore plus ! Réservez votre appartement dès aujourd'hui !",
+      "format": "Carrousel",
+      "reseau": "TikTok",
+      "prompt_image": "Un appartement luxueux avec vue sur la ville d'Abidjan",
+      "variantes": [
+        "Élevez votre expérience de séjour à Abidjan !"
+      ]
+    },
+    {
+      "hook": "Recherchez votre nouvelle maison à Abidjan !",
+      "script": "Vous rêvez d’une maison spacieuse et moderne à Abidjan ? Nous proposons des résidences de haute qualité, idéales pour les familles et les professionnels. Découvrez nos offres et trouvez votre future maison !",
+      "format": "Post",
+      "reseau": "TikTok",
+      "prompt_image": "Une maison individuelle avec jardin et piscine à Abidjan",
+      "variantes": [
+        "Trouvez votre chez-vous idéal à Abidjan dès aujourd'hui !"
+      ]
+    }
+  ]
+}

@@ -3,14 +3,14 @@
   "genere_le": "2026-07-06T17:28:01+00:00",
   "modele": "agrégation (sans IA)",
   "provenance": {
-    "client": "demo-client",
+    "client": "abidjan-residences",
     "genere_par": "run-agent.py"
   },
   "items": [
     {
       "priorite": 1,
       "type": "alerte",
-      "titre": "Cadence en retard — 9 j sans publier",
+      "titre": "Cadence en retard — 23 j sans publier",
       "detail": "La régularité nourrit l'algorithme. Publie aujourd'hui.",
       "source": "cadence",
       "action": {
@@ -20,22 +20,10 @@
       }
     },
     {
-      "priorite": 1,
-      "type": "inbox",
-      "titre": "5 commentaire(s) à répondre",
-      "detail": "Réponds vite pour entretenir la communauté.",
-      "source": "a_repondre",
-      "action": {
-        "label": "Répondre",
-        "kind": "view",
-        "target": "reseaux"
-      }
-    },
-    {
       "priorite": 2,
       "type": "reco",
-      "titre": "Publier des contenus Reel sur TikTok",
-      "detail": "Publier au moins un Reel par semaine sur TikTok",
+      "titre": "Publier plus de vidéos sur TikTok",
+      "detail": "Publier au moins une vidéo par semaine sur TikTok",
       "source": "analyste",
       "action": {
         "label": "Voir l'analyse",
@@ -46,8 +34,8 @@
     {
       "priorite": 2,
       "type": "plan",
-      "titre": "Publie : Routine de soin de peau pour les jours de la semaine",
-      "detail": "TikTok · Reel · Lundi",
+      "titre": "Publie : Découverte d'un nouveau lieu à Abidjan",
+      "detail": "TikTok · Vidéo · Lundi",
       "source": "stratege",
       "action": {
         "label": "Voir le plan",
@@ -57,20 +45,8 @@
     },
     {
       "priorite": 3,
-      "type": "opportunite",
-      "titre": "Ton format gagnant : Reel",
-      "detail": "Engagement moyen 520 — reproduis-le.",
-      "source": "types_contenu",
-      "action": {
-        "label": "Idées créatives",
-        "kind": "view",
-        "target": "overview"
-      }
-    },
-    {
-      "priorite": 3,
       "type": "creatif",
-      "titre": "Idée prête : Découvrez notre secret pour une peau éclatante !",
+      "titre": "Idée prête : Découvrez les résidences qui ferment le débat !",
       "detail": "TikTok · Reel",
       "source": "creatif",
       "action": {
