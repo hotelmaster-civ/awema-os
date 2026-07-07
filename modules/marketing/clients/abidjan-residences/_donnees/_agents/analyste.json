@@ -1,6 +1,6 @@
 {
   "agent": "analyste",
-  "genere_le": "2026-07-06T17:25:45+00:00",
+  "genere_le": "2026-07-07T16:08:17+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -12,60 +12,60 @@
   "items": [
     {
       "type": "insight",
-      "titre": "TikTok est le réseau le plus performant",
-      "explication": "Le compte Abidjan résidences a le plus d'interactions sur TikTok avec 9472 likes, 167 commentaires et 90 partages.",
+      "titre": "Engagement élevé sur TikTok",
+      "explication": "Les posts sur TikTok génèrent un engagement élevé en termes de likes et de commentaires.",
       "preuve": {
         "metrique": "likes",
         "valeur": 9472
       }
     },
     {
-      "type": "insight",
-      "titre": "Les vidéos sont les contenus les plus populaires",
-      "explication": "Les top posts sont tous des vidéos, notamment la vidéo '#collage avec @Tdfmanga' qui a obtenu 8918 likes.",
-      "preuve": {
-        "metrique": "likes",
-        "valeur": 8918
-      }
-    },
-    {
       "type": "reco",
-      "titre": "Publier plus de vidéos sur TikTok",
-      "explication": "Pour augmenter l'engagement, il est recommandé de publier plus de vidéos sur TikTok, notamment celles qui mettent en valeur la résidence et ses environs.",
-      "preuve": {
-        "metrique": "likes",
-        "valeur": 8918
-      },
-      "action": "Publier au moins une vidéo par semaine sur TikTok"
-    },
-    {
-      "type": "reco",
-      "titre": "Augmenter la fréquence de publication",
-      "explication": "La cadence actuelle est de 0,2 post par semaine, il est recommandé d'augmenter cette fréquence pour maintenir l'intérêt des abonnés.",
+      "titre": "Augmenter la fréquence de publication sur TikTok",
+      "explication": "La faible fréquence de publication actuelle peut être améliorée pour maintenir l'intérêt de l'audience.",
       "preuve": {
         "metrique": "posts_par_semaine",
         "valeur": 0.2
       },
-      "action": "Publier au moins 2 fois par semaine sur TikTok"
+      "action": "Publiez au moins un post par semaine sur TikTok pour améliorer l'engagement."
     },
     {
       "type": "insight",
-      "titre": "La journée la plus performante est le vendredi",
-      "explication": "Selon les données, le vendredi est la journée la plus performante pour les publications sur TikTok.",
+      "titre": "Top post avec le plus d'engagement",
+      "explication": "Le post '#collage avec @Tdfmanga decouvrez un animé 100% ivoirien par @Cénack  « placman »' a généré le plus d'engagement.",
       "preuve": {
-        "metrique": "jour",
-        "valeur": "Vendredi"
+        "metrique": "likes",
+        "valeur": 8918
       }
     },
     {
       "type": "reco",
-      "titre": "Publier à l'heure la plus performante",
-      "explication": "Il est recommandé de publier à l'heure la plus performante, qui est 14h le vendredi.",
+      "titre": "Utiliser les heures de publication optimales",
+      "explication": "Les heures de publication peuvent avoir un impact sur la visibilité et l'engagement des posts.",
       "preuve": {
         "metrique": "heure",
         "valeur": "14h"
       },
-      "action": "Publier systématiquement à 14h le vendredi sur TikTok"
+      "action": "Publiez vos posts sur TikTok le vendredi vers 14h pour maximiser l'engagement."
+    },
+    {
+      "type": "insight",
+      "titre": "Audience stable",
+      "explication": "L'audience est stable avec 4198 abonnés sur TikTok.",
+      "preuve": {
+        "metrique": "abonnes",
+        "valeur": 4198
+      }
+    },
+    {
+      "type": "reco",
+      "titre": "Diversifier le contenu",
+      "explication": "La diversification du contenu peut aider à maintenir l'intérêt de l'audience.",
+      "preuve": {
+        "metrique": "type",
+        "valeur": "vidéo"
+      },
+      "action": "Expérimentez différents types de contenu, tels que des photos ou des lives, pour renouveler l'offre et fidéliser l'audience."
     }
   ]
 }

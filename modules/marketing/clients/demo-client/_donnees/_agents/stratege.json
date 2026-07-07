@@ -1,6 +1,6 @@
 {
   "agent": "stratege",
-  "genere_le": "2026-07-06T17:27:29+00:00",
+  "genere_le": "2026-07-07T16:09:20+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -15,60 +15,61 @@
       "jour": "Lundi",
       "heure": "19h",
       "format": "Reel",
-      "angle": "Routine de soin de peau pour les jours de la semaine",
+      "angle": "Soin du visage pour un teint éclatant",
       "reseau": "TikTok"
+    },
+    {
+      "jour": "Mardi",
+      "heure": "14h",
+      "format": "Carrousel",
+      "angle": "Avantages du forfait mariée d'Éclat Beauté",
+      "reseau": "Instagram"
     },
     {
       "jour": "Mercredi",
       "heure": "12h",
-      "format": "Carrousel",
-      "angle": "Avantages des soins de visage pour une peau saine",
+      "format": "Photo",
+      "angle": "Conseils pour une peau saine et naturelle",
       "reseau": "Instagram"
     },
     {
       "jour": "Jeudi",
       "heure": "19h",
-      "format": "Photo",
-      "angle": "Présentation d'un produit nouveau pour les soins de peau",
+      "format": "Reel",
+      "angle": "Routine de soin pour le corps avant l'été",
+      "reseau": "TikTok"
+    },
+    {
+      "jour": "Vendredi",
+      "heure": "18h",
+      "format": "Carrousel",
+      "angle": "Produits hypoallergéniques pour les peaux sensibles",
       "reseau": "Instagram"
     },
     {
       "jour": "Samedi",
-      "heure": "15h",
-      "format": "Reel",
-      "angle": "Conseils de beauté pour les weekends",
+      "heure": "14h",
+      "format": "Short",
+      "angle": "Préparation de la peau avant un événement spécial",
       "reseau": "TikTok"
     },
     {
       "jour": "Dimanche",
-      "heure": "18h",
-      "format": "Carrousel",
-      "angle": "Routine de soin de peau pour le dimanche",
-      "reseau": "Instagram"
-    },
-    {
-      "jour": "Mardi",
-      "heure": "12h",
+      "heure": "10h",
       "format": "Photo",
-      "angle": "Publicité pour un forfait spécial",
-      "reseau": "Facebook"
-    },
-    {
-      "jour": "Vendredi",
-      "heure": "19h",
-      "format": "Reel",
-      "angle": "Soin de peau pour les futures mariées",
-      "reseau": "TikTok"
+      "angle": "L'importance d'une routine de soin de soi",
+      "reseau": "Instagram"
     }
   ],
   "cadence_recommandee": "3 publications/semaine",
   "meilleures_heures": [
     "Jeudi 19h",
-    "Samedi 15h"
+    "Samedi 14h"
   ],
   "objectifs": [
-    "Augmenter le nombre de followers sur TikTok de 20% en 3 mois",
-    "Maintenir un taux d'engagement moyen de 4% sur les publications Instagram",
-    "Accroître les interactions sur les publications Facebook de 30% en 2 mois"
+    "Augmenter l'engagement de 20% sur les prochaines 4 semaines",
+    "Atteindre 1000 nouveaux abonnés sur Instagram et TikTok",
+    "Maintenir un taux d'engagement moyen supérieur à 3,5%",
+    "Publier au moins 2 contenus interactifs par mois"
   ]
 }

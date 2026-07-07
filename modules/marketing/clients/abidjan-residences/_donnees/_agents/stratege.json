@@ -1,6 +1,6 @@
 {
   "agent": "stratege",
-  "genere_le": "2026-07-06T17:26:57+00:00",
+  "genere_le": "2026-07-07T16:09:09+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -14,49 +14,49 @@
       "jour": "Lundi",
       "heure": "19h",
       "format": "Vidéo",
-      "angle": "Découverte d'un nouveau lieu à Abidjan",
+      "angle": "Découverte de résidences à Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Mercredi",
       "heure": "12h",
-      "format": "Story",
-      "angle": "Conseils pour un séjour à Abidjan",
+      "format": "Vidéo",
+      "angle": "Conseils pour choisir une résidence à Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Vendredi",
       "heure": "14h",
       "format": "Vidéo",
-      "angle": "Présentation d'une résidence à Abidjan",
+      "angle": "Présentation d'une résidence à Yopougon",
       "reseau": "TikTok"
     },
     {
       "jour": "Samedi",
-      "heure": "10h",
-      "format": "Photo",
-      "angle": "Les meilleures plages d'Abidjan",
+      "heure": "18h",
+      "format": "Vidéo",
+      "angle": "Événements à ne pas manquer dans les résidences d'Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Dimanche",
-      "heure": "18h",
+      "heure": "20h",
       "format": "Vidéo",
-      "angle": "Expérience client à Abidjan Résidences",
+      "angle": "Témoignages de résidents à Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Mardi",
       "heure": "15h",
-      "format": "Livre ouvert",
-      "angle": "Les secrets d'Abidjan révélés",
+      "format": "Vidéo",
+      "angle": "Découvrez les équipements des résidences d'Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Jeudi",
-      "heure": "20h",
-      "format": "Question-Réponse",
-      "angle": "Réponses à vos questions sur Abidjan",
+      "heure": "10h",
+      "format": "Vidéo",
+      "angle": "Les avantages de vivre dans une résidence à Abidjan",
       "reseau": "TikTok"
     }
   ],
@@ -65,8 +65,9 @@
     "Vendredi 14h"
   ],
   "objectifs": [
-    "Augmenter de 20% les abonnés sur TikTok en 3 mois",
-    "Maintenir un taux d'engagement moyen de 2% sur les publications",
-    "Publier au moins 80% de contenu vidéo"
+    "Augmenter de 20% le nombre de vues sur les vidéos publiées",
+    "Accroître de 15% le nombre de likes sur les publications",
+    "Maintenir un taux d'engagement supérieur à 2% sur les posts",
+    "Atteindre 5000 vues sur une seule publication dans les 30 jours"
   ]
 }

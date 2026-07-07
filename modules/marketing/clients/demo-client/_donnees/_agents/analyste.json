@@ -1,6 +1,6 @@
 {
   "agent": "analyste",
-  "genere_le": "2026-07-06T17:26:17+00:00",
+  "genere_le": "2026-07-07T16:08:28+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -13,60 +13,69 @@
   "items": [
     {
       "type": "insight",
-      "titre": "Performance de TikTok",
-      "explication": "TikTok montre une audience importante et un taux d'engagement élevé, notamment avec le format Reel.",
+      "titre": "Présence dominante sur TikTok",
+      "explication": "Le compte Éclat Beauté a une audience considérable sur TikTok par rapport aux autres réseaux sociaux.",
       "preuve": {
-        "metrique": "likes sur TikTok",
-        "valeur": 88000
-      }
+        "metrique": "abonnes",
+        "valeur": 12500,
+        "variation": null
+      },
+      "action": null
+    },
+    {
+      "type": "insight",
+      "titre": "Contenu Réel performant",
+      "explication": "Les contenus de type Reel obtiennent un engagement moyen supérieur à celui des autres types de contenu.",
+      "preuve": {
+        "metrique": "engagement_moyen",
+        "valeur": 520,
+        "variation": null
+      },
+      "action": null
     },
     {
       "type": "reco",
-      "titre": "Publier des contenus Reel sur TikTok",
-      "explication": "Poursuivre la publication de contenus Reel sur TikTok pour maintenir l'engagement élevé.",
+      "titre": "Publier des contenus sur TikTok",
+      "explication": "Pour augmenter l'engagement, publier régulièrement des contenus de type Reel sur TikTok.",
       "preuve": {
-        "metrique": "engagement moyen des Reel",
-        "valeur": 520
+        "metrique": "engagement_moyen",
+        "valeur": 520,
+        "variation": null
       },
-      "action": "Publier au moins un Reel par semaine sur TikTok"
+      "action": "Publier au moins 2 contenus Reel par semaine sur TikTok"
+    },
+    {
+      "type": "reco",
+      "titre": "Répondre aux commentaires",
+      "explication": "Il est important de répondre aux commentaires pour améliorer l'engagement et la satisfaction client.",
+      "preuve": {
+        "metrique": "commentaires",
+        "valeur": 1230,
+        "variation": null
+      },
+      "action": "Répondre à tous les commentaires reçus dans les 24 heures"
     },
     {
       "type": "insight",
       "titre": "Évolution de l'audience",
-      "explication": "L'audience a augmenté régulièrement sur les 3 derniers mois, ce qui indique une stratégie de contenu efficace.",
+      "explication": "L'audience a augmenté régulièrement ces dernières semaines.",
       "preuve": {
-        "metrique": "audience globale",
-        "valeur": 23500
-      }
+        "metrique": "audience",
+        "valeur": 23500,
+        "variation": "Augmentation de 25% en un mois"
+      },
+      "action": null
     },
     {
       "type": "reco",
-      "titre": "Interagir avec les commentateurs",
-      "explication": "Répondre aux commentaires et messages pour améliorer l'engagement et la fidélité des followers.",
+      "titre": "Utiliser les mots-clés de la charte",
+      "explication": "Pour renforcer l'identité de la marque, utiliser les mots-clés de la charte dans les publications.",
       "preuve": {
-        "metrique": "nombre de commentaires",
-        "valeur": 1230
+        "metrique": "mots_cles",
+        "valeur": "éclat, confiance, soin de soi, naturel",
+        "variation": null
       },
-      "action": "Répondre à tous les commentaires et messages dans les 24 heures"
-    },
-    {
-      "type": "insight",
-      "titre": "Meilleur créneau horaire",
-      "explication": "Le jeudi à 19h est le meilleur moment pour publier du contenu pour maximiser l'engagement.",
-      "preuve": {
-        "metrique": "engagement du jeudi à 19h",
-        "valeur": 260
-      }
-    },
-    {
-      "type": "reco",
-      "titre": "Planifier les publications",
-      "explication": "Utiliser les données sur les meilleurs créneaux horaires pour planifier les publications et maximiser l'engagement.",
-      "preuve": {
-        "metrique": "meilleur créneau",
-        "valeur": "Jeudi 19h"
-      },
-      "action": "Planifier les publications à venir pour le jeudi à 19h"
+      "action": "Intégrer les mots-clés de la charte dans les prochaines 5 publications"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "agent": "creatif",
-  "genere_le": "2026-07-06T17:27:50+00:00",
+  "genere_le": "2026-07-07T16:10:02+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -11,33 +11,33 @@
   },
   "items": [
     {
-      "hook": "Découvrez les résidences qui ferment le débat !",
-      "script": "Vous cherchez un endroit où vivre à Abidjan ? Venez découvrir nos résidences modernes et confortables ! De la sécurité à la commodité, tout y est pour un confort absolu. Inscrivez-vous dès maintenant pour une visite guidée !",
+      "hook": "Découvrez les résidences les plus tendances d'Abidjan !",
+      "script": "Vous cherchez un endroit pour vous détendre ou séjourner à Abidjan ? Abidjan Résidences vous propose des hébergements confortables et modernes. De la chambre simple à l'appartement familial, nous avons tout ce qu'il vous faut pour un séjour inoubliable. Rejoignez-nous et découvrez pourquoi nous sommes la référence pour les résidences à Abidjan !",
+      "format": "Short",
+      "reseau": "TikTok",
+      "prompt_image": "Une vue aérienne de la résidence avec des palmiers et une piscine, sous un ciel bleu",
+      "variantes": [
+        "Révélez le charme d'Abidjan, une résidence à la hauteur de vos attentes !"
+      ]
+    },
+    {
+      "hook": "Expériencez l'hospitalité ivoirienne dans nos résidences !",
+      "script": "Chez Abidjan Résidences, nous mettons tout en œuvre pour vous faire vivre une expérience unique. De l'accueil chaleureux à la qualité de nos services, nous nous engageons à vous offrir un séjour qui vous laissera des souvenirs inoubliables. Découvrez nos résidences et vivez l'hospitalité ivoirienne comme jamais auparavant !",
       "format": "Reel",
       "reseau": "TikTok",
-      "prompt_image": "Une résidence moderne avec piscine et jardin à Abidjan",
+      "prompt_image": "Un hall d'entrée accueillant avec des plantes et des éléments de décoration locaux, des personnes souriantes au premier plan",
       "variantes": [
-        "Abidjan résidences, le meilleur choix pour votre nouvelle vie !"
+        "Plongez dans le cœur de l'hospitalité ivoirienne avec Abidjan Résidences !"
       ]
     },
     {
-      "hook": "Un séjour d'exception à Abidjan ?",
-      "script": "Que vous soyez en déplacement pour affaires ou pour le plaisir, nos résidences à Abidjan offrent tout le confort nécessaire pour un séjour exceptionnel. Piscine, salle de sport, et encore plus ! Réservez votre appartement dès aujourd'hui !",
+      "hook": "Trouvez votre oasis à Abidjan avec nos résidences de rêve !",
+      "script": "Imaginez un endroit où vous pourrez vous détendre, vous ressourcer et profiter de tout ce que la ville d'Abidjan a à offrir. Chez Abidjan Résidences, nous faisons de vos rêves une réalité. Découvrez nos résidences spacieuses et luxueuses, conçues pour vous offrir un séjour exceptionnel.",
       "format": "Carrousel",
-      "reseau": "TikTok",
-      "prompt_image": "Un appartement luxueux avec vue sur la ville d'Abidjan",
+      "reseau": "Instagram",
+      "prompt_image": "Une suite luxueuse avec une grande fenêtre donnant sur la ville, des meubles modernes et des éléments de décoration chic",
       "variantes": [
-        "Élevez votre expérience de séjour à Abidjan !"
-      ]
-    },
-    {
-      "hook": "Recherchez votre nouvelle maison à Abidjan !",
-      "script": "Vous rêvez d’une maison spacieuse et moderne à Abidjan ? Nous proposons des résidences de haute qualité, idéales pour les familles et les professionnels. Découvrez nos offres et trouvez votre future maison !",
-      "format": "Post",
-      "reseau": "TikTok",
-      "prompt_image": "Une maison individuelle avec jardin et piscine à Abidjan",
-      "variantes": [
-        "Trouvez votre chez-vous idéal à Abidjan dès aujourd'hui !"
+        "Échappez à la routine et vivez l'extraordinaire avec Abidjan Résidences !"
       ]
     }
   ]
