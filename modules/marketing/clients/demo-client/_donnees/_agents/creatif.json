@@ -1,6 +1,6 @@
 {
   "agent": "creatif",
-  "genere_le": "2026-07-07T16:10:05+00:00",
+  "genere_le": "2026-07-08T12:08:36+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -12,33 +12,36 @@
   },
   "items": [
     {
-      "hook": "Découvrez le secret pour une peau éclatante et radieuse !",
-      "script": "Vous souhaitez avoir une peau éclatante et radieuse sans passer des heures au salon de beauté ? Notre soin visage éclat est conçu spécialement pour les peaux africaines et vous donnera le résultat que vous attendez en un minimum de temps. Pensez à réserver votre rendez-vous 48h à l'avance sur WhatsApp !",
+      "hook": "Révélez votre éclat naturel en 3 étapes !",
+      "script": "Découvrez notre routine de soin pour un teint parfait ! Étape 1 : Nettoyage profond, Étape 2 : Hydratation intense, Étape 3 : Protection solaire. Nous utilisons uniquement des produits adaptés à la peau africaine. Réservez votre rendez-vous dès maintenant et offre-vous un éclat de beauté !",
       "format": "Reel",
       "reseau": "TikTok",
-      "prompt_image": "Une femme africaine avec une peau éclatante et radieuse, entourée par des motifs naturels et des produits de soins visage #D4AF37 et #0A1F44",
+      "prompt_image": "Une femme africaine avec un teint lumineux et sain, avec des feux d'artifices en arrière-plan, représentant l'éclat. Les couleurs principales sont #D4AF37 et #0A1F44.",
       "variantes": [
-        "Un teint parfait en un minimum de temps ? C'est possible avec notre soin visage éclat !"
+        "Éclatez de beauté avec nous !",
+        "Un teint parfait en 3 étapes, c'est possible !"
       ]
     },
     {
-      "hook": "Préparez-vous pour le grand jour avec notre forfait mariée !",
-      "script": "Vous vous mariez bientôt et vous voulez une peau parfaite pour votre journée spéciale ? Notre forfait mariée est conçu pour vous offrir les meilleurs soins de visage et vous faire ressembler à une reine. Les réservations sont possibles via WhatsApp. N'oubliez pas de vous renseigner sur nos produits hypoallergéniques si vous avez une peau sensible !",
+      "hook": "Le secret d'un teint parfait pour le grand jour ?",
+      "script": "Nous comprenons à quel point le jour de votre mariage est spécial. C'est pourquoi nous proposons un forfait mariée personnalisé comprenant 3 séances de soin avant le grand jour. Nous vous aiderons à atteindre le teint de vos rêves ! N'hésitez pas à nous contacter pour plus d'informations et à réserver votre place.",
       "format": "Carrousel",
       "reseau": "Instagram",
-      "prompt_image": "Une mariée africaine heureuse et radieuse, avec des éléments de beauté et un thème luxueux #D4AF37 et #0A1F44",
+      "prompt_image": "Une photo d'une mariée africaine souriante avec un teint luminieux et une robe de mariée, avec des décorations de fleurs en arrière-plan. Les couleurs principales sont #D4AF37 et #0A1F44.",
       "variantes": [
-        "Rêvez d'un teint parfait pour votre mariage ? Notre forfait mariée est la solution idéale !"
+        "Préparez-vous pour le jour le plus beau de votre vie !",
+        "Le forfait mariée qui vous fera briller !"
       ]
     },
     {
-      "hook": "Prenez soin de votre peau avec nos conseils de routine !",
-      "script": "La routine peau grasse peut sembler compliquée, mais avec les bons conseils, vous pouvez avoir une peau radieuse et éclatante. Découvrez notre routine en 3 étapes pour une peau parfaite. N'hésitez pas à nous contacter via WhatsApp pour réserver votre prochain rendez-vous ou pour obtenir plus d'informations sur nos produits !",
-      "format": "Reel",
-      "reseau": "TikTok",
-      "prompt_image": "Une femme africaine avec une peau éclatante, entourée de produits de soins naturels et de fleurs #D4AF37 et #0A1F44",
+      "hook": "Comment garder une peau saine et lumineuse tout au long de l'année ?",
+      "script": "Prenez soin de votre peau avec nos conseils et produits spécialement formulés pour la peau africaine. Nous sommes là pour vous aider à atteindre votre objectif de beauté. Pensez à réserver régulièrement un soin visage éclat pour une peau toujours en forme !",
+      "format": "Post",
+      "reseau": "Facebook",
+      "prompt_image": "Une femme africaine avec une peau saine et lumineuse, entourée de produits de soin et de fleurs. Les couleurs principales sont #D4AF37 et #0A1F44.",
       "variantes": [
-        "Une peau grasse ne signifie pas une peau moins belle ! Découvrez comment prendre soin d'elle avec nos conseils !"
+        "La clé d'une peau parfaite ?",
+        "Un visage éclatant, tout au long de l'année !"
       ]
     }
   ]

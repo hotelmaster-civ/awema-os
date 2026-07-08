@@ -1,6 +1,6 @@
 {
   "agent": "actions-du-jour",
-  "genere_le": "2026-07-07T16:10:05+00:00",
+  "genere_le": "2026-07-08T12:08:36+00:00",
   "modele": "agrégation (sans IA)",
   "provenance": {
     "client": "demo-client",
@@ -34,8 +34,8 @@
     {
       "priorite": 2,
       "type": "reco",
-      "titre": "Publier des contenus sur TikTok",
-      "detail": "Publier au moins 2 contenus Reel par semaine sur TikTok",
+      "titre": "Publier du contenu régulièrement",
+      "detail": "Publier un nouveau post cette semaine",
       "source": "analyste",
       "action": {
         "label": "Voir l'analyse",
@@ -46,7 +46,7 @@
     {
       "priorite": 2,
       "type": "plan",
-      "titre": "Publie : Soin du visage pour un teint éclatant",
+      "titre": "Publie : Routine de soin du visage pour les peaux sensibles",
       "detail": "TikTok · Reel · Lundi",
       "source": "stratege",
       "action": {
@@ -70,7 +70,7 @@
     {
       "priorite": 3,
       "type": "creatif",
-      "titre": "Idée prête : Découvrez le secret pour une peau éclatante et radieuse !",
+      "titre": "Idée prête : Révélez votre éclat naturel en 3 étapes !",
       "detail": "TikTok · Reel",
       "source": "creatif",
       "action": {

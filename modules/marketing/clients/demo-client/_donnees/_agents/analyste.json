@@ -1,6 +1,6 @@
 {
   "agent": "analyste",
-  "genere_le": "2026-07-07T16:08:28+00:00",
+  "genere_le": "2026-07-08T12:07:07+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -13,69 +13,69 @@
   "items": [
     {
       "type": "insight",
-      "titre": "Présence dominante sur TikTok",
-      "explication": "Le compte Éclat Beauté a une audience considérable sur TikTok par rapport aux autres réseaux sociaux.",
+      "titre": "Éclat Beauté sur TikTok",
+      "explication": "Le compte Éclat Beauté a un engagement élevé sur TikTok avec un nombre de likes important.",
       "preuve": {
-        "metrique": "abonnes",
-        "valeur": 12500,
-        "variation": null
-      },
-      "action": null
-    },
-    {
-      "type": "insight",
-      "titre": "Contenu Réel performant",
-      "explication": "Les contenus de type Reel obtiennent un engagement moyen supérieur à celui des autres types de contenu.",
-      "preuve": {
-        "metrique": "engagement_moyen",
-        "valeur": 520,
+        "metrique": "likes",
+        "valeur": 88000,
         "variation": null
       },
       "action": null
     },
     {
       "type": "reco",
-      "titre": "Publier des contenus sur TikTok",
-      "explication": "Pour augmenter l'engagement, publier régulièrement des contenus de type Reel sur TikTok.",
+      "titre": "Publier du contenu régulièrement",
+      "explication": "Il est important de maintenir une cadence régulière de publication pour garder l'audience engagée.",
       "preuve": {
-        "metrique": "engagement_moyen",
-        "valeur": 520,
+        "metrique": "jours_depuis_dernier_post",
+        "valeur": 9,
         "variation": null
       },
-      "action": "Publier au moins 2 contenus Reel par semaine sur TikTok"
-    },
-    {
-      "type": "reco",
-      "titre": "Répondre aux commentaires",
-      "explication": "Il est important de répondre aux commentaires pour améliorer l'engagement et la satisfaction client.",
-      "preuve": {
-        "metrique": "commentaires",
-        "valeur": 1230,
-        "variation": null
-      },
-      "action": "Répondre à tous les commentaires reçus dans les 24 heures"
+      "action": "Publier un nouveau post cette semaine"
     },
     {
       "type": "insight",
-      "titre": "Évolution de l'audience",
-      "explication": "L'audience a augmenté régulièrement ces dernières semaines.",
+      "titre": "Contenu Carrousel performant",
+      "explication": "Les contenus au format Carrousel ont un engagement moyen élevé.",
       "preuve": {
-        "metrique": "audience",
+        "metrique": "engagement_moyen",
+        "valeur": 310,
+        "variation": null
+      },
+      "action": null
+    },
+    {
+      "type": "reco",
+      "titre": "Utiliser le créneau horaire recommandé",
+      "explication": "Il est préférable de publier du contenu à l'heure où l'audience est la plus active.",
+      "preuve": {
+        "metrique": "meilleur_creneau",
+        "valeur": "Jeudi 19h",
+        "variation": null
+      },
+      "action": "Planifier les prochains posts pour le Jeudi à 19h"
+    },
+    {
+      "type": "insight",
+      "titre": "Évolution positive de l'audience",
+      "explication": "L'audience du compte a augmenté au fil du temps.",
+      "preuve": {
+        "metrique": "evolution_audience",
         "valeur": 23500,
-        "variation": "Augmentation de 25% en un mois"
+        "variation": "+25% par rapport au 01/05/2026"
       },
       "action": null
     },
     {
       "type": "reco",
-      "titre": "Utiliser les mots-clés de la charte",
-      "explication": "Pour renforcer l'identité de la marque, utiliser les mots-clés de la charte dans les publications.",
+      "titre": "Répondre aux commentaires et messages",
+      "explication": "Il est essentiel de répondre rapidement aux questions et commentaires des clients pour maintenir une bonne relation.",
       "preuve": {
-        "metrique": "mots_cles",
-        "valeur": "éclat, confiance, soin de soi, naturel",
+        "metrique": "a_repondre",
+        "valeur": 5,
         "variation": null
       },
-      "action": "Intégrer les mots-clés de la charte dans les prochaines 5 publications"
+      "action": "Répondre aux 5 messages en attente cette semaine"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "agent": "creatif",
-  "genere_le": "2026-07-07T16:10:02+00:00",
+  "genere_le": "2026-07-08T12:08:21+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -11,33 +11,36 @@
   },
   "items": [
     {
-      "hook": "Découvrez les résidences les plus tendances d'Abidjan !",
-      "script": "Vous cherchez un endroit pour vous détendre ou séjourner à Abidjan ? Abidjan Résidences vous propose des hébergements confortables et modernes. De la chambre simple à l'appartement familial, nous avons tout ce qu'il vous faut pour un séjour inoubliable. Rejoignez-nous et découvrez pourquoi nous sommes la référence pour les résidences à Abidjan !",
+      "hook": "Découvrez l'expérience ultime à Abidjan",
+      "script": "Savourez la beauté de notre ville, découvrez nos résidences de qualité et vivez une expérience inoubliable. De la détente à l'aventure, tout est possible à Abidjan. #AbidjanResidences #ExperienceUltimate",
       "format": "Short",
       "reseau": "TikTok",
-      "prompt_image": "Une vue aérienne de la résidence avec des palmiers et une piscine, sous un ciel bleu",
+      "prompt_image": "Une vue panoramique de la ville d'Abidjan avec des résidences modernes au premier plan",
       "variantes": [
-        "Révélez le charme d'Abidjan, une résidence à la hauteur de vos attentes !"
+        "Explorez le meilleur d'Abidjan",
+        "Vivez la vie en couleur à Abidjan"
       ]
     },
     {
-      "hook": "Expériencez l'hospitalité ivoirienne dans nos résidences !",
-      "script": "Chez Abidjan Résidences, nous mettons tout en œuvre pour vous faire vivre une expérience unique. De l'accueil chaleureux à la qualité de nos services, nous nous engageons à vous offrir un séjour qui vous laissera des souvenirs inoubliables. Découvrez nos résidences et vivez l'hospitalité ivoirienne comme jamais auparavant !",
+      "hook": "Les secrets de Yopougon dévoilés",
+      "script": "Découvrez les lieux incontournables, les restaurants délicieux et les activités passionnantes de Yopougon. Partagez vos propres expériences et découvrez ce que cachent les rues de Yopougon. #Yopougon #SecretsDeLaVille",
       "format": "Reel",
       "reseau": "TikTok",
-      "prompt_image": "Un hall d'entrée accueillant avec des plantes et des éléments de décoration locaux, des personnes souriantes au premier plan",
+      "prompt_image": "Un visage souriant avec un fond qui représente les rues animées de Yopougon",
       "variantes": [
-        "Plongez dans le cœur de l'hospitalité ivoirienne avec Abidjan Résidences !"
+        "Yopougon, la ville qui vous surprend",
+        "Découvrez les trésors cachés de Yopougon"
       ]
     },
     {
-      "hook": "Trouvez votre oasis à Abidjan avec nos résidences de rêve !",
-      "script": "Imaginez un endroit où vous pourrez vous détendre, vous ressourcer et profiter de tout ce que la ville d'Abidjan a à offrir. Chez Abidjan Résidences, nous faisons de vos rêves une réalité. Découvrez nos résidences spacieuses et luxueuses, conçues pour vous offrir un séjour exceptionnel.",
+      "hook": "Rejoignez notre communauté d'Abidjan",
+      "script": "Partagez vos expériences, vos conseils et vos photos avec nous. Devenez partie de notre communauté dynamique et passionnée. #CommunautéAbidjan #Partage",
       "format": "Carrousel",
       "reseau": "Instagram",
-      "prompt_image": "Une suite luxueuse avec une grande fenêtre donnant sur la ville, des meubles modernes et des éléments de décoration chic",
+      "prompt_image": "Un montage de photos représentant différents aspects de la vie à Abidjan",
       "variantes": [
-        "Échappez à la routine et vivez l'extraordinaire avec Abidjan Résidences !"
+        "Vous êtes à Abidjan, rejoignez-nous",
+        "Partagez votre amour pour Abidjan"
       ]
     }
   ]

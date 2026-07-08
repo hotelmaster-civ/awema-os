@@ -1,6 +1,6 @@
 {
   "agent": "stratege",
-  "genere_le": "2026-07-07T16:09:09+00:00",
+  "genere_le": "2026-07-08T12:07:48+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -12,62 +12,62 @@
   "items": [
     {
       "jour": "Lundi",
-      "heure": "19h",
+      "heure": "14h",
       "format": "Vidéo",
-      "angle": "Découverte de résidences à Abidjan",
+      "angle": "Présentation d'un nouveau résident",
       "reseau": "TikTok"
     },
     {
       "jour": "Mercredi",
-      "heure": "12h",
-      "format": "Vidéo",
-      "angle": "Conseils pour choisir une résidence à Abidjan",
+      "heure": "18h",
+      "format": "Story",
+      "angle": "Événements à venir à Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Vendredi",
-      "heure": "14h",
-      "format": "Vidéo",
-      "angle": "Présentation d'une résidence à Yopougon",
+      "heure": "12h",
+      "format": "LIVE",
+      "angle": "Visite guidée d'une résidence",
       "reseau": "TikTok"
     },
     {
       "jour": "Samedi",
-      "heure": "18h",
-      "format": "Vidéo",
-      "angle": "Événements à ne pas manquer dans les résidences d'Abidjan",
+      "heure": "16h",
+      "format": "Photo",
+      "angle": "Conseils de décoration intérieure",
       "reseau": "TikTok"
     },
     {
       "jour": "Dimanche",
       "heure": "20h",
       "format": "Vidéo",
-      "angle": "Témoignages de résidents à Abidjan",
+      "angle": "Témoignages de résidents satisfaits",
       "reseau": "TikTok"
     },
     {
       "jour": "Mardi",
-      "heure": "15h",
-      "format": "Vidéo",
-      "angle": "Découvrez les équipements des résidences d'Abidjan",
+      "heure": "10h",
+      "format": "Quiz",
+      "angle": "Découvrez les activités proposées par Abidjan Résidences",
       "reseau": "TikTok"
     },
     {
       "jour": "Jeudi",
-      "heure": "10h",
-      "format": "Vidéo",
-      "angle": "Les avantages de vivre dans une résidence à Abidjan",
+      "heure": "14h",
+      "format": "Podcast",
+      "angle": "Interview d'un partenaire local",
       "reseau": "TikTok"
     }
   ],
   "cadence_recommandee": "4 publications/semaine",
   "meilleures_heures": [
-    "Vendredi 14h"
+    "Vendredi 14h",
+    "Jeudi 12h"
   ],
   "objectifs": [
-    "Augmenter de 20% le nombre de vues sur les vidéos publiées",
-    "Accroître de 15% le nombre de likes sur les publications",
-    "Maintenir un taux d'engagement supérieur à 2% sur les posts",
-    "Atteindre 5000 vues sur une seule publication dans les 30 jours"
+    "Augmenter la visibilité sur TikTok de 15% en 2 semaines",
+    "Accroître l'engagement (likes, commentaires) de 20% sur les prochaines 5 publications",
+    "Maintenir une audience moyenne de 4000 abonnés"
   ]
 }

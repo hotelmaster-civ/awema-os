@@ -1,6 +1,6 @@
 {
   "agent": "stratege",
-  "genere_le": "2026-07-07T16:09:20+00:00",
+  "genere_le": "2026-07-08T12:07:49+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -15,61 +15,60 @@
       "jour": "Lundi",
       "heure": "19h",
       "format": "Reel",
-      "angle": "Soin du visage pour un teint éclatant",
+      "angle": "Routine de soin du visage pour les peaux sensibles",
       "reseau": "TikTok"
     },
     {
       "jour": "Mardi",
       "heure": "14h",
       "format": "Carrousel",
-      "angle": "Avantages du forfait mariée d'Éclat Beauté",
+      "angle": "Présentation des produits pour les soins de beauté naturels",
       "reseau": "Instagram"
     },
     {
       "jour": "Mercredi",
       "heure": "12h",
       "format": "Photo",
-      "angle": "Conseils pour une peau saine et naturelle",
-      "reseau": "Instagram"
+      "angle": "Conseils pour une peau éclatante",
+      "reseau": "Facebook"
     },
     {
       "jour": "Jeudi",
       "heure": "19h",
       "format": "Reel",
-      "angle": "Routine de soin pour le corps avant l'été",
+      "angle": "Avant/Après - Transformation avec les soins d'Éclat Beauté",
       "reseau": "TikTok"
     },
     {
       "jour": "Vendredi",
-      "heure": "18h",
+      "heure": "17h",
       "format": "Carrousel",
-      "angle": "Produits hypoallergéniques pour les peaux sensibles",
+      "angle": "Démonstration des produits pour différentes types de peau",
       "reseau": "Instagram"
     },
     {
       "jour": "Samedi",
       "heure": "14h",
       "format": "Short",
-      "angle": "Préparation de la peau avant un événement spécial",
+      "angle": "Réponses aux questions fréquentes sur les réservations et les produits",
       "reseau": "TikTok"
     },
     {
       "jour": "Dimanche",
       "heure": "10h",
       "format": "Photo",
-      "angle": "L'importance d'une routine de soin de soi",
+      "angle": "Motivation et tips pour un dimanche de détente",
       "reseau": "Instagram"
     }
   ],
-  "cadence_recommandee": "3 publications/semaine",
+  "cadence_recommandee": "5 publications/semaine",
   "meilleures_heures": [
     "Jeudi 19h",
     "Samedi 14h"
   ],
   "objectifs": [
-    "Augmenter l'engagement de 20% sur les prochaines 4 semaines",
-    "Atteindre 1000 nouveaux abonnés sur Instagram et TikTok",
-    "Maintenir un taux d'engagement moyen supérieur à 3,5%",
-    "Publier au moins 2 contenus interactifs par mois"
+    "Augmenter la portée de 20% en 3 mois",
+    "Améliorer le taux d'engagement de 15% en 2 mois",
+    "Maintenir une audience croissante avec une moyenne de 500 nouveaux abonnés par mois"
   ]
 }

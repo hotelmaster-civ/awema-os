@@ -1,6 +1,6 @@
 {
   "agent": "analyste",
-  "genere_le": "2026-07-07T16:08:17+00:00",
+  "genere_le": "2026-07-08T12:06:56+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -12,60 +12,60 @@
   "items": [
     {
       "type": "insight",
-      "titre": "Engagement élevé sur TikTok",
-      "explication": "Les posts sur TikTok génèrent un engagement élevé en termes de likes et de commentaires.",
+      "titre": "Performance élevée sur TikTok",
+      "explication": "La plateforme TikTok affiche des résultats remarquables avec un nombre important de Likes et de vues.",
       "preuve": {
-        "metrique": "likes",
+        "metrique": "likes_total",
         "valeur": 9472
       }
     },
     {
-      "type": "reco",
-      "titre": "Augmenter la fréquence de publication sur TikTok",
-      "explication": "La faible fréquence de publication actuelle peut être améliorée pour maintenir l'intérêt de l'audience.",
-      "preuve": {
-        "metrique": "posts_par_semaine",
-        "valeur": 0.2
-      },
-      "action": "Publiez au moins un post par semaine sur TikTok pour améliorer l'engagement."
-    },
-    {
       "type": "insight",
-      "titre": "Top post avec le plus d'engagement",
-      "explication": "Le post '#collage avec @Tdfmanga decouvrez un animé 100% ivoirien par @Cénack  « placman »' a généré le plus d'engagement.",
+      "titre": "Contenu video prédominant",
+      "explication": "Les contenus vidéos obtiennent les meilleurs résultats en termes de Likes et de vues sur TikTok.",
       "preuve": {
-        "metrique": "likes",
-        "valeur": 8918
+        "metrique": "vues_recentes",
+        "valeur": 41376
       }
     },
     {
       "type": "reco",
-      "titre": "Utiliser les heures de publication optimales",
-      "explication": "Les heures de publication peuvent avoir un impact sur la visibilité et l'engagement des posts.",
+      "titre": "Publier régulièrement sur TikTok",
+      "explication": "Augmenter la fréquence de publication pour maintenir l'engagement et potentiellement améliorer la visibilité.",
+      "preuve": {
+        "metrique": "posts_par_semaine",
+        "valeur": 0.2
+      },
+      "action": "Publier au moins un contenu vidéo par semaine sur TikTok"
+    },
+    {
+      "type": "reco",
+      "titre": "Optimiser les heures de publication",
+      "explication": " Identifier les meilleurs moments pour publier du contenu sur TikTok pour maximiser l'engagement.",
       "preuve": {
         "metrique": "heure",
         "valeur": "14h"
       },
-      "action": "Publiez vos posts sur TikTok le vendredi vers 14h pour maximiser l'engagement."
+      "action": "Publier du contenu principalement le vendredi vers 14h sur TikTok"
     },
     {
       "type": "insight",
       "titre": "Audience stable",
-      "explication": "L'audience est stable avec 4198 abonnés sur TikTok.",
+      "explication": "L'audience sur TikTok est stable, ce qui indique une base solide de followers.",
       "preuve": {
-        "metrique": "abonnes",
+        "metrique": "audience",
         "valeur": 4198
       }
     },
     {
       "type": "reco",
-      "titre": "Diversifier le contenu",
-      "explication": "La diversification du contenu peut aider à maintenir l'intérêt de l'audience.",
+      "titre": "Diversifier les contenus",
+      "explication": "Essayer différents types de contenus pour attirer de nouveaux abonnés et maintenir l'intérêt des followers actuels.",
       "preuve": {
         "metrique": "type",
         "valeur": "vidéo"
       },
-      "action": "Expérimentez différents types de contenu, tels que des photos ou des lives, pour renouveler l'offre et fidéliser l'audience."
+      "action": "Créer et partager du contenu sous différents formats sur TikTok"
     }
   ]
 }
