@@ -1,6 +1,6 @@
 {
   "agent": "creatif",
-  "genere_le": "2026-07-08T12:08:21+00:00",
+  "genere_le": "2026-07-09T16:17:55+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -11,36 +11,33 @@
   },
   "items": [
     {
-      "hook": "Découvrez l'expérience ultime à Abidjan",
-      "script": "Savourez la beauté de notre ville, découvrez nos résidences de qualité et vivez une expérience inoubliable. De la détente à l'aventure, tout est possible à Abidjan. #AbidjanResidences #ExperienceUltimate",
+      "hook": "Découvrez les secrets de Yopougon !",
+      "script": "Bonjour à tous ! Aujourd'hui, je vais vous emmener à la découverte d'un endroit magnifique à Abidjan : Yopougon ! Vous pouvez vous détendre, faire du shopping ou simplement vous promener. Qu'est-ce que vous aimez faire à Yopougon ? #Yopougon #Abidjan #CôteD'Ivoire",
       "format": "Short",
       "reseau": "TikTok",
-      "prompt_image": "Une vue panoramique de la ville d'Abidjan avec des résidences modernes au premier plan",
+      "prompt_image": "Une photo aérienne de Yopougon avec des palmiers et des maisons colorées",
       "variantes": [
-        "Explorez le meilleur d'Abidjan",
-        "Vivez la vie en couleur à Abidjan"
+        "Explorez Yopougon avec moi !"
       ]
     },
     {
-      "hook": "Les secrets de Yopougon dévoilés",
-      "script": "Découvrez les lieux incontournables, les restaurants délicieux et les activités passionnantes de Yopougon. Partagez vos propres expériences et découvrez ce que cachent les rues de Yopougon. #Yopougon #SecretsDeLaVille",
+      "hook": "Qui connaît ce lieu à Abidjan ?",
+      "script": "Je cherche un endroit paisible pour me ressourcer à Abidjan. Qui peut me recommander un lieu incontournable ? Je vous attends en commentaire ! #Abidjan #CôteD'Ivoire #Détente",
       "format": "Reel",
       "reseau": "TikTok",
-      "prompt_image": "Un visage souriant avec un fond qui représente les rues animées de Yopougon",
+      "prompt_image": "Une photo d'un endroit calme avec un lac ou une forêt",
       "variantes": [
-        "Yopougon, la ville qui vous surprend",
-        "Découvrez les trésors cachés de Yopougon"
+        "Vous avez un lieu préféré à Abidjan ? Partagez-le avec nous !"
       ]
     },
     {
-      "hook": "Rejoignez notre communauté d'Abidjan",
-      "script": "Partagez vos expériences, vos conseils et vos photos avec nous. Devenez partie de notre communauté dynamique et passionnée. #CommunautéAbidjan #Partage",
+      "hook": "Le B est-il votre refuge à Yopougon ?",
+      "script": "Vous cherchez un endroit où vous sentir en sécurité et en confiance ? Le B à Yopougon est là pour vous ! Nous proposons des chambres confortables et des services de qualité. Venez nous rendre visite ! #LeB #Yopougon #Hôtel",
       "format": "Carrousel",
       "reseau": "Instagram",
-      "prompt_image": "Un montage de photos représentant différents aspects de la vie à Abidjan",
+      "prompt_image": "Une photo de la façade de l'hôtel Le B avec des chambres modernes",
       "variantes": [
-        "Vous êtes à Abidjan, rejoignez-nous",
-        "Partagez votre amour pour Abidjan"
+        "Découvrez pourquoi Le B est le premier choix pour vos séjours à Yopougon !"
       ]
     }
   ]

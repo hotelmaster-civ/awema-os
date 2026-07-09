@@ -1,6 +1,6 @@
 {
   "agent": "creatif",
-  "genere_le": "2026-07-08T12:08:36+00:00",
+  "genere_le": "2026-07-09T16:18:07+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -12,36 +12,36 @@
   },
   "items": [
     {
-      "hook": "Révélez votre éclat naturel en 3 étapes !",
-      "script": "Découvrez notre routine de soin pour un teint parfait ! Étape 1 : Nettoyage profond, Étape 2 : Hydratation intense, Étape 3 : Protection solaire. Nous utilisons uniquement des produits adaptés à la peau africaine. Réservez votre rendez-vous dès maintenant et offre-vous un éclat de beauté !",
+      "hook": "Découvrez le secret d'un teint éclatant naturel!",
+      "script": "Vous rêvez d'un teint radiant sans effort? Notre soin visage éclat est là pour vous! Nettoyage + hydratation profonde pour seulement 15 000 FCFA. Réservation conseillée via WhatsApp.",
       "format": "Reel",
       "reseau": "TikTok",
-      "prompt_image": "Une femme africaine avec un teint lumineux et sain, avec des feux d'artifices en arrière-plan, représentant l'éclat. Les couleurs principales sont #D4AF37 et #0A1F44.",
+      "prompt_image": "Une femme africaine avec un teint luminieux, souriante, sur fond de fleurs ou de feuilles vertes, avec les couleurs #D4AF37 et #0A1F44",
       "variantes": [
-        "Éclatez de beauté avec nous !",
-        "Un teint parfait en 3 étapes, c'est possible !"
+        "Transformez votre peau en quelques séances!",
+        "Quand la nature meets beauté..."
       ]
     },
     {
-      "hook": "Le secret d'un teint parfait pour le grand jour ?",
-      "script": "Nous comprenons à quel point le jour de votre mariage est spécial. C'est pourquoi nous proposons un forfait mariée personnalisé comprenant 3 séances de soin avant le grand jour. Nous vous aiderons à atteindre le teint de vos rêves ! N'hésitez pas à nous contacter pour plus d'informations et à réserver votre place.",
+      "hook": "Préparez-vous pour le grand jour avec notre forfait mariée!",
+      "script": "Futuras mariées, vous voulez un teint parfait pour votre journée spéciale? Notre forfait comprend 3 séances de soin personnalisées pour 75 000 FCFA. Réservez dès maintenant sur WhatsApp!",
       "format": "Carrousel",
       "reseau": "Instagram",
-      "prompt_image": "Une photo d'une mariée africaine souriante avec un teint luminieux et une robe de mariée, avec des décorations de fleurs en arrière-plan. Les couleurs principales sont #D4AF37 et #0A1F44.",
+      "prompt_image": "Une future mariée heureuse, avec un voile ou une robe de mariée, sur un fond pastel ou doré, intégrant #D4AF37 et #0A1F44",
       "variantes": [
-        "Préparez-vous pour le jour le plus beau de votre vie !",
-        "Le forfait mariée qui vous fera briller !"
+        "Un teint de rêve pour votre union parfaite",
+        "Mariage : soyez sublime de l’intérieur comme de l’extérieur"
       ]
     },
     {
-      "hook": "Comment garder une peau saine et lumineuse tout au long de l'année ?",
-      "script": "Prenez soin de votre peau avec nos conseils et produits spécialement formulés pour la peau africaine. Nous sommes là pour vous aider à atteindre votre objectif de beauté. Pensez à réserver régulièrement un soin visage éclat pour une peau toujours en forme !",
-      "format": "Post",
-      "reseau": "Facebook",
-      "prompt_image": "Une femme africaine avec une peau saine et lumineuse, entourée de produits de soin et de fleurs. Les couleurs principales sont #D4AF37 et #0A1F44.",
+      "hook": "Les secrets de la peau parfaite révélés!",
+      "script": "Vous avez toujours voulu savoir comment avoir une peau parfaite? Découvrez nos conseils et produits adaptés à la peau africaine pour un éclat naturel tous les jours! Et pour un résultat encore plus bluffant, essayez notre soin visage éclat!",
+      "format": "Short",
+      "reseau": "TikTok",
+      "prompt_image": "Une femme afro avec la peau très claire et lumineuse, avec des produits de soin autour d'elle, sur fond neutre ou pastel avec #D4AF37 et #0A1F44",
       "variantes": [
-        "La clé d'une peau parfaite ?",
-        "Un visage éclatant, tout au long de l'année !"
+        "5 minutes pour une routine peau parfaite",
+        "Peau saine, esprit serein!"
       ]
     }
   ]

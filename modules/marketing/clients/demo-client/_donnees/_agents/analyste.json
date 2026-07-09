@@ -1,6 +1,6 @@
 {
   "agent": "analyste",
-  "genere_le": "2026-07-08T12:07:07+00:00",
+  "genere_le": "2026-07-09T16:16:42+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -13,69 +13,60 @@
   "items": [
     {
       "type": "insight",
-      "titre": "Éclat Beauté sur TikTok",
-      "explication": "Le compte Éclat Beauté a un engagement élevé sur TikTok avec un nombre de likes important.",
+      "titre": "Engagement élevé sur TikTok",
+      "explication": "Le compte Éclat Beauté affiche un engagement significatif sur TikTok, avec une moyenne de 88000 likes et 500 commentaires.",
       "preuve": {
-        "metrique": "likes",
-        "valeur": 88000,
-        "variation": null
-      },
-      "action": null
+        "metrique": "likes et commentaires sur TikTok",
+        "valeur": 88500
+      }
     },
     {
       "type": "reco",
-      "titre": "Publier du contenu régulièrement",
-      "explication": "Il est important de maintenir une cadence régulière de publication pour garder l'audience engagée.",
+      "titre": "Publier régulièrement sur TikTok",
+      "explication": "Pour maintenir et augmenter l'engagement, il est recommandé de publier au moins 2 fois par semaine sur TikTok.",
       "preuve": {
-        "metrique": "jours_depuis_dernier_post",
-        "valeur": 9,
-        "variation": null
+        "metrique": "posts par semaine sur TikTok",
+        "valeur": 2
       },
-      "action": "Publier un nouveau post cette semaine"
+      "action": "Planifier et publier du contenu de qualité sur TikTok deux fois par semaine"
     },
     {
       "type": "insight",
-      "titre": "Contenu Carrousel performant",
-      "explication": "Les contenus au format Carrousel ont un engagement moyen élevé.",
+      "titre": "Contenu visuel performant",
+      "explication": "Les contenus de type Reel et Carrousel obtiennent un engagement moyen élevé, respectivement 520 et 310.",
       "preuve": {
-        "metrique": "engagement_moyen",
-        "valeur": 310,
-        "variation": null
-      },
-      "action": null
+        "metrique": "engagement moyen par type de contenu",
+        "valeur": 520
+      }
     },
     {
       "type": "reco",
-      "titre": "Utiliser le créneau horaire recommandé",
-      "explication": "Il est préférable de publier du contenu à l'heure où l'audience est la plus active.",
+      "titre": "Prioriser les contenus visuels",
+      "explication": "Investir dans la création de contenus visuels de haute qualité, en particulier des Reels et des Carrousels, pour améliorer l'engagement.",
       "preuve": {
-        "metrique": "meilleur_creneau",
-        "valeur": "Jeudi 19h",
-        "variation": null
+        "metrique": "engagement moyen des Reels et Carrousels",
+        "valeur": 415
       },
-      "action": "Planifier les prochains posts pour le Jeudi à 19h"
+      "action": "Développer une stratégie de contenu visuel ciblée sur les Reels et Carrousels"
     },
     {
       "type": "insight",
-      "titre": "Évolution positive de l'audience",
-      "explication": "L'audience du compte a augmenté au fil du temps.",
+      "titre": "Croissance de l'audience",
+      "explication": "L'audience a augmenté de 25% depuis mai, avec un total de 23500 abonnés actuellement.",
       "preuve": {
-        "metrique": "evolution_audience",
-        "valeur": 23500,
-        "variation": "+25% par rapport au 01/05/2026"
-      },
-      "action": null
+        "metrique": "évolution de l'audience",
+        "valeur": 23500
+      }
     },
     {
       "type": "reco",
-      "titre": "Répondre aux commentaires et messages",
-      "explication": "Il est essentiel de répondre rapidement aux questions et commentaires des clients pour maintenir une bonne relation.",
+      "titre": "Analyser les commentaires et messages",
+      "explication": "Il est essentiel de répondre aux commentaires et messages des abonnés pour améliorer l'expérience utilisateur et renforcer la relation avec la marque.",
       "preuve": {
-        "metrique": "a_repondre",
-        "valeur": 5,
-        "variation": null
+        "metrique": "nombre de commentaires et messages",
+        "valeur": 1230
       },
-      "action": "Répondre aux 5 messages en attente cette semaine"
+      "action": "Consacrer du temps à lire et répondre aux commentaires et messages des abonnés chaque semaine"
     }
   ]
 }
