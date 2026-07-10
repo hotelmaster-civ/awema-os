@@ -1,6 +1,6 @@
 {
   "agent": "analyste",
-  "genere_le": "2026-07-09T16:16:31+00:00",
+  "genere_le": "2026-07-10T13:36:00+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -12,60 +12,60 @@
   "items": [
     {
       "type": "insight",
-      "titre": "Popularité des vidéos sur TikTok",
-      "explication": "Les vidéos postées sur TikTok obtiennent un nombre important de likes et de vues, ce qui suggère une bonne stratégie de contenu visuel.",
+      "titre": "Performances des vidéos sur TikTok",
+      "explication": "Les vidéos constituent le type de contenu le plus performant sur TikTok pour le compte Abidjan Résidences, avec un total de 51 vidéos publiées.",
       "preuve": {
-        "metrique": "likes_total",
-        "valeur": 9472
+        "metrique": "Nombre de posts sur TikTok",
+        "valeur": 51
       }
     },
     {
       "type": "reco",
-      "titre": "Augmenter la fréquence de publication",
-      "explication": "Augmenter la fréquence de publication sur TikTok pour maintenir l'engagement de l'audience.",
+      "titre": "Augmenter la fréquence de publication sur TikTok",
+      "explication": "La faible fréquence de publication actuelle (0,2 post par semaine) devrait être augmentée pour améliorer l'engagement et la portée du compte.",
       "preuve": {
-        "metrique": "posts_par_semaine",
+        "metrique": "Posts par semaine sur TikTok",
         "valeur": 0.2
       },
-      "action": "Publiez au moins 2 fois par semaine sur TikTok pour améliorer l'engagement et la portée."
+      "action": "Publier au moins un contenu par semaine sur TikTok."
     },
     {
       "type": "insight",
-      "titre": "Top post avec le plus de likes",
-      "explication": "Le post '#collage avec @Tdfmanga decouvrez un animé 100% ivoirien par @Cénack  « placman »' est celui qui a reçu le plus de likes sur TikTok.",
+      "titre": "Présence des abonnés sur TikTok",
+      "explication": "Le compte Abidjan Résidences compte 4198 abonnés sur TikTok, ce qui constitue l'essentiel de son audience connue.",
       "preuve": {
-        "metrique": "likes",
-        "valeur": 8918
-      }
-    },
-    {
-      "type": "reco",
-      "titre": "Utiliser les heures de grande affluence",
-      "explication": "Utiliser les heures de grande affluence pour poster du contenu sur TikTok afin d'augmenter la visibilité et l'engagement.",
-      "preuve": {
-        "metrique": "heure",
-        "valeur": "14h"
-      },
-      "action": "Publiez vos contenus les vendredis vers 14h pour atteindre un public plus large."
-    },
-    {
-      "type": "insight",
-      "titre": "Faible évolution de l'audience",
-      "explication": "L'audience n'a pas évolué significativement ces derniers jours, ce qui pourrait indiquer un manque de stratégie pour attirer de nouveaux abonnés.",
-      "preuve": {
-        "metrique": "evolution_audience",
+        "metrique": "Nombre d'abonnés sur TikTok",
         "valeur": 4198
       }
     },
     {
       "type": "reco",
-      "titre": "Diversifier les types de contenu",
-      "explication": "Diversifier les types de contenu pour attirer de nouveaux abonnés et améliorer l'engagement.",
+      "titre": "Créer du contenu attractif pour les abonnés sur TikTok",
+      "explication": "Le contenu devrait être créé en considérant les préférences et les intérêts des 4198 abonnés sur TikTok pour augmenter l'engagement.",
       "preuve": {
-        "metrique": "type",
-        "valeur": "vidéo"
+        "metrique": "Nombre total de likes sur TikTok",
+        "valeur": 9472
       },
-      "action": "Essayez de publier différents types de contenus tels que des photos, des stories ou des lives pour voir ce qui fonctionne le mieux."
+      "action": "Étudier les préférences des abonnés et créer du contenu attractif qui correspond à leurs intérêts sur TikTok."
+    },
+    {
+      "type": "insight",
+      "titre": "Popularité de certaines vidéos sur TikTok",
+      "explication": "Certaines vidéos, comme celle intitulée '#collage avec @Tdfmanga', ont obtenu un grand nombre de likes (8918) et de vues (32584), indiquant leur popularité chez les abonnés.",
+      "preuve": {
+        "metrique": "Nombre de likes pour '#collage avec @Tdfmanga'",
+        "valeur": 8918
+      }
+    },
+    {
+      "type": "reco",
+      "titre": "Analyser et reproduire les facteurs de succès des vidéos populaires",
+      "explication": "Comprendre les éléments qui ont contribué au succès de vidéos comme '#collage avec @Tdfmanga' et les appliquer à de futures publications pour améliorer leur potentiel d'engagement.",
+      "preuve": {
+        "metrique": "Vues pour '#collage avec @Tdfmanga'",
+        "valeur": 32584
+      },
+      "action": "Identifier les facteurs clés du succès de cette vidéo et appliquer ces stratégies à d'autres publications sur TikTok."
     }
   ]
 }

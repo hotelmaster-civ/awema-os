@@ -1,6 +1,6 @@
 {
   "agent": "stratege",
-  "genere_le": "2026-07-09T16:17:14+00:00",
+  "genere_le": "2026-07-10T13:36:54+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -15,60 +15,61 @@
       "jour": "Lundi",
       "heure": "19h",
       "format": "Reel",
-      "angle": "Routine peau grasse en 3 étapes",
+      "angle": "Présentation d'un nouveau soin de visage",
       "reseau": "TikTok"
     },
     {
-      "jour": "Mercredi",
-      "heure": "14h",
+      "jour": "Mardi",
+      "heure": "12h",
       "format": "Carrousel",
-      "angle": "Avant / Après soin éclat",
+      "angle": "Avant/Après soin éclat - Testimonial de cliente satisfaite",
       "reseau": "Instagram"
     },
     {
       "jour": "Jeudi",
       "heure": "19h",
-      "format": "Reel",
-      "angle": "Conseils pour un teint parfait pour le jour J",
-      "reseau": "TikTok"
+      "format": "Photo",
+      "angle": "Présentation d'un nouveau produit pour les peaux sensibles",
+      "reseau": "Instagram"
     },
     {
       "jour": "Vendredi",
-      "heure": "12h",
-      "format": "Photo",
-      "angle": "Présentation du forfait mariée",
-      "reseau": "Instagram"
+      "heure": "14h",
+      "format": "Reel",
+      "angle": "Conseils pour une routine peau grasse en 3 étapes",
+      "reseau": "TikTok"
     },
     {
       "jour": "Samedi",
       "heure": "14h",
-      "format": "Reel",
-      "angle": "Soins visage éclat pour un week-end de détente",
-      "reseau": "TikTok"
+      "format": "Carrousel",
+      "angle": "Présentation des différents forfaits disponibles",
+      "reseau": "Instagram"
     },
     {
       "jour": "Dimanche",
       "heure": "18h",
-      "format": "Carrousel",
-      "angle": "Les bienfaits du soin de soi",
+      "format": "Photo",
+      "angle": "Motivation pour une semaine de soin de soi",
       "reseau": "Instagram"
     },
     {
-      "jour": "Mardi",
-      "heure": "19h",
+      "jour": "Mercredi",
+      "heure": "17h",
       "format": "Reel",
-      "angle": "Comment avoir une peau éclatante en hiver",
+      "angle": "Réponse aux questions fréquentes sur les soins et produits",
       "reseau": "TikTok"
     }
   ],
-  "cadence_recommandee": "3 publications/semaine",
+  "cadence_recommandee": "4 publications/semaine",
   "meilleures_heures": [
     "Jeudi 19h",
     "Samedi 14h"
   ],
   "objectifs": [
-    "Augmenter l'engagement sur les publications de 20% en 4 semaines",
-    "Accroître la portée des publications de 15% en 4 semaines",
-    "Atteindre 2500 likes sur les publications de la semaine"
+    "Augmenter le taux d'engagement de 20% sur les publications futures",
+    "Accroître l'audience de 10% en 3 mois",
+    "Maintenir un taux de satisfaction des clientes à 95% ou plus",
+    "Réduire le temps de réponse aux commentaires et messages à moins de 2 heures"
   ]
 }

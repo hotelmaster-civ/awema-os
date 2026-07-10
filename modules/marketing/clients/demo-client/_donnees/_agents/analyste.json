@@ -1,6 +1,6 @@
 {
   "agent": "analyste",
-  "genere_le": "2026-07-09T16:16:42+00:00",
+  "genere_le": "2026-07-10T13:36:11+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -13,60 +13,66 @@
   "items": [
     {
       "type": "insight",
-      "titre": "Engagement élevé sur TikTok",
-      "explication": "Le compte Éclat Beauté affiche un engagement significatif sur TikTok, avec une moyenne de 88000 likes et 500 commentaires.",
+      "titre": "TikTok, réseau le plus performant",
+      "explication": "TikTok offre le meilleur engagement et le plus de likes par rapport aux autres réseaux sociaux utilisés par Éclat Beauté.",
       "preuve": {
-        "metrique": "likes et commentaires sur TikTok",
-        "valeur": 88500
-      }
+        "metrique": "likes",
+        "valeur": 88000,
+        "variation": "le plus élevé parmi les réseaux"
+      },
+      "action": null
     },
     {
       "type": "reco",
-      "titre": "Publier régulièrement sur TikTok",
-      "explication": "Pour maintenir et augmenter l'engagement, il est recommandé de publier au moins 2 fois par semaine sur TikTok.",
+      "titre": "Créer plus de contenus Reel",
+      "explication": "Les contenus de type Reel sur Instagram obtenennent un engagement moyen élevé, il est conseillé d'en produire davantage.",
       "preuve": {
-        "metrique": "posts par semaine sur TikTok",
-        "valeur": 2
-      },
-      "action": "Planifier et publier du contenu de qualité sur TikTok deux fois par semaine"
-    },
-    {
-      "type": "insight",
-      "titre": "Contenu visuel performant",
-      "explication": "Les contenus de type Reel et Carrousel obtiennent un engagement moyen élevé, respectivement 520 et 310.",
-      "preuve": {
-        "metrique": "engagement moyen par type de contenu",
+        "metrique": "engagement_moyen",
         "valeur": 520
-      }
-    },
-    {
-      "type": "reco",
-      "titre": "Prioriser les contenus visuels",
-      "explication": "Investir dans la création de contenus visuels de haute qualité, en particulier des Reels et des Carrousels, pour améliorer l'engagement.",
-      "preuve": {
-        "metrique": "engagement moyen des Reels et Carrousels",
-        "valeur": 415
       },
-      "action": "Développer une stratégie de contenu visuel ciblée sur les Reels et Carrousels"
+      "action": "Publier au moins un contenu Reel par semaine sur Instagram"
     },
     {
       "type": "insight",
-      "titre": "Croissance de l'audience",
-      "explication": "L'audience a augmenté de 25% depuis mai, avec un total de 23500 abonnés actuellement.",
+      "titre": "Évolution positive de l'audience",
+      "explication": "L'audience d'Éclat Beauté sur les réseaux sociaux a augmenté régulièrement ces derniers mois.",
       "preuve": {
-        "metrique": "évolution de l'audience",
-        "valeur": 23500
-      }
+        "metrique": "audience",
+        "valeur": 23500,
+        "variation": "augmentation de 25% par rapport à mai"
+      },
+      "action": null
     },
     {
       "type": "reco",
-      "titre": "Analyser les commentaires et messages",
-      "explication": "Il est essentiel de répondre aux commentaires et messages des abonnés pour améliorer l'expérience utilisateur et renforcer la relation avec la marque.",
+      "titre": "Répondre aux commentaires et messages",
+      "explication": "Il est important de répondre aux interrogations des abonnés pour maintenir une relation positive et informative.",
       "preuve": {
-        "metrique": "nombre de commentaires et messages",
-        "valeur": 1230
+        "metrique": "a_repondre",
+        "valeur": 5
       },
-      "action": "Consacrer du temps à lire et répondre aux commentaires et messages des abonnés chaque semaine"
+      "action": "Répondre à tous les commentaires et messages non traités avant la fin de la semaine"
+    },
+    {
+      "type": "insight",
+      "titre": "Le Jeudi à 19h, meilleur créneau pour poster",
+      "explication": "Selon les données, le Jeudi à 19h est le moment idéal pour poster du contenu pour maximiser l'engagement.",
+      "preuve": {
+        "metrique": "meilleur_creneau",
+        "valeur": "Jeudi 19h"
+      },
+      "action": null
+    },
+    {
+      "type": "reco",
+      "titre": "Optimiser la présence sur Facebook et Instagram",
+      "explication": "Même si TikTok est très performant, il est important de diversifier les contenus sur d'autres plateformes comme Facebook et Instagram pour toucher un public plus large.",
+      "preuve": {
+        "metrique": "abonnes",
+        "valeur": 6800,
+        "variation": "sur Instagram"
+      },
+      "action": "Développer une stratégie de contenu spécifique pour Facebook et Instagram"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "agent": "creatif",
-  "genere_le": "2026-07-09T16:17:55+00:00",
+  "genere_le": "2026-07-10T13:37:09+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -11,33 +11,33 @@
   },
   "items": [
     {
-      "hook": "Découvrez les secrets de Yopougon !",
-      "script": "Bonjour à tous ! Aujourd'hui, je vais vous emmener à la découverte d'un endroit magnifique à Abidjan : Yopougon ! Vous pouvez vous détendre, faire du shopping ou simplement vous promener. Qu'est-ce que vous aimez faire à Yopougon ? #Yopougon #Abidjan #CôteD'Ivoire",
+      "hook": "Découvrez l'animation ivoirienne la plus tendance !",
+      "script": "Nous sommes ravis de partager avec vous notre dernière découverte : « Placman », un animé 100% ivoirien créé par @Cénack ! Découvrez comment l'animation locale peut vous transporter dans un monde de créativité et d'innovation. #abidjan225 #placman #animationivoirienne",
       "format": "Short",
       "reseau": "TikTok",
-      "prompt_image": "Une photo aérienne de Yopougon avec des palmiers et des maisons colorées",
+      "prompt_image": "Un visuel représentant le personnage principal de « Placman » avec des éléments de design ivoirien en arrière-plan",
       "variantes": [
-        "Explorez Yopougon avec moi !"
+        "Plongez dans l'univers de « Placman » !"
       ]
     },
     {
-      "hook": "Qui connaît ce lieu à Abidjan ?",
-      "script": "Je cherche un endroit paisible pour me ressourcer à Abidjan. Qui peut me recommander un lieu incontournable ? Je vous attends en commentaire ! #Abidjan #CôteD'Ivoire #Détente",
+      "hook": "Recherchez-vous un lieu de détente près de Yopougon ?",
+      "script": "Le B vous offre un espace de détente et de calme à Yopougon ! Découvrez comment vous pouvez vous ressourcer et vous détendre dans un environnement paisible. N'hésitez pas à partager vos expériences de détente avec nous ! #Yopougon #détente #LeB",
       "format": "Reel",
       "reseau": "TikTok",
-      "prompt_image": "Une photo d'un endroit calme avec un lac ou une forêt",
+      "prompt_image": "Une vidéo montrant les extérieurs et les intérieurs de Le B, mettant en avant ses espaces de détente",
       "variantes": [
-        "Vous avez un lieu préféré à Abidjan ? Partagez-le avec nous !"
+        "Un moment de calme à Yopougon, c'est possible avec Le B !"
       ]
     },
     {
-      "hook": "Le B est-il votre refuge à Yopougon ?",
-      "script": "Vous cherchez un endroit où vous sentir en sécurité et en confiance ? Le B à Yopougon est là pour vous ! Nous proposons des chambres confortables et des services de qualité. Venez nous rendre visite ! #LeB #Yopougon #Hôtel",
+      "hook": "Faites la promotion de votre établissement avec nous !",
+      "script": "Vous souhaitez faire connaître votre établissement et attirer de nouveaux clients ? Nous sommes là pour vous aider ! Découvrez comment vous pouvez faire la promotion de votre établissement avec nous et fixer votre propre commission. #promotion #établissement #Abidjan",
       "format": "Carrousel",
-      "reseau": "Instagram",
-      "prompt_image": "Une photo de la façade de l'hôtel Le B avec des chambres modernes",
+      "reseau": "TikTok",
+      "prompt_image": "Un visuel représentant différents établissements avec des éléments de marketing et de promotion en arrière-plan",
       "variantes": [
-        "Découvrez pourquoi Le B est le premier choix pour vos séjours à Yopougon !"
+        "Boostez votre visibilité avec notre offre de promotion !"
       ]
     }
   ]

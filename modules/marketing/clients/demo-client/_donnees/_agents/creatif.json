@@ -1,6 +1,6 @@
 {
   "agent": "creatif",
-  "genere_le": "2026-07-09T16:18:07+00:00",
+  "genere_le": "2026-07-10T13:37:20+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -12,36 +12,33 @@
   },
   "items": [
     {
-      "hook": "Découvrez le secret d'un teint éclatant naturel!",
-      "script": "Vous rêvez d'un teint radiant sans effort? Notre soin visage éclat est là pour vous! Nettoyage + hydratation profonde pour seulement 15 000 FCFA. Réservation conseillée via WhatsApp.",
+      "hook": "Découvrez le secret pour une peau éclatante !",
+      "script": "Vous rêvez d'une peau parfaite ? Notre soin visage éclat est là pour vous ! Nettoyage + hydratation profonde pour 15 000 FCFA. Réservez maintenant via WhatsApp !",
       "format": "Reel",
       "reseau": "TikTok",
-      "prompt_image": "Une femme africaine avec un teint luminieux, souriante, sur fond de fleurs ou de feuilles vertes, avec les couleurs #D4AF37 et #0A1F44",
+      "prompt_image": "Une femme avec une peau lumineuse et un large sourire, sur fond de fleurs blanches et de lumières douces, avec les couleurs #D4AF37 et #0A1F44",
       "variantes": [
-        "Transformez votre peau en quelques séances!",
-        "Quand la nature meets beauté..."
+        "Un visage qui rayonne, c'est notre mission !"
       ]
     },
     {
-      "hook": "Préparez-vous pour le grand jour avec notre forfait mariée!",
-      "script": "Futuras mariées, vous voulez un teint parfait pour votre journée spéciale? Notre forfait comprend 3 séances de soin personnalisées pour 75 000 FCFA. Réservez dès maintenant sur WhatsApp!",
+      "hook": "Préparez-vous pour le grand jour avec notre forfait mariée !",
+      "script": "Vous voulez être parfaite pour votre mariage ? Notre forfait mariée inclut 3 séances de soin avant le jour J, pour 75 000 FCFA. Contactez-nous sur WhatsApp pour réserver !",
       "format": "Carrousel",
       "reseau": "Instagram",
-      "prompt_image": "Une future mariée heureuse, avec un voile ou une robe de mariée, sur un fond pastel ou doré, intégrant #D4AF37 et #0A1F44",
+      "prompt_image": "Une future mariée heureuse avec une peau parfaite, sur fond de décoration de mariage, avec les couleurs #D4AF37 et #0A1F44",
       "variantes": [
-        "Un teint de rêve pour votre union parfaite",
-        "Mariage : soyez sublime de l’intérieur comme de l’extérieur"
+        "Le grand jour approche, soyez prête !"
       ]
     },
     {
-      "hook": "Les secrets de la peau parfaite révélés!",
-      "script": "Vous avez toujours voulu savoir comment avoir une peau parfaite? Découvrez nos conseils et produits adaptés à la peau africaine pour un éclat naturel tous les jours! Et pour un résultat encore plus bluffant, essayez notre soin visage éclat!",
-      "format": "Short",
+      "hook": "Comment prendre soin de votre peau grasse en 3 étapes faciles ?",
+      "script": "Vous avez la peau grasse et vous ne savez pas par où commencer ? Notre routine en 3 étapes est là pour vous aider ! Nettoyez, hydratez et protégez votre peau avec nos produits adaptés. Découvrez nos conseils dans notre prochain reel !",
+      "format": "Reel",
       "reseau": "TikTok",
-      "prompt_image": "Une femme afro avec la peau très claire et lumineuse, avec des produits de soin autour d'elle, sur fond neutre ou pastel avec #D4AF37 et #0A1F44",
+      "prompt_image": "Une femme avec une peau grasse, avec des produit de soin et des étapes numérotées, sur fond de couleurs pastel, avec les couleurs #D4AF37 et #0A1F44",
       "variantes": [
-        "5 minutes pour une routine peau parfaite",
-        "Peau saine, esprit serein!"
+        "La peau grasse n'est plus un problème avec nos conseils !"
       ]
     }
   ]

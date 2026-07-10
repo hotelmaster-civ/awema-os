@@ -1,6 +1,6 @@
 {
   "agent": "stratege",
-  "genere_le": "2026-07-09T16:16:46+00:00",
+  "genere_le": "2026-07-10T13:36:52+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -12,51 +12,51 @@
   "items": [
     {
       "jour": "Lundi",
-      "heure": "14h",
-      "format": "Vidéo",
-      "angle": "Présentation d'une résidence à Abidjan",
-      "reseau": "TikTok"
-    },
-    {
-      "jour": "Mardi",
       "heure": "19h",
-      "format": "Short",
-      "angle": "Conseils pour choisir une résidence à Abidjan",
+      "format": "Vidéo",
+      "angle": "Découvrez les résidences d'Abidjan",
       "reseau": "TikTok"
     },
     {
-      "jour": "Jeudi",
+      "jour": "Mercredi",
       "heure": "12h",
-      "format": "Vidéo",
-      "angle": "Découverte d'un quartier à Abidjan",
+      "format": "Photographie",
+      "angle": "Les meilleures adresses de Yopougon",
       "reseau": "TikTok"
     },
     {
       "jour": "Vendredi",
       "heure": "14h",
       "format": "Vidéo",
-      "angle": "Présentation d'un événement à Abidjan",
+      "angle": "Promotion de l'établissement",
       "reseau": "TikTok"
     },
     {
       "jour": "Samedi",
-      "heure": "18h",
-      "format": "Short",
-      "angle": "Activités à faire à Abidjan",
+      "heure": "10h",
+      "format": "Story",
+      "angle": "Partagez vos expériences à Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Dimanche",
-      "heure": "20h",
-      "format": "Vidéo",
-      "angle": "Découverte d'une résidence à Abidjan",
+      "heure": "18h",
+      "format": "LIVE",
+      "angle": "Découvrez les événements à Abidjan",
       "reseau": "TikTok"
     },
     {
-      "jour": "Lundi",
-      "heure": "21h",
-      "format": "Short",
-      "angle": "Conseils pour améliorer son séjour à Abidjan",
+      "jour": "Mardi",
+      "heure": "15h",
+      "format": "Photographie",
+      "angle": "Les résidences de luxe à Abidjan",
+      "reseau": "TikTok"
+    },
+    {
+      "jour": "Jeudi",
+      "heure": "11h",
+      "format": "Vidéo",
+      "angle": "Les activités à faire à Abidjan",
       "reseau": "TikTok"
     }
   ],
@@ -65,9 +65,8 @@
     "Vendredi 14h"
   ],
   "objectifs": [
-    "Augmenter de 20% le nombre de vues sur les vidéos",
-    "Augmenter de 15% le taux d'engagement sur les publications",
-    "Atteindre 5000 abonnés sur TikTok dans les 3 prochains mois",
-    "Maintenir un taux d'engagement supérieur à 2% sur les publications"
+    "Augmenter l'engagement de 20% sur les publications TikTok",
+    "Atteindre 5000 vues par publication en moyenne",
+    "Accroître le nombre d'abonnés de 10% en un mois"
   ]
 }
