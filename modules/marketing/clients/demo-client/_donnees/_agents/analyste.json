@@ -1,6 +1,6 @@
 {
   "agent": "analyste",
-  "genere_le": "2026-07-10T13:36:11+00:00",
+  "genere_le": "2026-07-11T10:43:41+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -14,65 +14,63 @@
     {
       "type": "insight",
       "titre": "TikTok, réseau le plus performant",
-      "explication": "TikTok offre le meilleur engagement et le plus de likes par rapport aux autres réseaux sociaux utilisés par Éclat Beauté.",
+      "explication": "Le réseau TikTok affiche les meilleurs résultats en termes de likes et de vues, ce qui indique une stratégie gagnante sur cette plateforme.",
       "preuve": {
         "metrique": "likes",
         "valeur": 88000,
-        "variation": "le plus élevé parmi les réseaux"
+        "variation": null
       },
       "action": null
     },
     {
       "type": "reco",
-      "titre": "Créer plus de contenus Reel",
-      "explication": "Les contenus de type Reel sur Instagram obtenennent un engagement moyen élevé, il est conseillé d'en produire davantage.",
+      "titre": "Augmenter la fréquence de publication sur TikTok",
+      "explication": "Étant donné les performances exceptionnelles sur TikTok, il est recommandé d'augmenter la fréquence de publication sur cette plateforme pour maximiser l'engagement.",
+      "preuve": {
+        "metrique": "posts",
+        "valeur": 40
+      },
+      "action": "Publier au moins 2 fois par semaine sur TikTok"
+    },
+    {
+      "type": "insight",
+      "titre": "Contenu vidéo (Reel) bien performant",
+      "explication": "Les contenus de type Reel génèrent un engagement moyen élevé, ce qui suggère que les utilisateurs apprécient ce format.",
       "preuve": {
         "metrique": "engagement_moyen",
         "valeur": 520
       },
-      "action": "Publier au moins un contenu Reel par semaine sur Instagram"
-    },
-    {
-      "type": "insight",
-      "titre": "Évolution positive de l'audience",
-      "explication": "L'audience d'Éclat Beauté sur les réseaux sociaux a augmenté régulièrement ces derniers mois.",
-      "preuve": {
-        "metrique": "audience",
-        "valeur": 23500,
-        "variation": "augmentation de 25% par rapport à mai"
-      },
       "action": null
     },
     {
       "type": "reco",
-      "titre": "Répondre aux commentaires et messages",
-      "explication": "Il est important de répondre aux interrogations des abonnés pour maintenir une relation positive et informative.",
+      "titre": "Répondre aux questions fréquentes",
+      "explication": "Il y a des questions récurrentes qui nécessitent une réponse claire et rapide pour améliorer l'expérience utilisateur.",
       "preuve": {
         "metrique": "a_repondre",
         "valeur": 5
       },
-      "action": "Répondre à tous les commentaires et messages non traités avant la fin de la semaine"
+      "action": "Créer une FAQ détaillée et la partager sur les réseaux sociaux"
     },
     {
       "type": "insight",
-      "titre": "Le Jeudi à 19h, meilleur créneau pour poster",
-      "explication": "Selon les données, le Jeudi à 19h est le moment idéal pour poster du contenu pour maximiser l'engagement.",
+      "titre": "Audience en constante évolution",
+      "explication": "L'audience a augmenté régulièrement, ce qui indique une stratégie de contenu efficace.",
       "preuve": {
-        "metrique": "meilleur_creneau",
-        "valeur": "Jeudi 19h"
+        "metrique": "evolution_audience",
+        "valeur": 23500
       },
       "action": null
     },
     {
       "type": "reco",
-      "titre": "Optimiser la présence sur Facebook et Instagram",
-      "explication": "Même si TikTok est très performant, il est important de diversifier les contenus sur d'autres plateformes comme Facebook et Instagram pour toucher un public plus large.",
+      "titre": "Utiliser les créneaux horaires recommandés",
+      "explication": "Les données montrent que certaines heures de la journée génèrent plus d'engagement, il est donc conseillé de planifier les publications en conséquence.",
       "preuve": {
-        "metrique": "abonnes",
-        "valeur": 6800,
-        "variation": "sur Instagram"
+        "metrique": "meilleur_creneau",
+        "valeur": "Jeudi 19h"
       },
-      "action": "Développer une stratégie de contenu spécifique pour Facebook et Instagram"
+      "action": "Planifier les publications sur les créneaux recommandés pour maximiser l'engagement"
     }
   ]
 }

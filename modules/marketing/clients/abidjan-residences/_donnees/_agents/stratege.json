@@ -1,6 +1,6 @@
 {
   "agent": "stratege",
-  "genere_le": "2026-07-10T13:36:52+00:00",
+  "genere_le": "2026-07-11T10:44:21+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -12,51 +12,44 @@
   "items": [
     {
       "jour": "Lundi",
-      "heure": "19h",
+      "heure": "14h",
       "format": "Vidéo",
-      "angle": "Découvrez les résidences d'Abidjan",
+      "angle": "Découverte de résidences à Abidjan",
+      "reseau": "TikTok"
+    },
+    {
+      "jour": "Mardi",
+      "heure": "12h",
+      "format": "Story",
+      "angle": "Avantages de résider à Yopougon",
       "reseau": "TikTok"
     },
     {
       "jour": "Mercredi",
-      "heure": "12h",
-      "format": "Photographie",
-      "angle": "Les meilleures adresses de Yopougon",
+      "heure": "16h",
+      "format": "Live",
+      "angle": "Visite d'une résidence à Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Vendredi",
       "heure": "14h",
       "format": "Vidéo",
-      "angle": "Promotion de l'établissement",
+      "angle": "Les tendances de l'immobilier en Côte d'Ivoire",
       "reseau": "TikTok"
     },
     {
       "jour": "Samedi",
       "heure": "10h",
-      "format": "Story",
-      "angle": "Partagez vos expériences à Abidjan",
+      "format": "Photo",
+      "angle": "Présentation d'un nouveau projet de résidence",
       "reseau": "TikTok"
     },
     {
       "jour": "Dimanche",
       "heure": "18h",
-      "format": "LIVE",
-      "angle": "Découvrez les événements à Abidjan",
-      "reseau": "TikTok"
-    },
-    {
-      "jour": "Mardi",
-      "heure": "15h",
-      "format": "Photographie",
-      "angle": "Les résidences de luxe à Abidjan",
-      "reseau": "TikTok"
-    },
-    {
-      "jour": "Jeudi",
-      "heure": "11h",
-      "format": "Vidéo",
-      "angle": "Les activités à faire à Abidjan",
+      "format": "Story",
+      "angle": "Les activités à faire autour de Yopougon",
       "reseau": "TikTok"
     }
   ],
@@ -65,8 +58,8 @@
     "Vendredi 14h"
   ],
   "objectifs": [
-    "Augmenter l'engagement de 20% sur les publications TikTok",
-    "Atteindre 5000 vues par publication en moyenne",
-    "Accroître le nombre d'abonnés de 10% en un mois"
+    "Augmenter de 20% les abonnés sur TikTok",
+    "Maintenir un taux d'engagement moyen de 2%",
+    "Publier au moins 4 fois par semaine"
   ]
 }

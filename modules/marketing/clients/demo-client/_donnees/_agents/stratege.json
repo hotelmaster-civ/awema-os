@@ -1,6 +1,6 @@
 {
   "agent": "stratege",
-  "genere_le": "2026-07-10T13:36:54+00:00",
+  "genere_le": "2026-07-11T10:44:53+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -15,61 +15,60 @@
       "jour": "Lundi",
       "heure": "19h",
       "format": "Reel",
-      "angle": "Présentation d'un nouveau soin de visage",
+      "angle": "Conseils pour un soin visage quotidien",
       "reseau": "TikTok"
     },
     {
-      "jour": "Mardi",
-      "heure": "12h",
+      "jour": "Mercredi",
+      "heure": "14h",
       "format": "Carrousel",
-      "angle": "Avant/Après soin éclat - Testimonial de cliente satisfaite",
+      "angle": "Avant/Après soin du corps pour une peau éclatante",
       "reseau": "Instagram"
     },
     {
       "jour": "Jeudi",
       "heure": "19h",
       "format": "Photo",
-      "angle": "Présentation d'un nouveau produit pour les peaux sensibles",
+      "angle": "Produits naturels pour les peaux sensibles",
       "reseau": "Instagram"
     },
     {
       "jour": "Vendredi",
-      "heure": "14h",
-      "format": "Reel",
-      "angle": "Conseils pour une routine peau grasse en 3 étapes",
+      "heure": "12h",
+      "format": "Short",
+      "angle": "Soin personnalisé pour chaque type de peau",
       "reseau": "TikTok"
     },
     {
       "jour": "Samedi",
       "heure": "14h",
-      "format": "Carrousel",
-      "angle": "Présentation des différents forfaits disponibles",
-      "reseau": "Instagram"
+      "format": "Reel",
+      "angle": "Routine de soin pour une peau grasse",
+      "reseau": "TikTok"
     },
     {
       "jour": "Dimanche",
       "heure": "18h",
-      "format": "Photo",
-      "angle": "Motivation pour une semaine de soin de soi",
+      "format": "Carrousel",
+      "angle": "Témoignages de clientes satisfaites",
       "reseau": "Instagram"
     },
     {
-      "jour": "Mercredi",
-      "heure": "17h",
-      "format": "Reel",
-      "angle": "Réponse aux questions fréquentes sur les soins et produits",
-      "reseau": "TikTok"
+      "jour": "Mardi",
+      "heure": "19h",
+      "format": "Photo",
+      "angle": "Présentation de nouveaux produits naturels",
+      "reseau": "Instagram"
     }
   ],
-  "cadence_recommandee": "4 publications/semaine",
+  "cadence_recommandee": "3 publications/semaine",
   "meilleures_heures": [
     "Jeudi 19h",
     "Samedi 14h"
   ],
   "objectifs": [
-    "Augmenter le taux d'engagement de 20% sur les publications futures",
-    "Accroître l'audience de 10% en 3 mois",
-    "Maintenir un taux de satisfaction des clientes à 95% ou plus",
-    "Réduire le temps de réponse aux commentaires et messages à moins de 2 heures"
+    "Augmenter les likes de 15% en 4 semaines",
+    "Accroître les commentaires de 20% en 6 semaines",
+    "Maintenir un taux d'engagement supérieur à 3.5% sur les publications"
   ]
 }

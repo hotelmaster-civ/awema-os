@@ -1,6 +1,6 @@
 {
   "agent": "creatif",
-  "genere_le": "2026-07-10T13:37:09+00:00",
+  "genere_le": "2026-07-11T10:45:13+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -11,33 +11,36 @@
   },
   "items": [
     {
-      "hook": "Découvrez l'animation ivoirienne la plus tendance !",
-      "script": "Nous sommes ravis de partager avec vous notre dernière découverte : « Placman », un animé 100% ivoirien créé par @Cénack ! Découvrez comment l'animation locale peut vous transporter dans un monde de créativité et d'innovation. #abidjan225 #placman #animationivoirienne",
-      "format": "Short",
-      "reseau": "TikTok",
-      "prompt_image": "Un visuel représentant le personnage principal de « Placman » avec des éléments de design ivoirien en arrière-plan",
-      "variantes": [
-        "Plongez dans l'univers de « Placman » !"
-      ]
-    },
-    {
-      "hook": "Recherchez-vous un lieu de détente près de Yopougon ?",
-      "script": "Le B vous offre un espace de détente et de calme à Yopougon ! Découvrez comment vous pouvez vous ressourcer et vous détendre dans un environnement paisible. N'hésitez pas à partager vos expériences de détente avec nous ! #Yopougon #détente #LeB",
+      "hook": "Découvrez les meilleurs endroits à Abidjan pour un séjour inoubliable",
+      "script": "Vous cherchez un endroit pour vous détendre à Abidjan ? Découvrez notre sélection des meilleurs résidences et hôtels de la ville ! De la plage de Grand-Bassam aux quartiers animés de Yopougon, nous vous proposons les meilleurs endroits pour passer des vacances de rêve. Abonnez-vous pour découvrir plus de contenu sur Abidjan et ses environs !",
       "format": "Reel",
       "reseau": "TikTok",
-      "prompt_image": "Une vidéo montrant les extérieurs et les intérieurs de Le B, mettant en avant ses espaces de détente",
+      "prompt_image": "une vidéo montrant les differentes plages et quartiers d'Abidjan avec des gens souriants et des infrastructures touristiques",
       "variantes": [
-        "Un moment de calme à Yopougon, c'est possible avec Le B !"
+        "Explorez Abidjan comme jamais auparavant",
+        "Les secrets d'Abidjan révélés"
       ]
     },
     {
-      "hook": "Faites la promotion de votre établissement avec nous !",
-      "script": "Vous souhaitez faire connaître votre établissement et attirer de nouveaux clients ? Nous sommes là pour vous aider ! Découvrez comment vous pouvez faire la promotion de votre établissement avec nous et fixer votre propre commission. #promotion #établissement #Abidjan",
+      "hook": "Vous êtes prêt à vivre l'expérience ivoirienne à Abidjan ?",
+      "script": "Découvrez notre dernière vidéo qui vous emmène dans les rues d'Abidjan, pour vous faire découvrir les meilleurs endroits pour manger, boire et danser ! De la musique traditionnelle ivoirienne aux plats locaux délicieux, nous vous proposons une expérience unique et authentique. N'oubliez pas de liker et de commenter pour nous faire savoir ce que vous en pensez !",
+      "format": "Short",
+      "reseau": "TikTok",
+      "prompt_image": "une vidéo montrant la vie nocturne d'Abidjan avec des gens dansant et mangeant dans les rues",
+      "variantes": [
+        "Vivez l'expérience ivoirienne avec nous",
+        "Découvrez le vrai visage d'Abidjan"
+      ]
+    },
+    {
+      "hook": "Que faire à Abidjan pendant les weekends ?",
+      "script": "Vous cherchez des idées pour passer un weekend inoubliable à Abidjan ? Découvrez notre sélection des meilleurs endroits pour visiter, manger et boire ! De la visite du marché de Treichville aux dégustations de plats locaux, nous vous proposons une expérience unique et divertissante. Abonnez-vous pour découvrir plus de contenu sur Abidjan et ses environs !",
       "format": "Carrousel",
       "reseau": "TikTok",
-      "prompt_image": "Un visuel représentant différents établissements avec des éléments de marketing et de promotion en arrière-plan",
+      "prompt_image": "une série de photos montrant les différents endroits à visiter à Abidjan pendant les weekends",
       "variantes": [
-        "Boostez votre visibilité avec notre offre de promotion !"
+        "Les weekends à Abidjan : que faire ?",
+        "Découvrez les secrets des weekends abidjanais"
       ]
     }
   ]

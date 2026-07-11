@@ -1,6 +1,6 @@
 {
   "agent": "creatif",
-  "genere_le": "2026-07-10T13:37:20+00:00",
+  "genere_le": "2026-07-11T10:45:16+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -12,33 +12,33 @@
   },
   "items": [
     {
-      "hook": "Découvrez le secret pour une peau éclatante !",
-      "script": "Vous rêvez d'une peau parfaite ? Notre soin visage éclat est là pour vous ! Nettoyage + hydratation profonde pour 15 000 FCFA. Réservez maintenant via WhatsApp !",
+      "hook": "Découvrez le secret d'une peau éblouissante sans effort !",
+      "script": "Vous rêvez d'une peau éclatante sans passer des heures à la préparer ? Notre soin visage éclat est la solution ! Nettoyage et hydratation profonde pour une peau saine et lumineuse. Prix spécial : 15 000 FCFA. Réservez maintenant sur WhatsApp !",
       "format": "Reel",
       "reseau": "TikTok",
-      "prompt_image": "Une femme avec une peau lumineuse et un large sourire, sur fond de fleurs blanches et de lumières douces, avec les couleurs #D4AF37 et #0A1F44",
+      "prompt_image": "Une femme africaine avec une peau éclatante et un large sourire, entourée de produits de soin naturels et de fleurs, avec une légende \"Éclat Beauté\" en #D4AF37",
       "variantes": [
-        "Un visage qui rayonne, c'est notre mission !"
+        "Transformez votre routine beauté avec nos soins personnalisés !"
       ]
     },
     {
-      "hook": "Préparez-vous pour le grand jour avec notre forfait mariée !",
-      "script": "Vous voulez être parfaite pour votre mariage ? Notre forfait mariée inclut 3 séances de soin avant le jour J, pour 75 000 FCFA. Contactez-nous sur WhatsApp pour réserver !",
+      "hook": "Préparez votre teint pour le grand jour avec notre forfait mariée !",
+      "script": "Vous voulez un teint parfait pour votre mariage ? Notre forfait mariée est conçu pour vous ! 3 séances de soin visage personnalisées pour vous donner une peau radieuse. Investissez dans votre beauté : 75 000 FCFA. Contactez-nous sur WhatsApp pour réserver !",
       "format": "Carrousel",
       "reseau": "Instagram",
-      "prompt_image": "Une future mariée heureuse avec une peau parfaite, sur fond de décoration de mariage, avec les couleurs #D4AF37 et #0A1F44",
+      "prompt_image": "Une future mariée africaine avec un teint lumineux, montrant les différentes étapes du forfait mariée d'Éclat Beauté, avec des fleurs et des décorations de mariage, et la légende \"Forfait Mariée\" en #0A1F44",
       "variantes": [
-        "Le grand jour approche, soyez prête !"
+        "Faites de votre jour J un jour inoubliable avec une peau parfaite !"
       ]
     },
     {
-      "hook": "Comment prendre soin de votre peau grasse en 3 étapes faciles ?",
-      "script": "Vous avez la peau grasse et vous ne savez pas par où commencer ? Notre routine en 3 étapes est là pour vous aider ! Nettoyez, hydratez et protégez votre peau avec nos produits adaptés. Découvrez nos conseils dans notre prochain reel !",
-      "format": "Reel",
-      "reseau": "TikTok",
-      "prompt_image": "Une femme avec une peau grasse, avec des produit de soin et des étapes numérotées, sur fond de couleurs pastel, avec les couleurs #D4AF37 et #0A1F44",
+      "hook": "Un temps pour soi, c'est un investissement pour toujours !",
+      "script": "Prenez un moment pour vous et offrez-vous un soin de haut niveau avec Éclat Beauté ! Chez nous, nous croyons que chaque femme mérite de se sentir belle et épanouie. Découvrez nos offres spéciales sur nos soins visage et corps, conçus pour les besoins de la peau africaine. Réservez maintenant et transformez votre quotidien !",
+      "format": "Post",
+      "reseau": "Facebook",
+      "prompt_image": "Une femme africaine détendue et heureuse au sein d'un institut de beauté, entourée de plantes et de luminosité naturelle, avec la légende \"Temps pour soi\" en #D4AF37 et le logo d'Éclat Beauté",
       "variantes": [
-        "La peau grasse n'est plus un problème avec nos conseils !"
+        "Donnez-vous le cadeau de la beauté et du bien-être !"
       ]
     }
   ]
