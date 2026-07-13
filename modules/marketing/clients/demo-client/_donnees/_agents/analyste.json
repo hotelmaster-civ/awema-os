@@ -1,6 +1,6 @@
 {
   "agent": "analyste",
-  "genere_le": "2026-07-11T10:43:41+00:00",
+  "genere_le": "2026-07-13T16:16:22+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -13,64 +13,60 @@
   "items": [
     {
       "type": "insight",
-      "titre": "TikTok, réseau le plus performant",
-      "explication": "Le réseau TikTok affiche les meilleurs résultats en termes de likes et de vues, ce qui indique une stratégie gagnante sur cette plateforme.",
+      "titre": "Performance de TikTok",
+      "explication": "TikTok affiche un engagement considérable, avec 88 000 likes et 500 commentaires sur 40 posts.",
       "preuve": {
-        "metrique": "likes",
-        "valeur": 88000,
-        "variation": null
-      },
-      "action": null
+        "metrique": "likes sur TikTok",
+        "valeur": 88000
+      }
     },
     {
       "type": "reco",
-      "titre": "Augmenter la fréquence de publication sur TikTok",
-      "explication": "Étant donné les performances exceptionnelles sur TikTok, il est recommandé d'augmenter la fréquence de publication sur cette plateforme pour maximiser l'engagement.",
+      "titre": "Publier sur TikTok",
+      "explication": "Publier régulièrement sur TikTok pour maintenir l'engagement.",
       "preuve": {
-        "metrique": "posts",
+        "metrique": "posts sur TikTok",
         "valeur": 40
       },
-      "action": "Publier au moins 2 fois par semaine sur TikTok"
+      "action": "Publier 2 fois par semaine sur TikTok"
     },
     {
       "type": "insight",
-      "titre": "Contenu vidéo (Reel) bien performant",
-      "explication": "Les contenus de type Reel génèrent un engagement moyen élevé, ce qui suggère que les utilisateurs apprécient ce format.",
+      "titre": "Meilleur type de contenu",
+      "explication": "Les Reels génèrent en moyenne 520 engagements par post, ce qui est supérieur au Carrousel (310) et à la Photo (140).",
       "preuve": {
-        "metrique": "engagement_moyen",
+        "metrique": "engagement moyen par Reel",
+        "valeur": 520
+      }
+    },
+    {
+      "type": "reco",
+      "titre": "Créer plus de Reels",
+      "explication": "Créer des Reels pour augmenter l'engagement sur les réseaux sociaux.",
+      "preuve": {
+        "metrique": "engagement moyen par Reel",
         "valeur": 520
       },
-      "action": null
-    },
-    {
-      "type": "reco",
-      "titre": "Répondre aux questions fréquentes",
-      "explication": "Il y a des questions récurrentes qui nécessitent une réponse claire et rapide pour améliorer l'expérience utilisateur.",
-      "preuve": {
-        "metrique": "a_repondre",
-        "valeur": 5
-      },
-      "action": "Créer une FAQ détaillée et la partager sur les réseaux sociaux"
+      "action": "Créer 3 Reels par mois"
     },
     {
       "type": "insight",
-      "titre": "Audience en constante évolution",
-      "explication": "L'audience a augmenté régulièrement, ce qui indique une stratégie de contenu efficace.",
+      "titre": "Évolution de l'audience",
+      "explication": "L'audience a augmenté de 25 000 à 23 500 entre le 1er mai et le 15 juin, montrant une légère stabilité.",
       "preuve": {
-        "metrique": "evolution_audience",
-        "valeur": 23500
-      },
-      "action": null
+        "metrique": "évolution de l'audience",
+        "valeur": 2500
+      }
     },
     {
       "type": "reco",
-      "titre": "Utiliser les créneaux horaires recommandés",
-      "explication": "Les données montrent que certaines heures de la journée génèrent plus d'engagement, il est donc conseillé de planifier les publications en conséquence.",
+      "titre": "Répondre aux commentaires",
+      "explication": "Répondre aux commentaires pour améliorer l'engagement et la rétention des abonnés.",
       "preuve": {
-        "metrique": "meilleur_creneau",
-        "valeur": "Jeudi 19h"
+        "metrique": "commentaires sans réponse",
+        "valeur": 5
       },
-      "action": "Planifier les publications sur les créneaux recommandés pour maximiser l'engagement"
+      "action": "Répondre à tous les commentaires dans les 24 heures"
     }
   ]
 }

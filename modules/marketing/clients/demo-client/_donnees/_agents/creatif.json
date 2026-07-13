@@ -1,6 +1,6 @@
 {
   "agent": "creatif",
-  "genere_le": "2026-07-11T10:45:16+00:00",
+  "genere_le": "2026-07-13T16:17:31+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -12,33 +12,33 @@
   },
   "items": [
     {
-      "hook": "Découvrez le secret d'une peau éblouissante sans effort !",
-      "script": "Vous rêvez d'une peau éclatante sans passer des heures à la préparer ? Notre soin visage éclat est la solution ! Nettoyage et hydratation profonde pour une peau saine et lumineuse. Prix spécial : 15 000 FCFA. Réservez maintenant sur WhatsApp !",
+      "hook": "Découvrez le secret d'un teint éclatant !",
+      "script": "Vous rêvez d'un teint radieux et sain ? Notre soin visage éclat est là pour vous ! Avec un nettoyage profound et une hydratation de qualité, votre peau sera revitalisée. Réservez votre rendez-vous dès aujourd'hui et découvrez pourquoi nos clientes adorent notre institut !",
       "format": "Reel",
       "reseau": "TikTok",
-      "prompt_image": "Une femme africaine avec une peau éclatante et un large sourire, entourée de produits de soin naturels et de fleurs, avec une légende \"Éclat Beauté\" en #D4AF37",
+      "prompt_image": "Une femme souriante avec une peau éclatante, une fleur de beauté derrière elle, avec les couleurs #D4AF37 et #0A1F44 en arrière-plan",
       "variantes": [
-        "Transformez votre routine beauté avec nos soins personnalisés !"
+        "Un teint parfait en quelques étapes ?"
       ]
     },
     {
-      "hook": "Préparez votre teint pour le grand jour avec notre forfait mariée !",
-      "script": "Vous voulez un teint parfait pour votre mariage ? Notre forfait mariée est conçu pour vous ! 3 séances de soin visage personnalisées pour vous donner une peau radieuse. Investissez dans votre beauté : 75 000 FCFA. Contactez-nous sur WhatsApp pour réserver !",
+      "hook": "Préparez-vous pour le grand jour !",
+      "script": "Vous êtes sur le point de dire 'oui' ? Notre forfait mariée est conçu pour vous offrir un teint parfait pour votre jour spécial. 3 séances de soins personnalisés pour vous mettre en confiance. Réservez maintenant et vivez votre rêve !",
       "format": "Carrousel",
       "reseau": "Instagram",
-      "prompt_image": "Une future mariée africaine avec un teint lumineux, montrant les différentes étapes du forfait mariée d'Éclat Beauté, avec des fleurs et des décorations de mariage, et la légende \"Forfait Mariée\" en #0A1F44",
+      "prompt_image": "Une future mariée heureuse avec un teint radieux, les couleurs pastel et les motifs floraux en arrière-plan, avec les couleurs #D4AF37 et #0A1F44 présentes",
       "variantes": [
-        "Faites de votre jour J un jour inoubliable avec une peau parfaite !"
+        "Le jour J approche, soyez prête !"
       ]
     },
     {
-      "hook": "Un temps pour soi, c'est un investissement pour toujours !",
-      "script": "Prenez un moment pour vous et offrez-vous un soin de haut niveau avec Éclat Beauté ! Chez nous, nous croyons que chaque femme mérite de se sentir belle et épanouie. Découvrez nos offres spéciales sur nos soins visage et corps, conçus pour les besoins de la peau africaine. Réservez maintenant et transformez votre quotidien !",
-      "format": "Post",
-      "reseau": "Facebook",
-      "prompt_image": "Une femme africaine détendue et heureuse au sein d'un institut de beauté, entourée de plantes et de luminosité naturelle, avec la légende \"Temps pour soi\" en #D4AF37 et le logo d'Éclat Beauté",
+      "hook": "Peau grasse ? Nous avons la solution !",
+      "script": "La peau grasse peut être un challenge, mais avec les bons conseils et les produits adaptés, vous pouvez la contrôler. Découvrez nos astuces en 3 étapes pour une peau équilibrée et saine. Partagez vos propres conseils dans les commentaires !",
+      "format": "Reel",
+      "reseau": "TikTok",
+      "prompt_image": "Une femme montrant ses produits de soin favoris, avec une peau saine et éclatante, les couleurs #D4AF37 et #0A1F44 en harmonie avec le décor",
       "variantes": [
-        "Donnez-vous le cadeau de la beauté et du bien-être !"
+        "Peau grasse ? Pas de panique, nous aidons !"
       ]
     }
   ]

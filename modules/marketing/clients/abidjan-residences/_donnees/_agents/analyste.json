@@ -1,6 +1,6 @@
 {
   "agent": "analyste",
-  "genere_le": "2026-07-11T10:43:30+00:00",
+  "genere_le": "2026-07-13T16:15:49+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -12,60 +12,41 @@
   "items": [
     {
       "type": "insight",
-      "titre": "Popularité du contenu sur TikTok",
-      "explication": "Le compte Abidjan résidences obtient une grande visibilité et engagement sur TikTok, notamment avec des vidéos telles que '#collage avec @Tdfmanga decouvrez un animé 100% ivoirien par @Cénack  « placman »'",
+      "titre": "Performances des vidéos sur TikTok",
+      "explication": "Les vidéos publiées sur TikTok obtiennent un engagement important, notamment en termes de likes et de commentaires.",
+      "preuve": {
+        "metrique": "likes_total",
+        "valeur": 9475
+      }
+    },
+    {
+      "type": "reco",
+      "titre": "Publier régulièrement sur TikTok",
+      "explication": "Il est recommandé de publier au moins une fois par semaine sur TikTok pour maintenir l'engagement de l'audience.",
+      "preuve": {
+        "metrique": "posts_par_semaine",
+        "valeur": 0.2
+      },
+      "action": "Publier au moins 1 vidéo par semaine sur TikTok"
+    },
+    {
+      "type": "insight",
+      "titre": "Le top post sur TikTok",
+      "explication": "Le post '#collage avec @Tdfmanga decouvrez un animé 100% ivoirien par @Cénack  « placman »' obtient le plus de likes et de commentaires.",
       "preuve": {
         "metrique": "likes",
         "valeur": 8918
       }
     },
     {
-      "type": "insight",
-      "titre": "Cadence de publication",
-      "explication": "La cadence de publication sur TikTok est actuellement très faible, avec seulement 1 poste par mois, ce qui pourrait impacter la fidélité et l'engagement de l'audience",
-      "preuve": {
-        "metrique": "posts_par_semaine",
-        "valeur": 0.2
-      }
-    },
-    {
       "type": "reco",
-      "titre": "Augmenter la cadence de publication",
-      "explication": "Augmenter la fréquence des publications sur TikTok, en visant au moins 3 à 5 publications par semaine, pour maintenir l'intérêt de l'audience et améliorer l'engagement",
+      "titre": "Utiliser des collaborations sur TikTok",
+      "explication": "Les collaborations avec d'autres utilisateurs de TikTok peuvent augmenter l'engagement sur les publications.",
       "preuve": {
-        "metrique": "posts_30j",
-        "valeur": 1
+        "metrique": "likes",
+        "valeur": 8918
       },
-      "action": "Publiez au moins 3 à 5 fois par semaine sur TikTok pour renforcer l'interaction avec vos abonnés"
-    },
-    {
-      "type": "reco",
-      "titre": "Utiliser les créneaux horaires recommandés",
-      "explication": "Les données suggèrent que les publications ont le plus d'impact le vendredi vers 14h. Utiliser ces créneaux pour maximiser l'engagement",
-      "preuve": {
-        "metrique": "jour",
-        "valeur": "Vendredi"
-      },
-      "action": "Planifiez vos publications sur TikTok pour le vendredi à 14h pour maximiser l'impact sur votre audience"
-    },
-    {
-      "type": "insight",
-      "titre": "Contenu vidéo",
-      "explication": "Les vidéos sont le type de contenu le plus représenté et le plus interactif, avec une vidéo ayant atteint jusqu'à 32584 vues",
-      "preuve": {
-        "metrique": "vues",
-        "valeur": 32584
-      }
-    },
-    {
-      "type": "reco",
-      "titre": "Développer des stratégies de contenu vidéo",
-      "explication": "Investir dans la création de vidéos de qualité, en mettant l'accent sur des sujets qui intéressent le public cible, pour augmenter l'engagement et la visibilité",
-      "preuve": {
-        "metrique": "type",
-        "valeur": "vidéo"
-      },
-      "action": "Développez une stratégie pour produire plus de vidéos engageantes et interactives qui répondent aux intérêts de vos abonnés"
+      "action": "Chercher à collaborer avec d'autres utilisateurs de TikTok pour les prochaines publications"
     }
   ]
 }

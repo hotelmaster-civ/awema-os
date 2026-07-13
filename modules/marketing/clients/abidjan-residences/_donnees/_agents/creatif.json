@@ -1,6 +1,6 @@
 {
   "agent": "creatif",
-  "genere_le": "2026-07-11T10:45:13+00:00",
+  "genere_le": "2026-07-13T16:17:18+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -11,36 +11,33 @@
   },
   "items": [
     {
-      "hook": "Découvrez les meilleurs endroits à Abidjan pour un séjour inoubliable",
-      "script": "Vous cherchez un endroit pour vous détendre à Abidjan ? Découvrez notre sélection des meilleurs résidences et hôtels de la ville ! De la plage de Grand-Bassam aux quartiers animés de Yopougon, nous vous proposons les meilleurs endroits pour passer des vacances de rêve. Abonnez-vous pour découvrir plus de contenu sur Abidjan et ses environs !",
+      "hook": "Découvrez les meilleurs lieux de détente à Abidjan !",
+      "script": "Vous cherchez un endroit calme pour vous détendre à Abidjan ? Nous avons ce qu'il vous faut ! Découvrez nos résidences confortables et équipées pour un séjour inoubliable. De la plage à la ville, nous avons sélectionné les meilleurs lieux pour vous détendre et vous ressourcer. #Abidjan #Détente #Résidences",
       "format": "Reel",
       "reseau": "TikTok",
-      "prompt_image": "une vidéo montrant les differentes plages et quartiers d'Abidjan avec des gens souriants et des infrastructures touristiques",
+      "prompt_image": "Photo d'une résidence avec piscine et plage en arrière-plan, avec deux personnes en train de se détendre sur des transats",
       "variantes": [
-        "Explorez Abidjan comme jamais auparavant",
-        "Les secrets d'Abidjan révélés"
+        "Échappez à la routine et trouvez votre haven de paix à Abidjan !"
       ]
     },
     {
-      "hook": "Vous êtes prêt à vivre l'expérience ivoirienne à Abidjan ?",
-      "script": "Découvrez notre dernière vidéo qui vous emmène dans les rues d'Abidjan, pour vous faire découvrir les meilleurs endroits pour manger, boire et danser ! De la musique traditionnelle ivoirienne aux plats locaux délicieux, nous vous proposons une expérience unique et authentique. N'oubliez pas de liker et de commenter pour nous faire savoir ce que vous en pensez !",
+      "hook": "Vous êtes prêts à vivre l'expérience ultime à Abidjan ?",
+      "script": "Rejoignez-nous pour découvrir les secrets de la ville ! De la découverte de nouveaux lieux à la rencontre de nouvelles personnes, nous vous proposons une expérience unique et inoubliable. #Abidjan #Expérience #Résidences",
       "format": "Short",
       "reseau": "TikTok",
-      "prompt_image": "une vidéo montrant la vie nocturne d'Abidjan avec des gens dansant et mangeant dans les rues",
+      "prompt_image": "Photo d'une personne en train de marcher dans une rue animée d'Abidjan, avec des gens et des bâtiments colorés en arrière-plan",
       "variantes": [
-        "Vivez l'expérience ivoirienne avec nous",
-        "Découvrez le vrai visage d'Abidjan"
+        "Prêts à découvrir les trésors cachés d'Abidjan ?"
       ]
     },
     {
-      "hook": "Que faire à Abidjan pendant les weekends ?",
-      "script": "Vous cherchez des idées pour passer un weekend inoubliable à Abidjan ? Découvrez notre sélection des meilleurs endroits pour visiter, manger et boire ! De la visite du marché de Treichville aux dégustations de plats locaux, nous vous proposons une expérience unique et divertissante. Abonnez-vous pour découvrir plus de contenu sur Abidjan et ses environs !",
+      "hook": "Que diriez-vous d'un séjour personnalisé à Abidjan ?",
+      "script": "Nous nous Occupons de tout ! De la réservation de votre résidence à la planification de vos activités, nous nous assurons que vous passiez un séjour inoubliable à Abidjan. #Abidjan #Séjour #Résidences",
       "format": "Carrousel",
       "reseau": "TikTok",
-      "prompt_image": "une série de photos montrant les différents endroits à visiter à Abidjan pendant les weekends",
+      "prompt_image": "Photo d'une personne en train de regarder un plan de la ville d'Abidjan, avec des icônes de résidences et d'activités en arrière-plan",
       "variantes": [
-        "Les weekends à Abidjan : que faire ?",
-        "Découvrez les secrets des weekends abidjanais"
+        "Imaginez un séjour sur mesure à Abidjan, juste pour vous..."
       ]
     }
   ]

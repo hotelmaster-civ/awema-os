@@ -1,6 +1,6 @@
 {
   "agent": "actions-du-jour",
-  "genere_le": "2026-07-11T10:45:16+00:00",
+  "genere_le": "2026-07-13T16:17:31+00:00",
   "modele": "agrégation (sans IA)",
   "provenance": {
     "client": "abidjan-residences",
@@ -10,7 +10,7 @@
     {
       "priorite": 1,
       "type": "alerte",
-      "titre": "Cadence en retard — 23 j sans publier",
+      "titre": "Cadence en retard — 30 j sans publier",
       "detail": "La régularité nourrit l'algorithme. Publie aujourd'hui.",
       "source": "cadence",
       "action": {
@@ -21,9 +21,21 @@
     },
     {
       "priorite": 2,
+      "type": "alerte",
+      "titre": "Audience en baisse",
+      "detail": "4198 → 4197 abonnés.",
+      "source": "evolution_audience",
+      "action": {
+        "label": "Analyser",
+        "kind": "view",
+        "target": "reseaux"
+      }
+    },
+    {
+      "priorite": 2,
       "type": "reco",
-      "titre": "Augmenter la cadence de publication",
-      "detail": "Publiez au moins 3 à 5 fois par semaine sur TikTok pour renforcer l'interaction avec vos abonnés",
+      "titre": "Publier régulièrement sur TikTok",
+      "detail": "Publier au moins 1 vidéo par semaine sur TikTok",
       "source": "analyste",
       "action": {
         "label": "Voir l'analyse",
@@ -34,7 +46,7 @@
     {
       "priorite": 2,
       "type": "plan",
-      "titre": "Publie : Découverte de résidences à Abidjan",
+      "titre": "Publie : Présentation d'un nouvel espace de détente à Abidjan",
       "detail": "TikTok · Vidéo · Lundi",
       "source": "stratege",
       "action": {
@@ -46,7 +58,7 @@
     {
       "priorite": 3,
       "type": "creatif",
-      "titre": "Idée prête : Découvrez les meilleurs endroits à Abidjan pour un séjour inoubliable",
+      "titre": "Idée prête : Découvrez les meilleurs lieux de détente à Abidjan !",
       "detail": "TikTok · Reel",
       "source": "creatif",
       "action": {

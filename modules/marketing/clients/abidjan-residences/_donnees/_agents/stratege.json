@@ -1,6 +1,6 @@
 {
   "agent": "stratege",
-  "genere_le": "2026-07-11T10:44:21+00:00",
+  "genere_le": "2026-07-13T16:16:46+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -14,42 +14,49 @@
       "jour": "Lundi",
       "heure": "14h",
       "format": "Vidéo",
-      "angle": "Découverte de résidences à Abidjan",
-      "reseau": "TikTok"
-    },
-    {
-      "jour": "Mardi",
-      "heure": "12h",
-      "format": "Story",
-      "angle": "Avantages de résider à Yopougon",
+      "angle": "Présentation d'un nouvel espace de détente à Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Mercredi",
-      "heure": "16h",
-      "format": "Live",
-      "angle": "Visite d'une résidence à Abidjan",
+      "heure": "12h",
+      "format": "Story",
+      "angle": "Conseils pour une résidence idéale à Yopougon",
       "reseau": "TikTok"
     },
     {
       "jour": "Vendredi",
       "heure": "14h",
       "format": "Vidéo",
-      "angle": "Les tendances de l'immobilier en Côte d'Ivoire",
+      "angle": "Découverte d'un événement culturel ivoirien",
       "reseau": "TikTok"
     },
     {
       "jour": "Samedi",
-      "heure": "10h",
-      "format": "Photo",
-      "angle": "Présentation d'un nouveau projet de résidence",
+      "heure": "18h",
+      "format": "Live",
+      "angle": "Session de questions-réponses sur les résidences à Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Dimanche",
-      "heure": "18h",
+      "heure": "20h",
       "format": "Story",
-      "angle": "Les activités à faire autour de Yopougon",
+      "angle": "Présentation d'un partenaire local pour les résidences",
+      "reseau": "TikTok"
+    },
+    {
+      "jour": "Mardi",
+      "heure": "15h",
+      "format": "Vidéo",
+      "angle": "Exploration d'un quartier résidentiel à Abidjan",
+      "reseau": "TikTok"
+    },
+    {
+      "jour": "Jeudi",
+      "heure": "17h",
+      "format": "Story",
+      "angle": "Conseils de décoration pour les résidences",
       "reseau": "TikTok"
     }
   ],
@@ -58,8 +65,8 @@
     "Vendredi 14h"
   ],
   "objectifs": [
-    "Augmenter de 20% les abonnés sur TikTok",
-    "Maintenir un taux d'engagement moyen de 2%",
-    "Publier au moins 4 fois par semaine"
+    "Augmenter l'engagement sur les publications de 20% en 2 semaines",
+    "Augmenter le nombre d'abonnés sur TikTok de 10% en 1 mois",
+    "Maintenir un taux de publication régulier pour assurer une présence constante sur les réseaux sociaux"
   ]
 }
