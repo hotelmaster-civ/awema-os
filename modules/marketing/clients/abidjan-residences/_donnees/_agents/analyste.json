@@ -1,6 +1,6 @@
 {
   "agent": "analyste",
-  "genere_le": "2026-07-13T16:15:49+00:00",
+  "genere_le": "2026-07-14T11:51:51+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -12,27 +12,17 @@
   "items": [
     {
       "type": "insight",
-      "titre": "Performances des vidéos sur TikTok",
-      "explication": "Les vidéos publiées sur TikTok obtiennent un engagement important, notamment en termes de likes et de commentaires.",
+      "titre": "TikTok est le réseau le plus performant",
+      "explication": "Le compte Abidjan résidences a le plus de données et d'interactions sur TikTok, ce qui suggère que ce réseau est le plus adapté à sa stratégie de communication.",
       "preuve": {
-        "metrique": "likes_total",
-        "valeur": 9475
+        "metrique": "abonnes",
+        "valeur": 4197
       }
-    },
-    {
-      "type": "reco",
-      "titre": "Publier régulièrement sur TikTok",
-      "explication": "Il est recommandé de publier au moins une fois par semaine sur TikTok pour maintenir l'engagement de l'audience.",
-      "preuve": {
-        "metrique": "posts_par_semaine",
-        "valeur": 0.2
-      },
-      "action": "Publier au moins 1 vidéo par semaine sur TikTok"
     },
     {
       "type": "insight",
-      "titre": "Le top post sur TikTok",
-      "explication": "Le post '#collage avec @Tdfmanga decouvrez un animé 100% ivoirien par @Cénack  « placman »' obtient le plus de likes et de commentaires.",
+      "titre": "Les vidéos avec des collaborations sont très performantes",
+      "explication": "La vidéo '#collage avec @Tdfmanga decouvrez un animé 100% ivoirien par @Cénack  « placman »' a eu le plus de likes et de vues, ce qui suggère que les collaborations avec d'autres créateurs de contenu peuvent être très efficaces.",
       "preuve": {
         "metrique": "likes",
         "valeur": 8918
@@ -40,13 +30,42 @@
     },
     {
       "type": "reco",
-      "titre": "Utiliser des collaborations sur TikTok",
-      "explication": "Les collaborations avec d'autres utilisateurs de TikTok peuvent augmenter l'engagement sur les publications.",
+      "titre": "Publier plus régulièrement sur TikTok",
+      "explication": "Le compte n'a publié qu'un seul post au cours des 30 derniers jours, ce qui est insuffisant pour maintenir une audience engagée.",
       "preuve": {
-        "metrique": "likes",
-        "valeur": 8918
+        "metrique": "posts_30j",
+        "valeur": 1
       },
-      "action": "Chercher à collaborer avec d'autres utilisateurs de TikTok pour les prochaines publications"
+      "action": "Publier au moins 3 fois par semaine sur TikTok"
+    },
+    {
+      "type": "reco",
+      "titre": "Expérimenter de nouveaux formats de contenu",
+      "explication": "Les vidéos sont le seul format de contenu utilisé actuellement, mais il pourrait être intéressant d'explorer d'autres formats tels que les stories, les lives, ou les posts photo.",
+      "preuve": {
+        "metrique": "type",
+        "valeur": "vidéo"
+      },
+      "action": "Créer et publier du contenu sous différents formats sur TikTok"
+    },
+    {
+      "type": "insight",
+      "titre": "La communauté est active et engageante",
+      "explication": "Le taux de commentaires et de partages est élevé par rapport au nombre de vues, ce qui indique que la communauté est active et engageante.",
+      "preuve": {
+        "metrique": "commentaires",
+        "valeur": 168
+      }
+    },
+    {
+      "type": "reco",
+      "titre": "Interagir avec la communauté",
+      "explication": "Il est important de répondre aux commentaires et de stimuler les interactions avec la communauté pour maintenir son engagement.",
+      "preuve": {
+        "metrique": "commentaires",
+        "valeur": 168
+      },
+      "action": "Répondre à au moins 50% des commentaires sur TikTok chaque semaine"
     }
   ]
 }

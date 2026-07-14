@@ -1,6 +1,6 @@
 {
   "agent": "stratege",
-  "genere_le": "2026-07-13T16:16:46+00:00",
+  "genere_le": "2026-07-14T11:53:20+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -14,49 +14,35 @@
       "jour": "Lundi",
       "heure": "14h",
       "format": "Vidéo",
-      "angle": "Présentation d'un nouvel espace de détente à Abidjan",
+      "angle": "Présentation d'une résidence à Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Mercredi",
-      "heure": "12h",
-      "format": "Story",
-      "angle": "Conseils pour une résidence idéale à Yopougon",
+      "heure": "14h",
+      "format": "Vidéo",
+      "angle": "Découverte d'un quartier à Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Vendredi",
       "heure": "14h",
       "format": "Vidéo",
-      "angle": "Découverte d'un événement culturel ivoirien",
+      "angle": "Promotion d'une résidence à Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Samedi",
-      "heure": "18h",
-      "format": "Live",
-      "angle": "Session de questions-réponses sur les résidences à Abidjan",
+      "heure": "14h",
+      "format": "Vidéo",
+      "angle": "Événement à Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Dimanche",
-      "heure": "20h",
-      "format": "Story",
-      "angle": "Présentation d'un partenaire local pour les résidences",
-      "reseau": "TikTok"
-    },
-    {
-      "jour": "Mardi",
-      "heure": "15h",
+      "heure": "14h",
       "format": "Vidéo",
-      "angle": "Exploration d'un quartier résidentiel à Abidjan",
-      "reseau": "TikTok"
-    },
-    {
-      "jour": "Jeudi",
-      "heure": "17h",
-      "format": "Story",
-      "angle": "Conseils de décoration pour les résidences",
+      "angle": "Découverte d'un lieu à Abidjan",
       "reseau": "TikTok"
     }
   ],
@@ -65,8 +51,8 @@
     "Vendredi 14h"
   ],
   "objectifs": [
-    "Augmenter l'engagement sur les publications de 20% en 2 semaines",
-    "Augmenter le nombre d'abonnés sur TikTok de 10% en 1 mois",
-    "Maintenir un taux de publication régulier pour assurer une présence constante sur les réseaux sociaux"
+    "Augmenter l'engagement sur les publications de 20% en une semaine",
+    "Atteindre 5000 vues sur une publication en une semaine",
+    "Augmenter le nombre d'abonnés de 5% en une semaine"
   ]
 }

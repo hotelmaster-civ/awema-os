@@ -1,6 +1,6 @@
 {
   "agent": "stratege",
-  "genere_le": "2026-07-13T16:17:14+00:00",
+  "genere_le": "2026-07-14T11:53:52+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -15,60 +15,61 @@
       "jour": "Lundi",
       "heure": "19h",
       "format": "Reel",
-      "angle": "Conseils de soin de peau pour les filles actives",
+      "angle": "Conseils de routine pour une peau saine",
       "reseau": "TikTok"
     },
     {
       "jour": "Mercredi",
       "heure": "12h",
       "format": "Carrousel",
-      "angle": "Avant/Après soin éclat avec des produits naturels",
+      "angle": "Avantages du soin visage éclat pour les jeunes actives",
       "reseau": "Instagram"
     },
     {
       "jour": "Jeudi",
       "heure": "19h",
-      "format": "Photo",
-      "angle": "Présentation du forfait mariée",
-      "reseau": "Facebook"
+      "format": "Short",
+      "angle": "Témoignage d'une cliente ayant utilisé le forfait mariée",
+      "reseau": "TikTok"
     },
     {
       "jour": "Vendredi",
       "heure": "15h",
+      "format": "Photo",
+      "angle": "Présentation de nouveaux produits de soin adaptés aux peaux africaines",
+      "reseau": "Instagram"
+    },
+    {
+      "jour": "Samedi",
+      "heure": "14h",
       "format": "Reel",
-      "angle": "Routine peau grasse",
+      "angle": "Démonstration d'un soin personnalisé lors d'une séance à l'institut",
       "reseau": "TikTok"
     },
     {
       "jour": "Dimanche",
       "heure": "18h",
       "format": "Carrousel",
-      "angle": "Soins de visage éclat",
+      "angle": "Préparation pour la semaine : astuces pour une peau resplendissante",
       "reseau": "Instagram"
     },
     {
       "jour": "Mardi",
       "heure": "12h",
       "format": "Short",
-      "angle": "Réponse aux questions fréquentes sur les soins de beauté",
+      "angle": "Réponse à une question fréquente : réservation et disponibilité",
       "reseau": "TikTok"
-    },
-    {
-      "jour": "Samedi",
-      "heure": "12h",
-      "format": "Photo",
-      "angle": "Présentation des produits hypoallergéniques",
-      "reseau": "Facebook"
     }
   ],
   "cadence_recommandee": "3 publications/semaine",
   "meilleures_heures": [
     "Jeudi 19h",
-    "Samedi 15h"
+    "Samedi 14h"
   ],
   "objectifs": [
     "Augmenter l'engagement de 20% sur les publications",
-    "Atteindre 25000 abonnés sur Instagram",
-    "Accroître les ventes du forfait mariée de 15%"
+    "Augmenter la portée de 15% sur les réseaux sociaux",
+    "Accroître la fréquentation de l'institut de beauté de 10% grâce aux campagnes de promotion en ligne",
+    "Maintenir un taux d'engagement moyen supérieur à 3,5% sur TikTok"
   ]
 }

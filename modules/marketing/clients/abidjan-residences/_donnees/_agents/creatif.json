@@ -1,6 +1,6 @@
 {
   "agent": "creatif",
-  "genere_le": "2026-07-13T16:17:18+00:00",
+  "genere_le": "2026-07-14T11:54:34+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -11,33 +11,36 @@
   },
   "items": [
     {
-      "hook": "Découvrez les meilleurs lieux de détente à Abidjan !",
-      "script": "Vous cherchez un endroit calme pour vous détendre à Abidjan ? Nous avons ce qu'il vous faut ! Découvrez nos résidences confortables et équipées pour un séjour inoubliable. De la plage à la ville, nous avons sélectionné les meilleurs lieux pour vous détendre et vous ressourcer. #Abidjan #Détente #Résidences",
+      "hook": "Découvrez les secrets des résidences d'Abidjan !",
+      "script": "Vous recherchez un endroit idéal pour vos vacances ou votre séjour à Abidjan ? Découvrez nos résidences de luxe et profitez d'un séjour inoubliable ! Nous vous proposons des chambres confortables, des équipements de haute qualité et un service personnalisé. Rejoignez notre communauté et partagez vos expériences avec nous !",
       "format": "Reel",
       "reseau": "TikTok",
-      "prompt_image": "Photo d'une résidence avec piscine et plage en arrière-plan, avec deux personnes en train de se détendre sur des transats",
+      "prompt_image": " Une photo d'une chambre de luxe avec un lit king-size, un balcon avec vue sur la ville et un décor moderne",
       "variantes": [
-        "Échappez à la routine et trouvez votre haven de paix à Abidjan !"
+        "Explorez les résidences d'Abidjan avec nous !",
+        "Les résidences d'Abidjan : votre nouvelle destination de rêve !"
       ]
     },
     {
-      "hook": "Vous êtes prêts à vivre l'expérience ultime à Abidjan ?",
-      "script": "Rejoignez-nous pour découvrir les secrets de la ville ! De la découverte de nouveaux lieux à la rencontre de nouvelles personnes, nous vous proposons une expérience unique et inoubliable. #Abidjan #Expérience #Résidences",
+      "hook": "Qui suis-je ? Découvrez mon histoire !",
+      "script": "Je suis votre hôte à Abidjan et je suis ravi de partager mon histoire avec vous ! Découvrez comment j'ai créé mes résidences et ce qui me motive à offrir le meilleur service à mes clients. Rejoignez ma communauté et découvrez les secrets de mes résidences !",
       "format": "Short",
       "reseau": "TikTok",
-      "prompt_image": "Photo d'une personne en train de marcher dans une rue animée d'Abidjan, avec des gens et des bâtiments colorés en arrière-plan",
+      "prompt_image": "Une photo de moi-même avec un sourire, un fond de résidence de luxe et un décor moderne",
       "variantes": [
-        "Prêts à découvrir les trésors cachés d'Abidjan ?"
+        "Découvrez mon histoire et rejoignez ma communauté !",
+        "L'histoire d'un hôte passionné : découvrez mes résidences !"
       ]
     },
     {
-      "hook": "Que diriez-vous d'un séjour personnalisé à Abidjan ?",
-      "script": "Nous nous Occupons de tout ! De la réservation de votre résidence à la planification de vos activités, nous nous assurons que vous passiez un séjour inoubliable à Abidjan. #Abidjan #Séjour #Résidences",
+      "hook": "Les résidences d'Abidjan : quels sont les avantages ?",
+      "script": "Vous vous demandez quels sont les avantages de séjourner dans nos résidences d'Abidjan ? Découvrez les bénéfices de nos chambres de luxe, de nos équipements de haute qualité et de notre service personnalisé. Rejoignez notre communauté et partagez vos expériences avec nous !",
       "format": "Carrousel",
-      "reseau": "TikTok",
-      "prompt_image": "Photo d'une personne en train de regarder un plan de la ville d'Abidjan, avec des icônes de résidences et d'activités en arrière-plan",
+      "reseau": "Instagram",
+      "prompt_image": "Une photo d'une chambre de luxe avec un lit king-size, un balcon avec vue sur la ville et un décor moderne, suivie d'une photo d'un équipement de haute qualité et d'une photo d'un membre du personnel avec un sourire",
       "variantes": [
-        "Imaginez un séjour sur mesure à Abidjan, juste pour vous..."
+        "Les résidences d'Abidjan : pourquoi les choisir ?",
+        "Découvrez les avantages de nos résidences de luxe !"
       ]
     }
   ]

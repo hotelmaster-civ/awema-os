@@ -1,6 +1,6 @@
 {
   "agent": "analyste",
-  "genere_le": "2026-07-13T16:16:22+00:00",
+  "genere_le": "2026-07-14T11:52:02+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -13,60 +13,60 @@
   "items": [
     {
       "type": "insight",
-      "titre": "Performance de TikTok",
-      "explication": "TikTok affiche un engagement considérable, avec 88 000 likes et 500 commentaires sur 40 posts.",
+      "titre": "Efforts à concentrer sur TikTok",
+      "explication": "Le réseau TikTok montre un engagement très élevé par rapport aux autres plateformes, ce qui devrait faire l'objet d'une attention particulière pour améliorer la stratégie de contenu.",
       "preuve": {
-        "metrique": "likes sur TikTok",
+        "metrique": "likes",
         "valeur": 88000
       }
     },
     {
       "type": "reco",
-      "titre": "Publier sur TikTok",
-      "explication": "Publier régulièrement sur TikTok pour maintenir l'engagement.",
+      "titre": "Publier plus régulièrement",
+      "explication": "Augmenter la fréquence de publication pourrait mieux maintenir l'intérêt de l'audience et accroître l'engagement global.",
       "preuve": {
-        "metrique": "posts sur TikTok",
-        "valeur": 40
+        "metrique": "jours_depuis_dernier_post",
+        "valeur": 9
       },
-      "action": "Publier 2 fois par semaine sur TikTok"
+      "action": "Augmenter la cadence à au moins 3 publications par semaine"
     },
     {
       "type": "insight",
-      "titre": "Meilleur type de contenu",
-      "explication": "Les Reels génèrent en moyenne 520 engagements par post, ce qui est supérieur au Carrousel (310) et à la Photo (140).",
+      "titre": "Utilisation efficace des contenus en Reel",
+      "explication": "Les contenus de type Reel sur TikTok obtiennent un engagement moyen élevé, suggérant leur efficacité pour la plateforme.",
       "preuve": {
-        "metrique": "engagement moyen par Reel",
+        "metrique": "engagement_moyen_Reel",
         "valeur": 520
       }
     },
     {
       "type": "reco",
-      "titre": "Créer plus de Reels",
-      "explication": "Créer des Reels pour augmenter l'engagement sur les réseaux sociaux.",
+      "titre": "Interagir avec les commentateurs",
+      "explication": "Renforcer l'interaction avec les utilisateurs qui laissent des commentaires peut améliorer l'engagement et créer une communauté plus vivante.",
       "preuve": {
-        "metrique": "engagement moyen par Reel",
-        "valeur": 520
+        "metrique": "commentaires",
+        "valeur": 1230
       },
-      "action": "Créer 3 Reels par mois"
+      "action": "Répondre systématiquement aux commentaires dans les 24 heures"
     },
     {
       "type": "insight",
-      "titre": "Évolution de l'audience",
-      "explication": "L'audience a augmenté de 25 000 à 23 500 entre le 1er mai et le 15 juin, montrant une légère stabilité.",
+      "titre": "Top posts très engageants",
+      "explication": "Les publications avec les titres « Avant / Après soin éclat » et « Routine peau grasse en 3 étapes » ont obtenu des résultats exceptionnels en termes de likes et de partages.",
       "preuve": {
-        "metrique": "évolution de l'audience",
-        "valeur": 2500
+        "metrique": "likes_top_post",
+        "valeur": 820
       }
     },
     {
       "type": "reco",
-      "titre": "Répondre aux commentaires",
-      "explication": "Répondre aux commentaires pour améliorer l'engagement et la rétention des abonnés.",
+      "titre": "Réutiliser les formats de contenu performants",
+      "explication": "Répéter les types de contenus qui ont déjà montré leur efficacité, comme les Carrousels et les Reels, pour accroître l'engagement.",
       "preuve": {
-        "metrique": "commentaires sans réponse",
-        "valeur": 5
+        "metrique": "engagement_moyen_Carrousel",
+        "valeur": 310
       },
-      "action": "Répondre à tous les commentaires dans les 24 heures"
+      "action": "Créer au moins un Carrousel par semaine et un Reel tous les 10 jours"
     }
   ]
 }

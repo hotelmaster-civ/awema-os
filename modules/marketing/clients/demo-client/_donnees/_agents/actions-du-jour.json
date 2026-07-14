@@ -1,6 +1,6 @@
 {
   "agent": "actions-du-jour",
-  "genere_le": "2026-07-13T16:17:31+00:00",
+  "genere_le": "2026-07-14T11:54:36+00:00",
   "modele": "agrégation (sans IA)",
   "provenance": {
     "client": "demo-client",
@@ -34,8 +34,8 @@
     {
       "priorite": 2,
       "type": "reco",
-      "titre": "Publier sur TikTok",
-      "detail": "Publier 2 fois par semaine sur TikTok",
+      "titre": "Publier plus régulièrement",
+      "detail": "Augmenter la cadence à au moins 3 publications par semaine",
       "source": "analyste",
       "action": {
         "label": "Voir l'analyse",
@@ -46,7 +46,7 @@
     {
       "priorite": 2,
       "type": "plan",
-      "titre": "Publie : Conseils de soin de peau pour les filles actives",
+      "titre": "Publie : Conseils de routine pour une peau saine",
       "detail": "TikTok · Reel · Lundi",
       "source": "stratege",
       "action": {
@@ -70,7 +70,7 @@
     {
       "priorite": 3,
       "type": "creatif",
-      "titre": "Idée prête : Découvrez le secret d'un teint éclatant !",
+      "titre": "Idée prête : Découvrez la magie d'un soin visage éclat !",
       "detail": "TikTok · Reel",
       "source": "creatif",
       "action": {
