@@ -1,6 +1,6 @@
 {
   "agent": "analyste",
-  "genere_le": "2026-07-14T11:52:02+00:00",
+  "genere_le": "2026-07-15T12:04:45+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -13,60 +13,61 @@
   "items": [
     {
       "type": "insight",
-      "titre": "Efforts à concentrer sur TikTok",
-      "explication": "Le réseau TikTok montre un engagement très élevé par rapport aux autres plateformes, ce qui devrait faire l'objet d'une attention particulière pour améliorer la stratégie de contenu.",
+      "titre": "TikTok, plateforme la plus engageante",
+      "explication": "Les contenus sur TikTok génèrent plus d'engagement que sur les autres plateformes, notamment grâce aux Reels.",
       "preuve": {
         "metrique": "likes",
-        "valeur": 88000
+        "valeur": 88000,
+        "variation": "plus élevé que les autres plateformes"
       }
     },
     {
       "type": "reco",
-      "titre": "Publier plus régulièrement",
-      "explication": "Augmenter la fréquence de publication pourrait mieux maintenir l'intérêt de l'audience et accroître l'engagement global.",
+      "titre": "Publier plus de Reels",
+      "explication": "Pour augmenter l'engagement, il est recommandé de publier plus de contenus sous forme de Reels, notamment sur TikTok.",
       "preuve": {
-        "metrique": "jours_depuis_dernier_post",
-        "valeur": 9
-      },
-      "action": "Augmenter la cadence à au moins 3 publications par semaine"
-    },
-    {
-      "type": "insight",
-      "titre": "Utilisation efficace des contenus en Reel",
-      "explication": "Les contenus de type Reel sur TikTok obtiennent un engagement moyen élevé, suggérant leur efficacité pour la plateforme.",
-      "preuve": {
-        "metrique": "engagement_moyen_Reel",
+        "metrique": "engagement_moyen",
         "valeur": 520
-      }
-    },
-    {
-      "type": "reco",
-      "titre": "Interagir avec les commentateurs",
-      "explication": "Renforcer l'interaction avec les utilisateurs qui laissent des commentaires peut améliorer l'engagement et créer une communauté plus vivante.",
-      "preuve": {
-        "metrique": "commentaires",
-        "valeur": 1230
       },
-      "action": "Répondre systématiquement aux commentaires dans les 24 heures"
+      "action": "Publier au moins 2 Reels par semaine sur TikTok"
     },
     {
       "type": "insight",
-      "titre": "Top posts très engageants",
-      "explication": "Les publications avec les titres « Avant / Après soin éclat » et « Routine peau grasse en 3 étapes » ont obtenu des résultats exceptionnels en termes de likes et de partages.",
+      "titre": "Carrousels bien performants sur Instagram",
+      "explication": "Les carrousels sur Instagram génèrent un engagement élevé, avec des likes et des commentaires significatifs.",
       "preuve": {
-        "metrique": "likes_top_post",
-        "valeur": 820
+        "metrique": "engagement_moyen",
+        "valeur": 310
       }
     },
     {
       "type": "reco",
-      "titre": "Réutiliser les formats de contenu performants",
-      "explication": "Répéter les types de contenus qui ont déjà montré leur efficacité, comme les Carrousels et les Reels, pour accroître l'engagement.",
+      "titre": "Améliorer la réponse aux commentaires",
+      "explication": "Il est crucial de répondre rapidement et de manière personnalisée aux commentaires pour renforcer l'engagement et la confiance.",
       "preuve": {
-        "metrique": "engagement_moyen_Carrousel",
-        "valeur": 310
+        "metrique": "a_repondre",
+        "valeur": 5
       },
-      "action": "Créer au moins un Carrousel par semaine et un Reel tous les 10 jours"
+      "action": "Répondre aux commentaires et messages dans les 24 heures"
+    },
+    {
+      "type": "insight",
+      "titre": "Évolution positive de l'audience",
+      "explication": "L'audience a augmenté régulièrement au fil des semaines, indiquant une stratégie de contenu efficace.",
+      "preuve": {
+        "metrique": "evolution_audience",
+        "valeur": 23500
+      }
+    },
+    {
+      "type": "reco",
+      "titre": "Optimiser les créneaux horaires de publication",
+      "explication": "Il est conseillé de publier à des moments où l'engagement est plus élevé, comme le jeudi à 19h.",
+      "preuve": {
+        "metrique": "meilleur_creneau",
+        "valeur": "Jeudi 19h"
+      },
+      "action": "Publier systématiquement le jeudi à 19h pour maximiser l'engagement"
     }
   ]
 }

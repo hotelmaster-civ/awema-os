@@ -1,6 +1,6 @@
 {
   "agent": "actions-du-jour",
-  "genere_le": "2026-07-14T11:54:36+00:00",
+  "genere_le": "2026-07-15T12:06:30+00:00",
   "modele": "agrégation (sans IA)",
   "provenance": {
     "client": "demo-client",
@@ -34,8 +34,8 @@
     {
       "priorite": 2,
       "type": "reco",
-      "titre": "Publier plus régulièrement",
-      "detail": "Augmenter la cadence à au moins 3 publications par semaine",
+      "titre": "Publier plus de Reels",
+      "detail": "Publier au moins 2 Reels par semaine sur TikTok",
       "source": "analyste",
       "action": {
         "label": "Voir l'analyse",
@@ -46,7 +46,7 @@
     {
       "priorite": 2,
       "type": "plan",
-      "titre": "Publie : Conseils de routine pour une peau saine",
+      "titre": "Publie : Routine de soin de peau pour les femmes actives",
       "detail": "TikTok · Reel · Lundi",
       "source": "stratege",
       "action": {
@@ -70,7 +70,7 @@
     {
       "priorite": 3,
       "type": "creatif",
-      "titre": "Idée prête : Découvrez la magie d'un soin visage éclat !",
+      "titre": "Idée prête : Débloquez votre éclat intérieur avec nos soins personnalisés !",
       "detail": "TikTok · Reel",
       "source": "creatif",
       "action": {

@@ -1,6 +1,6 @@
 {
   "agent": "creatif",
-  "genere_le": "2026-07-14T11:54:36+00:00",
+  "genere_le": "2026-07-15T12:06:30+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -12,33 +12,33 @@
   },
   "items": [
     {
-      "hook": "Découvrez la magie d'un soin visage éclat !",
-      "script": "Vous vous sentez fatiguée et votre peau aussi ? Notre soin visage éclat est là pour vous redonner une peau radieuse et hydratée. Étape par étape, nous nettoyons et hydratons en profondeur pour vous offrir un teint éblouissant. Réservation possible via WhatsApp. Prix : 15 000 FCFA",
+      "hook": "Débloquez votre éclat intérieur avec nos soins personnalisés !",
+      "script": " Vous vous sentez fatiguée et stressée ? Notre soin visage éclat est là pour vous aider à retrouver votre radiance naturelle. Avec un nettoyage profond et une hydratation intense, nous vous aidons à vous sentir belle et confiante. Réservez votre rendez-vous dès maintenant et découvrez la différence !",
       "format": "Reel",
       "reseau": "TikTok",
-      "prompt_image": "Une femme avec un masque facial, les yeux fermés, souriante, entourée de fleurs blanches sur un fond de couleur #D4AF37",
+      "prompt_image": "Une femme souriante avec une peau lumineuse, entourée de fleurs et de produits de soin, sur fond #D4AF37",
       "variantes": [
-        "Un nouveau vous en quelques étapes !"
+        "Transformez votre peau en quelques séances !"
       ]
     },
     {
-      "hook": "Le secret d'une peau parfaite pour votre journée spéciale !",
-      "script": "Vous rêvez d’un teint parfait pour votre mariage ? Notre forfait mariée est conçu pour vous. 3 séances personnalisées pour vous donner confiance et éclat. Réservez maintenant et découvrez pourquoi nos clientes nous adorent. Prix : 75 000 FCFA",
+      "hook": "Préparez-vous à briller pour votre grand jour !",
+      "script": "Vous êtes sur le point de vous marier et vous voulez un teint parfait pour votre journée spéciale ? Notre forfait mariée est conçu pour vous aider à atteindre ce niveau de beauté exceptionnelle. Des soins personnalisés pour que vous vous sentiez comme une reine. Inscrivez-vous maintenant !",
       "format": "Carrousel",
       "reseau": "Instagram",
-      "prompt_image": "Une mariée souriante avec une peau resplendissante, sur un fond rose pâle (#FFC5C5), avec quelques détails de son bouquet de mariée",
+      "prompt_image": "Une future mariée radieuse, avec une robe de mariée, sur fond #0A1F44, avec des éléments de décoration de mariage",
       "variantes": [
-        "Pour un jour inoubliable, choisissez l’éclat !"
+        "Faites de votre jour le plus beau jour de votre vie !"
       ]
     },
     {
-      "hook": "Besoin d'un moment pour vous, rien que pour vous ?",
-      "script": "Prenez un temps d’arrêt dans notre espace de détente et laissez-nous vous gâter. Découvrez nos soins de visage et de corps conçus pour les femmes actives comme vous. Réservation et informations sur WhatsApp. Venez vivre l’expérience Éclat Beauté !",
-      "format": "Post",
-      "reseau": "Facebook",
-      "prompt_image": "Un espace de détente avec des bougies, des plantes vertes, une femme Allongée sur une table de massage, regardant le plafond avec le sourire, sur fond de couleur neutre (#0A1F44)",
+      "hook": "Un secret pour une peau parfaite ? Les soins réguliers !",
+      "script": "La peau parfaite n'est pas qu'un rêve ! Avec nos soins réguliers et notre gamme de produits adaptés à la peau africaine, vous pouvez atteindre une santé et une beauté de peau exceptionnelles. Découvrez comment établir une routine de soin efficace avec nous. Contactez-nous pour en savoir plus !",
+      "format": "Short",
+      "reseau": "TikTok",
+      "prompt_image": "Une peau saine et lumineuse, avec des produits de soin naturels, sur fond de feuilles vertes",
       "variantes": [
-        "Offrez-vous un moment de grâce avec Éclat Beauté"
+        "Donnez à votre peau l'amour qu'elle mérite !"
       ]
     }
   ]

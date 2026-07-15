@@ -1,6 +1,6 @@
 {
   "agent": "stratege",
-  "genere_le": "2026-07-14T11:53:52+00:00",
+  "genere_le": "2026-07-15T12:05:28+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -15,61 +15,60 @@
       "jour": "Lundi",
       "heure": "19h",
       "format": "Reel",
-      "angle": "Conseils de routine pour une peau saine",
+      "angle": "Routine de soin de peau pour les femmes actives",
       "reseau": "TikTok"
     },
     {
-      "jour": "Mercredi",
+      "jour": "Mardi",
       "heure": "12h",
       "format": "Carrousel",
-      "angle": "Avantages du soin visage éclat pour les jeunes actives",
+      "angle": "Avant/Après : Transformation avec nos soins de visage",
       "reseau": "Instagram"
+    },
+    {
+      "jour": "Mercredi",
+      "heure": "14h",
+      "format": "Photo",
+      "angle": "Présentation d'un nouveau produit pour les peaux sensibles",
+      "reseau": "TikTok"
     },
     {
       "jour": "Jeudi",
       "heure": "19h",
-      "format": "Short",
-      "angle": "Témoignage d'une cliente ayant utilisé le forfait mariée",
+      "format": "Reel",
+      "angle": "Conseils pour un teint parfait pour les futures mariées",
       "reseau": "TikTok"
     },
     {
       "jour": "Vendredi",
-      "heure": "15h",
-      "format": "Photo",
-      "angle": "Présentation de nouveaux produits de soin adaptés aux peaux africaines",
+      "heure": "10h",
+      "format": "Carrousel",
+      "angle": "Les bienfaits du soin de visage pour la confiance en soi",
       "reseau": "Instagram"
     },
     {
       "jour": "Samedi",
       "heure": "14h",
       "format": "Reel",
-      "angle": "Démonstration d'un soin personnalisé lors d'une séance à l'institut",
+      "angle": "Démonstration d'un soin de beauté personnalisé",
       "reseau": "TikTok"
     },
     {
       "jour": "Dimanche",
       "heure": "18h",
-      "format": "Carrousel",
-      "angle": "Préparation pour la semaine : astuces pour une peau resplendissante",
+      "format": "Photo",
+      "angle": "Motivation pour prendre soin de soi durant la semaine",
       "reseau": "Instagram"
-    },
-    {
-      "jour": "Mardi",
-      "heure": "12h",
-      "format": "Short",
-      "angle": "Réponse à une question fréquente : réservation et disponibilité",
-      "reseau": "TikTok"
     }
   ],
-  "cadence_recommandee": "3 publications/semaine",
+  "cadence_recommandee": "4 publications/semaine",
   "meilleures_heures": [
     "Jeudi 19h",
     "Samedi 14h"
   ],
   "objectifs": [
-    "Augmenter l'engagement de 20% sur les publications",
-    "Augmenter la portée de 15% sur les réseaux sociaux",
-    "Accroître la fréquentation de l'institut de beauté de 10% grâce aux campagnes de promotion en ligne",
-    "Maintenir un taux d'engagement moyen supérieur à 3,5% sur TikTok"
+    "Augmenter l'engagement de 20% sur TikTok",
+    "Accroître la portée de 15% sur Instagram",
+    "Répondre à 100% des commentaires et messages dans les 2 heures"
   ]
 }

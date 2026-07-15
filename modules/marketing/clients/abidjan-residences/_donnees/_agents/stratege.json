@@ -1,6 +1,6 @@
 {
   "agent": "stratege",
-  "genere_le": "2026-07-14T11:53:20+00:00",
+  "genere_le": "2026-07-15T12:05:26+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -12,37 +12,37 @@
   "items": [
     {
       "jour": "Lundi",
-      "heure": "14h",
+      "heure": "19h",
       "format": "Vidéo",
-      "angle": "Présentation d'une résidence à Abidjan",
+      "angle": "Découverte de nouveaux lieux à Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Mercredi",
-      "heure": "14h",
-      "format": "Vidéo",
-      "angle": "Découverte d'un quartier à Abidjan",
+      "heure": "12h",
+      "format": "Story",
+      "angle": "Promotion d'un établissement partenaire",
       "reseau": "TikTok"
     },
     {
       "jour": "Vendredi",
       "heure": "14h",
       "format": "Vidéo",
-      "angle": "Promotion d'une résidence à Abidjan",
+      "angle": "Présentation d'une résidence à Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Samedi",
-      "heure": "14h",
-      "format": "Vidéo",
-      "angle": "Événement à Abidjan",
+      "heure": "16h",
+      "format": "Live",
+      "angle": "Visite virtuelle d'un lieu d'intérêt à Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Dimanche",
-      "heure": "14h",
-      "format": "Vidéo",
-      "angle": "Découverte d'un lieu à Abidjan",
+      "heure": "18h",
+      "format": "Story",
+      "angle": "Retour sur les meilleures publications de la semaine",
       "reseau": "TikTok"
     }
   ],
@@ -51,8 +51,8 @@
     "Vendredi 14h"
   ],
   "objectifs": [
-    "Augmenter l'engagement sur les publications de 20% en une semaine",
-    "Atteindre 5000 vues sur une publication en une semaine",
-    "Augmenter le nombre d'abonnés de 5% en une semaine"
+    "Augmenter de 20% les vues sur TikTok",
+    "Accroître de 15% les likes sur les publications",
+    "Maintenir un taux d'engagement supérieur à 2% sur les publications"
   ]
 }
