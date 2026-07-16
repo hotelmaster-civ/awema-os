@@ -1,6 +1,6 @@
 {
   "agent": "creatif",
-  "genere_le": "2026-07-15T12:05:58+00:00",
+  "genere_le": "2026-07-16T12:07:12+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -11,33 +11,33 @@
   },
   "items": [
     {
-      "hook": "Découvrez les meilleures résidences d'Abidjan !",
-      "script": "Bonjour à tous ! Aujourd'hui, je vous présente les meilleures résidences d'Abidjan. Que vous soyez étudiant, jeune professionnel ou famille, nous avons une solution pour vous. Découvrez nos offres de locations meublées ou non meublées et trouvez votre futur chez vous ! #Abidjan #Résidences #Locations",
-      "format": "Reel",
-      "reseau": "TikTok",
-      "prompt_image": "Une photo d'un immeuble moderne avec des jardins verdoyants et une piscine, avec le texte ' Locations de rêve à Abidjan '",
-      "variantes": [
-        "Vivez le confort et la sécurité à Abidjan !"
-      ]
-    },
-    {
-      "hook": "Vous êtes prêt à vivre l'expérience Abidjan Résidences ?",
-      "script": "Vous cherchez un endroit où vivre à Abidjan ? Abidjan Résidences vous propose une gamme de solutions de locations adaptées à vos besoins. Découvrez nos résidences confortables et sécurisées, idéales pour les étudiants, les jeunes professionnels et les familles. Rejoignez notre communauté et vivez l'expérience Abidjan Résidences ! #Abidjan #Résidences #Communauté",
+      "hook": "Découvrez notre sélection de résidences à Abidjan !",
+      "script": "Vous cherchez un endroit pour vous installer à Abidjan ? Découvrez notre sélection de résidences de qualité, conçues pour vous offrir tout le confort dont vous avez besoin. De la décoration moderne aux équipements de dernières technologies, nous avons tout ce qu'il faut pour rendre votre séjour inoubliable. Inscrivez-vous dès maintenant et profitez de nos offres spéciales !",
       "format": "Short",
       "reseau": "TikTok",
-      "prompt_image": "Un visuel coloré montrant différents types de logements avec des gens heureux, avec le texte ' Vivre l'expérience Abidjan Résidences '",
+      "prompt_image": "Une photo d'une résidence moderne à Abidjan avec une grande piscine et un jardin tropical",
       "variantes": [
-        "Trouvez votre nouvelle adresse à Abidjan !"
+        "Explorez nos résidences à Abidjan, où la qualité et le confort vous attendent !"
       ]
     },
     {
-      "hook": "Que diriez-vous d'un tour d'Abidjan Résidences ?",
-      "script": "Avez-vous envie de découvrir les meilleures résidences d'Abidjan ? Suivez-moi pour un tour guidé de nos résidences et découvrez pourquoi nous sommes les leaders du marché. Des espaces verts aux équipements de qualité, nous avons tout ce qu'il faut pour vous assurer un séjour confortable et mémorable. #Abidjan #Résidences #TourGuidé",
+      "hook": "Que faire à Abidjan ce week-end ?",
+      "script": "Vous cherchez des idées pour occuper votre week-end à Abidjan ? Nous avons quelques suggestions pour vous ! Découvrez nos résidences et profitez de leur proximité avec les principaux sites touristiques de la ville. Nous vous proposons également des activités de loisirs et des recommandations pour les meilleurs restaurants et bars de la ville. Inscrivez-vous maintenant et commencez à planifier votre week-end !",
+      "format": "Reel",
+      "reseau": "TikTok",
+      "prompt_image": "Un montage de vidéos montrant les activités à faire à Abidjan, comme visiter les marchés, les plages et les musées",
+      "variantes": [
+        "Week-end à Abidjan : quels sont les incontournables à découvrir ?"
+      ]
+    },
+    {
+      "hook": "Comment améliorer votre séjour à Abidjan ?",
+      "script": "Vous souhaitez améliorer votre séjour à Abidjan ? Nous avons quelques conseils pour vous ! Découvrez nos résidences équipées de tous les confort modernes et bénéficiez de notre service de conciergerie pour vous aider à planifier votre séjour. Nous vous proposons également des recommandations pour les meilleurs restaurants, bars et attractions de la ville. Inscrivez-vous maintenant et profitez de votre séjour à Abidjan !",
       "format": "Carrousel",
       "reseau": "Instagram",
-      "prompt_image": "Une série de photos montrant les différentes parties d'une résidence, avec le texte ' Découvrez les résidences d'Abidjan '",
+      "prompt_image": "Un diaporama de photos montrant les différents services et équipements offerts par les résidences d'Abidjan",
       "variantes": [
-        "Découvrez l'art de vivre à Abidjan !"
+        "Séjour à Abidjan : comment rendre votre expérience encore plus agréable ?"
       ]
     }
   ]

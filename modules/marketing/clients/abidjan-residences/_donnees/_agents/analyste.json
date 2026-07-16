@@ -1,6 +1,6 @@
 {
   "agent": "analyste",
-  "genere_le": "2026-07-15T12:04:33+00:00",
+  "genere_le": "2026-07-16T12:06:04+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -12,47 +12,60 @@
   "items": [
     {
       "type": "insight",
-      "titre": "Performances élevées sur TikTok",
-      "explication": "Le compte Abidjan Résidences affiche des performances notables sur la plateforme TikTok, en particularité le top post '#collage avec @Tdfmanga decouvrez un animé 100% ivoirien par @Cénack  « placman »' qui a récolté 8918 likes et 110 commentaires.",
+      "titre": "Performances sur TikTok",
+      "explication": "Le compte Abidjan Résidences a une audience significative sur TikTok avec une moyenne élevée de likes et de vues pour ses vidéos",
       "preuve": {
-        "metrique": "likes",
-        "valeur": 8918,
-        "variation": null
-      },
-      "action": null
-    },
-    {
-      "type": "reco",
-      "titre": "Publier du contenu régulièrement sur TikTok",
-      "explication": "Considérant la faible fréquence de publication actuelle (0.2 posts par semaine), augmenter la cadence des publications pourrait être bénéfique pour améliorer l'engagement des followers.",
-      "preuve": {
-        "metrique": "posts_par_semaine",
-        "valeur": 0.2,
-        "variation": null
-      },
-      "action": "Publier au moins un contenu par semaine sur TikTok"
+        "metrique": "likes_total",
+        "valeur": 9475
+      }
     },
     {
       "type": "insight",
-      "titre": "Engagement élevé sur les vidéos spécifiques",
-      "explication": "Les vidéos spécifiques, comme celles avec des collaborations ou des contenus locaux, semblent générer plus d'engagement. Le top post '#collage avec @Tdfmanga decouvrez un animé 100% ivoirien par @Cénack  « placman »' est un exemple.",
+      "titre": "Cadence de publication",
+      "explication": "La cadence de publication sur TikTok est faible, ce qui pourrait affecter la visibilité et l'engagement du compte",
       "preuve": {
-        "metrique": "vues",
-        "valeur": 32625,
-        "variation": null
-      },
-      "action": null
+        "metrique": "posts_par_semaine",
+        "valeur": 0.2
+      }
     },
     {
       "type": "reco",
-      "titre": "Créer plus de contenu avec des collaborations locales",
-      "explication": "Compte tenu du succès de collaborations comme '#collage avec @Tdfmanga', rechercher des opportunités de collaborations avec d'autres créateurs locaux pour amplifier l'engagement.",
+      "titre": "Augmenter la fréquence de publication",
+      "explication": "Pour améliorer la visibilité et l'engagement, il est recommandé d'augmenter la fréquence de publication sur TikTok",
+      "preuve": {
+        "metrique": "posts_par_semaine",
+        "valeur": 0.2
+      },
+      "action": "Publiez au moins 3 vidéos par semaine sur TikTok"
+    },
+    {
+      "type": "reco",
+      "titre": "Optimiser les heures de publication",
+      "explication": "Publiez vos contenus à des heures stratégiques pour maximiser la visibilité et l'engagement",
+      "preuve": {
+        "metrique": "heure",
+        "valeur": "14h"
+      },
+      "action": "Publiez vos vidéos sur TikTok le vendredi à 14h pour atteindre un maximum d'audience"
+    },
+    {
+      "type": "insight",
+      "titre": "Type de contenu performant",
+      "explication": "Les vidéos avec des titres attractifs et des collaborations avec d'autres utilisateurs ont tendance à bien performer sur le compte",
       "preuve": {
         "metrique": "likes",
-        "valeur": 8918,
-        "variation": null
+        "valeur": 8918
+      }
+    },
+    {
+      "type": "reco",
+      "titre": "Créer des vidéos de qualité avec des titres attractifs",
+      "explication": "Créez des vidéos de qualité avec des titres attractifs pour augmenter l'engagement sur votre compte TikTok",
+      "preuve": {
+        "metrique": "likes",
+        "valeur": 8918
       },
-      "action": "Rechercher des collaborations locales pour les prochaines publications"
+      "action": "Investissez dans la création de vidéos de haute qualité avec des titres attractifs pour votre compte TikTok"
     }
   ]
 }

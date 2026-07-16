@@ -1,6 +1,6 @@
 {
   "agent": "creatif",
-  "genere_le": "2026-07-15T12:06:30+00:00",
+  "genere_le": "2026-07-16T12:07:41+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -12,33 +12,33 @@
   },
   "items": [
     {
-      "hook": "Débloquez votre éclat intérieur avec nos soins personnalisés !",
-      "script": " Vous vous sentez fatiguée et stressée ? Notre soin visage éclat est là pour vous aider à retrouver votre radiance naturelle. Avec un nettoyage profond et une hydratation intense, nous vous aidons à vous sentir belle et confiante. Réservez votre rendez-vous dès maintenant et découvrez la différence !",
+      "hook": "Découvrez le secret à un teint parfait pour votre jour J !",
+      "script": "Vous rêvez d'un teint éclatant et naturel pour votre mariage ? Notre forfait mariée est conçu spécialement pour vous ! Avec 3 séances de soins personnalisés, vous vous sentirez confiante et belle. N'attendez plus, réservez votre place dès aujourd'hui !",
       "format": "Reel",
       "reseau": "TikTok",
-      "prompt_image": "Une femme souriante avec une peau lumineuse, entourée de fleurs et de produits de soin, sur fond #D4AF37",
+      "prompt_image": "Une jeune femme africaine portant une tenue de mariée, avec un teint lumineux et un large sourire, sur fond de décoration de mariage",
       "variantes": [
-        "Transformez votre peau en quelques séances !"
+        "Prêts à briller pour les photos de votre mariage ?"
       ]
     },
     {
-      "hook": "Préparez-vous à briller pour votre grand jour !",
-      "script": "Vous êtes sur le point de vous marier et vous voulez un teint parfait pour votre journée spéciale ? Notre forfait mariée est conçu pour vous aider à atteindre ce niveau de beauté exceptionnelle. Des soins personnalisés pour que vous vous sentiez comme une reine. Inscrivez-vous maintenant !",
+      "hook": "Besoin d'un peu de temps pour soi ?",
+      "script": "Les femmes actives comme vous méritent de prendre soin d'elles ! Notre soin visage éclat est conçu pour vous offrir une pause de détente et vous donner un teint frais et éclatant. Prenez rendez-vous dès maintenant et offrez-vous un moment de bien-être !",
       "format": "Carrousel",
       "reseau": "Instagram",
-      "prompt_image": "Une future mariée radieuse, avec une robe de mariée, sur fond #0A1F44, avec des éléments de décoration de mariage",
+      "prompt_image": "Une photo split-screen montrant avant et après un soin visage, avec une femme africaine souriante et détendue, sur fond de couleurs chaudes et apaisantes",
       "variantes": [
-        "Faites de votre jour le plus beau jour de votre vie !"
+        "Quand était-ce la dernière fois que vous vous êtes accordé du temps pour vous ?"
       ]
     },
     {
-      "hook": "Un secret pour une peau parfaite ? Les soins réguliers !",
-      "script": "La peau parfaite n'est pas qu'un rêve ! Avec nos soins réguliers et notre gamme de produits adaptés à la peau africaine, vous pouvez atteindre une santé et une beauté de peau exceptionnelles. Découvrez comment établir une routine de soin efficace avec nous. Contactez-nous pour en savoir plus !",
-      "format": "Short",
-      "reseau": "TikTok",
-      "prompt_image": "Une peau saine et lumineuse, avec des produits de soin naturels, sur fond de feuilles vertes",
+      "hook": "Votre peau est-elle sensible ?",
+      "script": "Nous avons la solution pour vous ! Notre gamme de produits hypoallergéniques est spécialement conçue pour les peaux sensibles. Découvrez comment nous pouvons vous aider à trouver la confiance en votre beauté. Contactez-nous pour plus d'informations !",
+      "format": "Post",
+      "reseau": "Facebook",
+      "prompt_image": "Une illustration ou une photo d'une peau sensible avec des produits de soin hypoallergéniques, sur fond de couleurs douces et réconfortantes",
       "variantes": [
-        "Donnez à votre peau l'amour qu'elle mérite !"
+        "Votre peau mérite le meilleur, même si elle est sensible !"
       ]
     }
   ]

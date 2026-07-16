@@ -1,6 +1,6 @@
 {
   "agent": "stratege",
-  "genere_le": "2026-07-15T12:05:26+00:00",
+  "genere_le": "2026-07-16T12:06:36+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -12,37 +12,51 @@
   "items": [
     {
       "jour": "Lundi",
-      "heure": "19h",
+      "heure": "14h",
       "format": "Vidéo",
-      "angle": "Découverte de nouveaux lieux à Abidjan",
+      "angle": "Découverte d'un nouveau logement à Abidjan",
+      "reseau": "TikTok"
+    },
+    {
+      "jour": "Mardi",
+      "heure": "19h",
+      "format": "Story",
+      "angle": "Conseils pour aménager son espace de vie",
       "reseau": "TikTok"
     },
     {
       "jour": "Mercredi",
       "heure": "12h",
-      "format": "Story",
-      "angle": "Promotion d'un établissement partenaire",
+      "format": "Photo",
+      "angle": "Présentation d'un projet de résidence à Abidjan",
+      "reseau": "TikTok"
+    },
+    {
+      "jour": "Jeudi",
+      "heure": "15h",
+      "format": "Vidéo",
+      "angle": "Témoignage d'un résident sur son expérience",
       "reseau": "TikTok"
     },
     {
       "jour": "Vendredi",
       "heure": "14h",
-      "format": "Vidéo",
-      "angle": "Présentation d'une résidence à Abidjan",
+      "format": "Live",
+      "angle": "Visite virtuelle d'une résidence",
       "reseau": "TikTok"
     },
     {
       "jour": "Samedi",
-      "heure": "16h",
-      "format": "Live",
-      "angle": "Visite virtuelle d'un lieu d'intérêt à Abidjan",
+      "heure": "10h",
+      "format": "Story",
+      "angle": "Mini-jeu sur les résidences d'Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Dimanche",
       "heure": "18h",
-      "format": "Story",
-      "angle": "Retour sur les meilleures publications de la semaine",
+      "format": "Vidéo",
+      "angle": "Retour sur les actualités de la semaine",
       "reseau": "TikTok"
     }
   ],
@@ -51,8 +65,8 @@
     "Vendredi 14h"
   ],
   "objectifs": [
-    "Augmenter de 20% les vues sur TikTok",
-    "Accroître de 15% les likes sur les publications",
+    "Augmenter la portée de 20% sur TikTok",
+    "Accroître le nombre de commentaires de 50% sur les publications",
     "Maintenir un taux d'engagement supérieur à 2% sur les publications"
   ]
 }

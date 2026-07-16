@@ -1,6 +1,6 @@
 {
   "agent": "analyste",
-  "genere_le": "2026-07-15T12:04:45+00:00",
+  "genere_le": "2026-07-16T12:06:15+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -13,61 +13,60 @@
   "items": [
     {
       "type": "insight",
-      "titre": "TikTok, plateforme la plus engageante",
-      "explication": "Les contenus sur TikTok génèrent plus d'engagement que sur les autres plateformes, notamment grâce aux Reels.",
+      "titre": "Performances sur TikTok",
+      "explication": "Les publications sur TikTok ont un engagement moyen élevé, notamment avec les Reels.",
       "preuve": {
-        "metrique": "likes",
-        "valeur": 88000,
-        "variation": "plus élevé que les autres plateformes"
+        "metrique": "likes sur TikTok",
+        "valeur": 88000
       }
     },
     {
       "type": "reco",
-      "titre": "Publier plus de Reels",
-      "explication": "Pour augmenter l'engagement, il est recommandé de publier plus de contenus sous forme de Reels, notamment sur TikTok.",
+      "titre": "Publier des Reels sur TikTok",
+      "explication": "Augmenter la fréquence de publications de type Reel sur TikTok pour profiter de l'engagement élevé.",
       "preuve": {
-        "metrique": "engagement_moyen",
+        "metrique": "engagement moyen pour les Reels",
         "valeur": 520
       },
-      "action": "Publier au moins 2 Reels par semaine sur TikTok"
+      "action": "Publiez au moins un Reel par semaine sur TikTok pendant les 4 semaines à venir"
     },
     {
       "type": "insight",
-      "titre": "Carrousels bien performants sur Instagram",
-      "explication": "Les carrousels sur Instagram génèrent un engagement élevé, avec des likes et des commentaires significatifs.",
+      "titre": "Évolution de l'audience",
+      "explication": "L'audience totale a augmenté régulièrement sur les 3 derniers mois.",
       "preuve": {
-        "metrique": "engagement_moyen",
-        "valeur": 310
-      }
-    },
-    {
-      "type": "reco",
-      "titre": "Améliorer la réponse aux commentaires",
-      "explication": "Il est crucial de répondre rapidement et de manière personnalisée aux commentaires pour renforcer l'engagement et la confiance.",
-      "preuve": {
-        "metrique": "a_repondre",
-        "valeur": 5
-      },
-      "action": "Répondre aux commentaires et messages dans les 24 heures"
-    },
-    {
-      "type": "insight",
-      "titre": "Évolution positive de l'audience",
-      "explication": "L'audience a augmenté régulièrement au fil des semaines, indiquant une stratégie de contenu efficace.",
-      "preuve": {
-        "metrique": "evolution_audience",
+        "metrique": "audience totale",
         "valeur": 23500
       }
     },
     {
       "type": "reco",
-      "titre": "Optimiser les créneaux horaires de publication",
-      "explication": "Il est conseillé de publier à des moments où l'engagement est plus élevé, comme le jeudi à 19h.",
+      "titre": "Répondre aux commentaires",
+      "explication": "Répondre rapidement aux commentaires et messages pour améliorer l'expérience client et encourager l'engagement.",
       "preuve": {
-        "metrique": "meilleur_creneau",
-        "valeur": "Jeudi 19h"
+        "metrique": "nombre de commentaires",
+        "valeur": 1230
       },
-      "action": "Publier systématiquement le jeudi à 19h pour maximiser l'engagement"
+      "action": "Répondez à tous les commentaires et messages reçus cette semaine dans les 24 heures suivant leur envoi"
+    },
+    {
+      "type": "insight",
+      "titre": "Meilleur créneau pour les publications",
+      "explication": "Les publications postées le jeudi à 19h atteignent l'engagement le plus élevé.",
+      "preuve": {
+        "metrique": "meilleur créneau pour les publications",
+        "valeur": 260
+      }
+    },
+    {
+      "type": "reco",
+      "titre": "Planification des publications",
+      "explication": "Planifier les publications pour profiter du meilleur créneau, le jeudi à 19h, pour augmenter l'engagement.",
+      "preuve": {
+        "metrique": "engagement au meilleur créneau",
+        "valeur": 260
+      },
+      "action": "Programmez vos publications pour le jeudi à 19h pour les 2 semaines à venir"
     }
   ]
 }

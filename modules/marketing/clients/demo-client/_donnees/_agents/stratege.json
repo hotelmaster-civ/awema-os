@@ -1,6 +1,6 @@
 {
   "agent": "stratege",
-  "genere_le": "2026-07-15T12:05:28+00:00",
+  "genere_le": "2026-07-16T12:06:51+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -15,60 +15,60 @@
       "jour": "Lundi",
       "heure": "19h",
       "format": "Reel",
-      "angle": "Routine de soin de peau pour les femmes actives",
+      "angle": "Routine de soin visage pour une peau éclatante",
       "reseau": "TikTok"
-    },
-    {
-      "jour": "Mardi",
-      "heure": "12h",
-      "format": "Carrousel",
-      "angle": "Avant/Après : Transformation avec nos soins de visage",
-      "reseau": "Instagram"
     },
     {
       "jour": "Mercredi",
-      "heure": "14h",
-      "format": "Photo",
-      "angle": "Présentation d'un nouveau produit pour les peaux sensibles",
-      "reseau": "TikTok"
+      "heure": "12h",
+      "format": "Carrousel",
+      "angle": "Avant/Après d'un soin de visage éclat",
+      "reseau": "Instagram"
     },
     {
       "jour": "Jeudi",
       "heure": "19h",
-      "format": "Reel",
-      "angle": "Conseils pour un teint parfait pour les futures mariées",
-      "reseau": "TikTok"
-    },
-    {
-      "jour": "Vendredi",
-      "heure": "10h",
-      "format": "Carrousel",
-      "angle": "Les bienfaits du soin de visage pour la confiance en soi",
+      "format": "Short",
+      "angle": "Conseils pour une peau parfaite tout au long de la journée",
       "reseau": "Instagram"
     },
     {
+      "jour": "Vendredi",
+      "heure": "15h",
+      "format": "Photo",
+      "angle": "Présentation d'un nouveau produit de soin pour la peau",
+      "reseau": "Facebook"
+    },
+    {
       "jour": "Samedi",
-      "heure": "14h",
+      "heure": "12h",
       "format": "Reel",
-      "angle": "Démonstration d'un soin de beauté personnalisé",
+      "angle": "Découvrez comment notre forfait mariée peut rendre votre jour spécial encore plus inoubliable",
       "reseau": "TikTok"
     },
     {
       "jour": "Dimanche",
       "heure": "18h",
-      "format": "Photo",
-      "angle": "Motivation pour prendre soin de soi durant la semaine",
+      "format": "Carrousel",
+      "angle": "Les bienfaits d'un soin de visage régulier pour une peau saine et éclatante",
       "reseau": "Instagram"
+    },
+    {
+      "jour": "Mardi",
+      "heure": "19h",
+      "format": "Short",
+      "angle": "Réponse aux questions fréquentes sur les soins de beauté",
+      "reseau": "TikTok"
     }
   ],
-  "cadence_recommandee": "4 publications/semaine",
+  "cadence_recommandee": "3 publications/semaine",
   "meilleures_heures": [
     "Jeudi 19h",
-    "Samedi 14h"
+    "Samedi 15h"
   ],
   "objectifs": [
-    "Augmenter l'engagement de 20% sur TikTok",
-    "Accroître la portée de 15% sur Instagram",
-    "Répondre à 100% des commentaires et messages dans les 2 heures"
+    "Augmenter l'engagement de 15% sur les publications Instagram en 2 mois",
+    "Atteindre 10000 vues sur TikTok pour les Reels produits en 6 semaines",
+    "Renforcer la présence sur Facebook avec une augmentation de 20% des abonnés en 3 mois"
   ]
 }
