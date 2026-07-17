@@ -1,6 +1,6 @@
 {
   "agent": "analyste",
-  "genere_le": "2026-07-16T12:06:15+00:00",
+  "genere_le": "2026-07-17T11:45:37+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -13,60 +13,69 @@
   "items": [
     {
       "type": "insight",
-      "titre": "Performances sur TikTok",
-      "explication": "Les publications sur TikTok ont un engagement moyen élevé, notamment avec les Reels.",
+      "titre": "Engagement élevé sur TikTok",
+      "explication": "Les contenus publiés sur TikTok rencontrent un grand succès, en particulier le type 'Reel', qui génère un engagement moyen de 520.",
       "preuve": {
-        "metrique": "likes sur TikTok",
-        "valeur": 88000
-      }
+        "metrique": "engagement_moyen",
+        "valeur": 520,
+        "variation": null
+      },
+      "action": null
     },
     {
       "type": "reco",
-      "titre": "Publier des Reels sur TikTok",
-      "explication": "Augmenter la fréquence de publications de type Reel sur TikTok pour profiter de l'engagement élevé.",
+      "titre": "Publier plus de contenus sur TikTok",
+      "explication": "Étant donné l'engagement élevé sur TikTok, il est recommandé d'augmenter la fréquence de publication sur cette plateforme pour renforcer la présence de l'institut de beauté.",
       "preuve": {
-        "metrique": "engagement moyen pour les Reels",
-        "valeur": 520
+        "metrique": "likes",
+        "valeur": 88000,
+        "variation": null
       },
-      "action": "Publiez au moins un Reel par semaine sur TikTok pendant les 4 semaines à venir"
+      "action": "Publier au moins 2 fois par semaine sur TikTok"
+    },
+    {
+      "type": "insight",
+      "titre": "Popularité des contenus 'Avant / Après'",
+      "explication": "Les contenus de type 'Avant / Après' rencontrent un grand succès, en particulier sur Instagram, avec un nombre élevé de likes et de commentaires.",
+      "preuve": {
+        "metrique": "likes",
+        "valeur": 820,
+        "variation": null
+      },
+      "action": null
+    },
+    {
+      "type": "reco",
+      "titre": "Répondre aux commentaires et messages",
+      "explication": "Il est important de répondre aux commentaires et messages des followers pour renforcer l'engagement et la confiance.",
+      "preuve": {
+        "metrique": "a_repondre",
+        "valeur": 5,
+        "variation": null
+      },
+      "action": "Répondre à tous les commentaires et messages dans les 24 heures"
     },
     {
       "type": "insight",
       "titre": "Évolution de l'audience",
-      "explication": "L'audience totale a augmenté régulièrement sur les 3 derniers mois.",
+      "explication": "L'audience a augmenté régulièrement ces derniers mois, avec une augmentation de 25% depuis le 1er mai.",
       "preuve": {
-        "metrique": "audience totale",
-        "valeur": 23500
-      }
+        "metrique": "evolution_audience",
+        "valeur": 2500,
+        "variation": "25%"
+      },
+      "action": null
     },
     {
       "type": "reco",
-      "titre": "Répondre aux commentaires",
-      "explication": "Répondre rapidement aux commentaires et messages pour améliorer l'expérience client et encourager l'engagement.",
+      "titre": "Optimiser les contenus pour les jeunes actifs",
+      "explication": "Étant donné que la cible principale est des femmes de 22 à 45 ans, il est recommandé d'optimiser les contenus pour répondre à leurs besoins et préférences.",
       "preuve": {
-        "metrique": "nombre de commentaires",
-        "valeur": 1230
+        "metrique": "secteur",
+        "valeur": "Institut de beauté",
+        "variation": null
       },
-      "action": "Répondez à tous les commentaires et messages reçus cette semaine dans les 24 heures suivant leur envoi"
-    },
-    {
-      "type": "insight",
-      "titre": "Meilleur créneau pour les publications",
-      "explication": "Les publications postées le jeudi à 19h atteignent l'engagement le plus élevé.",
-      "preuve": {
-        "metrique": "meilleur créneau pour les publications",
-        "valeur": 260
-      }
-    },
-    {
-      "type": "reco",
-      "titre": "Planification des publications",
-      "explication": "Planifier les publications pour profiter du meilleur créneau, le jeudi à 19h, pour augmenter l'engagement.",
-      "preuve": {
-        "metrique": "engagement au meilleur créneau",
-        "valeur": 260
-      },
-      "action": "Programmez vos publications pour le jeudi à 19h pour les 2 semaines à venir"
+      "action": "Créer des contenus qui mettent en avant les soins de beauté pour les jeunes actifs"
     }
   ]
 }

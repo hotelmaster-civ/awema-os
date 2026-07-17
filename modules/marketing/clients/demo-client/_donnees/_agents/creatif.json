@@ -1,6 +1,6 @@
 {
   "agent": "creatif",
-  "genere_le": "2026-07-16T12:07:41+00:00",
+  "genere_le": "2026-07-17T11:47:02+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -12,33 +12,33 @@
   },
   "items": [
     {
-      "hook": "Découvrez le secret à un teint parfait pour votre jour J !",
-      "script": "Vous rêvez d'un teint éclatant et naturel pour votre mariage ? Notre forfait mariée est conçu spécialement pour vous ! Avec 3 séances de soins personnalisés, vous vous sentirez confiante et belle. N'attendez plus, réservez votre place dès aujourd'hui !",
+      "hook": "Découvrez le secret d'un teint éclatant en 3 étapes !",
+      "script": "Bienvenue chez Éclat Beauté ! Notre soin visage éclat est conçu pour révéler votre beauté naturelle. En 3 étapes simples, nettoyage, exfoliation et hydratation, votre peau retrouvera son éclat. Réservez votre rendez-vous dès aujourd'hui et découvrez pourquoi nos clientes adorent notre soin éclat !",
       "format": "Reel",
       "reseau": "TikTok",
-      "prompt_image": "Une jeune femme africaine portant une tenue de mariée, avec un teint lumineux et un large sourire, sur fond de décoration de mariage",
+      "prompt_image": "Une femme africaine avec un teint éclatant, entourée de fleurs et de produits de soin, avec un effet de lumière naturelle #D4AF37 et #0A1F44 en arrière-plan",
       "variantes": [
-        "Prêts à briller pour les photos de votre mariage ?"
+        "Un visage lumineux en quelques minutes ? C'est possible avec Éclat Beauté !"
       ]
     },
     {
-      "hook": "Besoin d'un peu de temps pour soi ?",
-      "script": "Les femmes actives comme vous méritent de prendre soin d'elles ! Notre soin visage éclat est conçu pour vous offrir une pause de détente et vous donner un teint frais et éclatant. Prenez rendez-vous dès maintenant et offrez-vous un moment de bien-être !",
+      "hook": "Préparez-vous pour le jour J avec notre forfait mariée !",
+      "script": "Fatou, future mariée, vous souhaitez un teint parfait pour votre grand jour ? Notre forfait mariée comprend 3 séances personnalisées pour vous donner une peau radieuse. De la préparation à la célébration, nous sommes là pour vous. Réservez votre forfait dès aujourd'hui !",
       "format": "Carrousel",
       "reseau": "Instagram",
-      "prompt_image": "Une photo split-screen montrant avant et après un soin visage, avec une femme africaine souriante et détendue, sur fond de couleurs chaudes et apaisantes",
+      "prompt_image": "Une future mariée africaine, souriante, avec un voile et une robe de mariée, entourée de produits de soin et de fleurs, avec un effet de lumière doux #D4AF37 et #0A1F44 en arrière-plan",
       "variantes": [
-        "Quand était-ce la dernière fois que vous vous êtes accordé du temps pour vous ?"
+        "Rêvez d'un teint de star pour votre mariage ? Nous avons la solution !"
       ]
     },
     {
-      "hook": "Votre peau est-elle sensible ?",
-      "script": "Nous avons la solution pour vous ! Notre gamme de produits hypoallergéniques est spécialement conçue pour les peaux sensibles. Découvrez comment nous pouvons vous aider à trouver la confiance en votre beauté. Contactez-nous pour plus d'informations !",
-      "format": "Post",
-      "reseau": "Facebook",
-      "prompt_image": "Une illustration ou une photo d'une peau sensible avec des produits de soin hypoallergéniques, sur fond de couleurs douces et réconfortantes",
+      "hook": "Le secret d'une peau parfaite ? Un soin régulier !",
+      "script": "Aïcha, jeune active, vous voulez vous sentir belle malgré un emploi du temps chargé ? Nos soins visage éclat sont conçus pour vous offrir un moment de détente et de soin. En 30 minutes, votre peau sera nettoyée, hydratée et prête à affronter la journée. Réservez votre rendez-vous dès aujourd'hui et découvrez notre gamme de soins !",
+      "format": "Short",
+      "reseau": "TikTok",
+      "prompt_image": "Une jeune femme africaine active, souriante, avec un sac à dos et un agenda, entourée de produits de soin, avec un effet de lumière dynamique #D4AF37 et #0A1F44 en arrière-plan",
       "variantes": [
-        "Votre peau mérite le meilleur, même si elle est sensible !"
+        " Une peau éclatante en un rien de temps ? C'est possible avec Éclat Beauté !"
       ]
     }
   ]

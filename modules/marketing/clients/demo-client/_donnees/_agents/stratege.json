@@ -1,6 +1,6 @@
 {
   "agent": "stratege",
-  "genere_le": "2026-07-16T12:06:51+00:00",
+  "genere_le": "2026-07-17T11:46:29+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -15,60 +15,59 @@
       "jour": "Lundi",
       "heure": "19h",
       "format": "Reel",
-      "angle": "Routine de soin visage pour une peau éclatante",
+      "angle": "Soin visage éclat pour les peaux grasses",
       "reseau": "TikTok"
     },
     {
       "jour": "Mercredi",
-      "heure": "12h",
+      "heure": "19h",
       "format": "Carrousel",
-      "angle": "Avant/Après d'un soin de visage éclat",
+      "angle": "Avant/Après soins pour les futures mariées",
       "reseau": "Instagram"
     },
     {
       "jour": "Jeudi",
       "heure": "19h",
-      "format": "Short",
-      "angle": "Conseils pour une peau parfaite tout au long de la journée",
-      "reseau": "Instagram"
+      "format": "Reel",
+      "angle": "Routine de base pour une peau naturellement éclatante",
+      "reseau": "TikTok"
     },
     {
       "jour": "Vendredi",
-      "heure": "15h",
+      "heure": "18h",
       "format": "Photo",
-      "angle": "Présentation d'un nouveau produit de soin pour la peau",
-      "reseau": "Facebook"
+      "angle": "Présentation de produits hypoallergéniques pour les peaux sensibles",
+      "reseau": "Instagram"
     },
     {
       "jour": "Samedi",
       "heure": "12h",
       "format": "Reel",
-      "angle": "Découvrez comment notre forfait mariée peut rendre votre jour spécial encore plus inoubliable",
+      "angle": "Conseils pour un soin de soi efficace à domicile",
       "reseau": "TikTok"
     },
     {
       "jour": "Dimanche",
-      "heure": "18h",
+      "heure": "17h",
       "format": "Carrousel",
-      "angle": "Les bienfaits d'un soin de visage régulier pour une peau saine et éclatante",
+      "angle": "Témoignages de clientes satisfaites après soins",
       "reseau": "Instagram"
     },
     {
       "jour": "Mardi",
-      "heure": "19h",
-      "format": "Short",
-      "angle": "Réponse aux questions fréquentes sur les soins de beauté",
+      "heure": "20h",
+      "format": "Reel",
+      "angle": "Présentation du forfait mariée et ses avantages",
       "reseau": "TikTok"
     }
   ],
   "cadence_recommandee": "3 publications/semaine",
   "meilleures_heures": [
-    "Jeudi 19h",
-    "Samedi 15h"
+    "Jeudi 19h"
   ],
   "objectifs": [
-    "Augmenter l'engagement de 15% sur les publications Instagram en 2 mois",
-    "Atteindre 10000 vues sur TikTok pour les Reels produits en 6 semaines",
-    "Renforcer la présence sur Facebook avec une augmentation de 20% des abonnés en 3 mois"
+    "Augmenter l'engagement de 15% sur TikTok",
+    "Atteindre 10 000 vues sur les Reels dans la semaine",
+    "Faire grimper la portée hebdomadaire de 20%"
   ]
 }
