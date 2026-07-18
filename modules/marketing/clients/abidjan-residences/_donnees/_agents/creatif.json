@@ -1,6 +1,6 @@
 {
   "agent": "creatif",
-  "genere_le": "2026-07-17T11:46:50+00:00",
+  "genere_le": "2026-07-18T10:49:30+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -11,33 +11,33 @@
   },
   "items": [
     {
-      "hook": "Découvrez les résidences Abidjan, la perle de la Côte d'Ivoire !",
-      "script": "Bonjour à tous ! Aujourd'hui, je vais vous montrer les résidences Abidjan, des endroits parfaits pour votre prochain séjour. Détendez-vous et découvrez nos résidences #Abidjan #Residences #CotedIvoire",
+      "hook": "Découvrez l'expérience ultime à Abidjan !",
+      "script": "Présentation de nos résidences de luxe à Abidjan, avec des équipements de pointe et un service personnalisé. Rejoignez notre communauté et vivez l'expérience Abidjan Résidences ! #AbidjanRésidences #LuxuryLiving",
       "format": "Short",
       "reseau": "TikTok",
-      "prompt_image": "Une photo d'une résidence moderne avec des plantes vertes et un environnement calme, avec une légende \"Découvrez les résidences Abidjan\".",
+      "prompt_image": "Une villa de luxe avec piscine et vue sur la ville, le soleil couchant derrière les palmiers",
       "variantes": [
-        "Bienvenue dans les résidences Abidjan, votre havre de paix !"
+        "Plongez dans l'univers d'Abidjan Résidences !"
       ]
     },
     {
-      "hook": " Vous cherchez un endroit pour vous détendre à Abidjan ?",
-      "script": "Je vous présente les résidences Abidjan, des lieux où vous pourrez vous détendre et vous ressourcer. Les résidences Abidjan offrent tout ce dont vous avez besoin pour un séjour inoubliable. #Abidjan #Detente #Residences",
+      "hook": "Vous cherchez un endroit pour vous détendre à Abidjan ?",
+      "script": "Présentation de nos résidences avec spas et centres de bien-être. Laissez-vous gâter par nos spécialistes et retrouvez votre équilibre à Abidjan Résidences ! #Detente #AbidjanRésidences",
       "format": "Reel",
       "reseau": "TikTok",
-      "prompt_image": "Une vidéo montrant une personne se détendant dans une résidence, avec une légende \"Détendez-vous dans les résidences Abidjan\".",
+      "prompt_image": "Un spa intérieur avec une grande baie vitrée, des plantes tropicales et un lit de massage",
       "variantes": [
-        "Les résidences Abidjan, votre refuge de paix et de calme."
+        "Trouvez votre haven de paix à Abidjan Résidences !"
       ]
     },
     {
-      "hook": "Vous souhaitez découvrir les meilleures résidences d'Abidjan ?",
-      "script": "Abidjan résidences vous propose des résidences de haute qualité, avec des équipements modernes et un service personnalisé. Découvrez nos résidences et faites de votre séjour un moment inoubliable. #Abidjan #Residences #MeilleuresResidences",
+      "hook": "Que diriez-vous d'un séjour inoubliable à Abidjan ?",
+      "script": "Présentation de nos résidences avec activités et services exclusifs. Rejoignez notre communauté et vivez des expériences uniques à Abidjan Résidences ! #AbidjanRésidences #SejourInoubliable",
       "format": "Carrousel",
       "reseau": "Instagram",
-      "prompt_image": "Un carrousel de photos montrant différentes résidences d'Abidjan, avec une légende \"Découvrez les meilleures résidences d'Abidjan\".",
+      "prompt_image": "Un buffet de cuisine ivoirienne avec des plats traditionnels, des fruits et des boissons locales",
       "variantes": [
-        "Les résidences Abidjan, le top de la qualité et du confort."
+        "Vivez l'aventure à Abidjan Résidences !"
       ]
     }
   ]

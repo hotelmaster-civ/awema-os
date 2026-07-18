@@ -1,6 +1,6 @@
 {
   "agent": "creatif",
-  "genere_le": "2026-07-17T11:47:02+00:00",
+  "genere_le": "2026-07-18T10:50:00+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -12,33 +12,33 @@
   },
   "items": [
     {
-      "hook": "Découvrez le secret d'un teint éclatant en 3 étapes !",
-      "script": "Bienvenue chez Éclat Beauté ! Notre soin visage éclat est conçu pour révéler votre beauté naturelle. En 3 étapes simples, nettoyage, exfoliation et hydratation, votre peau retrouvera son éclat. Réservez votre rendez-vous dès aujourd'hui et découvrez pourquoi nos clientes adorent notre soin éclat !",
+      "hook": "Découvrez le secret d'un teint éclatant naturel !",
+      "script": "Vous rêvez d'un teint parfait sans effort ? Notre soin visage éclat est la solution idéale ! Nettoyage profond + hydratation pour une peau fraîche et lumineuse. Réservation via WhatsApp, 48h à l'avance. Venez découvrir notre gamme hypoallergénique adaptée à vos besoins. #EclatBeaute #SoinVisage #Naturel",
       "format": "Reel",
       "reseau": "TikTok",
-      "prompt_image": "Une femme africaine avec un teint éclatant, entourée de fleurs et de produits de soin, avec un effet de lumière naturelle #D4AF37 et #0A1F44 en arrière-plan",
+      "prompt_image": "une femme souriante avec un teint lumineux, les cheveux détachés, sur fond de fleurs ou de feuilles vertes",
       "variantes": [
-        "Un visage lumineux en quelques minutes ? C'est possible avec Éclat Beauté !"
+        "Faites briller votre beauté naturelle !"
       ]
     },
     {
-      "hook": "Préparez-vous pour le jour J avec notre forfait mariée !",
-      "script": "Fatou, future mariée, vous souhaitez un teint parfait pour votre grand jour ? Notre forfait mariée comprend 3 séances personnalisées pour vous donner une peau radieuse. De la préparation à la célébration, nous sommes là pour vous. Réservez votre forfait dès aujourd'hui !",
+      "hook": "Le grand jour approche... Votre teint parfait vous attend !",
+      "script": "Vous vous mariez bientôt et vous voulez un teint sublime pour le jour J ? Notre forfait mariée est conçu pour vous offrir 3 séances personnalisées pour un résultat hors pair. Réservez dès maintenant et vivez votre rêve ! #Mariage #EclatBeaute #ForfaitMariee",
       "format": "Carrousel",
       "reseau": "Instagram",
-      "prompt_image": "Une future mariée africaine, souriante, avec un voile et une robe de mariée, entourée de produits de soin et de fleurs, avec un effet de lumière doux #D4AF37 et #0A1F44 en arrière-plan",
+      "prompt_image": "une photo du forfait mariée avec les différentes étapes de soin, ou une photo d'une mariée heureuse avec un teint parfait",
       "variantes": [
-        "Rêvez d'un teint de star pour votre mariage ? Nous avons la solution !"
+        "Préparez votre peau pour le jour le plus important de votre vie !"
       ]
     },
     {
-      "hook": "Le secret d'une peau parfaite ? Un soin régulier !",
-      "script": "Aïcha, jeune active, vous voulez vous sentir belle malgré un emploi du temps chargé ? Nos soins visage éclat sont conçus pour vous offrir un moment de détente et de soin. En 30 minutes, votre peau sera nettoyée, hydratée et prête à affronter la journée. Réservez votre rendez-vous dès aujourd'hui et découvrez notre gamme de soins !",
-      "format": "Short",
-      "reseau": "TikTok",
-      "prompt_image": "Une jeune femme africaine active, souriante, avec un sac à dos et un agenda, entourée de produits de soin, avec un effet de lumière dynamique #D4AF37 et #0A1F44 en arrière-plan",
+      "hook": "Bienvenue dans notre espace de bien-être !",
+      "script": "Chez Éclat Beauté, nous sommes dédiés à vous offrir une expérience premium et abordable. Découvrez nos soins de visage personnalisés et notre gamme de produits pour une peau africaine saine et éclatante. Réservez votre rendez-vous aujourd'hui et laissez-nous vous gâter ! #EclatBeaute #BienEtre #SoinDeSoi",
+      "format": "Post",
+      "reseau": "Facebook",
+      "prompt_image": "une photo de l'intérieur de l'institut, avec des éléments de décoration apportant une touche de chaleur et d'accueil",
       "variantes": [
-        " Une peau éclatante en un rien de temps ? C'est possible avec Éclat Beauté !"
+        "Éclat de beauté, éclat de vie..."
       ]
     }
   ]

@@ -1,6 +1,6 @@
 {
   "agent": "stratege",
-  "genere_le": "2026-07-17T11:46:29+00:00",
+  "genere_le": "2026-07-18T10:49:27+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -15,59 +15,60 @@
       "jour": "Lundi",
       "heure": "19h",
       "format": "Reel",
-      "angle": "Soin visage éclat pour les peaux grasses",
+      "angle": "Soins de visage pour les femmes actives",
       "reseau": "TikTok"
     },
     {
-      "jour": "Mercredi",
-      "heure": "19h",
+      "jour": "Mardi",
+      "heure": "14h",
       "format": "Carrousel",
-      "angle": "Avant/Après soins pour les futures mariées",
+      "angle": "Avant/Après soin éclat",
       "reseau": "Instagram"
     },
     {
       "jour": "Jeudi",
       "heure": "19h",
-      "format": "Reel",
-      "angle": "Routine de base pour une peau naturellement éclatante",
+      "format": "Short",
+      "angle": "Conseils pour une peau parfaite",
       "reseau": "TikTok"
     },
     {
       "jour": "Vendredi",
-      "heure": "18h",
+      "heure": "12h",
       "format": "Photo",
-      "angle": "Présentation de produits hypoallergéniques pour les peaux sensibles",
+      "angle": "Présentation des produits hypoallergéniques",
       "reseau": "Instagram"
     },
     {
       "jour": "Samedi",
-      "heure": "12h",
+      "heure": "14h",
       "format": "Reel",
-      "angle": "Conseils pour un soin de soi efficace à domicile",
+      "angle": "Routine peau grasse en 3 étapes",
       "reseau": "TikTok"
     },
     {
       "jour": "Dimanche",
-      "heure": "17h",
+      "heure": "18h",
       "format": "Carrousel",
-      "angle": "Témoignages de clientes satisfaites après soins",
+      "angle": "Forfait mariée et produits de soin",
       "reseau": "Instagram"
     },
     {
-      "jour": "Mardi",
-      "heure": "20h",
-      "format": "Reel",
-      "angle": "Présentation du forfait mariée et ses avantages",
+      "jour": "Mercredi",
+      "heure": "15h",
+      "format": "Short",
+      "angle": "Réponses aux questions fréquentes sur les soins de visage",
       "reseau": "TikTok"
     }
   ],
   "cadence_recommandee": "3 publications/semaine",
   "meilleures_heures": [
-    "Jeudi 19h"
+    "Jeudi 19h",
+    "Samedi 14h"
   ],
   "objectifs": [
-    "Augmenter l'engagement de 15% sur TikTok",
-    "Atteindre 10 000 vues sur les Reels dans la semaine",
-    "Faire grimper la portée hebdomadaire de 20%"
+    "Augmenter le taux d'engagement de 10% sur les 30 prochains jours",
+    "Répondre à toutes les questions des clientes dans les 2 heures suivant leur publication",
+    "Créer un contenu qui porte sur les soins de visage éclat et les produits adaptés à la peau africaine pour atteindre 500 likes sur TikTok et Instagram"
   ]
 }

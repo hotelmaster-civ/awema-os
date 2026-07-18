@@ -1,6 +1,6 @@
 {
   "agent": "analyste",
-  "genere_le": "2026-07-17T11:45:37+00:00",
+  "genere_le": "2026-07-18T10:48:15+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -13,69 +13,61 @@
   "items": [
     {
       "type": "insight",
-      "titre": "Engagement élevé sur TikTok",
-      "explication": "Les contenus publiés sur TikTok rencontrent un grand succès, en particulier le type 'Reel', qui génère un engagement moyen de 520.",
-      "preuve": {
-        "metrique": "engagement_moyen",
-        "valeur": 520,
-        "variation": null
-      },
-      "action": null
-    },
-    {
-      "type": "reco",
-      "titre": "Publier plus de contenus sur TikTok",
-      "explication": "Étant donné l'engagement élevé sur TikTok, il est recommandé d'augmenter la fréquence de publication sur cette plateforme pour renforcer la présence de l'institut de beauté.",
+      "titre": "Prédominance de TikTok",
+      "explication": "Le réseau TikTok génère le plus d'engagement, en particulier avec les Reels.",
       "preuve": {
         "metrique": "likes",
         "valeur": 88000,
-        "variation": null
-      },
-      "action": "Publier au moins 2 fois par semaine sur TikTok"
+        "variation": "le plus élevé parmi les réseaux"
+      }
     },
     {
       "type": "insight",
-      "titre": "Popularité des contenus 'Avant / Après'",
-      "explication": "Les contenus de type 'Avant / Après' rencontrent un grand succès, en particulier sur Instagram, avec un nombre élevé de likes et de commentaires.",
+      "titre": "Contenu Carrousel efficace",
+      "explication": "Les contenus au format Carrousel obtiennent un engagement moyen élevé.",
+      "preuve": {
+        "metrique": "engagement_moyen",
+        "valeur": 310
+      }
+    },
+    {
+      "type": "reco",
+      "titre": "Publier plus sur TikTok",
+      "explication": "Étant donné la popularité de TikTok, il est recommandé d'y publier davantage de contenus.",
+      "preuve": {
+        "metrique": "abonnes",
+        "valeur": 12500
+      },
+      "action": "Augmenter la fréquence de publication sur TikTok cette semaine"
+    },
+    {
+      "type": "reco",
+      "titre": "Créer du contenu en utilisant le format Reel",
+      "explication": "Les Reels sont bien performants sur TikTok, nous devrions donc en créer plus.",
       "preuve": {
         "metrique": "likes",
-        "valeur": 820,
-        "variation": null
+        "valeur": 5400
       },
-      "action": null
-    },
-    {
-      "type": "reco",
-      "titre": "Répondre aux commentaires et messages",
-      "explication": "Il est important de répondre aux commentaires et messages des followers pour renforcer l'engagement et la confiance.",
-      "preuve": {
-        "metrique": "a_repondre",
-        "valeur": 5,
-        "variation": null
-      },
-      "action": "Répondre à tous les commentaires et messages dans les 24 heures"
+      "action": "Développer au moins 2 nouveaux Reels cette semaine"
     },
     {
       "type": "insight",
-      "titre": "Évolution de l'audience",
-      "explication": "L'audience a augmenté régulièrement ces derniers mois, avec une augmentation de 25% depuis le 1er mai.",
+      "titre": "Croissance de l'audience",
+      "explication": "L'audience a augmenté régulièrement au fil des semaines.",
       "preuve": {
         "metrique": "evolution_audience",
-        "valeur": 2500,
-        "variation": "25%"
-      },
-      "action": null
+        "valeur": 23500
+      }
     },
     {
       "type": "reco",
-      "titre": "Optimiser les contenus pour les jeunes actifs",
-      "explication": "Étant donné que la cible principale est des femmes de 22 à 45 ans, il est recommandé d'optimiser les contenus pour répondre à leurs besoins et préférences.",
+      "titre": "Répondre aux commentaires",
+      "explication": "Il est crucial de répondre aux questions des clients pour renforcer la confiance et améliorer l'expérience utilisateur.",
       "preuve": {
-        "metrique": "secteur",
-        "valeur": "Institut de beauté",
-        "variation": null
+        "metrique": "a_repondre",
+        "valeur": 5
       },
-      "action": "Créer des contenus qui mettent en avant les soins de beauté pour les jeunes actifs"
+      "action": "Répondre à toutes les questions en commentaires dès que possible"
     }
   ]
 }

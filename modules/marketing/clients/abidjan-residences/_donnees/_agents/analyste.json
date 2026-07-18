@@ -1,6 +1,6 @@
 {
   "agent": "analyste",
-  "genere_le": "2026-07-17T11:45:26+00:00",
+  "genere_le": "2026-07-18T10:48:04+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -12,50 +12,60 @@
   "items": [
     {
       "type": "insight",
-      "titre": "Engagement élevé sur TikTok",
-      "explication": "Les utilisateurs sont très engagés sur les contenus de TikTok, ce qui indique une opportunité pour renforcer la présence sur cette plateforme.",
+      "titre": "Performance de la vidéo #collage avec @Tdfmanga",
+      "explication": "La vidéo #collage avec @Tdfmanga obtient le plus de likes, commentaires et partages sur TikTok.",
       "preuve": {
-        "metrique": "likes_total",
-        "valeur": 9475
+        "metrique": "likes",
+        "valeur": 8918
       }
     },
     {
       "type": "reco",
-      "titre": "Augmenter la fréquence de publication sur TikTok",
-      "explication": "Publier plus régulièrement sur TikTok pour maintenir l'intérêt des abonnés et augmenter les chances d'engagement.",
+      "titre": "Publier du contenu sur TikTok le Vendredi à 14h",
+      "explication": "Le creneau horaire le plus performant pour publier sur TikTok est le Vendredi à 14h.",
       "preuve": {
-        "metrique": "posts_par_semaine",
+        "metrique": "jour de publication",
+        "valeur": "Vendredi"
+      },
+      "action": "Publier du contenu sur TikTok le Vendredi à 14h pour atteindre un maximum d'audience."
+    },
+    {
+      "type": "insight",
+      "titre": "Faible taux de publications",
+      "explication": "Le taux de publications est très bas avec seulement 1 publication par mois.",
+      "preuve": {
+        "metrique": "posts par semaine",
         "valeur": 0.2
-      },
-      "action": "Publier au moins 2 fois par semaine sur TikTok"
-    },
-    {
-      "type": "insight",
-      "titre": "Contenu vidéo performant",
-      "explication": "Les vidéos sont le type de contenu le plus performant sur TikTok, avec une bonne visibilité et engagement des utilisateurs.",
-      "preuve": {
-        "metrique": "vues_recentes",
-        "valeur": 41507
       }
     },
     {
       "type": "reco",
-      "titre": "Optimiser les publications pour le créneau horaire recommandé",
-      "explication": "Publier à l'heure optimale pour maximiser la visibilité et l'engagement sur TikTok.",
+      "titre": "Augmenter la fréquence des publications",
+      "explication": "Il est recommandé d'augmenter la fréquence des publications pour maintenir l'intérêt de l'audience.",
       "preuve": {
-        "metrique": "heure",
-        "valeur": "14h"
+        "metrique": "jours depuis la dernière publication",
+        "valeur": 30
       },
-      "action": "Publier systématiquement le vendredi vers 14h sur TikTok"
+      "action": "Publier au moins 3 fois par semaine pour augmenter l'engagement de l'audience."
     },
     {
       "type": "insight",
-      "titre": "Audience stable",
-      "explication": "L'audience est restée stable ces derniers jours, indiquant une base solide mais nécessitant peut-être des stratégies pour la croissance.",
+      "titre": "Stabilité de l'audience",
+      "explication": "L'audience est stable avec une légère baisse ces derniers jours.",
       "preuve": {
-        "metrique": "audience",
-        "valeur": 4197
+        "metrique": "évolution de l'audience",
+        "valeur": -1
       }
+    },
+    {
+      "type": "reco",
+      "titre": "Analyser les performances des autres réseaux",
+      "explication": "Il est recommandé d'analyser les performances des autres réseaux pour identifier les opportunities de croissance.",
+      "preuve": {
+        "metrique": "autres réseaux",
+        "valeur": "Facebook, Instagram, LinkedIn, YouTube"
+      },
+      "action": "Analyser les performances des autres réseaux pour identifier les opportunities de croissance et ajuster la stratégie en conséquence."
     }
   ]
 }
