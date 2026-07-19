@@ -1,6 +1,6 @@
 {
   "agent": "creatif",
-  "genere_le": "2026-07-18T10:49:30+00:00",
+  "genere_le": "2026-07-19T11:01:41+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -11,33 +11,33 @@
   },
   "items": [
     {
-      "hook": "Découvrez l'expérience ultime à Abidjan !",
-      "script": "Présentation de nos résidences de luxe à Abidjan, avec des équipements de pointe et un service personnalisé. Rejoignez notre communauté et vivez l'expérience Abidjan Résidences ! #AbidjanRésidences #LuxuryLiving",
+      "hook": "Découvrez le meilleur de la résidence ivoirienne !",
+      "script": "Bonjour à tous ! Aujourd'hui, je veux vous montrer le meilleur de notre résidence à Abidjan. De la décoration intérieure aux activités extérieures, nous avons tout pour rendre votre séjour inoubliable. Alors, prêt à découvrir ce que nous avons à offrir ? Abonnez-vous et partagez avec vos amis ! #AbidjanResidences #RésidenceIvoirienne",
       "format": "Short",
       "reseau": "TikTok",
-      "prompt_image": "Une villa de luxe avec piscine et vue sur la ville, le soleil couchant derrière les palmiers",
+      "prompt_image": "Une photo d'une chambre élégante dans la résidence avec un balcon donnant sur la ville d'Abidjan",
       "variantes": [
-        "Plongez dans l'univers d'Abidjan Résidences !"
+        "Explorez le cœur de l'hospitalité ivoirienne !"
       ]
     },
     {
-      "hook": "Vous cherchez un endroit pour vous détendre à Abidjan ?",
-      "script": "Présentation de nos résidences avec spas et centres de bien-être. Laissez-vous gâter par nos spécialistes et retrouvez votre équilibre à Abidjan Résidences ! #Detente #AbidjanRésidences",
+      "hook": "Recherchez-vous un endroit pour vous détendre à Abidjan ?",
+      "script": "Vous cherchez un coin de paradis pour vous détendre après une longue semaine de travail ? Nous avons la solution ! Notre résidence est équipée de tout ce dont vous avez besoin pour vous relaxer, de la piscine au spa. Rejoignez-nous et laissez-nous vous faire vivre une expérience inoubliable ! #Détente #Abidjan",
       "format": "Reel",
       "reseau": "TikTok",
-      "prompt_image": "Un spa intérieur avec une grande baie vitrée, des plantes tropicales et un lit de massage",
+      "prompt_image": "Une photo de la piscine de la résidence avec des personnes se détendant au soleil",
       "variantes": [
-        "Trouvez votre haven de paix à Abidjan Résidences !"
+        "Débloquez le secret pour un séjour de rêve à Abidjan !"
       ]
     },
     {
-      "hook": "Que diriez-vous d'un séjour inoubliable à Abidjan ?",
-      "script": "Présentation de nos résidences avec activités et services exclusifs. Rejoignez notre communauté et vivez des expériences uniques à Abidjan Résidences ! #AbidjanRésidences #SejourInoubliable",
+      "hook": "Prêt à vivre l'expérience ivoirienne authentique ?",
+      "script": "Vous souhaitez découvrir la vraie culture ivoirienne ? Chez nous, vous trouverez tout ce qu'il faut pour plonger dans l'authenticité de ce beau pays. De la gastronomie locale aux activités traditionnelles, nous sommes là pour vous faire vivre l'expérience complète ! Abonnez-vous pour plus de contenu ! #ExpérienceIvoirienne #Authenticité",
       "format": "Carrousel",
       "reseau": "Instagram",
-      "prompt_image": "Un buffet de cuisine ivoirienne avec des plats traditionnels, des fruits et des boissons locales",
+      "prompt_image": "Un carrousel de photos montrant différents aspects de la culture ivoirienne, comme la cuisine, la danse, et les vêtements traditionnels",
       "variantes": [
-        "Vivez l'aventure à Abidjan Résidences !"
+        "Découvrez les secrets du cœur de l'Afrique de l'Ouest !"
       ]
     }
   ]

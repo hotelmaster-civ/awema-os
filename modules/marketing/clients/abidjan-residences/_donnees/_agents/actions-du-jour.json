@@ -1,6 +1,6 @@
 {
   "agent": "actions-du-jour",
-  "genere_le": "2026-07-18T10:50:00+00:00",
+  "genere_le": "2026-07-19T11:02:10+00:00",
   "modele": "agrégation (sans IA)",
   "provenance": {
     "client": "abidjan-residences",
@@ -34,8 +34,8 @@
     {
       "priorite": 2,
       "type": "reco",
-      "titre": "Publier du contenu sur TikTok le Vendredi à 14h",
-      "detail": "Publier du contenu sur TikTok le Vendredi à 14h pour atteindre un maximum d'audience.",
+      "titre": "Publier des vidéos sur TikTok",
+      "detail": "Publier au moins une vidéo par semaine sur TikTok",
       "source": "analyste",
       "action": {
         "label": "Voir l'analyse",
@@ -46,7 +46,7 @@
     {
       "priorite": 2,
       "type": "plan",
-      "titre": "Publie : Découvrez les résidences d'Abidjan",
+      "titre": "Publie : Présentation d'un appartement à Abidjan",
       "detail": "TikTok · Vidéo · Lundi",
       "source": "stratege",
       "action": {
@@ -58,7 +58,7 @@
     {
       "priorite": 3,
       "type": "creatif",
-      "titre": "Idée prête : Découvrez l'expérience ultime à Abidjan !",
+      "titre": "Idée prête : Découvrez le meilleur de la résidence ivoirienne !",
       "detail": "TikTok · Short",
       "source": "creatif",
       "action": {

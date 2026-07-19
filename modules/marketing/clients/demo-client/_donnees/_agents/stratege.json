@@ -1,6 +1,6 @@
 {
   "agent": "stratege",
-  "genere_le": "2026-07-18T10:49:27+00:00",
+  "genere_le": "2026-07-19T11:01:16+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -15,49 +15,49 @@
       "jour": "Lundi",
       "heure": "19h",
       "format": "Reel",
-      "angle": "Soins de visage pour les femmes actives",
+      "angle": "Conseils pour une peau éclatante",
       "reseau": "TikTok"
     },
     {
       "jour": "Mardi",
       "heure": "14h",
       "format": "Carrousel",
-      "angle": "Avant/Après soin éclat",
+      "angle": "Avant/Après soins visage éclat",
       "reseau": "Instagram"
+    },
+    {
+      "jour": "Mercredi",
+      "heure": "12h",
+      "format": "Photo",
+      "angle": "Produit du jour : Soin visage éclat",
+      "reseau": "Facebook"
     },
     {
       "jour": "Jeudi",
       "heure": "19h",
-      "format": "Short",
-      "angle": "Conseils pour une peau parfaite",
-      "reseau": "TikTok"
-    },
-    {
-      "jour": "Vendredi",
-      "heure": "12h",
-      "format": "Photo",
-      "angle": "Présentation des produits hypoallergéniques",
-      "reseau": "Instagram"
-    },
-    {
-      "jour": "Samedi",
-      "heure": "14h",
       "format": "Reel",
       "angle": "Routine peau grasse en 3 étapes",
       "reseau": "TikTok"
     },
     {
-      "jour": "Dimanche",
-      "heure": "18h",
+      "jour": "Vendredi",
+      "heure": "16h",
       "format": "Carrousel",
-      "angle": "Forfait mariée et produits de soin",
+      "angle": "Forfait mariée : Découvrez nos offres",
       "reseau": "Instagram"
     },
     {
-      "jour": "Mercredi",
-      "heure": "15h",
-      "format": "Short",
-      "angle": "Réponses aux questions fréquentes sur les soins de visage",
+      "jour": "Samedi",
+      "heure": "14h",
+      "format": "Photo",
+      "angle": "Équipe Éclat Beauté : Qui sommes-nous ?",
+      "reseau": "Facebook"
+    },
+    {
+      "jour": "Dimanche",
+      "heure": "18h",
+      "format": "Reel",
+      "angle": "Soins de soi pour le week-end",
       "reseau": "TikTok"
     }
   ],
@@ -67,8 +67,8 @@
     "Samedi 14h"
   ],
   "objectifs": [
-    "Augmenter le taux d'engagement de 10% sur les 30 prochains jours",
-    "Répondre à toutes les questions des clientes dans les 2 heures suivant leur publication",
-    "Créer un contenu qui porte sur les soins de visage éclat et les produits adaptés à la peau africaine pour atteindre 500 likes sur TikTok et Instagram"
+    "Augmenter l'engagement par 10% sur les publications",
+    "Répondre à 100% des commentaires et messages dans les 24h",
+    "Gagner 500 abonnés supplémentaires sur TikTok dans le mois"
   ]
 }

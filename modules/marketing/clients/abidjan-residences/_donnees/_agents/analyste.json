@@ -1,6 +1,6 @@
 {
   "agent": "analyste",
-  "genere_le": "2026-07-18T10:48:04+00:00",
+  "genere_le": "2026-07-19T11:00:13+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -12,8 +12,8 @@
   "items": [
     {
       "type": "insight",
-      "titre": "Performance de la vidéo #collage avec @Tdfmanga",
-      "explication": "La vidéo #collage avec @Tdfmanga obtient le plus de likes, commentaires et partages sur TikTok.",
+      "titre": "Performance de la vidéo sur TikTok",
+      "explication": "La vidéo « #collage avec @Tdfmanga decouvrez un animé 100% ivoirien par @Cénack  « placman » » a obtenu le plus de likes et de vues sur TikTok.",
       "preuve": {
         "metrique": "likes",
         "valeur": 8918
@@ -21,51 +21,51 @@
     },
     {
       "type": "reco",
-      "titre": "Publier du contenu sur TikTok le Vendredi à 14h",
-      "explication": "Le creneau horaire le plus performant pour publier sur TikTok est le Vendredi à 14h.",
+      "titre": "Publier des vidéos sur TikTok",
+      "explication": "Il est recommandé de publier des vidéos sur TikTok pour augmenter l'engagement et la visibilité de la page.",
       "preuve": {
-        "metrique": "jour de publication",
-        "valeur": "Vendredi"
+        "metrique": "vues",
+        "valeur": 41507
       },
-      "action": "Publier du contenu sur TikTok le Vendredi à 14h pour atteindre un maximum d'audience."
+      "action": "Publier au moins une vidéo par semaine sur TikTok"
     },
     {
       "type": "insight",
-      "titre": "Faible taux de publications",
-      "explication": "Le taux de publications est très bas avec seulement 1 publication par mois.",
+      "titre": "Cadence de publication sur TikTok",
+      "explication": "La dernière publication sur TikTok date de plus de 30 jours, il est important de maintenir une cadence régulière pour garder l'audience engagée.",
       "preuve": {
-        "metrique": "posts par semaine",
-        "valeur": 0.2
-      }
-    },
-    {
-      "type": "reco",
-      "titre": "Augmenter la fréquence des publications",
-      "explication": "Il est recommandé d'augmenter la fréquence des publications pour maintenir l'intérêt de l'audience.",
-      "preuve": {
-        "metrique": "jours depuis la dernière publication",
+        "metrique": "jours_depuis_dernier_post",
         "valeur": 30
-      },
-      "action": "Publier au moins 3 fois par semaine pour augmenter l'engagement de l'audience."
-    },
-    {
-      "type": "insight",
-      "titre": "Stabilité de l'audience",
-      "explication": "L'audience est stable avec une légère baisse ces derniers jours.",
-      "preuve": {
-        "metrique": "évolution de l'audience",
-        "valeur": -1
       }
     },
     {
       "type": "reco",
-      "titre": "Analyser les performances des autres réseaux",
-      "explication": "Il est recommandé d'analyser les performances des autres réseaux pour identifier les opportunities de croissance.",
+      "titre": "Définir un calendrier de publication",
+      "explication": "Il est recommandé de planifier les publications à l'avance pour assurer une régularité et une cohérence dans les contenus.",
       "preuve": {
-        "metrique": "autres réseaux",
-        "valeur": "Facebook, Instagram, LinkedIn, YouTube"
+        "metrique": "posts_par_semaine",
+        "valeur": 0.2
       },
-      "action": "Analyser les performances des autres réseaux pour identifier les opportunities de croissance et ajuster la stratégie en conséquence."
+      "action": "Créer un calendrier de publication pour les 4 prochaines semaines"
+    },
+    {
+      "type": "insight",
+      "titre": "Meilleur jour et heure de publication sur TikTok",
+      "explication": "Selon les données, le meilleur jour et heure pour publier sur TikTok sont le vendredi à 14h.",
+      "preuve": {
+        "metrique": "jour",
+        "valeur": "Vendredi"
+      }
+    },
+    {
+      "type": "reco",
+      "titre": "Publier à l'heure optimale",
+      "explication": "Il est recommandé de publier les contenus à l'heure où l'audience est la plus active pour maximiser l'engagement.",
+      "preuve": {
+        "metrique": "heure",
+        "valeur": "14h"
+      },
+      "action": "Publier les prochains contenus le vendredi à 14h"
     }
   ]
 }

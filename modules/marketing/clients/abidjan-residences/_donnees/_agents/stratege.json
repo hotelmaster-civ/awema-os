@@ -1,6 +1,6 @@
 {
   "agent": "stratege",
-  "genere_le": "2026-07-18T10:48:55+00:00",
+  "genere_le": "2026-07-19T11:00:48+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -14,59 +14,59 @@
       "jour": "Lundi",
       "heure": "14h",
       "format": "Vidéo",
-      "angle": "Découvrez les résidences d'Abidjan",
-      "reseau": "TikTok"
-    },
-    {
-      "jour": "Mardi",
-      "heure": "14h",
-      "format": "Vidéo",
-      "angle": "Conseils pour choisir une résidence à Abidjan",
+      "angle": "Présentation d'un appartement à Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Mercredi",
       "heure": "14h",
-      "format": "Vidéo",
-      "angle": "Les meilleurs quartiers pour vivre à Abidjan",
-      "reseau": "TikTok"
-    },
-    {
-      "jour": "Jeudi",
-      "heure": "14h",
-      "format": "Vidéo",
-      "angle": "Les avantages de vivre dans une résidence à Abidjan",
+      "format": "Story",
+      "angle": "Témoignage d'un client satisfait",
       "reseau": "TikTok"
     },
     {
       "jour": "Vendredi",
       "heure": "14h",
       "format": "Vidéo",
-      "angle": "Découvrez nos résidences à Abidjan",
+      "angle": "Découverte d'un quartier à Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Samedi",
-      "heure": "14h",
-      "format": "Vidéo",
-      "angle": "Les activités à faire à Abidjan",
+      "heure": "12h",
+      "format": "Photo",
+      "angle": "Présentation d'un événement à Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Dimanche",
+      "heure": "18h",
+      "format": "Vidéo",
+      "angle": "Conseils pour trouver un logement à Abidjan",
+      "reseau": "TikTok"
+    },
+    {
+      "jour": "Mardi",
+      "heure": "14h",
+      "format": "Story",
+      "angle": "Découverte d'un nouveau projet immobilier à Abidjan",
+      "reseau": "TikTok"
+    },
+    {
+      "jour": "Jeudi",
       "heure": "14h",
       "format": "Vidéo",
-      "angle": "Les conseils pour vivre à Abidjan",
+      "angle": "Interview d'un expert immobilier à Abidjan",
       "reseau": "TikTok"
     }
   ],
-  "cadence_recommandee": "4 publications/semaine",
+  "cadence_recommandee": "3 publications/semaine",
   "meilleures_heures": [
     "Vendredi 14h"
   ],
   "objectifs": [
-    "Augmenter les abonnés de 10% en 2 mois",
-    "Augmenter les vues de vidéos de 20% en 1 mois",
-    "Maintenir un taux d'engagement élevé sur les publications"
+    "Augmenter de 20% le nombre de likes sur les publications TikTok",
+    "Maintenir un taux d'engagement de 2% sur les publications TikTok",
+    "Augmenter de 15% le nombre de vues sur les publications TikTok"
   ]
 }

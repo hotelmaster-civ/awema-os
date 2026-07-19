@@ -1,6 +1,6 @@
 {
   "agent": "creatif",
-  "genere_le": "2026-07-18T10:50:00+00:00",
+  "genere_le": "2026-07-19T11:02:10+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -12,33 +12,36 @@
   },
   "items": [
     {
-      "hook": "Découvrez le secret d'un teint éclatant naturel !",
-      "script": "Vous rêvez d'un teint parfait sans effort ? Notre soin visage éclat est la solution idéale ! Nettoyage profond + hydratation pour une peau fraîche et lumineuse. Réservation via WhatsApp, 48h à l'avance. Venez découvrir notre gamme hypoallergénique adaptée à vos besoins. #EclatBeaute #SoinVisage #Naturel",
+      "hook": "Découvrez le secret pour une peau éclatante sans détour!",
+      "script": "Vous rêvez d'une peau qui rayonne de santé et de beauté? Chez Éclat Beauté, nous vous proposons des soins personnalisés et adaptés à votre type de peau. Découvrez notre Soin visage éclat pour un nettoyage et une hydratation profonde. Réservation conseillée via WhatsApp!",
       "format": "Reel",
       "reseau": "TikTok",
-      "prompt_image": "une femme souriante avec un teint lumineux, les cheveux détachés, sur fond de fleurs ou de feuilles vertes",
+      "prompt_image": "Une femme souriante avec une peau éclatante, en arrière-plan les produits de soin d'Éclat Beauté",
       "variantes": [
-        "Faites briller votre beauté naturelle !"
+        "Transformez votre peau en quelques séances!",
+        "Quelle est votre routine de soin de peau? Partagez avec nous!"
       ]
     },
     {
-      "hook": "Le grand jour approche... Votre teint parfait vous attend !",
-      "script": "Vous vous mariez bientôt et vous voulez un teint sublime pour le jour J ? Notre forfait mariée est conçu pour vous offrir 3 séances personnalisées pour un résultat hors pair. Réservez dès maintenant et vivez votre rêve ! #Mariage #EclatBeaute #ForfaitMariee",
+      "hook": "Préparez-vous pour le grand jour avec notre Forfait mariée!",
+      "script": "Vous voulez être absolument ravissante pour votre mariage? Notre Forfait mariée est conçu spécialement pour vous. 3 séances de soin visage pour un teint parfait. Informations et réservations sur WhatsApp!",
       "format": "Carrousel",
       "reseau": "Instagram",
-      "prompt_image": "une photo du forfait mariée avec les différentes étapes de soin, ou une photo d'une mariée heureuse avec un teint parfait",
+      "prompt_image": "Une future mariée heureuse avec un teint radieux, sur fond d'un décor de mariage",
       "variantes": [
-        "Préparez votre peau pour le jour le plus important de votre vie !"
+        "Rêvez d'un mariage parfait? Nous prenons soin de vos besoins de beauté!",
+        "Le grand jour approche, soyez sublime avec Éclat Beauté!"
       ]
     },
     {
-      "hook": "Bienvenue dans notre espace de bien-être !",
-      "script": "Chez Éclat Beauté, nous sommes dédiés à vous offrir une expérience premium et abordable. Découvrez nos soins de visage personnalisés et notre gamme de produits pour une peau africaine saine et éclatante. Réservez votre rendez-vous aujourd'hui et laissez-nous vous gâter ! #EclatBeaute #BienEtre #SoinDeSoi",
+      "hook": "Besoin d'un conseil pour une peau parfaite? Éclat Beauté est là pour vous!",
+      "script": "Vous avez des questions sur votre routine de soin de peau ou besoin de conseils personnalisés? Notre équipe est à votre disposition. N'hésitez pas à nous contacter via WhatsApp pour discuter de vos besoins spécifiques. #ÉclatBeauté #SoinDeSoi #Confiance",
       "format": "Post",
       "reseau": "Facebook",
-      "prompt_image": "une photo de l'intérieur de l'institut, avec des éléments de décoration apportant une touche de chaleur et d'accueil",
+      "prompt_image": "Une esthéticienne souriante en train de conseiller une cliente, avec des produits de soin sur une table",
       "variantes": [
-        "Éclat de beauté, éclat de vie..."
+        "Vous méritez d'être belle et de vous sentir bien dans votre peau!",
+        "Que votre beauté naturelle brille avec Éclat Beauté!"
       ]
     }
   ]
