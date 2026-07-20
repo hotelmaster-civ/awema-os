@@ -1,6 +1,6 @@
 {
   "agent": "analyste",
-  "genere_le": "2026-07-19T11:00:24+00:00",
+  "genere_le": "2026-07-20T13:32:14+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -13,60 +13,69 @@
   "items": [
     {
       "type": "insight",
-      "titre": "Présence sur TikTok",
-      "explication": "La plateforme TikTok présente les résultats les plus prometteurs en termes de likes et de vues, notamment avec le type de contenu 'Reel'.",
+      "titre": "TikTok, réseau le plus performant",
+      "explication": "Le réseau TikTok présente les meilleures performances en termes de likes et de vues.",
       "preuve": {
-        "metrique": "likes sur TikTok",
-        "valeur": 88000
-      }
-    },
-    {
-      "type": "reco",
-      "titre": "Augmenter les publications sur TikTok",
-      "explication": "Augmenter la fréquence de publication sur TikTok pourrait aider à accroître l'engagement et à fidéliser davantage l'audience.",
-      "preuve": {
-        "metrique": "posts sur TikTok",
-        "valeur": 40
+        "metrique": "likes",
+        "valeur": 88000,
+        "variation": null
       },
-      "action": "Publier au moins deux fois par semaine sur TikTok"
+      "action": null
     },
     {
       "type": "insight",
-      "titre": "Type de contenu le plus performant",
-      "explication": "Les contenus de type 'Reel' obtiennent en moyenne un engagement plus élevé que les autres formats, ce qui suggère que les utilisateurs préfèrent ce type de contenu.",
+      "titre": "Contenu Réel, le plus engageant",
+      "explication": "Les contenus de type Réel sont les plus appréciés et génèrent un engagement moyen élevé.",
       "preuve": {
-        "metrique": "engagement moyen pour les Reels",
-        "valeur": 520
-      }
+        "metrique": "engagement_moyen",
+        "valeur": 520,
+        "variation": null
+      },
+      "action": null
     },
     {
       "type": "reco",
-      "titre": "Créer plus de contenus Reel",
-      "explication": "Créer davantage de contenus sous forme de Reel pourrait contribuer à augmenter l'engagement global sur les plateformes sociales.",
+      "titre": "Publier un contenu Réel sur TikTok",
+      "explication": "Pour atteindre un public large et fidélisé, publiez un contenu Réel sur TikTok en privilégiant les contenus visuels.",
       "preuve": {
-        "metrique": "nombre de Reels",
-        "valeur": 8
+        "metrique": "vues",
+        "valeur": 36000,
+        "variation": null
       },
-      "action": "Produire et publier au moins un Reel par semaine"
+      "action": "Publiez un contenu Réel sur TikTok avant la fin de la semaine."
+    },
+    {
+      "type": "reco",
+      "titre": "Répondre aux commentaires",
+      "explication": "Répondez aux commentaires pour créer une interaction et une relation de proximité avec vos abonnés.",
+      "preuve": {
+        "metrique": "a_repondre",
+        "valeur": 5,
+        "variation": null
+      },
+      "action": "Répondez aux 5 commentaires en attente de réponse avant la fin de la journée."
     },
     {
       "type": "insight",
-      "titre": "Meilleur creneau pour les publications",
-      "explication": "Les données suggèrent que le jeudi à 19h est le meilleur moment pour publier du contenu, avec un engagement significativement plus élevé qu'à d'autres moments.",
+      "titre": "Évolution de l'audience",
+      "explication": "L'audience a augmenté régulièrement au fil des semaines.",
       "preuve": {
-        "metrique": "engagement le jeudi à 19h",
-        "valeur": 260
-      }
+        "metrique": "evolution_audience",
+        "valeur": 23500,
+        "variation": null
+      },
+      "action": null
     },
     {
       "type": "reco",
       "titre": "Planifier les publications",
-      "explication": "Planifier les publications pour qu'elles soient publiées le jeudi à 19h pourrait aider à maximiser l'engagement.",
+      "explication": "Pour maintenir l'engagement, publiez régulièrement en respectant une cadence élevée.",
       "preuve": {
-        "metrique": "engagement par jour",
-        "valeur": 260
+        "metrique": "posts_30j",
+        "valeur": 8,
+        "variation": null
       },
-      "action": "Programmer les publications pour le jeudi à 19h"
+      "action": "Planifiez vos prochaines publications à raison de 2 par semaine."
     }
   ]
 }

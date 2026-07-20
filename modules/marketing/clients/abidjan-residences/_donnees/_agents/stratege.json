@@ -1,6 +1,6 @@
 {
   "agent": "stratege",
-  "genere_le": "2026-07-19T11:00:48+00:00",
+  "genere_le": "2026-07-20T13:32:18+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -14,49 +14,49 @@
       "jour": "Lundi",
       "heure": "14h",
       "format": "Vidéo",
-      "angle": "Présentation d'un appartement à Abidjan",
+      "angle": "Présentation d'une résidence à Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Mercredi",
       "heure": "14h",
       "format": "Story",
-      "angle": "Témoignage d'un client satisfait",
+      "angle": "Conseils pour choisir une résidence à Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Vendredi",
       "heure": "14h",
       "format": "Vidéo",
-      "angle": "Découverte d'un quartier à Abidjan",
-      "reseau": "TikTok"
-    },
-    {
-      "jour": "Samedi",
-      "heure": "12h",
-      "format": "Photo",
-      "angle": "Présentation d'un événement à Abidjan",
-      "reseau": "TikTok"
-    },
-    {
-      "jour": "Dimanche",
-      "heure": "18h",
-      "format": "Vidéo",
-      "angle": "Conseils pour trouver un logement à Abidjan",
+      "angle": "Découverte d'un quartier d'Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Mardi",
       "heure": "14h",
-      "format": "Story",
-      "angle": "Découverte d'un nouveau projet immobilier à Abidjan",
+      "format": " Publication de photo",
+      "angle": "Présentation d'une chambre dans une résidence",
       "reseau": "TikTok"
     },
     {
       "jour": "Jeudi",
       "heure": "14h",
+      "format": "Live",
+      "angle": "Visite virtuelle d'une résidence",
+      "reseau": "TikTok"
+    },
+    {
+      "jour": "Samedi",
+      "heure": "14h",
       "format": "Vidéo",
-      "angle": "Interview d'un expert immobilier à Abidjan",
+      "angle": "Activités à faire à Abidjan",
+      "reseau": "TikTok"
+    },
+    {
+      "jour": "Dimanche",
+      "heure": "14h",
+      "format": "Story",
+      "angle": "Réponses aux questions fréquentes sur les résidences à Abidjan",
       "reseau": "TikTok"
     }
   ],
@@ -65,8 +65,8 @@
     "Vendredi 14h"
   ],
   "objectifs": [
-    "Augmenter de 20% le nombre de likes sur les publications TikTok",
-    "Maintenir un taux d'engagement de 2% sur les publications TikTok",
-    "Augmenter de 15% le nombre de vues sur les publications TikTok"
+    "Augmenter la portée des publications de 20% en 1 mois",
+    "Accroître le nombre de followers de 10% en 2 mois",
+    "Améliorer le taux d'engagement de 15% en 3 mois"
   ]
 }

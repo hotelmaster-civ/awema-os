@@ -1,6 +1,6 @@
 {
   "agent": "stratege",
-  "genere_le": "2026-07-19T11:01:16+00:00",
+  "genere_le": "2026-07-20T13:32:30+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -15,49 +15,49 @@
       "jour": "Lundi",
       "heure": "19h",
       "format": "Reel",
-      "angle": "Conseils pour une peau éclatante",
+      "angle": "Soins de visage pour une peau éclatante",
       "reseau": "TikTok"
     },
     {
       "jour": "Mardi",
       "heure": "14h",
       "format": "Carrousel",
-      "angle": "Avant/Après soins visage éclat",
+      "angle": "Avant/Après des traitements de soins",
       "reseau": "Instagram"
-    },
-    {
-      "jour": "Mercredi",
-      "heure": "12h",
-      "format": "Photo",
-      "angle": "Produit du jour : Soin visage éclat",
-      "reseau": "Facebook"
     },
     {
       "jour": "Jeudi",
       "heure": "19h",
       "format": "Reel",
-      "angle": "Routine peau grasse en 3 étapes",
+      "angle": "Conseils pour une routine de soin efficace",
       "reseau": "TikTok"
     },
     {
       "jour": "Vendredi",
-      "heure": "16h",
-      "format": "Carrousel",
-      "angle": "Forfait mariée : Découvrez nos offres",
-      "reseau": "Instagram"
+      "heure": "12h",
+      "format": "Photo",
+      "angle": "Promotion spéciale sur les soins de visage",
+      "reseau": "Facebook"
     },
     {
       "jour": "Samedi",
       "heure": "14h",
-      "format": "Photo",
-      "angle": "Équipe Éclat Beauté : Qui sommes-nous ?",
-      "reseau": "Facebook"
+      "format": "Reel",
+      "angle": "Événement ou promotion exclusive pour les abonnés",
+      "reseau": "Instagram"
     },
     {
       "jour": "Dimanche",
       "heure": "18h",
-      "format": "Reel",
-      "angle": "Soins de soi pour le week-end",
+      "format": "Carrousel",
+      "angle": "Présentation des produits naturels pour la peau",
+      "reseau": "TikTok"
+    },
+    {
+      "jour": "Mercredi",
+      "heure": "15h",
+      "format": "Short",
+      "angle": "Témoignage client sur les soins",
       "reseau": "TikTok"
     }
   ],
@@ -67,8 +67,9 @@
     "Samedi 14h"
   ],
   "objectifs": [
-    "Augmenter l'engagement par 10% sur les publications",
-    "Répondre à 100% des commentaires et messages dans les 24h",
-    "Gagner 500 abonnés supplémentaires sur TikTok dans le mois"
+    "Augmenter l'engagement de 15% sur les publications",
+    "Atteindre 250 nouvelles abonnées sur TikTok dans le mois",
+    "Maintenir un taux d'engagement moyen de 3.5% sur les publications",
+    "Consolider la position de l'institut sur Instagram en augmentant les likes et les commentaires de 20%"
   ]
 }

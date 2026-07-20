@@ -1,6 +1,6 @@
 {
   "agent": "actions-du-jour",
-  "genere_le": "2026-07-19T11:02:10+00:00",
+  "genere_le": "2026-07-20T13:33:04+00:00",
   "modele": "agrégation (sans IA)",
   "provenance": {
     "client": "abidjan-residences",
@@ -10,7 +10,7 @@
     {
       "priorite": 1,
       "type": "alerte",
-      "titre": "Cadence en retard — 30 j sans publier",
+      "titre": "Cadence en retard — 37 j sans publier",
       "detail": "La régularité nourrit l'algorithme. Publie aujourd'hui.",
       "source": "cadence",
       "action": {
@@ -21,21 +21,9 @@
     },
     {
       "priorite": 2,
-      "type": "alerte",
-      "titre": "Audience en baisse",
-      "detail": "4198 → 4197 abonnés.",
-      "source": "evolution_audience",
-      "action": {
-        "label": "Analyser",
-        "kind": "view",
-        "target": "reseaux"
-      }
-    },
-    {
-      "priorite": 2,
       "type": "reco",
-      "titre": "Publier des vidéos sur TikTok",
-      "detail": "Publier au moins une vidéo par semaine sur TikTok",
+      "titre": "Réactivité sur TikTok",
+      "detail": "Publiez de nouveaux contenus régulièrement sur TikTok pour maintenir l'engagement.",
       "source": "analyste",
       "action": {
         "label": "Voir l'analyse",
@@ -46,7 +34,7 @@
     {
       "priorite": 2,
       "type": "plan",
-      "titre": "Publie : Présentation d'un appartement à Abidjan",
+      "titre": "Publie : Présentation d'une résidence à Abidjan",
       "detail": "TikTok · Vidéo · Lundi",
       "source": "stratege",
       "action": {
@@ -58,7 +46,7 @@
     {
       "priorite": 3,
       "type": "creatif",
-      "titre": "Idée prête : Découvrez le meilleur de la résidence ivoirienne !",
+      "titre": "Idée prête : Découvrez les meilleurs plans pour vous détendre à Abidjan",
       "detail": "TikTok · Short",
       "source": "creatif",
       "action": {

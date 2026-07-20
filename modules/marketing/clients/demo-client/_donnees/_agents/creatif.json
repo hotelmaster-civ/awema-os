@@ -1,6 +1,6 @@
 {
   "agent": "creatif",
-  "genere_le": "2026-07-19T11:02:10+00:00",
+  "genere_le": "2026-07-20T13:33:04+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -12,36 +12,33 @@
   },
   "items": [
     {
-      "hook": "Découvrez le secret pour une peau éclatante sans détour!",
-      "script": "Vous rêvez d'une peau qui rayonne de santé et de beauté? Chez Éclat Beauté, nous vous proposons des soins personnalisés et adaptés à votre type de peau. Découvrez notre Soin visage éclat pour un nettoyage et une hydratation profonde. Réservation conseillée via WhatsApp!",
+      "hook": "Découvrez le secret à un teint éclatant !",
+      "script": "Vous rêvez d'un teint parfait pour votre journée ? Notre soin visage éclat est là pour vous ! Nettoyage + hydratation profonde, pour un résultat naturel et durable. Réservez votre séance dès maintenant et découvrez la différence !",
       "format": "Reel",
       "reseau": "TikTok",
-      "prompt_image": "Une femme souriante avec une peau éclatante, en arrière-plan les produits de soin d'Éclat Beauté",
+      "prompt_image": "Une personne avec un teint éclatant, souriante, avec des fleurs autour d'elle",
       "variantes": [
-        "Transformez votre peau en quelques séances!",
-        "Quelle est votre routine de soin de peau? Partagez avec nous!"
+        "Un teint éclatant en quelques séances ? C'est possible !"
       ]
     },
     {
-      "hook": "Préparez-vous pour le grand jour avec notre Forfait mariée!",
-      "script": "Vous voulez être absolument ravissante pour votre mariage? Notre Forfait mariée est conçu spécialement pour vous. 3 séances de soin visage pour un teint parfait. Informations et réservations sur WhatsApp!",
+      "hook": "Préparez-vous pour le grand jour avec notre forfait mariée !",
+      "script": "Vous voulez être absolument parfaite pour votre mariage ? Notre forfait mariée est conçu pour vous offrir un teint parfait et une confiance en vous incomparable. 3 séances personnalisées pour un résultat exceptionnel. Réservez votre place dès aujourd'hui !",
       "format": "Carrousel",
       "reseau": "Instagram",
-      "prompt_image": "Une future mariée heureuse avec un teint radieux, sur fond d'un décor de mariage",
+      "prompt_image": "Une mariée avec un teint parfait, souriante, avec un décor de mariage autour d'elle",
       "variantes": [
-        "Rêvez d'un mariage parfait? Nous prenons soin de vos besoins de beauté!",
-        "Le grand jour approche, soyez sublime avec Éclat Beauté!"
+        "Rêvez d'un mariage parfait ? Nous avons la solution pour un teint éclatant !"
       ]
     },
     {
-      "hook": "Besoin d'un conseil pour une peau parfaite? Éclat Beauté est là pour vous!",
-      "script": "Vous avez des questions sur votre routine de soin de peau ou besoin de conseils personnalisés? Notre équipe est à votre disposition. N'hésitez pas à nous contacter via WhatsApp pour discuter de vos besoins spécifiques. #ÉclatBeauté #SoinDeSoi #Confiance",
-      "format": "Post",
-      "reseau": "Facebook",
-      "prompt_image": "Une esthéticienne souriante en train de conseiller une cliente, avec des produits de soin sur une table",
+      "hook": "Comment garder une peau saine et éclatante tout au long de l'année ?",
+      "script": "La routine peau parfaite en 3 étapes ! Découvrez nos conseils et astuces pour une peau saine, éclatante et pleine de vie, même dans les périodes les plus chargées. Écoutez nos experts et adoptez une routine qui vous convient !",
+      "format": "Short",
+      "reseau": "TikTok",
+      "prompt_image": "Une personne avec une peau saine, souriante, avec des produits de soin autour d'elle",
       "variantes": [
-        "Vous méritez d'être belle et de vous sentir bien dans votre peau!",
-        "Que votre beauté naturelle brille avec Éclat Beauté!"
+        "Une peau éclatante en tout temps ? C'est plus facile que vous ne le pensez !"
       ]
     }
   ]

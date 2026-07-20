@@ -1,6 +1,6 @@
 {
   "agent": "creatif",
-  "genere_le": "2026-07-19T11:01:41+00:00",
+  "genere_le": "2026-07-20T13:32:52+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -11,33 +11,36 @@
   },
   "items": [
     {
-      "hook": "Découvrez le meilleur de la résidence ivoirienne !",
-      "script": "Bonjour à tous ! Aujourd'hui, je veux vous montrer le meilleur de notre résidence à Abidjan. De la décoration intérieure aux activités extérieures, nous avons tout pour rendre votre séjour inoubliable. Alors, prêt à découvrir ce que nous avons à offrir ? Abonnez-vous et partagez avec vos amis ! #AbidjanResidences #RésidenceIvoirienne",
+      "hook": "Découvrez les meilleurs plans pour vous détendre à Abidjan",
+      "script": "Vous cherchez un endroit pour vous détendre à Abidjan ? Abidjan Résidences vous offre des solutions idéales pour un séjour calme et reposant. De la découverte de nos résidences à la réservation, nous sommes là pour vous aider à passer un moment inoubliable.",
       "format": "Short",
       "reseau": "TikTok",
-      "prompt_image": "Une photo d'une chambre élégante dans la résidence avec un balcon donnant sur la ville d'Abidjan",
+      "prompt_image": "Une photo d'une résidence moderne et élégante à Abidjan avec un jardin luxuriant et une piscine.",
       "variantes": [
-        "Explorez le cœur de l'hospitalité ivoirienne !"
+        "Évadez-vous à Abidjan avec nos résidences de rêve",
+        "Abidjan Résidences : votre havre de paix en Côte d'Ivoire"
       ]
     },
     {
-      "hook": "Recherchez-vous un endroit pour vous détendre à Abidjan ?",
-      "script": "Vous cherchez un coin de paradis pour vous détendre après une longue semaine de travail ? Nous avons la solution ! Notre résidence est équipée de tout ce dont vous avez besoin pour vous relaxer, de la piscine au spa. Rejoignez-nous et laissez-nous vous faire vivre une expérience inoubliable ! #Détente #Abidjan",
+      "hook": "Explorez les merveilles d'Abidjan avec nous",
+      "script": "Abidjan, la ville qui ne dort jamais ! Découvrez les meilleurs plans pour explorer la ville, de la visite des marchés locaux aux visites guidées des monuments historiques. Nous vous guidons pour découvrir les secrets cachés de cette ville vibrante.",
       "format": "Reel",
       "reseau": "TikTok",
-      "prompt_image": "Une photo de la piscine de la résidence avec des personnes se détendant au soleil",
+      "prompt_image": "Un montages de photos et de vidéos montrant les différents aspects de la vie à Abidjan : les marchés, les plages, les quartiers animés.",
       "variantes": [
-        "Débloquez le secret pour un séjour de rêve à Abidjan !"
+        "Découvrez Abidjan comme jamais auparavant",
+        "Abidjan, la ville qui a tout à offrir"
       ]
     },
     {
-      "hook": "Prêt à vivre l'expérience ivoirienne authentique ?",
-      "script": "Vous souhaitez découvrir la vraie culture ivoirienne ? Chez nous, vous trouverez tout ce qu'il faut pour plonger dans l'authenticité de ce beau pays. De la gastronomie locale aux activités traditionnelles, nous sommes là pour vous faire vivre l'expérience complète ! Abonnez-vous pour plus de contenu ! #ExpérienceIvoirienne #Authenticité",
+      "hook": "Faites la promotion de votre établissement avec nous",
+      "script": "Vous êtes propriétaire d'un établissement à Abidjan et vous souhaitez le faire connaître ? Nous vous offrons la possibilité de le promouvoir sur nos réseaux sociaux et de touches un public plus large. Contactez-nous pour en savoir plus !",
       "format": "Carrousel",
       "reseau": "Instagram",
-      "prompt_image": "Un carrousel de photos montrant différents aspects de la culture ivoirienne, comme la cuisine, la danse, et les vêtements traditionnels",
+      "prompt_image": "Une photo d'un écran d'ordinateur affichant les pages des réseaux sociaux d'Abidjan Résidences, avec des exemples de publications promotionnelles.",
       "variantes": [
-        "Découvrez les secrets du cœur de l'Afrique de l'Ouest !"
+        "Augmentez votre visibilité avec Abidjan Résidences",
+        "Faire connaître votre établissement, c'est notre spécialité"
       ]
     }
   ]

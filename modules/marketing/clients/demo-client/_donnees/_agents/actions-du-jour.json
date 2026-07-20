@@ -1,6 +1,6 @@
 {
   "agent": "actions-du-jour",
-  "genere_le": "2026-07-19T11:02:10+00:00",
+  "genere_le": "2026-07-20T13:33:04+00:00",
   "modele": "agrégation (sans IA)",
   "provenance": {
     "client": "demo-client",
@@ -34,8 +34,8 @@
     {
       "priorite": 2,
       "type": "reco",
-      "titre": "Augmenter les publications sur TikTok",
-      "detail": "Publier au moins deux fois par semaine sur TikTok",
+      "titre": "Publier un contenu Réel sur TikTok",
+      "detail": "Publiez un contenu Réel sur TikTok avant la fin de la semaine.",
       "source": "analyste",
       "action": {
         "label": "Voir l'analyse",
@@ -46,7 +46,7 @@
     {
       "priorite": 2,
       "type": "plan",
-      "titre": "Publie : Conseils pour une peau éclatante",
+      "titre": "Publie : Soins de visage pour une peau éclatante",
       "detail": "TikTok · Reel · Lundi",
       "source": "stratege",
       "action": {
@@ -70,7 +70,7 @@
     {
       "priorite": 3,
       "type": "creatif",
-      "titre": "Idée prête : Découvrez le secret pour une peau éclatante sans détour!",
+      "titre": "Idée prête : Découvrez le secret à un teint éclatant !",
       "detail": "TikTok · Reel",
       "source": "creatif",
       "action": {

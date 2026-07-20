@@ -1,6 +1,6 @@
 {
   "agent": "analyste",
-  "genere_le": "2026-07-19T11:00:13+00:00",
+  "genere_le": "2026-07-20T13:31:52+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -12,60 +12,60 @@
   "items": [
     {
       "type": "insight",
-      "titre": "Performance de la vidéo sur TikTok",
-      "explication": "La vidéo « #collage avec @Tdfmanga decouvrez un animé 100% ivoirien par @Cénack  « placman » » a obtenu le plus de likes et de vues sur TikTok.",
+      "titre": "Popularité sur TikTok",
+      "explication": "Le compte Abidjan résidences connaît un certain succès sur TikTok, avec notamment un vidéo qui a atteint 8919 likes.",
       "preuve": {
         "metrique": "likes",
-        "valeur": 8918
+        "valeur": 8919
       }
     },
     {
-      "type": "reco",
-      "titre": "Publier des vidéos sur TikTok",
-      "explication": "Il est recommandé de publier des vidéos sur TikTok pour augmenter l'engagement et la visibilité de la page.",
-      "preuve": {
-        "metrique": "vues",
-        "valeur": 41507
-      },
-      "action": "Publier au moins une vidéo par semaine sur TikTok"
-    },
-    {
       "type": "insight",
-      "titre": "Cadence de publication sur TikTok",
-      "explication": "La dernière publication sur TikTok date de plus de 30 jours, il est important de maintenir une cadence régulière pour garder l'audience engagée.",
+      "titre": "Faible activité récente",
+      "explication": "Il y a eu une période d'inactivité sur le compte TikTok, avec 37 jours sans post.",
       "preuve": {
         "metrique": "jours_depuis_dernier_post",
-        "valeur": 30
+        "valeur": 37
       }
     },
     {
       "type": "reco",
-      "titre": "Définir un calendrier de publication",
-      "explication": "Il est recommandé de planifier les publications à l'avance pour assurer une régularité et une cohérence dans les contenus.",
+      "titre": "Réactivité sur TikTok",
+      "explication": "Il est recommandé de renouveler les contenus pour garder les abonnés engagés.",
       "preuve": {
-        "metrique": "posts_par_semaine",
-        "valeur": 0.2
+        "metrique": "posts_30j",
+        "valeur": 0
       },
-      "action": "Créer un calendrier de publication pour les 4 prochaines semaines"
+      "action": "Publiez de nouveaux contenus régulièrement sur TikTok pour maintenir l'engagement."
+    },
+    {
+      "type": "reco",
+      "titre": "Optimiser les heures de publication",
+      "explication": "Publier à des heures stratégiques peut améliorer la visibilité des contenus.",
+      "preuve": {
+        "metrique": "heure_de_publication_recommandee",
+        "valeur": "14h"
+      },
+      "action": "Publiez des contenus sur TikTok le vendredi vers 14h pour atteindre un public plus large."
     },
     {
       "type": "insight",
-      "titre": "Meilleur jour et heure de publication sur TikTok",
-      "explication": "Selon les données, le meilleur jour et heure pour publier sur TikTok sont le vendredi à 14h.",
+      "titre": "Top vidéo sur TikTok",
+      "explication": "La vidéo '#collage avec @Tdfmanga decouvrez un animé 100% ivoirien par @Cénack  « placman »' est la plus populaire avec 32668 vues.",
       "preuve": {
-        "metrique": "jour",
-        "valeur": "Vendredi"
+        "metrique": "vues",
+        "valeur": 32668
       }
     },
     {
       "type": "reco",
-      "titre": "Publier à l'heure optimale",
-      "explication": "Il est recommandé de publier les contenus à l'heure où l'audience est la plus active pour maximiser l'engagement.",
+      "titre": "Diversifier les types de contenus",
+      "explication": "Il est utile de proposer différents types de contenus pour maintenir l'intérêt des abonnés.",
       "preuve": {
-        "metrique": "heure",
-        "valeur": "14h"
+        "metrique": "types_de_contenus",
+        "valeur": "vidéos"
       },
-      "action": "Publier les prochains contenus le vendredi à 14h"
+      "action": "Explorez la création de différents types de contenus (photos, stories, lives) pour varier l'expérience utilisateur sur TikTok."
     }
   ]
 }
