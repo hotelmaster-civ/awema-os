@@ -1,6 +1,6 @@
 {
   "agent": "analyste",
-  "genere_le": "2026-07-20T13:31:52+00:00",
+  "genere_le": "2026-07-21T12:10:58+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -12,60 +12,50 @@
   "items": [
     {
       "type": "insight",
-      "titre": "Popularité sur TikTok",
-      "explication": "Le compte Abidjan résidences connaît un certain succès sur TikTok, avec notamment un vidéo qui a atteint 8919 likes.",
+      "titre": "Présence dominante sur TikTok",
+      "explication": "Le compte Abidjan résidences a une présence significative sur TikTok, avec un nombre important d'abonnés et de vues.",
+      "preuve": {
+        "metrique": "abonnes",
+        "valeur": 4198
+      }
+    },
+    {
+      "type": "reco",
+      "titre": "Publier régulièrement sur TikTok",
+      "explication": "Il est recommandé de maintenir une cadence de publication régulière sur TikTok pour garder les abonnés engagés.",
+      "preuve": {
+        "metrique": "jours_depuis_dernier_post",
+        "valeur": 37
+      },
+      "action": "Publier au moins une fois par semaine sur TikTok"
+    },
+    {
+      "type": "insight",
+      "titre": "Engagement élevé sur certaines publications",
+      "explication": "Certaines publications sur TikTok génèrent un engagement élevé, comme le post '#collage avec @Tdfmanga' qui a obtenu 8919 likes.",
       "preuve": {
         "metrique": "likes",
         "valeur": 8919
       }
     },
     {
-      "type": "insight",
-      "titre": "Faible activité récente",
-      "explication": "Il y a eu une période d'inactivité sur le compte TikTok, avec 37 jours sans post.",
-      "preuve": {
-        "metrique": "jours_depuis_dernier_post",
-        "valeur": 37
-      }
-    },
-    {
       "type": "reco",
-      "titre": "Réactivité sur TikTok",
-      "explication": "Il est recommandé de renouveler les contenus pour garder les abonnés engagés.",
+      "titre": "Analyser et reproduire les contenus les plus performants",
+      "explication": "Il est recommandé d'analyser les contenus qui génèrent le plus d'engagement et de les reproduire pour maintenir l'intérêt des abonnés.",
       "preuve": {
-        "metrique": "posts_30j",
-        "valeur": 0
+        "metrique": "likes_total",
+        "valeur": 21839
       },
-      "action": "Publiez de nouveaux contenus régulièrement sur TikTok pour maintenir l'engagement."
-    },
-    {
-      "type": "reco",
-      "titre": "Optimiser les heures de publication",
-      "explication": "Publier à des heures stratégiques peut améliorer la visibilité des contenus.",
-      "preuve": {
-        "metrique": "heure_de_publication_recommandee",
-        "valeur": "14h"
-      },
-      "action": "Publiez des contenus sur TikTok le vendredi vers 14h pour atteindre un public plus large."
+      "action": "Étudier les publications les plus populaires et créer du contenu similaire"
     },
     {
       "type": "insight",
-      "titre": "Top vidéo sur TikTok",
-      "explication": "La vidéo '#collage avec @Tdfmanga decouvrez un animé 100% ivoirien par @Cénack  « placman »' est la plus populaire avec 32668 vues.",
+      "titre": "Cadence de publication irrégulière",
+      "explication": "La cadence de publication sur TikTok est actuellement irrégulière, ce qui peut impacter la visibilité et l'engagement des abonnés.",
       "preuve": {
-        "metrique": "vues",
-        "valeur": 32668
+        "metrique": "posts_par_semaine",
+        "valeur": 0.0
       }
-    },
-    {
-      "type": "reco",
-      "titre": "Diversifier les types de contenus",
-      "explication": "Il est utile de proposer différents types de contenus pour maintenir l'intérêt des abonnés.",
-      "preuve": {
-        "metrique": "types_de_contenus",
-        "valeur": "vidéos"
-      },
-      "action": "Explorez la création de différents types de contenus (photos, stories, lives) pour varier l'expérience utilisateur sur TikTok."
     }
   ]
 }

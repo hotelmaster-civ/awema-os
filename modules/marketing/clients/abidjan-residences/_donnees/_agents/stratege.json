@@ -1,6 +1,6 @@
 {
   "agent": "stratege",
-  "genere_le": "2026-07-20T13:32:18+00:00",
+  "genere_le": "2026-07-21T12:11:30+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -14,59 +14,59 @@
       "jour": "Lundi",
       "heure": "14h",
       "format": "Vidéo",
-      "angle": "Présentation d'une résidence à Abidjan",
-      "reseau": "TikTok"
-    },
-    {
-      "jour": "Mercredi",
-      "heure": "14h",
-      "format": "Story",
-      "angle": "Conseils pour choisir une résidence à Abidjan",
-      "reseau": "TikTok"
-    },
-    {
-      "jour": "Vendredi",
-      "heure": "14h",
-      "format": "Vidéo",
-      "angle": "Découverte d'un quartier d'Abidjan",
+      "angle": "Découvrez les résidences d'Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Mardi",
       "heure": "14h",
-      "format": " Publication de photo",
-      "angle": "Présentation d'une chambre dans une résidence",
+      "format": "Story",
+      "angle": "Conseils pour trouver une résidence à Abidjan",
+      "reseau": "TikTok"
+    },
+    {
+      "jour": "Mercredi",
+      "heure": "14h",
+      "format": "Vidéo",
+      "angle": "Visite virtuelle d'une résidence à Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Jeudi",
       "heure": "14h",
+      "format": " Publication",
+      "angle": "Les avantages de vivre dans une résidence à Abidjan",
+      "reseau": "TikTok"
+    },
+    {
+      "jour": "Vendredi",
+      "heure": "14h",
       "format": "Live",
-      "angle": "Visite virtuelle d'une résidence",
+      "angle": "Questions-réponses sur les résidences à Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Samedi",
       "heure": "14h",
-      "format": "Vidéo",
-      "angle": "Activités à faire à Abidjan",
+      "format": "Story",
+      "angle": "Découvrez les meilleurs quartiers d'Abidjan pour vivre",
       "reseau": "TikTok"
     },
     {
       "jour": "Dimanche",
       "heure": "14h",
-      "format": "Story",
-      "angle": "Réponses aux questions fréquentes sur les résidences à Abidjan",
+      "format": "Vidéo",
+      "angle": "Conseils pour aménager votre résidence à Abidjan",
       "reseau": "TikTok"
     }
   ],
-  "cadence_recommandee": "3 publications/semaine",
+  "cadence_recommandee": "4 publications/semaine",
   "meilleures_heures": [
     "Vendredi 14h"
   ],
   "objectifs": [
-    "Augmenter la portée des publications de 20% en 1 mois",
-    "Accroître le nombre de followers de 10% en 2 mois",
-    "Améliorer le taux d'engagement de 15% en 3 mois"
+    "Augmenter le nombre de likes de 20% sur les publications TikTok",
+    "Accroître la portée des publications de 30% sur TikTok",
+    "Augmenter le nombre d'abonnés de 10% sur TikTok en 2 mois"
   ]
 }

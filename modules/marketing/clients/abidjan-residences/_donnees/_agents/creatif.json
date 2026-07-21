@@ -1,6 +1,6 @@
 {
   "agent": "creatif",
-  "genere_le": "2026-07-20T13:32:52+00:00",
+  "genere_le": "2026-07-21T12:12:03+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -11,36 +11,33 @@
   },
   "items": [
     {
-      "hook": "Découvrez les meilleurs plans pour vous détendre à Abidjan",
-      "script": "Vous cherchez un endroit pour vous détendre à Abidjan ? Abidjan Résidences vous offre des solutions idéales pour un séjour calme et reposant. De la découverte de nos résidences à la réservation, nous sommes là pour vous aider à passer un moment inoubliable.",
+      "hook": "Découvrez les meilleures résidences d'Abidjan !",
+      "script": "Vous êtes à la recherche d'un endroit idéal pour vivre à Abidjan ? Nous vous proposons une sélection des meilleures résidences de la ville, avec des équipements de qualité et des services exceptionnels. De la sécurité à la détente, tout est prévu pour que vous vous sentiez comme chez vous. Rejoignez-nous pour découvrir nos résidences et faire de votre rêve une réalité !",
       "format": "Short",
       "reseau": "TikTok",
-      "prompt_image": "Une photo d'une résidence moderne et élégante à Abidjan avec un jardin luxuriant et une piscine.",
+      "prompt_image": "Une photo d'une résidence moderne et luxueuse à Abidjan, avec des équipements de qualité et des espaces verts",
       "variantes": [
-        "Évadez-vous à Abidjan avec nos résidences de rêve",
-        "Abidjan Résidences : votre havre de paix en Côte d'Ivoire"
+        "Vivez le rêve à Abidjan avec nos résidences de luxe !"
       ]
     },
     {
-      "hook": "Explorez les merveilles d'Abidjan avec nous",
-      "script": "Abidjan, la ville qui ne dort jamais ! Découvrez les meilleurs plans pour explorer la ville, de la visite des marchés locaux aux visites guidées des monuments historiques. Nous vous guidons pour découvrir les secrets cachés de cette ville vibrante.",
+      "hook": "Explorez les quartiers d'Abidjan avec nous !",
+      "script": "Vous souhaitez découvrir les secrets de la ville d'Abidjan ? Nous vous emmenons dans un tour des quartiers les plus emblématiques, avec des conseils pratiques et des recommandations pour vous aider à trouver votre nouvelle résidence. De Yopougon à Plateau, chaque quartier a son charme unique. Rejoignez-nous pour explorer Abidjan comme jamais !",
       "format": "Reel",
       "reseau": "TikTok",
-      "prompt_image": "Un montages de photos et de vidéos montrant les différents aspects de la vie à Abidjan : les marchés, les plages, les quartiers animés.",
+      "prompt_image": "Un montage de photos et de vidéos montrant différents quartiers d'Abidjan, avec des légendes et des effets visuels",
       "variantes": [
-        "Découvrez Abidjan comme jamais auparavant",
-        "Abidjan, la ville qui a tout à offrir"
+        "Découvrez les secrets des quartiers d'Abidjan avec nous !"
       ]
     },
     {
-      "hook": "Faites la promotion de votre établissement avec nous",
-      "script": "Vous êtes propriétaire d'un établissement à Abidjan et vous souhaitez le faire connaître ? Nous vous offrons la possibilité de le promouvoir sur nos réseaux sociaux et de touches un public plus large. Contactez-nous pour en savoir plus !",
+      "hook": "Faites la promotion de votre établissement avec nous !",
+      "script": "Vous êtes propriétaire d'un établissement à Abidjan et vous souhaitez le faire connaître ? Nous vous proposons une opportunité de promotion unique, avec des outils et des conseils pour vous aider à atteindre votre public cible. Rejoignez-nous pour découvrir comment nous pouvons vous aider à développer votre entreprise !",
       "format": "Carrousel",
-      "reseau": "Instagram",
-      "prompt_image": "Une photo d'un écran d'ordinateur affichant les pages des réseaux sociaux d'Abidjan Résidences, avec des exemples de publications promotionnelles.",
+      "reseau": "TikTok",
+      "prompt_image": "Une photo d'un établissement à Abidjan, avec des éléments graphiques et des informations sur les avantages de la promotion",
       "variantes": [
-        "Augmentez votre visibilité avec Abidjan Résidences",
-        "Faire connaître votre établissement, c'est notre spécialité"
+        "Développez votre entreprise avec nous à Abidjan !"
       ]
     }
   ]

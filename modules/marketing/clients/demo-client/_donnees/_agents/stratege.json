@@ -1,6 +1,6 @@
 {
   "agent": "stratege",
-  "genere_le": "2026-07-20T13:32:30+00:00",
+  "genere_le": "2026-07-21T12:11:31+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -15,61 +15,61 @@
       "jour": "Lundi",
       "heure": "19h",
       "format": "Reel",
-      "angle": "Soins de visage pour une peau éclatante",
+      "angle": "Conseils de soin de peau pour les jours chargés",
       "reseau": "TikTok"
     },
     {
       "jour": "Mardi",
       "heure": "14h",
       "format": "Carrousel",
-      "angle": "Avant/Après des traitements de soins",
+      "angle": "Avant/Après soin éclat - Témoignages de clientes satisfaites",
       "reseau": "Instagram"
+    },
+    {
+      "jour": "Mercredi",
+      "heure": "12h",
+      "format": "Short",
+      "angle": "Présentation du Forfait Mariée d'Éclat Beauté",
+      "reseau": "TikTok"
     },
     {
       "jour": "Jeudi",
       "heure": "19h",
       "format": "Reel",
-      "angle": "Conseils pour une routine de soin efficace",
+      "angle": "Routine de soin pour la peau grasse en 3 étapes",
       "reseau": "TikTok"
     },
     {
       "jour": "Vendredi",
-      "heure": "12h",
+      "heure": "16h",
       "format": "Photo",
-      "angle": "Promotion spéciale sur les soins de visage",
-      "reseau": "Facebook"
+      "angle": "Nouveaux produits pour le soin de peau - Lancement bientôt",
+      "reseau": "Instagram"
     },
     {
       "jour": "Samedi",
       "heure": "14h",
-      "format": "Reel",
-      "angle": "Événement ou promotion exclusive pour les abonnés",
-      "reseau": "Instagram"
+      "format": "Carrousel",
+      "angle": "Les bienfaits du soin de visage éclat pour une peau saine",
+      "reseau": "Facebook"
     },
     {
       "jour": "Dimanche",
       "heure": "18h",
-      "format": "Carrousel",
-      "angle": "Présentation des produits naturels pour la peau",
-      "reseau": "TikTok"
-    },
-    {
-      "jour": "Mercredi",
-      "heure": "15h",
       "format": "Short",
-      "angle": "Témoignage client sur les soins",
+      "angle": "Motivation pour prendre soin de soi - Citation inspirante",
       "reseau": "TikTok"
     }
   ],
-  "cadence_recommandee": "3 publications/semaine",
+  "cadence_recommandee": "4 publications/semaine",
   "meilleures_heures": [
     "Jeudi 19h",
     "Samedi 14h"
   ],
   "objectifs": [
-    "Augmenter l'engagement de 15% sur les publications",
-    "Atteindre 250 nouvelles abonnées sur TikTok dans le mois",
-    "Maintenir un taux d'engagement moyen de 3.5% sur les publications",
-    "Consolider la position de l'institut sur Instagram en augmentant les likes et les commentaires de 20%"
+    "Augmenter l'engagement de 10% sur les publications",
+    "Accroître la portée de 15% sur les réseaux sociaux",
+    "Attirer 500 nouvelles abonnées sur TikTok et Instagram",
+    "Maintenir un taux d'engagement moyen de 3,5% sur les publications"
   ]
 }
