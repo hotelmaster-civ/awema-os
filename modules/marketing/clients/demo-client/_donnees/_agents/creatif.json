@@ -1,6 +1,6 @@
 {
   "agent": "creatif",
-  "genere_le": "2026-07-21T12:12:35+00:00",
+  "genere_le": "2026-07-22T12:17:23+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -12,33 +12,36 @@
   },
   "items": [
     {
-      "hook": "Découvrez le secret d'une peau éclatante en 3 étapes !",
-      "script": "Nous savons que la vie peut être très occupée, mais prendre soin de notre peau est essentiel. Chez Éclat Beauté, nous vous proposons des soins personnalisés pour vous aider à atteindre votre objectif. Notre soin visage éclat est conçu pour nettoyer et hydrater votre peau en profondeur, vous donnant une apparence radieuse et éclatante. Pour vous aider à atteindre ce résultat, voici 3 étapes simples : 1) Nettoyez votre visage deux fois par jour, 2) Appliquez un masque hydratant une fois par semaine, et 3) Faites-vous plaisir avec un soin visage éclat chez nous ! Inscrivez-vous dès maintenant et profitez de nos offres spéciales.",
+      "hook": "Découvrez le secret d'une peau éclatante avec notre soin visage éclat pour seulement 15 000 FCFA !",
+      "script": "Vous rêvez d'une peau lumineuse et hydratée ? Notre soin visage éclat est conçu pour vous offrir un résultat exceptionnel. En combinant nettoyage et hydratation profonde, nous vous aidons à révéler la beauté naturelle de votre peau. Réservez votre séance dès maintenant sur WhatsApp et obtenez un teint parfait pour toutes les occasions !",
       "format": "Reel",
       "reseau": "TikTok",
-      "prompt_image": "Une femme souriante avec une peau éclatante, entourée de fleurs et de produits de soin, sur fond #D4AF37, avec un effet de lumière naturelle pour mettre en valeur la peau",
+      "prompt_image": "Créez une vidéo montrant avant-après d'un soin visage, avec une musique apaisante et des effets visuels éclatants, en utilisant les couleurs #D4AF37 et #0A1F44",
       "variantes": [
-        "Obtenez la peau que vous méritez en quelques étapes !"
+        "Obtenez une peau parfaite en quelques séances !",
+        "Éclat de beauté garantie avec notre soin visage éclat !"
       ]
     },
     {
-      "hook": "Prête à briller pour votre grand jour ?",
-      "script": "Nous comprenons que votre jour de mariage est unique et spécial. Chez Éclat Beauté, nous nous engageons à vous offrir la meilleure expérience de soin pour vous aider à atteindre votre objectif. Notre forfait mariée est conçu pour vous donner un teint parfait pour votre grand jour. Incluant 3 séances de soin personnalisé, notre équipe d'experts se consacre à vous faire resplendir. Réservez votre place dès aujourd'hui et profitez d'une consultation gratuite pour discuter de vos besoins et de vos attentes.",
+      "hook": "Préparez-vous pour le grand jour avec notre forfait mariée à 75 000 FCFA !",
+      "script": "Vous voulez être absolument parfaite pour votre mariage ? Notre forfait mariée est spécialement conçu pour vous. Avec 3 séances de soin visage éclat, vous obtiendrez un teint parfait et une confiance renouvelée. N'attendez plus, réservez votre forfait aujourd'hui !",
       "format": "Carrousel",
       "reseau": "Instagram",
-      "prompt_image": "Une future mariée radieuse, avec un voile et une peau parfaite, sur fond #0A1F44, avec des fleurs de mariée dans les cheveux et un bouquet à la main",
+      "prompt_image": "Créez un carrousel présentant les 3 séances du forfait mariée, avec des photos avant-après et des témoignages de futures mariées, en utilisant les couleurs #D4AF37 et #0A1F44",
       "variantes": [
-        "Faites de votre jour de mariage un moment inoubliable !"
+        "Soins personnalisés pour un jour inoubliable !",
+        "Forfait mariée : parce que vous êtes unique !"
       ]
     },
     {
-      "hook": "Manque de temps ? Nous avons la solution !",
-      "script": "Nous savons que la vie peut être très chargée, mais prendre soin de soi est essentiel pour le bien-être. Chez Éclat Beauté, nous proposons des soins rapides et efficaces pour vous aider à vous ressourcer et à vous sentir belle, même dans les moments les plus occupés. Découvrez nos offres de soin express et réservez votre place dès maintenant pour profiter d'un moment de détente bien mérité.",
-      "format": "Short",
-      "reseau": "Facebook",
-      "prompt_image": "Une femme active, avec un agenda et un téléphone, profitant d'un moment de soin express chez Éclat Beauté, sur fond #D4AF37, avec des plantes vertes autour d'elle",
+      "hook": "Prenez soin de vous avec nos conseils de routine peau pour une santé de peau éclatante !",
+      "script": "Une peau saine est une peau éclatante ! Découvrez comment adopter une routine simple et efficace pour prendre soin de votre peau, adaptée à votre type de peau. N'oubliez pas de nous suivre pour plus de conseils et de contenu utile !",
+      "format": "Reel",
+      "reseau": "TikTok",
+      "prompt_image": "Créez une vidéo animée montrant les étapes d'une routine peau simple, en utilisant des animations et des icones éclatantes, avec les couleurs #D4AF37 et #0A1F44",
       "variantes": [
-        "Prenez soin de vous, même dans la tempête !"
+        "Faites briller votre peau avec nos conseils personnalisés !",
+        "Soin de soi : parce que votre peau vaut la peine !"
       ]
     }
   ]

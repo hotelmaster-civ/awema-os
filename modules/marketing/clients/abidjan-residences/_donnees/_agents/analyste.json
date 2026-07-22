@@ -1,6 +1,6 @@
 {
   "agent": "analyste",
-  "genere_le": "2026-07-21T12:10:58+00:00",
+  "genere_le": "2026-07-22T12:15:04+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -12,27 +12,17 @@
   "items": [
     {
       "type": "insight",
-      "titre": "Présence dominante sur TikTok",
-      "explication": "Le compte Abidjan résidences a une présence significative sur TikTok, avec un nombre important d'abonnés et de vues.",
+      "titre": "TikTok est le réseau le plus performant",
+      "explication": "Le compte Abidjan résidences a le plus d'interactions sur TikTok avec 9480 likes et 168 commentaires.",
       "preuve": {
-        "metrique": "abonnes",
-        "valeur": 4198
+        "metrique": "likes",
+        "valeur": 9480
       }
     },
     {
-      "type": "reco",
-      "titre": "Publier régulièrement sur TikTok",
-      "explication": "Il est recommandé de maintenir une cadence de publication régulière sur TikTok pour garder les abonnés engagés.",
-      "preuve": {
-        "metrique": "jours_depuis_dernier_post",
-        "valeur": 37
-      },
-      "action": "Publier au moins une fois par semaine sur TikTok"
-    },
-    {
       "type": "insight",
-      "titre": "Engagement élevé sur certaines publications",
-      "explication": "Certaines publications sur TikTok génèrent un engagement élevé, comme le post '#collage avec @Tdfmanga' qui a obtenu 8919 likes.",
+      "titre": "Les vidéos sont le type de contenu le plus populaire",
+      "explication": "Les vidéos sur TikTok ont un taux d'engagement élevé, notamment la vidéo '#collage avec @Tdfmanga' qui a 8919 likes.",
       "preuve": {
         "metrique": "likes",
         "valeur": 8919
@@ -40,22 +30,42 @@
     },
     {
       "type": "reco",
-      "titre": "Analyser et reproduire les contenus les plus performants",
-      "explication": "Il est recommandé d'analyser les contenus qui génèrent le plus d'engagement et de les reproduire pour maintenir l'intérêt des abonnés.",
+      "titre": "Publier une nouvelle vidéo sur TikTok",
+      "explication": "Pour maintenir l'engagement des abonnés, il est recommandé de publier une nouvelle vidéo sur TikTok cette semaine.",
       "preuve": {
-        "metrique": "likes_total",
-        "valeur": 21839
+        "metrique": "jours_depuis_dernier_post",
+        "valeur": 37
       },
-      "action": "Étudier les publications les plus populaires et créer du contenu similaire"
+      "action": "Publier une nouvelle vidéo sur TikTok avant la fin de la semaine"
+    },
+    {
+      "type": "reco",
+      "titre": "Optimiser les heures de publication sur TikTok",
+      "explication": "Les données suggèrent que les publications en fin d'après-midi, surtout le vendredi, sont les plus efficaces pour atteindre un public plus large.",
+      "preuve": {
+        "metrique": "heure_de_publication_recommandee",
+        "valeur": "14h"
+      },
+      "action": "Planifier les prochaines publications sur TikTok pour le vendredi à 14h"
     },
     {
       "type": "insight",
-      "titre": "Cadence de publication irrégulière",
-      "explication": "La cadence de publication sur TikTok est actuellement irrégulière, ce qui peut impacter la visibilité et l'engagement des abonnés.",
+      "titre": "La croissance de l'audience est stable",
+      "explication": "L'évolution de l'audience sur les dernières semaines montre une stabilité, avec une légère variation autour de 4198 abonnés.",
       "preuve": {
-        "metrique": "posts_par_semaine",
-        "valeur": 0.0
+        "metrique": "audience",
+        "valeur": 4198
       }
+    },
+    {
+      "type": "reco",
+      "titre": "Interagir avec la communauté",
+      "explication": "Répondre aux commentaires et messages pour renforcer l'engagement et fidéliser les abonnés.",
+      "preuve": {
+        "metrique": "commentaires",
+        "valeur": 168
+      },
+      "action": "Dédié 30 minutes par jour pour répondre aux commentaires et messages sur TikTok"
     }
   ]
 }

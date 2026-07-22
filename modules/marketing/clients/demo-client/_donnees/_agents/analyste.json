@@ -1,6 +1,6 @@
 {
   "agent": "analyste",
-  "genere_le": "2026-07-21T12:11:09+00:00",
+  "genere_le": "2026-07-22T12:15:14+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -14,59 +14,40 @@
     {
       "type": "insight",
       "titre": "Présence dominante sur TikTok",
-      "explication": "L'audience et l'engagement sont remarquables sur TikTok, indiquant une stratégie efficace sur cette plateforme.",
+      "explication": "L'institut Éclat Beauté a une audience significative sur TikTok avec un nombre de likes et de vues élevés.",
       "preuve": {
-        "metrique": "abonnes",
-        "valeur": 12500
+        "metrique": "likes sur TikTok",
+        "valeur": 88000
       }
     },
     {
       "type": "reco",
-      "titre": "Publier régulièrement sur TikTok",
-      "explication": "Augmenter la fréquence de publication sur TikTok pourrait encore renforcer l'engagement et la croissance de la communauté.",
+      "titre": "Créer du contenu sur TikTok",
+      "explication": "Il est recommandé de créer davantage de contenu sur TikTok étant donné la popularité de la plateforme pour Éclat Beauté.",
       "preuve": {
-        "metrique": "likes",
+        "metrique": "engagement sur TikTok",
         "valeur": 88000
       },
-      "action": "Publier au moins deux fois par semaine sur TikTok"
+      "action": "Publier au moins deux contenus par semaine sur TikTok pour maintenir l'engagement"
     },
     {
       "type": "insight",
-      "titre": "Contenu Carrousel performant",
-      "explication": "Les publications au format Carrousel génèrent un engagement moyen élevé, supérieur à d'autres formats de contenu.",
+      "titre": "Contenu le plus performant : Reel",
+      "explication": "Les Reels sont les plus engageants en termes de contenu sur les plateformes sociales, avec un engagement moyen de 520.",
       "preuve": {
-        "metrique": "engagement_moyen",
-        "valeur": 310
+        "metrique": "engagement moyen des Reels",
+        "valeur": 520
       }
     },
     {
       "type": "reco",
-      "titre": "Créer plus de contenus Carrousel",
-      "explication": "Investir dans la création de contenus Carrousel pourrait améliorer l'engagement global de la communauté en ligne.",
+      "titre": "Améliorer la réponse aux questions fréquentes",
+      "explication": "Il est essentiel de répondre à toutes les questions fréquentes des clients pour améliorer leur expérience et fidélisation.",
       "preuve": {
-        "metrique": "n",
-        "valeur": 6
-      },
-      "action": "Créer et publier un nouveau contenu Carrousel chaque semaine"
-    },
-    {
-      "type": "insight",
-      "titre": "Croissance de l'audience",
-      "explication": "L'audience a connu une croissance constante sur les dernières semaines, indiquant une stratégie de contenu efficace.",
-      "preuve": {
-        "metrique": "evolution_audience",
-        "valeur": 23500
-      }
-    },
-    {
-      "type": "reco",
-      "titre": "Répondre aux commentaires et messages",
-      "explication": "Interagir avec les followers en répondant à leurs commentaires et messages peut renforcer la confiance et l'engagement.",
-      "preuve": {
-        "metrique": "a_repondre",
+        "metrique": "nombre de messages non répondu",
         "valeur": 5
       },
-      "action": "Répondre à tous les commentaires et messages dans les 24 heures"
+      "action": "Répondre à tous les messages en attente et intégrer les questions fréquentes dans la section FAQ"
     }
   ]
 }

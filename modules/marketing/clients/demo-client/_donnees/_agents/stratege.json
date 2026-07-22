@@ -1,6 +1,6 @@
 {
   "agent": "stratege",
-  "genere_le": "2026-07-21T12:11:31+00:00",
+  "genere_le": "2026-07-22T12:16:27+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -15,61 +15,60 @@
       "jour": "Lundi",
       "heure": "19h",
       "format": "Reel",
-      "angle": "Conseils de soin de peau pour les jours chargés",
+      "angle": "Routine de soin de peau pour le temps sec",
       "reseau": "TikTok"
-    },
-    {
-      "jour": "Mardi",
-      "heure": "14h",
-      "format": "Carrousel",
-      "angle": "Avant/Après soin éclat - Témoignages de clientes satisfaites",
-      "reseau": "Instagram"
     },
     {
       "jour": "Mercredi",
-      "heure": "12h",
-      "format": "Short",
-      "angle": "Présentation du Forfait Mariée d'Éclat Beauté",
-      "reseau": "TikTok"
+      "heure": "14h",
+      "format": "Carrousel",
+      "angle": "Avantages du soin visage éclat pour la peau africaine",
+      "reseau": "Instagram"
     },
     {
       "jour": "Jeudi",
       "heure": "19h",
-      "format": "Reel",
-      "angle": "Routine de soin pour la peau grasse en 3 étapes",
-      "reseau": "TikTok"
+      "format": "Photo",
+      "angle": "Présentation du nouveau produit : crème hydratante pour peau sèche",
+      "reseau": "Facebook"
     },
     {
       "jour": "Vendredi",
-      "heure": "16h",
-      "format": "Photo",
-      "angle": "Nouveaux produits pour le soin de peau - Lancement bientôt",
-      "reseau": "Instagram"
+      "heure": "17h",
+      "format": "Reel",
+      "angle": "Conseils pour une routine de soin du corps efficace",
+      "reseau": "TikTok"
     },
     {
       "jour": "Samedi",
       "heure": "14h",
       "format": "Carrousel",
-      "angle": "Les bienfaits du soin de visage éclat pour une peau saine",
-      "reseau": "Facebook"
+      "angle": "Les bienfaits du forfait mariée pour une peau parfaite le jour J",
+      "reseau": "Instagram"
     },
     {
       "jour": "Dimanche",
       "heure": "18h",
+      "format": "Photo",
+      "angle": "Witness de satisfaction d'une cliente après un soin chez Éclat Beauté",
+      "reseau": "Facebook"
+    },
+    {
+      "jour": "Mardi",
+      "heure": "12h",
       "format": "Short",
-      "angle": "Motivation pour prendre soin de soi - Citation inspirante",
+      "angle": "Réponse à une question fréquente : réservation et annulation",
       "reseau": "TikTok"
     }
   ],
-  "cadence_recommandee": "4 publications/semaine",
+  "cadence_recommandee": "3 publications/semaine",
   "meilleures_heures": [
     "Jeudi 19h",
     "Samedi 14h"
   ],
   "objectifs": [
-    "Augmenter l'engagement de 10% sur les publications",
-    "Accroître la portée de 15% sur les réseaux sociaux",
-    "Attirer 500 nouvelles abonnées sur TikTok et Instagram",
-    "Maintenir un taux d'engagement moyen de 3,5% sur les publications"
+    "Augmenter de 20% le taux d'engagement sur les publications dans les 6 prochaines semaines",
+    "Accroître la portée de 15% sur TikTok et Instagram",
+    "Maintenir un taux d'engagement moyen supérieur à 3.5% sur toutes les plateformes"
   ]
 }

@@ -1,6 +1,6 @@
 {
   "agent": "stratege",
-  "genere_le": "2026-07-21T12:11:30+00:00",
+  "genere_le": "2026-07-22T12:15:55+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -14,49 +14,49 @@
       "jour": "Lundi",
       "heure": "14h",
       "format": "Vidéo",
-      "angle": "Découvrez les résidences d'Abidjan",
+      "angle": "Présentation d'un logement à Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Mardi",
       "heure": "14h",
-      "format": "Story",
-      "angle": "Conseils pour trouver une résidence à Abidjan",
+      "format": "Photographie",
+      "angle": "Détails décoratifs d'un intérieur de résidence à Yopougon",
       "reseau": "TikTok"
     },
     {
       "jour": "Mercredi",
       "heure": "14h",
       "format": "Vidéo",
-      "angle": "Visite virtuelle d'une résidence à Abidjan",
+      "angle": "Interview avec un résident d'Abidjan Résidences",
       "reseau": "TikTok"
     },
     {
       "jour": "Jeudi",
       "heure": "14h",
-      "format": " Publication",
-      "angle": "Les avantages de vivre dans une résidence à Abidjan",
+      "format": "Story",
+      "angle": "Découverte d'un quartier d'Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Vendredi",
       "heure": "14h",
-      "format": "Live",
-      "angle": "Questions-réponses sur les résidences à Abidjan",
+      "format": "Vidéo",
+      "angle": "Événement ou promotion en cours à Abidjan Résidences",
       "reseau": "TikTok"
     },
     {
       "jour": "Samedi",
       "heure": "14h",
-      "format": "Story",
-      "angle": "Découvrez les meilleurs quartiers d'Abidjan pour vivre",
+      "format": "Photographie",
+      "angle": "Présentation d'un service proposé par Abidjan Résidences",
       "reseau": "TikTok"
     },
     {
       "jour": "Dimanche",
       "heure": "14h",
       "format": "Vidéo",
-      "angle": "Conseils pour aménager votre résidence à Abidjan",
+      "angle": "Conseils pour améliorer son espace de vie à Abidjan",
       "reseau": "TikTok"
     }
   ],
@@ -65,8 +65,9 @@
     "Vendredi 14h"
   ],
   "objectifs": [
-    "Augmenter le nombre de likes de 20% sur les publications TikTok",
-    "Accroître la portée des publications de 30% sur TikTok",
-    "Augmenter le nombre d'abonnés de 10% sur TikTok en 2 mois"
+    "Augmenter les interactions sur TikTok de 20% en une semaine",
+    "Accroître la portée des publications de 30% sur TikTok dans les 2 semaines",
+    "Atteindre 50 nouvelles interactions (likes, commentaires, partages) sur TikTok dans la semaine",
+    "Maintenir un taux d'engagement élevé sur les publications TikTok tout au long de la semaine"
   ]
 }
