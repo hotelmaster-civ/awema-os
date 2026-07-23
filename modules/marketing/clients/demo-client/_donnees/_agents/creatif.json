@@ -1,6 +1,6 @@
 {
   "agent": "creatif",
-  "genere_le": "2026-07-22T12:17:23+00:00",
+  "genere_le": "2026-07-23T12:14:53+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -12,36 +12,33 @@
   },
   "items": [
     {
-      "hook": "Découvrez le secret d'une peau éclatante avec notre soin visage éclat pour seulement 15 000 FCFA !",
-      "script": "Vous rêvez d'une peau lumineuse et hydratée ? Notre soin visage éclat est conçu pour vous offrir un résultat exceptionnel. En combinant nettoyage et hydratation profonde, nous vous aidons à révéler la beauté naturelle de votre peau. Réservez votre séance dès maintenant sur WhatsApp et obtenez un teint parfait pour toutes les occasions !",
+      "hook": "Découvrez le secret d'un teint parfait !",
+      "script": "Vous rêvez d'un teint éclatant et naturel ? Notre soin visage éclat est la solution idéale ! Il nettoie et hydrate votre peau en profondeur pour un résultat visible dès la première séance. Réservez maintenant et découvrez pourquoi nos clientes adorent notre institut !",
       "format": "Reel",
       "reseau": "TikTok",
-      "prompt_image": "Créez une vidéo montrant avant-après d'un soin visage, avec une musique apaisante et des effets visuels éclatants, en utilisant les couleurs #D4AF37 et #0A1F44",
+      "prompt_image": "Une femme africaine avec un teint uniforme et rayonnant, souriante, sur un fond #D4AF37, avec un appareil de soin en arrière-plan",
       "variantes": [
-        "Obtenez une peau parfaite en quelques séances !",
-        "Éclat de beauté garantie avec notre soin visage éclat !"
+        "Un teint parfait pour le grand jour ?"
       ]
     },
     {
-      "hook": "Préparez-vous pour le grand jour avec notre forfait mariée à 75 000 FCFA !",
-      "script": "Vous voulez être absolument parfaite pour votre mariage ? Notre forfait mariée est spécialement conçu pour vous. Avec 3 séances de soin visage éclat, vous obtiendrez un teint parfait et une confiance renouvelée. N'attendez plus, réservez votre forfait aujourd'hui !",
+      "hook": "Préparez-vous pour le grand jour avec nous !",
+      "script": "Vous êtes future mariée et vous souhaitez avoir un teint parfait pour votre journée spéciale ? Notre forfait mariée est conçu pour vous ! Il comprend 3 séances de soin personnalisées pour vous aider à atteindre la peau de vos rêves. Confiez-nous votre beauté et vivez votre journée de mariage avec confiance !",
       "format": "Carrousel",
       "reseau": "Instagram",
-      "prompt_image": "Créez un carrousel présentant les 3 séances du forfait mariée, avec des photos avant-après et des témoignages de futures mariées, en utilisant les couleurs #D4AF37 et #0A1F44",
+      "prompt_image": "Une future mariée africaine avec un voile et une robe de mariée, sur un fond #0A1F44, avec des produits de soin et des fleurs autour d'elle",
       "variantes": [
-        "Soins personnalisés pour un jour inoubliable !",
-        "Forfait mariée : parce que vous êtes unique !"
+        "Le secret d'une peau parfaite pour votre mariage ?"
       ]
     },
     {
-      "hook": "Prenez soin de vous avec nos conseils de routine peau pour une santé de peau éclatante !",
-      "script": "Une peau saine est une peau éclatante ! Découvrez comment adopter une routine simple et efficace pour prendre soin de votre peau, adaptée à votre type de peau. N'oubliez pas de nous suivre pour plus de conseils et de contenu utile !",
-      "format": "Reel",
-      "reseau": "TikTok",
-      "prompt_image": "Créez une vidéo animée montrant les étapes d'une routine peau simple, en utilisant des animations et des icones éclatantes, avec les couleurs #D4AF37 et #0A1F44",
+      "hook": "Prenez soin de vous, vous le méritez !",
+      "script": "La vie peut être chargée, mais il est essentiel de prendre soin de soi. Notre institut de beauté Éclat Beauté est là pour vous aider à vous détendre et à vous ressourcer. Découvrez nos soins et produits conçus spécifiquement pour la peau africaine et donnez-vous le cadeau d’un moment de pause bien mérité.",
+      "format": "Short",
+      "reseau": "Facebook",
+      "prompt_image": "Une femme africaine se relaxant avec un masque facial, sur un fond #D4AF37, avec des plantes et des bougies autour d'elle",
       "variantes": [
-        "Faites briller votre peau avec nos conseils personnalisés !",
-        "Soin de soi : parce que votre peau vaut la peine !"
+        "Vous méritez un moment de pause, offrez-vous du bien-être !"
       ]
     }
   ]

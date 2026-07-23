@@ -1,6 +1,6 @@
 {
   "agent": "analyste",
-  "genere_le": "2026-07-22T12:15:04+00:00",
+  "genere_le": "2026-07-23T12:13:04+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -13,16 +13,16 @@
     {
       "type": "insight",
       "titre": "TikTok est le réseau le plus performant",
-      "explication": "Le compte Abidjan résidences a le plus d'interactions sur TikTok avec 9480 likes et 168 commentaires.",
+      "explication": "Le nombre d'abonnés et d'interactions sur TikTok est significativement plus élevé que sur les autres réseaux.",
       "preuve": {
-        "metrique": "likes",
-        "valeur": 9480
+        "metrique": "abonnes",
+        "valeur": 4198
       }
     },
     {
       "type": "insight",
-      "titre": "Les vidéos sont le type de contenu le plus populaire",
-      "explication": "Les vidéos sur TikTok ont un taux d'engagement élevé, notamment la vidéo '#collage avec @Tdfmanga' qui a 8919 likes.",
+      "titre": "Les vidéos performantes incluent des collaborations",
+      "explication": "Les vidéos avec des collaborations ou des références à d'autres comptes obtiennent plus de likes et de commentaires.",
       "preuve": {
         "metrique": "likes",
         "valeur": 8919
@@ -30,42 +30,42 @@
     },
     {
       "type": "reco",
-      "titre": "Publier une nouvelle vidéo sur TikTok",
-      "explication": "Pour maintenir l'engagement des abonnés, il est recommandé de publier une nouvelle vidéo sur TikTok cette semaine.",
+      "titre": "Publier du contenu régulièrement",
+      "explication": "La dernière publication date de plus de 37 jours, il est essentiel de maintenir une cadence de publication régulière pour conserver l'audience.",
       "preuve": {
-        "metrique": "jours_depuis_dernier_post",
+        "metrique": "jours_depuis",
         "valeur": 37
       },
-      "action": "Publier une nouvelle vidéo sur TikTok avant la fin de la semaine"
+      "action": "Publier au moins un contenu par semaine"
     },
     {
       "type": "reco",
-      "titre": "Optimiser les heures de publication sur TikTok",
-      "explication": "Les données suggèrent que les publications en fin d'après-midi, surtout le vendredi, sont les plus efficaces pour atteindre un public plus large.",
+      "titre": "Optimiser les publications pour le Vendredi à 14h",
+      "explication": "Les données suggèrent que les publications ont plus d'impact le Vendredi à 14h sur TikTok.",
       "preuve": {
-        "metrique": "heure_de_publication_recommandee",
-        "valeur": "14h"
+        "metrique": "par_jour",
+        "valeur": 1181.0
       },
-      "action": "Planifier les prochaines publications sur TikTok pour le vendredi à 14h"
+      "action": "Planifier les publications pour le Vendredi à 14h"
     },
     {
       "type": "insight",
-      "titre": "La croissance de l'audience est stable",
-      "explication": "L'évolution de l'audience sur les dernières semaines montre une stabilité, avec une légère variation autour de 4198 abonnés.",
+      "titre": "Les top posts incluent des éléments de découverte et de détente",
+      "explication": "Les contenus qui proposent une découverte ou une idée de détente obtiennent un meilleur taux d'engagement.",
       "preuve": {
-        "metrique": "audience",
-        "valeur": 4198
+        "metrique": "vues",
+        "valeur": 32668
       }
     },
     {
       "type": "reco",
-      "titre": "Interagir avec la communauté",
-      "explication": "Répondre aux commentaires et messages pour renforcer l'engagement et fidéliser les abonnés.",
+      "titre": "Intégrer des appels à l'action pour stimuler l'engagement",
+      "explication": "Ajouter des appels à l'action dans les publications peut augmenter les commentaires et les partages.",
       "preuve": {
         "metrique": "commentaires",
-        "valeur": 168
+        "valeur": 110
       },
-      "action": "Dédié 30 minutes par jour pour répondre aux commentaires et messages sur TikTok"
+      "action": "Inclure des questions ou des appels à l'action dans les prochaines publications"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "agent": "creatif",
-  "genere_le": "2026-07-22T12:16:52+00:00",
+  "genere_le": "2026-07-23T12:14:50+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -11,36 +11,33 @@
   },
   "items": [
     {
-      "hook": "Découvrez les résidences d'Abidjan qui vous feront tomber amoureux de la ville !",
-      "script": "Vous cherchez un endroit pour vous installer à Abidjan ? Nous avons ce qu'il vous faut ! Découvrez nos résidences élégantes et équipées, idéales pour les familles et les professionnels. De la sécurité aux équipements de loisirs, tout est conçu pour vous offrir un confort maximum. Rejoignez notre communauté d'habitants satisfaits et faites de votre rêve une réalité ! #AbidjanResidences #RésidencesDeLuxes #VieÀAbidjan",
+      "hook": "Découvrez les résidences de rêve à Abidjan !",
+      "script": "Vous cherchez un endroit où vous sentir comme chez vous à Abidjan ? Nous avons ce qu'il vous faut ! Découvrez nos résidences confortables et équipées, idéales pour les voyageurs et les locataires à long terme. De l'espace pour travailler, des espaces communs pour socialiser, et une communauté accueillante pour vous faire sentir comme chez vous. Inscrivez-vous maintenant et faites de vos rêves une réalité !",
       "format": "Short",
       "reseau": "TikTok",
-      "prompt_image": "Une photo aérienne d'une résidence luxueuse à Abidjan avec des jardins verdoyants et une piscine, prise au coucher du soleil.",
+      "prompt_image": "Une résidence moderne avec un jardin luxuriant et une piscine, des personnes souriantes qui interagissent dans les espaces communs",
       "variantes": [
-        "Trouvez votre havre de paix à Abidjan avec nos résidences de qualité !",
-        "Abidjan, la ville où la vie est belle ! Découvrez nos résidences incroyables."
+        "Les meilleures résidences d'Abidjan à portée de main !"
       ]
     },
     {
-      "hook": "Vous rêvez d'une vie urbaine dynamique et de détente ? Nous avons la solution !",
-      "script": "Prêt à vivre l'expérience urbaine ultime à Abidjan ? Nos résidences allient design contemporain, commodités et sécurité. Imaginez-vous vivant au cœur de la ville, avec tout à portée de main. Découvrez comment vous pouvez équilibrer travail et loisirs dans nos résidences pensées pour vous. #VieUrbaine #Abidjan #RésidencesModernes",
+      "hook": "Qu'est-ce que la vie dans une résidence à Abidjan ?",
+      "script": "Imaginez vivre dans un environnement sécurisé, avec des équipements de qualité et des services de haute qualité. Nos résidences à Abidjan offrent tout cela et plus encore ! Découvrez comment nous pouvons rendre votre vie plus facile et plus agréable. Inscrivez-vous maintenant et découvrez par vous-même !",
       "format": "Reel",
-      "reseau": "Instagram",
-      "prompt_image": "Un montage de photos et vidéos montrant la vie urbaine à Abidjan, incluant des résidences modernes, des cafés, des parcs et des rues animées.",
+      "reseau": "TikTok",
+      "prompt_image": "Un tour d'une résidence, montrant les différents équipements et services disponibles, avec des résidents souriants et satisfaits",
       "variantes": [
-        "La ville ne dort jamais ! Découvrez l'énergie d'Abidjan avec nos résidences.",
-        "Équilibrez travail et plaisir à Abidjan avec nos résidences urbaines de pointe."
+        "Vivez l'expérience ultime dans nos résidences à Abidjan !"
       ]
     },
     {
-      "hook": "Faites de vos rêves une réalité avec nos résidences à Abidjan !",
-      "script": "Que vous soyez en quête d'un nouveau départ ou d'un nouveau chapitre de votre vie, nous vous offrons les clés pour réaliser vos rêves. Découvrez nos résidences à Abidjan, conçues pour offrir confort, sécurité et joie de vivre. De l'espace pour respirer à des équipements pour vous épanouir, nous pensons à tout pour que vous puissiez vivre votre meilleure vie. #RéalisezVosRêves #AbidjanResidences #VieDeRêve",
+      "hook": "Recherchez-vous un endroit pour vous détendre à Abidjan ?",
+      "script": "Échappez à la routine quotidienne et trouvez votre havre de paix dans nos résidences à Abidjan ! Nous offrons des espaces de détente, des activités de loisirs et une atmosphère calme pour vous aider à vous ressourcer. Inscrivez-vous maintenant et prenez soin de vous !",
       "format": "Carrousel",
-      "reseau": "Facebook",
-      "prompt_image": "Une série de photos présentant différents aspects de la vie dans nos résidences à Abidjan, incluant des intérieurs accueillants, des aires de jeux pour enfants, des piscines et des espaces verts.",
+      "reseau": "Instagram",
+      "prompt_image": "Des photos de différentes résidences à Abidjan, mettant en valeur les espaces de détente, les activités de loisirs et les paysages environnants",
       "variantes": [
-        "Transformez votre vie avec nos résidences à Abidjan, conçues pour le bonheur.",
-        "Abidjan, où chaque jour est une nouvelle chance ! Découvrez nos résidences."
+        "Trouvez votre serenity à Abidjan avec nous !"
       ]
     }
   ]

@@ -1,6 +1,6 @@
 {
   "agent": "stratege",
-  "genere_le": "2026-07-22T12:16:27+00:00",
+  "genere_le": "2026-07-23T12:14:08+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -15,60 +15,61 @@
       "jour": "Lundi",
       "heure": "19h",
       "format": "Reel",
-      "angle": "Routine de soin de peau pour le temps sec",
+      "angle": "Conseils pour un soin de visage naturel et efficace",
       "reseau": "TikTok"
     },
     {
-      "jour": "Mercredi",
-      "heure": "14h",
+      "jour": "Mardi",
+      "heure": "12h",
       "format": "Carrousel",
-      "angle": "Avantages du soin visage éclat pour la peau africaine",
+      "angle": "Présentation des produits hypoallergéniques pour peaux sensibles",
       "reseau": "Instagram"
     },
     {
       "jour": "Jeudi",
       "heure": "19h",
       "format": "Photo",
-      "angle": "Présentation du nouveau produit : crème hydratante pour peau sèche",
-      "reseau": "Facebook"
+      "angle": "Avant/Après d'un soin éclat - Témoignage d'une cliente",
+      "reseau": "Instagram"
     },
     {
       "jour": "Vendredi",
-      "heure": "17h",
+      "heure": "15h",
       "format": "Reel",
-      "angle": "Conseils pour une routine de soin du corps efficace",
+      "angle": "Routine peau grasse en 3 étapes simplifiées",
       "reseau": "TikTok"
     },
     {
       "jour": "Samedi",
-      "heure": "14h",
+      "heure": "12h",
       "format": "Carrousel",
-      "angle": "Les bienfaits du forfait mariée pour une peau parfaite le jour J",
-      "reseau": "Instagram"
-    },
-    {
-      "jour": "Dimanche",
-      "heure": "18h",
-      "format": "Photo",
-      "angle": "Witness de satisfaction d'une cliente après un soin chez Éclat Beauté",
+      "angle": "Présentation du forfait mariée et des services annexes",
       "reseau": "Facebook"
     },
     {
-      "jour": "Mardi",
-      "heure": "12h",
-      "format": "Short",
-      "angle": "Réponse à une question fréquente : réservation et annulation",
+      "jour": "Dimanche",
+      "heure": "19h",
+      "format": "Story",
+      "angle": "Réponses aux questions fréquentes sur les réservations et les produits",
+      "reseau": "Instagram"
+    },
+    {
+      "jour": "Mercredi",
+      "heure": "18h",
+      "format": "Live",
+      "angle": "Soin de visage éclat - Démo en direct",
       "reseau": "TikTok"
     }
   ],
   "cadence_recommandee": "3 publications/semaine",
   "meilleures_heures": [
     "Jeudi 19h",
-    "Samedi 14h"
+    "Samedi 15h"
   ],
   "objectifs": [
-    "Augmenter de 20% le taux d'engagement sur les publications dans les 6 prochaines semaines",
-    "Accroître la portée de 15% sur TikTok et Instagram",
-    "Maintenir un taux d'engagement moyen supérieur à 3.5% sur toutes les plateformes"
+    "Augmenter de 20% l'engagement sur les publications Instagram et TikTok dans les 6 prochaines semaines",
+    "Accroître la portée des contenus de 30% sur TikTok",
+    "Obtenir un total de 12000 likes sur les publications des 3 prochaines semaines",
+    "Maintenir un taux d'engagement supérieur à 3,5% sur toutes les plateformes"
   ]
 }

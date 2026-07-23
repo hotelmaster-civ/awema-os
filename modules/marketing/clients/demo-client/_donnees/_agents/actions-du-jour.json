@@ -1,6 +1,6 @@
 {
   "agent": "actions-du-jour",
-  "genere_le": "2026-07-22T12:17:23+00:00",
+  "genere_le": "2026-07-23T12:14:53+00:00",
   "modele": "agrégation (sans IA)",
   "provenance": {
     "client": "demo-client",
@@ -34,8 +34,8 @@
     {
       "priorite": 2,
       "type": "reco",
-      "titre": "Créer du contenu sur TikTok",
-      "detail": "Publier au moins deux contenus par semaine sur TikTok pour maintenir l'engagement",
+      "titre": "Publier un nouveau contenu sur TikTok",
+      "detail": "Publier un Reel sur TikTok dès que possible",
       "source": "analyste",
       "action": {
         "label": "Voir l'analyse",
@@ -46,7 +46,7 @@
     {
       "priorite": 2,
       "type": "plan",
-      "titre": "Publie : Routine de soin de peau pour le temps sec",
+      "titre": "Publie : Conseils pour un soin de visage naturel et efficace",
       "detail": "TikTok · Reel · Lundi",
       "source": "stratege",
       "action": {
@@ -70,7 +70,7 @@
     {
       "priorite": 3,
       "type": "creatif",
-      "titre": "Idée prête : Découvrez le secret d'une peau éclatante avec notre soin visage éclat pour seulement 15 000 FCFA !",
+      "titre": "Idée prête : Découvrez le secret d'un teint parfait !",
       "detail": "TikTok · Reel",
       "source": "creatif",
       "action": {
