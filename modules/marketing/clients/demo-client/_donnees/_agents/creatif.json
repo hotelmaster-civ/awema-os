@@ -1,6 +1,6 @@
 {
   "agent": "creatif",
-  "genere_le": "2026-07-23T12:14:53+00:00",
+  "genere_le": "2026-07-24T12:06:21+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -12,33 +12,33 @@
   },
   "items": [
     {
-      "hook": "Découvrez le secret d'un teint parfait !",
-      "script": "Vous rêvez d'un teint éclatant et naturel ? Notre soin visage éclat est la solution idéale ! Il nettoie et hydrate votre peau en profondeur pour un résultat visible dès la première séance. Réservez maintenant et découvrez pourquoi nos clientes adorent notre institut !",
+      "hook": "Découvrez le secret pour un teint parfait !",
+      "script": "Bonjour les beautés ! \nAvec notre soin visage éclat, obtenez une peau radieuse et hydratée en profondeur. \nNettoyage + hydratation pour 15 000 FCFA seulement ! \nRéservez votre rendez-vous dès maintenant via WhatsApp !",
       "format": "Reel",
       "reseau": "TikTok",
-      "prompt_image": "Une femme africaine avec un teint uniforme et rayonnant, souriante, sur un fond #D4AF37, avec un appareil de soin en arrière-plan",
+      "prompt_image": "Une femme africaine avec une peau lumineuse et un large sourire, avec des fleurs de couleur #D4AF37 autour d'elle, sur fond #0A1F44",
       "variantes": [
-        "Un teint parfait pour le grand jour ?"
+        "Révélez votre beauté naturelle avec Éclat Beauté !"
       ]
     },
     {
-      "hook": "Préparez-vous pour le grand jour avec nous !",
-      "script": "Vous êtes future mariée et vous souhaitez avoir un teint parfait pour votre journée spéciale ? Notre forfait mariée est conçu pour vous ! Il comprend 3 séances de soin personnalisées pour vous aider à atteindre la peau de vos rêves. Confiez-nous votre beauté et vivez votre journée de mariage avec confiance !",
+      "hook": "Le grand jour approche, soyez parfaite !",
+      "script": "Future mariée, vous rêvez d'un teint parfait pour votre grand jour ? \nNotre forfait mariée est fait pour vous ! 3 séances pour 75 000 FCFA. \nN'hésitez pas à nous contacter pour plus d'informations !",
       "format": "Carrousel",
       "reseau": "Instagram",
-      "prompt_image": "Une future mariée africaine avec un voile et une robe de mariée, sur un fond #0A1F44, avec des produits de soin et des fleurs autour d'elle",
+      "prompt_image": "Une future mariée africaine souriante avec un voile de mariée et une peau parfaite, sur fond floral avec des éléments de couleur #D4AF37 et #0A1F44",
       "variantes": [
-        "Le secret d'une peau parfaite pour votre mariage ?"
+        "Soyez la mariée la plus éclatante de la saison !"
       ]
     },
     {
-      "hook": "Prenez soin de vous, vous le méritez !",
-      "script": "La vie peut être chargée, mais il est essentiel de prendre soin de soi. Notre institut de beauté Éclat Beauté est là pour vous aider à vous détendre et à vous ressourcer. Découvrez nos soins et produits conçus spécifiquement pour la peau africaine et donnez-vous le cadeau d’un moment de pause bien mérité.",
-      "format": "Short",
+      "hook": "Quels sont vos secrets de beauté ?",
+      "script": "Partagez avec nous vos routine de soin de peau préférées ! \nChez Éclat Beauté, nous croyons en l'importance de prendre soin de soi. \nDécouvrez nos produits et services conçus pour les peaux africaines !",
+      "format": "Post",
       "reseau": "Facebook",
-      "prompt_image": "Une femme africaine se relaxant avec un masque facial, sur un fond #D4AF37, avec des plantes et des bougies autour d'elle",
+      "prompt_image": "Un ensemble de produits de soin de peau naturels sur un fond en bois, avec des éléments de couleur #D4AF37 et #0A1F44, et une femme africaine à l'arrière-plan avec un visage radieux",
       "variantes": [
-        "Vous méritez un moment de pause, offrez-vous du bien-être !"
+        "Rejoignez notre communauté de beauté pour des conseils exclusifs !"
       ]
     }
   ]

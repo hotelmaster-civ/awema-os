@@ -1,6 +1,6 @@
 {
   "agent": "analyste",
-  "genere_le": "2026-07-23T12:13:04+00:00",
+  "genere_le": "2026-07-24T12:04:53+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -12,60 +12,60 @@
   "items": [
     {
       "type": "insight",
-      "titre": "TikTok est le réseau le plus performant",
-      "explication": "Le nombre d'abonnés et d'interactions sur TikTok est significativement plus élevé que sur les autres réseaux.",
+      "titre": "TikTok, le réseau le plus performant",
+      "explication": "Abidjan résidences a le plus d'interactions sur TikTok, notamment avec des vidéos générant des milliers de vues et des centaines de likes.",
+      "preuve": {
+        "metrique": "likes_total",
+        "valeur": 9480
+      }
+    },
+    {
+      "type": "insight",
+      "titre": "Contenu vidéo préféré des abonnés",
+      "explication": "Les vidéos sont le type de contenu le plus populaire sur le compte TikTok d'Abidjan résidences, attirant un grand nombre de vues et d'interactions.",
+      "preuve": {
+        "metrique": "vues",
+        "valeur": 41630
+      }
+    },
+    {
+      "type": "reco",
+      "titre": "Publier régulièrement sur TikTok",
+      "explication": "Pour maintenir une audience engagée et intéressée, il est essentiel de poster régulièrement du contenu de qualité sur TikTok.",
+      "preuve": {
+        "metrique": "jours_depuis",
+        "valeur": 37
+      },
+      "action": "Publiez au moins une vidéo par semaine sur TikTok pour raviver l'intérêt de votre audience."
+    },
+    {
+      "type": "reco",
+      "titre": "Optimiser les heures de publication sur TikTok",
+      "explication": "Les données suggèrent que les publications vendredi à 14h attirent davantage d'interactions. Profitez de ces créneaux pour maximiser la visibilité de vos contenus.",
+      "preuve": {
+        "metrique": "heure",
+        "valeur": "14h"
+      },
+      "action": "Planifiez vos futures publications TikTok les vendredis à 14h pour améliorer leur impact."
+    },
+    {
+      "type": "insight",
+      "titre": "Audience stable sur TikTok",
+      "explication": "L'audience d'Abidjan résidences sur TikTok est stable, avec un nombre d'abonnés constant au fil du temps.",
       "preuve": {
         "metrique": "abonnes",
         "valeur": 4198
       }
     },
     {
-      "type": "insight",
-      "titre": "Les vidéos performantes incluent des collaborations",
-      "explication": "Les vidéos avec des collaborations ou des références à d'autres comptes obtiennent plus de likes et de commentaires.",
-      "preuve": {
-        "metrique": "likes",
-        "valeur": 8919
-      }
-    },
-    {
       "type": "reco",
-      "titre": "Publier du contenu régulièrement",
-      "explication": "La dernière publication date de plus de 37 jours, il est essentiel de maintenir une cadence de publication régulière pour conserver l'audience.",
+      "titre": "Diversifier le contenu pour stimuler l'engagement",
+      "explication": "Bien que les vidéos soient populaires, il pourrait être bénéfique d'explorer d'autres types de contenu pour stimuler l'engagement de l'audience et attirer de nouveaux abonnés.",
       "preuve": {
-        "metrique": "jours_depuis",
-        "valeur": 37
+        "metrique": "types_contenu",
+        "valeur": "vidéos"
       },
-      "action": "Publier au moins un contenu par semaine"
-    },
-    {
-      "type": "reco",
-      "titre": "Optimiser les publications pour le Vendredi à 14h",
-      "explication": "Les données suggèrent que les publications ont plus d'impact le Vendredi à 14h sur TikTok.",
-      "preuve": {
-        "metrique": "par_jour",
-        "valeur": 1181.0
-      },
-      "action": "Planifier les publications pour le Vendredi à 14h"
-    },
-    {
-      "type": "insight",
-      "titre": "Les top posts incluent des éléments de découverte et de détente",
-      "explication": "Les contenus qui proposent une découverte ou une idée de détente obtiennent un meilleur taux d'engagement.",
-      "preuve": {
-        "metrique": "vues",
-        "valeur": 32668
-      }
-    },
-    {
-      "type": "reco",
-      "titre": "Intégrer des appels à l'action pour stimuler l'engagement",
-      "explication": "Ajouter des appels à l'action dans les publications peut augmenter les commentaires et les partages.",
-      "preuve": {
-        "metrique": "commentaires",
-        "valeur": 110
-      },
-      "action": "Inclure des questions ou des appels à l'action dans les prochaines publications"
+      "action": "Essayez de diversifier votre contenu en incluant des stories, des lives, ou d'autres formats pour voir comment votre audience réagit."
     }
   ]
 }

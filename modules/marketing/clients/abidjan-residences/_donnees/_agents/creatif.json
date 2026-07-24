@@ -1,6 +1,6 @@
 {
   "agent": "creatif",
-  "genere_le": "2026-07-23T12:14:50+00:00",
+  "genere_le": "2026-07-24T12:06:19+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -11,33 +11,33 @@
   },
   "items": [
     {
-      "hook": "Découvrez les résidences de rêve à Abidjan !",
-      "script": "Vous cherchez un endroit où vous sentir comme chez vous à Abidjan ? Nous avons ce qu'il vous faut ! Découvrez nos résidences confortables et équipées, idéales pour les voyageurs et les locataires à long terme. De l'espace pour travailler, des espaces communs pour socialiser, et une communauté accueillante pour vous faire sentir comme chez vous. Inscrivez-vous maintenant et faites de vos rêves une réalité !",
+      "hook": "Découvrez les résidences idéales à Abidjan !",
+      "script": "Vous cherchez un endroit où vous sentir comme chez vous ? Abidjan Résidences propose des hébergements confortables et modernes, idéaux pour les voyages d'affaires ou les vacances en famille. De la chambre simple à l'appartement entièrement équipé, nous avons tout ce qu'il vous faut pour un séjour inoubliable. Rejoignez-nous et laissez-nous vous montrer pourquoi nous sommes les meilleurs !",
       "format": "Short",
       "reseau": "TikTok",
-      "prompt_image": "Une résidence moderne avec un jardin luxuriant et une piscine, des personnes souriantes qui interagissent dans les espaces communs",
+      "prompt_image": "Une photo d'une résidence moderne avec une grande piscine et un jardin tropical, avec des palmiers et des fleurs colorées, sous un ciel bleu ensoleillé",
       "variantes": [
-        "Les meilleures résidences d'Abidjan à portée de main !"
+        "Trouvez votre havre de paix à Abidjan !"
       ]
     },
     {
-      "hook": "Qu'est-ce que la vie dans une résidence à Abidjan ?",
-      "script": "Imaginez vivre dans un environnement sécurisé, avec des équipements de qualité et des services de haute qualité. Nos résidences à Abidjan offrent tout cela et plus encore ! Découvrez comment nous pouvons rendre votre vie plus facile et plus agréable. Inscrivez-vous maintenant et découvrez par vous-même !",
+      "hook": "Vous êtes prêts pour un séjour exceptionnel à Abidjan ?",
+      "script": "Abidjan Résidences présente une sélection de résidences de luxe, équipées de tout le confort nécessaire pour un séjour de rêve. Des chambres spacieuses aux appartements entièrement meublés, nous proposons des hébergements qui répondent à tous vos besoins. Rejoignez notre communauté et découvrez pourquoi nous sommes le choix idéal pour les voyageurs exigeants !",
       "format": "Reel",
       "reseau": "TikTok",
-      "prompt_image": "Un tour d'une résidence, montrant les différents équipements et services disponibles, avec des résidents souriants et satisfaits",
+      "prompt_image": "Un vidéo montrant une résidence de luxe avec des chambres spacieuses, un salon élégant et une cuisine équipée, avec une musique de fond dynamique",
       "variantes": [
-        "Vivez l'expérience ultime dans nos résidences à Abidjan !"
+        "Expériencez le meilleur d'Abidjan avec nous !"
       ]
     },
     {
-      "hook": "Recherchez-vous un endroit pour vous détendre à Abidjan ?",
-      "script": "Échappez à la routine quotidienne et trouvez votre havre de paix dans nos résidences à Abidjan ! Nous offrons des espaces de détente, des activités de loisirs et une atmosphère calme pour vous aider à vous ressourcer. Inscrivez-vous maintenant et prenez soin de vous !",
+      "hook": "Qu'est-ce que vous attendez pour réserver votre résidence idéale à Abidjan ?",
+      "script": "Abidjan Résidences propose une gamme de résidences qui répondent à tous les budgets et à tous les besoins. De la location à court terme à la location à long terme, nous avons des solutions pour vous. Contactez-nous dès aujourd'hui pour découvrir nos offres spéciales et nos promotions !",
       "format": "Carrousel",
       "reseau": "Instagram",
-      "prompt_image": "Des photos de différentes résidences à Abidjan, mettant en valeur les espaces de détente, les activités de loisirs et les paysages environnants",
+      "prompt_image": "Une série de photos présentant différentes résidences, avec des descriptions et des prix pour chacune, sur un fond blanc etclean",
       "variantes": [
-        "Trouvez votre serenity à Abidjan avec nous !"
+        "Réservez dès maintenant et profitez de nos offres spéciales !"
       ]
     }
   ]

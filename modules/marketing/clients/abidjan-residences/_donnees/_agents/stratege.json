@@ -1,6 +1,6 @@
 {
   "agent": "stratege",
-  "genere_le": "2026-07-23T12:13:56+00:00",
+  "genere_le": "2026-07-24T12:05:45+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -14,49 +14,49 @@
       "jour": "Lundi",
       "heure": "14h",
       "format": "Vidéo",
-      "angle": "Présentation d'un nouveau projet de résidence à Abidjan",
+      "angle": "Découvrez les résidences d'Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Mardi",
-      "heure": "15h",
-      "format": "Photographie",
-      "angle": "Découverte d'un quartier résidentiel à Abidjan",
+      "heure": "14h",
+      "format": "Story",
+      "angle": "Les avantages de vivre à Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Mercredi",
-      "heure": "10h",
-      "format": "Story",
-      "angle": "Actualité immobilier à Abidjan",
+      "heure": "14h",
+      "format": "Live",
+      "angle": "Visite virtuelle d'une résidence",
       "reseau": "TikTok"
     },
     {
       "jour": "Jeudi",
-      "heure": "12h",
+      "heure": "14h",
       "format": "Vidéo",
-      "angle": "Testimonial d'un résident d'Abidjan",
+      "angle": "Témoignage d'un résident",
       "reseau": "TikTok"
     },
     {
       "jour": "Vendredi",
       "heure": "14h",
-      "format": "LIVE",
-      "angle": "Visite virtuelle d'une résidence à Abidjan",
+      "format": "Short",
+      "angle": "Les activités à faire à Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Samedi",
-      "heure": "11h",
-      "format": "Photographie",
-      "angle": "Rénovation d'un appartement à Abidjan",
+      "heure": "14h",
+      "format": "Story",
+      "angle": "Les événements à venir à Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Dimanche",
-      "heure": "16h",
+      "heure": "14h",
       "format": "Vidéo",
-      "angle": "Conseils pour choisir sa résidence à Abidjan",
+      "angle": "Les conseils pour trouver une résidence à Abidjan",
       "reseau": "TikTok"
     }
   ],
@@ -65,8 +65,8 @@
     "Vendredi 14h"
   ],
   "objectifs": [
-    "Augmenter les vues sur TikTok de 20% en 2 semaines",
-    "Accroître les likes sur les publications de 15% en 1 mois",
-    "Maintenir une audience moyenne de 4200 abonnés sur TikTok"
+    "Augmenter le taux d'engagement de 20% sur les publications",
+    "Atteindre 5000 vues sur les publications hebdomadaires",
+    "Augmenter le nombre d'abonnés de 10% sur le mois"
   ]
 }

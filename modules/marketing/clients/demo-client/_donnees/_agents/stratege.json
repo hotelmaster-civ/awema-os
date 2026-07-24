@@ -1,6 +1,6 @@
 {
   "agent": "stratege",
-  "genere_le": "2026-07-23T12:14:08+00:00",
+  "genere_le": "2026-07-24T12:05:47+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -15,61 +15,60 @@
       "jour": "Lundi",
       "heure": "19h",
       "format": "Reel",
-      "angle": "Conseils pour un soin de visage naturel et efficace",
+      "angle": "Routine peau grasse simplifiée pour les jeunes actives",
       "reseau": "TikTok"
     },
     {
-      "jour": "Mardi",
+      "jour": "Mercredi",
       "heure": "12h",
       "format": "Carrousel",
-      "angle": "Présentation des produits hypoallergéniques pour peaux sensibles",
+      "angle": "Avantages du soin visage éclat pour une peau africaine",
       "reseau": "Instagram"
     },
     {
       "jour": "Jeudi",
       "heure": "19h",
       "format": "Photo",
-      "angle": "Avant/Après d'un soin éclat - Témoignage d'une cliente",
-      "reseau": "Instagram"
-    },
-    {
-      "jour": "Vendredi",
-      "heure": "15h",
-      "format": "Reel",
-      "angle": "Routine peau grasse en 3 étapes simplifiées",
-      "reseau": "TikTok"
+      "angle": "Témoignage d'une cliente satisfaite après un soin",
+      "reseau": "Facebook"
     },
     {
       "jour": "Samedi",
       "heure": "12h",
-      "format": "Carrousel",
-      "angle": "Présentation du forfait mariée et des services annexes",
-      "reseau": "Facebook"
+      "format": "Reel",
+      "angle": "Conseils pour uneroutine de soins de soirée efficace",
+      "reseau": "TikTok"
     },
     {
       "jour": "Dimanche",
-      "heure": "19h",
-      "format": "Story",
-      "angle": "Réponses aux questions fréquentes sur les réservations et les produits",
+      "heure": "18h",
+      "format": "Carrousel",
+      "angle": "Présentation du forfait mariée et ses avantages",
       "reseau": "Instagram"
     },
     {
-      "jour": "Mercredi",
-      "heure": "18h",
-      "format": "Live",
-      "angle": "Soin de visage éclat - Démo en direct",
+      "jour": "Mardi",
+      "heure": "19h",
+      "format": "Short",
+      "angle": "Petit tutoriel de maquillage naturel pour les jours de la semaine",
       "reseau": "TikTok"
+    },
+    {
+      "jour": "Vendredi",
+      "heure": "13h",
+      "format": "Photo",
+      "angle": "Présentation d'un nouveau produit pour les peaux sensibles",
+      "reseau": "Facebook"
     }
   ],
   "cadence_recommandee": "3 publications/semaine",
   "meilleures_heures": [
     "Jeudi 19h",
-    "Samedi 15h"
+    "Samedi 12h"
   ],
   "objectifs": [
-    "Augmenter de 20% l'engagement sur les publications Instagram et TikTok dans les 6 prochaines semaines",
-    "Accroître la portée des contenus de 30% sur TikTok",
-    "Obtenir un total de 12000 likes sur les publications des 3 prochaines semaines",
-    "Maintenir un taux d'engagement supérieur à 3,5% sur toutes les plateformes"
+    "Augmenter l'engagement de 20% via des contenus interactifs",
+    "Accroître la portée de 15% en ciblant les jeunes actives",
+    "Fidéliser 80% des clientes actuelles via des offres personnalisées"
   ]
 }
