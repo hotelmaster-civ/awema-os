@@ -1,6 +1,6 @@
 {
   "agent": "stratege",
-  "genere_le": "2026-07-24T12:05:47+00:00",
+  "genere_le": "2026-07-25T10:59:20+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -15,60 +15,61 @@
       "jour": "Lundi",
       "heure": "19h",
       "format": "Reel",
-      "angle": "Routine peau grasse simplifiée pour les jeunes actives",
+      "angle": "Conseils de soin de peau pour les femmes actives",
       "reseau": "TikTok"
     },
     {
-      "jour": "Mercredi",
-      "heure": "12h",
+      "jour": "Mardi",
+      "heure": "17h",
       "format": "Carrousel",
-      "angle": "Avantages du soin visage éclat pour une peau africaine",
+      "angle": "Avant/Après d'un soin éclat",
       "reseau": "Instagram"
     },
     {
       "jour": "Jeudi",
       "heure": "19h",
+      "format": "Reel",
+      "angle": "Démonstration d'un nouveau produit de soin",
+      "reseau": "TikTok"
+    },
+    {
+      "jour": "Vendredi",
+      "heure": "14h",
       "format": "Photo",
-      "angle": "Témoignage d'une cliente satisfaite après un soin",
-      "reseau": "Facebook"
+      "angle": "Présentation du forfait mariée",
+      "reseau": "Instagram"
     },
     {
       "jour": "Samedi",
       "heure": "12h",
-      "format": "Reel",
-      "angle": "Conseils pour uneroutine de soins de soirée efficace",
+      "format": "Short",
+      "angle": "Conseils de beauté pour le week-end",
       "reseau": "TikTok"
     },
     {
       "jour": "Dimanche",
       "heure": "18h",
       "format": "Carrousel",
-      "angle": "Présentation du forfait mariée et ses avantages",
+      "angle": "Récapitulatif de la semaine - produits et soins populaires",
       "reseau": "Instagram"
     },
     {
-      "jour": "Mardi",
-      "heure": "19h",
-      "format": "Short",
-      "angle": "Petit tutoriel de maquillage naturel pour les jours de la semaine",
+      "jour": "Mercredi",
+      "heure": "20h",
+      "format": "Reel",
+      "angle": "Réponses aux questions fréquentes sur les soins de beauté",
       "reseau": "TikTok"
-    },
-    {
-      "jour": "Vendredi",
-      "heure": "13h",
-      "format": "Photo",
-      "angle": "Présentation d'un nouveau produit pour les peaux sensibles",
-      "reseau": "Facebook"
     }
   ],
   "cadence_recommandee": "3 publications/semaine",
   "meilleures_heures": [
     "Jeudi 19h",
-    "Samedi 12h"
+    "Samedi 14h"
   ],
   "objectifs": [
-    "Augmenter l'engagement de 20% via des contenus interactifs",
-    "Accroître la portée de 15% en ciblant les jeunes actives",
-    "Fidéliser 80% des clientes actuelles via des offres personnalisées"
+    "Augmenter l'engagement sur TikTok de 20% en 2 mois",
+    "Atteindre 30000 abonnés sur Instagram dans les 6 prochains mois",
+    "Maintenir un taux d'engagement moyen de 4% sur les publications",
+    "Répondre à 100% des commentaires et messages dans les 24h"
   ]
 }

@@ -1,6 +1,6 @@
 {
   "agent": "analyste",
-  "genere_le": "2026-07-24T12:05:04+00:00",
+  "genere_le": "2026-07-25T10:58:08+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -14,59 +14,59 @@
     {
       "type": "insight",
       "titre": "TikTok, réseau le plus performant",
-      "explication": "TikTok obtient les meilleurs résultats en termes de likes et de vues par rapport aux autres réseaux.",
+      "explication": "Le réseau TikTok affiche le plus d'engagement avec 88000 likes et un total de 36000 vues, malgré un nombre de publications similaire aux autres réseaux.",
       "preuve": {
         "metrique": "likes",
         "valeur": 88000
       }
     },
     {
-      "type": "insight",
-      "titre": "Contenu Réel et Carrousel bien performants",
-      "explication": "Les contenus de type Réel et Carrousel obtenennent un engagement moyen élevé.",
+      "type": "reco",
+      "titre": "Publier un Reel sur TikTok cette semaine",
+      "explication": "Les Reels semblent générer plus d'engagement que les autres types de contenu, avec un engagement moyen de 520.",
       "preuve": {
         "metrique": "engagement_moyen",
         "valeur": 520
+      },
+      "action": "Publier un Reel sur TikTok d'ici la fin de la semaine"
+    },
+    {
+      "type": "insight",
+      "titre": "Évolution positive de l'audience",
+      "explication": "L'audience a augmenté de 2500 entre le 1er mai et le 15 juin, démontrant une tendance positive.",
+      "preuve": {
+        "metrique": "audience",
+        "valeur": 2500
       }
     },
     {
       "type": "reco",
-      "titre": "Publier sur TikTok cette semaine",
-      "explication": "Publier du contenu sur TikTok pour capitaliser sur son succès.",
-      "preuve": {
-        "metrique": "engagement_taux",
-        "valeur": 3.8
-      },
-      "action": "Publier un nouveau contenu sur TikTok d'ici la fin de la semaine."
-    },
-    {
-      "type": "reco",
-      "titre": " Répondre aux commentaires en attente",
-      "explication": "Répondre aux commentaires en attente pour améliorer l'engagement et la satisfaction des abonnés.",
+      "titre": "Répondre aux commentaires en attente",
+      "explication": "Il y a 5 commentaires en attente de réponse, dont certains datent du 24 juin. Répondre rapidement pour maintenir l'engagement.",
       "preuve": {
         "metrique": "a_repondre",
         "valeur": 5
       },
-      "action": "Répondre à tous les commentaires en attente d'ici la fin de la semaine."
+      "action": "Répondre à tous les commentaires en attente d'ici la fin de la semaine"
     },
     {
       "type": "insight",
-      "titre": "Évolution de l'audience positive",
-      "explication": "L'audience a augmenté de manière constante au fil du temps.",
+      "titre": "Meilleur créneau pour poster",
+      "explication": "Le jeudi à 19h est recommandé comme le meilleur créneau pour poster, avec un engagement moyen plus élevé que les autres jours.",
       "preuve": {
-        "metrique": "evolution_audience",
-        "valeur": 23500
+        "metrique": "meilleur_creneau",
+        "valeur": "Jeudi 19h"
       }
     },
     {
       "type": "reco",
-      "titre": "Utiliser les créneaux horaires les plus performants",
-      "explication": "Utiliser les créneaux horaires les plus performants pour publier du contenu et atteindre un public plus large.",
+      "titre": "Poster un contenu sur le thème du soin de peau le jeudi",
+      "explication": "Les contenus sur le thème du soin de peau, comme les Reels, semblent bien fonctionner. Poster un contenu similaire le jeudi à 19h pour maximiser l'engagement.",
       "preuve": {
-        "metrique": "meilleur_creneau",
-        "valeur": "Jeudi 19h"
+        "metrique": "engagement_moyen",
+        "valeur": 520
       },
-      "action": "Planifier les prochaines publications pour le Jeudi à 19h."
+      "action": "Poster un contenu sur le thème du soin de peau ce jeudi à 19h"
     }
   ]
 }

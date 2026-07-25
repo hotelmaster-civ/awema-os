@@ -1,6 +1,6 @@
 {
   "agent": "creatif",
-  "genere_le": "2026-07-24T12:06:19+00:00",
+  "genere_le": "2026-07-25T11:00:01+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -11,33 +11,33 @@
   },
   "items": [
     {
-      "hook": "Découvrez les résidences idéales à Abidjan !",
-      "script": "Vous cherchez un endroit où vous sentir comme chez vous ? Abidjan Résidences propose des hébergements confortables et modernes, idéaux pour les voyages d'affaires ou les vacances en famille. De la chambre simple à l'appartement entièrement équipé, nous avons tout ce qu'il vous faut pour un séjour inoubliable. Rejoignez-nous et laissez-nous vous montrer pourquoi nous sommes les meilleurs !",
+      "hook": "Découvrez les meilleures résidences d'Abidjan !",
+      "script": "Vous cherchez un endroit pour vous installer à Abidjan ? Nous avons sélectionné les meilleures résidences pour vous ! Découvrez-les dans notre nouvelle vidéo ! #Abidjan #Résidences #Immobilier",
       "format": "Short",
       "reseau": "TikTok",
-      "prompt_image": "Une photo d'une résidence moderne avec une grande piscine et un jardin tropical, avec des palmiers et des fleurs colorées, sous un ciel bleu ensoleillé",
+      "prompt_image": "Une vidéo montrant les extérieurs et les intérieurs de résidences luxueuses à Abidjan avec des gens heureux qui vivent là",
       "variantes": [
-        "Trouvez votre havre de paix à Abidjan !"
+        "Les meilleures résidences d'Abidjan, c'est ici !"
       ]
     },
     {
-      "hook": "Vous êtes prêts pour un séjour exceptionnel à Abidjan ?",
-      "script": "Abidjan Résidences présente une sélection de résidences de luxe, équipées de tout le confort nécessaire pour un séjour de rêve. Des chambres spacieuses aux appartements entièrement meublés, nous proposons des hébergements qui répondent à tous vos besoins. Rejoignez notre communauté et découvrez pourquoi nous sommes le choix idéal pour les voyageurs exigeants !",
+      "hook": "Un séjour calme et paisible à Yopougon ?",
+      "script": "Vous voulez vous détendre et vous ressourcer à Yopougon ? Découvrez notre sélection de résidences calmes et paisibles pour un séjour inoubliable ! #Yopougon #Séjour #Détente",
       "format": "Reel",
       "reseau": "TikTok",
-      "prompt_image": "Un vidéo montrant une résidence de luxe avec des chambres spacieuses, un salon élégant et une cuisine équipée, avec une musique de fond dynamique",
+      "prompt_image": "Une vidéo montrant une résidence calme et paisible à Yopougon avec un jardin et une piscine",
       "variantes": [
-        "Expériencez le meilleur d'Abidjan avec nous !"
+        "Échappez au stress et trouvez la paix à Yopougon"
       ]
     },
     {
-      "hook": "Qu'est-ce que vous attendez pour réserver votre résidence idéale à Abidjan ?",
-      "script": "Abidjan Résidences propose une gamme de résidences qui répondent à tous les budgets et à tous les besoins. De la location à court terme à la location à long terme, nous avons des solutions pour vous. Contactez-nous dès aujourd'hui pour découvrir nos offres spéciales et nos promotions !",
+      "hook": "Faites la promotion de votre établissement avec nous !",
+      "script": "Vous avez un établissement à Abidjan et vous voulez le faire connaître ? Nous vous aidons à le promouvoir sur nos réseaux sociaux ! #Abidjan #Promotion #Établissement",
       "format": "Carrousel",
-      "reseau": "Instagram",
-      "prompt_image": "Une série de photos présentant différentes résidences, avec des descriptions et des prix pour chacune, sur un fond blanc etclean",
+      "reseau": "TikTok",
+      "prompt_image": "Une image montrant un établissement à Abidjan avec des gens heureux qui y travaillent ou qui y séjournent",
       "variantes": [
-        "Réservez dès maintenant et profitez de nos offres spéciales !"
+        "Faire connaître votre établissement, c'est facile avec nous !"
       ]
     }
   ]
