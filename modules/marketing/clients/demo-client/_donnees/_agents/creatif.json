@@ -1,6 +1,6 @@
 {
   "agent": "creatif",
-  "genere_le": "2026-07-25T11:00:05+00:00",
+  "genere_le": "2026-07-26T11:39:05+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -12,36 +12,33 @@
   },
   "items": [
     {
-      "hook": "Découvrez le secret d'un teint parfait pour votre journée chargée !",
-      "script": "Bonjour les beautés ! Vous cherchez un moyen de vous sentir belle et confiante malgré votre emploi du temps chargé ? Notre soin visage éclat est là pour vous ! Nettoyage + hydratation profonde pour un teint naturellement radieux. Réservez votre rendez-vous dès maintenant et découvrez pourquoi nos clientes adorent notre approche premium et abordable. #EclatBeaute #SoinVisage #TeintParfait",
+      "hook": "Découvrez le secret d'une peau éclatante en quelques étapes !",
+      "script": "Vous rêvez d'une peau parfaite mais ne savez pas par où commencer ? Notre soin visage éclat est là pour vous ! Nettoyage et hydratation profonde pour une peau radieuse. Réservation via WhatsApp 48h à l'avance, 15 000 FCFA. Rejoignez-nous !",
       "format": "Reel",
       "reseau": "TikTok",
-      "prompt_image": "Une femme africaine avec un teint lumineux, souriante, dans un environnement lumineux et naturel, avec des accents de #D4AF37 et #0A1F44",
+      "prompt_image": "Une femme africaine avec une peau radieuse et éclatante, souriante, sur un fond abstrait rose et or (#D4AF37)",
       "variantes": [
-        "Un emploi du temps chargé ne signifie pas un teint terne !",
-        "Quand le soin de soi rencontre la beauté naturelle..."
+        "Transformez votre peau en quelques séances !"
       ]
     },
     {
-      "hook": "Prête à briller sur votre journée de mariage ?",
-      "script": "Future mariée, vous rêvez d’un teint parfait pour le grand jour ? Notre forfait mariée est conçu spécialement pour vous ! 3 séances personnalisées pour un résultat éblouissant. N’attendez plus, réservez votre forfait aujourd’hui et vivez votre rêve avec Éclat Beauté. #EclatBeaute #ForfaitMariee #BeautePremium",
+      "hook": "Le jour J approche, êtes-vous prête à briller ?",
+      "script": "Fatou, future mariée, veut un teint parfait pour son grand jour. Nous proposons un forfait mariée incluant 3 séances de soins personnalisés pour 75 000 FCFA. Réservez vos séances dès maintenant et vivez votre rêve !",
       "format": "Carrousel",
       "reseau": "Instagram",
-      "prompt_image": "Une photo avant/après d'une future mariée, montrant son teint parfait après le forfait mariée, avec des éléments de décor de mariage et les couleurs #D4AF37 et #0A1F44",
+      "prompt_image": "Une mariée africaine avec un teint parfait, souriante, sur un fond de fleurs blanches (#0A1F44)",
       "variantes": [
-        "Votre grand jour, votre beauté, notre expertise !",
-        "Découvrez comment nous rendons chaque mariée resplendissante..."
+        "Préparez-vous à être la plus belle version de vous-même le jour J !"
       ]
     },
     {
-      "hook": "Qu’est-ce que le soin de soi signifie pour vous ?",
-      "script": "Chez Éclat Beauté, nous croyons que le soin de soi est au cœur de la beauté. C’est pourquoi nous proposons des produits et des soins adaptés à chaque type de peau, y compris les peaux sensibles. Partagez avec nous ce que le soin de soi signifie pour vous ! Et découvrez notre gamme hypoallergénique, conçue pour un maximum de confort et de beauté. #EclatBeaute #SoinDeSoi #BeauteNaturelle",
+      "hook": "Quel est votre secret pour une peau éclatante ? Partagez avec nous !",
+      "script": "Chez Éclat Beauté, nous croyons que chaque femme a sa propre définition de la beauté. Partagez vos routines de soin et astuces pour avoir une peau éclatante ! Utilisez #ÉclatBeauté pour être repéré et découvrir les secrets de beauté des autres !",
       "format": "Post",
       "reseau": "Facebook",
-      "prompt_image": "Une illustration représentant le soin de soi et la connexion avec la nature, avec des fleurs et des motifs qui évoquent la douceur et la tranquillité, dans les tons de #D4AF37 et #0A1F44",
+      "prompt_image": "Un miroir avec des products de soin et une fleur sur le côté, sur un fond coloré pastel (#D4AF37)",
       "variantes": [
-        "Le soin de soi, c’est l’amour de soi. Partagez votre définition !",
-        "Lorsque le soin de soi devient un acte d’amour..."
+        "Rejoignez notre communauté de femmes éclatantes et partagez vos conseils !"
       ]
     }
   ]

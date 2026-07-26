@@ -1,6 +1,6 @@
 {
   "agent": "actions-du-jour",
-  "genere_le": "2026-07-25T11:00:05+00:00",
+  "genere_le": "2026-07-26T11:39:05+00:00",
   "modele": "agrégation (sans IA)",
   "provenance": {
     "client": "demo-client",
@@ -34,8 +34,8 @@
     {
       "priorite": 2,
       "type": "reco",
-      "titre": "Publier un Reel sur TikTok cette semaine",
-      "detail": "Publier un Reel sur TikTok d'ici la fin de la semaine",
+      "titre": "Publier régulièrement sur TikTok",
+      "detail": "Publier 2 à 3 contenus par semaine sur TikTok pour maintenir l'engagement",
       "source": "analyste",
       "action": {
         "label": "Voir l'analyse",
@@ -46,7 +46,7 @@
     {
       "priorite": 2,
       "type": "plan",
-      "titre": "Publie : Conseils de soin de peau pour les femmes actives",
+      "titre": "Publie : Soins de peau pour les peaux sensibles",
       "detail": "TikTok · Reel · Lundi",
       "source": "stratege",
       "action": {
@@ -70,7 +70,7 @@
     {
       "priorite": 3,
       "type": "creatif",
-      "titre": "Idée prête : Découvrez le secret d'un teint parfait pour votre journée chargée !",
+      "titre": "Idée prête : Découvrez le secret d'une peau éclatante en quelques étapes !",
       "detail": "TikTok · Reel",
       "source": "creatif",
       "action": {

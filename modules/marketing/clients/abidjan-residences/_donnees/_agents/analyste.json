@@ -1,6 +1,6 @@
 {
   "agent": "analyste",
-  "genere_le": "2026-07-25T10:57:56+00:00",
+  "genere_le": "2026-07-26T11:37:07+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -12,60 +12,60 @@
   "items": [
     {
       "type": "insight",
-      "titre": "TikTok est le réseau le plus performant",
-      "explication": "Les données montrent que TikTok est le réseau où Abidjan résidences a le plus d'abonnés, de likes, de commentaires et de partages.",
+      "titre": "Présence dominante sur TikTok",
+      "explication": "La présence de Abidjan résidences est la plus forte sur TikTok, avec 4198 abonnés et 51 posts publiés.",
       "preuve": {
-        "metrique": "abonnes",
+        "metrique": "abonnés",
         "valeur": 4198
       }
     },
     {
       "type": "insight",
-      "titre": "Les vidéos sont le type de contenu le plus populaire",
-      "explication": "Les données montrent que les vidéos sont le type de contenu qui obtiennent le plus de likes, de commentaires et de partages sur TikTok.",
-      "preuve": {
-        "metrique": "likes_total",
-        "valeur": 21839
-      }
-    },
-    {
-      "type": "reco",
-      "titre": "Publier régulièrement sur TikTok",
-      "explication": "Pour maintenir une audience active, il est recommandé de publier régulièrement sur TikTok, au moins une fois par semaine.",
-      "preuve": {
-        "metrique": "jours_depuis",
-        "valeur": 37
-      },
-      "action": "Publier une nouvelle vidéo sur TikTok cette semaine"
-    },
-    {
-      "type": "reco",
-      "titre": "Optimiser les publications pour un meilleur engagement",
-      "explication": "Pour améliorer l'engagement, il est recommandé de publier des contenus qui ont déjà montré leur efficacité, comme les vidéos avec des tags populaires.",
+      "titre": "Top post très performant",
+      "explication": "Le top post '#collage avec @Tdfmanga decouvrez un animé 100% ivoirien par @Cénack  « placman »' a obtenu 8919 likes et 32668 vues.",
       "preuve": {
         "metrique": "likes",
         "valeur": 8919
-      },
-      "action": "Utiliser des tags populaires et des contenus visuels attractifs dans les prochaines publications"
-    },
-    {
-      "type": "insight",
-      "titre": "Le créneau horaire optimal pour les publications",
-      "explication": "Les données montrent que le meilleur moment pour publier sur TikTok est le vendredi vers 14h, ce qui peut augmenter l'engagement.",
-      "preuve": {
-        "metrique": "par_jour",
-        "valeur": 1181.0
       }
     },
     {
       "type": "reco",
-      "titre": "Étudier et adapter la stratégie de contenu",
-      "explication": "Il est important d'analyser les performances des publications et d'adapter la stratégie de contenu en conséquence pour améliorer l'engagement et l'audience.",
+      "titre": "Publier du contenu régulièrement",
+      "explication": "Il est essentiel de publier du contenu régulièrement pour maintenir l'engagement de la communauté.",
       "preuve": {
-        "metrique": "engagement_taux",
-        "valeur": null
+        "metrique": "jours_depuis_dernier_post",
+        "valeur": 37
       },
-      "action": "Étudier les performances des publications et adapter la stratégie de contenu en conséquence"
+      "action": "Publier au moins un post par semaine"
+    },
+    {
+      "type": "reco",
+      "titre": " Utiliser le créneau horaire optimal",
+      "explication": "Le créneau horaire optimal pour publier du contenu sur TikTok est le vendredi à 14h.",
+      "preuve": {
+        "metrique": "heure_de_publication_recommandee",
+        "valeur": "14h"
+      },
+      "action": "Publier du contenu le vendredi à 14h"
+    },
+    {
+      "type": "insight",
+      "titre": "Type de contenu préféré",
+      "explication": "Les utilisateurs préfèrent les vidéos, qui représentent la majorité des posts publiés.",
+      "preuve": {
+        "metrique": "type_de_contenu",
+        "valeur": "vidéo"
+      }
+    },
+    {
+      "type": "reco",
+      "titre": "Produire plus de vidéos",
+      "explication": "Les vidéos sont les contenus les plus populaires, il est donc recommandé d'en produire davantage.",
+      "preuve": {
+        "metrique": "type_de_contenu",
+        "valeur": "vidéo"
+      },
+      "action": "Produire au moins une vidéo par semaine"
     }
   ]
 }

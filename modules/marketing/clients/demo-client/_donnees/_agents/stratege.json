@@ -1,6 +1,6 @@
 {
   "agent": "stratege",
-  "genere_le": "2026-07-25T10:59:20+00:00",
+  "genere_le": "2026-07-26T11:38:32+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -15,61 +15,60 @@
       "jour": "Lundi",
       "heure": "19h",
       "format": "Reel",
-      "angle": "Conseils de soin de peau pour les femmes actives",
+      "angle": "Soins de peau pour les peaux sensibles",
       "reseau": "TikTok"
     },
     {
-      "jour": "Mardi",
-      "heure": "17h",
+      "jour": "Mercredi",
+      "heure": "12h",
       "format": "Carrousel",
-      "angle": "Avant/Après d'un soin éclat",
+      "angle": "Présentation du forfait mariée avec conseils de beauté",
       "reseau": "Instagram"
     },
     {
       "jour": "Jeudi",
       "heure": "19h",
       "format": "Reel",
-      "angle": "Démonstration d'un nouveau produit de soin",
+      "angle": "Routine de soins pour une peau éclatante",
       "reseau": "TikTok"
     },
     {
       "jour": "Vendredi",
-      "heure": "14h",
+      "heure": "15h",
       "format": "Photo",
-      "angle": "Présentation du forfait mariée",
+      "angle": "Avant/Après d'un soin visage éclat avec témoignage",
       "reseau": "Instagram"
     },
     {
       "jour": "Samedi",
       "heure": "12h",
-      "format": "Short",
-      "angle": "Conseils de beauté pour le week-end",
+      "format": "Reel",
+      "angle": "Conseils pour une peau parfaite en 3 étapes faciles",
       "reseau": "TikTok"
     },
     {
       "jour": "Dimanche",
       "heure": "18h",
       "format": "Carrousel",
-      "angle": "Récapitulatif de la semaine - produits et soins populaires",
-      "reseau": "Instagram"
+      "angle": "Présentation des produits adaptés à la peau africaine",
+      "reseau": "Facebook"
     },
     {
-      "jour": "Mercredi",
-      "heure": "20h",
+      "jour": "Mardi",
+      "heure": "19h",
       "format": "Reel",
-      "angle": "Réponses aux questions fréquentes sur les soins de beauté",
+      "angle": "Témoignages de clientes satisfaites",
       "reseau": "TikTok"
     }
   ],
   "cadence_recommandee": "3 publications/semaine",
   "meilleures_heures": [
     "Jeudi 19h",
-    "Samedi 14h"
+    "Samedi 15h"
   ],
   "objectifs": [
-    "Augmenter l'engagement sur TikTok de 20% en 2 mois",
-    "Atteindre 30000 abonnés sur Instagram dans les 6 prochains mois",
-    "Maintenir un taux d'engagement moyen de 4% sur les publications",
-    "Répondre à 100% des commentaires et messages dans les 24h"
+    "Augmenter de 20% les engagements sur les publications sur TikTok",
+    "Accroître la portée des publications Instagram de 15%",
+    "Maintenir un taux d'engagement moyen de 4% sur toutes les plateformes"
   ]
 }

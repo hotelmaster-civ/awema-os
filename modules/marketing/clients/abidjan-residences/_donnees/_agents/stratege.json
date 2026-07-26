@@ -1,6 +1,6 @@
 {
   "agent": "stratege",
-  "genere_le": "2026-07-25T10:58:48+00:00",
+  "genere_le": "2026-07-26T11:38:00+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -14,49 +14,49 @@
       "jour": "Lundi",
       "heure": "14h",
       "format": "Vidéo",
-      "angle": "Présentation d'une résidence à Abidjan",
-      "reseau": "TikTok"
-    },
-    {
-      "jour": "Mardi",
-      "heure": "14h",
-      "format": "Vidéo",
-      "angle": "Découverte d'un quartier d'Abidjan",
+      "angle": "Découverte d'un nouvel espace de détente à Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Mercredi",
       "heure": "14h",
-      "format": "Vidéo",
-      "angle": "Conseils pour choisir une résidence à Abidjan",
-      "reseau": "TikTok"
-    },
-    {
-      "jour": "Jeudi",
-      "heure": "14h",
-      "format": "Vidéo",
-      "angle": "Interview avec un résident d'Abidjan",
+      "format": "Story",
+      "angle": "Promotion d'un partenariat avec un établissement local",
       "reseau": "TikTok"
     },
     {
       "jour": "Vendredi",
       "heure": "14h",
       "format": "Vidéo",
-      "angle": "Présentation d'une activité à faire à Abidjan",
+      "angle": "Présentation d'un nouveau projet de résidence à Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Samedi",
-      "heure": "14h",
-      "format": "Vidéo",
-      "angle": "Découverte d'un événement à Abidjan",
+      "heure": "12h",
+      "format": "Photographie",
+      "angle": "Visite guidée d'un espace de loisirs à Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Dimanche",
-      "heure": "14h",
+      "heure": "18h",
       "format": "Vidéo",
-      "angle": "Résumé de la semaine à Abidjan",
+      "angle": "Testimonial d'un client satisfait d'Abidjan résidences",
+      "reseau": "TikTok"
+    },
+    {
+      "jour": "Mardi",
+      "heure": "19h",
+      "format": "Live",
+      "angle": "Événement en direct avec un invité spécial",
+      "reseau": "TikTok"
+    },
+    {
+      "jour": "Jeudi",
+      "heure": "15h",
+      "format": "Story",
+      "angle": "Conseils pour améliorer l'expérience de séjour à Abidjan",
       "reseau": "TikTok"
     }
   ],
@@ -65,8 +65,9 @@
     "Vendredi 14h"
   ],
   "objectifs": [
-    "Augmenter le nombre de likes de 20% en une semaine",
-    "Augmenter le nombre de commentaires de 30% en une semaine",
-    "Maintenir le taux d'engagement actuel"
+    "Augmenter le nombre de followers sur TikTok de 10% en 2 mois",
+    "Améliorer le taux d'engagement des publications sur TikTok de 20% en 1 mois",
+    "Maintenir une moyenne de 50 likes par publication sur TikTok",
+    "Augmenter la visibilité de la marque Abidjan résidences auprès d'un public ciblé"
   ]
 }
