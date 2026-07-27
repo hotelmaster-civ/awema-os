@@ -1,6 +1,6 @@
 {
   "agent": "creatif",
-  "genere_le": "2026-07-26T11:39:05+00:00",
+  "genere_le": "2026-07-27T16:04:30+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -12,33 +12,33 @@
   },
   "items": [
     {
-      "hook": "Découvrez le secret d'une peau éclatante en quelques étapes !",
-      "script": "Vous rêvez d'une peau parfaite mais ne savez pas par où commencer ? Notre soin visage éclat est là pour vous ! Nettoyage et hydratation profonde pour une peau radieuse. Réservation via WhatsApp 48h à l'avance, 15 000 FCFA. Rejoignez-nous !",
+      "hook": "Découvrez le secret d'une peau éclatante en 3 étapes !",
+      "script": "Vous rêvez d'une peau éclatante sans les efforts ? Nous avons le secret ! Notre institut de beauté Éclat Beauté vous propose des soins premium adaptés à votre peau. Essayez notre soin visage éclat, seul ou en combinaison avec d'autres traitements, pour révéler votre beauté naturelle. Réservez dès maintenant sur WhatsApp !",
       "format": "Reel",
       "reseau": "TikTok",
-      "prompt_image": "Une femme africaine avec une peau radieuse et éclatante, souriante, sur un fond abstrait rose et or (#D4AF37)",
+      "prompt_image": "Une femme souriante avec une peau lumineuse, un écran divisé montrant les 3 étapes du soin éclat, les couleurs #D4AF37 et #0A1F44 en fond",
       "variantes": [
-        "Transformez votre peau en quelques séances !"
+        "Quelle est votre routine actuelle pour une peau éclatante ?"
       ]
     },
     {
-      "hook": "Le jour J approche, êtes-vous prête à briller ?",
-      "script": "Fatou, future mariée, veut un teint parfait pour son grand jour. Nous proposons un forfait mariée incluant 3 séances de soins personnalisés pour 75 000 FCFA. Réservez vos séances dès maintenant et vivez votre rêve !",
+      "hook": "Préparez-vous pour le grand jour avec notre forfait mariée !",
+      "script": "Fatou, future mariée, vous voulez être absolument parfaite pour votre jour J ? Notre forfait mariée est conçu spécialement pour vous ! 3 séances de soins personnalisés pour un teint sublime. Demandez plus d'infos et réservez dès aujourd'hui !",
       "format": "Carrousel",
       "reseau": "Instagram",
-      "prompt_image": "Une mariée africaine avec un teint parfait, souriante, sur un fond de fleurs blanches (#0A1F44)",
+      "prompt_image": "Une photo d'unefuture mariée avec un teint radieux, une image divisée montrant les étapes du forfait, utilisant les couleurs de la charte #D4AF37 et #0A1F44",
       "variantes": [
-        "Préparez-vous à être la plus belle version de vous-même le jour J !"
+        "Quels sont vos secrets pour une peau parfaite le jour de votre mariage ? Partagez avec nous !"
       ]
     },
     {
-      "hook": "Quel est votre secret pour une peau éclatante ? Partagez avec nous !",
-      "script": "Chez Éclat Beauté, nous croyons que chaque femme a sa propre définition de la beauté. Partagez vos routines de soin et astuces pour avoir une peau éclatante ! Utilisez #ÉclatBeauté pour être repéré et découvrir les secrets de beauté des autres !",
-      "format": "Post",
+      "hook": "Manque de temps ? Notre soin visage éclat est Made For You !",
+      "script": "Aïcha, vous êtes active, vous avez besoin d'un soin qui correspond à votre rythme de vie ? Notre soin visage éclat est la solution ! Rapide et efficace, pour une peau qui éclate de santé. Réservez maintenant et prenez soin de vous !",
+      "format": "Short",
       "reseau": "Facebook",
-      "prompt_image": "Un miroir avec des products de soin et une fleur sur le côté, sur un fond coloré pastel (#D4AF37)",
+      "prompt_image": "Une photo d'une jeune femme dynamique, souriante, avec un fond qui rappelle les couleurs de la charte (#D4AF37, #0A1F44) et un visage lumineux",
       "variantes": [
-        "Rejoignez notre communauté de femmes éclatantes et partagez vos conseils !"
+        "Comment gérez-vous votre temps pour prendre soin de votre peau ? Partagez vos astuces !"
       ]
     }
   ]

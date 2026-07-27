@@ -1,6 +1,6 @@
 {
   "agent": "stratege",
-  "genere_le": "2026-07-26T11:38:32+00:00",
+  "genere_le": "2026-07-27T16:03:37+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -15,50 +15,43 @@
       "jour": "Lundi",
       "heure": "19h",
       "format": "Reel",
-      "angle": "Soins de peau pour les peaux sensibles",
+      "angle": "Routine de soin pour la peau sèche",
       "reseau": "TikTok"
     },
     {
       "jour": "Mercredi",
       "heure": "12h",
       "format": "Carrousel",
-      "angle": "Présentation du forfait mariée avec conseils de beauté",
+      "angle": "Avant/Après de nos soins de visage",
       "reseau": "Instagram"
     },
     {
       "jour": "Jeudi",
       "heure": "19h",
-      "format": "Reel",
-      "angle": "Routine de soins pour une peau éclatante",
+      "format": "Photo",
+      "angle": "Présentation de notre nouveau produit pour les peaux sensibles",
       "reseau": "TikTok"
     },
     {
       "jour": "Vendredi",
       "heure": "15h",
-      "format": "Photo",
-      "angle": "Avant/Après d'un soin visage éclat avec témoignage",
-      "reseau": "Instagram"
+      "format": "Reel",
+      "angle": "Conseils pour une routine de soin simple et efficace",
+      "reseau": "TikTok"
     },
     {
       "jour": "Samedi",
-      "heure": "12h",
-      "format": "Reel",
-      "angle": "Conseils pour une peau parfaite en 3 étapes faciles",
-      "reseau": "TikTok"
+      "heure": "18h",
+      "format": "Carrousel",
+      "angle": "Présentation de notre forfait mariée",
+      "reseau": "Instagram"
     },
     {
       "jour": "Dimanche",
-      "heure": "18h",
-      "format": "Carrousel",
-      "angle": "Présentation des produits adaptés à la peau africaine",
+      "heure": "12h",
+      "format": "Photo",
+      "angle": "Notre équipe vous souhaite un excellent dimanche",
       "reseau": "Facebook"
-    },
-    {
-      "jour": "Mardi",
-      "heure": "19h",
-      "format": "Reel",
-      "angle": "Témoignages de clientes satisfaites",
-      "reseau": "TikTok"
     }
   ],
   "cadence_recommandee": "3 publications/semaine",
@@ -67,8 +60,8 @@
     "Samedi 15h"
   ],
   "objectifs": [
-    "Augmenter de 20% les engagements sur les publications sur TikTok",
-    "Accroître la portée des publications Instagram de 15%",
-    "Maintenir un taux d'engagement moyen de 4% sur toutes les plateformes"
+    "Augmenter le taux d'engagement de 10% sur les réseaux sociaux",
+    "Accroître la portée des publications de 20% sur TikTok et Instagram",
+    "Améliorer le nombre de réservations via WhatsApp de 15% en un mois"
   ]
 }

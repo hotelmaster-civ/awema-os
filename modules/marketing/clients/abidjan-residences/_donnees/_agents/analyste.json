@@ -1,6 +1,6 @@
 {
   "agent": "analyste",
-  "genere_le": "2026-07-26T11:37:07+00:00",
+  "genere_le": "2026-07-27T16:02:52+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -12,60 +12,60 @@
   "items": [
     {
       "type": "insight",
-      "titre": "Présence dominante sur TikTok",
-      "explication": "La présence de Abidjan résidences est la plus forte sur TikTok, avec 4198 abonnés et 51 posts publiés.",
+      "titre": "TikTok est le réseau le plus performant",
+      "explication": "Les données montrent que TikTok est le seul réseau sur lequel Abidjan résidences a une présence avec des métriques disponibles.",
       "preuve": {
-        "metrique": "abonnés",
-        "valeur": 4198
+        "metrique": "abonnes",
+        "valeur": 4200
       }
     },
     {
       "type": "insight",
-      "titre": "Top post très performant",
-      "explication": "Le top post '#collage avec @Tdfmanga decouvrez un animé 100% ivoirien par @Cénack  « placman »' a obtenu 8919 likes et 32668 vues.",
+      "titre": "Le contenu vidéo est le plus populaire",
+      "explication": "Les posts les plus aimés et les plus vus sont des vidéos.",
       "preuve": {
         "metrique": "likes",
-        "valeur": 8919
+        "valeur": 8920
       }
     },
     {
       "type": "reco",
-      "titre": "Publier du contenu régulièrement",
-      "explication": "Il est essentiel de publier du contenu régulièrement pour maintenir l'engagement de la communauté.",
+      "titre": "Publier de nouveaux contenus régulièrement",
+      "explication": "La derniere publication date de plus de 44 jours.",
       "preuve": {
-        "metrique": "jours_depuis_dernier_post",
-        "valeur": 37
+        "metrique": "jours_depuis",
+        "valeur": 44
       },
-      "action": "Publier au moins un post par semaine"
+      "action": "Publiez au moins un nouveau contenu par semaine pour maintenir l'engagement de vos abonnés."
     },
     {
       "type": "reco",
-      "titre": " Utiliser le créneau horaire optimal",
-      "explication": "Le créneau horaire optimal pour publier du contenu sur TikTok est le vendredi à 14h.",
+      "titre": "Publier à l'heure la plus propice",
+      "explication": "Les données suggèrent que publier le vendredi à 14h est la meilleure stratégie.",
       "preuve": {
-        "metrique": "heure_de_publication_recommandee",
-        "valeur": "14h"
+        "metrique": "jour",
+        "valeur": "Vendredi"
       },
-      "action": "Publier du contenu le vendredi à 14h"
+      "action": "Planifiez vos publications sur TikTok pour qu'elles soient publiées le vendredi à 14h pour maximiser la visibilité et l'engagement."
     },
     {
       "type": "insight",
-      "titre": "Type de contenu préféré",
-      "explication": "Les utilisateurs préfèrent les vidéos, qui représentent la majorité des posts publiés.",
+      "titre": "L'audience est stable",
+      "explication": "L'évolution de l'audience montre une stabilité sur les dernières semaines.",
       "preuve": {
-        "metrique": "type_de_contenu",
-        "valeur": "vidéo"
+        "metrique": "valeur",
+        "valeur": 4200
       }
     },
     {
       "type": "reco",
-      "titre": "Produire plus de vidéos",
-      "explication": "Les vidéos sont les contenus les plus populaires, il est donc recommandé d'en produire davantage.",
+      "titre": "Analyser les types de contenu les plus efficaces",
+      "explication": "Il est important d'identifier les types de contenu qui fonctionnent le mieux pour ajuster la stratégie de publication.",
       "preuve": {
-        "metrique": "type_de_contenu",
-        "valeur": "vidéo"
+        "metrique": "likes_total",
+        "valeur": 21844
       },
-      "action": "Produire au moins une vidéo par semaine"
+      "action": "Étudiez les performances des différents types de contenu (vidéo, photo, etc.) pour comprendre ce que préfèrent vos abonnés et ajuster votre stratégie de contenu en conséquence."
     }
   ]
 }

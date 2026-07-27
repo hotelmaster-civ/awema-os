@@ -1,6 +1,6 @@
 {
   "agent": "creatif",
-  "genere_le": "2026-07-26T11:38:36+00:00",
+  "genere_le": "2026-07-27T16:03:59+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -11,33 +11,36 @@
   },
   "items": [
     {
-      "hook": "Découvrez les résidences les plus tendances d'Abidjan !",
-      "script": " Vous cherchez un endroit pour vous installer à Abidjan ? Nous vous présentons les résidences les plus tendances de la ville ! De Yopougon à Bassam, découvrez les meilleures adresses pour vivre, travailler et vous détendre. Abonnez-vous pour découvrir nos prochaines résidences à découvrir !",
+      "hook": "Découvrez le secret pour un séjour calme à Abidjan !",
+      "script": "Vous cherchez un endroit pour vous détendre à Abidjan ? Nous vous proposons une solution idéale pour un séjour calme et relaxant. Découvrez notre sélection de résidences et faites votre choix !",
       "format": "Reel",
       "reseau": "TikTok",
-      "prompt_image": "Un drone survolant les résidences d'Abidjan avec des tags sur les bâtiments les plus emblématiques",
+      "prompt_image": "Une photo d'une résidence calme et élégante avec un jardin tropical à Abidjan",
       "variantes": [
-        "Les résidences d'Abidjan qui feront votre bonheur !"
+        "Échappez au stress de la ville avec nos résidences calmes à Abidjan",
+        "Trouvez votre havre de paix à Abidjan avec nos résidences de luxe"
       ]
     },
     {
-      "hook": "Vous rêvez d'une résidence idéale à Abidjan ?",
-      "script": " Nous vous présentons les résidences qui répondent à vos besoins ! De la sécurité à la proximité des commodités, nous avons tout ce qu'il faut pour vous aider à trouver votre havre de paix. Découvrez-les maintenant et faites votre choix !",
+      "hook": "Explorez les merveilles d'Abidjan avec nous !",
+      "script": "Vous souhaitez découvrir les secrets et les merveilles de la ville d'Abidjan ? Suivez-nous pour des aventures inoubliables et des découvertes exclusives dans les résidences les plus élégantes de la ville !",
       "format": "Carrousel",
-      "reseau": "Instagram",
-      "prompt_image": "Un visuel d'une résidence avec des flèches pointant vers les différentes commodités aux alentours",
+      "reseau": "TikTok",
+      "prompt_image": "Une série de photos montrant différents aspects de la vie à Abidjan, comme les marchés, les plages et les résidences luxueuses",
       "variantes": [
-        "Trouvez votre résidence idéale à Abidjan dès aujourd'hui !"
+        "Abidjan, la ville qui a tout à offrir !",
+        "Découvrez l'autre visage d'Abidjan avec nous"
       ]
     },
     {
-      "hook": "Quelle est la résidence la plus tendance d'Abidjan ?",
-      "script": " Nous vous présentons la résidence la plus tendance d'Abidjan ! Avec ses équipements modernes et son emplacement idéal, cette résidence est le lieu de rêve pour tous les amoureux de la ville. Venez la découvrir et vous verrez pourquoi elle est la préférée de tant de personnes !",
+      "hook": "Partagez vos impressions sur Abidjan !",
+      "script": "Vous avez déjà visité Abidjan ou vous y résidez ? Partagez avec nous vos impressions, vos expériences et vos conseils pour que d'autres puissent en profiter !",
       "format": "Short",
       "reseau": "TikTok",
-      "prompt_image": "Un visuel de la résidence la plus tendance avec des émojis pour mettre en valeur ses atouts",
+      "prompt_image": "Une photo de quelqu'un qui partage son expérience à Abidjan, avec un fond de ville animée",
       "variantes": [
-        "La résidence qui fait rêver à Abidjan !"
+        "Qu'est-ce que vous aimez le plus à Abidjan ?",
+        "Partagez vos secrets pour profiter d'Abidjan comme un local"
       ]
     }
   ]

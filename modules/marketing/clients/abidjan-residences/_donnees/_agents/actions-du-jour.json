@@ -1,6 +1,6 @@
 {
   "agent": "actions-du-jour",
-  "genere_le": "2026-07-26T11:39:05+00:00",
+  "genere_le": "2026-07-27T16:04:30+00:00",
   "modele": "agrégation (sans IA)",
   "provenance": {
     "client": "abidjan-residences",
@@ -10,7 +10,7 @@
     {
       "priorite": 1,
       "type": "alerte",
-      "titre": "Cadence en retard — 37 j sans publier",
+      "titre": "Cadence en retard — 44 j sans publier",
       "detail": "La régularité nourrit l'algorithme. Publie aujourd'hui.",
       "source": "cadence",
       "action": {
@@ -22,8 +22,8 @@
     {
       "priorite": 2,
       "type": "reco",
-      "titre": "Publier du contenu régulièrement",
-      "detail": "Publier au moins un post par semaine",
+      "titre": "Publier de nouveaux contenus régulièrement",
+      "detail": "Publiez au moins un nouveau contenu par semaine pour maintenir l'engagement de vos abonnés.",
       "source": "analyste",
       "action": {
         "label": "Voir l'analyse",
@@ -34,7 +34,7 @@
     {
       "priorite": 2,
       "type": "plan",
-      "titre": "Publie : Découverte d'un nouvel espace de détente à Abidjan",
+      "titre": "Publie : Présentation d'une résidence à Abidjan",
       "detail": "TikTok · Vidéo · Lundi",
       "source": "stratege",
       "action": {
@@ -46,7 +46,7 @@
     {
       "priorite": 3,
       "type": "creatif",
-      "titre": "Idée prête : Découvrez les résidences les plus tendances d'Abidjan !",
+      "titre": "Idée prête : Découvrez le secret pour un séjour calme à Abidjan !",
       "detail": "TikTok · Reel",
       "source": "creatif",
       "action": {

@@ -1,6 +1,6 @@
 {
   "agent": "analyste",
-  "genere_le": "2026-07-26T11:37:19+00:00",
+  "genere_le": "2026-07-27T16:02:54+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -13,8 +13,8 @@
   "items": [
     {
       "type": "insight",
-      "titre": "Présence dominante sur TikTok",
-      "explication": "Les données montrent que TikTok est le réseau social où Éclat Beauté a la plus forte présence, avec le plus grand nombre d'abonnés et de likes.",
+      "titre": "TikTok, principal réseau de croissance",
+      "explication": "TikTok montre un taux d'engagement exceptionnel avec des likes et des vues importants, surpassant les autres plateformes.",
       "preuve": {
         "metrique": "likes",
         "valeur": 88000,
@@ -23,9 +23,20 @@
       "action": null
     },
     {
+      "type": "reco",
+      "titre": "Augmenter la présence sur TikTok",
+      "explication": "Publier plus régulièrement sur TikTok pour maintenir et accrû l'engagement.",
+      "preuve": {
+        "metrique": "posts",
+        "valeur": 40,
+        "variation": null
+      },
+      "action": "Publier 2 nouveaux contenus par semaine sur TikTok"
+    },
+    {
       "type": "insight",
-      "titre": "Contenu vidéo performant",
-      "explication": "Les Reels et les Carrousels génèrent un engagement moyen élevé, respectivement 520 et 310.",
+      "titre": "Contenu le plus performant : Reels et Carrousels",
+      "explication": "Les Reels et les Carrousels obtiennent les meilleurs engagements moyens sur les plateformes.",
       "preuve": {
         "metrique": "engagement_moyen",
         "valeur": 520,
@@ -35,47 +46,36 @@
     },
     {
       "type": "reco",
-      "titre": "Publier régulièrement sur TikTok",
-      "explication": "Pour maintenir l'engagement élevé, il est recommandé de publier au moins 2 fois par semaine sur TikTok.",
+      "titre": "Créer plus de Reels et Carrousels",
+      "explication": "Investir dans la création de contenus visuels sous forme de Reels et Carrousels pour améliorer l'engagement global.",
       "preuve": {
-        "metrique": "posts_par_semaine",
-        "valeur": 2,
+        "metrique": "engagement_moyen",
+        "valeur": 520,
         "variation": null
       },
-      "action": "Publier 2 à 3 contenus par semaine sur TikTok pour maintenir l'engagement"
-    },
-    {
-      "type": "reco",
-      "titre": "Répondre aux commentaires et messages",
-      "explication": "Il est essentiel de répondre aux questions des clients pour maintenir une relation positive et fidéliser la clientèle.",
-      "preuve": {
-        "metrique": "a_repondre",
-        "valeur": 5,
-        "variation": null
-      },
-      "action": "Répondre à tous les commentaires et messages dans les 24 heures"
+      "action": "Produire 3 nouveaux Reels et 2 Carrousels cette semaine"
     },
     {
       "type": "insight",
-      "titre": "Évolution positive de l'audience",
-      "explication": "L'audience d'Éclat Beauté a augmenté régulièrement au fil du temps, avec une valeur actuelle de 23 500.",
+      "titre": "Réponse aux commentaires et messages",
+      "explication": "Il existe des messages et commentaires sans réponses, il est crucial de répondre pour améliorer l'expérience client.",
       "preuve": {
-        "metrique": "audience",
-        "valeur": 23500,
+        "metrique": "a_repondre",
+        "valeur": 5,
         "variation": null
       },
       "action": null
     },
     {
       "type": "reco",
-      "titre": "Utiliser les créneaux horaires recommandés",
-      "explication": "Publier à des moments stratégiques comme le jeudi à 19h peut augmenter l'engagement.",
+      "titre": "Répondre aux messages et commentaires en attente",
+      "explication": "Répondre à tous les messages et commentaires pour améliorer la satisfaction client et maintenir une image positive.",
       "preuve": {
-        "metrique": "meilleur_creneau",
-        "valeur": "Jeudi 19h",
+        "metrique": "a_repondre",
+        "valeur": 5,
         "variation": null
       },
-      "action": "Planifier les publications pour le jeudi à 19h pour maximiser l'engagement"
+      "action": "Répondre à tous les messages et commentaires en attente avant la fin de la semaine"
     }
   ]
 }
