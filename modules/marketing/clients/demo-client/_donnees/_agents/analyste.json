@@ -1,6 +1,6 @@
 {
   "agent": "analyste",
-  "genere_le": "2026-07-27T16:02:54+00:00",
+  "genere_le": "2026-07-28T12:27:26+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -13,69 +13,61 @@
   "items": [
     {
       "type": "insight",
-      "titre": "TikTok, principal réseau de croissance",
-      "explication": "TikTok montre un taux d'engagement exceptionnel avec des likes et des vues importants, surpassant les autres plateformes.",
+      "titre": "TikTok, réseau le plus performant",
+      "explication": "Le réseau TikTok génère le plus d'engagement avec 88 000 likes, soit plus de 90% des likes totaux.",
       "preuve": {
         "metrique": "likes",
         "valeur": 88000,
-        "variation": null
-      },
-      "action": null
+        "variation": "93% des likes totaux"
+      }
     },
     {
       "type": "reco",
-      "titre": "Augmenter la présence sur TikTok",
-      "explication": "Publier plus régulièrement sur TikTok pour maintenir et accrû l'engagement.",
+      "titre": "Publier plus de contenu sur TikTok",
+      "explication": "Étant donné la performance exceptionnelle de TikTok, il est recommandé d'augmenter la fréquence de publication sur cette plateforme.",
       "preuve": {
         "metrique": "posts",
-        "valeur": 40,
-        "variation": null
+        "valeur": 40
       },
-      "action": "Publier 2 nouveaux contenus par semaine sur TikTok"
+      "action": "Publier 2 fois par semaine sur TikTok"
     },
     {
       "type": "insight",
-      "titre": "Contenu le plus performant : Reels et Carrousels",
-      "explication": "Les Reels et les Carrousels obtiennent les meilleurs engagements moyens sur les plateformes.",
+      "titre": "Types de contenu Reel et Carrousel très performants",
+      "explication": "Les types de contenu Reel et Carrousel génèrent respectivement 520 et 310 likes en moyenne par publication, contre 140 pour les Photos.",
       "preuve": {
         "metrique": "engagement_moyen",
-        "valeur": 520,
-        "variation": null
-      },
-      "action": null
+        "valeur": 520
+      }
     },
     {
       "type": "reco",
-      "titre": "Créer plus de Reels et Carrousels",
-      "explication": "Investir dans la création de contenus visuels sous forme de Reels et Carrousels pour améliorer l'engagement global.",
+      "titre": "Créer plus de contenus Reel et Carrousel",
+      "explication": "Les formats Reel et Carrousel génèrent plus d'engagement que les Photos. Il est donc conseillé d'en créer davantage.",
       "preuve": {
         "metrique": "engagement_moyen",
-        "valeur": 520,
-        "variation": null
+        "valeur": 520
       },
-      "action": "Produire 3 nouveaux Reels et 2 Carrousels cette semaine"
+      "action": "Créer au moins 2 Reel et 1 Carrousel par mois"
     },
     {
       "type": "insight",
-      "titre": "Réponse aux commentaires et messages",
-      "explication": "Il existe des messages et commentaires sans réponses, il est crucial de répondre pour améliorer l'expérience client.",
+      "titre": "Top commentateurs engagés",
+      "explication": "Les utilisateurs Mariam K., Awa D. et Grace T. sont très actifs avec respectivement 12, 9 et 7 commentaires.",
       "preuve": {
-        "metrique": "a_repondre",
-        "valeur": 5,
-        "variation": null
-      },
-      "action": null
+        "metrique": "commentaires",
+        "valeur": 12
+      }
     },
     {
       "type": "reco",
-      "titre": "Répondre aux messages et commentaires en attente",
-      "explication": "Répondre à tous les messages et commentaires pour améliorer la satisfaction client et maintenir une image positive.",
+      "titre": "Interagir avec les top commentateurs",
+      "explication": "Il est recommandé de répondre aux commentaires et messages de ces utilisateurs pour renforcer l'engagement et la loyauté.",
       "preuve": {
-        "metrique": "a_repondre",
-        "valeur": 5,
-        "variation": null
+        "metrique": "commentaires",
+        "valeur": 12
       },
-      "action": "Répondre à tous les messages et commentaires en attente avant la fin de la semaine"
+      "action": "Répondre aux commentaires de Mariam K., Awa D. et Grace T. dans les 24 heures"
     }
   ]
 }

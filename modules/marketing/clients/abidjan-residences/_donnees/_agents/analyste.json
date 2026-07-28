@@ -1,6 +1,6 @@
 {
   "agent": "analyste",
-  "genere_le": "2026-07-27T16:02:52+00:00",
+  "genere_le": "2026-07-28T12:27:15+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -12,17 +12,17 @@
   "items": [
     {
       "type": "insight",
-      "titre": "TikTok est le réseau le plus performant",
-      "explication": "Les données montrent que TikTok est le seul réseau sur lequel Abidjan résidences a une présence avec des métriques disponibles.",
+      "titre": "Performance sur TikTok",
+      "explication": "La plateforme TikTok seems to be the most active and engaging platform for Abidjan résidences, avec un nombre important de likes et de vues.",
       "preuve": {
-        "metrique": "abonnes",
-        "valeur": 4200
+        "metrique": "likes_total",
+        "valeur": 9482
       }
     },
     {
       "type": "insight",
-      "titre": "Le contenu vidéo est le plus populaire",
-      "explication": "Les posts les plus aimés et les plus vus sont des vidéos.",
+      "titre": "Top post performant",
+      "explication": "Le top post le plus performant est #collage avec @Tdfmanga decouvrez un animé 100% ivoirien par @Cénack « placman », avec 8920 likes et 32699 vues.",
       "preuve": {
         "metrique": "likes",
         "valeur": 8920
@@ -30,28 +30,28 @@
     },
     {
       "type": "reco",
-      "titre": "Publier de nouveaux contenus régulièrement",
-      "explication": "La derniere publication date de plus de 44 jours.",
+      "titre": "Augmenter la fréquence de publication",
+      "explication": "Il est recommandé d'augmenter la fréquence de publication sur TikTok pour maintenir l'engagement de l'audience.",
       "preuve": {
         "metrique": "jours_depuis",
         "valeur": 44
       },
-      "action": "Publiez au moins un nouveau contenu par semaine pour maintenir l'engagement de vos abonnés."
+      "action": "Publier au moins un post par semaine sur TikTok."
     },
     {
       "type": "reco",
-      "titre": "Publier à l'heure la plus propice",
-      "explication": "Les données suggèrent que publier le vendredi à 14h est la meilleure stratégie.",
+      "titre": "Utiliser les heures de publication optimales",
+      "explication": "Il est recommandé de publier des contenus à des heures où l'audience est la plus active, comme le vendredi à 14h.",
       "preuve": {
-        "metrique": "jour",
-        "valeur": "Vendredi"
+        "metrique": "heure",
+        "valeur": "14h"
       },
-      "action": "Planifiez vos publications sur TikTok pour qu'elles soient publiées le vendredi à 14h pour maximiser la visibilité et l'engagement."
+      "action": "Planifier les publications pour le vendredi à 14h sur TikTok."
     },
     {
       "type": "insight",
-      "titre": "L'audience est stable",
-      "explication": "L'évolution de l'audience montre une stabilité sur les dernières semaines.",
+      "titre": "Croissance de l'audience",
+      "explication": "L'audience d'Abidjan résidences est en légère croissance, avec une augmentation de 2 abonnés au cours des dernières semaines.",
       "preuve": {
         "metrique": "valeur",
         "valeur": 4200
@@ -59,13 +59,13 @@
     },
     {
       "type": "reco",
-      "titre": "Analyser les types de contenu les plus efficaces",
-      "explication": "Il est important d'identifier les types de contenu qui fonctionnent le mieux pour ajuster la stratégie de publication.",
+      "titre": "Diversifier les types de contenu",
+      "explication": "Il est recommandé de diversifier les types de contenu pour attirer et retenir l'attention de l'audience.",
       "preuve": {
-        "metrique": "likes_total",
-        "valeur": 21844
+        "metrique": "type",
+        "valeur": "vidéo"
       },
-      "action": "Étudiez les performances des différents types de contenu (vidéo, photo, etc.) pour comprendre ce que préfèrent vos abonnés et ajuster votre stratégie de contenu en conséquence."
+      "action": "Créer et publier des contenus de types variés (photos, histoires, direct, etc.) sur TikTok."
     }
   ]
 }

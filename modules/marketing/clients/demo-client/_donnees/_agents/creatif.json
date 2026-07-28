@@ -1,6 +1,6 @@
 {
   "agent": "creatif",
-  "genere_le": "2026-07-27T16:04:30+00:00",
+  "genere_le": "2026-07-28T12:29:33+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -12,33 +12,33 @@
   },
   "items": [
     {
-      "hook": "Découvrez le secret d'une peau éclatante en 3 étapes !",
-      "script": "Vous rêvez d'une peau éclatante sans les efforts ? Nous avons le secret ! Notre institut de beauté Éclat Beauté vous propose des soins premium adaptés à votre peau. Essayez notre soin visage éclat, seul ou en combinaison avec d'autres traitements, pour révéler votre beauté naturelle. Réservez dès maintenant sur WhatsApp !",
+      "hook": "Découvrez le secret d'une peau éclatante en quelques étapes !",
+      "script": "Vous rêvez d'une peau parfaite ? Notre soin visage éclat est la solution idéale ! Découvrez comment obtenir une peau éclatante en quelques étapes avec nos produits adaptés à la peau africaine. Réservation via WhatsApp, 48h à l'avance idéalement. Prix : 15 000 FCFA. Nous sommes là pour vous aider à révéler votre beauté naturelle !",
       "format": "Reel",
       "reseau": "TikTok",
-      "prompt_image": "Une femme souriante avec une peau lumineuse, un écran divisé montrant les 3 étapes du soin éclat, les couleurs #D4AF37 et #0A1F44 en fond",
+      "prompt_image": "Une femme avec une peau éclatante, souriante, avec des fleurs de beauté autour d'elle, sur fond #D4AF37",
       "variantes": [
-        "Quelle est votre routine actuelle pour une peau éclatante ?"
+        "Obtenez la peau parfaite pour le grand jour avec notre forfait mariée !"
       ]
     },
     {
-      "hook": "Préparez-vous pour le grand jour avec notre forfait mariée !",
-      "script": "Fatou, future mariée, vous voulez être absolument parfaite pour votre jour J ? Notre forfait mariée est conçu spécialement pour vous ! 3 séances de soins personnalisés pour un teint sublime. Demandez plus d'infos et réservez dès aujourd'hui !",
+      "hook": "Prête à briller pour le jour J ?",
+      "script": "Vous vous mariez bientôt ? Notre forfait mariée est conçu pour vous donner une peau parfaite pour votre grand jour ! 3 séances avant le jour J pour un teint naturel et éclatant. Réservation via WhatsApp. Prix : 75 000 FCFA. Nous sommes là pour vous aider à révéler votre beauté naturelle !",
       "format": "Carrousel",
       "reseau": "Instagram",
-      "prompt_image": "Une photo d'unefuture mariée avec un teint radieux, une image divisée montrant les étapes du forfait, utilisant les couleurs de la charte #D4AF37 et #0A1F44",
+      "prompt_image": "Une future mariée heureuse, avec une peau éclatante, sur fond #0A1F44, avec des détails de fleurs et de décor de mariage",
       "variantes": [
-        "Quels sont vos secrets pour une peau parfaite le jour de votre mariage ? Partagez avec nous !"
+        "Rêvez d'une peau parfaite pour votre mariage ? Nous avons la solution !"
       ]
     },
     {
-      "hook": "Manque de temps ? Notre soin visage éclat est Made For You !",
-      "script": "Aïcha, vous êtes active, vous avez besoin d'un soin qui correspond à votre rythme de vie ? Notre soin visage éclat est la solution ! Rapide et efficace, pour une peau qui éclate de santé. Réservez maintenant et prenez soin de vous !",
+      "hook": "Besoin d'un conseil pour une peau éclatante ?",
+      "script": "Vous avez des questions sur les soins de la peau ? Nous sommes là pour vous aider ! Découvrez nos conseils et astuces pour obtenir une peau éclatante et naturelle. Réservation et informations via WhatsApp. Nous sommes à votre écoute pour vous aider à révéler votre beauté naturelle !",
       "format": "Short",
       "reseau": "Facebook",
-      "prompt_image": "Une photo d'une jeune femme dynamique, souriante, avec un fond qui rappelle les couleurs de la charte (#D4AF37, #0A1F44) et un visage lumineux",
+      "prompt_image": "Une femme heureuse, avec une peau éclatante, en train de discuter avec une experte en beauté, sur fond #D4AF37",
       "variantes": [
-        "Comment gérez-vous votre temps pour prendre soin de votre peau ? Partagez vos astuces !"
+        "Vous voulez une peau éclatante mais vous ne savez pas par où commencer ?"
       ]
     }
   ]

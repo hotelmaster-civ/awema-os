@@ -1,6 +1,6 @@
 {
   "agent": "actions-du-jour",
-  "genere_le": "2026-07-27T16:04:30+00:00",
+  "genere_le": "2026-07-28T12:29:33+00:00",
   "modele": "agrégation (sans IA)",
   "provenance": {
     "client": "demo-client",
@@ -34,8 +34,8 @@
     {
       "priorite": 2,
       "type": "reco",
-      "titre": "Augmenter la présence sur TikTok",
-      "detail": "Publier 2 nouveaux contenus par semaine sur TikTok",
+      "titre": "Publier plus de contenu sur TikTok",
+      "detail": "Publier 2 fois par semaine sur TikTok",
       "source": "analyste",
       "action": {
         "label": "Voir l'analyse",
@@ -46,7 +46,7 @@
     {
       "priorite": 2,
       "type": "plan",
-      "titre": "Publie : Routine de soin pour la peau sèche",
+      "titre": "Publie : Conseils de soin de peau pour les jours chargés",
       "detail": "TikTok · Reel · Lundi",
       "source": "stratege",
       "action": {
@@ -70,7 +70,7 @@
     {
       "priorite": 3,
       "type": "creatif",
-      "titre": "Idée prête : Découvrez le secret d'une peau éclatante en 3 étapes !",
+      "titre": "Idée prête : Découvrez le secret d'une peau éclatante en quelques étapes !",
       "detail": "TikTok · Reel",
       "source": "creatif",
       "action": {

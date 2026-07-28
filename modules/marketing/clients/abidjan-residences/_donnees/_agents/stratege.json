@@ -1,6 +1,6 @@
 {
   "agent": "stratege",
-  "genere_le": "2026-07-27T16:03:26+00:00",
+  "genere_le": "2026-07-28T12:27:47+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -14,59 +14,45 @@
       "jour": "Lundi",
       "heure": "14h",
       "format": "Vidéo",
-      "angle": "Présentation d'une résidence à Abidjan",
+      "angle": "Découvrez les résidences d'Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Mercredi",
       "heure": "14h",
       "format": "Vidéo",
-      "angle": "Découverte d'un quartier d'Abidjan",
+      "angle": "Les avantages de vivre à Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Vendredi",
       "heure": "14h",
       "format": "Vidéo",
-      "angle": "Promotion d'une résidence à Yopougon",
+      "angle": "Les meilleurs quartiers d'Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Samedi",
       "heure": "14h",
       "format": "Vidéo",
-      "angle": "Détente et séjour calme à Abidjan",
+      "angle": "Les activités à faire à Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Dimanche",
       "heure": "14h",
       "format": "Vidéo",
-      "angle": "Partage d'expériences à Abidjan",
-      "reseau": "TikTok"
-    },
-    {
-      "jour": "Mardi",
-      "heure": "14h",
-      "format": "Vidéo",
-      "angle": "Présentation d'un nouveau projet immobilier",
-      "reseau": "TikTok"
-    },
-    {
-      "jour": "Jeudi",
-      "heure": "14h",
-      "format": "Vidéo",
-      "angle": "Découverte de la culture ivoirienne",
+      "angle": "Les événements à venir à Abidjan",
       "reseau": "TikTok"
     }
   ],
-  "cadence_recommandee": "3 publications/semaine",
+  "cadence_recommandee": "4 publications/semaine",
   "meilleures_heures": [
     "Vendredi 14h"
   ],
   "objectifs": [
-    "Augmenter la portée de 10% sur TikTok",
-    "Accroître l'engagement de 15% sur les publications",
-    "Maintenir une audience moyenne de 4200 abonnés sur TikTok"
+    "Augmenter l'engagement sur TikTok de 20%",
+    "Atteindre 5000 vues sur les publications de la semaine",
+    "Augmenter le nombre de followers de 5%"
   ]
 }

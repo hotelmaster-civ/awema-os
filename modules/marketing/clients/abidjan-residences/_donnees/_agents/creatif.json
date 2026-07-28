@@ -1,6 +1,6 @@
 {
   "agent": "creatif",
-  "genere_le": "2026-07-27T16:03:59+00:00",
+  "genere_le": "2026-07-28T12:29:00+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -11,36 +11,33 @@
   },
   "items": [
     {
-      "hook": "Découvrez le secret pour un séjour calme à Abidjan !",
-      "script": "Vous cherchez un endroit pour vous détendre à Abidjan ? Nous vous proposons une solution idéale pour un séjour calme et relaxant. Découvrez notre sélection de résidences et faites votre choix !",
+      "hook": "Découvrez les secrets de la résidence idéale à Abidjan !",
+      "script": "Vous cherchez un endroit où vous pouvez vous détendre et vous ressourcer ? Nous avons ce qu'il vous faut ! Découvrez nos résidences luxueuses et modernes à Abidjan, conçues pour offrir le confort et la tranquillité dont vous avez besoin. De plus, nous vous offrons des tips et des astuces pour améliorer votre expérience de vie à Abidjan ! Inscrivez-vous maintenant et devenez partie de notre communauté #AbidjanResidences #ResidenceIdeale #Detente",
       "format": "Reel",
       "reseau": "TikTok",
-      "prompt_image": "Une photo d'une résidence calme et élégante avec un jardin tropical à Abidjan",
+      "prompt_image": "Une photo d'une belle résidence à Abidjan avec une piscine et un jardin tropical",
       "variantes": [
-        "Échappez au stress de la ville avec nos résidences calmes à Abidjan",
-        "Trouvez votre havre de paix à Abidjan avec nos résidences de luxe"
+        "Reveillez vos sens avec nos résidences de rêve à Abidjan !"
       ]
     },
     {
-      "hook": "Explorez les merveilles d'Abidjan avec nous !",
-      "script": "Vous souhaitez découvrir les secrets et les merveilles de la ville d'Abidjan ? Suivez-nous pour des aventures inoubliables et des découvertes exclusives dans les résidences les plus élégantes de la ville !",
+      "hook": "Vous voulez gagner une nuit gratuite dans l'une de nos résidences à Abidjan ?",
+      "script": "Participez à notre concours et vous pourriez gagner une nuit gratuite dans l'une de nos résidences luxueuses à Abidjan ! Pour participer, il suffit de suivre nos comptes sur les réseaux sociaux et de partager ce post avec vos amis. Un gagnant sera choisi aléatoirement et annoncé dans une semaine ! #Concours #AbidjanResidences #NuitGratuite",
+      "format": "Post",
+      "reseau": "Instagram",
+      "prompt_image": "Une photo d'une chambre luxueuse avec un lit king-size et un balcon avec vue sur la ville",
+      "variantes": [
+        "Gagnez une nuit gratuite dans notre résidence la plus luxueuse à Abidjan !"
+      ]
+    },
+    {
+      "hook": "Découvrez les meilleures adresses à Abidjan avec notre guide exclusif !",
+      "script": "Vous cherchez les meilleures adresses à Abidjan pour manger, boire et vous divertir ? Nous avons créé un guide exclusif pour vous aider à découvrir les secrets de la ville ! De plus, nous vous offrons des conseils et des astuces pour vous aider à naviguer dans la ville comme un local. Téléchargez notre guide maintenant et devenez un expert d'Abidjan ! #Abidjan #GuideExclusif #MeilleuresAdresses",
       "format": "Carrousel",
-      "reseau": "TikTok",
-      "prompt_image": "Une série de photos montrant différents aspects de la vie à Abidjan, comme les marchés, les plages et les résidences luxueuses",
+      "reseau": "Facebook",
+      "prompt_image": "Une photo d'un guide de voyage avec des icônes de restaurants, bars et monuments à Abidjan",
       "variantes": [
-        "Abidjan, la ville qui a tout à offrir !",
-        "Découvrez l'autre visage d'Abidjan avec nous"
-      ]
-    },
-    {
-      "hook": "Partagez vos impressions sur Abidjan !",
-      "script": "Vous avez déjà visité Abidjan ou vous y résidez ? Partagez avec nous vos impressions, vos expériences et vos conseils pour que d'autres puissent en profiter !",
-      "format": "Short",
-      "reseau": "TikTok",
-      "prompt_image": "Une photo de quelqu'un qui partage son expérience à Abidjan, avec un fond de ville animée",
-      "variantes": [
-        "Qu'est-ce que vous aimez le plus à Abidjan ?",
-        "Partagez vos secrets pour profiter d'Abidjan comme un local"
+        "Explorez Abidjan comme jamais avec notre guide exclusif !"
       ]
     }
   ]
