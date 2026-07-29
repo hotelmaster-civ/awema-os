@@ -1,6 +1,6 @@
 {
   "agent": "stratege",
-  "genere_le": "2026-07-28T12:28:19+00:00",
+  "genere_le": "2026-07-29T13:15:03+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -15,60 +15,60 @@
       "jour": "Lundi",
       "heure": "19h",
       "format": "Reel",
-      "angle": "Conseils de soin de peau pour les jours chargés",
+      "angle": "Routine peau grasse en 3 étapes",
       "reseau": "TikTok"
     },
     {
-      "jour": "Mercredi",
-      "heure": "14h",
+      "jour": "Mardi",
+      "heure": "12h",
       "format": "Carrousel",
-      "angle": "Avant/Après des soins éclat",
+      "angle": "Avant / Après soin éclat",
       "reseau": "Instagram"
+    },
+    {
+      "jour": "Mercredi",
+      "heure": "15h",
+      "format": "Photo",
+      "angle": "Conseils pour un teint parfait",
+      "reseau": "Facebook"
     },
     {
       "jour": "Jeudi",
       "heure": "19h",
       "format": "Reel",
-      "angle": "Routine peau grasse en 3 étapes",
+      "angle": "Démonstration d'un soin visage éclat",
       "reseau": "TikTok"
     },
     {
       "jour": "Vendredi",
-      "heure": "17h",
-      "format": "Photo",
-      "angle": "Présentation d'un nouveau produit pour peaux sensibles",
+      "heure": "18h",
+      "format": "Carrousel",
+      "angle": "Présentation du forfait mariée",
       "reseau": "Instagram"
     },
     {
       "jour": "Samedi",
-      "heure": "17h",
-      "format": "Reel",
-      "angle": "Testimoniale d'une cliente satisfaite",
+      "heure": "14h",
+      "format": "Short",
+      "angle": "Conseils pour un soin de soi efficace",
       "reseau": "TikTok"
     },
     {
       "jour": "Dimanche",
-      "heure": "10h",
-      "format": "Carrousel",
-      "angle": "Les bienfaits du forfait mariée",
+      "heure": "17h",
+      "format": "Photo",
+      "angle": "Présentation d'un nouveau produit",
       "reseau": "Facebook"
-    },
-    {
-      "jour": "Mardi",
-      "heure": "12h",
-      "format": "Short",
-      "angle": "Réponse à une question fréquente sur les réservations",
-      "reseau": "TikTok"
     }
   ],
-  "cadence_recommandee": "3 publications/semaine",
+  "cadence_recommandee": "4 publications/semaine",
   "meilleures_heures": [
-    "Jeudi 19h",
-    "Samedi 17h"
+    "Jeudi 19h"
   ],
   "objectifs": [
-    "Augmenter de 20% les interactions sur les publications",
-    "Attirer 500 nouveaux abonnés sur TikTok et Instagram dans les 6 semaines",
-    "Maintenir un taux d'engagement moyen de 3,5% sur toutes les publications"
+    "Augmenter le nombre de likes de 15% sur TikTok",
+    "Répondre à 100% des commentaires et messages sur les réseaux",
+    "Publier au moins 1 contenu de type Reel par semaine",
+    "Augmenter la portée des publications de 20% sur Instagram"
   ]
 }

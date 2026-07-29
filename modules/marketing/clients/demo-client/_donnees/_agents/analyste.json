@@ -1,6 +1,6 @@
 {
   "agent": "analyste",
-  "genere_le": "2026-07-28T12:27:26+00:00",
+  "genere_le": "2026-07-29T13:14:11+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -13,28 +13,28 @@
   "items": [
     {
       "type": "insight",
-      "titre": "TikTok, réseau le plus performant",
-      "explication": "Le réseau TikTok génère le plus d'engagement avec 88 000 likes, soit plus de 90% des likes totaux.",
+      "titre": "Performances sur TikTok",
+      "explication": "Le réseau TikTok affiche de meilleures performances en termes de likes et de vues par rapport aux autres réseaux sociaux.",
       "preuve": {
         "metrique": "likes",
         "valeur": 88000,
-        "variation": "93% des likes totaux"
+        "variation": "Supérieur à la moyenne des autres réseaux"
       }
     },
     {
       "type": "reco",
-      "titre": "Publier plus de contenu sur TikTok",
-      "explication": "Étant donné la performance exceptionnelle de TikTok, il est recommandé d'augmenter la fréquence de publication sur cette plateforme.",
+      "titre": "Publier plus sur TikTok",
+      "explication": "Augmenter la fréquence de publication sur TikTok pour renforcer l'engagement avec les abonnés.",
       "preuve": {
-        "metrique": "posts",
-        "valeur": 40
+        "metrique": "abonnes",
+        "valeur": 12500
       },
-      "action": "Publier 2 fois par semaine sur TikTok"
+      "action": "Publier au moins 3 fois par semaine sur TikTok"
     },
     {
       "type": "insight",
-      "titre": "Types de contenu Reel et Carrousel très performants",
-      "explication": "Les types de contenu Reel et Carrousel génèrent respectivement 520 et 310 likes en moyenne par publication, contre 140 pour les Photos.",
+      "titre": "Type de contenu le plus performant",
+      "explication": "Les Reels sont les contenus les plus engagants sur les réseaux sociaux d'Éclat Beauté.",
       "preuve": {
         "metrique": "engagement_moyen",
         "valeur": 520
@@ -42,32 +42,32 @@
     },
     {
       "type": "reco",
-      "titre": "Créer plus de contenus Reel et Carrousel",
-      "explication": "Les formats Reel et Carrousel génèrent plus d'engagement que les Photos. Il est donc conseillé d'en créer davantage.",
+      "titre": "Créer plus de Reels",
+      "explication": "Développer une stratégie de contenu axée sur les Reels pour améliorer l'engagement sur les réseaux sociaux.",
       "preuve": {
-        "metrique": "engagement_moyen",
-        "valeur": 520
+        "metrique": "n",
+        "valeur": 8
       },
-      "action": "Créer au moins 2 Reel et 1 Carrousel par mois"
+      "action": "Créer et publier 2 nouveaux Reels par semaine"
     },
     {
       "type": "insight",
-      "titre": "Top commentateurs engagés",
-      "explication": "Les utilisateurs Mariam K., Awa D. et Grace T. sont très actifs avec respectivement 12, 9 et 7 commentaires.",
+      "titre": "Meilleur créneau horaire pour les publications",
+      "explication": "Le jeudi à 19h est le meilleur moment pour publier du contenu sur les réseaux sociaux.",
       "preuve": {
-        "metrique": "commentaires",
-        "valeur": 12
+        "metrique": "recommandation",
+        "valeur": "Jeudi 19h"
       }
     },
     {
       "type": "reco",
-      "titre": "Interagir avec les top commentateurs",
-      "explication": "Il est recommandé de répondre aux commentaires et messages de ces utilisateurs pour renforcer l'engagement et la loyauté.",
+      "titre": "Planifier les publications",
+      "explication": "Planifier les publications à l'avance pour optimiser leur impact, en particulier le jeudi à 19h.",
       "preuve": {
-        "metrique": "commentaires",
-        "valeur": 12
+        "metrique": "recommandation",
+        "valeur": "Jeudi 19h"
       },
-      "action": "Répondre aux commentaires de Mariam K., Awa D. et Grace T. dans les 24 heures"
+      "action": "Programmer les publications à l'avance pour le jeudi à 19h"
     }
   ]
 }

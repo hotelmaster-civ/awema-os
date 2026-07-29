@@ -1,6 +1,6 @@
 {
   "agent": "creatif",
-  "genere_le": "2026-07-28T12:29:00+00:00",
+  "genere_le": "2026-07-29T13:15:25+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -11,33 +11,33 @@
   },
   "items": [
     {
-      "hook": "Découvrez les secrets de la résidence idéale à Abidjan !",
-      "script": "Vous cherchez un endroit où vous pouvez vous détendre et vous ressourcer ? Nous avons ce qu'il vous faut ! Découvrez nos résidences luxueuses et modernes à Abidjan, conçues pour offrir le confort et la tranquillité dont vous avez besoin. De plus, nous vous offrons des tips et des astuces pour améliorer votre expérience de vie à Abidjan ! Inscrivez-vous maintenant et devenez partie de notre communauté #AbidjanResidences #ResidenceIdeale #Detente",
+      "hook": "Découvrez les résidences les plus tendances d'Abidjan !",
+      "script": "Vous cherchez un endroit pour vous détendre ou séjourner à Abidjan ? Nous avons ce qu'il vous faut ! Découvrez nos résidences spacieuses et confortables, idéales pour les vacances ou les déplacements professionnels. Suivez-nous pour plus d'informations ! #Abidjan #Résidences #Vacances",
       "format": "Reel",
       "reseau": "TikTok",
-      "prompt_image": "Une photo d'une belle résidence à Abidjan avec une piscine et un jardin tropical",
+      "prompt_image": "Une photo d'une résidence moderne et confortable à Abidjan avec une vue sur la ville",
       "variantes": [
-        "Reveillez vos sens avec nos résidences de rêve à Abidjan !"
+        "Les meilleures résidences d'Abidjan attendent vous !"
       ]
     },
     {
-      "hook": "Vous voulez gagner une nuit gratuite dans l'une de nos résidences à Abidjan ?",
-      "script": "Participez à notre concours et vous pourriez gagner une nuit gratuite dans l'une de nos résidences luxueuses à Abidjan ! Pour participer, il suffit de suivre nos comptes sur les réseaux sociaux et de partager ce post avec vos amis. Un gagnant sera choisi aléatoirement et annoncé dans une semaine ! #Concours #AbidjanResidences #NuitGratuite",
-      "format": "Post",
-      "reseau": "Instagram",
-      "prompt_image": "Une photo d'une chambre luxueuse avec un lit king-size et un balcon avec vue sur la ville",
-      "variantes": [
-        "Gagnez une nuit gratuite dans notre résidence la plus luxueuse à Abidjan !"
-      ]
-    },
-    {
-      "hook": "Découvrez les meilleures adresses à Abidjan avec notre guide exclusif !",
-      "script": "Vous cherchez les meilleures adresses à Abidjan pour manger, boire et vous divertir ? Nous avons créé un guide exclusif pour vous aider à découvrir les secrets de la ville ! De plus, nous vous offrons des conseils et des astuces pour vous aider à naviguer dans la ville comme un local. Téléchargez notre guide maintenant et devenez un expert d'Abidjan ! #Abidjan #GuideExclusif #MeilleuresAdresses",
+      "hook": "Explorez les quartiers les plus animés d'Abidjan avec nous !",
+      "script": "Vous souhaitez découvrir les secrets d'Abidjan ? Suivez-nous pour explorer les quartiers les plus animés de la ville, rencontrer des locaux et vivre des expériences uniques. #Abidjan #Quartiers #Découverte",
       "format": "Carrousel",
-      "reseau": "Facebook",
-      "prompt_image": "Une photo d'un guide de voyage avec des icônes de restaurants, bars et monuments à Abidjan",
+      "reseau": "Instagram",
+      "prompt_image": "Une série de photos montrant différents quartiers d'Abidjan, avec des rues animées, des marchés et des monuments emblématiques",
       "variantes": [
-        "Explorez Abidjan comme jamais avec notre guide exclusif !"
+        "Découvrez les trésors cachés d'Abidjan avec nous !"
+      ]
+    },
+    {
+      "hook": "Trouvez votre maison de rêve à Abidjan avec Abidjan Résidences !",
+      "script": "Vous cherchez une maison pour vous installer à Abidjan ? Nous proposons une sélection de résidences de qualité, adaptées à tous les besoins et budgets. Contactez-nous pour plus d'informations et trouvez votre maison de rêve ! #Abidjan #Maison #Résidence",
+      "format": "Post",
+      "reseau": "Facebook",
+      "prompt_image": "Une photo d'une belle maison à Abidjan, avec un jardin et une vue sur la ville",
+      "variantes": [
+        "Votre nouvelle maison à Abidjan vous attend !"
       ]
     }
   ]

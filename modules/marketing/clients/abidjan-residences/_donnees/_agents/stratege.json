@@ -1,6 +1,6 @@
 {
   "agent": "stratege",
-  "genere_le": "2026-07-28T12:27:47+00:00",
+  "genere_le": "2026-07-29T13:14:52+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -14,45 +14,59 @@
       "jour": "Lundi",
       "heure": "14h",
       "format": "Vidéo",
-      "angle": "Découvrez les résidences d'Abidjan",
+      "angle": "Présentation d'un quartier d'Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Mercredi",
       "heure": "14h",
       "format": "Vidéo",
-      "angle": "Les avantages de vivre à Abidjan",
+      "angle": "Découverte d'un restaurant local",
       "reseau": "TikTok"
     },
     {
       "jour": "Vendredi",
       "heure": "14h",
       "format": "Vidéo",
-      "angle": "Les meilleurs quartiers d'Abidjan",
+      "angle": "Activités de loisirs à Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Samedi",
-      "heure": "14h",
-      "format": "Vidéo",
-      "angle": "Les activités à faire à Abidjan",
+      "heure": "12h",
+      "format": "Story",
+      "angle": "Week-end détente à Yopougon",
       "reseau": "TikTok"
     },
     {
       "jour": "Dimanche",
-      "heure": "14h",
+      "heure": "18h",
       "format": "Vidéo",
-      "angle": "Les événements à venir à Abidjan",
+      "angle": "Résidences et hôtels à Abidjan",
+      "reseau": "TikTok"
+    },
+    {
+      "jour": "Mardi",
+      "heure": "19h",
+      "format": "Livestream",
+      "angle": "Événement local ou promotion",
+      "reseau": "TikTok"
+    },
+    {
+      "jour": "Jeudi",
+      "heure": "15h",
+      "format": "Photo",
+      "angle": "Lieux emblématiques d'Abidjan",
       "reseau": "TikTok"
     }
   ],
-  "cadence_recommandee": "4 publications/semaine",
+  "cadence_recommandee": "3 publications/semaine",
   "meilleures_heures": [
     "Vendredi 14h"
   ],
   "objectifs": [
-    "Augmenter l'engagement sur TikTok de 20%",
-    "Atteindre 5000 vues sur les publications de la semaine",
-    "Augmenter le nombre de followers de 5%"
+    "Augmenter la portée de 20% en une semaine",
+    "Obtenir 50 likes et 10 commentaires par publication en moyenne",
+    "Maintenir une audience stable ou en léger accroissement"
   ]
 }

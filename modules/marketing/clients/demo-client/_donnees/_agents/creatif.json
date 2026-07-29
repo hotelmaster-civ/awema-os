@@ -1,6 +1,6 @@
 {
   "agent": "creatif",
-  "genere_le": "2026-07-28T12:29:33+00:00",
+  "genere_le": "2026-07-29T13:15:56+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -12,33 +12,33 @@
   },
   "items": [
     {
-      "hook": "Découvrez le secret d'une peau éclatante en quelques étapes !",
-      "script": "Vous rêvez d'une peau parfaite ? Notre soin visage éclat est la solution idéale ! Découvrez comment obtenir une peau éclatante en quelques étapes avec nos produits adaptés à la peau africaine. Réservation via WhatsApp, 48h à l'avance idéalement. Prix : 15 000 FCFA. Nous sommes là pour vous aider à révéler votre beauté naturelle !",
+      "hook": "Découvrez le secret d'une peau éclatante",
+      "script": "Bonjour beautés ! \n\nAvez-vous déjà rêvé d'une peau parfaite ? \nNous vous proposons le Soin visage éclat pour un nettoyage et une hydratation profonde. \nPour plus d'informations et réservation, contactez-nous via WhatsApp. \n#ÉclatBeauté #SoinVisage #BeautéNaturelle",
       "format": "Reel",
       "reseau": "TikTok",
-      "prompt_image": "Une femme avec une peau éclatante, souriante, avec des fleurs de beauté autour d'elle, sur fond #D4AF37",
+      "prompt_image": "Une femme souriante avec une peau radieuse et des feuilles de plantes vertes autour d'elle, sur fond #D4AF37",
       "variantes": [
-        "Obtenez la peau parfaite pour le grand jour avec notre forfait mariée !"
+        "Révélez votre beauté intérieure"
       ]
     },
     {
-      "hook": "Prête à briller pour le jour J ?",
-      "script": "Vous vous mariez bientôt ? Notre forfait mariée est conçu pour vous donner une peau parfaite pour votre grand jour ! 3 séances avant le jour J pour un teint naturel et éclatant. Réservation via WhatsApp. Prix : 75 000 FCFA. Nous sommes là pour vous aider à révéler votre beauté naturelle !",
+      "hook": "Le mariage approche, préparez votre teint",
+      "script": "Future mariée ! \n\nRêvez d'un teint parfait pour votre grand jour ? \nNotre Forfait mariée inclut 3 séances personnalisées pour vous faire briller. \nRéservez dès maintenant sur WhatsApp. \n#ÉclatBeauté #ForfaitMariée #BeautéDeMariée",
       "format": "Carrousel",
       "reseau": "Instagram",
-      "prompt_image": "Une future mariée heureuse, avec une peau éclatante, sur fond #0A1F44, avec des détails de fleurs et de décor de mariage",
+      "prompt_image": "Une future mariée heureuse avec une peau parfaite, tenant un bouquet de fleurs sur fond #0A1F44",
       "variantes": [
-        "Rêvez d'une peau parfaite pour votre mariage ? Nous avons la solution !"
+        "Préparez votre beauté pour le grand jour"
       ]
     },
     {
-      "hook": "Besoin d'un conseil pour une peau éclatante ?",
-      "script": "Vous avez des questions sur les soins de la peau ? Nous sommes là pour vous aider ! Découvrez nos conseils et astuces pour obtenir une peau éclatante et naturelle. Réservation et informations via WhatsApp. Nous sommes à votre écoute pour vous aider à révéler votre beauté naturelle !",
-      "format": "Short",
+      "hook": "Quels sont vos secrets de beauté ?",
+      "script": "Partagez avec nous vos routines de soin et découvrez les nôtres ! \n\nNous croyons en la beauté naturelle et nous voulons vous aider à la révéler. \n#ÉclatBeauté #SoinDeSoi #BeautéNaturelle",
+      "format": "Post",
       "reseau": "Facebook",
-      "prompt_image": "Une femme heureuse, avec une peau éclatante, en train de discuter avec une experte en beauté, sur fond #D4AF37",
+      "prompt_image": "Une femme regardant son reflet dans un miroir avec des produits de soin autour d'elle, sur fond #D4AF37",
       "variantes": [
-        "Vous voulez une peau éclatante mais vous ne savez pas par où commencer ?"
+        "La beauté est dans les détails"
       ]
     }
   ]
