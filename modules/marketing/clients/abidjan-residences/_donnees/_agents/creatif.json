@@ -1,6 +1,6 @@
 {
   "agent": "creatif",
-  "genere_le": "2026-07-29T13:15:25+00:00",
+  "genere_le": "2026-07-30T12:17:14+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -11,33 +11,33 @@
   },
   "items": [
     {
-      "hook": "Découvrez les résidences les plus tendances d'Abidjan !",
-      "script": "Vous cherchez un endroit pour vous détendre ou séjourner à Abidjan ? Nous avons ce qu'il vous faut ! Découvrez nos résidences spacieuses et confortables, idéales pour les vacances ou les déplacements professionnels. Suivez-nous pour plus d'informations ! #Abidjan #Résidences #Vacances",
+      "hook": "Découvrez les meilleures résidences d'Abidjan !",
+      "script": "Bonjour à tous ! Aujourd'hui, nous allons vous présenter les meilleures résidences d'Abidjan. Nous savons que trouver un endroit où vivre peut être un défi, c'est pourquoi nous vous proposons cette sélection de résidences de qualité. De la sécurité à la proximité des commerces, nous avons pensé à tout pour vous offrir un confort de vie exceptionnel. Abonnez-vous et partagez avec vos amis pour ne rien manquer de nos découvertes ! #AbidjanResidences #MeilleuresResidences",
       "format": "Reel",
       "reseau": "TikTok",
-      "prompt_image": "Une photo d'une résidence moderne et confortable à Abidjan avec une vue sur la ville",
+      "prompt_image": "Une vue aérienne d'une résidence à Abidjan avec des jardins verdoyants et une piscine.",
       "variantes": [
-        "Les meilleures résidences d'Abidjan attendent vous !"
+        "Les résidences d'Abidjan qui vous feront tomber amoureux de la ville !"
       ]
     },
     {
-      "hook": "Explorez les quartiers les plus animés d'Abidjan avec nous !",
-      "script": "Vous souhaitez découvrir les secrets d'Abidjan ? Suivez-nous pour explorer les quartiers les plus animés de la ville, rencontrer des locaux et vivre des expériences uniques. #Abidjan #Quartiers #Découverte",
+      "hook": "Un séjour à Abidjan, pourquoi pas !",
+      "script": "Vous cherchez un endroit pour votre prochain séjour ? Abidjan est une ville vibrante et accueillante. Découvrez les résidences qui rendront votre séjour inoubliable, avec des équipements de qualité et un service personnalisé. Nous vous attendons ! Abonnez-vous pour plus de contenu sur les résidences d'Abidjan et partagez vos propres expériences en commentaires. #Abidjan #Séjour #Residences",
+      "format": "Short",
+      "reseau": "TikTok",
+      "prompt_image": "Un intérieur chic d'une résidence à Abidjan avec une décoration moderne et des couleurs vives.",
+      "variantes": [
+        "Préparez votre valise pour un séjour d'exception à Abidjan !"
+      ]
+    },
+    {
+      "hook": "Investir dans une résidence à Abidjan, un choix intelligent !",
+      "script": "Vous songez à investir dans l'immobilier ? Les résidences d'Abidjan offrent des opportunités d'investissement attractives. Avec une croissance démographique constante, le marché de l'immobilier ivoirien est en plein essor. Découvrez comment investir dans une résidence à Abidjan peut être un choix lucratif pour votre avenir. Abonnez-vous pour plus d'informations sur le marché immobilier ivoirien et partagez vos questions en commentaires. #Investir #Abidjan #Residences",
       "format": "Carrousel",
       "reseau": "Instagram",
-      "prompt_image": "Une série de photos montrant différents quartiers d'Abidjan, avec des rues animées, des marchés et des monuments emblématiques",
+      "prompt_image": "Un graphique montrant la croissance du marché immobilier à Abidjan, avec des chiffres clés et des statistiques.",
       "variantes": [
-        "Découvrez les trésors cachés d'Abidjan avec nous !"
-      ]
-    },
-    {
-      "hook": "Trouvez votre maison de rêve à Abidjan avec Abidjan Résidences !",
-      "script": "Vous cherchez une maison pour vous installer à Abidjan ? Nous proposons une sélection de résidences de qualité, adaptées à tous les besoins et budgets. Contactez-nous pour plus d'informations et trouvez votre maison de rêve ! #Abidjan #Maison #Résidence",
-      "format": "Post",
-      "reseau": "Facebook",
-      "prompt_image": "Une photo d'une belle maison à Abidjan, avec un jardin et une vue sur la ville",
-      "variantes": [
-        "Votre nouvelle maison à Abidjan vous attend !"
+        "Faites fructifier votre argent avec les résidences d'Abidjan !"
       ]
     }
   ]

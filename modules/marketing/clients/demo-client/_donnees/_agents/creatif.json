@@ -1,6 +1,6 @@
 {
   "agent": "creatif",
-  "genere_le": "2026-07-29T13:15:56+00:00",
+  "genere_le": "2026-07-30T12:17:26+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -12,33 +12,33 @@
   },
   "items": [
     {
-      "hook": "Découvrez le secret d'une peau éclatante",
-      "script": "Bonjour beautés ! \n\nAvez-vous déjà rêvé d'une peau parfaite ? \nNous vous proposons le Soin visage éclat pour un nettoyage et une hydratation profonde. \nPour plus d'informations et réservation, contactez-nous via WhatsApp. \n#ÉclatBeauté #SoinVisage #BeautéNaturelle",
+      "hook": "Découvrez le secret pour un teint parfait !",
+      "script": "Vous rêvez d'un teint éclatant et sain ? Notre soin visage éclat est spécialement conçu pour révéler la beauté naturelle de votre peau. Avec un nettoyage profond et une hydratation intense, vous obtiendrez une peau radiante et pleine de vie. Réservez votre rendez-vous dès maintenant et découvrez la différence !",
       "format": "Reel",
       "reseau": "TikTok",
-      "prompt_image": "Une femme souriante avec une peau radieuse et des feuilles de plantes vertes autour d'elle, sur fond #D4AF37",
+      "prompt_image": "Une femme avec un teint radieux, les cheveux en arrière, un maquillage naturel, souriante, sur fond de fleurs blanches et feuilles vertes. Les couleurs #D4AF37 et #0A1F44 dominent.",
       "variantes": [
-        "Révélez votre beauté intérieure"
+        "Un teint parfait en quelques étapes ? C'est possible avec Éclat Beauté !"
       ]
     },
     {
-      "hook": "Le mariage approche, préparez votre teint",
-      "script": "Future mariée ! \n\nRêvez d'un teint parfait pour votre grand jour ? \nNotre Forfait mariée inclut 3 séances personnalisées pour vous faire briller. \nRéservez dès maintenant sur WhatsApp. \n#ÉclatBeauté #ForfaitMariée #BeautéDeMariée",
+      "hook": "Préparez-vous pour le grand jour avec notre forfait mariée !",
+      "script": "Vous vous préparez à dire 'oui' et voulez être absolument parfaite pour votre mariage ? Notre forfait mariée est conçu pour vous offrir une expérience de beauté complète, avec trois séances de soins personnalisés pour que vous vous sentiez comme une reine. N'attendez plus, réservez votre place dès aujourd'hui !",
       "format": "Carrousel",
       "reseau": "Instagram",
-      "prompt_image": "Une future mariée heureuse avec une peau parfaite, tenant un bouquet de fleurs sur fond #0A1F44",
+      "prompt_image": "Une future mariée souriante, avec un voile et une robe de mariée, entourée de fleurs blanches, sur fond de décoration de mariage classique. Les couleurs #D4AF37 et #0A1F44 sont présentes dans les accessoires.",
       "variantes": [
-        "Préparez votre beauté pour le grand jour"
+        "Rêvez d'un mariage de rêve ? Nous vous aidons à vous préparer avec notre forfait spécialement conçu pour les futures mariées !"
       ]
     },
     {
-      "hook": "Quels sont vos secrets de beauté ?",
-      "script": "Partagez avec nous vos routines de soin et découvrez les nôtres ! \n\nNous croyons en la beauté naturelle et nous voulons vous aider à la révéler. \n#ÉclatBeauté #SoinDeSoi #BeautéNaturelle",
+      "hook": "Un temps pour soi, c'est un geste d'amour !",
+      "script": "Prenez un moment pour vous, pour votre bien-être et votre beauté. Chez Éclat Beauté, nous croyons que prendre soin de soi est essentiel pour une vie équilibrée et heureuse. Découvrez nos soins de visage et de corps conçus pour vous faire sentir éclatante, en toute confiance. Réservez votre rendez-vous maintenant !",
       "format": "Post",
       "reseau": "Facebook",
-      "prompt_image": "Une femme regardant son reflet dans un miroir avec des produits de soin autour d'elle, sur fond #D4AF37",
+      "prompt_image": "Une femme relaxée, les yeux fermés, avec des feuilles de menthe fraîche sur les paupières, un masque facial, sur fond de pierres et de plantes aquatiques. Les couleurs #D4AF37 et #0A1F44 évoquent la nature et la sérénité.",
       "variantes": [
-        "La beauté est dans les détails"
+        "Donnez-vous l'amour et le soin que vous méritez avec nos traitements de beauté personnalisés !"
       ]
     }
   ]

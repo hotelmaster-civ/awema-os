@@ -1,6 +1,6 @@
 {
   "agent": "analyste",
-  "genere_le": "2026-07-29T13:14:11+00:00",
+  "genere_le": "2026-07-30T12:15:38+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -13,61 +13,69 @@
   "items": [
     {
       "type": "insight",
-      "titre": "Performances sur TikTok",
-      "explication": "Le réseau TikTok affiche de meilleures performances en termes de likes et de vues par rapport aux autres réseaux sociaux.",
+      "titre": "TikTok, le réseau le plus performant",
+      "explication": "Les données montrent que TikTok génère le plus d'engagement avec 88 000 likes et 500 commentaires, malgré un nombre de posts similaire à Instagram et Facebook.",
       "preuve": {
         "metrique": "likes",
         "valeur": 88000,
-        "variation": "Supérieur à la moyenne des autres réseaux"
-      }
-    },
-    {
-      "type": "reco",
-      "titre": "Publier plus sur TikTok",
-      "explication": "Augmenter la fréquence de publication sur TikTok pour renforcer l'engagement avec les abonnés.",
-      "preuve": {
-        "metrique": "abonnes",
-        "valeur": 12500
+        "variation": null
       },
-      "action": "Publier au moins 3 fois par semaine sur TikTok"
+      "action": null
     },
     {
       "type": "insight",
-      "titre": "Type de contenu le plus performant",
-      "explication": "Les Reels sont les contenus les plus engagants sur les réseaux sociaux d'Éclat Beauté.",
+      "titre": "Préférance pour les Reels et Carrousels",
+      "explication": "Les contenus de type Reel et Carrousel génèrent un engagement moyen significativement plus élevé que les photos, avec respectivement 520 et 310 interactions en moyenne.",
       "preuve": {
         "metrique": "engagement_moyen",
-        "valeur": 520
-      }
+        "valeur": 520,
+        "variation": null
+      },
+      "action": null
     },
     {
       "type": "reco",
-      "titre": "Créer plus de Reels",
-      "explication": "Développer une stratégie de contenu axée sur les Reels pour améliorer l'engagement sur les réseaux sociaux.",
+      "titre": "Publier davantage sur TikTok",
+      "explication": "Étant donné la performance élevée de TikTok, il est recommandé d'augmenter la fréquence de publication sur cette plateforme pour maximiser l'engagement.",
       "preuve": {
-        "metrique": "n",
-        "valeur": 8
+        "metrique": "likes",
+        "valeur": 88000,
+        "variation": null
       },
-      "action": "Créer et publier 2 nouveaux Reels par semaine"
+      "action": "Publier au moins 3 contenus par semaine sur TikTok"
+    },
+    {
+      "type": "reco",
+      "titre": "Utiliser plus de Reels et Carrousels",
+      "explication": "Pour améliorer l'engagement, il est conseillé d'incorporer plus de Reels et Carrousels dans la stratégie de contenu, car ils semblent plus attrayants pour l'audience.",
+      "preuve": {
+        "metrique": "engagement_moyen",
+        "valeur": 520,
+        "variation": null
+      },
+      "action": "Créer au moins 2 Reels et 1 Carrousel par semaine"
     },
     {
       "type": "insight",
-      "titre": "Meilleur créneau horaire pour les publications",
-      "explication": "Le jeudi à 19h est le meilleur moment pour publier du contenu sur les réseaux sociaux.",
+      "titre": "Cadence de publication",
+      "explication": "La dernière publication date de 9 jours, ce qui suggère une cadence de publication qui pourrait être améliorée pour maintenir un engagement constant avec l'audience.",
       "preuve": {
-        "metrique": "recommandation",
-        "valeur": "Jeudi 19h"
-      }
+        "metrique": "jours_depuis_dernier_post",
+        "valeur": 9,
+        "variation": null
+      },
+      "action": null
     },
     {
       "type": "reco",
-      "titre": "Planifier les publications",
-      "explication": "Planifier les publications à l'avance pour optimiser leur impact, en particulier le jeudi à 19h.",
+      "titre": "Répondre aux commentaires et messages",
+      "explication": "Il y a 5 messages en attente de réponse, il est crucial de répondre rapidement pour maintenir une bonne relation avec les clients et potentialiser les ventes.",
       "preuve": {
-        "metrique": "recommandation",
-        "valeur": "Jeudi 19h"
+        "metrique": "a_repondre",
+        "valeur": 5,
+        "variation": null
       },
-      "action": "Programmer les publications à l'avance pour le jeudi à 19h"
+      "action": "Répondre à tous les messages et commentaires dans les 24 heures"
     }
   ]
 }

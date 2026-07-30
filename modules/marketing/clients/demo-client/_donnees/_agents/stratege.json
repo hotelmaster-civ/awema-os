@@ -1,6 +1,6 @@
 {
   "agent": "stratege",
-  "genere_le": "2026-07-29T13:15:03+00:00",
+  "genere_le": "2026-07-30T12:16:31+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -15,60 +15,60 @@
       "jour": "Lundi",
       "heure": "19h",
       "format": "Reel",
-      "angle": "Routine peau grasse en 3 étapes",
+      "angle": "Routine peau grasse en 3 étapes, produits adaptés à la peau africaine",
       "reseau": "TikTok"
     },
     {
-      "jour": "Mardi",
+      "jour": "Mercredi",
       "heure": "12h",
       "format": "Carrousel",
-      "angle": "Avant / Après soin éclat",
+      "angle": "Avant / Après soin éclat, confiance renouvelée",
       "reseau": "Instagram"
-    },
-    {
-      "jour": "Mercredi",
-      "heure": "15h",
-      "format": "Photo",
-      "angle": "Conseils pour un teint parfait",
-      "reseau": "Facebook"
     },
     {
       "jour": "Jeudi",
       "heure": "19h",
-      "format": "Reel",
-      "angle": "Démonstration d'un soin visage éclat",
+      "format": "Short",
+      "angle": "Les bienfaits du soin de soi pour un teint parfait",
       "reseau": "TikTok"
     },
     {
       "jour": "Vendredi",
-      "heure": "18h",
-      "format": "Carrousel",
-      "angle": "Présentation du forfait mariée",
+      "heure": "14h",
+      "format": "Photo",
+      "angle": "Présentation du forfait mariée, un teint parfait pour le grand jour",
       "reseau": "Instagram"
     },
     {
       "jour": "Samedi",
       "heure": "14h",
-      "format": "Short",
-      "angle": "Conseils pour un soin de soi efficace",
+      "format": "Reel",
+      "angle": "Conseils pour une peau parfaite en peu de temps, produits hypoallergéniques",
       "reseau": "TikTok"
     },
     {
       "jour": "Dimanche",
-      "heure": "17h",
-      "format": "Photo",
-      "angle": "Présentation d'un nouveau produit",
+      "heure": "18h",
+      "format": "Carrousel",
+      "angle": "Les produits adaptés à la peau africaine pour un éclat naturel",
+      "reseau": "Instagram"
+    },
+    {
+      "jour": "Mardi",
+      "heure": "12h",
+      "format": "Short",
+      "angle": "Réponse aux questions fréquentes, réservation et produits",
       "reseau": "Facebook"
     }
   ],
-  "cadence_recommandee": "4 publications/semaine",
+  "cadence_recommandee": "3 publications/semaine",
   "meilleures_heures": [
-    "Jeudi 19h"
+    "Jeudi 19h",
+    "Samedi 14h"
   ],
   "objectifs": [
-    "Augmenter le nombre de likes de 15% sur TikTok",
-    "Répondre à 100% des commentaires et messages sur les réseaux",
-    "Publier au moins 1 contenu de type Reel par semaine",
-    "Augmenter la portée des publications de 20% sur Instagram"
+    "Augmenter l'engagement de 15% sur les publications",
+    "Accroître la portée de 20% sur les réseaux sociaux",
+    "Amener 50 nouvelles personnes à suivre les pages chaque mois"
   ]
 }

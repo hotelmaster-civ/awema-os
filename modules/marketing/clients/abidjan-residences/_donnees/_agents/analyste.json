@@ -1,6 +1,6 @@
 {
   "agent": "analyste",
-  "genere_le": "2026-07-29T13:14:00+00:00",
+  "genere_le": "2026-07-30T12:15:25+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -12,60 +12,102 @@
   "items": [
     {
       "type": "insight",
-      "titre": "Performances sur TikTok",
-      "explication": "Le compte Abidjan résidences montre de bonnes performances sur TikTok avec des vidéos ayant des milliers de vues et de likes.",
+      "titre": "Performances élevées sur TikTok",
+      "explication": "Les données montrent une forte performance sur TikTok, notamment en termes de likes et de vues.",
       "preuve": {
         "metrique": "likes_total",
-        "valeur": 9482
-      }
-    },
-    {
-      "type": "insight",
-      "titre": "Type de contenu performatif",
-      "explication": "Les vidéos sont les types de contenu les plus performants, en particulier celles qui utilisent des collages ou des animations.",
-      "preuve": {
-        "metrique": "top_posts",
-        "valeur": "#collage avec @Tdfmanga decouvrez un animé 100% ivoirien par @Cénack  « placman »"
+        "valeur": 21844
       }
     },
     {
       "type": "reco",
-      "titre": "Publier régulièrement",
-      "explication": "Il est nécessaire de publier régulièrement pour maintenir l'intérêt de l'audience.",
+      "titre": "Maintenir une présence active sur TikTok",
+      "explication": "Il est recommandé de maintenir une présence active sur TikTok pour ne pas perdre le lien avec l'audience.",
       "preuve": {
-        "metrique": "jours_depuis_dernier_post",
+        "metrique": "jours_depuis",
         "valeur": 44
       },
-      "action": "Publier au moins une fois par semaine pour maintenir l'engagement."
-    },
-    {
-      "type": "reco",
-      "titre": "Optimiser les heures de publication",
-      "explication": "Il est important de publier à des moments où l'audience est la plus active pour maximiser l'impact.",
-      "preuve": {
-        "metrique": "heure_de_publication_recommandee",
-        "valeur": "Vendredi vers 14h"
-      },
-      "action": "Planifier les publications pour le vendredi vers 14h pour atteindre le plus d'abonnés possible."
+      "action": "Publier du contenu régulièrement sur TikTok pour renouveler l'intérêt de l'audience."
     },
     {
       "type": "insight",
-      "titre": "Évolution de l'audience",
-      "explication": "L'audience a augmenté légèrement ces dernières semaines.",
+      "titre": "Type de contenu performant",
+      "explication": "Les vidéos sont les types de contenu les plus performants sur TikTok.",
       "preuve": {
-        "metrique": "evolution_audience",
-        "valeur": "4200"
+        "metrique": "type",
+        "valeur": "vidéo"
       }
     },
     {
       "type": "reco",
-      "titre": "Diversifier le contenu",
-      "explication": "Il est essentiel de diversifier le contenu pour éviter la répétition et maintenir l'intérêt de l'audience.",
+      "titre": "Créer et partager des vidéos régulièrement",
+      "explication": "Créer et partager des vidéos régulièrement pour augmenter l'engagement et la portée de la page.",
       "preuve": {
-        "metrique": "types_de_contenu",
-        "valeur": "Vidéos, animations, collages"
+        "metrique": "vues",
+        "valeur": 41723
       },
-      "action": "Créer du contenu varié incluant des vidéos, des stories, et des publications interactives."
+      "action": "Consacrer du temps à la création de vidéos de qualité pour les partager sur TikTok."
+    },
+    {
+      "type": "insight",
+      "titre": "Audience en constante évolution",
+      "explication": "L'audience est en constante évolution, ce qui nécessite une adaptation continue de la stratégie de contenu.",
+      "preuve": {
+        "metrique": "evolution_audience",
+        "valeur": [
+          {
+            "date": "2026-07-05",
+            "valeur": 4198
+          },
+          {
+            "date": "2026-07-06",
+            "valeur": 4198
+          },
+          {
+            "date": "2026-07-13",
+            "valeur": 4197
+          },
+          {
+            "date": "2026-07-20",
+            "valeur": 4198
+          },
+          {
+            "date": "2026-07-27",
+            "valeur": 4200
+          }
+        ]
+      }
+    },
+    {
+      "type": "reco",
+      "titre": "Analyser régulièrement les données d'audience",
+      "explication": "Il est essentiel d'analyser régulièrement les données d'audience pour adapter la stratégie de contenu.",
+      "preuve": {
+        "metrique": "evolution_audience",
+        "valeur": [
+          {
+            "date": "2026-07-05",
+            "valeur": 4198
+          },
+          {
+            "date": "2026-07-06",
+            "valeur": 4198
+          },
+          {
+            "date": "2026-07-13",
+            "valeur": 4197
+          },
+          {
+            "date": "2026-07-20",
+            "valeur": 4198
+          },
+          {
+            "date": "2026-07-27",
+            "valeur": 4200
+          }
+        ]
+      },
+      "action": "Établir un calendrier pour analyser régulièrement les données d'audience et ajuster la stratégie de contenu en conséquence."
     }
   ]
 }

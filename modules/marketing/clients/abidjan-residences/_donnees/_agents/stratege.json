@@ -1,6 +1,6 @@
 {
   "agent": "stratege",
-  "genere_le": "2026-07-29T13:14:52+00:00",
+  "genere_le": "2026-07-30T12:15:59+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -14,59 +14,60 @@
       "jour": "Lundi",
       "heure": "14h",
       "format": "Vidéo",
-      "angle": "Présentation d'un quartier d'Abidjan",
+      "angle": "Présentation d'un nouveau logement à Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Mercredi",
       "heure": "14h",
       "format": "Vidéo",
-      "angle": "Découverte d'un restaurant local",
+      "angle": "Témoignage d'un résident sur son expérience à Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Vendredi",
       "heure": "14h",
       "format": "Vidéo",
-      "angle": "Activités de loisirs à Abidjan",
+      "angle": "Découverte d'un quartier d'Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Samedi",
       "heure": "12h",
-      "format": "Story",
-      "angle": "Week-end détente à Yopougon",
+      "format": "Photo",
+      "angle": "Présentation d'une résidence à Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Dimanche",
       "heure": "18h",
       "format": "Vidéo",
-      "angle": "Résidences et hôtels à Abidjan",
+      "angle": "Conseils pour trouver un logement à Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Mardi",
-      "heure": "19h",
-      "format": "Livestream",
-      "angle": "Événement local ou promotion",
+      "heure": "14h",
+      "format": "Vidéo",
+      "angle": "Visite virtuelle d'un logement",
       "reseau": "TikTok"
     },
     {
       "jour": "Jeudi",
-      "heure": "15h",
-      "format": "Photo",
-      "angle": "Lieux emblématiques d'Abidjan",
+      "heure": "14h",
+      "format": "Vidéo",
+      "angle": "Interview d'un expert sur le marché immobilier à Abidjan",
       "reseau": "TikTok"
     }
   ],
-  "cadence_recommandee": "3 publications/semaine",
+  "cadence_recommandee": "4 publications/semaine",
   "meilleures_heures": [
     "Vendredi 14h"
   ],
   "objectifs": [
-    "Augmenter la portée de 20% en une semaine",
-    "Obtenir 50 likes et 10 commentaires par publication en moyenne",
-    "Maintenir une audience stable ou en léger accroissement"
+    "Augmenter la portée sur TikTok de 20% en 2 semaines",
+    "Accroître le nombre de followers de 10% en 1 mois",
+    "Maintenir un taux d'engagement supérieur à 2% sur les prochaines publications",
+    "Publier du contenu régulièrement pour maintenir l'intérêt des abonnés"
   ]
 }
