@@ -1,6 +1,6 @@
 {
   "agent": "analyste",
-  "genere_le": "2026-07-30T12:15:38+00:00",
+  "genere_le": "2026-07-31T13:12:55+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -13,69 +13,69 @@
   "items": [
     {
       "type": "insight",
-      "titre": "TikTok, le réseau le plus performant",
-      "explication": "Les données montrent que TikTok génère le plus d'engagement avec 88 000 likes et 500 commentaires, malgré un nombre de posts similaire à Instagram et Facebook.",
+      "titre": "Popularité de TikTok",
+      "explication": "Le réseau TikTok est celui qui génère le plus d'engagement pour Éclat Beauté, notamment grâce au poste 'Routine peau grasse en 3 étapes' qui a obtenu 5400 likes.",
       "preuve": {
-        "metrique": "likes",
+        "metrique": "likes sur TikTok",
         "valeur": 88000,
         "variation": null
       },
       "action": null
     },
     {
-      "type": "insight",
-      "titre": "Préférance pour les Reels et Carrousels",
-      "explication": "Les contenus de type Reel et Carrousel génèrent un engagement moyen significativement plus élevé que les photos, avec respectivement 520 et 310 interactions en moyenne.",
+      "type": "reco",
+      "titre": "Publier plus sur TikTok",
+      "explication": "Pour augmenter l'engagement, il est recommandé de publier plus de contenu sur TikTok, en privilégiant les formats Reel qui obtiennent un engagement moyen de 520.",
       "preuve": {
-        "metrique": "engagement_moyen",
+        "metrique": "engagement moyen des Reels",
         "valeur": 520,
         "variation": null
+      },
+      "action": "Publier au moins 2 Reels par semaine sur TikTok"
+    },
+    {
+      "type": "insight",
+      "titre": "Évolution de l'audience",
+      "explication": "L'audience d'Éclat Beauté a augmenté de 25% entre le 1er mai et le 15 juin, ce qui montre une tendance positive dans la visibilité du compte.",
+      "preuve": {
+        "metrique": "évolution de l'audience",
+        "valeur": 2500,
+        "variation": "25%"
       },
       "action": null
     },
     {
       "type": "reco",
-      "titre": "Publier davantage sur TikTok",
-      "explication": "Étant donné la performance élevée de TikTok, il est recommandé d'augmenter la fréquence de publication sur cette plateforme pour maximiser l'engagement.",
+      "titre": "Répondre aux commentaires",
+      "explication": "Il est essentiel de répondre aux commentaires et messages pour renforcer la confiance avec les followers et les inciter à rester engagés.",
       "preuve": {
-        "metrique": "likes",
-        "valeur": 88000,
-        "variation": null
-      },
-      "action": "Publier au moins 3 contenus par semaine sur TikTok"
-    },
-    {
-      "type": "reco",
-      "titre": "Utiliser plus de Reels et Carrousels",
-      "explication": "Pour améliorer l'engagement, il est conseillé d'incorporer plus de Reels et Carrousels dans la stratégie de contenu, car ils semblent plus attrayants pour l'audience.",
-      "preuve": {
-        "metrique": "engagement_moyen",
-        "valeur": 520,
-        "variation": null
-      },
-      "action": "Créer au moins 2 Reels et 1 Carrousel par semaine"
-    },
-    {
-      "type": "insight",
-      "titre": "Cadence de publication",
-      "explication": "La dernière publication date de 9 jours, ce qui suggère une cadence de publication qui pourrait être améliorée pour maintenir un engagement constant avec l'audience.",
-      "preuve": {
-        "metrique": "jours_depuis_dernier_post",
-        "valeur": 9,
-        "variation": null
-      },
-      "action": null
-    },
-    {
-      "type": "reco",
-      "titre": "Répondre aux commentaires et messages",
-      "explication": "Il y a 5 messages en attente de réponse, il est crucial de répondre rapidement pour maintenir une bonne relation avec les clients et potentialiser les ventes.",
-      "preuve": {
-        "metrique": "a_repondre",
+        "metrique": "nombre de commentaires sans réponse",
         "valeur": 5,
         "variation": null
       },
-      "action": "Répondre à tous les messages et commentaires dans les 24 heures"
+      "action": "Répondre à tous les commentaires et messages cette semaine"
+    },
+    {
+      "type": "insight",
+      "titre": "Meilleur créneau horaire",
+      "explication": "Le meilleur créneau horaire pour publier du contenu est jeudi à 19h, ce qui correspond à la période de plus forte engagement.",
+      "preuve": {
+        "metrique": "engagement jeudi 19h",
+        "valeur": 260,
+        "variation": null
+      },
+      "action": null
+    },
+    {
+      "type": "reco",
+      "titre": "Planifier les publications",
+      "explication": "Il est recommandé de planifier les publications à l'avance pour garantir une cadence régulière et maximiser l'engagement, notamment en utilisant le créneau jeudi 19h.",
+      "preuve": {
+        "metrique": "engagement moyen par jour",
+        "valeur": 180,
+        "variation": null
+      },
+      "action": "Planifier les publications pour la semaine à venir en utilisant le créneau jeudi 19h"
     }
   ]
 }

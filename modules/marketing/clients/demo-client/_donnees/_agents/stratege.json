@@ -1,6 +1,6 @@
 {
   "agent": "stratege",
-  "genere_le": "2026-07-30T12:16:31+00:00",
+  "genere_le": "2026-07-31T13:13:48+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -15,50 +15,50 @@
       "jour": "Lundi",
       "heure": "19h",
       "format": "Reel",
-      "angle": "Routine peau grasse en 3 étapes, produits adaptés à la peau africaine",
+      "angle": "Conseils de routine pour la peau grasse",
       "reseau": "TikTok"
     },
     {
       "jour": "Mercredi",
-      "heure": "12h",
+      "heure": "14h",
       "format": "Carrousel",
-      "angle": "Avant / Après soin éclat, confiance renouvelée",
+      "angle": "Avant/Après des soins de visage",
       "reseau": "Instagram"
     },
     {
       "jour": "Jeudi",
       "heure": "19h",
       "format": "Short",
-      "angle": "Les bienfaits du soin de soi pour un teint parfait",
+      "angle": "Présentation du forfait mariée",
       "reseau": "TikTok"
     },
     {
       "jour": "Vendredi",
-      "heure": "14h",
+      "heure": "12h",
       "format": "Photo",
-      "angle": "Présentation du forfait mariée, un teint parfait pour le grand jour",
+      "angle": "Présentation de produits adaptés à la peau africaine",
       "reseau": "Instagram"
     },
     {
       "jour": "Samedi",
       "heure": "14h",
       "format": "Reel",
-      "angle": "Conseils pour une peau parfaite en peu de temps, produits hypoallergéniques",
+      "angle": "Témoignage d'une cliente satisfaite",
       "reseau": "TikTok"
     },
     {
       "jour": "Dimanche",
       "heure": "18h",
       "format": "Carrousel",
-      "angle": "Les produits adaptés à la peau africaine pour un éclat naturel",
+      "angle": "Présentation des différents types de soins",
       "reseau": "Instagram"
     },
     {
       "jour": "Mardi",
-      "heure": "12h",
+      "heure": "19h",
       "format": "Short",
-      "angle": "Réponse aux questions fréquentes, réservation et produits",
-      "reseau": "Facebook"
+      "angle": "Conseils pour une peau saine",
+      "reseau": "TikTok"
     }
   ],
   "cadence_recommandee": "3 publications/semaine",
@@ -67,8 +67,9 @@
     "Samedi 14h"
   ],
   "objectifs": [
-    "Augmenter l'engagement de 15% sur les publications",
-    "Accroître la portée de 20% sur les réseaux sociaux",
-    "Amener 50 nouvelles personnes à suivre les pages chaque mois"
+    "Augmenter le taux d'engagement de 15% sur les publications",
+    "Accroître la portée des publications de 20% par rapport à la moyenne actuelle",
+    "Répondre à 100% des commentaires et messages dans les 24 heures",
+    "Augmenter le nombre de followers sur TikTok de 10% en une semaine"
   ]
 }

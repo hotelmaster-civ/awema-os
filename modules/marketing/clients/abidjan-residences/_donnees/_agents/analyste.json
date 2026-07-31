@@ -1,6 +1,6 @@
 {
   "agent": "analyste",
-  "genere_le": "2026-07-30T12:15:25+00:00",
+  "genere_le": "2026-07-31T13:12:43+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -12,102 +12,60 @@
   "items": [
     {
       "type": "insight",
-      "titre": "Performances élevées sur TikTok",
-      "explication": "Les données montrent une forte performance sur TikTok, notamment en termes de likes et de vues.",
+      "titre": "Le réseau TikTok est le plus performant",
+      "explication": "Le compte Abidjan résidences a le plus d'interactions sur TikTok, avec 9482 likes et 168 commentaires.",
       "preuve": {
-        "metrique": "likes_total",
-        "valeur": 21844
+        "metrique": "likes",
+        "valeur": 9482
       }
     },
     {
       "type": "reco",
-      "titre": "Maintenir une présence active sur TikTok",
-      "explication": "Il est recommandé de maintenir une présence active sur TikTok pour ne pas perdre le lien avec l'audience.",
+      "titre": "Publier régulièrement sur TikTok",
+      "explication": "Il est recommandé de publier régulièrement sur TikTok pour maintenir l'engagement de l'audience, car le dernier post date de 44 jours.",
       "preuve": {
-        "metrique": "jours_depuis",
+        "metrique": "jours_depuis_dernier_post",
         "valeur": 44
       },
-      "action": "Publier du contenu régulièrement sur TikTok pour renouveler l'intérêt de l'audience."
+      "action": "Publier au moins un contenu par semaine sur TikTok"
     },
     {
       "type": "insight",
-      "titre": "Type de contenu performant",
-      "explication": "Les vidéos sont les types de contenu les plus performants sur TikTok.",
-      "preuve": {
-        "metrique": "type",
-        "valeur": "vidéo"
-      }
-    },
-    {
-      "type": "reco",
-      "titre": "Créer et partager des vidéos régulièrement",
-      "explication": "Créer et partager des vidéos régulièrement pour augmenter l'engagement et la portée de la page.",
+      "titre": "Les vidéos sont les contenus les plus populaires",
+      "explication": "Les vidéos sont les contenus les plus populaires sur le compte Abidjan résidences, avec des vues allant jusqu'à 32699.",
       "preuve": {
         "metrique": "vues",
-        "valeur": 41723
-      },
-      "action": "Consacrer du temps à la création de vidéos de qualité pour les partager sur TikTok."
-    },
-    {
-      "type": "insight",
-      "titre": "Audience en constante évolution",
-      "explication": "L'audience est en constante évolution, ce qui nécessite une adaptation continue de la stratégie de contenu.",
-      "preuve": {
-        "metrique": "evolution_audience",
-        "valeur": [
-          {
-            "date": "2026-07-05",
-            "valeur": 4198
-          },
-          {
-            "date": "2026-07-06",
-            "valeur": 4198
-          },
-          {
-            "date": "2026-07-13",
-            "valeur": 4197
-          },
-          {
-            "date": "2026-07-20",
-            "valeur": 4198
-          },
-          {
-            "date": "2026-07-27",
-            "valeur": 4200
-          }
-        ]
+        "valeur": 32699
       }
     },
     {
       "type": "reco",
-      "titre": "Analyser régulièrement les données d'audience",
-      "explication": "Il est essentiel d'analyser régulièrement les données d'audience pour adapter la stratégie de contenu.",
+      "titre": "Créer des vidéos engageantes",
+      "explication": "Il est recommandé de créer des vidéos engageantes pour maintenir l'intérêt de l'audience, car les vidéos sont les contenus les plus populaires.",
       "preuve": {
-        "metrique": "evolution_audience",
-        "valeur": [
-          {
-            "date": "2026-07-05",
-            "valeur": 4198
-          },
-          {
-            "date": "2026-07-06",
-            "valeur": 4198
-          },
-          {
-            "date": "2026-07-13",
-            "valeur": 4197
-          },
-          {
-            "date": "2026-07-20",
-            "valeur": 4198
-          },
-          {
-            "date": "2026-07-27",
-            "valeur": 4200
-          }
-        ]
+        "metrique": "vues",
+        "valeur": 32699
       },
-      "action": "Établir un calendrier pour analyser régulièrement les données d'audience et ajuster la stratégie de contenu en conséquence."
+      "action": "Créer des vidéos courtes et engageantes pour le compte Abidjan résidences"
+    },
+    {
+      "type": "insight",
+      "titre": "L'audience est en légère augmentation",
+      "explication": "L'audience du compte Abidjan résidences est en légère augmentation, avec une valeur actuelle de 4200 abonnés.",
+      "preuve": {
+        "metrique": "audience",
+        "valeur": 4200
+      }
+    },
+    {
+      "type": "reco",
+      "titre": "Maintenir la qualité des contenus",
+      "explication": "Il est recommandé de maintenir la qualité des contenus pour continuer à attirer de nouveaux abonnés et maintenir l'engagement de l'audience actuelle.",
+      "preuve": {
+        "metrique": "audience",
+        "valeur": 4200
+      },
+      "action": "Vérifier régulièrement la qualité des contenus publiés sur le compte Abidjan résidences"
     }
   ]
 }

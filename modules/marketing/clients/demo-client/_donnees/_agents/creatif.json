@@ -1,6 +1,6 @@
 {
   "agent": "creatif",
-  "genere_le": "2026-07-30T12:17:26+00:00",
+  "genere_le": "2026-07-31T13:15:04+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -12,33 +12,33 @@
   },
   "items": [
     {
-      "hook": "Découvrez le secret pour un teint parfait !",
-      "script": "Vous rêvez d'un teint éclatant et sain ? Notre soin visage éclat est spécialement conçu pour révéler la beauté naturelle de votre peau. Avec un nettoyage profond et une hydratation intense, vous obtiendrez une peau radiante et pleine de vie. Réservez votre rendez-vous dès maintenant et découvrez la différence !",
+      "hook": "Découvrez le secret d'une peau éclatante en quelques étapes !",
+      "script": "Bonjour les beautés ! Chez Éclat Beauté, nous croyons que chaque femme mérite de resplendir. Notre soin visage éclat est conçu pour vous offrir une hydratation profonde et un éclat naturel. Comment ? En quelques étapes simples et avec des produits adaptés à votre peau. Réservez maintenant et laissez-nous vous révéler !",
       "format": "Reel",
       "reseau": "TikTok",
-      "prompt_image": "Une femme avec un teint radieux, les cheveux en arrière, un maquillage naturel, souriante, sur fond de fleurs blanches et feuilles vertes. Les couleurs #D4AF37 et #0A1F44 dominent.",
+      "prompt_image": "Une femme africaine avec une peau radiante, souriante, avec des feuilles de plantes ou des fleurs autour d'elle, sur un fond #D4AF37, avec le logo d'Éclat Beauté discrètement integré",
       "variantes": [
-        "Un teint parfait en quelques étapes ? C'est possible avec Éclat Beauté !"
+        "Quelle est votre routine de soin de peau quotidienne ?"
       ]
     },
     {
-      "hook": "Préparez-vous pour le grand jour avec notre forfait mariée !",
-      "script": "Vous vous préparez à dire 'oui' et voulez être absolument parfaite pour votre mariage ? Notre forfait mariée est conçu pour vous offrir une expérience de beauté complète, avec trois séances de soins personnalisés pour que vous vous sentiez comme une reine. N'attendez plus, réservez votre place dès aujourd'hui !",
+      "hook": "Préparez votre peau pour le grand jour avec notre forfait mariée !",
+      "script": "Future mariée, vous rêvez d’un teint parfait pour le jour J ? Notre forfait mariée est spécialement conçu pour vous. 3 séances de soins personnalisés pour vous faire resplendir. Contactez-nous pour réserver ! #ÉclatBeauté #ForfaitMariée",
       "format": "Carrousel",
       "reseau": "Instagram",
-      "prompt_image": "Une future mariée souriante, avec un voile et une robe de mariée, entourée de fleurs blanches, sur fond de décoration de mariage classique. Les couleurs #D4AF37 et #0A1F44 sont présentes dans les accessoires.",
+      "prompt_image": "Une future mariée africaine, heureuse, avec une peau parfaite, sur un fond #0A1F44, avec des éléments de décoration de mariage et le logo d'Éclat Beauté en corner",
       "variantes": [
-        "Rêvez d'un mariage de rêve ? Nous vous aidons à vous préparer avec notre forfait spécialement conçu pour les futures mariées !"
+        "Le secret d’un teint de rêve pour votre mariage ?"
       ]
     },
     {
-      "hook": "Un temps pour soi, c'est un geste d'amour !",
-      "script": "Prenez un moment pour vous, pour votre bien-être et votre beauté. Chez Éclat Beauté, nous croyons que prendre soin de soi est essentiel pour une vie équilibrée et heureuse. Découvrez nos soins de visage et de corps conçus pour vous faire sentir éclatante, en toute confiance. Réservez votre rendez-vous maintenant !",
-      "format": "Post",
-      "reseau": "Facebook",
-      "prompt_image": "Une femme relaxée, les yeux fermés, avec des feuilles de menthe fraîche sur les paupières, un masque facial, sur fond de pierres et de plantes aquatiques. Les couleurs #D4AF37 et #0A1F44 évoquent la nature et la sérénité.",
+      "hook": "Comment prendre soin de votre peau en été ? Des conseils d'Éclat Beauté !",
+      "script": "L'été est là ! Comment protéger votre peau des rayons du soleil et de la chaleur ? Chez Éclat Beauté, nous vous partageons nos conseils pour un summer glow sans risque. Hydratation, protection solaire, et produits naturels... Découvrez nos astuces !",
+      "format": "Short",
+      "reseau": "TikTok",
+      "prompt_image": "Une femme africaine, souriante, sous le soleil, avec un chapeau de paille et des lunettes de soleil, tenant un produit de soin solaire, sur un fond #D4AF37",
       "variantes": [
-        "Donnez-vous l'amour et le soin que vous méritez avec nos traitements de beauté personnalisés !"
+        "L'été, votre peau a besoin de soins spécifiques !"
       ]
     }
   ]

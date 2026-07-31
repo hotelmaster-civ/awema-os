@@ -1,6 +1,6 @@
 {
   "agent": "creatif",
-  "genere_le": "2026-07-30T12:17:14+00:00",
+  "genere_le": "2026-07-31T13:14:51+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -11,33 +11,36 @@
   },
   "items": [
     {
-      "hook": "Découvrez les meilleures résidences d'Abidjan !",
-      "script": "Bonjour à tous ! Aujourd'hui, nous allons vous présenter les meilleures résidences d'Abidjan. Nous savons que trouver un endroit où vivre peut être un défi, c'est pourquoi nous vous proposons cette sélection de résidences de qualité. De la sécurité à la proximité des commerces, nous avons pensé à tout pour vous offrir un confort de vie exceptionnel. Abonnez-vous et partagez avec vos amis pour ne rien manquer de nos découvertes ! #AbidjanResidences #MeilleuresResidences",
+      "hook": "Découvrez le charme d'Abidjan avec nous !",
+      "script": "Vous cherchez un endroit où vous détendre et vous ressourcer à Abidjan ? Nous avons ce qu'il vous faut ! Découvrez nos résidences confortables etModernes, idéales pour les voyageurs et les locaux. De la visite de la lagune à la découverte de la vie nocturne, nous vous guidons pour que vous puissiez profiter au maximum de votre séjour. Abonnez-vous pour plus de contenu et de conseils de voyage ! #Abidjan #Résidences #Voyage",
       "format": "Reel",
       "reseau": "TikTok",
-      "prompt_image": "Une vue aérienne d'une résidence à Abidjan avec des jardins verdoyants et une piscine.",
+      "prompt_image": "Une photo d'une résidence moderne avec une vue sur la lagune d'Abidjan",
       "variantes": [
-        "Les résidences d'Abidjan qui vous feront tomber amoureux de la ville !"
+        "Explorez Abidjan avec nous !",
+        "Le charme d'Abidjan en vidéo !"
       ]
     },
     {
-      "hook": "Un séjour à Abidjan, pourquoi pas !",
-      "script": "Vous cherchez un endroit pour votre prochain séjour ? Abidjan est une ville vibrante et accueillante. Découvrez les résidences qui rendront votre séjour inoubliable, avec des équipements de qualité et un service personnalisé. Nous vous attendons ! Abonnez-vous pour plus de contenu sur les résidences d'Abidjan et partagez vos propres expériences en commentaires. #Abidjan #Séjour #Residences",
+      "hook": "Que faire à Abidjan ce weekend ?",
+      "script": "Vous cherchez des idées pour votre weekend à Abidjan ? Nous avons quelques suggestions pour vous ! Découvrez nos recommandations pour les meilleures plages, les meilleurs restaurants et les meilleures activités à faire dans la ville. Abonnez-vous pour plus de contenu et de conseils de voyage ! #Abidjan #Weekend #Voyage",
+      "format": "Carrousel",
+      "reseau": "TikTok",
+      "prompt_image": "Une photo d'une plage d'Abidjan avec des personnes en train de se détendre",
+      "variantes": [
+        "Weekend à Abidjan : que faire ?",
+        "Abidjan : les meilleures activités pour votre weekend"
+      ]
+    },
+    {
+      "hook": "Notre résidence à Abidjan, votre maison loin de chez vous !",
+      "script": "Vous cherchez un endroit où vous sentir comme chez vous à Abidjan ? Notre résidence est là pour vous accueillir ! Découvrez nos chambres confortables, notre piscine et nos équipements de loisirs. Abonnez-vous pour plus de contenu et de conseils de voyage ! #Abidjan #Résidence #Voyage",
       "format": "Short",
       "reseau": "TikTok",
-      "prompt_image": "Un intérieur chic d'une résidence à Abidjan avec une décoration moderne et des couleurs vives.",
+      "prompt_image": "Une photo d'une chambre de la résidence avec une vue sur la piscine",
       "variantes": [
-        "Préparez votre valise pour un séjour d'exception à Abidjan !"
-      ]
-    },
-    {
-      "hook": "Investir dans une résidence à Abidjan, un choix intelligent !",
-      "script": "Vous songez à investir dans l'immobilier ? Les résidences d'Abidjan offrent des opportunités d'investissement attractives. Avec une croissance démographique constante, le marché de l'immobilier ivoirien est en plein essor. Découvrez comment investir dans une résidence à Abidjan peut être un choix lucratif pour votre avenir. Abonnez-vous pour plus d'informations sur le marché immobilier ivoirien et partagez vos questions en commentaires. #Investir #Abidjan #Residences",
-      "format": "Carrousel",
-      "reseau": "Instagram",
-      "prompt_image": "Un graphique montrant la croissance du marché immobilier à Abidjan, avec des chiffres clés et des statistiques.",
-      "variantes": [
-        "Faites fructifier votre argent avec les résidences d'Abidjan !"
+        "Votre maison loin de chez vous à Abidjan",
+        "Notre résidence, votre nouvelle maison !"
       ]
     }
   ]
