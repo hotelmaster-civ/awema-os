@@ -1,6 +1,6 @@
 {
   "agent": "stratege",
-  "genere_le": "2026-07-31T13:13:48+00:00",
+  "genere_le": "2026-08-01T11:13:25+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -15,49 +15,49 @@
       "jour": "Lundi",
       "heure": "19h",
       "format": "Reel",
-      "angle": "Conseils de routine pour la peau grasse",
+      "angle": "Routine peau grasse en 3 étapes avec produits adaptés à la peau africaine",
       "reseau": "TikTok"
     },
     {
       "jour": "Mercredi",
       "heure": "14h",
       "format": "Carrousel",
-      "angle": "Avant/Après des soins de visage",
+      "angle": "Avant/Après soin éclat avec témoignage client",
       "reseau": "Instagram"
     },
     {
       "jour": "Jeudi",
       "heure": "19h",
       "format": "Short",
-      "angle": "Présentation du forfait mariée",
+      "angle": "Conseil pour un teint parfait pour le grand jour (mariage)",
       "reseau": "TikTok"
     },
     {
       "jour": "Vendredi",
       "heure": "12h",
       "format": "Photo",
-      "angle": "Présentation de produits adaptés à la peau africaine",
+      "angle": "Présentation du forfait mariée avec détails des soins inclus",
       "reseau": "Instagram"
     },
     {
       "jour": "Samedi",
       "heure": "14h",
       "format": "Reel",
-      "angle": "Témoignage d'une cliente satisfaite",
+      "angle": "Comment prendre rendez-vous pour un soin de visage éclat",
       "reseau": "TikTok"
     },
     {
       "jour": "Dimanche",
       "heure": "18h",
       "format": "Carrousel",
-      "angle": "Présentation des différents types de soins",
+      "angle": "Réponses aux questions fréquemment posées sur les soins et produits",
       "reseau": "Instagram"
     },
     {
       "jour": "Mardi",
       "heure": "19h",
       "format": "Short",
-      "angle": "Conseils pour une peau saine",
+      "angle": "L'importance de l'hydratation pour une peau saine",
       "reseau": "TikTok"
     }
   ],
@@ -67,9 +67,9 @@
     "Samedi 14h"
   ],
   "objectifs": [
-    "Augmenter le taux d'engagement de 15% sur les publications",
-    "Accroître la portée des publications de 20% par rapport à la moyenne actuelle",
+    "Augmenter de 15% l'engagement sur les publications",
+    "Maintenir une audience moyenne de 24000 sur les réseaux sociaux",
     "Répondre à 100% des commentaires et messages dans les 24 heures",
-    "Augmenter le nombre de followers sur TikTok de 10% en une semaine"
+    "Augmenter la portée des publications de 20% en 6 semaines"
   ]
 }

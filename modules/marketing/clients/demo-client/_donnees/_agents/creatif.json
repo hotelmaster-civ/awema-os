@@ -1,6 +1,6 @@
 {
   "agent": "creatif",
-  "genere_le": "2026-07-31T13:15:04+00:00",
+  "genere_le": "2026-08-01T11:14:00+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -12,33 +12,33 @@
   },
   "items": [
     {
-      "hook": "Découvrez le secret d'une peau éclatante en quelques étapes !",
-      "script": "Bonjour les beautés ! Chez Éclat Beauté, nous croyons que chaque femme mérite de resplendir. Notre soin visage éclat est conçu pour vous offrir une hydratation profonde et un éclat naturel. Comment ? En quelques étapes simples et avec des produits adaptés à votre peau. Réservez maintenant et laissez-nous vous révéler !",
+      "hook": "Découvrez le secret d'un teint éclatant en 3 étapes !",
+      "script": "Vous rêvez d'avoir une peauparfaite ? Notre soin visage éclat est là pour vous aider ! Étape 1 : Nettoyage profond, Étape 2 : Hydratation intense, Étape 3 : Protection contre les agressions extérieures. Résultat : Une peau lumineuse et éclatante ! N'hésitez pas à nous contacter pour prendre rendez-vous.",
       "format": "Reel",
       "reseau": "TikTok",
-      "prompt_image": "Une femme africaine avec une peau radiante, souriante, avec des feuilles de plantes ou des fleurs autour d'elle, sur un fond #D4AF37, avec le logo d'Éclat Beauté discrètement integré",
+      "prompt_image": "Une femme avec une peau éclatante, les trois étapes du soin visage éclat représentées en légende",
       "variantes": [
-        "Quelle est votre routine de soin de peau quotidienne ?"
+        "Transformez votre peau en 3 étapes !"
       ]
     },
     {
       "hook": "Préparez votre peau pour le grand jour avec notre forfait mariée !",
-      "script": "Future mariée, vous rêvez d’un teint parfait pour le jour J ? Notre forfait mariée est spécialement conçu pour vous. 3 séances de soins personnalisés pour vous faire resplendir. Contactez-nous pour réserver ! #ÉclatBeauté #ForfaitMariée",
+      "script": "Vous vous mariez bientôt et voulez avoir une peau parfaite pour le grand jour ? Notre forfait mariée est conçu spécialement pour vous ! 3 séances de soin visage éclat pour vous donner une peau lumineuse et éclatante. Contactez-nous pour plus d'informations.",
       "format": "Carrousel",
       "reseau": "Instagram",
-      "prompt_image": "Une future mariée africaine, heureuse, avec une peau parfaite, sur un fond #0A1F44, avec des éléments de décoration de mariage et le logo d'Éclat Beauté en corner",
+      "prompt_image": "Une future mariée avec une peau éclatante, les détails du forfait mariée en légende",
       "variantes": [
-        "Le secret d’un teint de rêve pour votre mariage ?"
+        "Rêvez d'une peau parfaite pour votre mariage ?"
       ]
     },
     {
-      "hook": "Comment prendre soin de votre peau en été ? Des conseils d'Éclat Beauté !",
-      "script": "L'été est là ! Comment protéger votre peau des rayons du soleil et de la chaleur ? Chez Éclat Beauté, nous vous partageons nos conseils pour un summer glow sans risque. Hydratation, protection solaire, et produits naturels... Découvrez nos astuces !",
-      "format": "Short",
-      "reseau": "TikTok",
-      "prompt_image": "Une femme africaine, souriante, sous le soleil, avec un chapeau de paille et des lunettes de soleil, tenant un produit de soin solaire, sur un fond #D4AF37",
+      "hook": "Vous avez des questions sur nos soins de beauté ? Nous avons les réponses !",
+      "script": "Vous vous demandez quels sont les meilleurs soins pour votre type de peau ? Ou comment préparer votre peau pour un événement spécial ? Nous avons créé un espace FAQ pour répondre à toutes vos questions ! Consultez-le maintenant et découvrez comment nous pouvons vous aider à atteindre votre objetif de beauté.",
+      "format": "Post",
+      "reseau": "Facebook",
+      "prompt_image": "Une femme consultante un ordinateur avec une page FAQ ouverte, les mots clés 'soins de beauté' et 'FAQ' en légende",
       "variantes": [
-        "L'été, votre peau a besoin de soins spécifiques !"
+        "Toutes vos questions sur les soins de beauté, répondues !"
       ]
     }
   ]

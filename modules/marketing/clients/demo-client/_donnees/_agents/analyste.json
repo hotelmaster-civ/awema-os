@@ -1,6 +1,6 @@
 {
   "agent": "analyste",
-  "genere_le": "2026-07-31T13:12:55+00:00",
+  "genere_le": "2026-08-01T11:12:31+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -13,10 +13,10 @@
   "items": [
     {
       "type": "insight",
-      "titre": "Popularité de TikTok",
-      "explication": "Le réseau TikTok est celui qui génère le plus d'engagement pour Éclat Beauté, notamment grâce au poste 'Routine peau grasse en 3 étapes' qui a obtenu 5400 likes.",
+      "titre": "Prédominance de TikTok",
+      "explication": "Les données montrent que TikTok génère le plus d'engagement global.",
       "preuve": {
-        "metrique": "likes sur TikTok",
+        "metrique": "likes",
         "valeur": 88000,
         "variation": null
       },
@@ -24,58 +24,53 @@
     },
     {
       "type": "reco",
-      "titre": "Publier plus sur TikTok",
-      "explication": "Pour augmenter l'engagement, il est recommandé de publier plus de contenu sur TikTok, en privilégiant les formats Reel qui obtiennent un engagement moyen de 520.",
+      "titre": "Créer du contenu sur TikTok",
+      "explication": "Créer des contenus visuels et des Reels sur TikTok pour augmenter l'engagement.",
       "preuve": {
-        "metrique": "engagement moyen des Reels",
-        "valeur": 520,
-        "variation": null
+        "metrique": "likes",
+        "valeur": 88000
       },
-      "action": "Publier au moins 2 Reels par semaine sur TikTok"
-    },
-    {
-      "type": "insight",
-      "titre": "Évolution de l'audience",
-      "explication": "L'audience d'Éclat Beauté a augmenté de 25% entre le 1er mai et le 15 juin, ce qui montre une tendance positive dans la visibilité du compte.",
-      "preuve": {
-        "metrique": "évolution de l'audience",
-        "valeur": 2500,
-        "variation": "25%"
-      },
-      "action": null
-    },
-    {
-      "type": "reco",
-      "titre": "Répondre aux commentaires",
-      "explication": "Il est essentiel de répondre aux commentaires et messages pour renforcer la confiance avec les followers et les inciter à rester engagés.",
-      "preuve": {
-        "metrique": "nombre de commentaires sans réponse",
-        "valeur": 5,
-        "variation": null
-      },
-      "action": "Répondre à tous les commentaires et messages cette semaine"
+      "action": "Publier au moins un Reel par semaine sur TikTok"
     },
     {
       "type": "insight",
       "titre": "Meilleur créneau horaire",
-      "explication": "Le meilleur créneau horaire pour publier du contenu est jeudi à 19h, ce qui correspond à la période de plus forte engagement.",
+      "explication": "Le jeudi à 19h est le meilleur créneau pour poster du contenu.",
       "preuve": {
-        "metrique": "engagement jeudi 19h",
-        "valeur": 260,
-        "variation": null
+        "metrique": "meilleur_creneau",
+        "valeur": "Jeudi 19h"
       },
       "action": null
     },
     {
       "type": "reco",
-      "titre": "Planifier les publications",
-      "explication": "Il est recommandé de planifier les publications à l'avance pour garantir une cadence régulière et maximiser l'engagement, notamment en utilisant le créneau jeudi 19h.",
+      "titre": "Poster à l'heure idéale",
+      "explication": "Poster du contenu à l'heure idéale pour augmenter l'engagement.",
       "preuve": {
-        "metrique": "engagement moyen par jour",
-        "valeur": 180,
-        "variation": null
+        "metrique": "meilleur_creneau",
+        "valeur": "Jeudi 19h"
       },
-      "action": "Planifier les publications pour la semaine à venir en utilisant le créneau jeudi 19h"
+      "action": "Programmer les publications pour le jeudi à 19h"
+    },
+    {
+      "type": "insight",
+      "titre": "Type de contenu le plus performant",
+      "explication": "Les Reels génèrent plus d'engagement moyen que les autres types de contenu.",
+      "preuve": {
+        "metrique": "engagement_moyen",
+        "valeur": 520
+      },
+      "action": null
+    },
+    {
+      "type": "reco",
+      "titre": "Augmenter les Reels",
+      "explication": "Créer plus de Reels pour augmenter l'engagement global.",
+      "preuve": {
+        "metrique": "engagement_moyen",
+        "valeur": 520
+      },
+      "action": "Créer au moins 2 Reels par mois"
     }
   ]
 }

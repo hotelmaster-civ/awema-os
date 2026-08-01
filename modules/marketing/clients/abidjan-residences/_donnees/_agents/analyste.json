@@ -1,6 +1,6 @@
 {
   "agent": "analyste",
-  "genere_le": "2026-07-31T13:12:43+00:00",
+  "genere_le": "2026-08-01T11:12:20+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -12,8 +12,8 @@
   "items": [
     {
       "type": "insight",
-      "titre": "Le réseau TikTok est le plus performant",
-      "explication": "Le compte Abidjan résidences a le plus d'interactions sur TikTok, avec 9482 likes et 168 commentaires.",
+      "titre": "Engagement élevé sur les vidéos",
+      "explication": "Les vidéos publiées sur TikTok ont généré un engagement élevé en termes de likes et de commentaires.",
       "preuve": {
         "metrique": "likes",
         "valeur": 9482
@@ -21,18 +21,18 @@
     },
     {
       "type": "reco",
-      "titre": "Publier régulièrement sur TikTok",
-      "explication": "Il est recommandé de publier régulièrement sur TikTok pour maintenir l'engagement de l'audience, car le dernier post date de 44 jours.",
+      "titre": "Publier des vidéos régulièrement",
+      "explication": "Pour maintenir l'engagement de l'audience, il est recommandé de publier des vidéos régulièrement, idéalement une fois par semaine.",
       "preuve": {
-        "metrique": "jours_depuis_dernier_post",
-        "valeur": 44
+        "metrique": "posts_par_semaine",
+        "valeur": 0.0
       },
-      "action": "Publier au moins un contenu par semaine sur TikTok"
+      "action": "Publier au moins une vidéo par semaine sur TikTok"
     },
     {
       "type": "insight",
-      "titre": "Les vidéos sont les contenus les plus populaires",
-      "explication": "Les vidéos sont les contenus les plus populaires sur le compte Abidjan résidences, avec des vues allant jusqu'à 32699.",
+      "titre": "Popularité de certains contenus",
+      "explication": "Certains contenus, comme la vidéo '#collage avec @Tdfmanga', ont généré un nombre élevé de vues et de likes.",
       "preuve": {
         "metrique": "vues",
         "valeur": 32699
@@ -40,18 +40,18 @@
     },
     {
       "type": "reco",
-      "titre": "Créer des vidéos engageantes",
-      "explication": "Il est recommandé de créer des vidéos engageantes pour maintenir l'intérêt de l'audience, car les vidéos sont les contenus les plus populaires.",
+      "titre": "Optimiser les heures de publication",
+      "explication": "Pour maximiser la visibilité des contenus, il est recommandé de publier à des heures stratégiques, comme le vendredi à 14h.",
       "preuve": {
-        "metrique": "vues",
-        "valeur": 32699
+        "metrique": "heure",
+        "valeur": "14h"
       },
-      "action": "Créer des vidéos courtes et engageantes pour le compte Abidjan résidences"
+      "action": "Publier des contenus le vendredi à 14h sur TikTok"
     },
     {
       "type": "insight",
-      "titre": "L'audience est en légère augmentation",
-      "explication": "L'audience du compte Abidjan résidences est en légère augmentation, avec une valeur actuelle de 4200 abonnés.",
+      "titre": "Évolution de l'audience",
+      "explication": "L'audience a augmenté légèrement au fil du temps, avec une valeur actuelle de 4200 abonnés.",
       "preuve": {
         "metrique": "audience",
         "valeur": 4200
@@ -59,13 +59,13 @@
     },
     {
       "type": "reco",
-      "titre": "Maintenir la qualité des contenus",
-      "explication": "Il est recommandé de maintenir la qualité des contenus pour continuer à attirer de nouveaux abonnés et maintenir l'engagement de l'audience actuelle.",
+      "titre": "Diversifier les types de contenus",
+      "explication": "Pour éviter la répétition et maintenir l'intérêt de l'audience, il est recommandé de diversifier les types de contenus publiés.",
       "preuve": {
-        "metrique": "audience",
-        "valeur": 4200
+        "metrique": "type",
+        "valeur": "vidéo"
       },
-      "action": "Vérifier régulièrement la qualité des contenus publiés sur le compte Abidjan résidences"
+      "action": "Publier différents types de contenus, comme des photos ou des stories, sur TikTok"
     }
   ]
 }

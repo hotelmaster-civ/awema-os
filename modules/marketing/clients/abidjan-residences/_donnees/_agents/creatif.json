@@ -1,6 +1,6 @@
 {
   "agent": "creatif",
-  "genere_le": "2026-07-31T13:14:51+00:00",
+  "genere_le": "2026-08-01T11:13:48+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -11,36 +11,33 @@
   },
   "items": [
     {
-      "hook": "Découvrez le charme d'Abidjan avec nous !",
-      "script": "Vous cherchez un endroit où vous détendre et vous ressourcer à Abidjan ? Nous avons ce qu'il vous faut ! Découvrez nos résidences confortables etModernes, idéales pour les voyageurs et les locaux. De la visite de la lagune à la découverte de la vie nocturne, nous vous guidons pour que vous puissiez profiter au maximum de votre séjour. Abonnez-vous pour plus de contenu et de conseils de voyage ! #Abidjan #Résidences #Voyage",
+      "hook": "Découvrez les secrets de Yopougon !",
+      "script": "Vous cherchez un endroit où vous détendre à Yopougon ? Nous avons ce qu'il vous faut ! Découvrez notre sélection de résidences de rêve et vivez l'expérience ultime. De la piscine au spa, tout est mis en œuvre pour votre confort. N'attendez plus, venez découvrir par vous-même ! #Yopougon #Residences #Abidjan",
       "format": "Reel",
       "reseau": "TikTok",
-      "prompt_image": "Une photo d'une résidence moderne avec une vue sur la lagune d'Abidjan",
+      "prompt_image": "une vue aérienne d'une résidence luxueuse à Yopougon avec piscine et jardin",
       "variantes": [
-        "Explorez Abidjan avec nous !",
-        "Le charme d'Abidjan en vidéo !"
+        "Échappez à la routine avec nous !"
       ]
     },
     {
-      "hook": "Que faire à Abidjan ce weekend ?",
-      "script": "Vous cherchez des idées pour votre weekend à Abidjan ? Nous avons quelques suggestions pour vous ! Découvrez nos recommandations pour les meilleures plages, les meilleurs restaurants et les meilleures activités à faire dans la ville. Abonnez-vous pour plus de contenu et de conseils de voyage ! #Abidjan #Weekend #Voyage",
-      "format": "Carrousel",
-      "reseau": "TikTok",
-      "prompt_image": "Une photo d'une plage d'Abidjan avec des personnes en train de se détendre",
-      "variantes": [
-        "Weekend à Abidjan : que faire ?",
-        "Abidjan : les meilleures activités pour votre weekend"
-      ]
-    },
-    {
-      "hook": "Notre résidence à Abidjan, votre maison loin de chez vous !",
-      "script": "Vous cherchez un endroit où vous sentir comme chez vous à Abidjan ? Notre résidence est là pour vous accueillir ! Découvrez nos chambres confortables, notre piscine et nos équipements de loisirs. Abonnez-vous pour plus de contenu et de conseils de voyage ! #Abidjan #Résidence #Voyage",
+      "hook": "Vous êtes prêts à découvrir l'animation ivoirienne ?",
+      "script": "Le monde de l'animation ivoirienne est vaste et passionnant ! Nous sommes fiers de vous présenter notre dernière découverte : « Placman » ! Un animateur de talent qui vous transporte dans un monde de rêve. Venez découvrir et partager votre avis avec nous ! #AnimationIvoirienne #Placman #Abidjan",
       "format": "Short",
       "reseau": "TikTok",
-      "prompt_image": "Une photo d'une chambre de la résidence avec une vue sur la piscine",
+      "prompt_image": "une capture d'écran de l'animation « Placman » avec des couleurs vives et des personnages dynamiques",
       "variantes": [
-        "Votre maison loin de chez vous à Abidjan",
-        "Notre résidence, votre nouvelle maison !"
+        "L'animation ivoirienne, c'est ici !"
+      ]
+    },
+    {
+      "hook": "Faites la promotion de votre établissement avec nous !",
+      "script": "Vous êtes propriétaire d'un établissement et vous souhaitez le promouvoir ? Nous sommes là pour vous aider ! Découvrez notre offre de promotion personnalisée et atteignez un public plus large. N'attendez plus, contactez-nous dès aujourd'hui ! #Promotion #Etablissement #Abidjan",
+      "format": "Carrousel",
+      "reseau": "TikTok",
+      "prompt_image": "un visuel représentant différents établissements avec des enseignes colorées et des personnes souriantes",
+      "variantes": [
+        "Développez votre business avec nous !"
       ]
     }
   ]
