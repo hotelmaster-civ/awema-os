@@ -1,6 +1,6 @@
 {
   "agent": "stratege",
-  "genere_le": "2026-08-01T11:13:25+00:00",
+  "genere_le": "2026-08-02T11:09:49+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -15,61 +15,60 @@
       "jour": "Lundi",
       "heure": "19h",
       "format": "Reel",
-      "angle": "Routine peau grasse en 3 étapes avec produits adaptés à la peau africaine",
+      "angle": "Conseils pour un soin visage éclat",
       "reseau": "TikTok"
     },
     {
-      "jour": "Mercredi",
-      "heure": "14h",
+      "jour": "Mardi",
+      "heure": "12h",
       "format": "Carrousel",
-      "angle": "Avant/Après soin éclat avec témoignage client",
+      "angle": "Avant/Après soin éclat pour les peaux grasses",
       "reseau": "Instagram"
+    },
+    {
+      "jour": "Mercredi",
+      "heure": "15h",
+      "format": "Photo",
+      "angle": "Présentation d'un nouveau produit hypoallergénique pour les peaux sensibles",
+      "reseau": "Facebook"
     },
     {
       "jour": "Jeudi",
       "heure": "19h",
-      "format": "Short",
-      "angle": "Conseil pour un teint parfait pour le grand jour (mariage)",
+      "format": "Reel",
+      "angle": "Routine peau grasse en 3 étapes",
       "reseau": "TikTok"
     },
     {
       "jour": "Vendredi",
-      "heure": "12h",
-      "format": "Photo",
-      "angle": "Présentation du forfait mariée avec détails des soins inclus",
+      "heure": "10h",
+      "format": "Carrousel",
+      "angle": "Forfait mariée : les 3 séances pour un teint parfait",
       "reseau": "Instagram"
+    },
+    {
+      "jour": "Dimanche",
+      "heure": "17h",
+      "format": "Short",
+      "angle": "Bienfaits du soin de soi pour la peau",
+      "reseau": "TikTok"
     },
     {
       "jour": "Samedi",
       "heure": "14h",
       "format": "Reel",
-      "angle": "Comment prendre rendez-vous pour un soin de visage éclat",
-      "reseau": "TikTok"
-    },
-    {
-      "jour": "Dimanche",
-      "heure": "18h",
-      "format": "Carrousel",
-      "angle": "Réponses aux questions fréquemment posées sur les soins et produits",
-      "reseau": "Instagram"
-    },
-    {
-      "jour": "Mardi",
-      "heure": "19h",
-      "format": "Short",
-      "angle": "L'importance de l'hydratation pour une peau saine",
+      "angle": "Comment choisir le bon soin pour votre type de peau",
       "reseau": "TikTok"
     }
   ],
-  "cadence_recommandee": "3 publications/semaine",
+  "cadence_recommandee": "Augmenter à 4 publications/semaine",
   "meilleures_heures": [
     "Jeudi 19h",
     "Samedi 14h"
   ],
   "objectifs": [
-    "Augmenter de 15% l'engagement sur les publications",
-    "Maintenir une audience moyenne de 24000 sur les réseaux sociaux",
-    "Répondre à 100% des commentaires et messages dans les 24 heures",
-    "Augmenter la portée des publications de 20% en 6 semaines"
+    "Augmenter l'engagement de 20% sur les publications dans les 3 prochaines semaines",
+    "Accroître la portée des publications de 15% sur la même période",
+    "Maintenir un taux d'engagement moyen supérieur à 3.5%"
   ]
 }

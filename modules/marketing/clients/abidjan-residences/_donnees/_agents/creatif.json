@@ -1,6 +1,6 @@
 {
   "agent": "creatif",
-  "genere_le": "2026-08-01T11:13:48+00:00",
+  "genere_le": "2026-08-02T11:10:31+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -11,33 +11,33 @@
   },
   "items": [
     {
-      "hook": "Découvrez les secrets de Yopougon !",
-      "script": "Vous cherchez un endroit où vous détendre à Yopougon ? Nous avons ce qu'il vous faut ! Découvrez notre sélection de résidences de rêve et vivez l'expérience ultime. De la piscine au spa, tout est mis en œuvre pour votre confort. N'attendez plus, venez découvrir par vous-même ! #Yopougon #Residences #Abidjan",
-      "format": "Reel",
-      "reseau": "TikTok",
-      "prompt_image": "une vue aérienne d'une résidence luxueuse à Yopougon avec piscine et jardin",
-      "variantes": [
-        "Échappez à la routine avec nous !"
-      ]
-    },
-    {
-      "hook": "Vous êtes prêts à découvrir l'animation ivoirienne ?",
-      "script": "Le monde de l'animation ivoirienne est vaste et passionnant ! Nous sommes fiers de vous présenter notre dernière découverte : « Placman » ! Un animateur de talent qui vous transporte dans un monde de rêve. Venez découvrir et partager votre avis avec nous ! #AnimationIvoirienne #Placman #Abidjan",
+      "hook": "Découvrez les résidences ivoiriennes en vie!",
+      "script": "Vous cherchez un endroit où vous sentir chez vous à Abidjan? Découvrez nos résidences modernes et confortables, idéales pour les familles et les jeunes professionnels. De la décoration intérieure tendance aux équipements de haute qualité, nous avons tout ce dont vous avez besoin pour vivre une expérience unique. Rejoignez notre communauté et faites partie de l'aventure #AbidjanRésidences",
       "format": "Short",
       "reseau": "TikTok",
-      "prompt_image": "une capture d'écran de l'animation « Placman » avec des couleurs vives et des personnages dynamiques",
+      "prompt_image": "Une résidence moderne avec des jardins luxuriants et une vue sur la ville, les chambres sont équipées de literie de haute qualité et les salles de bain sont spacieuses et modernes",
       "variantes": [
-        "L'animation ivoirienne, c'est ici !"
+        "Un chez-soi à Abidjan, c'est possible!"
       ]
     },
     {
-      "hook": "Faites la promotion de votre établissement avec nous !",
-      "script": "Vous êtes propriétaire d'un établissement et vous souhaitez le promouvoir ? Nous sommes là pour vous aider ! Découvrez notre offre de promotion personnalisée et atteignez un public plus large. N'attendez plus, contactez-nous dès aujourd'hui ! #Promotion #Etablissement #Abidjan",
-      "format": "Carrousel",
+      "hook": "La vie en résidence, c'est quoi pour vous?",
+      "script": "Partagez vos expériences et vos anecdotes sur la vie en résidence à Abidjan. Qu'est-ce qui vous plaît le plus? La sécurité, la communauté, les équipements? Nous voulons savoir ce que vous pensez et ce que vous attendez d'une résidence idéale. Rejoignez la conversation et inspirez nos futurs projets #AbidjanRésidences",
+      "format": "Reel",
       "reseau": "TikTok",
-      "prompt_image": "un visuel représentant différents établissements avec des enseignes colorées et des personnes souriantes",
+      "prompt_image": "Une personne souriante dans un jardin, avec des fleurs et des arbres autour d'elle, une légende qui demande aux gens de partager leurs expériences",
       "variantes": [
-        "Développez votre business avec nous !"
+        "Qu'est-ce que la vie en résidence signifie pour vous?"
+      ]
+    },
+    {
+      "hook": "Abidjan, la ville qui vous attend!",
+      "script": "Préparez vos valises et rejoignez-nous à Abidjan pour découvrir la ville la plus dynamique d'Afrique de l'Ouest. De la musique aux saveurs locales, en passant par les marchés colorés, nous vous montrons les trésors cachés de la ville. Rejoignez notre aventure et explorez Abidjan avec nous #AbidjanRésidences",
+      "format": "Carrousel",
+      "reseau": "Instagram",
+      "prompt_image": "Une image de la ville d'Abidjan la nuit, avec des lumières et des couleurs vives, les gens marchant dans les rues et les marchés",
+      "variantes": [
+        "Découvrez le vrai visage d'Abidjan avec nous"
       ]
     }
   ]

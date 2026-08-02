@@ -1,6 +1,6 @@
 {
   "agent": "analyste",
-  "genere_le": "2026-08-01T11:12:31+00:00",
+  "genere_le": "2026-08-02T11:08:56+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -13,64 +13,50 @@
   "items": [
     {
       "type": "insight",
-      "titre": "Prédominance de TikTok",
-      "explication": "Les données montrent que TikTok génère le plus d'engagement global.",
-      "preuve": {
-        "metrique": "likes",
-        "valeur": 88000,
-        "variation": null
-      },
-      "action": null
-    },
-    {
-      "type": "reco",
-      "titre": "Créer du contenu sur TikTok",
-      "explication": "Créer des contenus visuels et des Reels sur TikTok pour augmenter l'engagement.",
+      "titre": "Réseau le plus performant",
+      "explication": "TikTok est le réseau le plus performant en termes de likes et de vues pour Éclat Beauté.",
       "preuve": {
         "metrique": "likes",
         "valeur": 88000
-      },
-      "action": "Publier au moins un Reel par semaine sur TikTok"
+      }
     },
     {
       "type": "insight",
-      "titre": "Meilleur créneau horaire",
-      "explication": "Le jeudi à 19h est le meilleur créneau pour poster du contenu.",
+      "titre": "Type de contenu le plus engageant",
+      "explication": "Les Reels sont les contenus les plus engageants sur les réseaux sociaux d'Éclat Beauté.",
       "preuve": {
-        "metrique": "meilleur_creneau",
-        "valeur": "Jeudi 19h"
-      },
-      "action": null
+        "metrique": "engagement_moyen",
+        "valeur": 520
+      }
     },
     {
       "type": "reco",
-      "titre": "Poster à l'heure idéale",
-      "explication": "Poster du contenu à l'heure idéale pour augmenter l'engagement.",
-      "preuve": {
-        "metrique": "meilleur_creneau",
-        "valeur": "Jeudi 19h"
-      },
-      "action": "Programmer les publications pour le jeudi à 19h"
-    },
-    {
-      "type": "insight",
-      "titre": "Type de contenu le plus performant",
-      "explication": "Les Reels génèrent plus d'engagement moyen que les autres types de contenu.",
+      "titre": "Publier un Reel cette semaine",
+      "explication": "Publier un Reel sur TikTok cette semaine pour augmenter l'engagement et les likes.",
       "preuve": {
         "metrique": "engagement_moyen",
         "valeur": 520
       },
-      "action": null
+      "action": "Publiez un Reel sur TikTok avant la fin de la semaine"
     },
     {
       "type": "reco",
-      "titre": "Augmenter les Reels",
-      "explication": "Créer plus de Reels pour augmenter l'engagement global.",
+      "titre": "Répondre aux commentaires en retard",
+      "explication": "Répondre aux commentaires en retard pour améliorer la satisfaction client et l'engagement.",
       "preuve": {
-        "metrique": "engagement_moyen",
-        "valeur": 520
+        "metrique": "a_repondre",
+        "valeur": 5
       },
-      "action": "Créer au moins 2 Reels par mois"
+      "action": "Répondez aux 5 commentaires en retard dès que possible"
+    },
+    {
+      "type": "insight",
+      "titre": "Évolution de l'audience",
+      "explication": "L'audience d'Éclat Beauté a augmenté de 25% depuis le 1er mai 2026.",
+      "preuve": {
+        "metrique": "evolution_audience",
+        "valeur": 2500
+      }
     }
   ]
 }

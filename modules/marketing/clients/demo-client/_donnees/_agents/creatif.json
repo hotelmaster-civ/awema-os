@@ -1,6 +1,6 @@
 {
   "agent": "creatif",
-  "genere_le": "2026-08-01T11:14:00+00:00",
+  "genere_le": "2026-08-02T11:10:42+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -12,33 +12,33 @@
   },
   "items": [
     {
-      "hook": "Découvrez le secret d'un teint éclatant en 3 étapes !",
-      "script": "Vous rêvez d'avoir une peauparfaite ? Notre soin visage éclat est là pour vous aider ! Étape 1 : Nettoyage profond, Étape 2 : Hydratation intense, Étape 3 : Protection contre les agressions extérieures. Résultat : Une peau lumineuse et éclatante ! N'hésitez pas à nous contacter pour prendre rendez-vous.",
+      "hook": "Découvrez le secret pour un teint éclatant !",
+      "script": "Vous rêvez d'un teint parfait pour votre journée ? Notre soin visage éclat est là pour vous ! Avec un nettoyage et une hydratation profonde, vos pores seront resserrés et votre peau lumineuse. Réservez votre rendez-vous dès maintenant !",
       "format": "Reel",
       "reseau": "TikTok",
-      "prompt_image": "Une femme avec une peau éclatante, les trois étapes du soin visage éclat représentées en légende",
+      "prompt_image": "Une femme avec un teint lumineux et un large sourire, avec un écran divideur qui montre avant et après le soin",
       "variantes": [
-        "Transformez votre peau en 3 étapes !"
+        "Un teint radieux en un rien de temps ? C'est possible !"
       ]
     },
     {
-      "hook": "Préparez votre peau pour le grand jour avec notre forfait mariée !",
-      "script": "Vous vous mariez bientôt et voulez avoir une peau parfaite pour le grand jour ? Notre forfait mariée est conçu spécialement pour vous ! 3 séances de soin visage éclat pour vous donner une peau lumineuse et éclatante. Contactez-nous pour plus d'informations.",
+      "hook": "Future mariée, vous êtes prête à briller ?",
+      "script": "Le grand jour approche et vous voulez être parfaite ? Notre forfait mariée est conçu pour vous aider à atteindre un teint parfait. 3 séances de soin pour vous faire resplendir. Inscrivez-vous dès aujourd'hui !",
       "format": "Carrousel",
       "reseau": "Instagram",
-      "prompt_image": "Une future mariée avec une peau éclatante, les détails du forfait mariée en légende",
+      "prompt_image": "Une future mariée heureuse et rayonnante avec une série de photos avant-après de soins réalisés à Éclat Beauté",
       "variantes": [
-        "Rêvez d'une peau parfaite pour votre mariage ?"
+        "Mariage : comment avoir la peau parfaite le jour J ?"
       ]
     },
     {
-      "hook": "Vous avez des questions sur nos soins de beauté ? Nous avons les réponses !",
-      "script": "Vous vous demandez quels sont les meilleurs soins pour votre type de peau ? Ou comment préparer votre peau pour un événement spécial ? Nous avons créé un espace FAQ pour répondre à toutes vos questions ! Consultez-le maintenant et découvrez comment nous pouvons vous aider à atteindre votre objetif de beauté.",
-      "format": "Post",
-      "reseau": "Facebook",
-      "prompt_image": "Une femme consultante un ordinateur avec une page FAQ ouverte, les mots clés 'soins de beauté' et 'FAQ' en légende",
+      "hook": "Prenez soin de votre peau, elle vous remerciera !",
+      "script": "Une peau saine est une peau heureuse ! Découvrez comment nos soins personnalisés peuvent améliorer votre teint et votre confiance en vous. Réservez une consultation pour trouver le soin qu'il vous faut !",
+      "format": "Short",
+      "reseau": "TikTok",
+      "prompt_image": "Une personne heureuse avec une peau saine, entourée d'éléments de nature tels que des fleurs, avec un effet de transition qui montre la différence avant et après le soin",
       "variantes": [
-        "Toutes vos questions sur les soins de beauté, répondues !"
+        "Sentez-vous bien dans votre peau, avec Éclat Beauté"
       ]
     }
   ]

@@ -1,6 +1,6 @@
 {
   "agent": "stratege",
-  "genere_le": "2026-08-01T11:13:12+00:00",
+  "genere_le": "2026-08-02T11:09:37+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -14,60 +14,59 @@
       "jour": "Lundi",
       "heure": "14h",
       "format": "Vidéo",
-      "angle": "Présentation d'un nouveau logement à Abidjan",
-      "reseau": "TikTok"
-    },
-    {
-      "jour": "Mardi",
-      "heure": "14h",
-      "format": "Vidéo",
-      "angle": "Découverte des équipements de loisirs à Abidjan",
+      "angle": "Présentation d'un lieu de détente à Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Mercredi",
       "heure": "14h",
-      "format": "Story",
-      "angle": "Conseils pour choisir le logement idéal à Abidjan",
-      "reseau": "TikTok"
-    },
-    {
-      "jour": "Jeudi",
-      "heure": "14h",
-      "format": "Live",
-      "angle": "Visite virtuelle d'un logement à Abidjan",
+      "format": "Vidéo",
+      "angle": "Découverte d'une résidence ivoirienne",
       "reseau": "TikTok"
     },
     {
       "jour": "Vendredi",
       "heure": "14h",
       "format": "Vidéo",
-      "angle": "Présentation d'un événement local à Abidjan",
+      "angle": "Collaboration avec un influenceur local pour promouvoir Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Samedi",
-      "heure": "14h",
-      "format": "Story",
-      "angle": "Découverte des activités de loisirs à Abidjan",
+      "heure": "12h",
+      "format": "Vidéo",
+      "angle": "Exploration de quartiers d'Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Dimanche",
+      "heure": "18h",
+      "format": "Vidéo",
+      "angle": "Promotion d'un établissement local",
+      "reseau": "TikTok"
+    },
+    {
+      "jour": "Mardi",
       "heure": "14h",
       "format": "Vidéo",
-      "angle": "Résumé de la semaine à Abidjan",
+      "angle": "Partage d'expériences à Abidjan",
+      "reseau": "TikTok"
+    },
+    {
+      "jour": "Jeudi",
+      "heure": "14h",
+      "format": "Vidéo",
+      "angle": "Découverte d'un lieu culturel à Abidjan",
       "reseau": "TikTok"
     }
   ],
-  "cadence_recommandee": "4 publications/semaine",
+  "cadence_recommandee": "3 publications/semaine",
   "meilleures_heures": [
     "Vendredi 14h"
   ],
   "objectifs": [
-    "Augmenter de 10% les vues sur TikTok",
-    "Accroître l'engagement de 20% sur les publications",
-    "Maintenir une audience stable de 4200 abonnés",
-    "Améliorer la portée des publications de 15%"
+    "Augmenter le nombre de followers sur TikTok de 10% en 3 mois",
+    "Améliorer l'engagement sur les publications TikTok de 20% en 2 mois",
+    "Maintenir une cadence régulière de publications pour garder une audience active"
   ]
 }
