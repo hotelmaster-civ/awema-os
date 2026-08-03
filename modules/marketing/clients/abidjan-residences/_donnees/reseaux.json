@@ -19,13 +19,13 @@
       "vues": null
     },
     "tiktok": {
-      "abonnes": 4200,
+      "abonnes": 4195,
       "posts": 51,
-      "likes": 9482,
+      "likes": 9484,
       "commentaires": 168,
       "partages": 91,
       "portee": null,
-      "vues": 41723
+      "vues": 41823
     },
     "linkedin": {
       "abonnes": null,
@@ -55,7 +55,7 @@
       "likes": 8920,
       "commentaires": 110,
       "partages": 73,
-      "vues": 32699,
+      "vues": 32741,
       "type": "vidéo"
     },
     {
@@ -66,7 +66,7 @@
       "likes": 67,
       "commentaires": 8,
       "partages": 3,
-      "vues": 1919,
+      "vues": 1953,
       "type": "vidéo"
     },
     {
@@ -85,10 +85,10 @@
       "plateforme": "TikTok",
       "date": "2026-06-12T22:03:37+00:00",
       "lien": "https://www.tiktok.com/@abidjanresidences/video/7650633018763169044?utm_campaign=tt4d_open_api&utm_source=sbaw5a5qgv6yxmm57s",
-      "likes": 69,
+      "likes": 71,
       "commentaires": 4,
       "partages": 1,
-      "vues": 617,
+      "vues": 626,
       "type": "vidéo"
     },
     {
@@ -99,7 +99,7 @@
       "likes": 57,
       "commentaires": 5,
       "partages": 1,
-      "vues": 561,
+      "vues": 562,
       "type": "vidéo"
     },
     {
@@ -110,7 +110,7 @@
       "likes": 30,
       "commentaires": 3,
       "partages": 2,
-      "vues": 338,
+      "vues": 339,
       "type": "vidéo"
     },
     {
@@ -121,7 +121,7 @@
       "likes": 33,
       "commentaires": 2,
       "partages": 0,
-      "vues": 478,
+      "vues": 479,
       "type": "vidéo"
     },
     {
@@ -137,10 +137,10 @@
     }
   ],
   "tiktok": {
-    "abonnes": 4200,
+    "abonnes": 4195,
     "video_count": 51,
-    "likes_total": 21844,
-    "vues_recentes": 41723,
+    "likes_total": 21847,
+    "vues_recentes": 41823,
     "display_name": "Abidjan résidences",
     "dernier_post": "2026-06-12T22:03:37+00:00",
     "top_videos": [
@@ -152,7 +152,7 @@
         "likes": 8920,
         "commentaires": 110,
         "partages": 73,
-        "vues": 32699,
+        "vues": 32741,
         "type": "vidéo"
       },
       {
@@ -163,7 +163,7 @@
         "likes": 67,
         "commentaires": 8,
         "partages": 3,
-        "vues": 1919,
+        "vues": 1953,
         "type": "vidéo"
       },
       {
@@ -182,10 +182,10 @@
         "plateforme": "TikTok",
         "date": "2026-06-12T22:03:37+00:00",
         "lien": "https://www.tiktok.com/@abidjanresidences/video/7650633018763169044?utm_campaign=tt4d_open_api&utm_source=sbaw5a5qgv6yxmm57s",
-        "likes": 69,
+        "likes": 71,
         "commentaires": 4,
         "partages": 1,
-        "vues": 617,
+        "vues": 626,
         "type": "vidéo"
       },
       {
@@ -207,7 +207,7 @@
         "likes": 57,
         "commentaires": 5,
         "partages": 1,
-        "vues": 561,
+        "vues": 562,
         "type": "vidéo"
       },
       {
@@ -218,7 +218,7 @@
         "likes": 33,
         "commentaires": 2,
         "partages": 0,
-        "vues": 478,
+        "vues": 479,
         "type": "vidéo"
       },
       {
@@ -229,19 +229,19 @@
         "likes": 27,
         "commentaires": 0,
         "partages": 2,
-        "vues": 462,
+        "vues": 468,
         "type": "vidéo"
       }
     ],
-    "maj": "2026-07-27T16:00:36+00:00"
+    "maj": "2026-08-03T16:06:18+00:00"
   },
   "visuels": {
-    "photo": "https://p16-common-sign.tiktokcdn.com/tos-maliva-avt-0068/3c3862e41453e767e1c3d0af81c24faf~tplv-tiktokx-cropcenter:168:168.jpeg?dr=14577&refresh_token=eec7c52e&x-expires=1785340800&x-signature=yDx%2Fj1RIvyi894C9YHvQs3NComw%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=8aecc5ac&idc=my"
+    "photo": "https://p16-common-sign.tiktokcdn.com/tos-maliva-avt-0068/3c3862e41453e767e1c3d0af81c24faf~tplv-tiktokx-cropcenter:168:168.jpeg?dr=14577&refresh_token=bbf061a7&x-expires=1785945600&x-signature=8NCC65gwOu6aYc6vaVBV4cU7k8w%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=8aecc5ac&idc=my"
   },
   "cadence_reseaux": {
     "tiktok": {
       "dernier_post": "2026-06-12T22:03:37+00:00",
-      "jours_depuis": 44,
+      "jours_depuis": 51,
       "posts_30j": 0,
       "posts_par_semaine": 0.0
     }
@@ -254,7 +254,7 @@
         "Lundi": 26.3,
         "Mercredi": 9.5,
         "Jeudi": 25.8,
-        "Vendredi": 1181.2,
+        "Vendredi": 1181.5,
         "Samedi": 30.0
       },
       "recommandation": "Vendredi vers 14h"
@@ -263,20 +263,20 @@
   "source": "tiktok-display-api",
   "client": "abidjan-residences",
   "global": {
-    "audience": 4200,
+    "audience": 4195,
     "posts": 51,
-    "likes": 9482,
+    "likes": 9484,
     "commentaires": 168,
     "partages": 91,
     "portee": null,
-    "vues": 41723,
+    "vues": 41823,
     "engagement_taux": null
   },
   "connecte": true,
-  "maj": "2026-07-27T16:00:36+00:00",
+  "maj": "2026-08-03T16:06:18+00:00",
   "cadence": {
     "dernier_post": "2026-06-12T22:03:37+00:00",
-    "jours_depuis": 44,
+    "jours_depuis": 51,
     "posts_30j": 0,
     "posts_par_semaine": 0.0,
     "dernier_reseau": "TikTok",
@@ -302,6 +302,10 @@
     {
       "date": "2026-07-27",
       "valeur": 4200
+    },
+    {
+      "date": "2026-08-03",
+      "valeur": 4195
     }
   ]
 }
