@@ -1,6 +1,6 @@
 {
   "agent": "stratege",
-  "genere_le": "2026-08-02T11:09:37+00:00",
+  "genere_le": "2026-08-03T16:09:33+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -12,61 +12,61 @@
   "items": [
     {
       "jour": "Lundi",
-      "heure": "14h",
+      "heure": "19h",
       "format": "Vidéo",
-      "angle": "Présentation d'un lieu de détente à Abidjan",
+      "angle": "Découverte de nouvelles résidences à Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Mercredi",
-      "heure": "14h",
-      "format": "Vidéo",
-      "angle": "Découverte d'une résidence ivoirienne",
+      "heure": "12h",
+      "format": "Photo",
+      "angle": "Présentation d'un événement local à Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Vendredi",
       "heure": "14h",
       "format": "Vidéo",
-      "angle": "Collaboration avec un influenceur local pour promouvoir Abidjan",
+      "angle": "Promotion d'une résidence spécifique à Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Samedi",
-      "heure": "12h",
-      "format": "Vidéo",
-      "angle": "Exploration de quartiers d'Abidjan",
+      "heure": "10h",
+      "format": "Story",
+      "angle": "Conseils pour trouver une résidence à Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Dimanche",
       "heure": "18h",
       "format": "Vidéo",
-      "angle": "Promotion d'un établissement local",
+      "angle": "Découverte d'un quartier d'Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Mardi",
-      "heure": "14h",
-      "format": "Vidéo",
-      "angle": "Partage d'expériences à Abidjan",
+      "heure": "15h",
+      "format": "LIVE",
+      "angle": "Visite virtuelle d'une résidence à Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Jeudi",
-      "heure": "14h",
-      "format": "Vidéo",
-      "angle": "Découverte d'un lieu culturel à Abidjan",
+      "heure": "11h",
+      "format": "Photo",
+      "angle": "Présentation d'un nouveau projet immobilier à Abidjan",
       "reseau": "TikTok"
     }
   ],
-  "cadence_recommandee": "3 publications/semaine",
+  "cadence_recommandee": "4 publications/semaine",
   "meilleures_heures": [
     "Vendredi 14h"
   ],
   "objectifs": [
-    "Augmenter le nombre de followers sur TikTok de 10% en 3 mois",
-    "Améliorer l'engagement sur les publications TikTok de 20% en 2 mois",
-    "Maintenir une cadence régulière de publications pour garder une audience active"
+    "Augmenter les likes de 20% sur les publications TikTok",
+    "Augmenter les vues de 15% sur les vidéos TikTok",
+    "Maintenir l'engagement avec une moyenne de 50 commentaires par publication"
   ]
 }

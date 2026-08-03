@@ -1,6 +1,6 @@
 {
   "agent": "analyste",
-  "genere_le": "2026-08-02T11:08:17+00:00",
+  "genere_le": "2026-08-03T16:08:57+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -12,17 +12,17 @@
   "items": [
     {
       "type": "insight",
-      "titre": "Engagement sur TikTok",
-      "explication": "Le compte Abidjan résidences a un engagement élevé sur TikTok, avec des likes et des commentaires sur les publications.",
+      "titre": "Popularité de TikTok",
+      "explication": "Le réseau TikTok affiche les meilleures performances pour Abidjan résidences.",
       "preuve": {
-        "metrique": "likes_total",
-        "valeur": 9482
+        "metrique": "abonnes",
+        "valeur": 4195
       }
     },
     {
       "type": "insight",
-      "titre": "Top post sur TikTok",
-      "explication": "Le top post sur TikTok est '#collage avec @Tdfmanga decouvrez un animé 100% ivoirien par @Cénack  « placman »' avec 8920 likes.",
+      "titre": "Engagement élevé sur certaines publications",
+      "explication": "Le post « #collage avec @Tdfmanga decouvrez un animé 100% ivoirien par @Cénack  « placman » » a généré un engagement important.",
       "preuve": {
         "metrique": "likes",
         "valeur": 8920
@@ -30,42 +30,42 @@
     },
     {
       "type": "reco",
-      "titre": "Publier plus souvent sur TikTok",
-      "explication": "Il est recommandé de publier plus souvent sur TikTok pour maintenir l'engagement de l'audience.",
+      "titre": "Publier régulièrement sur TikTok",
+      "explication": "Il est recommandé de publier régulièrement sur TikTok pour maintenir l'engagement.",
       "preuve": {
-        "metrique": "posts_par_semaine",
-        "valeur": 0.0
+        "metrique": "jours_depuis_dernier_post",
+        "valeur": 51
       },
-      "action": "Publiez au moins une fois par semaine sur TikTok"
+      "action": "Publier au moins un contenu par semaine sur TikTok."
     },
     {
       "type": "reco",
-      "titre": "Publier à l'heure recommandée",
-      "explication": "Il est recommandé de publier à l'heure recommandée par l'algorithme de TikTok, qui est Vendredi vers 14h.",
+      "titre": "Optimiser les heures de publication",
+      "explication": "Les publications à des heures stratégiques peuvent augmenter la visibilité.",
       "preuve": {
-        "metrique": "heure",
+        "metrique": "heure_de_publication_recommandee",
         "valeur": "14h"
       },
-      "action": "Publiez vos contenus sur TikTok le Vendredi à 14h"
+      "action": "Publier des contenus sur TikTok le vendredi vers 14h pour maximiser la portée."
     },
     {
       "type": "insight",
-      "titre": "Évolution de l'audience",
-      "explication": "L'audience du compte Abidjan résidences est stable, avec une légère augmentation ces dernières semaines.",
+      "titre": "Type de contenu préféré",
+      "explication": "Les vidéos sont le type de contenu le plus représenté parmi les top posts.",
       "preuve": {
-        "metrique": "valeur",
-        "valeur": 4200
+        "metrique": "type_de_contenu_principal",
+        "valeur": "vidéo"
       }
     },
     {
       "type": "reco",
-      "titre": "Diversifier les contenus",
-      "explication": "Il est recommandé de diversifier les contenus publiés sur TikTok pour maintenir l'intérêt de l'audience.",
+      "titre": "Créer du contenu vidéo",
+      "explication": "Les vidéos sont appréciées par l'audience, il est conseillé d'en créer plus.",
       "preuve": {
-        "metrique": "type",
-        "valeur": "vidéo"
+        "metrique": "vues_videos",
+        "valeur": 41823
       },
-      "action": "Publiez différents types de contenus, tels que des photos ou des stories, sur TikTok"
+      "action": "Produire et publier davantage de vidéos sur TikTok pour renforcer l'engagement."
     }
   ]
 }

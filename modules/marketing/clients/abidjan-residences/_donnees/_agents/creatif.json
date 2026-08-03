@@ -1,6 +1,6 @@
 {
   "agent": "creatif",
-  "genere_le": "2026-08-02T11:10:31+00:00",
+  "genere_le": "2026-08-03T16:10:25+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -11,33 +11,36 @@
   },
   "items": [
     {
-      "hook": "Découvrez les résidences ivoiriennes en vie!",
-      "script": "Vous cherchez un endroit où vous sentir chez vous à Abidjan? Découvrez nos résidences modernes et confortables, idéales pour les familles et les jeunes professionnels. De la décoration intérieure tendance aux équipements de haute qualité, nous avons tout ce dont vous avez besoin pour vivre une expérience unique. Rejoignez notre communauté et faites partie de l'aventure #AbidjanRésidences",
-      "format": "Short",
-      "reseau": "TikTok",
-      "prompt_image": "Une résidence moderne avec des jardins luxuriants et une vue sur la ville, les chambres sont équipées de literie de haute qualité et les salles de bain sont spacieuses et modernes",
-      "variantes": [
-        "Un chez-soi à Abidjan, c'est possible!"
-      ]
-    },
-    {
-      "hook": "La vie en résidence, c'est quoi pour vous?",
-      "script": "Partagez vos expériences et vos anecdotes sur la vie en résidence à Abidjan. Qu'est-ce qui vous plaît le plus? La sécurité, la communauté, les équipements? Nous voulons savoir ce que vous pensez et ce que vous attendez d'une résidence idéale. Rejoignez la conversation et inspirez nos futurs projets #AbidjanRésidences",
+      "hook": "Découvrez les secrets de Yopougon !",
+      "script": "Vous cherchez un endroit calme pour vous détendre ? Découvrez Le B à Yopougon ! Notre résidence offre tout ce dont vous avez besoin pour un séjour paisible. De la décoration élégante aux équipements modernes, vous vous sentirez comme chez vous. Rejoignez notre communauté et vivez l'expérience Abidjan résidences ! #AbidjanResidences #Yopougon #Détente",
       "format": "Reel",
       "reseau": "TikTok",
-      "prompt_image": "Une personne souriante dans un jardin, avec des fleurs et des arbres autour d'elle, une légende qui demande aux gens de partager leurs expériences",
+      "prompt_image": "une photo d'une chambre de notre résidence à Yopougon avec un lit king-size et une belle décoration",
       "variantes": [
-        "Qu'est-ce que la vie en résidence signifie pour vous?"
+        "Vous rêvez d'un séjour exceptionnel à Abidjan ?",
+        "Abidjan résidences, votre nouveau chez-vous !"
       ]
     },
     {
-      "hook": "Abidjan, la ville qui vous attend!",
-      "script": "Préparez vos valises et rejoignez-nous à Abidjan pour découvrir la ville la plus dynamique d'Afrique de l'Ouest. De la musique aux saveurs locales, en passant par les marchés colorés, nous vous montrons les trésors cachés de la ville. Rejoignez notre aventure et explorez Abidjan avec nous #AbidjanRésidences",
-      "format": "Carrousel",
-      "reseau": "Instagram",
-      "prompt_image": "Une image de la ville d'Abidjan la nuit, avec des lumières et des couleurs vives, les gens marchant dans les rues et les marchés",
+      "hook": "Faites la promotion de votre établissement avec nous !",
+      "script": "Vous êtes propriétaire d'un établissement hôtelier ou de restauration ? Faites la promotion de votre entreprise avec Abidjan résidences ! Nous vous offrons la possibilité de fixer votre propre commission et de présenter vos services à notre communauté. Rejoignez-nous et développez votre activité ! #AbidjanResidences #Promotion #Partenariat",
+      "format": "Short",
+      "reseau": "TikTok",
+      "prompt_image": "une photo d'un écran d'ordinateur avec une page web d'un établissement hôtelier ou de restauration",
       "variantes": [
-        "Découvrez le vrai visage d'Abidjan avec nous"
+        "Développez votre entreprise avec nous !",
+        "Abidjan résidences, votre partenaire idéal !"
+      ]
+    },
+    {
+      "hook": "Quels sont vos lieux préférés à Abidjan ?",
+      "script": "Vous aimez explorer de nouveaux endroits à Abidjan ? Partagez avec nous vos lieux préférés ! Nous sommes curieux de découvrir vos secrets et de partager les nôtres. Rejoignez la conversation et découvrez les meilleures adresses de la ville ! #AbidjanResidences #LieuxPréférés #Abidjan",
+      "format": "Carrousel",
+      "reseau": "TikTok",
+      "prompt_image": "une photo d'une carte d'Abidjan avec des points de repère différents",
+      "variantes": [
+        "Découvrez les secrets d'Abidjan avec nous !",
+        "Partagez vos expériences à Abidjan !"
       ]
     }
   ]

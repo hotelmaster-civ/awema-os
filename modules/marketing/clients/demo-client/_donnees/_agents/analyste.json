@@ -1,6 +1,6 @@
 {
   "agent": "analyste",
-  "genere_le": "2026-08-02T11:08:56+00:00",
+  "genere_le": "2026-08-03T16:09:09+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -13,50 +13,69 @@
   "items": [
     {
       "type": "insight",
-      "titre": "Réseau le plus performant",
-      "explication": "TikTok est le réseau le plus performant en termes de likes et de vues pour Éclat Beauté.",
+      "titre": "Top plateforme",
+      "explication": "Le réseau TikTok a le plus d'abonnés et génère le plus de likes, suivie de loin par Instagram.",
       "preuve": {
         "metrique": "likes",
-        "valeur": 88000
-      }
-    },
-    {
-      "type": "insight",
-      "titre": "Type de contenu le plus engageant",
-      "explication": "Les Reels sont les contenus les plus engageants sur les réseaux sociaux d'Éclat Beauté.",
-      "preuve": {
-        "metrique": "engagement_moyen",
-        "valeur": 520
-      }
+        "valeur": 88000,
+        "variation": null
+      },
+      "action": null
     },
     {
       "type": "reco",
-      "titre": "Publier un Reel cette semaine",
-      "explication": "Publier un Reel sur TikTok cette semaine pour augmenter l'engagement et les likes.",
+      "titre": "Prioriser TikTok",
+      "explication": "Publier plus souvent sur TikTok pour capitaliser sur son audience et son engagement élevés.",
       "preuve": {
-        "metrique": "engagement_moyen",
-        "valeur": 520
+        "metrique": "abonnes",
+        "valeur": 12500,
+        "variation": null
       },
-      "action": "Publiez un Reel sur TikTok avant la fin de la semaine"
-    },
-    {
-      "type": "reco",
-      "titre": "Répondre aux commentaires en retard",
-      "explication": "Répondre aux commentaires en retard pour améliorer la satisfaction client et l'engagement.",
-      "preuve": {
-        "metrique": "a_repondre",
-        "valeur": 5
-      },
-      "action": "Répondez aux 5 commentaires en retard dès que possible"
+      "action": "Créer au moins 2 Reels de haute qualité par semaine pour le compte TikTok d'Éclat Beauté."
     },
     {
       "type": "insight",
-      "titre": "Évolution de l'audience",
-      "explication": "L'audience d'Éclat Beauté a augmenté de 25% depuis le 1er mai 2026.",
+      "titre": "Meilleur type de contenu",
+      "explication": "Les Reels sont le type de contenu le plus performant en termes d'engagement moyen.",
       "preuve": {
-        "metrique": "evolution_audience",
-        "valeur": 2500
-      }
+        "metrique": "engagement_moyen",
+        "valeur": 520,
+        "variation": null
+      },
+      "action": null
+    },
+    {
+      "type": "reco",
+      "titre": "Utiliser les Reels",
+      "explication": "Investir dans la création de Reels de qualité pour améliorer l'engagement global sur les plateformes.",
+      "preuve": {
+        "metrique": "engagement_moyen",
+        "valeur": 520,
+        "variation": null
+      },
+      "action": "Consacrer 60% du budget de création de contenu à la production de Reels pour les réseaux sociaux."
+    },
+    {
+      "type": "insight",
+      "titre": "Fréquence de publication",
+      "explication": "La fréquence de publication est actuellement de 2 posts par semaine, ce qui peut être amélioré pour mieux capter l'intérêt de l'audience.",
+      "preuve": {
+        "metrique": "posts_par_semaine",
+        "valeur": 2,
+        "variation": null
+      },
+      "action": null
+    },
+    {
+      "type": "reco",
+      "titre": "Augmenter la fréquence de publication",
+      "explication": "Publier plus fréquemment pour maintenir l'intérêt de l'audience et améliorer la visibilité du compte.",
+      "preuve": {
+        "metrique": "jours_depuis_dernier_post",
+        "valeur": 9,
+        "variation": null
+      },
+      "action": "Publier au moins 3 fois par semaine pour stimuler l'engagement et la croissance de l'audience d'Éclat Beauté."
     }
   ]
 }

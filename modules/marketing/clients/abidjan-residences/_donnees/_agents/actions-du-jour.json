@@ -1,6 +1,6 @@
 {
   "agent": "actions-du-jour",
-  "genere_le": "2026-08-02T11:10:42+00:00",
+  "genere_le": "2026-08-03T16:10:28+00:00",
   "modele": "agrégation (sans IA)",
   "provenance": {
     "client": "abidjan-residences",
@@ -10,7 +10,7 @@
     {
       "priorite": 1,
       "type": "alerte",
-      "titre": "Cadence en retard — 44 j sans publier",
+      "titre": "Cadence en retard — 51 j sans publier",
       "detail": "La régularité nourrit l'algorithme. Publie aujourd'hui.",
       "source": "cadence",
       "action": {
@@ -21,9 +21,21 @@
     },
     {
       "priorite": 2,
+      "type": "alerte",
+      "titre": "Audience en baisse",
+      "detail": "4200 → 4195 abonnés.",
+      "source": "evolution_audience",
+      "action": {
+        "label": "Analyser",
+        "kind": "view",
+        "target": "reseaux"
+      }
+    },
+    {
+      "priorite": 2,
       "type": "reco",
-      "titre": "Publier plus souvent sur TikTok",
-      "detail": "Publiez au moins une fois par semaine sur TikTok",
+      "titre": "Publier régulièrement sur TikTok",
+      "detail": "Publier au moins un contenu par semaine sur TikTok.",
       "source": "analyste",
       "action": {
         "label": "Voir l'analyse",
@@ -34,7 +46,7 @@
     {
       "priorite": 2,
       "type": "plan",
-      "titre": "Publie : Présentation d'un lieu de détente à Abidjan",
+      "titre": "Publie : Découverte de nouvelles résidences à Abidjan",
       "detail": "TikTok · Vidéo · Lundi",
       "source": "stratege",
       "action": {
@@ -46,8 +58,8 @@
     {
       "priorite": 3,
       "type": "creatif",
-      "titre": "Idée prête : Découvrez les résidences ivoiriennes en vie!",
-      "detail": "TikTok · Short",
+      "titre": "Idée prête : Découvrez les secrets de Yopougon !",
+      "detail": "TikTok · Reel",
       "source": "creatif",
       "action": {
         "label": "Voir les idées",
