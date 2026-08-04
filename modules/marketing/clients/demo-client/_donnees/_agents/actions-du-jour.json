@@ -1,6 +1,6 @@
 {
   "agent": "actions-du-jour",
-  "genere_le": "2026-08-03T16:10:28+00:00",
+  "genere_le": "2026-08-04T13:17:46+00:00",
   "modele": "agrégation (sans IA)",
   "provenance": {
     "client": "demo-client",
@@ -34,8 +34,8 @@
     {
       "priorite": 2,
       "type": "reco",
-      "titre": "Prioriser TikTok",
-      "detail": "Créer au moins 2 Reels de haute qualité par semaine pour le compte TikTok d'Éclat Beauté.",
+      "titre": "Augmenter la fréquence de publication sur TikTok",
+      "detail": "Publier au moins 2 fois par semaine sur TikTok avec des contenus de type Reel",
       "source": "analyste",
       "action": {
         "label": "Voir l'analyse",
@@ -46,7 +46,7 @@
     {
       "priorite": 2,
       "type": "plan",
-      "titre": "Publie : Conseils pour un soin de peau quotidien efficace",
+      "titre": "Publie : Routine peau grasse en 3 étapes",
       "detail": "TikTok · Reel · Lundi",
       "source": "stratege",
       "action": {
@@ -70,7 +70,7 @@
     {
       "priorite": 3,
       "type": "creatif",
-      "titre": "Idée prête : Découvrez le secret pour une peau éclatante avec notre soin visage éclat !",
+      "titre": "Idée prête : Découvrez le secret pour un teint éclatant naturel !",
       "detail": "TikTok · Reel",
       "source": "creatif",
       "action": {

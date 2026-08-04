@@ -1,6 +1,6 @@
 {
   "agent": "analyste",
-  "genere_le": "2026-08-03T16:09:09+00:00",
+  "genere_le": "2026-08-04T13:15:48+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -13,69 +13,60 @@
   "items": [
     {
       "type": "insight",
-      "titre": "Top plateforme",
-      "explication": "Le réseau TikTok a le plus d'abonnés et génère le plus de likes, suivie de loin par Instagram.",
+      "titre": "Performances TikTok",
+      "explication": "Les performances sur TikTok sont exceptionnelles, avec plus de 88 000 likes sur 40 posts.",
       "preuve": {
-        "metrique": "likes",
-        "valeur": 88000,
-        "variation": null
-      },
-      "action": null
-    },
-    {
-      "type": "reco",
-      "titre": "Prioriser TikTok",
-      "explication": "Publier plus souvent sur TikTok pour capitaliser sur son audience et son engagement élevés.",
-      "preuve": {
-        "metrique": "abonnes",
-        "valeur": 12500,
-        "variation": null
-      },
-      "action": "Créer au moins 2 Reels de haute qualité par semaine pour le compte TikTok d'Éclat Beauté."
+        "metrique": "likes sur TikTok",
+        "valeur": 88000
+      }
     },
     {
       "type": "insight",
-      "titre": "Meilleur type de contenu",
-      "explication": "Les Reels sont le type de contenu le plus performant en termes d'engagement moyen.",
+      "titre": "Type de contenu le plus efficace",
+      "explication": "Les Reels génèrent un engagement moyen de 520, ce qui suggère leur efficacité pour la stratégie de contenu.",
       "preuve": {
-        "metrique": "engagement_moyen",
-        "valeur": 520,
-        "variation": null
-      },
-      "action": null
+        "metrique": "engagement moyen des Reels",
+        "valeur": 520
+      }
     },
     {
       "type": "reco",
-      "titre": "Utiliser les Reels",
-      "explication": "Investir dans la création de Reels de qualité pour améliorer l'engagement global sur les plateformes.",
+      "titre": "Augmenter la fréquence de publication sur TikTok",
+      "explication": "La plateforme TikTok affiche les meilleures performances. Augmenter la fréquence de publication pourrait renforcer l'engagement.",
       "preuve": {
-        "metrique": "engagement_moyen",
-        "valeur": 520,
-        "variation": null
+        "metrique": "engagement sur TikTok",
+        "valeur": 88000
       },
-      "action": "Consacrer 60% du budget de création de contenu à la production de Reels pour les réseaux sociaux."
+      "action": "Publier au moins 2 fois par semaine sur TikTok avec des contenus de type Reel"
+    },
+    {
+      "type": "reco",
+      "titre": "Répondre aux messages des abonnés",
+      "explication": "Il y a des abonnés qui ont posé des questions qui restent sans réponse. Répondre à ces messages pourrait améliorer l'expérience client.",
+      "preuve": {
+        "metrique": "nombre de messages sans réponse",
+        "valeur": 5
+      },
+      "action": "Répondre à tous les messages des abonnés dans les prochaines 24 heures"
     },
     {
       "type": "insight",
-      "titre": "Fréquence de publication",
-      "explication": "La fréquence de publication est actuellement de 2 posts par semaine, ce qui peut être amélioré pour mieux capter l'intérêt de l'audience.",
+      "titre": "Évolution de l'audience",
+      "explication": "L'audience a augmenté régulièrement, passant de 21 000 à 23 500 entre mai et juin.",
       "preuve": {
-        "metrique": "posts_par_semaine",
-        "valeur": 2,
-        "variation": null
-      },
-      "action": null
+        "metrique": "audience",
+        "valeur": 23500
+      }
     },
     {
       "type": "reco",
-      "titre": "Augmenter la fréquence de publication",
-      "explication": "Publier plus fréquemment pour maintenir l'intérêt de l'audience et améliorer la visibilité du compte.",
+      "titre": "Créer des contenus éducatifs pour Instagram",
+      "explication": "Les contenus éducatifs semblent bien fonctionner. Créer des tutoriels ou des conseils de beauté pourrait améliorer l'engagement sur Instagram.",
       "preuve": {
-        "metrique": "jours_depuis_dernier_post",
-        "valeur": 9,
-        "variation": null
+        "metrique": "engagement sur Instagram",
+        "valeur": 5200
       },
-      "action": "Publier au moins 3 fois par semaine pour stimuler l'engagement et la croissance de l'audience d'Éclat Beauté."
+      "action": "Créer un contenu éducatif par semaine sur Instagram pendant un mois pour évaluer son impact"
     }
   ]
 }

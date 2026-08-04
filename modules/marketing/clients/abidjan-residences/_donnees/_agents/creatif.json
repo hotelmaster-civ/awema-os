@@ -1,6 +1,6 @@
 {
   "agent": "creatif",
-  "genere_le": "2026-08-03T16:10:25+00:00",
+  "genere_le": "2026-08-04T13:17:17+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -11,36 +11,33 @@
   },
   "items": [
     {
-      "hook": "Découvrez les secrets de Yopougon !",
-      "script": "Vous cherchez un endroit calme pour vous détendre ? Découvrez Le B à Yopougon ! Notre résidence offre tout ce dont vous avez besoin pour un séjour paisible. De la décoration élégante aux équipements modernes, vous vous sentirez comme chez vous. Rejoignez notre communauté et vivez l'expérience Abidjan résidences ! #AbidjanResidences #Yopougon #Détente",
+      "hook": "Découvrez les résidences d'Abidjan !",
+      "script": "Bonjour à tous, je vous présente aujourd'hui les résidences d'Abidjan, des lieux incroyables pour votre prochain séjour. De la plage de Bassam aux rues animées de Yopougon, nous vous offrons une expérience unique. Abonnez-vous pour plus de contenu !",
       "format": "Reel",
       "reseau": "TikTok",
-      "prompt_image": "une photo d'une chambre de notre résidence à Yopougon avec un lit king-size et une belle décoration",
+      "prompt_image": "Une photo d'une résidence luxueuse à Abidjan avec une vue sur la mer",
       "variantes": [
-        "Vous rêvez d'un séjour exceptionnel à Abidjan ?",
-        "Abidjan résidences, votre nouveau chez-vous !"
+        "Explorez les résidences d'Abidjan avec nous !"
       ]
     },
     {
-      "hook": "Faites la promotion de votre établissement avec nous !",
-      "script": "Vous êtes propriétaire d'un établissement hôtelier ou de restauration ? Faites la promotion de votre entreprise avec Abidjan résidences ! Nous vous offrons la possibilité de fixer votre propre commission et de présenter vos services à notre communauté. Rejoignez-nous et développez votre activité ! #AbidjanResidences #Promotion #Partenariat",
-      "format": "Short",
-      "reseau": "TikTok",
-      "prompt_image": "une photo d'un écran d'ordinateur avec une page web d'un établissement hôtelier ou de restauration",
-      "variantes": [
-        "Développez votre entreprise avec nous !",
-        "Abidjan résidences, votre partenaire idéal !"
-      ]
-    },
-    {
-      "hook": "Quels sont vos lieux préférés à Abidjan ?",
-      "script": "Vous aimez explorer de nouveaux endroits à Abidjan ? Partagez avec nous vos lieux préférés ! Nous sommes curieux de découvrir vos secrets et de partager les nôtres. Rejoignez la conversation et découvrez les meilleures adresses de la ville ! #AbidjanResidences #LieuxPréférés #Abidjan",
+      "hook": "Recherchez votre prochaine résidence à Abidjan !",
+      "script": "Vous cherchez un endroit pour vous installer à Abidjan ? Nous avons ce qu'il vous faut ! Découvrez nos résidences luxueuses et modernes, idéales pour votre prochain séjour. Contactez-nous pour plus d'informations.",
       "format": "Carrousel",
       "reseau": "TikTok",
-      "prompt_image": "une photo d'une carte d'Abidjan avec des points de repère différents",
+      "prompt_image": "Une photo d'une résidence moderne à Abidjan avec une piscine",
       "variantes": [
-        "Découvrez les secrets d'Abidjan avec nous !",
-        "Partagez vos expériences à Abidjan !"
+        "Trouvez votre résidence idéale à Abidjan !"
+      ]
+    },
+    {
+      "hook": "Vivez l'expérience Abidjan résidences !",
+      "script": "Rejoignez-nous pour découvrir les résidences les plus incroyables d'Abidjan. De la détente à l'aventure, nous vous offrons une expérience unique. Abonnez-vous et partagez avec vos amis !",
+      "format": "Short",
+      "reseau": "TikTok",
+      "prompt_image": "Une photo d'une résidence à Abidjan avec un jardin tropical",
+      "variantes": [
+        "Découvrez l'expérience Abidjan résidences !"
       ]
     }
   ]

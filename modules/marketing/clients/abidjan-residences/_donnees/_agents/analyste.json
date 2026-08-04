@@ -1,6 +1,6 @@
 {
   "agent": "analyste",
-  "genere_le": "2026-08-03T16:08:57+00:00",
+  "genere_le": "2026-08-04T13:15:37+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -12,60 +12,41 @@
   "items": [
     {
       "type": "insight",
-      "titre": "Popularité de TikTok",
-      "explication": "Le réseau TikTok affiche les meilleures performances pour Abidjan résidences.",
+      "titre": "TikTok est le réseau le plus performant",
+      "explication": "Le réseau TikTok présente les meilleurs résultats en termes d'abonnés, de likes, de commentaires et de partages.",
       "preuve": {
         "metrique": "abonnes",
         "valeur": 4195
       }
     },
     {
-      "type": "insight",
-      "titre": "Engagement élevé sur certaines publications",
-      "explication": "Le post « #collage avec @Tdfmanga decouvrez un animé 100% ivoirien par @Cénack  « placman » » a généré un engagement important.",
-      "preuve": {
-        "metrique": "likes",
-        "valeur": 8920
-      }
-    },
-    {
       "type": "reco",
-      "titre": "Publier régulièrement sur TikTok",
-      "explication": "Il est recommandé de publier régulièrement sur TikTok pour maintenir l'engagement.",
+      "titre": "Réactiver la publication régulière sur TikTok",
+      "explication": "La dernière publication date de 51 jours, il est nécessaire de rétablir une cadence régulière pour maintenir l'engagement de la communauté.",
       "preuve": {
         "metrique": "jours_depuis_dernier_post",
         "valeur": 51
       },
-      "action": "Publier au moins un contenu par semaine sur TikTok."
-    },
-    {
-      "type": "reco",
-      "titre": "Optimiser les heures de publication",
-      "explication": "Les publications à des heures stratégiques peuvent augmenter la visibilité.",
-      "preuve": {
-        "metrique": "heure_de_publication_recommandee",
-        "valeur": "14h"
-      },
-      "action": "Publier des contenus sur TikTok le vendredi vers 14h pour maximiser la portée."
+      "action": "Publier au moins une fois par semaine sur TikTok"
     },
     {
       "type": "insight",
-      "titre": "Type de contenu préféré",
-      "explication": "Les vidéos sont le type de contenu le plus représenté parmi les top posts.",
+      "titre": "Les vidéos sont le type de contenu le plus performant",
+      "explication": "Les vidéos présentent les meilleurs résultats en termes de likes, de commentaires et de partages sur TikTok.",
       "preuve": {
-        "metrique": "type_de_contenu_principal",
-        "valeur": "vidéo"
+        "metrique": "likes_total",
+        "valeur": 21847
       }
     },
     {
       "type": "reco",
-      "titre": "Créer du contenu vidéo",
-      "explication": "Les vidéos sont appréciées par l'audience, il est conseillé d'en créer plus.",
+      "titre": "Optimiser les publications sur TikTok",
+      "explication": "Les publications sur TikTok doivent être optimisées pour atteindre un maximum d'audience, en utilisant les bonnes heures et les bons jours de publication.",
       "preuve": {
-        "metrique": "vues_videos",
-        "valeur": 41823
+        "metrique": "heure_recommandee",
+        "valeur": "14h"
       },
-      "action": "Produire et publier davantage de vidéos sur TikTok pour renforcer l'engagement."
+      "action": "Publier sur TikTok le vendredi vers 14h"
     }
   ]
 }

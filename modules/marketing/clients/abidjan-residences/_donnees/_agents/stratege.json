@@ -1,6 +1,6 @@
 {
   "agent": "stratege",
-  "genere_le": "2026-08-03T16:09:33+00:00",
+  "genere_le": "2026-08-04T13:16:29+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -12,61 +12,62 @@
   "items": [
     {
       "jour": "Lundi",
-      "heure": "19h",
+      "heure": "14h",
       "format": "Vidéo",
-      "angle": "Découverte de nouvelles résidences à Abidjan",
+      "angle": "Présentation d'un nouveau lieu de détente à Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Mercredi",
-      "heure": "12h",
-      "format": "Photo",
-      "angle": "Présentation d'un événement local à Abidjan",
+      "heure": "14h",
+      "format": "Vidéo",
+      "angle": "Découvrez un artisan local ivoirien et son travail",
       "reseau": "TikTok"
     },
     {
       "jour": "Vendredi",
       "heure": "14h",
       "format": "Vidéo",
-      "angle": "Promotion d'une résidence spécifique à Abidjan",
+      "angle": "Promotion d'un établissement partenaire à Yopougon",
       "reseau": "TikTok"
     },
     {
       "jour": "Samedi",
-      "heure": "10h",
+      "heure": "18h",
       "format": "Story",
-      "angle": "Conseils pour trouver une résidence à Abidjan",
+      "angle": "Questions-réponses sur les résidences à Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Dimanche",
-      "heure": "18h",
+      "heure": "16h",
       "format": "Vidéo",
-      "angle": "Découverte d'un quartier d'Abidjan",
+      "angle": "Découvrez les meilleures adresses pour les week-ends à Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Mardi",
-      "heure": "15h",
-      "format": "LIVE",
-      "angle": "Visite virtuelle d'une résidence à Abidjan",
+      "heure": "12h",
+      "format": "Lien",
+      "angle": "Partage d'un article sur les tendances touristiques à Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Jeudi",
-      "heure": "11h",
-      "format": "Photo",
-      "angle": "Présentation d'un nouveau projet immobilier à Abidjan",
+      "heure": "19h",
+      "format": "Live",
+      "angle": "Discussion en direct avec un influenceur local",
       "reseau": "TikTok"
     }
   ],
-  "cadence_recommandee": "4 publications/semaine",
+  "cadence_recommandee": "3 publications/semaine",
   "meilleures_heures": [
     "Vendredi 14h"
   ],
   "objectifs": [
-    "Augmenter les likes de 20% sur les publications TikTok",
-    "Augmenter les vues de 15% sur les vidéos TikTok",
-    "Maintenir l'engagement avec une moyenne de 50 commentaires par publication"
+    "Augmenter le nombre de vues sur les publications TikTok de 20% en 2 semaines",
+    "Accroître le taux d'engagement (likes, commentaires, partages) de 15% sur les prochaines 5 publications",
+    "Maintenir une audience stable ou en légère augmentation sur TikTok",
+    "Améliorer la visibilité de la marque Abidjan Résidences à travers des contenus pertinents"
   ]
 }

@@ -1,6 +1,6 @@
 {
   "agent": "actions-du-jour",
-  "genere_le": "2026-08-03T16:10:28+00:00",
+  "genere_le": "2026-08-04T13:17:46+00:00",
   "modele": "agrégation (sans IA)",
   "provenance": {
     "client": "abidjan-residences",
@@ -34,8 +34,8 @@
     {
       "priorite": 2,
       "type": "reco",
-      "titre": "Publier régulièrement sur TikTok",
-      "detail": "Publier au moins un contenu par semaine sur TikTok.",
+      "titre": "Réactiver la publication régulière sur TikTok",
+      "detail": "Publier au moins une fois par semaine sur TikTok",
       "source": "analyste",
       "action": {
         "label": "Voir l'analyse",
@@ -46,7 +46,7 @@
     {
       "priorite": 2,
       "type": "plan",
-      "titre": "Publie : Découverte de nouvelles résidences à Abidjan",
+      "titre": "Publie : Présentation d'un nouveau lieu de détente à Abidjan",
       "detail": "TikTok · Vidéo · Lundi",
       "source": "stratege",
       "action": {
@@ -58,7 +58,7 @@
     {
       "priorite": 3,
       "type": "creatif",
-      "titre": "Idée prête : Découvrez les secrets de Yopougon !",
+      "titre": "Idée prête : Découvrez les résidences d'Abidjan !",
       "detail": "TikTok · Reel",
       "source": "creatif",
       "action": {

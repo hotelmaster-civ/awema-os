@@ -1,6 +1,6 @@
 {
   "agent": "stratege",
-  "genere_le": "2026-08-03T16:09:45+00:00",
+  "genere_le": "2026-08-04T13:17:13+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -15,61 +15,59 @@
       "jour": "Lundi",
       "heure": "19h",
       "format": "Reel",
-      "angle": "Conseils pour un soin de peau quotidien efficace",
+      "angle": "Routine peau grasse en 3 étapes",
       "reseau": "TikTok"
     },
     {
       "jour": "Mardi",
-      "heure": "12h",
-      "format": "Photo",
-      "angle": "Présentation d'un produit phare pour les peaux sensibles",
+      "heure": "19h",
+      "format": "Carrousel",
+      "angle": "Avant / Après soin éclat",
       "reseau": "Instagram"
+    },
+    {
+      "jour": "Mercredi",
+      "heure": "12h",
+      "format": "Short",
+      "angle": "Conseils pour une peau parfaite",
+      "reseau": "TikTok"
     },
     {
       "jour": "Jeudi",
       "heure": "19h",
-      "format": "Carrousel",
-      "angle": "Avant/Après d'un soin visage éclat",
-      "reseau": "Instagram"
+      "format": "Reel",
+      "angle": "Démonstration d'un soin visage éclat",
+      "reseau": "TikTok"
     },
     {
       "jour": "Vendredi",
-      "heure": "15h",
-      "format": "Short",
-      "angle": "Astuce pour une routine matinale de soin de peau rapide et efficace",
-      "reseau": "TikTok"
+      "heure": "19h",
+      "format": "Carrousel",
+      "angle": "Présentation du forfait mariée",
+      "reseau": "Instagram"
     },
     {
       "jour": "Samedi",
       "heure": "12h",
-      "format": "Reel",
-      "angle": "Présentation du forfait mariée et de ses avantages",
+      "format": "Short",
+      "angle": "Les bienfaits du soin de soi",
       "reseau": "TikTok"
     },
     {
       "jour": "Dimanche",
-      "heure": "18h",
-      "format": "Photo",
-      "angle": "Publication d'une FAQ sur les soins de beauté pour répondre aux questions fréquentes",
-      "reseau": "Facebook"
-    },
-    {
-      "jour": "Mercredi",
       "heure": "19h",
-      "format": "Carrousel",
-      "angle": "Présentation des différents types de peau et des soins adaptés",
-      "reseau": "Instagram"
+      "format": "Reel",
+      "angle": "Témoignage d'une cliente satisfaite",
+      "reseau": "TikTok"
     }
   ],
-  "cadence_recommandee": "4 publications/semaine",
+  "cadence_recommandee": "3 publications/semaine",
   "meilleures_heures": [
-    "Jeudi 19h",
-    "Samedi 15h"
+    "Jeudi 19h"
   ],
   "objectifs": [
-    "Augmenter de 15% l'engagement sur les publications dans les 6 prochaines semaines",
-    "Accroître la portée des publications de 20% dans les 3 prochains mois",
-    "Maintenir un taux d'engagement moyen supérieur à 3,5% sur toutes les plateformes",
-    "Attirer 500 nouveaux abonnés sur TikTok dans les 2 prochains mois"
+    "Augmenter le nombre de likes sur les publications de 15% en 2 semaines",
+    "Booste le taux d'engagement sur TikTok de 20% en 1 mois",
+    "Atteindre 1000 partages sur les publications en 3 mois"
   ]
 }

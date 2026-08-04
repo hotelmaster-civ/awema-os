@@ -1,6 +1,6 @@
 {
   "agent": "creatif",
-  "genere_le": "2026-08-03T16:10:28+00:00",
+  "genere_le": "2026-08-04T13:17:46+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -12,33 +12,33 @@
   },
   "items": [
     {
-      "hook": "Découvrez le secret pour une peau éclatante avec notre soin visage éclat !",
-      "script": "Vous souhaitez avoir une peau éclatante et bien hydratée ? Notre soin visage éclat est conçu spécifiquement pour les peaux africaines et offre un nettoyage profond ainsi qu'une hydratation intense. Résultat : une peau lumineuse et pleine de vie ! Réservez votre rendez-vous dès aujourd'hui et découvrez pourquoi nos clientes adorent notre soin visage éclat. #ÉclatBeauté #SoinVisage #PeauÉclatante",
+      "hook": "Découvrez le secret pour un teint éclatant naturel !",
+      "script": "Vous rêvez d'un teint parfait sans effort ? Notre soin visage éclat vous offre une peau hydratée et lumineuse en seulement 60 minutes ! Réservez votre séance dès maintenant sur WhatsApp et profitez d'une beauté naturelle qui vous sublime !",
       "format": "Reel",
       "reseau": "TikTok",
-      "prompt_image": "Une femme africaine aux cheekbones hautes et au teint radieux avec le texte 'Soin visage éclat' écrit en #D4AF37",
+      "prompt_image": "Une femme avec un teint lumineux et souriante, avec des fleurs autour d'elle, sur fond #D4AF37",
       "variantes": [
-        "Obtenez la peau parfaite en quelques séances !"
+        "Un teint éclatant, c'est possible avec nous !"
       ]
     },
     {
       "hook": "Préparez-vous pour le grand jour avec notre forfait mariée !",
-      "script": "Rêvez d'un teint parfait pour votre mariage ? Notre forfait mariée est spécialement conçu pour vous aider à atteindre cette peau de rêve. Avec trois séances personnalisées, vous vous sentirez belle, confiante et prête à briller. N'attendez plus, réservez votre forfait mariée dès aujourd'hui ! #ForfaitMariée #ÉclatBeauté #Mariage",
+      "script": "Vous vous mariez bientôt ? Notre forfait mariée vous offre 3 séances de soins personnalisés pour un teint parfait le jour J. Réservez maintenant et vivez votre rêve ! Notre équipe d'experts est là pour vous aider à briller. Prix : 75 000 FCFA. Informations et réservations sur WhatsApp.",
       "format": "Carrousel",
       "reseau": "Instagram",
-      "prompt_image": "Une image d'une mariée africaine souriante avec une peau parfaite, sur fond #0A1F44 et avec des éléments décoratifs en #D4AF37",
+      "prompt_image": "Une future mariée heureuse avec un teint parfait, sur fond #0A1F44 avec des accents #D4AF37",
       "variantes": [
-        "Le grand jour approche, soignez votre peau avec notre forfait mariée !"
+        "Le jour de votre mariage, soyez sublime avec notre forfait personnalisé !"
       ]
     },
     {
-      "hook": "Comment prendre soin de votre peau grasse en 3 étapes simples ?",
-      "script": "Vous avez la peau grasse et vous vous demandez comment la prendre en charge ? Nous avons la solution pour vous ! Découvrez nos 3 étapes pour une routine peau grasse efficace et facile à suivre. De la purification à l'hydratation, nous vous guidons pour une peau plus équilibrée et saine. #PeauGrasse #Routine #SoinDeSoi",
-      "format": "Reel",
-      "reseau": "TikTok",
-      "prompt_image": "Une femme africaine tenant un produit de soin avec le texte '3 étapes pour une peau équilibrée' en #D4AF37 sur fond #0A1F44",
+      "hook": "Un soin de beauté qui vous libère du stress quotidien !",
+      "script": "Prenez un moment pour vous ! Notre institut de beauté Éclat vous propose des soins de visage adaptés à votre peau, pour vous aider à vous détendre et à retrouver votre éclat naturel. Réservez votre séance et laissez-vous dorloter !",
+      "format": "Photo",
+      "reseau": "Facebook",
+      "prompt_image": "Une femme relaxée pendant un soin de visage, avec des fleurs et des coussins, sur fond neutre",
       "variantes": [
-        "La peau grasse n'est plus un problème avec notre routine en 3 étapes !"
+        "Reprenez le contrôle de votre bien-être avec nos soins personnalisés !"
       ]
     }
   ]
