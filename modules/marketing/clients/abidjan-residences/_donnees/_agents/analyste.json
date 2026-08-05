@@ -1,6 +1,6 @@
 {
   "agent": "analyste",
-  "genere_le": "2026-08-04T13:15:37+00:00",
+  "genere_le": "2026-08-05T09:19:41+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -13,7 +13,7 @@
     {
       "type": "insight",
       "titre": "TikTok est le réseau le plus performant",
-      "explication": "Le réseau TikTok présente les meilleurs résultats en termes d'abonnés, de likes, de commentaires et de partages.",
+      "explication": "Les données montrent que TikTok est le seul réseau social connecté avec des mesures d'audience et d'engagement disponibles.",
       "preuve": {
         "metrique": "abonnes",
         "valeur": 4195
@@ -22,31 +22,50 @@
     {
       "type": "reco",
       "titre": "Réactiver la publication régulière sur TikTok",
-      "explication": "La dernière publication date de 51 jours, il est nécessaire de rétablir une cadence régulière pour maintenir l'engagement de la communauté.",
+      "explication": "La dernière publication date de plus de 50 jours, il est essentiel de rétablir une cadence de publication régulière pour maintenir l'intérêt de l'audience.",
       "preuve": {
-        "metrique": "jours_depuis_dernier_post",
+        "metrique": "jours_depuis",
         "valeur": 51
       },
-      "action": "Publier au moins une fois par semaine sur TikTok"
+      "action": "Publier au moins un contenu par semaine sur TikTok"
     },
     {
       "type": "insight",
-      "titre": "Les vidéos sont le type de contenu le plus performant",
-      "explication": "Les vidéos présentent les meilleurs résultats en termes de likes, de commentaires et de partages sur TikTok.",
+      "titre": "Contenu vidéo très performant",
+      "explication": "Les top posts sont majoritairement des vidéos, indiquant que ce format de contenu est bien accueilli par l'audience.",
       "preuve": {
-        "metrique": "likes_total",
-        "valeur": 21847
+        "metrique": "type",
+        "valeur": "vidéo"
       }
     },
     {
       "type": "reco",
-      "titre": "Optimiser les publications sur TikTok",
-      "explication": "Les publications sur TikTok doivent être optimisées pour atteindre un maximum d'audience, en utilisant les bonnes heures et les bons jours de publication.",
+      "titre": "Investir dans la création de contenu vidéo de qualité",
+      "explication": "Étant donné la performance des vidéos dans les top posts, il est recommandé d'investir dans la production de vidéos de haute qualité pour TikTok.",
       "preuve": {
-        "metrique": "heure_recommandee",
-        "valeur": "14h"
+        "metrique": "likes",
+        "valeur": 8920
       },
-      "action": "Publier sur TikTok le vendredi vers 14h"
+      "action": "Créer et publier des vidéos attractives et de qualité sur TikTok"
+    },
+    {
+      "type": "insight",
+      "titre": "Audience stable sur TikTok",
+      "explication": "L'évolution de l'audience sur TikTok montre une certaine stabilité, avec des variations mineures.",
+      "preuve": {
+        "metrique": "valeur",
+        "valeur": 4195
+      }
+    },
+    {
+      "type": "reco",
+      "titre": "Maintenir l'activité et l'engagement sur TikTok",
+      "explication": "Pour maintenir cette audience et potentiellement l'augmenter, il est crucial de maintenir une activité régulière et de stimuler l'engagement.",
+      "preuve": {
+        "metrique": "engagement",
+        "valeur": null
+      },
+      "action": "Interagir avec les abonnés et encourager les commentaires et partages sur TikTok"
     }
   ]
 }

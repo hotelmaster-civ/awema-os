@@ -1,6 +1,6 @@
 {
   "agent": "creatif",
-  "genere_le": "2026-08-04T13:17:46+00:00",
+  "genere_le": "2026-08-05T09:21:29+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -12,33 +12,36 @@
   },
   "items": [
     {
-      "hook": "Découvrez le secret pour un teint éclatant naturel !",
-      "script": "Vous rêvez d'un teint parfait sans effort ? Notre soin visage éclat vous offre une peau hydratée et lumineuse en seulement 60 minutes ! Réservez votre séance dès maintenant sur WhatsApp et profitez d'une beauté naturelle qui vous sublime !",
+      "hook": "Découvrez le secret d'une peau éclatante avec notre soin visage premium !",
+      "script": "Le soin visage éclat est plus qu'un traitement, c'est une expérience de bien-être intense. Découvrez comment notre équipe d'experts vous aide à révéler votre beauté naturelle. Notre soin inclut un nettoyage Approach et une hydratation profonde, pour une peau radieuse. Réservation conseillée 48h à l'avance. Prix : 15 000 FCFA. Réservez maintenant et offre-toi une expérience inoubliable !",
       "format": "Reel",
       "reseau": "TikTok",
-      "prompt_image": "Une femme avec un teint lumineux et souriante, avec des fleurs autour d'elle, sur fond #D4AF37",
+      "prompt_image": "Une femme avec une peau éclatante, souriante, avec des fleurs et des produits de soin autour d'elle, sur fond pastel Rose (#D4AF37) et Bleu (#0A1F44)",
       "variantes": [
-        "Un teint éclatant, c'est possible avec nous !"
+        "Comment obtenir une peau parfaite sans effort ?",
+        "Le soin visage éclat qui révolutionne votre beautine quotidienne !"
       ]
     },
     {
-      "hook": "Préparez-vous pour le grand jour avec notre forfait mariée !",
-      "script": "Vous vous mariez bientôt ? Notre forfait mariée vous offre 3 séances de soins personnalisés pour un teint parfait le jour J. Réservez maintenant et vivez votre rêve ! Notre équipe d'experts est là pour vous aider à briller. Prix : 75 000 FCFA. Informations et réservations sur WhatsApp.",
+      "hook": "Préparez-vous à briller pour le grand jour avec notre forfait mariée !",
+      "script": "Fatou, future mariée, cherches-tu un teint parfait pour ton jour J ? Notre forfait mariée est conçu spécialement pour toi ! Avec 3 séances personnalisées avant le grand jour, tu seras absolument éblouissante. Budget : 75 000 FCFA pour une expérience de luxe et un résultat inoubliable. Réserve maintenant et assure-toi une beauté exceptionnelle !",
       "format": "Carrousel",
       "reseau": "Instagram",
-      "prompt_image": "Une future mariée heureuse avec un teint parfait, sur fond #0A1F44 avec des accents #D4AF37",
+      "prompt_image": "Une future mariée heureuse avec un teint parfait, entourée de produits de beauté et de fleurs, sur fond blanc pur avec des accents de Rose (#D4AF37) et Bleu (#0A1F44)",
       "variantes": [
-        "Le jour de votre mariage, soyez sublime avec notre forfait personnalisé !"
+        "Rêves de teint parfait pour ton mariage ?",
+        "Le forfait mariée qui te fera resplendir de beauté !"
       ]
     },
     {
-      "hook": "Un soin de beauté qui vous libère du stress quotidien !",
-      "script": "Prenez un moment pour vous ! Notre institut de beauté Éclat vous propose des soins de visage adaptés à votre peau, pour vous aider à vous détendre et à retrouver votre éclat naturel. Réservez votre séance et laissez-vous dorloter !",
-      "format": "Photo",
-      "reseau": "Facebook",
-      "prompt_image": "Une femme relaxée pendant un soin de visage, avec des fleurs et des coussins, sur fond neutre",
+      "hook": "Aïcha, jeune active, as-tu le temps pour le soin de soi ? Nous, oui !",
+      "script": "Le soin de soi n'a pas à être un luxe, mais une nécessité pour une vie active et épanouie. Notre soin visage éclat est conçu pour les femmes actives comme toi, Aïcha. En un traitement, retrouve une peau éclatante et une confiance en soi renouvelée. Puisqu'on sait que le temps est précieux, on t'offre la possibilité de réserver à l'avance via WhatsApp. Prix : 15 000 FCFA. Prends soin de toi, tu le mérites !",
+      "format": "Reel",
+      "reseau": "TikTok",
+      "prompt_image": "Une femme active souriante, au bureau ou en déplacement, avec un éclairage naturel et des accents de couleur Rose (#D4AF37) et Bleu (#0A1F44) représentant l'éclat de sa peau",
       "variantes": [
-        "Reprenez le contrôle de votre bien-être avec nos soins personnalisés !"
+        "Peau éclatante pour une vie active ?",
+        "Le secret pour une journée parfaite commence par le soin de soi !"
       ]
     }
   ]

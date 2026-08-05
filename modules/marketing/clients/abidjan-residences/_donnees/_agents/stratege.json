@@ -1,6 +1,6 @@
 {
   "agent": "stratege",
-  "genere_le": "2026-08-04T13:16:29+00:00",
+  "genere_le": "2026-08-05T09:20:32+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -14,60 +14,59 @@
       "jour": "Lundi",
       "heure": "14h",
       "format": "Vidéo",
-      "angle": "Présentation d'un nouveau lieu de détente à Abidjan",
+      "angle": "Présentation d'un nouveau projet de résidence à Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Mercredi",
       "heure": "14h",
       "format": "Vidéo",
-      "angle": "Découvrez un artisan local ivoirien et son travail",
+      "angle": "Témoignage d'un résident sur son expérience à Abidjan résidences",
       "reseau": "TikTok"
     },
     {
       "jour": "Vendredi",
       "heure": "14h",
       "format": "Vidéo",
-      "angle": "Promotion d'un établissement partenaire à Yopougon",
+      "angle": "Découverte d'un quartier animé d'Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Samedi",
-      "heure": "18h",
+      "heure": "12h",
       "format": "Story",
-      "angle": "Questions-réponses sur les résidences à Abidjan",
+      "angle": "Événement culturel ou festival à ne pas manquer à Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Dimanche",
-      "heure": "16h",
-      "format": "Vidéo",
-      "angle": "Découvrez les meilleures adresses pour les week-ends à Abidjan",
+      "heure": "18h",
+      "format": "Live",
+      "angle": "Séance de questions-réponses avec un expert sur le marché immobilier ivoirien",
       "reseau": "TikTok"
     },
     {
       "jour": "Mardi",
-      "heure": "12h",
-      "format": "Lien",
-      "angle": "Partage d'un article sur les tendances touristiques à Abidjan",
+      "heure": "15h",
+      "format": "Vidéo",
+      "angle": "Conseils pour choisir la bonne résidence à Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Jeudi",
-      "heure": "19h",
-      "format": "Live",
-      "angle": "Discussion en direct avec un influenceur local",
+      "heure": "14h",
+      "format": "Vidéo",
+      "angle": "Présentation des avantages de vivre dans une résidence à Abidjan",
       "reseau": "TikTok"
     }
   ],
-  "cadence_recommandee": "3 publications/semaine",
+  "cadence_recommandee": "4 publications/semaine",
   "meilleures_heures": [
     "Vendredi 14h"
   ],
   "objectifs": [
-    "Augmenter le nombre de vues sur les publications TikTok de 20% en 2 semaines",
-    "Accroître le taux d'engagement (likes, commentaires, partages) de 15% sur les prochaines 5 publications",
-    "Maintenir une audience stable ou en légère augmentation sur TikTok",
-    "Améliorer la visibilité de la marque Abidjan Résidences à travers des contenus pertinents"
+    "Augmenter les abonnés sur TikTok de 10% dans les 3 prochains mois",
+    "Accroître le taux d'engagement sur les publications de 20% dans les 2 prochains mois",
+    "Publier au moins 4 fois par semaine sur TikTok pour maintenir une présence active"
   ]
 }

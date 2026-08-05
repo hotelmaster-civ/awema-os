@@ -1,6 +1,6 @@
 {
   "agent": "analyste",
-  "genere_le": "2026-08-04T13:15:48+00:00",
+  "genere_le": "2026-08-05T09:19:51+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -13,60 +13,65 @@
   "items": [
     {
       "type": "insight",
-      "titre": "Performances TikTok",
-      "explication": "Les performances sur TikTok sont exceptionnelles, avec plus de 88 000 likes sur 40 posts.",
+      "titre": "Performance sur TikTok",
+      "explication": "Le réseau TikTok présente les meilleures performances en termes de likes et de vues.",
       "preuve": {
-        "metrique": "likes sur TikTok",
+        "metrique": "likes",
+        "valeur": 88000,
+        "variation": null
+      },
+      "action": null
+    },
+    {
+      "type": "reco",
+      "titre": "Publier plus sur TikTok",
+      "explication": "Étant donné les performances exceptionnelles sur TikTok, il est recommandé d'augmenter la fréquence de publication sur cette plateforme.",
+      "preuve": {
+        "metrique": "likes",
         "valeur": 88000
-      }
+      },
+      "action": "Publier au moins 2 fois par semaine sur TikTok"
     },
     {
       "type": "insight",
-      "titre": "Type de contenu le plus efficace",
-      "explication": "Les Reels génèrent un engagement moyen de 520, ce qui suggère leur efficacité pour la stratégie de contenu.",
+      "titre": "Type de contenu le plus performant",
+      "explication": "Les Reels sont le type de contenu le plus performant en termes d'engagement moyen.",
       "preuve": {
-        "metrique": "engagement moyen des Reels",
+        "metrique": "engagement_moyen",
         "valeur": 520
-      }
+      },
+      "action": null
     },
     {
       "type": "reco",
-      "titre": "Augmenter la fréquence de publication sur TikTok",
-      "explication": "La plateforme TikTok affiche les meilleures performances. Augmenter la fréquence de publication pourrait renforcer l'engagement.",
+      "titre": "Créer plus de Reels",
+      "explication": "Étant donné que les Reels présentent le meilleur engagement moyen, il est conseillé de créer plus de contenus de ce type.",
       "preuve": {
-        "metrique": "engagement sur TikTok",
-        "valeur": 88000
+        "metrique": "engagement_moyen",
+        "valeur": 520
       },
-      "action": "Publier au moins 2 fois par semaine sur TikTok avec des contenus de type Reel"
-    },
-    {
-      "type": "reco",
-      "titre": "Répondre aux messages des abonnés",
-      "explication": "Il y a des abonnés qui ont posé des questions qui restent sans réponse. Répondre à ces messages pourrait améliorer l'expérience client.",
-      "preuve": {
-        "metrique": "nombre de messages sans réponse",
-        "valeur": 5
-      },
-      "action": "Répondre à tous les messages des abonnés dans les prochaines 24 heures"
+      "action": "Créer et publier au moins 1 Reel par semaine"
     },
     {
       "type": "insight",
       "titre": "Évolution de l'audience",
-      "explication": "L'audience a augmenté régulièrement, passant de 21 000 à 23 500 entre mai et juin.",
+      "explication": "L'audience a augmenté régulièrement sur la période considérée.",
       "preuve": {
         "metrique": "audience",
-        "valeur": 23500
-      }
+        "valeur": 23500,
+        "variation": "Augmentation de 25% par rapport au 1er mai"
+      },
+      "action": null
     },
     {
       "type": "reco",
-      "titre": "Créer des contenus éducatifs pour Instagram",
-      "explication": "Les contenus éducatifs semblent bien fonctionner. Créer des tutoriels ou des conseils de beauté pourrait améliorer l'engagement sur Instagram.",
+      "titre": "Répondre aux commentaires et messages",
+      "explication": "Il est important de maintenir une interaction avec les followers, surtout ceux qui commentent ou posent des questions.",
       "preuve": {
-        "metrique": "engagement sur Instagram",
-        "valeur": 5200
+        "metrique": "commentaires",
+        "valeur": 1230
       },
-      "action": "Créer un contenu éducatif par semaine sur Instagram pendant un mois pour évaluer son impact"
+      "action": "Répondre à tous les commentaires et messages dans les 24 heures"
     }
   ]
 }

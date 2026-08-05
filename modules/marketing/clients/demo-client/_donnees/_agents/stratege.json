@@ -1,6 +1,6 @@
 {
   "agent": "stratege",
-  "genere_le": "2026-08-04T13:17:13+00:00",
+  "genere_le": "2026-08-05T09:21:04+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -15,59 +15,60 @@
       "jour": "Lundi",
       "heure": "19h",
       "format": "Reel",
-      "angle": "Routine peau grasse en 3 étapes",
+      "angle": "Bien-être et routines de soins pour les peaux grasses",
       "reseau": "TikTok"
     },
     {
       "jour": "Mardi",
-      "heure": "19h",
-      "format": "Carrousel",
-      "angle": "Avant / Après soin éclat",
-      "reseau": "Instagram"
-    },
-    {
-      "jour": "Mercredi",
       "heure": "12h",
-      "format": "Short",
-      "angle": "Conseils pour une peau parfaite",
-      "reseau": "TikTok"
+      "format": "Carrousel",
+      "angle": "Avant/Après de nos soins éclat pour une peau parfaite",
+      "reseau": "Instagram"
     },
     {
       "jour": "Jeudi",
       "heure": "19h",
-      "format": "Reel",
-      "angle": "Démonstration d'un soin visage éclat",
+      "format": "Short",
+      "angle": "Conseils pour un teint parfait pour les futures mariées",
       "reseau": "TikTok"
     },
     {
       "jour": "Vendredi",
-      "heure": "19h",
-      "format": "Carrousel",
-      "angle": "Présentation du forfait mariée",
+      "heure": "15h",
+      "format": "Photo",
+      "angle": "Présentation de nos produits hypoallergéniques pour les peaux sensibles",
       "reseau": "Instagram"
     },
     {
       "jour": "Samedi",
-      "heure": "12h",
-      "format": "Short",
-      "angle": "Les bienfaits du soin de soi",
+      "heure": "15h",
+      "format": "Reel",
+      "angle": "Démonstration d'un soin visage éclat en live",
       "reseau": "TikTok"
     },
     {
       "jour": "Dimanche",
+      "heure": "12h",
+      "format": "Carrousel",
+      "angle": "Nos forfaits pour les mariées : pourquoi choisir Éclat Beauté",
+      "reseau": "Facebook"
+    },
+    {
+      "jour": "Mercredi",
       "heure": "19h",
-      "format": "Reel",
-      "angle": "Témoignage d'une cliente satisfaite",
-      "reseau": "TikTok"
+      "format": "Story",
+      "angle": "Réponses aux questions fréquentes sur nos produits et services",
+      "reseau": "Instagram"
     }
   ],
   "cadence_recommandee": "3 publications/semaine",
   "meilleures_heures": [
-    "Jeudi 19h"
+    "Jeudi 19h",
+    "Samedi 15h"
   ],
   "objectifs": [
-    "Augmenter le nombre de likes sur les publications de 15% en 2 semaines",
-    "Booste le taux d'engagement sur TikTok de 20% en 1 mois",
-    "Atteindre 1000 partages sur les publications en 3 mois"
+    "Augmenter la portée de 15% sur les plateformes sociales",
+    "Accroître l'engagement de 20% via les commentaires et les partages",
+    "Attirer 500 nouveaux abonnés sur TikTok et Instagram dans les 4 prochaines semaines"
   ]
 }

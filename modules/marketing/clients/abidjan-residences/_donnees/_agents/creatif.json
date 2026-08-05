@@ -1,6 +1,6 @@
 {
   "agent": "creatif",
-  "genere_le": "2026-08-04T13:17:17+00:00",
+  "genere_le": "2026-08-05T09:21:26+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -11,33 +11,33 @@
   },
   "items": [
     {
-      "hook": "Découvrez les résidences d'Abidjan !",
-      "script": "Bonjour à tous, je vous présente aujourd'hui les résidences d'Abidjan, des lieux incroyables pour votre prochain séjour. De la plage de Bassam aux rues animées de Yopougon, nous vous offrons une expérience unique. Abonnez-vous pour plus de contenu !",
+      "hook": "Découvrez les résidences incontournables d'Abidjan !",
+      "script": "Vous cherchez un endroit où séjourner à Abidjan ? Nous vous présentons les résidences les plus confortables et les mieux équipées de la ville. De la plage de Grand-Bassam aux quartiers résidentiels de Cocody, nous avons sélectionné les meilleures adresses pour vous. Découvrez-les dans notre nouvelle vidéo ! #Abidjan #Résidences #Séjour",
       "format": "Reel",
       "reseau": "TikTok",
-      "prompt_image": "Une photo d'une résidence luxueuse à Abidjan avec une vue sur la mer",
+      "prompt_image": "Une vue aérienne de la ville d'Abidjan avec des résidences modernes et des plages de sable blanc. Utilisez des couleurs vives et des contrastes pour mettre en valeur la beauté de la ville.",
       "variantes": [
-        "Explorez les résidences d'Abidjan avec nous !"
+        "Abidjan, la ville qui vous attend !"
       ]
     },
     {
-      "hook": "Recherchez votre prochaine résidence à Abidjan !",
-      "script": "Vous cherchez un endroit pour vous installer à Abidjan ? Nous avons ce qu'il vous faut ! Découvrez nos résidences luxueuses et modernes, idéales pour votre prochain séjour. Contactez-nous pour plus d'informations.",
+      "hook": "Quel est votre quartier préféré à Abidjan ?",
+      "script": "Abidjan, la capitale économique de la Côte d'Ivoire, regorge de quartiers uniques et pleins de charme. De Yopougon à Plateau, chacun a son histoire et son atmosphère. Partagez avec nous votre quartier préféré et ce que vous aimez y faire ! Utilisez le hashtag #AbidjanQuartiers pour que nous puissions voir vos publications !",
       "format": "Carrousel",
       "reseau": "TikTok",
-      "prompt_image": "Une photo d'une résidence moderne à Abidjan avec une piscine",
+      "prompt_image": "Une photo de rue animée dans un quartier d'Abidjan, avec des personnes vaquant à leurs occupations et des stands de marché colorés. Assurez-vous d'inclure des détails qui montrent la vie quotidienne dans la ville.",
       "variantes": [
-        "Trouvez votre résidence idéale à Abidjan !"
+        "Explorez les quartiers cachés d'Abidjan avec nous !"
       ]
     },
     {
-      "hook": "Vivez l'expérience Abidjan résidences !",
-      "script": "Rejoignez-nous pour découvrir les résidences les plus incroyables d'Abidjan. De la détente à l'aventure, nous vous offrons une expérience unique. Abonnez-vous et partagez avec vos amis !",
+      "hook": "Prêt à découvrir la vie nocturne d'Abidjan ?",
+      "script": "La nuit tombe sur Abidjan, et la ville se transforme en une scène vibrante de musique, de danse et de divertissement. De los bars branchés de Marcory aux clubs de nuit de Riviera, il y a toujours quelque chose à faire. Rejoignez-nous pour une nuit inoubliable dans la ville qui ne dort jamais ! #AbidjanNuit #VieNocturne",
       "format": "Short",
       "reseau": "TikTok",
-      "prompt_image": "Une photo d'une résidence à Abidjan avec un jardin tropical",
+      "prompt_image": "Une.capture d'écran d'une nuit animée à Abidjan, avec des lumières de néon, des gens dansant et une musique pulsative. Utilisez des couleurs chaudes et des effets visuels pour transmettre l'énergie de la ville la nuit.",
       "variantes": [
-        "Découvrez l'expérience Abidjan résidences !"
+        "Abidjan la nuit, l'endroit où la musique ne s'arrête jamais !"
       ]
     }
   ]
