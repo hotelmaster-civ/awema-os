@@ -1,6 +1,6 @@
 {
   "agent": "analyste",
-  "genere_le": "2026-08-05T09:19:41+00:00",
+  "genere_le": "2026-08-06T09:23:13+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -12,60 +12,60 @@
   "items": [
     {
       "type": "insight",
-      "titre": "TikTok est le réseau le plus performant",
-      "explication": "Les données montrent que TikTok est le seul réseau social connecté avec des mesures d'audience et d'engagement disponibles.",
+      "titre": "Performances sur TikTok",
+      "explication": "Les données montrent que le compte Abidjan résidences a un nombre significatif d'abonnés et d'interactions sur TikTok, avec un total de 9484 likes et 41823 vues.",
       "preuve": {
-        "metrique": "abonnes",
-        "valeur": 4195
+        "metrique": "likes_total",
+        "valeur": 9484
       }
     },
     {
       "type": "reco",
-      "titre": "Réactiver la publication régulière sur TikTok",
-      "explication": "La dernière publication date de plus de 50 jours, il est essentiel de rétablir une cadence de publication régulière pour maintenir l'intérêt de l'audience.",
+      "titre": "Publier régulièrement sur TikTok",
+      "explication": "Étant donné que le dernier post sur TikTok remonte à 51 jours, il est recommandé de publier du contenu régulièrement pour maintenir l'engagement de l'audience.",
       "preuve": {
-        "metrique": "jours_depuis",
+        "metrique": "jours_depuis_dernier_post",
         "valeur": 51
       },
-      "action": "Publier au moins un contenu par semaine sur TikTok"
+      "action": "Publier au moins un nouveau contenu sur TikTok cette semaine."
     },
     {
       "type": "insight",
-      "titre": "Contenu vidéo très performant",
-      "explication": "Les top posts sont majoritairement des vidéos, indiquant que ce format de contenu est bien accueilli par l'audience.",
-      "preuve": {
-        "metrique": "type",
-        "valeur": "vidéo"
-      }
-    },
-    {
-      "type": "reco",
-      "titre": "Investir dans la création de contenu vidéo de qualité",
-      "explication": "Étant donné la performance des vidéos dans les top posts, il est recommandé d'investir dans la production de vidéos de haute qualité pour TikTok.",
+      "titre": "Top post sur TikTok",
+      "explication": "Le post avec le titre '#collage avec @Tdfmanga decouvrez un animé 100% ivoirien par @Cénack  « placman »' a obtenu le plus de likes et de vues, avec respectivement 8920 likes et 32741 vues.",
       "preuve": {
         "metrique": "likes",
         "valeur": 8920
+      }
+    },
+    {
+      "type": "reco",
+      "titre": "Analyze les types de contenu populaires",
+      "explication": "Analyser les types de contenu qui réussissent le mieux sur TikTok, comme les vidéos avec des animations ivoiriennes, pour créer du contenu similaire à l'avenir.",
+      "preuve": {
+        "metrique": "type_de_contenu",
+        "valeur": "vidéo"
       },
-      "action": "Créer et publier des vidéos attractives et de qualité sur TikTok"
+      "action": "Créer au moins un nouveau contenu similaire au top post cette semaine."
     },
     {
       "type": "insight",
-      "titre": "Audience stable sur TikTok",
-      "explication": "L'évolution de l'audience sur TikTok montre une certaine stabilité, avec des variations mineures.",
+      "titre": "Évolution de l'audience",
+      "explication": "L'audience a légèrement varié au fil du temps, avec une valeur actuelle de 4195 abonnés.",
       "preuve": {
-        "metrique": "valeur",
+        "metrique": "audience",
         "valeur": 4195
       }
     },
     {
       "type": "reco",
-      "titre": "Maintenir l'activité et l'engagement sur TikTok",
-      "explication": "Pour maintenir cette audience et potentiellement l'augmenter, il est crucial de maintenir une activité régulière et de stimuler l'engagement.",
+      "titre": "Utiliser les créneaux horaires recommandés",
+      "explication": "Publier du contenu à des moments stratégiques, comme vendredi à 14h, lorsque l'engagement est plus élevé.",
       "preuve": {
-        "metrique": "engagement",
-        "valeur": null
+        "metrique": "heure_de_publication",
+        "valeur": "14h"
       },
-      "action": "Interagir avec les abonnés et encourager les commentaires et partages sur TikTok"
+      "action": "Planifier les prochaines publications sur TikTok en fonction des recommandations de créneau horaire."
     }
   ]
 }

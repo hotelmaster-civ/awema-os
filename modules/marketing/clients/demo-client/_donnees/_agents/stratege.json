@@ -1,6 +1,6 @@
 {
   "agent": "stratege",
-  "genere_le": "2026-08-05T09:21:04+00:00",
+  "genere_le": "2026-08-06T09:24:18+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -15,60 +15,60 @@
       "jour": "Lundi",
       "heure": "19h",
       "format": "Reel",
-      "angle": "Bien-être et routines de soins pour les peaux grasses",
+      "angle": "Conseils pour une peau éclatante en été",
       "reseau": "TikTok"
     },
     {
-      "jour": "Mardi",
+      "jour": "Mercredi",
       "heure": "12h",
       "format": "Carrousel",
-      "angle": "Avant/Après de nos soins éclat pour une peau parfaite",
+      "angle": "Avant/Après - Transformation avec nos soins de visage",
       "reseau": "Instagram"
     },
     {
       "jour": "Jeudi",
       "heure": "19h",
-      "format": "Short",
-      "angle": "Conseils pour un teint parfait pour les futures mariées",
+      "format": "Reel",
+      "angle": "Routine de soin de peau pour les femmes actives",
       "reseau": "TikTok"
     },
     {
       "jour": "Vendredi",
       "heure": "15h",
       "format": "Photo",
-      "angle": "Présentation de nos produits hypoallergéniques pour les peaux sensibles",
+      "angle": "Présentation d'un nouveau produit pour les peaux sensibles",
       "reseau": "Instagram"
     },
     {
       "jour": "Samedi",
-      "heure": "15h",
+      "heure": "14h",
       "format": "Reel",
-      "angle": "Démonstration d'un soin visage éclat en live",
+      "angle": "Forfait mariée - Découvrez nos offres spéciales",
       "reseau": "TikTok"
     },
     {
       "jour": "Dimanche",
-      "heure": "12h",
+      "heure": "18h",
       "format": "Carrousel",
-      "angle": "Nos forfaits pour les mariées : pourquoi choisir Éclat Beauté",
-      "reseau": "Facebook"
+      "angle": "Témoignages de nos clientes satisfaites",
+      "reseau": "Instagram"
     },
     {
-      "jour": "Mercredi",
-      "heure": "19h",
-      "format": "Story",
-      "angle": "Réponses aux questions fréquentes sur nos produits et services",
-      "reseau": "Instagram"
+      "jour": "Mardi",
+      "heure": "12h",
+      "format": "Short",
+      "angle": "Réponses à vos questions fréquentes sur nos soins de beauté",
+      "reseau": "TikTok"
     }
   ],
   "cadence_recommandee": "3 publications/semaine",
   "meilleures_heures": [
     "Jeudi 19h",
-    "Samedi 15h"
+    "Samedi 14h"
   ],
   "objectifs": [
-    "Augmenter la portée de 15% sur les plateformes sociales",
-    "Accroître l'engagement de 20% via les commentaires et les partages",
-    "Attirer 500 nouveaux abonnés sur TikTok et Instagram dans les 4 prochaines semaines"
+    "Augmenter la portée des publications de 20% en 2 semaines",
+    "Accroître le taux d'engagement de 15% en 3 semaines",
+    "Développer une audience ciblée de 25 000 abonnés sur TikTok et Instagram en 6 semaines"
   ]
 }

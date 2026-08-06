@@ -1,6 +1,6 @@
 {
   "agent": "actions-du-jour",
-  "genere_le": "2026-08-05T09:21:29+00:00",
+  "genere_le": "2026-08-06T09:25:12+00:00",
   "modele": "agrégation (sans IA)",
   "provenance": {
     "client": "demo-client",
@@ -34,8 +34,8 @@
     {
       "priorite": 2,
       "type": "reco",
-      "titre": "Publier plus sur TikTok",
-      "detail": "Publier au moins 2 fois par semaine sur TikTok",
+      "titre": "Poster plus fréquemment sur TikTok",
+      "detail": "Publier au moins 3 fois par semaine sur TikTok",
       "source": "analyste",
       "action": {
         "label": "Voir l'analyse",
@@ -46,7 +46,7 @@
     {
       "priorite": 2,
       "type": "plan",
-      "titre": "Publie : Bien-être et routines de soins pour les peaux grasses",
+      "titre": "Publie : Conseils pour une peau éclatante en été",
       "detail": "TikTok · Reel · Lundi",
       "source": "stratege",
       "action": {
@@ -70,7 +70,7 @@
     {
       "priorite": 3,
       "type": "creatif",
-      "titre": "Idée prête : Découvrez le secret d'une peau éclatante avec notre soin visage premium !",
+      "titre": "Idée prête : Découvrez le secret pour un teint éclatant de l'institut Éclat Beauté !",
       "detail": "TikTok · Reel",
       "source": "creatif",
       "action": {

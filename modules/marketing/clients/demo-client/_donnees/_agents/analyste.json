@@ -1,6 +1,6 @@
 {
   "agent": "analyste",
-  "genere_le": "2026-08-05T09:19:51+00:00",
+  "genere_le": "2026-08-06T09:23:25+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -13,65 +13,66 @@
   "items": [
     {
       "type": "insight",
-      "titre": "Performance sur TikTok",
-      "explication": "Le réseau TikTok présente les meilleures performances en termes de likes et de vues.",
+      "titre": "TikTok, le réseau le plus performant",
+      "explication": "Le réseau TikTok génère le plus d'engagement avec un total de 88 000 likes et 500 commentaires, soit un taux d'engagement moyen élevé.",
       "preuve": {
         "metrique": "likes",
         "valeur": 88000,
-        "variation": null
-      },
-      "action": null
-    },
-    {
-      "type": "reco",
-      "titre": "Publier plus sur TikTok",
-      "explication": "Étant donné les performances exceptionnelles sur TikTok, il est recommandé d'augmenter la fréquence de publication sur cette plateforme.",
-      "preuve": {
-        "metrique": "likes",
-        "valeur": 88000
-      },
-      "action": "Publier au moins 2 fois par semaine sur TikTok"
+        "variation": "none"
+      }
     },
     {
       "type": "insight",
-      "titre": "Type de contenu le plus performant",
-      "explication": "Les Reels sont le type de contenu le plus performant en termes d'engagement moyen.",
+      "titre": "Contenu vidéo performant",
+      "explication": "Les Reels et les Carrousels sont les types de contenus les plus performants, avec respectivement 520 et 310 interactions en moyenne par publication.",
       "preuve": {
         "metrique": "engagement_moyen",
-        "valeur": 520
-      },
-      "action": null
+        "valeur": 520,
+        "variation": "none"
+      }
     },
     {
       "type": "reco",
-      "titre": "Créer plus de Reels",
-      "explication": "Étant donné que les Reels présentent le meilleur engagement moyen, il est conseillé de créer plus de contenus de ce type.",
+      "titre": "Poster plus fréquemment sur TikTok",
+      "explication": "Augmenter la fréquence de publication sur TikTok pourrait permettre d'augmenter l'engagement et d'atteindre un public plus large.",
+      "preuve": {
+        "metrique": "posts_par_semaine",
+        "valeur": 2,
+        "variation": "none"
+      },
+      "action": "Publier au moins 3 fois par semaine sur TikTok"
+    },
+    {
+      "type": "reco",
+      "titre": "Utiliser les contenus vidéo",
+      "explication": "Utiliser plus de Reels et de Carrousels pourrait aider à augmenter l'engagement sur les autres réseaux.",
       "preuve": {
         "metrique": "engagement_moyen",
-        "valeur": 520
+        "valeur": 520,
+        "variation": "none"
       },
-      "action": "Créer et publier au moins 1 Reel par semaine"
+      "action": "Créer au moins un Reel ou un Carrousel par semaine pour Instagram et Facebook"
     },
     {
       "type": "insight",
-      "titre": "Évolution de l'audience",
-      "explication": "L'audience a augmenté régulièrement sur la période considérée.",
+      "titre": "Évolution positive de l'audience",
+      "explication": "L'audience du compte a augmenté régulièrement, passant de 21 000 à 23 500 entre le 1er mai et le 15 juin.",
       "preuve": {
         "metrique": "audience",
         "valeur": 23500,
-        "variation": "Augmentation de 25% par rapport au 1er mai"
-      },
-      "action": null
+        "variation": "augmentation de 12% depuis le 1er mai"
+      }
     },
     {
       "type": "reco",
       "titre": "Répondre aux commentaires et messages",
-      "explication": "Il est important de maintenir une interaction avec les followers, surtout ceux qui commentent ou posent des questions.",
+      "explication": "Il y a 5 messages en attente de réponse. Répondre rapidement aux commentaires et messages pour améliorer l'expérience client.",
       "preuve": {
-        "metrique": "commentaires",
-        "valeur": 1230
+        "metrique": "a_repondre",
+        "valeur": 5,
+        "variation": "none"
       },
-      "action": "Répondre à tous les commentaires et messages dans les 24 heures"
+      "action": "Répondre à tous les commentaires et messages d'ici la fin de la semaine"
     }
   ]
 }

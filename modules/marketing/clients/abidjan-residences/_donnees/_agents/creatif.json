@@ -1,6 +1,6 @@
 {
   "agent": "creatif",
-  "genere_le": "2026-08-05T09:21:26+00:00",
+  "genere_le": "2026-08-06T09:24:39+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -11,33 +11,33 @@
   },
   "items": [
     {
-      "hook": "Découvrez les résidences incontournables d'Abidjan !",
-      "script": "Vous cherchez un endroit où séjourner à Abidjan ? Nous vous présentons les résidences les plus confortables et les mieux équipées de la ville. De la plage de Grand-Bassam aux quartiers résidentiels de Cocody, nous avons sélectionné les meilleures adresses pour vous. Découvrez-les dans notre nouvelle vidéo ! #Abidjan #Résidences #Séjour",
+      "hook": "Découvrez les merveilles d'Abidjan !",
+      "script": "Nous sommes fiers de vous présenter les résidences les plus luxueuses d'Abidjan. De la plage de Grand-Bassam à la vibrante vie nocturne de Yopougon, Abidjan offre une expérience unique qui combine tradition et modernité. Rejoignez-nous pour un séjour inoubliable ! #AbidjanResidences #LuxuryLiving",
       "format": "Reel",
       "reseau": "TikTok",
-      "prompt_image": "Une vue aérienne de la ville d'Abidjan avec des résidences modernes et des plages de sable blanc. Utilisez des couleurs vives et des contrastes pour mettre en valeur la beauté de la ville.",
+      "prompt_image": "Une vue aérienne d'une résidence luxueuse à Abidjan avec la plage au loin, sous un ciel ensoleillé",
       "variantes": [
-        "Abidjan, la ville qui vous attend !"
+        "Explorez le cœur d'Abidjan avec nous !"
       ]
     },
     {
-      "hook": "Quel est votre quartier préféré à Abidjan ?",
-      "script": "Abidjan, la capitale économique de la Côte d'Ivoire, regorge de quartiers uniques et pleins de charme. De Yopougon à Plateau, chacun a son histoire et son atmosphère. Partagez avec nous votre quartier préféré et ce que vous aimez y faire ! Utilisez le hashtag #AbidjanQuartiers pour que nous puissions voir vos publications !",
+      "hook": "Vous cherchez un endroit pour vous détendre à Abidjan ?",
+      "script": "Laissez-nous vous emmener dans un voyage de découverte des plus beaux lieux de détente qu'Abidjan a à offrir ! Des plages de sable blanc aux espaces verts luxuriants, nous vous révélons les secrets pour un séjour relaxation totale. #DetenteABidjan #ResidencesDeLuxe",
       "format": "Carrousel",
-      "reseau": "TikTok",
-      "prompt_image": "Une photo de rue animée dans un quartier d'Abidjan, avec des personnes vaquant à leurs occupations et des stands de marché colorés. Assurez-vous d'inclure des détails qui montrent la vie quotidienne dans la ville.",
+      "reseau": "Instagram",
+      "prompt_image": "Une photo d'un hammam ou d'un spa dans une résidence de luxe à Abidjan, avec des éléments de nature",
       "variantes": [
-        "Explorez les quartiers cachés d'Abidjan avec nous !"
+        "Échappez-vous dans un oasis de paix à Abidjan"
       ]
     },
     {
-      "hook": "Prêt à découvrir la vie nocturne d'Abidjan ?",
-      "script": "La nuit tombe sur Abidjan, et la ville se transforme en une scène vibrante de musique, de danse et de divertissement. De los bars branchés de Marcory aux clubs de nuit de Riviera, il y a toujours quelque chose à faire. Rejoignez-nous pour une nuit inoubliable dans la ville qui ne dort jamais ! #AbidjanNuit #VieNocturne",
+      "hook": "Prêts à booster votre carrière à Abidjan ?",
+      "script": "Chez Abidjan Résidences, nous croyons que le succès commence par un environnement de travail inspirant ! Découvrez nos espaces de coworking pensés pour les entrepreneurs et les professionnels en quête de lieux stimulants pour innover et réussir. #AbidjanResidences #Coworking",
       "format": "Short",
-      "reseau": "TikTok",
-      "prompt_image": "Une.capture d'écran d'une nuit animée à Abidjan, avec des lumières de néon, des gens dansant et une musique pulsative. Utilisez des couleurs chaudes et des effets visuels pour transmettre l'énergie de la ville la nuit.",
+      "reseau": "LinkedIn",
+      "prompt_image": "Un espace de coworking moderne et lumineux dans une résidence d'Abidjan, avec des professionnels travaillant",
       "variantes": [
-        "Abidjan la nuit, l'endroit où la musique ne s'arrête jamais !"
+        "Transformez votre travail en succès avec nous !"
       ]
     }
   ]

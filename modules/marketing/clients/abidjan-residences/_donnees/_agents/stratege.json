@@ -1,6 +1,6 @@
 {
   "agent": "stratege",
-  "genere_le": "2026-08-05T09:20:32+00:00",
+  "genere_le": "2026-08-06T09:24:06+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -14,49 +14,49 @@
       "jour": "Lundi",
       "heure": "14h",
       "format": "Vidéo",
-      "angle": "Présentation d'un nouveau projet de résidence à Abidjan",
+      "angle": "Découvrez nos résidences à Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Mercredi",
       "heure": "14h",
       "format": "Vidéo",
-      "angle": "Témoignage d'un résident sur son expérience à Abidjan résidences",
+      "angle": "Conseils pour un séjour à Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Vendredi",
       "heure": "14h",
       "format": "Vidéo",
-      "angle": "Découverte d'un quartier animé d'Abidjan",
+      "angle": "Les avantages de vivre à Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Samedi",
       "heure": "12h",
-      "format": "Story",
-      "angle": "Événement culturel ou festival à ne pas manquer à Abidjan",
+      "format": "Photo",
+      "angle": "Découvrez notre dernier appartement",
       "reseau": "TikTok"
     },
     {
       "jour": "Dimanche",
       "heure": "18h",
-      "format": "Live",
-      "angle": "Séance de questions-réponses avec un expert sur le marché immobilier ivoirien",
+      "format": "Story",
+      "angle": "Notre équipe vous souhaite un bon week-end",
       "reseau": "TikTok"
     },
     {
       "jour": "Mardi",
-      "heure": "15h",
-      "format": "Vidéo",
-      "angle": "Conseils pour choisir la bonne résidence à Abidjan",
+      "heure": "14h",
+      "format": "Live",
+      "angle": "Visite virtuelle de notre résidence",
       "reseau": "TikTok"
     },
     {
       "jour": "Jeudi",
       "heure": "14h",
       "format": "Vidéo",
-      "angle": "Présentation des avantages de vivre dans une résidence à Abidjan",
+      "angle": "Témoignage d'un de nos résidents",
       "reseau": "TikTok"
     }
   ],
@@ -65,8 +65,9 @@
     "Vendredi 14h"
   ],
   "objectifs": [
-    "Augmenter les abonnés sur TikTok de 10% dans les 3 prochains mois",
-    "Accroître le taux d'engagement sur les publications de 20% dans les 2 prochains mois",
-    "Publier au moins 4 fois par semaine sur TikTok pour maintenir une présence active"
+    "Augmenter la portée de 20% sur TikTok",
+    "Améliorer l'engagement de 15% sur les publications",
+    "Créer 2 contenus vidéos par semaine",
+    "Augmenter le nombre d'abonnés de 5% sur TikTok"
   ]
 }
