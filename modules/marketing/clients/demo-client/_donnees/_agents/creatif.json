@@ -1,6 +1,6 @@
 {
   "agent": "creatif",
-  "genere_le": "2026-08-06T09:25:12+00:00",
+  "genere_le": "2026-08-07T07:54:18+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -12,36 +12,33 @@
   },
   "items": [
     {
-      "hook": "Découvrez le secret pour un teint éclatant de l'institut Éclat Beauté !",
-      "script": "Vous rêvez d'un teint parfait ? Notre soin visage éclat vous offre une peau lumineuse et hydratée thanks à nos produits adaptés à la peau africaine ! Réservez votre séance dès maintenant via WhatsApp.",
+      "hook": "Découvrez le secret d'un teint éclatant naturel!",
+      "script": "Bonjour beautés ! \n\nAïcha, notre jeune active, a déjà testé notre Soin visage éclat pour un résultat personnalisé et adapté à sa peau africaine. Après une seule séance, son visage est plus lumineux et son teint, plus uniforme ! \n\nConfiez-nous vos soins, nous vous offrons des produits hypoallergéniques et un accueil chaleureux. Réservez dès maintenant via WhatsApp et obtenez 10% de réduction sur votre 1ère séance !",
       "format": "Reel",
       "reseau": "TikTok",
-      "prompt_image": "Une femme avec un teint éclatant, en train de sourire, avec un fond de couleur #D4AF37, les produits de soin visage éclat en avant-plan",
+      "prompt_image": "Une femme africaine avec un teint éclatant, souriante, avec des fleurs autour d'elle, évoquant la nature et la beauté. Utiliser les couleurs #D4AF37 et #0A1F44 pour les textes et les dégradés",
       "variantes": [
-        "Un teint parfait, c'est possible avec Éclat Beauté !",
-        "Éclat de beauté, pour une peau parfaite !"
+        "Faites briller votre beauté intérieure avec nous !"
       ]
     },
     {
-      "hook": " Mariée, vous méritez d'être sublime !",
-      "script": "Le grand jour approche et vous voulez être parfaite ? Notre forfait mariée est conçu pour vous offrir un teint et une beauté exceptionnels grâce à nos 3 séances personnalisées. Réservez maintenant et profitez d'un accompagnement personnalisé pour votre journée spéciale !",
+      "hook": "Mariage parfait, teint parfait !",
+      "script": "Fatou, notre future mariée, a déjà choisi notre Forfait mariée personnalisé pour un résultat sublime. 3 séances de soins visage éclat, adaptées à votre type de peau et à vos attentes. \n\nLe jour J, vous serez sublimée ! Réservez votre forfait dès maintenant en cliquant sur le lien dans notre bio.",
       "format": "Carrousel",
       "reseau": "Instagram",
-      "prompt_image": "Une photo d'une future mariée avec un teint parfait, en robe de mariée, sur fond de roses, avec notre logo discrètement en bas à gauche",
+      "prompt_image": "Une future mariée africaine, avec un voile et une robe de mariée, posant avec confiance et un large sourire. Utiliser les couleurs pastel pour évoquer la romance et le rêve.",
       "variantes": [
-        "Future mariée, soyez sublimée avec Éclat Beauté",
-        "Le jour J, soyez parfaite avec notre forfait mariée !"
+        "Rêvez d'un mariage parfait ? Nous nous occupons de votre beauté !"
       ]
     },
     {
-      "hook": "Un temps pour soi, c'est possible même au quotidien !",
-      "script": "En plein emploi du temps, il est essentiel de prendre soin de soi. Découvrez comment notre soin visage éclat vous permet de vous offrir un moment de relaxation et de vous retrouver avec une peau éclatante, même les jours les plus chargés ! N'oubliez pas de réserver votre séance via WhatsApp.",
+      "hook": "Se sentir belle, c'est possible avec nous !",
+      "script": "Découvrez les bienfaits de notre gamme de produits naturels pour la peau africaine. Nous vous proposons des nettoyages doux, des hydratations profondes et des produits adaptés à vos besoins spécifiques. \n\nConfiez-nous vos soins et vivez l'expérience Éclat Beauté !",
       "format": "Short",
       "reseau": "Facebook",
-      "prompt_image": "Une femme active, en train de se détendre pendant une séance de soin visage, souriante, avec les produits de soin et une tasse de thé à côté",
+      "prompt_image": "Une femme africaine avec un teint éclatant, posant avec un vase de fleurs et des produits naturels autour d'elle, évoquant la sérénité et la beauté. Utiliser les couleurs #D4AF37 et #0A1F44 pour les textes et les dégradés.",
       "variantes": [
-        "Prenez le temps pour vous, c'est possible avec Éclat Beauté",
-        "Un moment pour soi, c'est santé avec notre soin visage éclat"
+        "Prenez soin de votre peau, vous le méritez !"
       ]
     }
   ]

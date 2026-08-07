@@ -1,6 +1,6 @@
 {
   "agent": "actions-du-jour",
-  "genere_le": "2026-08-06T09:25:12+00:00",
+  "genere_le": "2026-08-07T07:54:18+00:00",
   "modele": "agrégation (sans IA)",
   "provenance": {
     "client": "abidjan-residences",
@@ -34,8 +34,8 @@
     {
       "priorite": 2,
       "type": "reco",
-      "titre": "Publier régulièrement sur TikTok",
-      "detail": "Publier au moins un nouveau contenu sur TikTok cette semaine.",
+      "titre": "Créer plus de contenu sur TikTok",
+      "detail": "Publiez au moins 2 nouveaux posts sur TikTok cette semaine.",
       "source": "analyste",
       "action": {
         "label": "Voir l'analyse",
@@ -58,7 +58,7 @@
     {
       "priorite": 3,
       "type": "creatif",
-      "titre": "Idée prête : Découvrez les merveilles d'Abidjan !",
+      "titre": "Idée prête : Découvrez les secrets de Yopougon !",
       "detail": "TikTok · Reel",
       "source": "creatif",
       "action": {

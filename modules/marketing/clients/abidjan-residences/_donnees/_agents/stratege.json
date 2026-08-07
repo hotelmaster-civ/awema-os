@@ -1,6 +1,6 @@
 {
   "agent": "stratege",
-  "genere_le": "2026-08-06T09:24:06+00:00",
+  "genere_le": "2026-08-07T07:53:09+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -12,51 +12,51 @@
   "items": [
     {
       "jour": "Lundi",
-      "heure": "14h",
+      "heure": "19h",
       "format": "Vidéo",
       "angle": "Découvrez nos résidences à Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Mercredi",
-      "heure": "14h",
-      "format": "Vidéo",
-      "angle": "Conseils pour un séjour à Abidjan",
+      "heure": "12h",
+      "format": "Story",
+      "angle": "Conseils pour choisir la résidence idéale",
       "reseau": "TikTok"
     },
     {
       "jour": "Vendredi",
       "heure": "14h",
       "format": "Vidéo",
-      "angle": "Les avantages de vivre à Abidjan",
+      "angle": "Exploration d'une résidence à Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Samedi",
-      "heure": "12h",
-      "format": "Photo",
-      "angle": "Découvrez notre dernier appartement",
+      "heure": "18h",
+      "format": "Short",
+      "angle": "Avantages de vivre dans nos résidences",
       "reseau": "TikTok"
     },
     {
       "jour": "Dimanche",
-      "heure": "18h",
-      "format": "Story",
-      "angle": "Notre équipe vous souhaite un bon week-end",
+      "heure": "17h",
+      "format": "Vidéo",
+      "angle": "Témoignage d'un résident",
       "reseau": "TikTok"
     },
     {
       "jour": "Mardi",
-      "heure": "14h",
-      "format": "Live",
-      "angle": "Visite virtuelle de notre résidence",
+      "heure": "20h",
+      "format": "Story",
+      "angle": "Présentation de nos équipements",
       "reseau": "TikTok"
     },
     {
       "jour": "Jeudi",
-      "heure": "14h",
+      "heure": "15h",
       "format": "Vidéo",
-      "angle": "Témoignage d'un de nos résidents",
+      "angle": "Découvrez notre offre de location",
       "reseau": "TikTok"
     }
   ],
@@ -65,9 +65,8 @@
     "Vendredi 14h"
   ],
   "objectifs": [
-    "Augmenter la portée de 20% sur TikTok",
-    "Améliorer l'engagement de 15% sur les publications",
-    "Créer 2 contenus vidéos par semaine",
-    "Augmenter le nombre d'abonnés de 5% sur TikTok"
+    "Augmenter les vues de 20% sur TikTok",
+    "Améliorer l'engagement (likes, commentaires) sur les publications de résidences",
+    "Attirer 100 nouveaux abonnés sur TikTok"
   ]
 }

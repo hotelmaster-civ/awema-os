@@ -1,6 +1,6 @@
 {
   "agent": "creatif",
-  "genere_le": "2026-08-06T09:24:39+00:00",
+  "genere_le": "2026-08-07T07:54:02+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -11,33 +11,36 @@
   },
   "items": [
     {
-      "hook": "Découvrez les merveilles d'Abidjan !",
-      "script": "Nous sommes fiers de vous présenter les résidences les plus luxueuses d'Abidjan. De la plage de Grand-Bassam à la vibrante vie nocturne de Yopougon, Abidjan offre une expérience unique qui combine tradition et modernité. Rejoignez-nous pour un séjour inoubliable ! #AbidjanResidences #LuxuryLiving",
+      "hook": "Découvrez les secrets de Yopougon !",
+      "script": "Je vous emmène dans un tour de Yopougon pour vous faire découvrir les meilleurs endroits à visiter. De la nourriture délicieuse aux activités de loisirs, je vous montre tout ! Rejoignez-moi et partagez vos propres expériences en commentaire !",
       "format": "Reel",
       "reseau": "TikTok",
-      "prompt_image": "Une vue aérienne d'une résidence luxueuse à Abidjan avec la plage au loin, sous un ciel ensoleillé",
+      "prompt_image": "Une photo d'un marché coloré à Yopougon avec des personnes souriantes et des stands de nourriture appetissants",
       "variantes": [
-        "Explorez le cœur d'Abidjan avec nous !"
+        "Explorez Yopougon avec moi !",
+        "Yopougon, la perle d'Abidjan !"
       ]
     },
     {
-      "hook": "Vous cherchez un endroit pour vous détendre à Abidjan ?",
-      "script": "Laissez-nous vous emmener dans un voyage de découverte des plus beaux lieux de détente qu'Abidjan a à offrir ! Des plages de sable blanc aux espaces verts luxuriants, nous vous révélons les secrets pour un séjour relaxation totale. #DetenteABidjan #ResidencesDeLuxe",
+      "hook": "Les résidences d'Abidjan comme vous ne les avez jamais vues !",
+      "script": "Je vous présente les résidences les plus époustouflantes d'Abidjan. Désign, confort et sécurité, tout y est ! Abonnez-vous pour voir plus de contenu sur les résidences et les quartiers d'Abidjan.",
       "format": "Carrousel",
-      "reseau": "Instagram",
-      "prompt_image": "Une photo d'un hammam ou d'un spa dans une résidence de luxe à Abidjan, avec des éléments de nature",
+      "reseau": "TikTok",
+      "prompt_image": "une photo d'une résidence moderne avec piscine et jardin à Abidjan",
       "variantes": [
-        "Échappez-vous dans un oasis de paix à Abidjan"
+        "Les meilleures résidences d'Abidjan !",
+        "Découvrez vos futurs quartiers à Abidjan !"
       ]
     },
     {
-      "hook": "Prêts à booster votre carrière à Abidjan ?",
-      "script": "Chez Abidjan Résidences, nous croyons que le succès commence par un environnement de travail inspirant ! Découvrez nos espaces de coworking pensés pour les entrepreneurs et les professionnels en quête de lieux stimulants pour innover et réussir. #AbidjanResidences #Coworking",
+      "hook": "Vous cherchez un endroit calme à Yopougon pour vous détendre ?",
+      "script": "Je vous recommande Le B, un havre de paix à Yopougon. Détendez-vous dans un environnement serein et profitez de la vie ! Partagez vos lieux de détente préférés en commentaire !",
       "format": "Short",
-      "reseau": "LinkedIn",
-      "prompt_image": "Un espace de coworking moderne et lumineux dans une résidence d'Abidjan, avec des professionnels travaillant",
+      "reseau": "TikTok",
+      "prompt_image": "Une photo de l'hôtel Le B à Yopougon avec ses jardins et ses piscines",
       "variantes": [
-        "Transformez votre travail en succès avec nous !"
+        "Yopougon, votre destination de détente !",
+        "Détendez-vous à Yopougon !"
       ]
     }
   ]

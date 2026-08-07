@@ -1,6 +1,6 @@
 {
   "agent": "stratege",
-  "genere_le": "2026-08-06T09:24:18+00:00",
+  "genere_le": "2026-08-07T07:53:21+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -15,60 +15,60 @@
       "jour": "Lundi",
       "heure": "19h",
       "format": "Reel",
-      "angle": "Conseils pour une peau éclatante en été",
+      "angle": "Présentation de nouveaux produits de soin de peau adaptés à la peau africaine",
       "reseau": "TikTok"
     },
     {
       "jour": "Mercredi",
       "heure": "12h",
       "format": "Carrousel",
-      "angle": "Avant/Après - Transformation avec nos soins de visage",
+      "angle": "Avant/Après soins éclat pour révéler la beauté naturelle",
       "reseau": "Instagram"
     },
     {
       "jour": "Jeudi",
       "heure": "19h",
-      "format": "Reel",
-      "angle": "Routine de soin de peau pour les femmes actives",
+      "format": "Short",
+      "angle": "Conseils de routine pour les peaux grasses en 3 étapes",
       "reseau": "TikTok"
-    },
-    {
-      "jour": "Vendredi",
-      "heure": "15h",
-      "format": "Photo",
-      "angle": "Présentation d'un nouveau produit pour les peaux sensibles",
-      "reseau": "Instagram"
     },
     {
       "jour": "Samedi",
-      "heure": "14h",
-      "format": "Reel",
-      "angle": "Forfait mariée - Découvrez nos offres spéciales",
-      "reseau": "TikTok"
+      "heure": "12h",
+      "format": "Photo",
+      "angle": "Présentation du forfait mariée et témoignage d'une cliente satisfaite",
+      "reseau": "Facebook"
     },
     {
       "jour": "Dimanche",
       "heure": "18h",
-      "format": "Carrousel",
-      "angle": "Témoignages de nos clientes satisfaites",
+      "format": "Reel",
+      "angle": "Démonstration de soins de visage à domicile pour le bien-être",
       "reseau": "Instagram"
     },
     {
       "jour": "Mardi",
-      "heure": "12h",
+      "heure": "14h",
       "format": "Short",
-      "angle": "Réponses à vos questions fréquentes sur nos soins de beauté",
+      "angle": "Réponse à des questions fréquentes sur les soins de peau et les produits",
       "reseau": "TikTok"
+    },
+    {
+      "jour": "Vendredi",
+      "heure": "20h",
+      "format": "Carrousel",
+      "angle": "Exclusivité : nouveaux produits arrivant en boutique et disponibles pour la réservation",
+      "reseau": "Instagram"
     }
   ],
   "cadence_recommandee": "3 publications/semaine",
   "meilleures_heures": [
     "Jeudi 19h",
-    "Samedi 14h"
+    "Samedi 12h"
   ],
   "objectifs": [
-    "Augmenter la portée des publications de 20% en 2 semaines",
-    "Accroître le taux d'engagement de 15% en 3 semaines",
-    "Développer une audience ciblée de 25 000 abonnés sur TikTok et Instagram en 6 semaines"
+    "Augmenter l'engagement de 20% sur les publications",
+    "Porter la fréquentation du site web à 500 visiteurs par mois",
+    "Maintenir un taux d'engagement supérieur à 3% sur les réseaux sociaux"
   ]
 }

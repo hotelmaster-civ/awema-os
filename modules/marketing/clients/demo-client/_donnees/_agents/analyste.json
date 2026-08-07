@@ -1,6 +1,6 @@
 {
   "agent": "analyste",
-  "genere_le": "2026-08-06T09:23:25+00:00",
+  "genere_le": "2026-08-07T07:52:48+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -13,66 +13,60 @@
   "items": [
     {
       "type": "insight",
-      "titre": "TikTok, le réseau le plus performant",
-      "explication": "Le réseau TikTok génère le plus d'engagement avec un total de 88 000 likes et 500 commentaires, soit un taux d'engagement moyen élevé.",
+      "titre": "Présence dominante sur TikTok",
+      "explication": "Le réseau TikTok montre un engagement significativement plus élevé que les autres réseaux, avec 88000 likes et 500 commentaires.",
       "preuve": {
         "metrique": "likes",
-        "valeur": 88000,
-        "variation": "none"
+        "valeur": 88000
       }
+    },
+    {
+      "type": "reco",
+      "titre": "Créer plus de contenu sur TikTok",
+      "explication": "Étant donné la popularité du contenu sur TikTok, il serait bénéfique de créer plus de contenus vidéos courts pour ce réseau.",
+      "preuve": {
+        "metrique": "engagement_taux",
+        "valeur": 3.8
+      },
+      "action": "Publier au moins un contenu par semaine sur TikTok"
     },
     {
       "type": "insight",
-      "titre": "Contenu vidéo performant",
-      "explication": "Les Reels et les Carrousels sont les types de contenus les plus performants, avec respectivement 520 et 310 interactions en moyenne par publication.",
+      "titre": "Contenu Carrousel bien performant",
+      "explication": "Les contenus de type Carrousel ont un engagement moyen élevé, avec 310 interactions par poste.",
       "preuve": {
         "metrique": "engagement_moyen",
-        "valeur": 520,
-        "variation": "none"
+        "valeur": 310
       }
     },
     {
       "type": "reco",
-      "titre": "Poster plus fréquemment sur TikTok",
-      "explication": "Augmenter la fréquence de publication sur TikTok pourrait permettre d'augmenter l'engagement et d'atteindre un public plus large.",
+      "titre": "Répondre aux commentaires en retard",
+      "explication": "Il y a un certain nombre de commentaires en attente de réponse, il est important de répondre rapidement pour maintenir une bonne relation avec les abonnés.",
       "preuve": {
-        "metrique": "posts_par_semaine",
-        "valeur": 2,
-        "variation": "none"
+        "metrique": "a_repondre",
+        "valeur": 5
       },
-      "action": "Publier au moins 3 fois par semaine sur TikTok"
-    },
-    {
-      "type": "reco",
-      "titre": "Utiliser les contenus vidéo",
-      "explication": "Utiliser plus de Reels et de Carrousels pourrait aider à augmenter l'engagement sur les autres réseaux.",
-      "preuve": {
-        "metrique": "engagement_moyen",
-        "valeur": 520,
-        "variation": "none"
-      },
-      "action": "Créer au moins un Reel ou un Carrousel par semaine pour Instagram et Facebook"
+      "action": "Répondre à tous les commentaires en retard avant la fin de la semaine"
     },
     {
       "type": "insight",
       "titre": "Évolution positive de l'audience",
-      "explication": "L'audience du compte a augmenté régulièrement, passant de 21 000 à 23 500 entre le 1er mai et le 15 juin.",
+      "explication": "L'audience a augmenté régulièrement au fil du temps, avec une valeur actuelle de 23500.",
       "preuve": {
         "metrique": "audience",
-        "valeur": 23500,
-        "variation": "augmentation de 12% depuis le 1er mai"
+        "valeur": 23500
       }
     },
     {
       "type": "reco",
-      "titre": "Répondre aux commentaires et messages",
-      "explication": "Il y a 5 messages en attente de réponse. Répondre rapidement aux commentaires et messages pour améliorer l'expérience client.",
+      "titre": "Maintenir la régularité des posts",
+      "explication": "La régularité des posts semble avoir un impact positif sur l'audience, il est important de maintenir cette régularité.",
       "preuve": {
-        "metrique": "a_repondre",
-        "valeur": 5,
-        "variation": "none"
+        "metrique": "posts_30j",
+        "valeur": 8
       },
-      "action": "Répondre à tous les commentaires et messages d'ici la fin de la semaine"
+      "action": "Planifier et publier au moins 2 posts par semaine"
     }
   ]
 }

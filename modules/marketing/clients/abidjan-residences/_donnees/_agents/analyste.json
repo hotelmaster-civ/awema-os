@@ -1,6 +1,6 @@
 {
   "agent": "analyste",
-  "genere_le": "2026-08-06T09:23:13+00:00",
+  "genere_le": "2026-08-07T07:52:37+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -12,27 +12,27 @@
   "items": [
     {
       "type": "insight",
-      "titre": "Performances sur TikTok",
-      "explication": "Les données montrent que le compte Abidjan résidences a un nombre significatif d'abonnés et d'interactions sur TikTok, avec un total de 9484 likes et 41823 vues.",
+      "titre": "Engagement élevé sur TikTok",
+      "explication": "Les données montrent un nombre élevé de likes et de commentaires sur les posts TikTok, indiquant un fort engagement de la part de l'audience.",
       "preuve": {
-        "metrique": "likes_total",
+        "metrique": "likes",
         "valeur": 9484
       }
     },
     {
       "type": "reco",
-      "titre": "Publier régulièrement sur TikTok",
-      "explication": "Étant donné que le dernier post sur TikTok remonte à 51 jours, il est recommandé de publier du contenu régulièrement pour maintenir l'engagement de l'audience.",
+      "titre": "Créer plus de contenu sur TikTok",
+      "explication": "Étant donné l'engagement élevé sur TikTok, il est recommandé de créer plus de contenu sur cette plateforme pour renforcer l'interaction avec l'audience.",
       "preuve": {
-        "metrique": "jours_depuis_dernier_post",
-        "valeur": 51
+        "metrique": "likes",
+        "valeur": 9484
       },
-      "action": "Publier au moins un nouveau contenu sur TikTok cette semaine."
+      "action": "Publiez au moins 2 nouveaux posts sur TikTok cette semaine."
     },
     {
       "type": "insight",
-      "titre": "Top post sur TikTok",
-      "explication": "Le post avec le titre '#collage avec @Tdfmanga decouvrez un animé 100% ivoirien par @Cénack  « placman »' a obtenu le plus de likes et de vues, avec respectivement 8920 likes et 32741 vues.",
+      "titre": "Top post très performant",
+      "explication": "Le post '#collage avec @Tdfmanga decouvrez un animé 100% ivoirien par @Cénack  « placman »' a obtenu 8920 likes et 32741 vues, montrant qu'il y a un intérêt fort pour ce type de contenu.",
       "preuve": {
         "metrique": "likes",
         "valeur": 8920
@@ -40,32 +40,32 @@
     },
     {
       "type": "reco",
-      "titre": "Analyze les types de contenu populaires",
-      "explication": "Analyser les types de contenu qui réussissent le mieux sur TikTok, comme les vidéos avec des animations ivoiriennes, pour créer du contenu similaire à l'avenir.",
+      "titre": "Collaborer avec des influenceurs locaux",
+      "explication": "Le succès du post collaboratif avec @Tdfmanga et @Cénack suggère que les collaborations avec des influenceurs locaux pourraient être bénéfiques pour augmenter l'engagement.",
       "preuve": {
-        "metrique": "type_de_contenu",
-        "valeur": "vidéo"
+        "metrique": "likes",
+        "valeur": 8920
       },
-      "action": "Créer au moins un nouveau contenu similaire au top post cette semaine."
+      "action": "Recherchez et contactez 2 influenceurs locaux pour une collaboration potentielle d'ici la fin du mois."
     },
     {
       "type": "insight",
-      "titre": "Évolution de l'audience",
-      "explication": "L'audience a légèrement varié au fil du temps, avec une valeur actuelle de 4195 abonnés.",
+      "titre": "Cadence de publication faible",
+      "explication": "Avec 0 posts publiés au cours des 30 derniers jours, la cadence de publication est très faible, ce qui peut impacté négativement l'engagement de l'audience.",
       "preuve": {
-        "metrique": "audience",
-        "valeur": 4195
+        "metrique": "posts_30j",
+        "valeur": 0
       }
     },
     {
       "type": "reco",
-      "titre": "Utiliser les créneaux horaires recommandés",
-      "explication": "Publier du contenu à des moments stratégiques, comme vendredi à 14h, lorsque l'engagement est plus élevé.",
+      "titre": "Augmenter la cadence de publication",
+      "explication": "Il est essentiel d'augmenter la fréquence de publication pour maintenir l'intérêt de l'audience et améliorer l'engagement.",
       "preuve": {
-        "metrique": "heure_de_publication",
-        "valeur": "14h"
+        "metrique": "posts_30j",
+        "valeur": 0
       },
-      "action": "Planifier les prochaines publications sur TikTok en fonction des recommandations de créneau horaire."
+      "action": "Établissez un calendrier de publication pour les prochaines semaines avec au moins un post par semaine."
     }
   ]
 }
