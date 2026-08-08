@@ -1,6 +1,6 @@
 {
   "agent": "creatif",
-  "genere_le": "2026-08-07T07:54:02+00:00",
+  "genere_le": "2026-08-08T07:32:40+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -11,36 +11,33 @@
   },
   "items": [
     {
-      "hook": "Découvrez les secrets de Yopougon !",
-      "script": "Je vous emmène dans un tour de Yopougon pour vous faire découvrir les meilleurs endroits à visiter. De la nourriture délicieuse aux activités de loisirs, je vous montre tout ! Rejoignez-moi et partagez vos propres expériences en commentaire !",
+      "hook": "Découvrez les secrets de Placman !",
+      "script": "Bonjour à tous ! Aujourd'hui, je vais vous présenter Placman, un projet animé 100% ivoirien créé par @Cénack. Découvrez comment cette série unique est en train de révolutionner l'animation en Côte d'Ivoire. Abonnez-vous pour plus de contenu ! #Placman #AnimationIvoirienne #Abidjan",
       "format": "Reel",
       "reseau": "TikTok",
-      "prompt_image": "Une photo d'un marché coloré à Yopougon avec des personnes souriantes et des stands de nourriture appetissants",
+      "prompt_image": "Un visuel coloré de Placman avec des éléments de décors ivoiriens, tel que des cases de maisons traditionnelles ou des motifs africains",
       "variantes": [
-        "Explorez Yopougon avec moi !",
-        "Yopougon, la perle d'Abidjan !"
+        "Plongez dans le monde de Placman !"
       ]
     },
     {
-      "hook": "Les résidences d'Abidjan comme vous ne les avez jamais vues !",
-      "script": "Je vous présente les résidences les plus époustouflantes d'Abidjan. Désign, confort et sécurité, tout y est ! Abonnez-vous pour voir plus de contenu sur les résidences et les quartiers d'Abidjan.",
+      "hook": " Vous cherchez un endroit pour vous détendre à Abidjan ?",
+      "script": "Je vous présente Le B, un lieu unique à Yopougon pour un séjour calme et relaxant. Découvrez pourquoi Le B est le choix idéal pour vos prochaines vacances. Suivez-nous pour plus de découvertes à Abidjan ! #LeB #Yopougon #Detente",
       "format": "Carrousel",
       "reseau": "TikTok",
-      "prompt_image": "une photo d'une résidence moderne avec piscine et jardin à Abidjan",
+      "prompt_image": "Une série de photos montrant les différents aspects de Le B, comme la piscine, les chambres, et les espaces de détente, avec des filter colorés et des légendes accueillantes",
       "variantes": [
-        "Les meilleures résidences d'Abidjan !",
-        "Découvrez vos futurs quartiers à Abidjan !"
+        "Échappez à la routine avec Le B !"
       ]
     },
     {
-      "hook": "Vous cherchez un endroit calme à Yopougon pour vous détendre ?",
-      "script": "Je vous recommande Le B, un havre de paix à Yopougon. Détendez-vous dans un environnement serein et profitez de la vie ! Partagez vos lieux de détente préférés en commentaire !",
+      "hook": "Vous êtes prêt à promouvoir votre établissement ?",
+      "script": "Chez Abidjan Résidences, nous vous offrons la possibilité de promouvoir votre entreprise et de fixer votre propre commission ! Rejoignez-nous pour augmenter votre visibilité et attirer de nouveaux clients. Plus de détails dans les commentaires ! #Promotion #Entreprise #Abidjan",
       "format": "Short",
       "reseau": "TikTok",
-      "prompt_image": "Une photo de l'hôtel Le B à Yopougon avec ses jardins et ses piscines",
+      "prompt_image": "Un visuel dynamique représentant différents établissements d'Abidjan, avec des flèches et des symboles de croissance pour illustrer la promotion",
       "variantes": [
-        "Yopougon, votre destination de détente !",
-        "Détendez-vous à Yopougon !"
+        "Faites connaître votre entreprise avec nous !"
       ]
     }
   ]

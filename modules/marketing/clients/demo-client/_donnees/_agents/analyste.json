@@ -1,6 +1,6 @@
 {
   "agent": "analyste",
-  "genere_le": "2026-08-07T07:52:48+00:00",
+  "genere_le": "2026-08-08T07:30:47+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -13,60 +13,69 @@
   "items": [
     {
       "type": "insight",
-      "titre": "Présence dominante sur TikTok",
-      "explication": "Le réseau TikTok montre un engagement significativement plus élevé que les autres réseaux, avec 88000 likes et 500 commentaires.",
+      "titre": "Performances sur TikTok",
+      "explication": "Le réseau TikTok affiche des performances remarquables en termes de likes et de vues, indiquant une bonne adéquation entre le contenu et la cible sur cette plateforme.",
       "preuve": {
         "metrique": "likes",
-        "valeur": 88000
-      }
+        "valeur": 88000,
+        "variation": null
+      },
+      "action": null
     },
     {
       "type": "reco",
-      "titre": "Créer plus de contenu sur TikTok",
-      "explication": "Étant donné la popularité du contenu sur TikTok, il serait bénéfique de créer plus de contenus vidéos courts pour ce réseau.",
+      "titre": "Publier du contenu sur TikTok",
+      "explication": "Étant donné les performances élevées du réseau TikTok, il est recommandé d'augmenter la fréquence de publication sur cette plateforme pour capitaliser sur l'engouement du public.",
       "preuve": {
         "metrique": "engagement_taux",
-        "valeur": 3.8
+        "valeur": 3.8,
+        "variation": null
       },
-      "action": "Publier au moins un contenu par semaine sur TikTok"
+      "action": "Publier au moins 3 fois par semaine sur TikTok"
     },
     {
       "type": "insight",
-      "titre": "Contenu Carrousel bien performant",
-      "explication": "Les contenus de type Carrousel ont un engagement moyen élevé, avec 310 interactions par poste.",
+      "titre": "Type de contenu le plus performant",
+      "explication": "Les Reels sur TikTok montrent un engagement moyen élevé, ce qui suggère que les contenus vidéo courts et interactifs sont très appréciés par le public.",
       "preuve": {
         "metrique": "engagement_moyen",
-        "valeur": 310
-      }
+        "valeur": 520,
+        "variation": null
+      },
+      "action": null
     },
     {
       "type": "reco",
-      "titre": "Répondre aux commentaires en retard",
-      "explication": "Il y a un certain nombre de commentaires en attente de réponse, il est important de répondre rapidement pour maintenir une bonne relation avec les abonnés.",
+      "titre": "Créer plus de contenus interactifs",
+      "explication": "Pour augmenter l'engagement, il est conseillé de créer plus de contenus interactifs comme des Reels, qui ont montré une forte performance en termes d'engagement moyen.",
       "preuve": {
-        "metrique": "a_repondre",
-        "valeur": 5
+        "metrique": "engagement_moyen",
+        "valeur": 520,
+        "variation": null
       },
-      "action": "Répondre à tous les commentaires en retard avant la fin de la semaine"
+      "action": "Créer au moins 2 Reels par semaine pour publication sur les réseaux sociaux"
     },
     {
       "type": "insight",
-      "titre": "Évolution positive de l'audience",
-      "explication": "L'audience a augmenté régulièrement au fil du temps, avec une valeur actuelle de 23500.",
+      "titre": "Croissance de l'audience",
+      "explication": "L'audience totale a augmenté de manière continue sur les derniers mois, indiquant une stratégie de contenu globale efficace.",
       "preuve": {
         "metrique": "audience",
-        "valeur": 23500
-      }
+        "valeur": 23500,
+        "variation": null
+      },
+      "action": null
     },
     {
       "type": "reco",
-      "titre": "Maintenir la régularité des posts",
-      "explication": "La régularité des posts semble avoir un impact positif sur l'audience, il est important de maintenir cette régularité.",
+      "titre": "Répondre aux commentaires et messages",
+      "explication": "Pour maintenir l'engagement et renforcer la relation avec le public, il est essentiel de répondre régulièrement aux commentaires et messages reçus sur les réseaux sociaux.",
       "preuve": {
-        "metrique": "posts_30j",
-        "valeur": 8
+        "metrique": "commentaires",
+        "valeur": 1230,
+        "variation": null
       },
-      "action": "Planifier et publier au moins 2 posts par semaine"
+      "action": "Allouer 30 minutes par jour pour répondre aux commentaires et messages sur les réseaux sociaux"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "agent": "stratege",
-  "genere_le": "2026-08-07T07:53:21+00:00",
+  "genere_le": "2026-08-08T07:31:58+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -15,60 +15,60 @@
       "jour": "Lundi",
       "heure": "19h",
       "format": "Reel",
-      "angle": "Présentation de nouveaux produits de soin de peau adaptés à la peau africaine",
+      "angle": "Routine quotidienne de soin pour une peau éclatante",
       "reseau": "TikTok"
     },
     {
-      "jour": "Mercredi",
+      "jour": "Mardi",
       "heure": "12h",
       "format": "Carrousel",
-      "angle": "Avant/Après soins éclat pour révéler la beauté naturelle",
+      "angle": "Avantages du forfait mariée d'Éclat Beauté",
+      "reseau": "Instagram"
+    },
+    {
+      "jour": "Mercredi",
+      "heure": "15h",
+      "format": "Photo",
+      "angle": "Conseils pour un maquillage parfait pour un événement spécial",
       "reseau": "Instagram"
     },
     {
       "jour": "Jeudi",
       "heure": "19h",
-      "format": "Short",
-      "angle": "Conseils de routine pour les peaux grasses en 3 étapes",
-      "reseau": "TikTok"
-    },
-    {
-      "jour": "Samedi",
-      "heure": "12h",
-      "format": "Photo",
-      "angle": "Présentation du forfait mariée et témoignage d'une cliente satisfaite",
-      "reseau": "Facebook"
-    },
-    {
-      "jour": "Dimanche",
-      "heure": "18h",
       "format": "Reel",
-      "angle": "Démonstration de soins de visage à domicile pour le bien-être",
-      "reseau": "Instagram"
-    },
-    {
-      "jour": "Mardi",
-      "heure": "14h",
-      "format": "Short",
-      "angle": "Réponse à des questions fréquentes sur les soins de peau et les produits",
+      "angle": "Découvrez notre gamme de produits naturels pour la peau",
       "reseau": "TikTok"
     },
     {
       "jour": "Vendredi",
-      "heure": "20h",
+      "heure": "10h",
       "format": "Carrousel",
-      "angle": "Exclusivité : nouveaux produits arrivant en boutique et disponibles pour la réservation",
+      "angle": "Les bienfaits du soin visage éclat pour une peau saine",
+      "reseau": "Facebook"
+    },
+    {
+      "jour": "Samedi",
+      "heure": "14h",
+      "format": "Reel",
+      "angle": "Comment prendre rendez-vous et réserver un soin chez Éclat Beauté",
+      "reseau": "TikTok"
+    },
+    {
+      "jour": "Dimanche",
+      "heure": "18h",
+      "format": "Photo",
+      "angle": "Témoignage d'une cliente satisfaite d'Éclat Beauté",
       "reseau": "Instagram"
     }
   ],
-  "cadence_recommandee": "3 publications/semaine",
+  "cadence_recommandee": "4 publications/semaine",
   "meilleures_heures": [
     "Jeudi 19h",
-    "Samedi 12h"
+    "Samedi 14h"
   ],
   "objectifs": [
-    "Augmenter l'engagement de 20% sur les publications",
-    "Porter la fréquentation du site web à 500 visiteurs par mois",
-    "Maintenir un taux d'engagement supérieur à 3% sur les réseaux sociaux"
+    "Augmenter l'engagement de 20% sur les publications de la semaine",
+    "Attirer 500 nouveaux abonnés sur TikTok",
+    "Maintenir un taux d'engagement moyen de 3,5% sur les publications"
   ]
 }

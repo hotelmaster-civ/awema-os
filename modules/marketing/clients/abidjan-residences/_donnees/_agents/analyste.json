@@ -1,6 +1,6 @@
 {
   "agent": "analyste",
-  "genere_le": "2026-08-07T07:52:37+00:00",
+  "genere_le": "2026-08-08T07:30:33+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -12,60 +12,60 @@
   "items": [
     {
       "type": "insight",
-      "titre": "Engagement élevé sur TikTok",
-      "explication": "Les données montrent un nombre élevé de likes et de commentaires sur les posts TikTok, indiquant un fort engagement de la part de l'audience.",
+      "titre": "Performances sur TikTok",
+      "explication": "Les données montrent que les publications sur TikTok obtiennent un engagement important, notamment avec des vidéos qui attirent un grand nombre de likes et de commentaires.",
       "preuve": {
         "metrique": "likes",
         "valeur": 9484
       }
     },
     {
-      "type": "reco",
-      "titre": "Créer plus de contenu sur TikTok",
-      "explication": "Étant donné l'engagement élevé sur TikTok, il est recommandé de créer plus de contenu sur cette plateforme pour renforcer l'interaction avec l'audience.",
-      "preuve": {
-        "metrique": "likes",
-        "valeur": 9484
-      },
-      "action": "Publiez au moins 2 nouveaux posts sur TikTok cette semaine."
-    },
-    {
       "type": "insight",
-      "titre": "Top post très performant",
-      "explication": "Le post '#collage avec @Tdfmanga decouvrez un animé 100% ivoirien par @Cénack  « placman »' a obtenu 8920 likes et 32741 vues, montrant qu'il y a un intérêt fort pour ce type de contenu.",
+      "titre": "Meilleur type de contenu",
+      "explication": "Les vidéos sont les contenus les plus performants, notamment celles avec des titres attractifs et des thèmes locaux.",
       "preuve": {
-        "metrique": "likes",
-        "valeur": 8920
+        "metrique": "vues",
+        "valeur": 41823
       }
     },
     {
       "type": "reco",
-      "titre": "Collaborer avec des influenceurs locaux",
-      "explication": "Le succès du post collaboratif avec @Tdfmanga et @Cénack suggère que les collaborations avec des influenceurs locaux pourraient être bénéfiques pour augmenter l'engagement.",
+      "titre": "Publier régulièrement",
+      "explication": "Il est important de maintenir une cadence de publication régulière pour garder l'audience engagée.",
       "preuve": {
-        "metrique": "likes",
-        "valeur": 8920
+        "metrique": "jours_depuis_dernier_post",
+        "valeur": 51
       },
-      "action": "Recherchez et contactez 2 influenceurs locaux pour une collaboration potentielle d'ici la fin du mois."
+      "action": "Publier au moins une fois par semaine"
+    },
+    {
+      "type": "reco",
+      "titre": "Optimiser les heures de publication",
+      "explication": "Les données suggèrent que les publications en fin de semaine, notamment le vendredi, obtiennent plus d'engagement.",
+      "preuve": {
+        "metrique": "par_jour",
+        "valeur": "Vendredi"
+      },
+      "action": "Programmer les publications pour le vendredi à 14h"
     },
     {
       "type": "insight",
-      "titre": "Cadence de publication faible",
-      "explication": "Avec 0 posts publiés au cours des 30 derniers jours, la cadence de publication est très faible, ce qui peut impacté négativement l'engagement de l'audience.",
+      "titre": "Évolution de l'audience",
+      "explication": "L'audience sur TikTok est globalement stable, avec des légères variations.",
       "preuve": {
-        "metrique": "posts_30j",
-        "valeur": 0
+        "metrique": "evolution_audience",
+        "valeur": 4195
       }
     },
     {
       "type": "reco",
-      "titre": "Augmenter la cadence de publication",
-      "explication": "Il est essentiel d'augmenter la fréquence de publication pour maintenir l'intérêt de l'audience et améliorer l'engagement.",
+      "titre": "Diversifier les contenus",
+      "explication": "Pour améliorer l'engagement, il pourrait être utile d'explorer d'autres formats de contenu ou de sujets.",
       "preuve": {
-        "metrique": "posts_30j",
-        "valeur": 0
+        "metrique": "types_contenu",
+        "valeur": "Vidéos"
       },
-      "action": "Établissez un calendrier de publication pour les prochaines semaines avec au moins un post par semaine."
+      "action": "Créer et publier différents types de contenus pour attirer de nouvelles interactions"
     }
   ]
 }

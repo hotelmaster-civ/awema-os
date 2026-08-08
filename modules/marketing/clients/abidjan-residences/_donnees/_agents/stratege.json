@@ -1,6 +1,6 @@
 {
   "agent": "stratege",
-  "genere_le": "2026-08-07T07:53:09+00:00",
+  "genere_le": "2026-08-08T07:31:26+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -12,51 +12,51 @@
   "items": [
     {
       "jour": "Lundi",
-      "heure": "19h",
+      "heure": "14h",
       "format": "Vidéo",
-      "angle": "Découvrez nos résidences à Abidjan",
+      "angle": "Découvrez les résidences luxueuses à Abidjan",
+      "reseau": "TikTok"
+    },
+    {
+      "jour": "Mardi",
+      "heure": "12h",
+      "format": "Story",
+      "angle": "Les avantages de vivre dans une résidence à Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Mercredi",
-      "heure": "12h",
-      "format": "Story",
-      "angle": "Conseils pour choisir la résidence idéale",
+      "heure": "19h",
+      "format": "Live",
+      "angle": "Visite virtuelle d'une résidence à Abidjan",
+      "reseau": "TikTok"
+    },
+    {
+      "jour": "Jeudi",
+      "heure": "14h",
+      "format": "Photo",
+      "angle": "Les résidences les plus sécurisées à Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Vendredi",
       "heure": "14h",
       "format": "Vidéo",
-      "angle": "Exploration d'une résidence à Abidjan",
+      "angle": "Les résidences les plus proches des attractions touristiques à Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Samedi",
-      "heure": "18h",
-      "format": "Short",
-      "angle": "Avantages de vivre dans nos résidences",
+      "heure": "12h",
+      "format": "Story",
+      "angle": "Les résidences les plus abordables à Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Dimanche",
-      "heure": "17h",
-      "format": "Vidéo",
-      "angle": "Témoignage d'un résident",
-      "reseau": "TikTok"
-    },
-    {
-      "jour": "Mardi",
-      "heure": "20h",
-      "format": "Story",
-      "angle": "Présentation de nos équipements",
-      "reseau": "TikTok"
-    },
-    {
-      "jour": "Jeudi",
-      "heure": "15h",
-      "format": "Vidéo",
-      "angle": "Découvrez notre offre de location",
+      "heure": "19h",
+      "format": "Live",
+      "angle": "Répondre aux questions des followers sur les résidences à Abidjan",
       "reseau": "TikTok"
     }
   ],
@@ -65,8 +65,8 @@
     "Vendredi 14h"
   ],
   "objectifs": [
-    "Augmenter les vues de 20% sur TikTok",
-    "Améliorer l'engagement (likes, commentaires) sur les publications de résidences",
-    "Attirer 100 nouveaux abonnés sur TikTok"
+    "Augmenter le nombre de followers de 10% sur TikTok",
+    "Améliorer le taux d'engagement de 20% sur les publications",
+    "Accroître la portée des publications de 30% sur TikTok"
   ]
 }

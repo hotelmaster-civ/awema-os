@@ -1,6 +1,6 @@
 {
   "agent": "actions-du-jour",
-  "genere_le": "2026-08-07T07:54:18+00:00",
+  "genere_le": "2026-08-08T07:33:12+00:00",
   "modele": "agrégation (sans IA)",
   "provenance": {
     "client": "abidjan-residences",
@@ -34,8 +34,8 @@
     {
       "priorite": 2,
       "type": "reco",
-      "titre": "Créer plus de contenu sur TikTok",
-      "detail": "Publiez au moins 2 nouveaux posts sur TikTok cette semaine.",
+      "titre": "Publier régulièrement",
+      "detail": "Publier au moins une fois par semaine",
       "source": "analyste",
       "action": {
         "label": "Voir l'analyse",
@@ -46,7 +46,7 @@
     {
       "priorite": 2,
       "type": "plan",
-      "titre": "Publie : Découvrez nos résidences à Abidjan",
+      "titre": "Publie : Découvrez les résidences luxueuses à Abidjan",
       "detail": "TikTok · Vidéo · Lundi",
       "source": "stratege",
       "action": {
@@ -58,7 +58,7 @@
     {
       "priorite": 3,
       "type": "creatif",
-      "titre": "Idée prête : Découvrez les secrets de Yopougon !",
+      "titre": "Idée prête : Découvrez les secrets de Placman !",
       "detail": "TikTok · Reel",
       "source": "creatif",
       "action": {

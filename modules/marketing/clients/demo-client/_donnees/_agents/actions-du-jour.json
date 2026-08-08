@@ -1,6 +1,6 @@
 {
   "agent": "actions-du-jour",
-  "genere_le": "2026-08-07T07:54:18+00:00",
+  "genere_le": "2026-08-08T07:33:12+00:00",
   "modele": "agrégation (sans IA)",
   "provenance": {
     "client": "demo-client",
@@ -34,8 +34,8 @@
     {
       "priorite": 2,
       "type": "reco",
-      "titre": "Créer plus de contenu sur TikTok",
-      "detail": "Publier au moins un contenu par semaine sur TikTok",
+      "titre": "Publier du contenu sur TikTok",
+      "detail": "Publier au moins 3 fois par semaine sur TikTok",
       "source": "analyste",
       "action": {
         "label": "Voir l'analyse",
@@ -46,7 +46,7 @@
     {
       "priorite": 2,
       "type": "plan",
-      "titre": "Publie : Présentation de nouveaux produits de soin de peau adaptés à la peau africaine",
+      "titre": "Publie : Routine quotidienne de soin pour une peau éclatante",
       "detail": "TikTok · Reel · Lundi",
       "source": "stratege",
       "action": {
@@ -70,7 +70,7 @@
     {
       "priorite": 3,
       "type": "creatif",
-      "titre": "Idée prête : Découvrez le secret d'un teint éclatant naturel!",
+      "titre": "Idée prête : Découvrez le secret pour une peau éclatante en 30 minutes!",
       "detail": "TikTok · Reel",
       "source": "creatif",
       "action": {
