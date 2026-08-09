@@ -1,6 +1,6 @@
 {
   "agent": "creatif",
-  "genere_le": "2026-08-08T07:33:12+00:00",
+  "genere_le": "2026-08-09T07:37:01+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -12,33 +12,33 @@
   },
   "items": [
     {
-      "hook": "Découvrez le secret pour une peau éclatante en 30 minutes!",
-      "script": "Bienvenue chez Éclat Beauté ! Nous savons que le temps est précieux, c'est pourquoi nous avons créé le 'Soin visage éclat', un traitement personnalisé qui vous donne une peau radieuse en juste 30 minutes. Nos professionnels utilisent des produits de haute qualité, adaptés à la peau africaine, pour un résultat naturellement éblouissant. Prêt à retrouver votre éclat ? Réservez votre séance dès maintenant !",
+      "hook": "Découvrez le secret d'une peau éclatante avec nos soins!",
+      "script": "Vous rêvez d'une peau lumineuse et saine ? Notre soin visage éclat est la solution ! Il combine un nettoyage profond et une hydratation intense pour vous donner une peau radieuse. Réservez maintenant et offrez-vous une pause de bien-être !",
       "format": "Reel",
       "reseau": "TikTok",
-      "prompt_image": "Une femme africaine avec une peau radieuse, souriante, avec des fleurs autour d'elle. Le fond est une teinte de #D4AF37, avec le logo d'Éclat Beauté en #0A1F44.",
+      "prompt_image": "Une femme avec une peau éclatante, souriante, dans un environnement spa, avec des produits de soin visage around et une lumière chaude",
       "variantes": [
-        "Un éclat de beauté en un rien de temps ? C'est possible avec nous !"
+        "Peau éclatante en quelques minutes ? C'est possible avec nous !"
       ]
     },
     {
-      "hook": "Le jour J approche, et votre peau doit briller !",
-      "script": "Les futures mariées, nous avons pensé à vous ! Notre 'Forfait mariée' est conçu pour vous offrir la perfection absolue. Trois séances personnalisées pour vous donner une peau parfaite, sans stress. Notre équipe d'experts est là pour vous guider et vous aider à atteindre votre objectif. Votre beauté, notre priorité. Réservez votre forfait aujourd'hui !",
+      "hook": "Le grand jour approche, préparez votre teint avec nous !",
+      "script": "Vous vous mariez bientôt et vous voulez un teint parfait pour le jour J ? Notre forfait mariée est conçu pour vous ! Il comprend 3 séances de soins personnalisés pour vous donner une peau parfaite. Inscrivez-vous dès maintenant !",
       "format": "Carrousel",
       "reseau": "Instagram",
-      "prompt_image": "Une future mariée avec un teint parfait, souriante, avec un fond floral pastel et le logo d'Éclat Beauté discrètement intégré. Les couleurs dominantes sont #D4AF37 et des teintes pastel pour un effet romantique.",
+      "prompt_image": "Une future mariée heureuse, avec une peau éclatante, dans un environnement de mariage ou de préparation, avec un effet de lumière romantique",
       "variantes": [
-        "Vous méritez d'être une mariée radieuse, nous sommes là pour vous aider !"
+        "Rêvez d'un teint de rêve pour votre mariage ? Nous avons la solution !"
       ]
     },
     {
-      "hook": "Quelle est votre routine de soins de peau ? Nous avons des conseils pour vous !",
-      "script": "Chez Éclat Beauté, nous croyons que les soins de peau doivent être personnalisés. Notre équipe est prête à partager des conseils et des astuces pour vous aider à atteindre votre objectif de beauté. Que vous ayez la peau grasse, sèche ou mixte, nous avons des solutions pour vous. Partagez vos routines et vos defis avec nous, et nous vous aiderons à les surmonter !",
+      "hook": "Besoin d'un conseil pour une peau parfaite ?",
+      "script": "Vous avez des questions sur vos soins de peau ? Nous sommes là pour vous aider ! Découvrez notre gamme de produits et services conçus pour la peau africaine. Contactez-nous pour une consultation personnalisée !",
       "format": "Post",
       "reseau": "Facebook",
-      "prompt_image": "Une photo d'une femme regardant son reflet dans le miroir, avec différents produits de soins de peau autour d'elle. Le fond est sobre, avec des nuances de #0A1F44 pour un effet rassurant.",
+      "prompt_image": "Une femme regardant son reflet dans un miroir, entourée de produits de soin, avec une expression de satisfaction et un environnement chaleureux",
       "variantes": [
-        "La beauté est une journey, pas une destination. Partagez la vôtre avec nous !"
+        "Peau parfaite, conseils personnalisés : nous sommes à votre écoute !"
       ]
     }
   ]

@@ -1,6 +1,6 @@
 {
   "agent": "analyste",
-  "genere_le": "2026-08-08T07:30:47+00:00",
+  "genere_le": "2026-08-09T07:34:55+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -13,8 +13,8 @@
   "items": [
     {
       "type": "insight",
-      "titre": "Performances sur TikTok",
-      "explication": "Le réseau TikTok affiche des performances remarquables en termes de likes et de vues, indiquant une bonne adéquation entre le contenu et la cible sur cette plateforme.",
+      "titre": "Présence sur les réseaux sociaux",
+      "explication": "Le réseau TikTok présente les meilleures performances en termes de likes et de vues.",
       "preuve": {
         "metrique": "likes",
         "valeur": 88000,
@@ -25,18 +25,18 @@
     {
       "type": "reco",
       "titre": "Publier du contenu sur TikTok",
-      "explication": "Étant donné les performances élevées du réseau TikTok, il est recommandé d'augmenter la fréquence de publication sur cette plateforme pour capitaliser sur l'engouement du public.",
+      "explication": "En raison de son excellent taux d'engagement, il est recommandé de publier régulièrement du contenu sur TikTok.",
       "preuve": {
         "metrique": "engagement_taux",
         "valeur": 3.8,
         "variation": null
       },
-      "action": "Publier au moins 3 fois par semaine sur TikTok"
+      "action": "Publier au moins 2 vidéos par semaine sur TikTok"
     },
     {
       "type": "insight",
-      "titre": "Type de contenu le plus performant",
-      "explication": "Les Reels sur TikTok montrent un engagement moyen élevé, ce qui suggère que les contenus vidéo courts et interactifs sont très appréciés par le public.",
+      "titre": "Types de contenu",
+      "explication": "Le type de contenu 'Reel' présente le meilleur engagement moyen.",
       "preuve": {
         "metrique": "engagement_moyen",
         "valeur": 520,
@@ -46,36 +46,36 @@
     },
     {
       "type": "reco",
-      "titre": "Créer plus de contenus interactifs",
-      "explication": "Pour augmenter l'engagement, il est conseillé de créer plus de contenus interactifs comme des Reels, qui ont montré une forte performance en termes d'engagement moyen.",
+      "titre": "Créer plus de contenus 'Reel'",
+      "explication": "Il est conseillé de créer plus de contenus 'Reel' pour améliorer l'engagement.",
       "preuve": {
         "metrique": "engagement_moyen",
         "valeur": 520,
         "variation": null
       },
-      "action": "Créer au moins 2 Reels par semaine pour publication sur les réseaux sociaux"
+      "action": "Créer au moins 1 contenu 'Reel' par semaine"
     },
     {
       "type": "insight",
-      "titre": "Croissance de l'audience",
-      "explication": "L'audience totale a augmenté de manière continue sur les derniers mois, indiquant une stratégie de contenu globale efficace.",
+      "titre": "Meilleur créneau horaire",
+      "explication": "Le jeudi à 19h est le meilleur créneau horaire pour publier du contenu.",
       "preuve": {
-        "metrique": "audience",
-        "valeur": 23500,
+        "metrique": "recommandation",
+        "valeur": "Jeudi 19h",
         "variation": null
       },
       "action": null
     },
     {
       "type": "reco",
-      "titre": "Répondre aux commentaires et messages",
-      "explication": "Pour maintenir l'engagement et renforcer la relation avec le public, il est essentiel de répondre régulièrement aux commentaires et messages reçus sur les réseaux sociaux.",
+      "titre": "Publier à l'heure optimale",
+      "explication": "Il est recommandé de publier du contenu à l'heure optimale pour maximiser l'engagement.",
       "preuve": {
-        "metrique": "commentaires",
-        "valeur": 1230,
+        "metrique": "recommandation",
+        "valeur": "Jeudi 19h",
         "variation": null
       },
-      "action": "Allouer 30 minutes par jour pour répondre aux commentaires et messages sur les réseaux sociaux"
+      "action": "Publier tous les contenus le jeudi à 19h"
     }
   ]
 }

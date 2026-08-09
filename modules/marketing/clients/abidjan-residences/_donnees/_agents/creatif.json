@@ -1,6 +1,6 @@
 {
   "agent": "creatif",
-  "genere_le": "2026-08-08T07:32:40+00:00",
+  "genere_le": "2026-08-09T07:36:28+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -11,33 +11,36 @@
   },
   "items": [
     {
-      "hook": "Découvrez les secrets de Placman !",
-      "script": "Bonjour à tous ! Aujourd'hui, je vais vous présenter Placman, un projet animé 100% ivoirien créé par @Cénack. Découvrez comment cette série unique est en train de révolutionner l'animation en Côte d'Ivoire. Abonnez-vous pour plus de contenu ! #Placman #AnimationIvoirienne #Abidjan",
+      "hook": "Découvrez les secrets d'Abidjan",
+      "script": "Venez explorer les merveilles d'Abidjan avec nous ! De la plage de Grand-Bassam aux marchés colorés de Treichville, nous vous emmenons dans un voyage inoubliable. Rejoignez-nous pour découvrir les secrets de cette ville cosmopolite. #Abidjan #CôteD'Ivoire #Tourisme",
       "format": "Reel",
       "reseau": "TikTok",
-      "prompt_image": "Un visuel coloré de Placman avec des éléments de décors ivoiriens, tel que des cases de maisons traditionnelles ou des motifs africains",
+      "prompt_image": "Une vue aérienne d'Abidjan la nuit avec les lumières de la ville qui scintillent",
       "variantes": [
-        "Plongez dans le monde de Placman !"
+        "Explorez Abidjan avec nous",
+        "Les merveilles d'Abidjan vous attendent"
       ]
     },
     {
-      "hook": " Vous cherchez un endroit pour vous détendre à Abidjan ?",
-      "script": "Je vous présente Le B, un lieu unique à Yopougon pour un séjour calme et relaxant. Découvrez pourquoi Le B est le choix idéal pour vos prochaines vacances. Suivez-nous pour plus de découvertes à Abidjan ! #LeB #Yopougon #Detente",
+      "hook": "Un séjour de rêve à Yopougon",
+      "script": "Imaginez un séjour dans un havre de paix à Yopougon, avec des chambres confortables et un accès à des activités de loisirs variées. Venez découvrir pourquoi Yopougon est l'endroit idéal pour vos prochaines vacances. #Yopougon #Abidjan #SéjourDeRêve",
       "format": "Carrousel",
       "reseau": "TikTok",
-      "prompt_image": "Une série de photos montrant les différents aspects de Le B, comme la piscine, les chambres, et les espaces de détente, avec des filter colorés et des légendes accueillantes",
+      "prompt_image": "Une image d'une chambre d'hôtel moderne et élégante à Yopougon avec une vue sur la ville",
       "variantes": [
-        "Échappez à la routine avec Le B !"
+        "Yopougon, le paradis des vacances",
+        "Un refuge de paix à Abidjan"
       ]
     },
     {
-      "hook": "Vous êtes prêt à promouvoir votre établissement ?",
-      "script": "Chez Abidjan Résidences, nous vous offrons la possibilité de promouvoir votre entreprise et de fixer votre propre commission ! Rejoignez-nous pour augmenter votre visibilité et attirer de nouveaux clients. Plus de détails dans les commentaires ! #Promotion #Entreprise #Abidjan",
+      "hook": "La vie nocturne d'Abidjan",
+      "script": "Abidjan la nuit, c'est une ville qui pulse ! Découvrez les meilleurs endroits pour sortir et profiter de la vie nocturne. Des bars tendance aux clubs de nuit, nous vous guidons à travers les coins les plus chauds de la ville. #AbidjanLaNuit #VieNocturne #CôteD'Ivoire",
       "format": "Short",
       "reseau": "TikTok",
-      "prompt_image": "Un visuel dynamique représentant différents établissements d'Abidjan, avec des flèches et des symboles de croissance pour illustrer la promotion",
+      "prompt_image": "Une image dynamique d'une rue d'Abidjan la nuit avec des lumières de néon et des gens qui dansent",
       "variantes": [
-        "Faites connaître votre entreprise avec nous !"
+        "Abidjan, la ville qui ne dort jamais",
+        "La nuit abidjanaise, un spectacle à ne pas manquer"
       ]
     }
   ]

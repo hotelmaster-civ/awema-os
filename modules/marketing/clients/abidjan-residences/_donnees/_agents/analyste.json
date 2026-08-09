@@ -1,6 +1,6 @@
 {
   "agent": "analyste",
-  "genere_le": "2026-08-08T07:30:33+00:00",
+  "genere_le": "2026-08-09T07:34:43+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -13,59 +13,59 @@
     {
       "type": "insight",
       "titre": "Performances sur TikTok",
-      "explication": "Les données montrent que les publications sur TikTok obtiennent un engagement important, notamment avec des vidéos qui attirent un grand nombre de likes et de commentaires.",
+      "explication": "Les performances sur TikTok sont meilleures que sur les autres réseaux, avec un total de 9484 likes et 41823 vues.",
       "preuve": {
-        "metrique": "likes",
+        "metrique": "likes_total",
         "valeur": 9484
       }
     },
     {
-      "type": "insight",
-      "titre": "Meilleur type de contenu",
-      "explication": "Les vidéos sont les contenus les plus performants, notamment celles avec des titres attractifs et des thèmes locaux.",
+      "type": "reco",
+      "titre": "Augmenter les publications sur TikTok",
+      "explication": "Il est recommandé d'augmenter les publications sur TikTok pour maintenir l'engagement de l'audience.",
       "preuve": {
-        "metrique": "vues",
-        "valeur": 41823
+        "metrique": "posts_par_semaine",
+        "valeur": 0
+      },
+      "action": "Publiez au moins un contenu par semaine sur TikTok"
+    },
+    {
+      "type": "insight",
+      "titre": "Top post sur TikTok",
+      "explication": "Le top post sur TikTok est '#collage avec @Tdfmanga decouvrez un animé 100% ivoirien par @Cénack  « placman »' avec 8920 likes.",
+      "preuve": {
+        "metrique": "likes",
+        "valeur": 8920
       }
     },
     {
       "type": "reco",
-      "titre": "Publier régulièrement",
-      "explication": "Il est important de maintenir une cadence de publication régulière pour garder l'audience engagée.",
+      "titre": "Utiliser les hashtags sur TikTok",
+      "explication": "Il est recommandé d'utiliser les hashtags sur TikTok pour augmenter la visibilité des publications.",
       "preuve": {
-        "metrique": "jours_depuis_dernier_post",
-        "valeur": 51
+        "metrique": "vues",
+        "valeur": 32741
       },
-      "action": "Publier au moins une fois par semaine"
-    },
-    {
-      "type": "reco",
-      "titre": "Optimiser les heures de publication",
-      "explication": "Les données suggèrent que les publications en fin de semaine, notamment le vendredi, obtiennent plus d'engagement.",
-      "preuve": {
-        "metrique": "par_jour",
-        "valeur": "Vendredi"
-      },
-      "action": "Programmer les publications pour le vendredi à 14h"
+      "action": "Utilisez les hashtags pertinents dans vos publications TikTok"
     },
     {
       "type": "insight",
       "titre": "Évolution de l'audience",
-      "explication": "L'audience sur TikTok est globalement stable, avec des légères variations.",
+      "explication": "L'audience sur TikTok est stable avec une légère variation au fil du temps.",
       "preuve": {
-        "metrique": "evolution_audience",
+        "metrique": "valeur",
         "valeur": 4195
       }
     },
     {
       "type": "reco",
-      "titre": "Diversifier les contenus",
-      "explication": "Pour améliorer l'engagement, il pourrait être utile d'explorer d'autres formats de contenu ou de sujets.",
+      "titre": "Publier à heures stratégiques",
+      "explication": "Il est recommandé de publier à heures stratégiques pour maximiser l'engagement de l'audience.",
       "preuve": {
-        "metrique": "types_contenu",
-        "valeur": "Vidéos"
+        "metrique": "heure",
+        "valeur": "14h"
       },
-      "action": "Créer et publier différents types de contenus pour attirer de nouvelles interactions"
+      "action": "Publiez vos contenus à 14h le vendredi pour maximiser l'engagement"
     }
   ]
 }
