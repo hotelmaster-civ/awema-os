@@ -1,6 +1,6 @@
 {
   "agent": "stratege",
-  "genere_le": "2026-08-09T07:35:36+00:00",
+  "genere_le": "2026-08-10T08:14:54+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -14,59 +14,60 @@
       "jour": "Lundi",
       "heure": "14h",
       "format": "Vidéo",
-      "angle": "Présentation d'un logement à Abidjan",
+      "angle": "Présentation d'une résidence abidjanaise",
       "reseau": "TikTok"
     },
     {
       "jour": "Mercredi",
       "heure": "14h",
-      "format": "Vidéo",
-      "angle": "Découverte d'un quartier d'Abidjan",
+      "format": "Photographie",
+      "angle": "Décor intérieur d'une résidence de luxe",
       "reseau": "TikTok"
     },
     {
       "jour": "Vendredi",
       "heure": "14h",
       "format": "Vidéo",
-      "angle": "Promotion d'un établissement partenaire",
-      "reseau": "TikTok"
-    },
-    {
-      "jour": "Samedi",
-      "heure": "12h",
-      "format": "Photographie",
-      "angle": "Ambiance de vie à Abidjan",
+      "angle": "Témoignage de résidents satisfaits",
       "reseau": "TikTok"
     },
     {
       "jour": "Dimanche",
       "heure": "18h",
-      "format": "Vidéo",
-      "angle": "Conseils pour trouver un logement à Abidjan",
+      "format": "Story",
+      "angle": "Conseils pour améliorer l'espace de vie",
       "reseau": "TikTok"
     },
     {
       "jour": "Mardi",
       "heure": "19h",
-      "format": "Vidéo",
-      "angle": "Présentation d'un événement local",
+      "format": "Live",
+      "angle": "Visite virtuelle d'une résidence",
       "reseau": "TikTok"
     },
     {
       "jour": "Jeudi",
       "heure": "12h",
+      "format": "Photographie",
+      "angle": "Présentation d'un nouveau projet immobilier",
+      "reseau": "TikTok"
+    },
+    {
+      "jour": "Samedi",
+      "heure": "10h",
       "format": "Vidéo",
-      "angle": "Découverte d'une activité à faire à Abidjan",
+      "angle": "Astuces pour décoration intérieure",
       "reseau": "TikTok"
     }
   ],
-  "cadence_recommandee": "4 publications/semaine",
+  "cadence_recommandee": "2 publications/semaine",
   "meilleures_heures": [
     "Vendredi 14h"
   ],
   "objectifs": [
-    "Augmenter les vues sur TikTok de 20%",
-    "Accroître l'engagement (likes, commentaires, partages) de 15%",
-    "Maintenir la croissance de l'audience à 0,5% par semaine"
+    "Augmenter le taux d'engagement de 20% sur les publications",
+    "Accroître la portée des publications de 15% sur TikTok",
+    "Maintenir une audience active et intéressée",
+    "Améliorer la qualité et la pertinence des contenus publiés"
   ]
 }

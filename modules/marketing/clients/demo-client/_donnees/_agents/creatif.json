@@ -1,6 +1,6 @@
 {
   "agent": "creatif",
-  "genere_le": "2026-08-09T07:37:01+00:00",
+  "genere_le": "2026-08-10T08:15:58+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -12,33 +12,33 @@
   },
   "items": [
     {
-      "hook": "Découvrez le secret d'une peau éclatante avec nos soins!",
-      "script": "Vous rêvez d'une peau lumineuse et saine ? Notre soin visage éclat est la solution ! Il combine un nettoyage profond et une hydratation intense pour vous donner une peau radieuse. Réservez maintenant et offrez-vous une pause de bien-être !",
+      "hook": "Découvrez le secret d'un teint éclatant avec nos soins de visage personnalisés !",
+      "script": "Notre soin visage éclat est conçu pour répondre à vos besoins spécifiques et vous donner une peau radieuse et plein de vie. Réservez votre rendez-vous dès maintenant et laissez-nous vous faire découvrir la différence !",
       "format": "Reel",
       "reseau": "TikTok",
-      "prompt_image": "Une femme avec une peau éclatante, souriante, dans un environnement spa, avec des produits de soin visage around et une lumière chaude",
+      "prompt_image": "Une femme souriante avec une peau éclatante, les cheveux attachés et un léger maquillage, sur un fond pastel doux (#D4AF37). Elle tient un bouquet de fleurs fraîches, symbolisant la naturalité et la beauté.",
       "variantes": [
-        "Peau éclatante en quelques minutes ? C'est possible avec nous !"
+        "Un teint parfait, c'est possible avec Éclat Beauté !"
       ]
     },
     {
-      "hook": "Le grand jour approche, préparez votre teint avec nous !",
-      "script": "Vous vous mariez bientôt et vous voulez un teint parfait pour le jour J ? Notre forfait mariée est conçu pour vous ! Il comprend 3 séances de soins personnalisés pour vous donner une peau parfaite. Inscrivez-vous dès maintenant !",
+      "hook": "Vous rêvez d'un jour J parfait ? Nous vous aidons à atteindre votre objectif de beauté avec notre forfait mariée !",
+      "script": "Notre forfait mariée comprend trois séances de soin personnalisées pour que vous vous sentiez comme une reine le jour de votre mariage. De la préparation de peau au maquillage, nous prenons soin de tout. Réservez votre place dès aujourd'hui !",
       "format": "Carrousel",
       "reseau": "Instagram",
-      "prompt_image": "Une future mariée heureuse, avec une peau éclatante, dans un environnement de mariage ou de préparation, avec un effet de lumière romantique",
+      "prompt_image": "Une photo d'une future mariée heureuse avec un voile et un bouquet, sur un fond romantique (#0A1F44). Elle a une peau resplendissante et une coiffure élégante.",
       "variantes": [
-        "Rêvez d'un teint de rêve pour votre mariage ? Nous avons la solution !"
+        "Le grand jour approche, soyez prête avec Éclat Beauté !"
       ]
     },
     {
-      "hook": "Besoin d'un conseil pour une peau parfaite ?",
-      "script": "Vous avez des questions sur vos soins de peau ? Nous sommes là pour vous aider ! Découvrez notre gamme de produits et services conçus pour la peau africaine. Contactez-nous pour une consultation personnalisée !",
-      "format": "Post",
+      "hook": "Manque de temps ? Nous avons la solution pour vous ! Découvrez nos soins de visage rapides et efficaces.",
+      "script": "Notre soin visage éclat est conçu pour être rapide et donner des résultats visibles. En seulement une heure, vous pouvez avoir une peau plus claire et plus lisse. Réservez votre rendez-vous en ligne maintenant !",
+      "format": "Short",
       "reseau": "Facebook",
-      "prompt_image": "Une femme regardant son reflet dans un miroir, entourée de produits de soin, avec une expression de satisfaction et un environnement chaleureux",
+      "prompt_image": "Une femme active avec un emploi du temps chargé, mais qui prend un moment pour soigner son visage. Elle est entourée de végétation et a un appareil de beauté dans la main, symbolisant la nature et la technologie.",
       "variantes": [
-        "Peau parfaite, conseils personnalisés : nous sommes à votre écoute !"
+        "La beauté en un clic, c'est possible avec Éclat Beauté !"
       ]
     }
   ]

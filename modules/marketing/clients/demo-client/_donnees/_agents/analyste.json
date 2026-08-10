@@ -1,6 +1,6 @@
 {
   "agent": "analyste",
-  "genere_le": "2026-08-09T07:34:55+00:00",
+  "genere_le": "2026-08-10T08:14:13+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -13,69 +13,61 @@
   "items": [
     {
       "type": "insight",
-      "titre": "Présence sur les réseaux sociaux",
-      "explication": "Le réseau TikTok présente les meilleures performances en termes de likes et de vues.",
+      "titre": "Engagement sur TikTok",
+      "explication": "L'engagement sur TikTok est significativement plus élevé que sur les autres plateformes, avec des likes et des commentaires en grande quantité.",
       "preuve": {
         "metrique": "likes",
         "valeur": 88000,
         "variation": null
-      },
-      "action": null
+      }
     },
     {
       "type": "reco",
-      "titre": "Publier du contenu sur TikTok",
-      "explication": "En raison de son excellent taux d'engagement, il est recommandé de publier régulièrement du contenu sur TikTok.",
+      "titre": "Créer plus de contenu pour TikTok",
+      "explication": "Étant donné que TikTok génère l'engagement le plus important, il serait stratégique de créer davantage de contenu spécifiquement conçu pour cette plateforme.",
       "preuve": {
         "metrique": "engagement_taux",
-        "valeur": 3.8,
-        "variation": null
+        "valeur": 3.8
       },
-      "action": "Publier au moins 2 vidéos par semaine sur TikTok"
+      "action": "Créez et publiez au moins un nouveau contenu vidéo sur TikTok cette semaine, en vous concentrant sur les formats à succès tels que les Reels."
     },
     {
       "type": "insight",
-      "titre": "Types de contenu",
-      "explication": "Le type de contenu 'Reel' présente le meilleur engagement moyen.",
+      "titre": "Évolution de l'audience",
+      "explication": "L'audience a augmenté régulièrement au fil des semaines, ce qui indique une stratégie de contenu efficace.",
       "preuve": {
-        "metrique": "engagement_moyen",
-        "valeur": 520,
-        "variation": null
-      },
-      "action": null
+        "metrique": "audience",
+        "valeur": 23500
+      }
     },
     {
       "type": "reco",
-      "titre": "Créer plus de contenus 'Reel'",
-      "explication": "Il est conseillé de créer plus de contenus 'Reel' pour améliorer l'engagement.",
+      "titre": "Interagir avec les commentateurs",
+      "explication": "Les commentateurs réguliers représentent un potentiel pour devenir des ambassadeurs de la marque. Une interaction personnalisée avec eux peut aider à renforcer la fidélité.",
       "preuve": {
-        "metrique": "engagement_moyen",
-        "valeur": 520,
-        "variation": null
+        "metrique": "commentaires",
+        "valeur": 1230
       },
-      "action": "Créer au moins 1 contenu 'Reel' par semaine"
+      "action": "Répondez personnellement à au moins 3 commentateurs actifs cette semaine, en valorisant leur fidélité et leurs contributions à la communauté."
     },
     {
       "type": "insight",
-      "titre": "Meilleur créneau horaire",
-      "explication": "Le jeudi à 19h est le meilleur créneau horaire pour publier du contenu.",
+      "titre": "Type de contenu le plus performant",
+      "explication": "Les contenus sous forme de Reels ont un engagement moyen plus élevé que les autres formats.",
       "preuve": {
-        "metrique": "recommandation",
-        "valeur": "Jeudi 19h",
-        "variation": null
-      },
-      "action": null
+        "metrique": "engagement_moyen",
+        "valeur": 520
+      }
     },
     {
       "type": "reco",
-      "titre": "Publier à l'heure optimale",
-      "explication": "Il est recommandé de publier du contenu à l'heure optimale pour maximiser l'engagement.",
+      "titre": "Privilegier les Reels",
+      "explication": "Les Reels présentent un engagement supérieur à celui des autres formats, il est donc recommandé d'en créer davantage dans les prochains contenus.",
       "preuve": {
-        "metrique": "recommandation",
-        "valeur": "Jeudi 19h",
-        "variation": null
+        "metrique": "engagement_moyen",
+        "valeur": 520
       },
-      "action": "Publier tous les contenus le jeudi à 19h"
+      "action": "Concentrez-vous sur la création de Reels de haute qualité pour accroître l'engagement sur les plateformes supportant ce format, comme Instagram et TikTok."
     }
   ]
 }

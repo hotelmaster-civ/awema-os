@@ -1,6 +1,6 @@
 {
   "agent": "creatif",
-  "genere_le": "2026-08-09T07:36:28+00:00",
+  "genere_le": "2026-08-10T08:15:27+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -11,36 +11,33 @@
   },
   "items": [
     {
-      "hook": "Découvrez les secrets d'Abidjan",
-      "script": "Venez explorer les merveilles d'Abidjan avec nous ! De la plage de Grand-Bassam aux marchés colorés de Treichville, nous vous emmenons dans un voyage inoubliable. Rejoignez-nous pour découvrir les secrets de cette ville cosmopolite. #Abidjan #CôteD'Ivoire #Tourisme",
-      "format": "Reel",
-      "reseau": "TikTok",
-      "prompt_image": "Une vue aérienne d'Abidjan la nuit avec les lumières de la ville qui scintillent",
-      "variantes": [
-        "Explorez Abidjan avec nous",
-        "Les merveilles d'Abidjan vous attendent"
-      ]
-    },
-    {
-      "hook": "Un séjour de rêve à Yopougon",
-      "script": "Imaginez un séjour dans un havre de paix à Yopougon, avec des chambres confortables et un accès à des activités de loisirs variées. Venez découvrir pourquoi Yopougon est l'endroit idéal pour vos prochaines vacances. #Yopougon #Abidjan #SéjourDeRêve",
-      "format": "Carrousel",
-      "reseau": "TikTok",
-      "prompt_image": "Une image d'une chambre d'hôtel moderne et élégante à Yopougon avec une vue sur la ville",
-      "variantes": [
-        "Yopougon, le paradis des vacances",
-        "Un refuge de paix à Abidjan"
-      ]
-    },
-    {
-      "hook": "La vie nocturne d'Abidjan",
-      "script": "Abidjan la nuit, c'est une ville qui pulse ! Découvrez les meilleurs endroits pour sortir et profiter de la vie nocturne. Des bars tendance aux clubs de nuit, nous vous guidons à travers les coins les plus chauds de la ville. #AbidjanLaNuit #VieNocturne #CôteD'Ivoire",
+      "hook": "Découvrez les meilleures résidences d'Abidjan !",
+      "script": "Vous cherchez un endroit confortable et sécurisé pour vous loger à Abidjan ? Abidjan Résidences vous propose des options de qualité pour répondre à vos besoins. De la location meublée à la résidence de standing, nous avons tout ce qu'il vous faut pour vous sentir comme chez vous. Contactez-nous pour plus d'informations !",
       "format": "Short",
       "reseau": "TikTok",
-      "prompt_image": "Une image dynamique d'une rue d'Abidjan la nuit avec des lumières de néon et des gens qui dansent",
+      "prompt_image": "Une photo d'une résidence moderne à Abidjan avec un jardin paisible et une piscine",
       "variantes": [
-        "Abidjan, la ville qui ne dort jamais",
-        "La nuit abidjanaise, un spectacle à ne pas manquer"
+        "Les résidences idéales pour votre séjour à Abidjan !"
+      ]
+    },
+    {
+      "hook": "Qu'est-ce que vous cherchez dans une résidence à Abidjan ?",
+      "script": "Partagez avec nous vos attentes pour votre prochain séjour à Abidjan ! Nous sommes là pour vous aider à trouver la résidence qui correspond le mieux à vos besoins. Que ce soit pour un court ou un long séjour, nous avons des options pour tous les goûts et les budgets. Contactez-nous pour découvrir nos offres !",
+      "format": "Reel",
+      "reseau": "TikTok",
+      "prompt_image": "Une photo d'une personne cherchant sur Internet avec un ordinateur portable et un agenda",
+      "variantes": [
+        "Que souhaitez-vous pour votre prochaine résidence à Abidjan ?"
+      ]
+    },
+    {
+      "hook": "Explorez Abidjan comme jamais auparavant avec Abidjan Résidences !",
+      "script": "Découvrez les secrets et les merveilles de la ville avec notre équipe de guides locaux. Nous vous proposons des visites personnalisées pour vous faire découvrir les meilleurs endroits de la ville, des marchés traditionnels aux plages les plus magnifiques. Contactez-nous pour réserver votre visite !",
+      "format": "Carrousel",
+      "reseau": "Instagram",
+      "prompt_image": "Une photo d'une rue animée d'Abidjan avec des motos et des vélos",
+      "variantes": [
+        "Vivez l'expérience Abidjan avec nous !"
       ]
     }
   ]

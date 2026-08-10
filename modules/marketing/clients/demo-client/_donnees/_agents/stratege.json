@@ -1,6 +1,6 @@
 {
   "agent": "stratege",
-  "genere_le": "2026-08-09T07:36:07+00:00",
+  "genere_le": "2026-08-10T08:15:05+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -15,60 +15,60 @@
       "jour": "Lundi",
       "heure": "19h",
       "format": "Reel",
-      "angle": "Conseils pour une peau saine et éclatante",
+      "angle": "Conseils de routine peau grasse",
       "reseau": "TikTok"
     },
     {
       "jour": "Mercredi",
-      "heure": "12h",
+      "heure": "19h",
       "format": "Carrousel",
-      "angle": "Présentation du soin visage éclat",
+      "angle": "Avant/Après soin éclat",
       "reseau": "Instagram"
     },
     {
       "jour": "Jeudi",
       "heure": "19h",
       "format": "Short",
-      "angle": "Témoignage d'une cliente satisfaite",
+      "angle": "Présentation du forfait mariée",
       "reseau": "TikTok"
     },
     {
       "jour": "Vendredi",
-      "heure": "15h",
+      "heure": "12h",
       "format": "Photo",
-      "angle": "Présentation des produits pour peaux sensibles",
+      "angle": "Présentation d'un produit nouveau pour peaux sensibles",
       "reseau": "Instagram"
     },
     {
       "jour": "Samedi",
-      "heure": "14h",
+      "heure": "12h",
       "format": "Reel",
-      "angle": "Routine peau grasse en 3 étapes",
+      "angle": "Témoignage d'une cliente satisfaite",
       "reseau": "TikTok"
     },
     {
       "jour": "Dimanche",
-      "heure": "18h",
+      "heure": "19h",
       "format": "Carrousel",
-      "angle": "Promotion spéciale pour le forfait mariée",
+      "angle": "Conseils pour un soin de soi efficace à la maison",
       "reseau": "Instagram"
     },
     {
       "jour": "Mardi",
-      "heure": "12h",
+      "heure": "19h",
       "format": "Short",
-      "angle": "Réponse aux questions fréquentes",
+      "angle": "Réponse à des questions fréquentes sur les soins de beauté",
       "reseau": "TikTok"
     }
   ],
   "cadence_recommandee": "3 publications/semaine",
   "meilleures_heures": [
     "Jeudi 19h",
-    "Samedi 14h"
+    "Samedi 12h"
   ],
   "objectifs": [
-    "Augmenter le nombre de likes sur Instagram de 20% en 4 semaines",
-    "Accroître la visibilité du forfait mariée sur TikTok de 30% en 6 semaines",
-    "Répondre à toutes les questions des clientes dans les 24 heures suivant leur poste"
+    "Augmenter la portée des publications de 20% sur TikTok",
+    "Accroître le taux d'engagement sur Instagram de 15%",
+    "Attirer 500 nouveaux abonnés sur les réseaux sociaux dans les 6 prochaines semaines"
   ]
 }

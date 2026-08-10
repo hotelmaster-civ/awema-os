@@ -1,6 +1,6 @@
 {
   "agent": "analyste",
-  "genere_le": "2026-08-09T07:34:43+00:00",
+  "genere_le": "2026-08-10T08:14:00+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -12,22 +12,22 @@
   "items": [
     {
       "type": "insight",
-      "titre": "Performances sur TikTok",
-      "explication": "Les performances sur TikTok sont meilleures que sur les autres réseaux, avec un total de 9484 likes et 41823 vues.",
+      "titre": "Popularité sur TikTok",
+      "explication": "Le compte Abidjan résidences a une forte présence sur TikTok, avec un grand nombre de likes et de vues.",
       "preuve": {
         "metrique": "likes_total",
-        "valeur": 9484
+        "valeur": 21847
       }
     },
     {
       "type": "reco",
-      "titre": "Augmenter les publications sur TikTok",
-      "explication": "Il est recommandé d'augmenter les publications sur TikTok pour maintenir l'engagement de l'audience.",
+      "titre": "Publier régulièrement sur TikTok",
+      "explication": "Pour maintenir l'engagement des abonnés, il est recommandé de publier régulièrement sur TikTok.",
       "preuve": {
-        "metrique": "posts_par_semaine",
-        "valeur": 0
+        "metrique": "jours_depuis",
+        "valeur": 51
       },
-      "action": "Publiez au moins un contenu par semaine sur TikTok"
+      "action": "Publiez un nouveau post sur TikTok cette semaine"
     },
     {
       "type": "insight",
@@ -41,17 +41,17 @@
     {
       "type": "reco",
       "titre": "Utiliser les hashtags sur TikTok",
-      "explication": "Il est recommandé d'utiliser les hashtags sur TikTok pour augmenter la visibilité des publications.",
+      "explication": "L'utilisation des hashtags sur TikTok peut augmenter la visibilité des posts.",
       "preuve": {
-        "metrique": "vues",
-        "valeur": 32741
+        "metrique": "likes",
+        "valeur": 8920
       },
-      "action": "Utilisez les hashtags pertinents dans vos publications TikTok"
+      "action": "Utilisez des hashtags pertinents pour votre compte sur TikTok"
     },
     {
       "type": "insight",
       "titre": "Évolution de l'audience",
-      "explication": "L'audience sur TikTok est stable avec une légère variation au fil du temps.",
+      "explication": "L'audience du compte Abidjan résidences sur TikTok est stable, avec une légère variation ces dernières semaines.",
       "preuve": {
         "metrique": "valeur",
         "valeur": 4195
@@ -59,13 +59,13 @@
     },
     {
       "type": "reco",
-      "titre": "Publier à heures stratégiques",
-      "explication": "Il est recommandé de publier à heures stratégiques pour maximiser l'engagement de l'audience.",
+      "titre": "Interagir avec la communauté",
+      "explication": "Interagir avec la communauté sur TikTok peut aider à construire une relation solide avec les abonnés.",
       "preuve": {
-        "metrique": "heure",
-        "valeur": "14h"
+        "metrique": "commentaires",
+        "valeur": 168
       },
-      "action": "Publiez vos contenus à 14h le vendredi pour maximiser l'engagement"
+      "action": "Répondez aux commentaires et aux messages sur TikTok cette semaine"
     }
   ]
 }
