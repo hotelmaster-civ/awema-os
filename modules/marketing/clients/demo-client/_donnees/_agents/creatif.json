@@ -1,6 +1,6 @@
 {
   "agent": "creatif",
-  "genere_le": "2026-08-10T08:15:58+00:00",
+  "genere_le": "2026-08-10T10:49:00+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -12,33 +12,36 @@
   },
   "items": [
     {
-      "hook": "Découvrez le secret d'un teint éclatant avec nos soins de visage personnalisés !",
-      "script": "Notre soin visage éclat est conçu pour répondre à vos besoins spécifiques et vous donner une peau radieuse et plein de vie. Réservez votre rendez-vous dès maintenant et laissez-nous vous faire découvrir la différence !",
+      "hook": "Découvrez le secret à un teint éclatant !",
+      "script": "Vous rêvez d'un teint parfait pour vos événements importants ? Notre soin visage éclat est là pour vous ! Nettoyage et hydratation profonde pour un résultat naturel et durable. Réservez votre séance dès aujourd'hui et révélez votre beauté intérieure !",
       "format": "Reel",
       "reseau": "TikTok",
-      "prompt_image": "Une femme souriante avec une peau éclatante, les cheveux attachés et un léger maquillage, sur un fond pastel doux (#D4AF37). Elle tient un bouquet de fleurs fraîches, symbolisant la naturalité et la beauté.",
+      "prompt_image": "une femme souriante avec une peau lumineuse, avec des éléments de nature pour symboliser le 'naturel' et les soins",
       "variantes": [
-        "Un teint parfait, c'est possible avec Éclat Beauté !"
+        "Un teint éclatant pour le grand jour ?",
+        "L'éclat de votre beauté en un seul soin"
       ]
     },
     {
-      "hook": "Vous rêvez d'un jour J parfait ? Nous vous aidons à atteindre votre objectif de beauté avec notre forfait mariée !",
-      "script": "Notre forfait mariée comprend trois séances de soin personnalisées pour que vous vous sentiez comme une reine le jour de votre mariage. De la préparation de peau au maquillage, nous prenons soin de tout. Réservez votre place dès aujourd'hui !",
+      "hook": "Préparez votre peau pour le mariage !",
+      "script": "future mariée ? Offrez à votre peau le cadeau ultime avec notre forfait spécialement conçu pour vous. 3 séances personnalisées pour un teint parfait le jour J. Contactez-nous pour réserver votre place !",
       "format": "Carrousel",
       "reseau": "Instagram",
-      "prompt_image": "Une photo d'une future mariée heureuse avec un voile et un bouquet, sur un fond romantique (#0A1F44). Elle a une peau resplendissante et une coiffure élégante.",
+      "prompt_image": "une future mariée radieuse, entourée d'éléments de décoration de mariage, avec une légère transparence pour mettre en avant la peau",
       "variantes": [
-        "Le grand jour approche, soyez prête avec Éclat Beauté !"
+        "Le secret d'un teint parfait pour votre union",
+        "Mariage : soignez votre peau pour briller"
       ]
     },
     {
-      "hook": "Manque de temps ? Nous avons la solution pour vous ! Découvrez nos soins de visage rapides et efficaces.",
-      "script": "Notre soin visage éclat est conçu pour être rapide et donner des résultats visibles. En seulement une heure, vous pouvez avoir une peau plus claire et plus lisse. Réservez votre rendez-vous en ligne maintenant !",
-      "format": "Short",
+      "hook": "Besoin d'un break ? Offrez-vous un soin !",
+      "script": "Les femmes actives comme vous méritent un moment de pause et de soin. Notre institut de beauté Éclat vous propose des soins visage sur mesure pour vous aider à vous ressourcer. Découvrez nos offres et réservez votre rendez-vous aujourd'hui !",
+      "format": "Post",
       "reseau": "Facebook",
-      "prompt_image": "Une femme active avec un emploi du temps chargé, mais qui prend un moment pour soigner son visage. Elle est entourée de végétation et a un appareil de beauté dans la main, symbolisant la nature et la technologie.",
+      "prompt_image": "une femme active (au travail ou avec des enfants) avec un bouquet de fleurs ou un cœur pour symboliser l'amour de soi",
       "variantes": [
-        "La beauté en un clic, c'est possible avec Éclat Beauté !"
+        "Prenez soin de vous, vous le méritez !",
+        "Un moment pour soi, un soin pour son âme"
       ]
     }
   ]

@@ -1,6 +1,6 @@
 {
   "agent": "stratege",
-  "genere_le": "2026-08-10T08:14:54+00:00",
+  "genere_le": "2026-08-10T10:47:35+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -14,28 +14,35 @@
       "jour": "Lundi",
       "heure": "14h",
       "format": "Vidéo",
-      "angle": "Présentation d'une résidence abidjanaise",
+      "angle": "Présentation d'une résidence à Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Mercredi",
       "heure": "14h",
-      "format": "Photographie",
-      "angle": "Décor intérieur d'une résidence de luxe",
+      "format": "Vidéo",
+      "angle": "Découverte d'un quartier d'Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Vendredi",
       "heure": "14h",
       "format": "Vidéo",
-      "angle": "Témoignage de résidents satisfaits",
+      "angle": "Promotion d'une résidence à Yopougon",
+      "reseau": "TikTok"
+    },
+    {
+      "jour": "Samedi",
+      "heure": "12h",
+      "format": "Photo",
+      "angle": "Événement dans une résidence d'Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Dimanche",
       "heure": "18h",
       "format": "Story",
-      "angle": "Conseils pour améliorer l'espace de vie",
+      "angle": "Conseils pour choisir une résidence à Abidjan",
       "reseau": "TikTok"
     },
     {
@@ -47,27 +54,19 @@
     },
     {
       "jour": "Jeudi",
-      "heure": "12h",
-      "format": "Photographie",
-      "angle": "Présentation d'un nouveau projet immobilier",
-      "reseau": "TikTok"
-    },
-    {
-      "jour": "Samedi",
-      "heure": "10h",
+      "heure": "15h",
       "format": "Vidéo",
-      "angle": "Astuces pour décoration intérieure",
+      "angle": "Témoignage d'un locataire d'Abidjan résidences",
       "reseau": "TikTok"
     }
   ],
-  "cadence_recommandee": "2 publications/semaine",
+  "cadence_recommandee": "3 publications/semaine",
   "meilleures_heures": [
     "Vendredi 14h"
   ],
   "objectifs": [
-    "Augmenter le taux d'engagement de 20% sur les publications",
-    "Accroître la portée des publications de 15% sur TikTok",
-    "Maintenir une audience active et intéressée",
-    "Améliorer la qualité et la pertinence des contenus publiés"
+    "Augmenter la portée des publications de 20% en 4 semaines",
+    "Accroître le taux d'engagement de 30% en 6 semaines",
+    "Atteindre 5000 vues par publication en moyenne"
   ]
 }

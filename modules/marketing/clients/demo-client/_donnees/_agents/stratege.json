@@ -1,6 +1,6 @@
 {
   "agent": "stratege",
-  "genere_le": "2026-08-10T08:15:05+00:00",
+  "genere_le": "2026-08-10T10:48:06+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -15,60 +15,60 @@
       "jour": "Lundi",
       "heure": "19h",
       "format": "Reel",
-      "angle": "Conseils de routine peau grasse",
+      "angle": "Astuces de soin de visage pour une peau éclatante",
       "reseau": "TikTok"
     },
     {
       "jour": "Mercredi",
-      "heure": "19h",
+      "heure": "12h",
       "format": "Carrousel",
-      "angle": "Avant/Après soin éclat",
+      "angle": "Avant/Après du soin visage éclat - Témoignages de satisfactions",
       "reseau": "Instagram"
     },
     {
       "jour": "Jeudi",
       "heure": "19h",
       "format": "Short",
-      "angle": "Présentation du forfait mariée",
+      "angle": "Conseils pour une routine peau grasse en 3 étapes faciles",
       "reseau": "TikTok"
     },
     {
       "jour": "Vendredi",
-      "heure": "12h",
+      "heure": "18h",
       "format": "Photo",
-      "angle": "Présentation d'un produit nouveau pour peaux sensibles",
+      "angle": "Présentation des produits hypoallergéniques pour peaux sensibles",
       "reseau": "Instagram"
     },
     {
       "jour": "Samedi",
-      "heure": "12h",
+      "heure": "18h",
       "format": "Reel",
-      "angle": "Témoignage d'une cliente satisfaite",
+      "angle": "Un jour dans la vie d'une de nos clientes - Expérience Éclat Beauté",
       "reseau": "TikTok"
     },
     {
       "jour": "Dimanche",
-      "heure": "19h",
+      "heure": "10h",
       "format": "Carrousel",
-      "angle": "Conseils pour un soin de soi efficace à la maison",
-      "reseau": "Instagram"
+      "angle": "Découvrez notre forfait mariée - Tout compris pour un teint parfait",
+      "reseau": "Facebook"
     },
     {
       "jour": "Mardi",
-      "heure": "19h",
+      "heure": "12h",
       "format": "Short",
-      "angle": "Réponse à des questions fréquentes sur les soins de beauté",
+      "angle": "Réponses à vos questions fréquentes sur nos soins et produits",
       "reseau": "TikTok"
     }
   ],
   "cadence_recommandee": "3 publications/semaine",
   "meilleures_heures": [
     "Jeudi 19h",
-    "Samedi 12h"
+    "Samedi 18h"
   ],
   "objectifs": [
-    "Augmenter la portée des publications de 20% sur TikTok",
-    "Accroître le taux d'engagement sur Instagram de 15%",
-    "Attirer 500 nouveaux abonnés sur les réseaux sociaux dans les 6 prochaines semaines"
+    "Augmenter l'engagement de 20% sur les réseaux sociaux",
+    "Générer 10 réservations pour le forfait mariée par mois",
+    "Accroître la portée sur Instagram de 15% en 2 mois"
   ]
 }

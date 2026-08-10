@@ -1,6 +1,6 @@
 {
   "agent": "actions-du-jour",
-  "genere_le": "2026-08-10T08:15:58+00:00",
+  "genere_le": "2026-08-10T10:49:00+00:00",
   "modele": "agrégation (sans IA)",
   "provenance": {
     "client": "demo-client",
@@ -34,8 +34,8 @@
     {
       "priorite": 2,
       "type": "reco",
-      "titre": "Créer plus de contenu pour TikTok",
-      "detail": "Créez et publiez au moins un nouveau contenu vidéo sur TikTok cette semaine, en vous concentrant sur les formats à succès tels que les Reels.",
+      "titre": "Publier plus sur TikTok",
+      "detail": "Augmenter les publications sur TikTok de 2 fois par semaine à 3 fois par semaine.",
       "source": "analyste",
       "action": {
         "label": "Voir l'analyse",
@@ -46,7 +46,7 @@
     {
       "priorite": 2,
       "type": "plan",
-      "titre": "Publie : Conseils de routine peau grasse",
+      "titre": "Publie : Astuces de soin de visage pour une peau éclatante",
       "detail": "TikTok · Reel · Lundi",
       "source": "stratege",
       "action": {
@@ -70,7 +70,7 @@
     {
       "priorite": 3,
       "type": "creatif",
-      "titre": "Idée prête : Découvrez le secret d'un teint éclatant avec nos soins de visage personnalisés !",
+      "titre": "Idée prête : Découvrez le secret à un teint éclatant !",
       "detail": "TikTok · Reel",
       "source": "creatif",
       "action": {
