@@ -1,6 +1,6 @@
 {
   "agent": "stratege",
-  "genere_le": "2026-08-10T10:48:06+00:00",
+  "genere_le": "2026-08-11T07:47:36+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -15,60 +15,60 @@
       "jour": "Lundi",
       "heure": "19h",
       "format": "Reel",
-      "angle": "Astuces de soin de visage pour une peau éclatante",
+      "angle": "Routine de soin du visage pour les peaux grasses",
       "reseau": "TikTok"
     },
     {
       "jour": "Mercredi",
       "heure": "12h",
       "format": "Carrousel",
-      "angle": "Avant/Après du soin visage éclat - Témoignages de satisfactions",
+      "angle": "Avant/Après d'un soin éclat pour la peau sèche",
       "reseau": "Instagram"
     },
     {
       "jour": "Jeudi",
       "heure": "19h",
       "format": "Short",
-      "angle": "Conseils pour une routine peau grasse en 3 étapes faciles",
+      "angle": "Conseils de base pour un maquillage naturel et éclatant",
       "reseau": "TikTok"
-    },
-    {
-      "jour": "Vendredi",
-      "heure": "18h",
-      "format": "Photo",
-      "angle": "Présentation des produits hypoallergéniques pour peaux sensibles",
-      "reseau": "Instagram"
     },
     {
       "jour": "Samedi",
-      "heure": "18h",
-      "format": "Reel",
-      "angle": "Un jour dans la vie d'une de nos clientes - Expérience Éclat Beauté",
-      "reseau": "TikTok"
+      "heure": "14h",
+      "format": "Photo",
+      "angle": "Présentation du forfait mariée d'Éclat Beauté",
+      "reseau": "Instagram"
     },
     {
       "jour": "Dimanche",
-      "heure": "10h",
-      "format": "Carrousel",
-      "angle": "Découvrez notre forfait mariée - Tout compris pour un teint parfait",
-      "reseau": "Facebook"
+      "heure": "18h",
+      "format": "Reel",
+      "angle": "Démonstration d'un soin capillaire réparateur",
+      "reseau": "TikTok"
     },
     {
       "jour": "Mardi",
-      "heure": "12h",
+      "heure": "10h",
+      "format": "Carrousel",
+      "angle": "Présentation des produits naturels pour la peau africaine",
+      "reseau": "Facebook"
+    },
+    {
+      "jour": "Vendredi",
+      "heure": "20h",
       "format": "Short",
-      "angle": "Réponses à vos questions fréquentes sur nos soins et produits",
+      "angle": "Conseils pour une peau éclatante pendant l'hiver",
       "reseau": "TikTok"
     }
   ],
   "cadence_recommandee": "3 publications/semaine",
   "meilleures_heures": [
     "Jeudi 19h",
-    "Samedi 18h"
+    "Samedi 14h"
   ],
   "objectifs": [
-    "Augmenter l'engagement de 20% sur les réseaux sociaux",
-    "Générer 10 réservations pour le forfait mariée par mois",
-    "Accroître la portée sur Instagram de 15% en 2 mois"
+    "Augmenter le taux d'engagement de 10% sur TikTok",
+    "Développer la communauté sur Instagram de 15% en 2 mois",
+    "Maintenir un taux de likes supérieur à 3% sur tous les réseaux"
   ]
 }

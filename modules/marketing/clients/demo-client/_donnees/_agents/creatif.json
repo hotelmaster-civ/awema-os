@@ -1,6 +1,6 @@
 {
   "agent": "creatif",
-  "genere_le": "2026-08-10T10:49:00+00:00",
+  "genere_le": "2026-08-11T07:48:30+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -12,36 +12,33 @@
   },
   "items": [
     {
-      "hook": "Découvrez le secret à un teint éclatant !",
-      "script": "Vous rêvez d'un teint parfait pour vos événements importants ? Notre soin visage éclat est là pour vous ! Nettoyage et hydratation profonde pour un résultat naturel et durable. Réservez votre séance dès aujourd'hui et révélez votre beauté intérieure !",
+      "hook": "Découvrez le secret pour une peau éclatante en 3 étapes !",
+      "script": "Vous rêvez d'une peau parfaite mais vous ne savez pas par où commencer ? Notre expert vous guide à travers une routine personnalisée pour votre type de peau. De la nettoyance profonde à l'hydratation parfaite, découvrez notre Soin Visage Éclat ! Réservez votre place dès maintenant et révélez votre beauté naturelle.",
       "format": "Reel",
       "reseau": "TikTok",
-      "prompt_image": "une femme souriante avec une peau lumineuse, avec des éléments de nature pour symboliser le 'naturel' et les soins",
+      "prompt_image": "Une femme avec une peau éclatante, en train de réaliser un soin visage avec des produits beauté autour d'elle, sur un fond #0A1F44",
       "variantes": [
-        "Un teint éclatant pour le grand jour ?",
-        "L'éclat de votre beauté en un seul soin"
+        "Faites briller votre teint naturel en quelques minutes !"
       ]
     },
     {
-      "hook": "Préparez votre peau pour le mariage !",
-      "script": "future mariée ? Offrez à votre peau le cadeau ultime avec notre forfait spécialement conçu pour vous. 3 séances personnalisées pour un teint parfait le jour J. Contactez-nous pour réserver votre place !",
+      "hook": "Préparez-vous pour le jour J avec notre Forfait Mariée !",
+      "script": "Fatou, future mariée, vous rêvez d'un teint parfait pour votre grand jour ? Notre forfait est conçu pour vous offrir une peau radieuse et un éclat exceptionnel. Trois séances personnalisées avec nos experts pour vous faire resplendir. Découvrez comment nous avons aidé nos clientes à atteindre leur objectif de beauté ! Réservez maintenant et vivez votre rêve.",
       "format": "Carrousel",
       "reseau": "Instagram",
-      "prompt_image": "une future mariée radieuse, entourée d'éléments de décoration de mariage, avec une légère transparence pour mettre en avant la peau",
+      "prompt_image": "Une photo d'une mariée heureuse et rayonnante, avec un avant/arrière-plan subtil représentant le forfait mariée, des éléments #D4AF37 pour symboliser la joie et l'éclat",
       "variantes": [
-        "Le secret d'un teint parfait pour votre union",
-        "Mariage : soignez votre peau pour briller"
+        "Transformez votre peau pour le jour le plus important de votre vie !"
       ]
     },
     {
-      "hook": "Besoin d'un break ? Offrez-vous un soin !",
-      "script": "Les femmes actives comme vous méritent un moment de pause et de soin. Notre institut de beauté Éclat vous propose des soins visage sur mesure pour vous aider à vous ressourcer. Découvrez nos offres et réservez votre rendez-vous aujourd'hui !",
+      "hook": "Besoin d'un conseil pour une peau parfaite ?",
+      "script": "Aïcha, nous savons que votre emploi du temps est chargé, mais nous sommes là pour vous aider ! Notre équipe d'experts partage des tips personnalisés pour un soin de soi efficace même dans les moments les plus occupés. Quel est votre plus grand défi pour trouver du temps pour vous ? Partagez avec nous et découvrez comment nos produits et soins peuvent vous aider !",
       "format": "Post",
       "reseau": "Facebook",
-      "prompt_image": "une femme active (au travail ou avec des enfants) avec un bouquet de fleurs ou un cœur pour symboliser l'amour de soi",
+      "prompt_image": "Une photo d'une femme active avec un emploi du temps chargé, mais prenant un moment pour elle avec des produits de soin, sur un fond représentant l'équilibre entre travail et soin de soi, avec des touches de #D4AF37 et #0A1F44",
       "variantes": [
-        "Prenez soin de vous, vous le méritez !",
-        "Un moment pour soi, un soin pour son âme"
+        "Prenez soin de vous, même dans la course !"
       ]
     }
   ]

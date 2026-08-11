@@ -1,6 +1,6 @@
 {
   "agent": "stratege",
-  "genere_le": "2026-08-10T10:47:35+00:00",
+  "genere_le": "2026-08-11T07:47:25+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -14,59 +14,45 @@
       "jour": "Lundi",
       "heure": "14h",
       "format": "Vidéo",
-      "angle": "Présentation d'une résidence à Abidjan",
+      "angle": "Présentation d'un nouveau résidence à Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Mercredi",
       "heure": "14h",
       "format": "Vidéo",
-      "angle": "Découverte d'un quartier d'Abidjan",
+      "angle": "Interview avec un client satisfait",
       "reseau": "TikTok"
     },
     {
       "jour": "Vendredi",
       "heure": "14h",
       "format": "Vidéo",
-      "angle": "Promotion d'une résidence à Yopougon",
+      "angle": "Découverte de nouveaux lieux à Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Samedi",
       "heure": "12h",
-      "format": "Photo",
-      "angle": "Événement dans une résidence d'Abidjan",
+      "format": "Story",
+      "angle": "Derrière la scène d'un événement à Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Dimanche",
       "heure": "18h",
       "format": "Story",
-      "angle": "Conseils pour choisir une résidence à Abidjan",
-      "reseau": "TikTok"
-    },
-    {
-      "jour": "Mardi",
-      "heure": "19h",
-      "format": "Live",
-      "angle": "Visite virtuelle d'une résidence",
-      "reseau": "TikTok"
-    },
-    {
-      "jour": "Jeudi",
-      "heure": "15h",
-      "format": "Vidéo",
-      "angle": "Témoignage d'un locataire d'Abidjan résidences",
+      "angle": "Publication d'une promotion exclusive pour les résidents",
       "reseau": "TikTok"
     }
   ],
-  "cadence_recommandee": "3 publications/semaine",
+  "cadence_recommandee": "4 publications/semaine",
   "meilleures_heures": [
     "Vendredi 14h"
   ],
   "objectifs": [
-    "Augmenter la portée des publications de 20% en 4 semaines",
-    "Accroître le taux d'engagement de 30% en 6 semaines",
-    "Atteindre 5000 vues par publication en moyenne"
+    "Augmenter les likes de 20% sur les publications",
+    "Accroître le nombre de commentaires de 30% sur les futures publications",
+    "Faire croître la portée des publications de 15%"
   ]
 }

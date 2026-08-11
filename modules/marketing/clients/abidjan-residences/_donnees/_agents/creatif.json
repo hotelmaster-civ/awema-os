@@ -1,6 +1,6 @@
 {
   "agent": "creatif",
-  "genere_le": "2026-08-10T10:48:28+00:00",
+  "genere_le": "2026-08-11T07:48:18+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -11,33 +11,33 @@
   },
   "items": [
     {
-      "hook": "Découvrez les secrets de Yopougon !",
-      "script": "Vous cherchez un endroit pour vous détendre à Yopougon ? Découvrez Le B, votre nouvelle résidence de rêve ! Avec ses chambres confortables et son environnement calme, vous vous sentirez comme chez vous. N'attendez plus, réservez votre séjour dès maintenant ! #Yopougon #Residence #Détente",
+      "hook": "Découvrez les résidences de rêve à Abidjan !",
+      "script": "Vous cherchez un endroit où vous sentir comme chez vous à Abidjan ? Abidjan résidences vous offre des espaces uniques et chaleureux. Découvrez nos résidences de luxe et trouvez votre petit coin de paradis.",
       "format": "Short",
       "reseau": "TikTok",
-      "prompt_image": "Une photo d'une chambre confortable avec un lit king-size et une grande fenêtre donnant sur un jardin",
+      "prompt_image": "Une photo d'un intérieur de résidence moderne et élégant avec une grande fenêtre donnant sur la ville d'Abidjan",
       "variantes": [
-        "Échappez à la routine avec Le B à Yopougon !"
+        "Vivez la vie de rêve à Abidjan avec nos résidences de luxe !"
       ]
     },
     {
-      "hook": "Rejoignez la communauté Abidjan Résidences !",
-      "script": "Vous êtes propriétaire d'un établissement à Abidjan ? Rejoignez notre communauté et faites la promotion de votre établissement auprès de nos abonnés ! Nous offrons une commission compétitive pour chaque réservation générée via notre plateforme. N'attendez plus, inscrivez-vous dès maintenant ! #Abidjan #Residences #Promotion",
+      "hook": "Explorez les quartiers les plus tendances d'Abidjan !",
+      "script": "Vous souhaitez découvrir les quartiers les plus en vogue d'Abidjan ? De Yopougon à Cocody, nous vous emmenons dans les endroits les plus branchés de la ville. Découvrez les meilleures adresses avec Abidjan résidences.",
       "format": "Reel",
       "reseau": "TikTok",
-      "prompt_image": "Une photo d'un écran d'ordinateur avec un formulaire d'inscription sur une plateforme de réservation",
+      "prompt_image": "Une vidéo montrant différents quartiers d'Abidjan avec des gens marchant et des voitures circulant",
       "variantes": [
-        "Faites connaître votre établissement à Abidjan avec nous !"
+        "Abidjan, la ville qui ne dort jamais : découvrez les quartiers à la mode !"
       ]
     },
     {
-      "hook": "Exploration de Yopougon avec Abidjan Résidences !",
-      "script": "Vous cherchez des idées pour explorer Yopougon ? Découvrez nos recommandations de lieux à visiter et de choses à faire dans cette belle ville ! De la plage à la forêt, nous vous montrons les secrets de Yopougon. N'attendez plus, suivez-nous pour plus de contenu ! #Yopougon #Exploration #Abidjan",
+      "hook": "Investissez dans votre avenir avec Abidjan résidences !",
+      "script": "Vous pensez à investir dans l'immobilier à Abidjan ? Abidjan résidences vous offre des opportunités uniques pour investir dans des propriétés de haute qualité. Découvrez nos programmes d'investissement et assurez votre avenir.",
       "format": "Carrousel",
-      "reseau": "TikTok",
-      "prompt_image": "Une photo d'une carte de Yopougon avec des points d'intérêt marqués",
+      "reseau": "Facebook",
+      "prompt_image": "Une image d'un graphique montrant la croissance du marché immobilier à Abidjan avec des icônes de bâtiments et d'argent",
       "variantes": [
-        "Découvrez les merveilles de Yopougon avec nous !"
+        "Construire votre patrimoine avec Abidjan résidences, investir dans l'avenir !"
       ]
     }
   ]

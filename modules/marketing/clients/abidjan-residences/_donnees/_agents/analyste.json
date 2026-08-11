@@ -1,6 +1,6 @@
 {
   "agent": "analyste",
-  "genere_le": "2026-08-10T10:46:43+00:00",
+  "genere_le": "2026-08-11T07:46:32+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -12,27 +12,8 @@
   "items": [
     {
       "type": "insight",
-      "titre": "Performance sur TikTok",
-      "explication": "Le compte Abidjan Résidences a une audience significative sur TikTok avec des interactions positives.",
-      "preuve": {
-        "metrique": "abonnes",
-        "valeur": 4195
-      }
-    },
-    {
-      "type": "reco",
-      "titre": "Réactiver les publications",
-      "explication": "Il y a 51 jours sans nouvelle publication sur TikTok, il est temps de réactiver les contenus pour maintenir l'intérêt de l'audience.",
-      "preuve": {
-        "metrique": "jours_depuis",
-        "valeur": 51
-      },
-      "action": "Publier un nouveau contenu sur TikTok avant la fin de la semaine"
-    },
-    {
-      "type": "insight",
-      "titre": "Top post performant",
-      "explication": "Le post '#collage avec @Tdfmanga' est le plus performant avec 8920 likes et 32741 vues, indiquant une stratégie de contenu efficace.",
+      "titre": "Popularité des vidéos sur TikTok",
+      "explication": "Les vidéos sur TikTok ont un engagement important, particulièrement celles avec des likes élevés comme celle intitulée '#collage avec @Tdfmanga decouvrez un animé 100% ivoirien par @Cénack  « placman »'.",
       "preuve": {
         "metrique": "likes",
         "valeur": 8920
@@ -40,32 +21,51 @@
     },
     {
       "type": "reco",
-      "titre": "Optimiser les publications pour le meilleur créneau",
-      "explication": "Les publications sur TikTok ont le plus d'impact le vendredi vers 14h. Il est recommandé de planifier les futurs contenus pour ce créneau pour maximiser l'engagement.",
+      "titre": "Publier du contenu vidéo régulièrement",
+      "explication": "Puisque les vidéos sont populaires, il est conseillé de publier du contenu vidéo régulièrement pour maintenir l'engagement de l'audience.",
       "preuve": {
-        "metrique": "jour",
-        "valeur": "Vendredi"
+        "metrique": "posts_30j",
+        "valeur": 0
       },
-      "action": "Planifier les prochaines publications pour le vendredi à 14h"
+      "action": "Publier au moins une vidéo par semaine sur TikTok."
     },
     {
       "type": "insight",
-      "titre": "Évolution de l'audience",
-      "explication": "L'audience a légèrement fluctué ces dernières semaines mais semble stable autour de 4200 abonnés, montrant une certaine constance dans l'intérêt pour le compte.",
+      "titre": "Croissance de l'audience",
+      "explication": "L'audience de la page reste relativement stable avec une légère variation, ce qui suggère une stratégie de maintien d'audience efficace.",
       "preuve": {
-        "metrique": "valeur",
+        "metrique": "audience",
         "valeur": 4195
       }
     },
     {
       "type": "reco",
-      "titre": "Diversifier les types de contenu",
-      "explication": "La majorité des publications sont des vidéos, il pourrait être intéressant d'explorer d'autres formats pour diversifier le contenu et attirer de nouveaux abonnés.",
+      "titre": "Utiliser les créneaux horaires recommandés",
+      "explication": "Utiliser les créneaux horaires recommandés peut améliorer la visibilité et l'engagement des publications.",
       "preuve": {
-        "metrique": "type",
-        "valeur": "vidéo"
+        "metrique": "jour",
+        "valeur": "Vendredi"
       },
-      "action": "Créer et publier un nouveau type de contenu (photo, story, live) d'ici une semaine"
+      "action": "Publier du contenu sur TikTok le vendredi vers 14h pour maximiser la portée."
+    },
+    {
+      "type": "insight",
+      "titre": "Engagement des followers",
+      "explication": "Les followers interagissent avec le contenu, ce qui indique une communauté active et engagée.",
+      "preuve": {
+        "metrique": "commentaires",
+        "valeur": 168
+      }
+    },
+    {
+      "type": "reco",
+      "titre": "Interagir avec les followers",
+      "explication": "Répondre aux commentaires et engager la conversation peut renforcer les liens avec la communauté et augmenter l'engagement.",
+      "preuve": {
+        "metrique": "commentaires",
+        "valeur": 168
+      },
+      "action": "Répondre à tous les commentaires sur les publications TikTok cette semaine."
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "agent": "analyste",
-  "genere_le": "2026-08-10T10:46:54+00:00",
+  "genere_le": "2026-08-11T07:46:44+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -13,60 +13,69 @@
   "items": [
     {
       "type": "insight",
-      "titre": "Éclat Beauté sur TikTok",
-      "explication": "La présence d'Éclat Beauté sur TikTok montre un engagement élevé avec 88000 likes et 500 commentaires, ce qui suggère une stratégie de contenu efficace sur cette plateforme.",
+      "titre": "Prédominance de TikTok",
+      "explication": "TikTok génère le plus d'engagement avec 88 000 likes, suivi de près par Instagram avec 5 200 likes.",
       "preuve": {
-        "metrique": "likes sur TikTok",
-        "valeur": 88000
-      }
-    },
-    {
-      "type": "reco",
-      "titre": "Publier plus sur TikTok",
-      "explication": "Étant donné le succès sur TikTok, il est recommandé d'augmenter la fréquence de publication sur cette plateforme pour renforcer l'engagement avec le public.",
-      "preuve": {
-        "metrique": "engagement sur TikTok",
-        "valeur": 88000
+        "metrique": "likes",
+        "valeur": 88000,
+        "variation": null
       },
-      "action": "Augmenter les publications sur TikTok de 2 fois par semaine à 3 fois par semaine."
+      "action": null
     },
     {
       "type": "insight",
-      "titre": "Contenu le plus efficace",
-      "explication": "Les Reels génèrent en moyenne 520 engagements, soit plus que les autres types de contenu, ce qui indique que les contenus vidéo sont plus efficaces pour l'engagement.",
+      "titre": "Contenu le plus performant",
+      "explication": "Les Reels génèrent en moyenne 520 interactions, ce qui est significativement plus élevé que les Carrousels et les Photos.",
       "preuve": {
-        "metrique": "engagement moyen par Reel",
-        "valeur": 520
-      }
+        "metrique": "engagement_moyen",
+        "valeur": 520,
+        "variation": null
+      },
+      "action": null
     },
     {
       "type": "reco",
-      "titre": "Créer plus de Reels",
-      "explication": "Compte tenu de l'efficacité des Reels pour générer de l'engagement, il est conseillé d'augmenter la production et la publication de ce type de contenu.",
+      "titre": "Publier plus de Reels",
+      "explication": "Étant donné que les Reels génèrent le plus d'engagement, il est conseillé d'en publier davantage pour accroître l'interaction avec le public.",
       "preuve": {
-        "metrique": "engagement moyen par Reel",
-        "valeur": 520
+        "metrique": "engagement_moyen",
+        "valeur": 520,
+        "variation": null
       },
-      "action": "Créer au moins 2 nouveaux Reels par semaine pour renforcer l'engagement sur les plateformes."
+      "action": "Publier au moins 2 Reels par semaine pour augmenter l'engagement"
+    },
+    {
+      "type": "reco",
+      "titre": "Répondre aux commentaires et messages",
+      "explication": "Il y a 5 messages sans réponse. Répondre rapidement aux commentaires et messages pour améliorer l'expérience client.",
+      "preuve": {
+        "metrique": "a_repondre",
+        "valeur": 5,
+        "variation": null
+      },
+      "action": "Répondre à tous les commentaires et messages en attente d'ici la fin de la semaine"
     },
     {
       "type": "insight",
-      "titre": "Audience en progression",
-      "explication": "L'audience d'Éclat Beauté a augmenté de 2500 personnes sur les 30 derniers jours, ce qui montre une tendance positive dans l'acquisition de nouveaux abonnés.",
+      "titre": "Évolution de l'audience",
+      "explication": "L'audience a augmenté régulièrement, passant de 21 000 à 23 500 entre le 1er mai et le 15 juin.",
       "preuve": {
-        "metrique": "évolution de l'audience",
-        "valeur": 2500
-      }
+        "metrique": "evolution_audience",
+        "valeur": 23500,
+        "variation": "+12,4% par rapport au 1er mai"
+      },
+      "action": null
     },
     {
       "type": "reco",
-      "titre": "Interagir avec les commentateurs",
-      "explication": "Pour maintenir et améliorer l'engagement, il est essentiel de répondre aux commentaires et messages des followers, en particulier ceux des top commentateurs.",
+      "titre": "Utiliser les meilleurs créneaux horaires",
+      "explication": "Le jeudi à 19h est recommandé comme le meilleur créneau pour publier du contenu en fonction des interactions passées.",
       "preuve": {
-        "metrique": "nombre de commentaires",
-        "valeur": 1230
+        "metrique": "meilleur_creneau",
+        "valeur": "Jeudi 19h",
+        "variation": null
       },
-      "action": "Répondre à tous les commentaires et messages dans les 24 heures pour améliorer l'expérience client."
+      "action": "Programmer les prochains contenus pour le jeudi à 19h pour maximiser l'engagement"
     }
   ]
 }
