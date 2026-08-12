@@ -1,6 +1,6 @@
 {
   "agent": "creatif",
-  "genere_le": "2026-08-11T07:48:18+00:00",
+  "genere_le": "2026-08-12T08:01:31+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -11,33 +11,36 @@
   },
   "items": [
     {
-      "hook": "Découvrez les résidences de rêve à Abidjan !",
-      "script": "Vous cherchez un endroit où vous sentir comme chez vous à Abidjan ? Abidjan résidences vous offre des espaces uniques et chaleureux. Découvrez nos résidences de luxe et trouvez votre petit coin de paradis.",
-      "format": "Short",
-      "reseau": "TikTok",
-      "prompt_image": "Une photo d'un intérieur de résidence moderne et élégant avec une grande fenêtre donnant sur la ville d'Abidjan",
-      "variantes": [
-        "Vivez la vie de rêve à Abidjan avec nos résidences de luxe !"
-      ]
-    },
-    {
-      "hook": "Explorez les quartiers les plus tendances d'Abidjan !",
-      "script": "Vous souhaitez découvrir les quartiers les plus en vogue d'Abidjan ? De Yopougon à Cocody, nous vous emmenons dans les endroits les plus branchés de la ville. Découvrez les meilleures adresses avec Abidjan résidences.",
+      "hook": "Découvrez les meilleures résidences d'Abidjan !",
+      "script": "Bonjour à tous ! Aujourd'hui, nous allons vous présenter les meilleures résidences d'Abidjan. Que vous soyez étudiant, jeune professionnel ou en famille, nous avons sélectionné pour vous les résidences les plus confortables et les mieux équipées de la ville. De la location meublée à la location vide, nous avons tout ce qu'il vous faut ! Alors n'hésitez pas à nous rejoindre et à découvrir nos résidences !",
       "format": "Reel",
       "reseau": "TikTok",
-      "prompt_image": "Une vidéo montrant différents quartiers d'Abidjan avec des gens marchant et des voitures circulant",
+      "prompt_image": "Une belle résidence d'Abidjan avec une piscine et un jardin",
       "variantes": [
-        "Abidjan, la ville qui ne dort jamais : découvrez les quartiers à la mode !"
+        "Les résidences d'Abidjan qui vous feront tomber amoureux de la ville !",
+        "Trouvez votre nouvelle maison à Abidjan avec nous !"
       ]
     },
     {
-      "hook": "Investissez dans votre avenir avec Abidjan résidences !",
-      "script": "Vous pensez à investir dans l'immobilier à Abidjan ? Abidjan résidences vous offre des opportunités uniques pour investir dans des propriétés de haute qualité. Découvrez nos programmes d'investissement et assurez votre avenir.",
-      "format": "Carrousel",
-      "reseau": "Facebook",
-      "prompt_image": "Une image d'un graphique montrant la croissance du marché immobilier à Abidjan avec des icônes de bâtiments et d'argent",
+      "hook": "Qu'est-ce que vous cherchez dans une résidence ?",
+      "script": "Que vous soyez à la recherche d'une résidence pour vos études, votre travail ou votre famille, nous avons tout ce qu'il vous faut ! Nous proposons des résidences meublées, des résidences vides, des résidences avec piscine, des résidences avec jardin... Alors n'hésitez pas à nous rejoindre et à découvrir nos résidences !",
+      "format": "Short",
+      "reseau": "TikTok",
+      "prompt_image": "Un balcon avec vue sur la ville d'Abidjan",
       "variantes": [
-        "Construire votre patrimoine avec Abidjan résidences, investir dans l'avenir !"
+        "Trouvez la résidence parfaite pour vos besoins !",
+        "Découvrez les résidences qui vous feront sentir comme chez vous !"
+      ]
+    },
+    {
+      "hook": "Vous cherchez une résidence de luxe à Abidjan ?",
+      "script": "Nous avons sélectionné pour vous les meilleures résidences de luxe d'Abidjan. Des résidences avec piscine, des résidences avec jardin, des résidences avec vue sur la mer... Nous avons tout ce qu'il vous faut pour vous sentir comme dans un palace ! Alors n'hésitez pas à nous rejoindre et à découvrir nos résidences de luxe !",
+      "format": "Carrousel",
+      "reseau": "Instagram",
+      "prompt_image": "Une résidence de luxe avec une grande piscine et un jardin tropical",
+      "variantes": [
+        "Découvrez les résidences de luxe qui vous feront vivre comme un roi !",
+        "Trouvez votre palace à Abidjan avec nous !"
       ]
     }
   ]

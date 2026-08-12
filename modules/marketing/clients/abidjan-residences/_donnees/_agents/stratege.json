@@ -1,6 +1,6 @@
 {
   "agent": "stratege",
-  "genere_le": "2026-08-11T07:47:25+00:00",
+  "genere_le": "2026-08-12T08:01:15+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -14,35 +14,49 @@
       "jour": "Lundi",
       "heure": "14h",
       "format": "Vidéo",
-      "angle": "Présentation d'un nouveau résidence à Abidjan",
+      "angle": "Présentation des résidences d'Abidjan",
+      "reseau": "TikTok"
+    },
+    {
+      "jour": "Mardi",
+      "heure": "14h",
+      "format": "Vidéo",
+      "angle": "Découverte de la culture ivoirienne",
       "reseau": "TikTok"
     },
     {
       "jour": "Mercredi",
       "heure": "14h",
       "format": "Vidéo",
-      "angle": "Interview avec un client satisfait",
+      "angle": "Promotion d'un établissement local",
+      "reseau": "TikTok"
+    },
+    {
+      "jour": "Jeudi",
+      "heure": "14h",
+      "format": "Vidéo",
+      "angle": "Détente et loisirs à Yopougon",
       "reseau": "TikTok"
     },
     {
       "jour": "Vendredi",
       "heure": "14h",
       "format": "Vidéo",
-      "angle": "Découverte de nouveaux lieux à Abidjan",
+      "angle": "Placman, la version animée",
       "reseau": "TikTok"
     },
     {
       "jour": "Samedi",
-      "heure": "12h",
-      "format": "Story",
-      "angle": "Derrière la scène d'un événement à Abidjan",
+      "heure": "14h",
+      "format": "Vidéo",
+      "angle": "Découverte de la résidence de Yopougon",
       "reseau": "TikTok"
     },
     {
       "jour": "Dimanche",
-      "heure": "18h",
-      "format": "Story",
-      "angle": "Publication d'une promotion exclusive pour les résidents",
+      "heure": "14h",
+      "format": "Vidéo",
+      "angle": "Merci pour vos cadeaux et votre gratitude",
       "reseau": "TikTok"
     }
   ],
@@ -51,8 +65,8 @@
     "Vendredi 14h"
   ],
   "objectifs": [
-    "Augmenter les likes de 20% sur les publications",
-    "Accroître le nombre de commentaires de 30% sur les futures publications",
-    "Faire croître la portée des publications de 15%"
+    "Augmenter de 10% le nombre de likes sur les publications",
+    "Accroître de 15% le nombre de commentaires sur les publications",
+    "Maintenir un taux d'engagement moyen de 2% sur les publications"
   ]
 }

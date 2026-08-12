@@ -1,6 +1,6 @@
 {
   "agent": "creatif",
-  "genere_le": "2026-08-11T07:48:30+00:00",
+  "genere_le": "2026-08-12T08:01:44+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -12,33 +12,33 @@
   },
   "items": [
     {
-      "hook": "Découvrez le secret pour une peau éclatante en 3 étapes !",
-      "script": "Vous rêvez d'une peau parfaite mais vous ne savez pas par où commencer ? Notre expert vous guide à travers une routine personnalisée pour votre type de peau. De la nettoyance profonde à l'hydratation parfaite, découvrez notre Soin Visage Éclat ! Réservez votre place dès maintenant et révélez votre beauté naturelle.",
+      "hook": "Découvrez le secret d'un teint parfait avec notre soin éclat !",
+      "script": "Vous rêvez d'une peau parfaite pour votre grand jour ? Notre soin éclat est spécifiquement conçu pour les futures mariées ! Pour plus d'informations, contactez-nous sur WhatsApp. Notre forfait mariée est à 75 000 FCFA pour 3 séances. Réservez dès maintenant !",
       "format": "Reel",
       "reseau": "TikTok",
-      "prompt_image": "Une femme avec une peau éclatante, en train de réaliser un soin visage avec des produits beauté autour d'elle, sur un fond #0A1F44",
+      "prompt_image": "Une femme africaine avec une peau lisse et un teint parfait, avec un bouquet de fleurs dans les cheveux, sur un fond doré #D4AF37 et #0A1F44",
       "variantes": [
-        "Faites briller votre teint naturel en quelques minutes !"
+        "Obtenez la peau parfaite pour votre mariage avec Éclat Beauté !"
       ]
     },
     {
-      "hook": "Préparez-vous pour le jour J avec notre Forfait Mariée !",
-      "script": "Fatou, future mariée, vous rêvez d'un teint parfait pour votre grand jour ? Notre forfait est conçu pour vous offrir une peau radieuse et un éclat exceptionnel. Trois séances personnalisées avec nos experts pour vous faire resplendir. Découvrez comment nous avons aidé nos clientes à atteindre leur objectif de beauté ! Réservez maintenant et vivez votre rêve.",
+      "hook": "Peau grasse ? Découvrez notre routine en 3 étapes !",
+      "script": "La peau grasse peut être un véritable challenge ! Mais avec notre expertise et nos produits adaptés, vous pouvez obtenir une peau plus éclatante. Suivez nos conseils : nettoyage doux, hydratation profonde et protection solaire. Pour une peau saine, choisissez Éclat Beauté ! Contactez-nous pour plus d'informations.",
+      "format": "Reel",
+      "reseau": "TikTok",
+      "prompt_image": "Une femme africaine avec une peau grasse mais saine, faisant un geste de soin de peau avec une crème, sur un fond naturel avec des plantes vertes et les couleurs #D4AF37 et #0A1F44",
+      "variantes": [
+        "Comment lutter contre la peau grasse ? Éclat Beauté a la solution !"
+      ]
+    },
+    {
+      "hook": "Soyez sublime pour votre journée spéciale avec notre forfait mariée !",
+      "script": "Vous voulez être absolument sublime pour votre grand jour ? Notre forfait mariée à 75 000 FCFA pour 3 séances vous offre le soin éclat personnalisé dont vous rêvez. Réservez maintenant via WhatsApp et obtenez la confiance en vous que vous méritez !",
       "format": "Carrousel",
       "reseau": "Instagram",
-      "prompt_image": "Une photo d'une mariée heureuse et rayonnante, avec un avant/arrière-plan subtil représentant le forfait mariée, des éléments #D4AF37 pour symboliser la joie et l'éclat",
+      "prompt_image": "Une future mariée africaine heureuse, avec un dégradé de teintes de l'huile d'olive au brun clair, sur un fond luxueux avec les couleurs #D4AF37 et #0A1F44",
       "variantes": [
-        "Transformez votre peau pour le jour le plus important de votre vie !"
-      ]
-    },
-    {
-      "hook": "Besoin d'un conseil pour une peau parfaite ?",
-      "script": "Aïcha, nous savons que votre emploi du temps est chargé, mais nous sommes là pour vous aider ! Notre équipe d'experts partage des tips personnalisés pour un soin de soi efficace même dans les moments les plus occupés. Quel est votre plus grand défi pour trouver du temps pour vous ? Partagez avec nous et découvrez comment nos produits et soins peuvent vous aider !",
-      "format": "Post",
-      "reseau": "Facebook",
-      "prompt_image": "Une photo d'une femme active avec un emploi du temps chargé, mais prenant un moment pour elle avec des produits de soin, sur un fond représentant l'équilibre entre travail et soin de soi, avec des touches de #D4AF37 et #0A1F44",
-      "variantes": [
-        "Prenez soin de vous, même dans la course !"
+        "Le jour J approche, soyez prête avec Éclat Beauté !"
       ]
     }
   ]
