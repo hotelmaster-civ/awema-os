@@ -1,6 +1,6 @@
 {
   "agent": "creatif",
-  "genere_le": "2026-08-12T08:01:44+00:00",
+  "genere_le": "2026-08-13T08:03:23+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -12,33 +12,36 @@
   },
   "items": [
     {
-      "hook": "Découvrez le secret d'un teint parfait avec notre soin éclat !",
-      "script": "Vous rêvez d'une peau parfaite pour votre grand jour ? Notre soin éclat est spécifiquement conçu pour les futures mariées ! Pour plus d'informations, contactez-nous sur WhatsApp. Notre forfait mariée est à 75 000 FCFA pour 3 séances. Réservez dès maintenant !",
+      "hook": "Découvrez le secret pour un teint éclatant en 30 minutes !",
+      "script": "Vous souhaitez vous sentir belle et éclatante malgré votre emploi du temps chargé ? Notre soin visage éclat est conçu pour vous ! En 30 minutes, notre équipe expérimentée vous propose un nettoyage et une hydratation profonde pour un teint radieux. Réservez votre place dès maintenant sur WhatsApp et bénéficiez d'un conseil personnalisé pour votre type de peau. #ÉclatBeauté #SoinVisage",
       "format": "Reel",
       "reseau": "TikTok",
-      "prompt_image": "Une femme africaine avec une peau lisse et un teint parfait, avec un bouquet de fleurs dans les cheveux, sur un fond doré #D4AF37 et #0A1F44",
+      "prompt_image": "Une femme africaine avec une peau éclatante, souriante, les cheveux coiffés de manière élégante, avec un effet lumineux sur son visage. Arrière-plan neutre avec les couleurs #D4AF37 et #0A1F44. Texte « Éclat Beauté » en #D4AF37 en haut à gauche.",
       "variantes": [
-        "Obtenez la peau parfaite pour votre mariage avec Éclat Beauté !"
+        "Un teint éclatant en un rien de temps ? C'est possible avec Éclat Beauté !(reel)",
+        "Révélez votre beauté naturelle avec notre soin visage éclat personnalisé !"
       ]
     },
     {
-      "hook": "Peau grasse ? Découvrez notre routine en 3 étapes !",
-      "script": "La peau grasse peut être un véritable challenge ! Mais avec notre expertise et nos produits adaptés, vous pouvez obtenir une peau plus éclatante. Suivez nos conseils : nettoyage doux, hydratation profonde et protection solaire. Pour une peau saine, choisissez Éclat Beauté ! Contactez-nous pour plus d'informations.",
-      "format": "Reel",
-      "reseau": "TikTok",
-      "prompt_image": "Une femme africaine avec une peau grasse mais saine, faisant un geste de soin de peau avec une crème, sur un fond naturel avec des plantes vertes et les couleurs #D4AF37 et #0A1F44",
-      "variantes": [
-        "Comment lutter contre la peau grasse ? Éclat Beauté a la solution !"
-      ]
-    },
-    {
-      "hook": "Soyez sublime pour votre journée spéciale avec notre forfait mariée !",
-      "script": "Vous voulez être absolument sublime pour votre grand jour ? Notre forfait mariée à 75 000 FCFA pour 3 séances vous offre le soin éclat personnalisé dont vous rêvez. Réservez maintenant via WhatsApp et obtenez la confiance en vous que vous méritez !",
+      "hook": "Le jour J approche, préparez votre peau avec notre forfait mariée !",
+      "script": "Vous rêvez d’un teint parfait pour votre mariage ? Notre forfait mariée est spécialement conçu pour vous ! Pendant 3 séances, nos experts en beauté vous proposent un traitement personnalisé pour un teint éclatant et une confiance renforcée. Investissez dans votre beauté et votre bonheur. Réservez maintenant ! #ÉclatBeauté #ForfaitMariée",
       "format": "Carrousel",
       "reseau": "Instagram",
-      "prompt_image": "Une future mariée africaine heureuse, avec un dégradé de teintes de l'huile d'olive au brun clair, sur un fond luxueux avec les couleurs #D4AF37 et #0A1F44",
+      "prompt_image": "Une future mariée africaine avec une robe de mariée blanche, les cheveux coiffés de manière élégante, avec un teint éclatant. Les 3 séances du forfait sont représentées en arrière-plan, avec les couleurs #D4AF37 et #0A1F44 dominantes. Texte « Forfait Mariée » en #D4AF37 en haut à gauche.",
       "variantes": [
-        "Le jour J approche, soyez prête avec Éclat Beauté !"
+        "Préparez votre peau pour le grand jour avec notre forfait mariée personnalisé !",
+        "Rêvez d'un teint parfait pour votre mariage ? Nous rendons vos rêves réalité avec Éclat Beauté !"
+      ]
+    },
+    {
+      "hook": "Quel est votre secret pour une peau parfaite ? Partagez avec nous !",
+      "script": "Chez Éclat Beauté, nous croyons que chaque femme a son propre secret pour une peau parfaite. Nous voulons entendre le vôtre ! Partagez avec nous votre routine de soin de peau ou votre produit préféré, et nous pourrions vous récompenser avec une séance de soin gratuite ! #ÉclatBeauté #SoinDeSoi",
+      "format": "Post",
+      "reseau": "Facebook",
+      "prompt_image": "Une femme africaine heureuse, avec une peau éclatante, entourée de produits de soin de peau naturels, et un fond avec les couleurs #D4AF37 et #0A1F44. Au premier plan, un bouton « Partager votre secret » en #D4AF37.",
+      "variantes": [
+        "Révélez votre routine de beauté préférée et gagnez une chance de vivre l'expérience Éclat Beauté !",
+        "Qu'est-ce qui fait briller votre beauté ? Partagez votre secret avec la communauté Éclat Beauté !"
       ]
     }
   ]

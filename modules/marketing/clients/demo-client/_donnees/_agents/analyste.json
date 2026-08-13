@@ -1,6 +1,6 @@
 {
   "agent": "analyste",
-  "genere_le": "2026-08-12T08:00:34+00:00",
+  "genere_le": "2026-08-13T08:02:05+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -13,8 +13,8 @@
   "items": [
     {
       "type": "insight",
-      "titre": "TikTok : le réseau le plus performant",
-      "explication": "Avec 88 000 likes et 42 000 vues, TikTok est le réseau où Éclat Beauté génère le plus d'engagement. Les contenus 'Reel' sont particulièrement efficaces sur cette plateforme.",
+      "titre": "TikTok, le réseau le plus performant",
+      "explication": "Le réseau TikTok obtient les meilleurs résultats en termes de likes et de partages pour Éclat Beauté.",
       "preuve": {
         "metrique": "likes sur TikTok",
         "valeur": 88000
@@ -23,17 +23,17 @@
     {
       "type": "reco",
       "titre": "Publier plus souvent sur TikTok",
-      "explication": "Étant donné la performance remarquable sur TikTok, il est recommandé d'augmenter la fréquence des publications sur cette plateforme pour accroître l'engagement et la portée.",
+      "explication": "Augmenter la fréquence de publication sur TikTok peut améliorer l'engagement et la visibilité du compte.",
       "preuve": {
-        "metrique": "posts par semaine sur TikTok",
-        "valeur": 0
+        "metrique": "engagement sur les Reels",
+        "valeur": 520
       },
-      "action": "Augmenter à au moins 3 publications par semaine sur TikTok"
+      "action": "Publier au moins 2 Reels par semaine sur TikTok."
     },
     {
       "type": "insight",
-      "titre": "Engagement fort sur les contenus de type 'Reel'",
-      "explication": "Les contenus 'Reel' génèrent un engagement moyen de 520 interactions, ce qui est supérieur à celui des autres types de contenus comme les 'Carrousel' ou les 'Photo'.",
+      "titre": "Les contenus interactifs sont populaires",
+      "explication": "Les types de contenu tels que les Reels et les Carrousels obtiennent un engagement moyen élevé.",
       "preuve": {
         "metrique": "engagement moyen des Reels",
         "valeur": 520
@@ -41,32 +41,32 @@
     },
     {
       "type": "reco",
-      "titre": "Développer des contenus 'Reel' pour Instagram",
-      "explication": "Étant donné l'efficacité des contenus 'Reel' sur TikTok et leur engagement moyen élevé, il est recommandé de développer et de partager plus de contenus 'Reel' sur Instagram pour améliorer l'engagement.",
+      "titre": "Répondre aux commentaires",
+      "explication": "Il est important de répondre aux commentaires pour maintenir une relation avec les abonnés et améliorer l'engagement.",
       "preuve": {
-        "metrique": "engagement moyen sur Instagram",
-        "valeur": 5200
+        "metrique": "nombre de commentaires",
+        "valeur": 1230
       },
-      "action": "Créer et publier au moins 2 contenus 'Reel' par mois sur Instagram"
+      "action": "Répondre à tous les commentaires sur les publications cette semaine."
     },
     {
       "type": "insight",
-      "titre": "Audience en progression constante",
-      "explication": "L'audience d'Éclat Beauté est en progression constante, passant de 21 000 en mai à 23 500 en juin, montrant un intérêt croissant pour le compte.",
+      "titre": "L'audience est en constante évolution",
+      "explication": "L'audience d'Éclat Beauté est en constante augmentation, ce qui est un signe positif pour la visibilité du compte.",
       "preuve": {
         "metrique": "évolution de l'audience",
-        "valeur": 23500
+        "valeur": 2500
       }
     },
     {
       "type": "reco",
-      "titre": "Interagir avec les followers",
-      "explication": "Pour maintenir l'intérêt de l'audience, il est crucial d'interagir avec les followers en répondant à leurs commentaires et messages.",
+      "titre": "Planifier les publications",
+      "explication": "Planifier les publications à l'avance peut aider à maintenir une cadence régulière et améliorer l'efficacité.",
       "preuve": {
-        "metrique": "nombre de messages sans réponse",
-        "valeur": 5
+        "metrique": "nombre de publications par semaine",
+        "valeur": 2
       },
-      "action": "Répondre à tous les commentaires et messages non traités dans les 24 heures"
+      "action": "Planifier les publications pour les 2 prochaines semaines."
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "agent": "stratege",
-  "genere_le": "2026-08-12T08:01:16+00:00",
+  "genere_le": "2026-08-13T08:02:59+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -15,49 +15,49 @@
       "jour": "Lundi",
       "heure": "19h",
       "format": "Reel",
-      "angle": "Présentation du soin visage éclat",
+      "angle": "Conseils pour une peau parfaite en été",
       "reseau": "TikTok"
     },
     {
-      "jour": "Mardi",
+      "jour": "Mercredi",
       "heure": "14h",
       "format": "Carrousel",
-      "angle": "Avant/Après du soin visage éclat",
+      "angle": "Avant/Après d'un soin visage éclat",
       "reseau": "Instagram"
     },
     {
       "jour": "Jeudi",
       "heure": "19h",
       "format": "Short",
-      "angle": "Conseils pour une peau saine",
+      "angle": "Présentation d'un nouveau produit pour les peaux sensibles",
       "reseau": "TikTok"
     },
     {
       "jour": "Vendredi",
       "heure": "12h",
       "format": "Photo",
-      "angle": "Présentation du forfait mariée",
+      "angle": "Tendance beauté de la semaine",
       "reseau": "Instagram"
     },
     {
       "jour": "Samedi",
       "heure": "14h",
       "format": "Reel",
-      "angle": "Témoignage d'une cliente satisfaite",
+      "angle": "Routine de soin pour une peau parfaite",
       "reseau": "TikTok"
     },
     {
       "jour": "Dimanche",
       "heure": "18h",
       "format": "Carrousel",
-      "angle": "Présentation des produits adaptés à la peau africaine",
+      "angle": "Présentation du forfait mariée",
       "reseau": "Instagram"
     },
     {
-      "jour": "Mercredi",
+      "jour": "Mardi",
       "heure": "19h",
       "format": "Short",
-      "angle": "Réponse à une question fréquente",
+      "angle": "Réponse à une FAQ sur les produits hypoallergéniques",
       "reseau": "TikTok"
     }
   ],
@@ -67,8 +67,8 @@
     "Samedi 14h"
   ],
   "objectifs": [
-    "Augmenter le nombre de followers sur TikTok de 10% en 2 mois",
-    "Améliorer le taux d'engagement sur Instagram à 4.5% en 3 mois",
-    "Accroître les réservations de services de soin de visage de 15% en 6 mois"
+    "Augmenter l'engagement de 20% sur TikTok",
+    "Accroître la portée de 15% sur Instagram",
+    "Maintenir un taux d'engagement moyen de 3.5% sur les réseaux sociaux"
   ]
 }
