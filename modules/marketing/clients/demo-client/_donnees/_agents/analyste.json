@@ -1,6 +1,6 @@
 {
   "agent": "analyste",
-  "genere_le": "2026-08-13T08:02:05+00:00",
+  "genere_le": "2026-08-15T07:08:05+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -13,60 +13,69 @@
   "items": [
     {
       "type": "insight",
-      "titre": "TikTok, le réseau le plus performant",
-      "explication": "Le réseau TikTok obtient les meilleurs résultats en termes de likes et de partages pour Éclat Beauté.",
+      "titre": "TikTok : le réseau social le plus performant",
+      "explication": "Le réseau social TikTok présente les meilleures performances en termes de likes et de vues.",
       "preuve": {
-        "metrique": "likes sur TikTok",
-        "valeur": 88000
-      }
-    },
-    {
-      "type": "reco",
-      "titre": "Publier plus souvent sur TikTok",
-      "explication": "Augmenter la fréquence de publication sur TikTok peut améliorer l'engagement et la visibilité du compte.",
-      "preuve": {
-        "metrique": "engagement sur les Reels",
-        "valeur": 520
+        "metrique": "likes",
+        "valeur": 88000,
+        "variation": null
       },
-      "action": "Publier au moins 2 Reels par semaine sur TikTok."
+      "action": null
     },
     {
       "type": "insight",
-      "titre": "Les contenus interactifs sont populaires",
-      "explication": "Les types de contenu tels que les Reels et les Carrousels obtiennent un engagement moyen élevé.",
+      "titre": "Contenu réel : les Reels génèrent plus d'engagement",
+      "explication": "Les contenus sous forme de Reels génèrent plus d'engagement que les autres formats de publication.",
       "preuve": {
-        "metrique": "engagement moyen des Reels",
-        "valeur": 520
-      }
+        "metrique": "engagement_moyen",
+        "valeur": 520,
+        "variation": null
+      },
+      "action": null
     },
     {
       "type": "reco",
-      "titre": "Répondre aux commentaires",
-      "explication": "Il est important de répondre aux commentaires pour maintenir une relation avec les abonnés et améliorer l'engagement.",
+      "titre": "Publier des contenus sur TikTok",
+      "explication": "Il est conseillé de publier des contenus sur TikTok, notamment sous forme de Reels, pour augmenter l'engagement et la visibilité.",
       "preuve": {
-        "metrique": "nombre de commentaires",
-        "valeur": 1230
+        "metrique": "likes",
+        "valeur": 88000,
+        "variation": null
       },
-      "action": "Répondre à tous les commentaires sur les publications cette semaine."
+      "action": "Publiez au moins un Reel par semaine sur TikTok"
+    },
+    {
+      "type": "reco",
+      "titre": "Répondre aux commentaires et messages",
+      "explication": "Il est important de répondre aux commentaires et messages pour améliorer l'engagement et la satisfaction client.",
+      "preuve": {
+        "metrique": "a_repondre",
+        "valeur": 5,
+        "variation": null
+      },
+      "action": "Répondez à tous les commentaires et messages dans les 24 heures"
     },
     {
       "type": "insight",
-      "titre": "L'audience est en constante évolution",
-      "explication": "L'audience d'Éclat Beauté est en constante augmentation, ce qui est un signe positif pour la visibilité du compte.",
+      "titre": "L'audience augmente régulièrement",
+      "explication": "L'audience d'Éclat Beauté a augmenté régulièrement ces derniers mois.",
       "preuve": {
-        "metrique": "évolution de l'audience",
-        "valeur": 2500
-      }
+        "metrique": "evolution_audience",
+        "valeur": 23500,
+        "variation": "+25% depuis mai"
+      },
+      "action": null
     },
     {
       "type": "reco",
-      "titre": "Planifier les publications",
-      "explication": "Planifier les publications à l'avance peut aider à maintenir une cadence régulière et améliorer l'efficacité.",
+      "titre": "Poster à l'heure de pointe",
+      "explication": "Il est conseillé de poster à l'heure de pointe, c'est-à-dire jeudi à 19h, pour augmenter l'engagement.",
       "preuve": {
-        "metrique": "nombre de publications par semaine",
-        "valeur": 2
+        "metrique": "meilleur_creneau",
+        "valeur": "Jeudi 19h",
+        "variation": null
       },
-      "action": "Planifier les publications pour les 2 prochaines semaines."
+      "action": "Planifiez vos publications pour jeudi à 19h"
     }
   ]
 }

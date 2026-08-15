@@ -1,6 +1,6 @@
 {
   "agent": "stratege",
-  "genere_le": "2026-08-13T08:02:59+00:00",
+  "genere_le": "2026-08-15T07:09:17+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -15,60 +15,60 @@
       "jour": "Lundi",
       "heure": "19h",
       "format": "Reel",
-      "angle": "Conseils pour une peau parfaite en été",
+      "angle": "Routine peau grasse en 3 étapes",
       "reseau": "TikTok"
     },
     {
       "jour": "Mercredi",
-      "heure": "14h",
+      "heure": "15h",
       "format": "Carrousel",
-      "angle": "Avant/Après d'un soin visage éclat",
+      "angle": "Avant / Après soin éclat",
       "reseau": "Instagram"
     },
     {
       "jour": "Jeudi",
       "heure": "19h",
-      "format": "Short",
-      "angle": "Présentation d'un nouveau produit pour les peaux sensibles",
-      "reseau": "TikTok"
-    },
-    {
-      "jour": "Vendredi",
-      "heure": "12h",
       "format": "Photo",
-      "angle": "Tendance beauté de la semaine",
-      "reseau": "Instagram"
+      "angle": "Présentation du forfait mariée",
+      "reseau": "Facebook"
     },
     {
       "jour": "Samedi",
-      "heure": "14h",
+      "heure": "15h",
       "format": "Reel",
-      "angle": "Routine de soin pour une peau parfaite",
+      "angle": "Conseils pour une peau parfaite",
       "reseau": "TikTok"
     },
     {
       "jour": "Dimanche",
       "heure": "18h",
       "format": "Carrousel",
-      "angle": "Présentation du forfait mariée",
+      "angle": "Routine de soin de la peau pour la semaine",
       "reseau": "Instagram"
     },
     {
       "jour": "Mardi",
-      "heure": "19h",
+      "heure": "12h",
       "format": "Short",
-      "angle": "Réponse à une FAQ sur les produits hypoallergéniques",
+      "angle": "Présentation d'un nouveau produit pour la peau",
       "reseau": "TikTok"
+    },
+    {
+      "jour": "Vendredi",
+      "heure": "20h",
+      "format": "Photo",
+      "angle": "Décoration de l'institut de beauté",
+      "reseau": "Facebook"
     }
   ],
   "cadence_recommandee": "3 publications/semaine",
   "meilleures_heures": [
     "Jeudi 19h",
-    "Samedi 14h"
+    "Samedi 15h"
   ],
   "objectifs": [
-    "Augmenter l'engagement de 20% sur TikTok",
-    "Accroître la portée de 15% sur Instagram",
-    "Maintenir un taux d'engagement moyen de 3.5% sur les réseaux sociaux"
+    "Augmenter le nombre de followers sur TikTok de 10% en 2 mois",
+    "Améliorer le taux d'engagement sur Instagram de 20% en 3 mois",
+    "Augmenter les réservations de soins via WhatsApp de 15% en 1 mois"
   ]
 }

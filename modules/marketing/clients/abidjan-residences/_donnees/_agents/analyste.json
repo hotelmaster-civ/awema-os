@@ -1,6 +1,6 @@
 {
   "agent": "analyste",
-  "genere_le": "2026-08-13T08:01:54+00:00",
+  "genere_le": "2026-08-15T07:07:54+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -12,60 +12,50 @@
   "items": [
     {
       "type": "insight",
-      "titre": "Performances sur TikTok",
-      "explication": "Le compte Abidjan résidences a une audience de 4195 et un total de 9484 likes sur TikTok.",
+      "titre": "Engagement élevé sur TikTok",
+      "explication": "Les données montrent que TikTok est la plateforme la plus performante pour Abidjan résidences, avec un nombre élevé de likes et de commentaires.",
       "preuve": {
-        "metrique": "likes_total",
+        "metrique": "likes",
         "valeur": 9484
       }
     },
     {
       "type": "insight",
-      "titre": "Top post sur TikTok",
-      "explication": "Le post '#collage avec @Tdfmanga decouvrez un animé 100% ivoirien par @Cénack  « placman »' a obtenu 8920 likes et 32741 vues.",
+      "titre": "Contenu vidéo préféré",
+      "explication": "Les vidéos sont le type de contenu le plus populaire sur TikTok pour Abidjan résidences, avec des vues et des likes élevés.",
       "preuve": {
-        "metrique": "likes",
-        "valeur": 8920
+        "metrique": "vues",
+        "valeur": 41823
       }
     },
     {
       "type": "reco",
-      "titre": "Réactiver la publication régulière",
-      "explication": "Il y a eu 51 jours sans publication, il est nécessaire de réactiver la publication pour maintenir l'engagement.",
+      "titre": "Publier du contenu régulièrement",
+      "explication": "Pour maintenir l'engagement, il est recommandé de publier du contenu régulièrement, au moins une fois par semaine.",
       "preuve": {
-        "metrique": "jours_depuis",
+        "metrique": "jours_depuis_dernier_post",
         "valeur": 51
       },
-      "action": "Publier au moins un contenu par semaine"
+      "action": "Publier un nouveau contenu sur TikTok cette semaine"
     },
     {
       "type": "reco",
-      "titre": "Optimiser les publications sur TikTok",
-      "explication": "Les publications du vendredi à 14h ont le plus d'engagement, il est recommandé de publier à ce moment-là.",
+      "titre": "Utiliser le créneau horaire recommandé",
+      "explication": "Pour maximiser la visibilité, il est recommandé de publier du contenu à l'heure recommandée par les données, qui est le vendredi à 14h.",
       "preuve": {
-        "metrique": "jour",
-        "valeur": "Vendredi"
+        "metrique": "heure_recommandee",
+        "valeur": "14h"
       },
-      "action": "Publier les contenus les vendredis à 14h"
+      "action": "Publier le prochain contenu le vendredi à 14h"
     },
     {
       "type": "insight",
-      "titre": " Engagement des abonnés",
-      "explication": "Les abonnés ont commenté 168 fois et partagé 91 fois les publications sur TikTok.",
+      "titre": "Audience stable",
+      "explication": "L'audience d'Abidjan résidences sur TikTok est stable, avec des variations mineures au fil du temps.",
       "preuve": {
-        "metrique": "commentaires",
-        "valeur": 168
+        "metrique": "audience",
+        "valeur": 4195
       }
-    },
-    {
-      "type": "reco",
-      "titre": "Interagir avec les abonnés",
-      "explication": "Les abonnés ont commenté et partagé les publications, il est nécessaire d'interagir avec eux pour renforcer l'engagement.",
-      "preuve": {
-        "metrique": "partages",
-        "valeur": 91
-      },
-      "action": "Répondre aux commentaires et messages des abonnés"
     }
   ]
 }

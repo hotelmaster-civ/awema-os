@@ -1,6 +1,6 @@
 {
   "agent": "creatif",
-  "genere_le": "2026-08-13T08:03:20+00:00",
+  "genere_le": "2026-08-15T07:09:59+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -11,33 +11,36 @@
   },
   "items": [
     {
-      "hook": "Découvrez les résidences de luxe à Abidjan !",
-      "script": "Vous cherchez un endroit pour vous installer à Abidjan ? Abidjan Résidences vous propose des résidences de luxe avec tout le confort nécessaire. De la piscine au spa, en passant par les salles de sport, nous avons tout pour vous rendre votre séjour inoubliable. Rejoignez-nous et découvrez pourquoi nous sommes la meilleure option pour vous !",
+      "hook": "Découvrez les secrets des résidences d'Abidjan",
+      "script": "Bonjour à tous, aujourd'hui on vous présente les résidences les plus populaires d'Abidjan. De la plage de Bassam à la ville de Yopougon, nous allons vous emmener dans un tour d'horizon des meilleurs endroits pour séjourner. Venez découvrir les secrets des résidences d'Abidjan et comment elles peuvent rendre votre séjour inoubliable. Abonnez-vous pour plus de contenu",
       "format": "Reel",
       "reseau": "TikTok",
-      "prompt_image": "une photo aérienne d'une résidence de luxe avec piscine à Abidjan",
+      "prompt_image": "une photo d'une résidence chic d'Abidjan avec une piscine et un jardin tropical, avec des personnes souriantes à l'arrière-plan",
       "variantes": [
-        "Expériencez le luxe à Abidjan !"
+        "Que faire à Abidjan ?",
+        "Les meilleurs endroits pour séjourner à Abidjan"
       ]
     },
     {
-      "hook": "Vous êtes prêt à vivre l'expérience Abidjan Résidences ?",
-      "script": "Abidjan Résidences, c'est plus qu'un endroit pour vivre, c'est une expérience. De l'accueil chaleureux à la qualité de nos services, nous sommes là pour vous faire sentir comme chez vous. Découvrez nos résidences et réservez votre place dès aujourd'hui !",
+      "hook": "Explorer les quartiers d'Abidjan comme un local",
+      "script": "Vous aimez explorer de nouveaux endroits ? Aujourd'hui, on vous montre comment découvrir les quartiers d'Abidjan comme un local. De la vie nocturne de Yopougon aux marchés de Treichville, nous allons vous donner les meilleures adresses et les secrets des habitants. Suivez-nous pour plus d'aventures à Abidjan",
       "format": "Short",
       "reseau": "TikTok",
-      "prompt_image": "un visuel de l'intérieur d'une résidence de luxe avec des meubles modernes",
+      "prompt_image": "une photo d'une rue animée d'Abidjan avec des gens marchant et des véhicules en mouvement, et des échoppes colorées le long de la route",
       "variantes": [
-        "Vivez l'expérience de la résidence de luxe à Abidjan !"
+        "Découvrez les secrets d'Abidjan",
+        "Vivre à Abidjan comme un local"
       ]
     },
     {
-      "hook": "À la recherche d'un nouveau chez-soi à Abidjan ?",
-      "script": "Abidjan Résidences propose des résidences de qualité supérieure, conçues pour répondre à vos besoins. De la sécurité à la tranquillité, nous avons tout pour vous offrir un environnement de vie paisible. Rejoignez notre communauté et découvrez pourquoi nous sommes la référence pour les résidences à Abidjan.",
+      "hook": "Les résidences d'Abidjan qui vous feront rêver",
+      "script": "Vous rêvez de vacances de rêve à Abidjan ? On vous présente les résidences les plus luxueuses et les plus confortables de la ville. Avec des piscines à débordement, des spas et des vues imprenables sur la ville, ces résidences vous feront vivre un séjour inoubliable. Abonnez-vous pour plus de découvertes",
       "format": "Carrousel",
       "reseau": "Instagram",
-      "prompt_image": "une série de photos montrant les différents aspects d'une résidence de luxe à Abidjan",
+      "prompt_image": "une photo d'une résidence de luxe d'Abidjan avec une piscine à débordement et une vue imprenable sur la ville, avec des chaises longues et des parasols à l'arrière-plan",
       "variantes": [
-        "Trouvez votre nouveau chez-soi avec Abidjan Résidences !"
+        "Les meilleures résidences d'Abidjan",
+        "Séjourner dans le luxe à Abidjan"
       ]
     }
   ]

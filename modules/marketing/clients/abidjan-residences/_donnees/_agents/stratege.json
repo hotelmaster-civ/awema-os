@@ -1,6 +1,6 @@
 {
   "agent": "stratege",
-  "genere_le": "2026-08-13T08:02:27+00:00",
+  "genere_le": "2026-08-15T07:08:46+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -14,49 +14,49 @@
       "jour": "Lundi",
       "heure": "14h",
       "format": "Vidéo",
-      "angle": "Présentation d'un nouveau projet de résidence à Abidjan",
+      "angle": "Découverte de lieux emblématiques d'Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Mardi",
       "heure": "14h",
       "format": "Story",
-      "angle": "Derrière la scène : rencontre avec l'équipe d'Abidjan Résidences",
+      "angle": "Conseils de voyage pour les touristes à Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Mercredi",
       "heure": "14h",
-      "format": "Lien",
-      "angle": "Actualités immobilières : les dernières tendances à Abidjan",
+      "format": "Live",
+      "angle": "Visite virtuelle d'une résidence d'Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Jeudi",
       "heure": "14h",
-      "format": "Vidéo",
-      "angle": "Témoignage d'un locataire satisfaits d'Abidjan Résidences",
+      "format": "Photographie",
+      "angle": "Présentation d'un quartier d'Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Vendredi",
       "heure": "14h",
-      "format": "Photo",
-      "angle": "Découvrez les nouveaux appartements disponibles à la location",
+      "format": "Vidéo",
+      "angle": "Événement à venir à Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Samedi",
       "heure": "14h",
       "format": "Story",
-      "angle": "Conseils pour trouver le logement idéal à Abidjan",
+      "angle": "Activités de loisirs à Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Dimanche",
       "heure": "14h",
-      "format": "Lien",
-      "angle": "Lisez notre dernier article sur le blog d'Abidjan Résidences",
+      "format": "Vidéo",
+      "angle": "Découverte d'un nouveau lieu à Abidjan",
       "reseau": "TikTok"
     }
   ],
@@ -65,8 +65,8 @@
     "Vendredi 14h"
   ],
   "objectifs": [
-    "Augmenter l'engagement sur les publications de 20% en 4 semaines",
-    "Améliorer la visibilité de la marque Abidjan Résidences sur TikTok",
-    "Faire passer le nombre de followers de 4195 à 5000 en 8 semaines"
+    "Augmenter de 20% le nombre de likes sur les publications",
+    "Accroître de 30% le nombre de commentaires sur les publications",
+    "Maintenir une audience moyenne de 4000 abonnés sur TikTok"
   ]
 }
