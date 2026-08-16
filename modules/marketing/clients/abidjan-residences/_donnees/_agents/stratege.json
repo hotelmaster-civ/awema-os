@@ -1,6 +1,6 @@
 {
   "agent": "stratege",
-  "genere_le": "2026-08-15T07:08:46+00:00",
+  "genere_le": "2026-08-16T07:10:11+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -14,49 +14,49 @@
       "jour": "Lundi",
       "heure": "14h",
       "format": "Vidéo",
-      "angle": "Découverte de lieux emblématiques d'Abidjan",
-      "reseau": "TikTok"
-    },
-    {
-      "jour": "Mardi",
-      "heure": "14h",
-      "format": "Story",
-      "angle": "Conseils de voyage pour les touristes à Abidjan",
+      "angle": "Présentation d'un espace de détente à Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Mercredi",
       "heure": "14h",
-      "format": "Live",
-      "angle": "Visite virtuelle d'une résidence d'Abidjan",
-      "reseau": "TikTok"
-    },
-    {
-      "jour": "Jeudi",
-      "heure": "14h",
-      "format": "Photographie",
-      "angle": "Présentation d'un quartier d'Abidjan",
+      "format": "Story",
+      "angle": "Conseils pour un séjour parfait à Yopougon",
       "reseau": "TikTok"
     },
     {
       "jour": "Vendredi",
       "heure": "14h",
-      "format": "Vidéo",
-      "angle": "Événement à venir à Abidjan",
+      "format": "Short",
+      "angle": "Découverte de l'animé ivoirien 'Placman'",
       "reseau": "TikTok"
     },
     {
       "jour": "Samedi",
-      "heure": "14h",
-      "format": "Story",
-      "angle": "Activités de loisirs à Abidjan",
+      "heure": "12h",
+      "format": "Vidéo",
+      "angle": "Visite guidée d'un lieu emblématique d'Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Dimanche",
-      "heure": "14h",
-      "format": "Vidéo",
-      "angle": "Découverte d'un nouveau lieu à Abidjan",
+      "heure": "18h",
+      "format": "Live",
+      "angle": "Questions-réponses sur les résidences d'Abidjan",
+      "reseau": "TikTok"
+    },
+    {
+      "jour": "Mardi",
+      "heure": "19h",
+      "format": "Photographie",
+      "angle": "Les meilleurs spots pour prendre des photos à Abidjan",
+      "reseau": "TikTok"
+    },
+    {
+      "jour": "Jeudi",
+      "heure": "12h",
+      "format": "Interview",
+      "angle": "Rencontre avec un résident d'Abidjan qui partage son expérience",
       "reseau": "TikTok"
     }
   ],
@@ -65,8 +65,8 @@
     "Vendredi 14h"
   ],
   "objectifs": [
-    "Augmenter de 20% le nombre de likes sur les publications",
-    "Accroître de 30% le nombre de commentaires sur les publications",
-    "Maintenir une audience moyenne de 4000 abonnés sur TikTok"
+    "Augmenter la portée de 15% sur les publications",
+    "Accroître l'engagement de 20% via les likes et commentaires",
+    "Maintenir une audience stable ou en légère croissance sur TikTok"
   ]
 }

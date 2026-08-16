@@ -1,6 +1,6 @@
 {
   "agent": "analyste",
-  "genere_le": "2026-08-15T07:08:05+00:00",
+  "genere_le": "2026-08-16T07:09:47+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -13,69 +13,65 @@
   "items": [
     {
       "type": "insight",
-      "titre": "TikTok : le réseau social le plus performant",
-      "explication": "Le réseau social TikTok présente les meilleures performances en termes de likes et de vues.",
+      "titre": "Performances sur TikTok",
+      "explication": "Les données montrent que TikTok est le réseau où Éclat Beauté obtient les meilleurs résultats en termes de likes et de vues.",
       "preuve": {
-        "metrique": "likes",
+        "metrique": "likes sur TikTok",
         "valeur": 88000,
-        "variation": null
+        "variation": "null"
       },
-      "action": null
-    },
-    {
-      "type": "insight",
-      "titre": "Contenu réel : les Reels génèrent plus d'engagement",
-      "explication": "Les contenus sous forme de Reels génèrent plus d'engagement que les autres formats de publication.",
-      "preuve": {
-        "metrique": "engagement_moyen",
-        "valeur": 520,
-        "variation": null
-      },
-      "action": null
+      "action": "null"
     },
     {
       "type": "reco",
-      "titre": "Publier des contenus sur TikTok",
-      "explication": "Il est conseillé de publier des contenus sur TikTok, notamment sous forme de Reels, pour augmenter l'engagement et la visibilité.",
+      "titre": "Publier plus sur TikTok",
+      "explication": "Étant donné les réussites sur TikTok, il est recommandé d'augmenter la cadence de publication sur cette plateforme.",
       "preuve": {
-        "metrique": "likes",
-        "valeur": 88000,
-        "variation": null
+        "metrique": "posts sur TikTok",
+        "valeur": 40
       },
-      "action": "Publiez au moins un Reel par semaine sur TikTok"
+      "action": "Publier au moins 2 fois par semaine sur TikTok"
+    },
+    {
+      "type": "insight",
+      "titre": "Contenu le plus performant",
+      "explication": "Les contenus de type 'Reel' obtiennent le meilleur engagement moyen.",
+      "preuve": {
+        "metrique": "engagement moyen pour les Reels",
+        "valeur": 520
+      },
+      "action": "null"
+    },
+    {
+      "type": "reco",
+      "titre": "Créer plus de contenus 'Reel'",
+      "explication": "Créer davantage de contenus sous forme de Reels pour améliorer l'engagement.",
+      "preuve": {
+        "metrique": "nombre de Reels publiés",
+        "valeur": 8
+      },
+      "action": "Créer au moins 2 Reels par mois pour améliorer l'engagement"
+    },
+    {
+      "type": "insight",
+      "titre": "Évolution de l'audience",
+      "explication": "L'audience d'Éclat Beauté sur les réseaux sociaux a augmenté régulièrement depuis mai 2026.",
+      "preuve": {
+        "metrique": "évolution de l'audience",
+        "valeur": "23500",
+        "variation": "+25% depuis mai 2026"
+      },
+      "action": "null"
     },
     {
       "type": "reco",
       "titre": "Répondre aux commentaires et messages",
-      "explication": "Il est important de répondre aux commentaires et messages pour améliorer l'engagement et la satisfaction client.",
+      "explication": "Il est crucial de maintenir une interaction active avec les abonnés pour augmenter l'engagement et fidéliser l'audience.",
       "preuve": {
-        "metrique": "a_repondre",
-        "valeur": 5,
-        "variation": null
+        "metrique": "nombre de commentaires et messages non répondu",
+        "valeur": 5
       },
-      "action": "Répondez à tous les commentaires et messages dans les 24 heures"
-    },
-    {
-      "type": "insight",
-      "titre": "L'audience augmente régulièrement",
-      "explication": "L'audience d'Éclat Beauté a augmenté régulièrement ces derniers mois.",
-      "preuve": {
-        "metrique": "evolution_audience",
-        "valeur": 23500,
-        "variation": "+25% depuis mai"
-      },
-      "action": null
-    },
-    {
-      "type": "reco",
-      "titre": "Poster à l'heure de pointe",
-      "explication": "Il est conseillé de poster à l'heure de pointe, c'est-à-dire jeudi à 19h, pour augmenter l'engagement.",
-      "preuve": {
-        "metrique": "meilleur_creneau",
-        "valeur": "Jeudi 19h",
-        "variation": null
-      },
-      "action": "Planifiez vos publications pour jeudi à 19h"
+      "action": "Répondre à tous les commentaires et messages dans les 24 heures"
     }
   ]
 }
