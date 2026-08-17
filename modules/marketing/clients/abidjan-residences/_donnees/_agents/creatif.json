@@ -1,6 +1,6 @@
 {
   "agent": "creatif",
-  "genere_le": "2026-08-16T07:10:44+00:00",
+  "genere_le": "2026-08-17T07:36:35+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -11,36 +11,33 @@
   },
   "items": [
     {
-      "hook": "Découvrez l'animation ivoirienne qui fait rage à Abidjan !",
-      "script": "Vous cherchez une expérience unique à Abidjan ? Découvrez notre dernière vidéo qui vous emmène au cœur de l'animation ivoirienne ! De la musique aux danses traditionnelles, vivez l'expérience Abidjan Résidences ! Inscrivez-vous pour ne rien manquer !",
-      "format": "Reel",
-      "reseau": "TikTok",
-      "prompt_image": "Un groupe de personnes dansant et souriant, avec des couleurs vives et une ambiance animée. Au fond, on aperçoit la ville d'Abidjan.",
-      "variantes": [
-        "Expériencez l'essence de l'Abidjan animé !",
-        "Abidjan, la ville qui ne dort jamais !"
-      ]
-    },
-    {
-      "hook": "Besoin d'un séjour calme et de détente à Yopougon ?",
-      "script": "Vous cherchez un hébergement pour votre prochain séjour à Yopougon ? Découvrez notre résidence calme et accueillante, idéale pour vous ressourcer. De la chambre confortable à la vue imprenable sur la ville, nous vous offrons tout ce dont vous avez besoin pour un séjour inoubliable. Inscrivez-vous pour réserver votre place !",
+      "hook": "Découvrez les meilleures résidences d'Abidjan !",
+      "script": "Vous cherchez un endroit où séjourner à Abidjan ? Nous avons sélectionné pour vous les meilleures résidences de la ville ! Détente, confort et sécurité sont au rendez-vous. Abonnez-vous pour découvrir nos prochaines résidences !",
       "format": "Short",
       "reseau": "TikTok",
-      "prompt_image": "Une chambre confortable avec un lit king-size et une vue imprenable sur la ville de Yopougon. La lumière du jour entre par la fenêtre, illuminant la pièce.",
+      "prompt_image": "Une belle résidence à Abidjan avec une piscine et un jardin tropical",
       "variantes": [
-        "Échappez à l'agitation de la ville et trouvez la paix à Yopougon !",
-        "Respirez, détendez-vous, et laissez Yopougon vous enchanter !"
+        "Les résidences les plus chic d'Abidjan sont sur notre compte !"
       ]
     },
     {
-      "hook": "Faites la promotion de votre établissement et gagnez des commissions !",
-      "script": "Vous êtes un entrepreneur à Abidjan et vous cherchez à développer votre activité ? Nous vous offrons la possibilité de faire la promotion de votre établissement et de gagner des commissions. Inscrivez-vous pour en savoir plus et pour commencer à gagner dès aujourd'hui !",
-      "format": "Carrousel",
+      "hook": "La vie est belle à Abidjan !",
+      "script": "Venez découvrir les charmes de la ville d'Abidjan avec nous ! Des résidences de rêve, des plages de sable blanc et une ville animée. Vous allez adorer ! Abonnez-vous pour ne rien manquer !",
+      "format": "Reel",
       "reseau": "TikTok",
-      "prompt_image": "Une personne tenant un écriteau avec le logo d'un établissement local, souriant et regardant la caméra. Au fond, on aperçoit la ville animée d'Abidjan.",
+      "prompt_image": "Un montage de séquences montrant la vie à Abidjan : plages, marchés, résidences",
       "variantes": [
-        "Boostez votre entreprise et gagnez de l'argent avec nous !",
-        "Partagez votre passion et gagnez des commissions !"
+        "Abidjan, la ville qui vous fait rêver !"
+      ]
+    },
+    {
+      "hook": "Vous cherchez une résidence de standing à Abidjan ?",
+      "script": "Nous avons la solution pour vous ! Des résidences de luxe avec tout le confort nécessaire pour un séjour inoubliable. Contactez-nous pour en savoir plus !",
+      "format": "Carrousel",
+      "reseau": "Instagram",
+      "prompt_image": "Une résidence de luxe à Abidjan avec vue sur la mer",
+      "variantes": [
+        "Des résidences de rêve à Abidjan, découvrez-les !"
       ]
     }
   ]

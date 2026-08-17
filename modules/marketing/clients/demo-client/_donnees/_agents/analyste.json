@@ -1,6 +1,6 @@
 {
   "agent": "analyste",
-  "genere_le": "2026-08-16T07:09:47+00:00",
+  "genere_le": "2026-08-17T07:34:58+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -13,65 +13,58 @@
   "items": [
     {
       "type": "insight",
-      "titre": "Performances sur TikTok",
-      "explication": "Les données montrent que TikTok est le réseau où Éclat Beauté obtient les meilleurs résultats en termes de likes et de vues.",
+      "titre": "Performance TikTok",
+      "explication": "Le réseau TikTok montre une performance exceptionnelle en termes de likes, avec plus de 88 000 likes sur les 40 posts publiés.",
       "preuve": {
-        "metrique": "likes sur TikTok",
+        "metrique": "likes",
         "valeur": 88000,
-        "variation": "null"
+        "variation": null
       },
-      "action": "null"
+      "action": null
     },
     {
       "type": "reco",
-      "titre": "Publier plus sur TikTok",
-      "explication": "Étant donné les réussites sur TikTok, il est recommandé d'augmenter la cadence de publication sur cette plateforme.",
+      "titre": "Publier plus souvent sur TikTok",
+      "explication": "Pour maintenir l'engagement élevé sur TikTok, il est recommandé d'augmenter la cadence de publication, en visant au moins 3 posts par semaine.",
       "preuve": {
-        "metrique": "posts sur TikTok",
-        "valeur": 40
+        "metrique": "posts_par_semaine",
+        "valeur": 2,
+        "variation": null
       },
-      "action": "Publier au moins 2 fois par semaine sur TikTok"
+      "action": "Augmenter la fréquence de publication sur TikTok à 3 posts par semaine"
     },
     {
       "type": "insight",
       "titre": "Contenu le plus performant",
-      "explication": "Les contenus de type 'Reel' obtiennent le meilleur engagement moyen.",
+      "explication": "Les Reels génèrent en moyenne 520 interactions par post, faisant de ce type de contenu le plus performant sur les réseaux sociaux.",
       "preuve": {
-        "metrique": "engagement moyen pour les Reels",
-        "valeur": 520
+        "metrique": "engagement_moyen",
+        "valeur": 520,
+        "variation": null
       },
-      "action": "null"
+      "action": null
     },
     {
       "type": "reco",
-      "titre": "Créer plus de contenus 'Reel'",
-      "explication": "Créer davantage de contenus sous forme de Reels pour améliorer l'engagement.",
+      "titre": "Créer plus de Reels",
+      "explication": "Étant donné la performance élevée des Reels, il est conseillé de créer et de publier davantage de contenu de ce type pour augmenter l'engagement.",
       "preuve": {
-        "metrique": "nombre de Reels publiés",
-        "valeur": 8
+        "metrique": "engagement_moyen",
+        "valeur": 520,
+        "variation": null
       },
-      "action": "Créer au moins 2 Reels par mois pour améliorer l'engagement"
+      "action": "Créer et publier au moins 2 nouveaux Reels chaque semaine"
     },
     {
       "type": "insight",
       "titre": "Évolution de l'audience",
-      "explication": "L'audience d'Éclat Beauté sur les réseaux sociaux a augmenté régulièrement depuis mai 2026.",
+      "explication": "L'audience a augmenté de 25 500 abonnés sur les 3 derniers mois, montrant une tendance positive dans la croissance de la communauté.",
       "preuve": {
-        "metrique": "évolution de l'audience",
-        "valeur": "23500",
-        "variation": "+25% depuis mai 2026"
+        "metrique": "evolution_audience",
+        "valeur": 25500,
+        "variation": "augmentation"
       },
-      "action": "null"
-    },
-    {
-      "type": "reco",
-      "titre": "Répondre aux commentaires et messages",
-      "explication": "Il est crucial de maintenir une interaction active avec les abonnés pour augmenter l'engagement et fidéliser l'audience.",
-      "preuve": {
-        "metrique": "nombre de commentaires et messages non répondu",
-        "valeur": 5
-      },
-      "action": "Répondre à tous les commentaires et messages dans les 24 heures"
+      "action": null
     }
   ]
 }

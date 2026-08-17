@@ -1,6 +1,6 @@
 {
   "agent": "stratege",
-  "genere_le": "2026-08-16T07:10:40+00:00",
+  "genere_le": "2026-08-17T07:35:54+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -15,59 +15,59 @@
       "jour": "Lundi",
       "heure": "19h",
       "format": "Reel",
-      "angle": "Conseils de routine peau pour le quotidien",
+      "angle": "Conseils pour une routine de soin de visage efficace pour les peaux grasses",
       "reseau": "TikTok"
     },
     {
       "jour": "Mardi",
-      "heure": "19h",
+      "heure": "14h",
       "format": "Carrousel",
-      "angle": "Avant/Après du soin visage éclat",
+      "angle": "Avant/Après de nos soins de visage éclat pour prouver leur efficacité",
       "reseau": "Instagram"
-    },
-    {
-      "jour": "Mercredi",
-      "heure": "19h",
-      "format": "Photo",
-      "angle": "Présentation d'un produit hypoallergénique pour peaux sensibles",
-      "reseau": "Facebook"
     },
     {
       "jour": "Jeudi",
       "heure": "19h",
       "format": "Reel",
-      "angle": "Témoignage d'une cliente satisfaite du forfait mariée",
+      "angle": "Présentation du forfait mariée pour un jour inoubliable",
       "reseau": "TikTok"
     },
     {
       "jour": "Vendredi",
-      "heure": "19h",
-      "format": "Carrousel",
-      "angle": "Les bienfaits du soin de soi pour une peau éclatante",
+      "heure": "10h",
+      "format": "Photo",
+      "angle": "Publiez vos meilleures transformations avec nos soins de beauté",
       "reseau": "Instagram"
     },
     {
       "jour": "Samedi",
-      "heure": "13h",
-      "format": "Photo",
-      "angle": "Promotion spéciale week-end sur les soins de visage",
-      "reseau": "Facebook"
+      "heure": "12h",
+      "format": "Reel",
+      "angle": "Routine simplifiée pour les peaux sensibles avec nos produits hypoallergéniques",
+      "reseau": "TikTok"
     },
     {
       "jour": "Dimanche",
       "heure": "18h",
+      "format": "Carrousel",
+      "angle": "Réponses à vos questions fréquentes sur nos soins et produits",
+      "reseau": "Facebook"
+    },
+    {
+      "jour": "Mercredi",
+      "heure": "16h",
       "format": "Reel",
-      "angle": "Conseils pour un mariage parfait avec un teint naturel",
+      "angle": "Conseils de beauté pour un teint parfait toute l'année",
       "reseau": "TikTok"
     }
   ],
-  "cadence_recommandee": "3 publications/semaine",
+  "cadence_recommandee": "3 publications par semaine",
   "meilleures_heures": [
     "Jeudi 19h"
   ],
   "objectifs": [
-    "Augmenter l'engagement sur les publications de 15%",
-    "Atteindre 25000 abonnés sur TikTok dans les 6 prochains mois",
-    "Maintenir un taux d'engagement moyen de 3,5% sur les réseaux sociaux"
+    "Augmenter l'engagement sur les publications de 15% en 4 semaines",
+    "Atteindre 25000 abonnés sur TikTok dans les 8 semaines suivantes",
+    "Booste les ventes du forfait mariée de 10% grâce aux campagnes sur les réseaux sociaux"
   ]
 }

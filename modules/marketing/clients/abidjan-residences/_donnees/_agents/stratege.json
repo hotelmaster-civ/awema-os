@@ -1,6 +1,6 @@
 {
   "agent": "stratege",
-  "genere_le": "2026-08-16T07:10:11+00:00",
+  "genere_le": "2026-08-17T07:35:25+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -14,49 +14,35 @@
       "jour": "Lundi",
       "heure": "14h",
       "format": "Vidéo",
-      "angle": "Présentation d'un espace de détente à Abidjan",
+      "angle": "Découvrez nos résidences à Abidjan",
       "reseau": "TikTok"
     },
     {
       "jour": "Mercredi",
       "heure": "14h",
-      "format": "Story",
-      "angle": "Conseils pour un séjour parfait à Yopougon",
+      "format": "Vidéo",
+      "angle": "Conseils pour trouver la résidence idéale",
       "reseau": "TikTok"
     },
     {
       "jour": "Vendredi",
       "heure": "14h",
-      "format": "Short",
-      "angle": "Découverte de l'animé ivoirien 'Placman'",
+      "format": "Vidéo",
+      "angle": "Promotion spéciale pour les abonnés",
       "reseau": "TikTok"
     },
     {
       "jour": "Samedi",
-      "heure": "12h",
+      "heure": "14h",
       "format": "Vidéo",
-      "angle": "Visite guidée d'un lieu emblématique d'Abidjan",
+      "angle": "Découvrez les activités à proximité de nos résidences",
       "reseau": "TikTok"
     },
     {
       "jour": "Dimanche",
-      "heure": "18h",
-      "format": "Live",
-      "angle": "Questions-réponses sur les résidences d'Abidjan",
-      "reseau": "TikTok"
-    },
-    {
-      "jour": "Mardi",
-      "heure": "19h",
-      "format": "Photographie",
-      "angle": "Les meilleurs spots pour prendre des photos à Abidjan",
-      "reseau": "TikTok"
-    },
-    {
-      "jour": "Jeudi",
-      "heure": "12h",
-      "format": "Interview",
-      "angle": "Rencontre avec un résident d'Abidjan qui partage son expérience",
+      "heure": "14h",
+      "format": "Vidéo",
+      "angle": "Témoignage d'un client satisfait",
       "reseau": "TikTok"
     }
   ],
@@ -65,8 +51,8 @@
     "Vendredi 14h"
   ],
   "objectifs": [
-    "Augmenter la portée de 15% sur les publications",
-    "Accroître l'engagement de 20% via les likes et commentaires",
-    "Maintenir une audience stable ou en légère croissance sur TikTok"
+    "Augmenter les abonnés de 10% en 2 mois",
+    "Maintenir un taux d'engagement moyen de 2% sur les publications",
+    "Augmenter le nombre de vues de 20% en 3 mois"
   ]
 }

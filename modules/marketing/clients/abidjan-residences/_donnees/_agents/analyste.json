@@ -1,6 +1,6 @@
 {
   "agent": "analyste",
-  "genere_le": "2026-08-16T07:09:35+00:00",
+  "genere_le": "2026-08-17T07:34:47+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "abidjan-residences",
@@ -13,59 +13,84 @@
     {
       "type": "insight",
       "titre": "Engagement élevé sur TikTok",
-      "explication": "Les publications sur TikTok génèrent un engagement élevé avec un nombre significatif de likes et de commentaires.",
+      "explication": "Le compte Abidjan résidences obtient un engagement élevé sur TikTok, notamment avec des vidéos qui totalisent 21847 likes",
       "preuve": {
         "metrique": "likes_total",
-        "valeur": 9484
+        "valeur": 21847
       }
     },
     {
       "type": "reco",
       "titre": "Publier régulièrement sur TikTok",
-      "explication": "Pour maintenir l'engagement, il est recommandé de publier régulièrement sur TikTok, en particulier le vendredi vers 14h.",
+      "explication": "Puisque le compte a un engagement élevé sur TikTok et que le dernier post date de 51 jours, il est recommandé de publier régulièrement pour maintenir l'intérêt de l'audience",
       "preuve": {
-        "metrique": "jours_depuis_dernier_post",
+        "metrique": "jours_depuis",
         "valeur": 51
       },
-      "action": "Publier au moins une fois par semaine sur TikTok, en privilégiant le vendredi à 14h."
+      "action": "Publier au moins une fois par semaine sur TikTok"
     },
     {
       "type": "insight",
-      "titre": "Top post performant",
-      "explication": "Le post '#collage avec @Tdfmanga' est celui qui a généré le plus de likes et de vues, indiquant un intérêt pour le contenu collaboratif.",
+      "titre": "Vidéos performantes",
+      "explication": "Les vidéos sur TikTok génèrent un grand nombre de vues, avec une vidéo ayant atteint 32741 vues",
       "preuve": {
-        "metrique": "likes",
-        "valeur": 8920
+        "metrique": "vues",
+        "valeur": 32741
       }
     },
     {
       "type": "reco",
-      "titre": "Créer du contenu collaboratif",
-      "explication": "Créer du contenu collaboratif avec d'autres comptes ou influenceurs peut augmenter l'engagement sur les publications.",
+      "titre": "Optimiser les vidéos pour TikTok",
+      "explication": "Étant donné que les vidéos sont très performantes sur TikTok, il est conseillé d'optimiser les futures publications vidéo pour augmenter leur visibilité et l'engagement",
       "preuve": {
-        "metrique": "likes",
-        "valeur": 8920
+        "metrique": "vues_recentes",
+        "valeur": 41823
       },
-      "action": "Chercher des opportunités de collaborations pour les prochaines publications sur TikTok."
+      "action": "Optimiser les futures publications vidéo pour TikTok en utilisant des mots-clés pertinents et en créant du contenu attractif"
     },
     {
       "type": "insight",
-      "titre": "Évolution de l'audience",
-      "explication": "L'audience sur TikTok est relativement stable, avec des fluctuations mineures au fil du temps.",
+      "titre": "Audience stable",
+      "explication": "L'audience du compte Abidjan résidences est stable, avec une légère variation au fil du temps",
       "preuve": {
-        "metrique": "audience",
+        "metrique": "evolution_audience",
+        "valeur": [
+          {
+            "date": "2026-07-05",
+            "valeur": 4198
+          },
+          {
+            "date": "2026-07-06",
+            "valeur": 4198
+          },
+          {
+            "date": "2026-07-13",
+            "valeur": 4197
+          },
+          {
+            "date": "2026-07-20",
+            "valeur": 4198
+          },
+          {
+            "date": "2026-07-27",
+            "valeur": 4200
+          },
+          {
+            "date": "2026-08-03",
+            "valeur": 4195
+          }
+        ]
+      }
+    },
+    {
+      "type": "reco",
+      "titre": "Maintenir la stratégie actuelle",
+      "explication": "Puisque l'audience est stable et que le compte obtient un engagement élevé, il est recommandé de maintenir la stratégie actuelle et de continuer à publier du contenu de qualité",
+      "preuve": {
+        "metrique": "abonnes",
         "valeur": 4195
-      }
-    },
-    {
-      "type": "reco",
-      "titre": "Analyser les performances des publications",
-      "explication": "Analyser régulièrement les performances des publications pour comprendre ce qui fonctionne et ce qui peut être amélioré.",
-      "preuve": {
-        "metrique": "posts_30j",
-        "valeur": 0
       },
-      "action": "Examiner les statistiques des publications pour identifier les tendances et ajuster la stratégie de contenu en conséquence."
+      "action": "Continuer à publier du contenu de qualité et à interagir avec l'audience pour maintenir l'engagement"
     }
   ]
 }

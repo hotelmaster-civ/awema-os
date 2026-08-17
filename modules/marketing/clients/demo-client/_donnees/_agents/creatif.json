@@ -1,6 +1,6 @@
 {
   "agent": "creatif",
-  "genere_le": "2026-08-16T07:10:56+00:00",
+  "genere_le": "2026-08-17T07:36:46+00:00",
   "modele": "llama-3.3-70b-versatile",
   "provenance": {
     "client": "demo-client",
@@ -12,33 +12,33 @@
   },
   "items": [
     {
-      "hook": "Découvrir le secret d'un teint éclatant naturel",
-      "script": "Nous savons que le temps est précieux, mais prendre soin de votre peau est essentiel. Notre soin visage éclat est conçu pour vous offrir un nettoyage et une hydratation profonde, vous laissant avec une peau radieuse. Réservez votre séance dès maintenant et découvrez la différence !",
+      "hook": "Découvrez le secret pour une peau éclatante sans effort !",
+      "script": "Vous souhaitez avoir une peau éclatante mais manquez de temps ? Notre soin visage éclat est conçu spécifiquement pour les femmes actives comme vous, Aïcha ! En 30 minutes, obtenez un nettoyage et une hydratation profonde pour un résultat visible. Passez à l'action et réservez votre rendez-vous dès maintenant sur WhatsApp !",
       "format": "Reel",
       "reseau": "TikTok",
-      "prompt_image": "Une femme souriante avec une peau éclatante, entourée de fleurs et de produits de soin naturels, sur un fond #D4AF37",
+      "prompt_image": "Une femme africaine souriante avec une peau éclatante, le logo d'Éclat Beauté visible en coin",
       "variantes": [
-        " Transformer votre routine de soin en un rituel de bien-être"
+        "Transformez votre routine beauté en 30 minutes !"
       ]
     },
     {
-      "hook": "Préparez-vous pour le grand jour avec notre forfait mariée",
-      "script": "Rêvez d'un teint parfait pour votre mariage ? Notre forfait mariée comprend 3 séances de soin personnalisées pour vous faire resplendir. N'attendez pas, réservez votre place aujourd'hui !",
+      "hook": "Rêvez d’un teint parfait pour votre grand jour ?",
+      "script": "Fatou, future mariée, nous avons ce qu’il vous faut ! Notre forfait mariée comprend 3 séances personnalisées pour vous aider à atteindre la perfection. De la préparation de peau à la journée J, nous sommes là pour vous. Informations et réservations sur WhatsApp !",
       "format": "Carrousel",
       "reseau": "Instagram",
-      "prompt_image": "Une photo d'une mariée avec un teint lumineux, suivie de 2-3 photos montrant les différentes étapes du forfait, sur un fond #0A1F44",
+      "prompt_image": "Une photo d’une mariée africaine heureuse avec un teint parfait, sur fond de décor de mariage",
       "variantes": [
-        "Un teint parfait pour le jour J, c'est notre spécialité"
+        "Préparez-vous à briller sur votre jour le plus beau !"
       ]
     },
     {
-      "hook": "Les secrets de la peau africaine : comment l'entretenir au quotidien",
-      "script": "La peau africaine a ses particularités, et nous sommes là pour vous aider à la comprendre et à la chérir. Découvrez nos conseils pour un soin de peau adapté et naturel, et rejoignez notre communauté pour partager vos propres astuces !",
+      "hook": "Vous cherchez une routine peau grasse efficace ?",
+      "script": "Nous avons la solution ! Découvrez notre méthode en 3 étapes pour une peau grasse sous contrôle, adaptée aux besoins spécifiques de votre peau. Plus de détails sur notre page !",
       "format": "Short",
       "reseau": "TikTok",
-      "prompt_image": "Une vidéo montrant des conseils de soin naturels pour la peau africaine, sur un fond #D4AF37 avec des éléments graphiques #0A1F44",
+      "prompt_image": "Une illustration ou une animation expliquant les 3 étapes pour contrôler la peau grasse",
       "variantes": [
-        "Votre peau, votre histoire : partagez avec nous"
+        "Maîtrisez votre peau grasse en quelques étapes simples !"
       ]
     }
   ]
